@@ -35,7 +35,8 @@
         <div class="wrapper__aboutus ruen-abus anchor" id="wrapper__aboutus">
                 <div class="aboutus" id="aboutus">
                     <div class="aboutus__main">
-                        <div class="container cont__dev">
+
+                        <div class="container cont__dev" id = "header">
                         <div class="aboutus__nav">
                             <div class="aboutus__menu device">
                                     <img id="slidemenu" src="img\menu.svg" alt="">
@@ -64,8 +65,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <script>
+                              window.addEventListener("scroll", function(){
+                                var header = document.getElementById("header");
+                                header.classList.toggle("sticky", window.scrollY > 0);
+                              })
+                            </script>
                         </div>
                         </div>
+
                         <div class="container">
                         <div class="aboutus__jumbotron">
                             <div class="content__mousescroll device">

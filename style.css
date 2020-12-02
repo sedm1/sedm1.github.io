@@ -1195,6 +1195,16 @@ body {
   color: #FFFFFF;
   margin-top: 20px;
 }
+#header{
+  width: 100%;
+  padding-left: 5.3%;
+  padding-right: 5.3%;
+}
+.sticky{
+  background-color: #fff;
+  position: fixed;
+  z-index: 1000;
+}
 @media screen and (max-width: 1010px){
   .aboutus .aboutus__main .aboutus__nav .nav__links .link:not(:last-child){
     margin-right: 1.3em;
@@ -1707,12 +1717,13 @@ text-align: left;
   .wrapper__menu .nav__links {
     position: relative;
     overflow: auto;
-    width: 75%;
+    width: 100%;
     background-color: white;
     -webkit-box-shadow: 15px 15px 30px rgba(196, 196, 196, 0.6);
     box-shadow: 15px 15px 30px rgba(196, 196, 196, 0.6);
   }
   .wrapper__menu .btn__close {
+    position: absolute;
     top: 0;
     z-index: 210;
 
@@ -1965,7 +1976,18 @@ iframe {
     text-align: center;
   }
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
+  .nav__logo{
+    display: none;
+  }
+  .aboutus .aboutus__main .aboutus__nav .left .nav__button{
+    margin-right: 0px;
+  }
+  .aboutus .aboutus__main .aboutus__nav{
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 430px){
   .circle{
     width: 700px;
     height: 700px;
@@ -1986,19 +2008,12 @@ iframe {
 
 }
 @media screen and (max-width: 350px){
-  .aboutus .aboutus__main .aboutus__nav{
-    flex-flow: wrap;
-  }
+
   .aboutus .aboutus__main .aboutus__nav:nth-last-child{
     justify-content: center;
   }
-  .aboutus .aboutus__main .aboutus__nav .left{
-    margin: 0 auto;
-    margin-top: 10px;
-  }
-  .aboutus .aboutus__main .aboutus__nav .left .nav__button{
-    margin-right: 0px;
-  }
+  
+
   .circle{
     width: 600px;
     height: 600px
