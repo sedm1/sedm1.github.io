@@ -313,9 +313,6 @@ body {
   transform: translateY(10px);
 }
 
-.wrapper__services {
-  margin-top: -3.48em;
-}
 .wrapper__services .services__background {
   position: relative;
   z-index: -10;
@@ -1415,7 +1412,7 @@ margin-bottom: 10px !important;
   }
   .wrapper__services {
     position: relative;
-    top: 115px;
+  
   }
   .wrapper__services .services__background {
     position: relative !important;
