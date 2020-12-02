@@ -45,12 +45,7 @@ $(window).scroll(function(){
 });
 
 var isResizeble = false;
-function isiPhone(){
-    return (
-        //Пользователь использует iPhone
-        (navigator.platform.indexOf("iPhone") != -1)
-    );
-}
+
 
     if($(window).innerWidth() <= 480){
         $(document).scroll(function () {
