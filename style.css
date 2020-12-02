@@ -83,7 +83,9 @@ body {
   right: 0;
   top: 823px;
 }
-
+#header{
+  top: 0;
+}
 .button {
   background-color: #F4522F;
   box-shadow: 4px 4px 4px rgba(244, 82, 47, 0.35);
@@ -2012,7 +2014,7 @@ iframe {
   .aboutus .aboutus__main .aboutus__nav:nth-last-child{
     justify-content: center;
   }
-  
+
 
   .circle{
     width: 600px;
