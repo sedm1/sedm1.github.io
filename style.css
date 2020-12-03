@@ -1222,6 +1222,9 @@ body {
   .container:not(:first-child and :nth-child(2)){
     margin-top: 80px;
   }
+  #second_section{
+    margin-top: 0px;
+  }
   /* стили для xs-устройств */
   .contacts>.h2__title{
   position: relative;
