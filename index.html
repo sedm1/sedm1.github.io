@@ -1,124 +1,419 @@
-<!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img\favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <meta name="description" content="IT решения для вашего бизнеса. Разработка веб-сайтов,веб-дизайн,программирование. Ispace. ">
-    <meta name="keywords" content="разработка веб сайтов,разработка дизайна сайта,разработка сайтов под ключ,разработка сайта цена,услуги разработки сайтов,разработка сайта недорого,веб дизайн сайта,студия веб дизайна,создание веб дизайна,веб дизайн услуги,продвижение сайтов,seo продвижение сайтов,поисковое продвижение сайтов,продвижение сайта цена">
-    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
     <title>Ispace - IT решения для вашего бизнеса</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <!--  <script>
-        var scrollEventHandler = function()
-        {
-            window.scroll(-1, window.pageYOffset)
-        }
-        window.addEventListener("scroll", scrollEventHandler, false);
-    </script>-->
-</head>
-<body>
+    <script>
+      window.addEventListener("scroll", function(){
+        var header = document.getElementById("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="background">
-            <div class="circle">
-                <p class="circle__text">01</p>
-            </div>
-            <div class="circle"></div>
+      <div class="background">
+        <div class="circle">
+          <p class="circle__text">01</p>
         </div>
-
-        <div class="wrapper__aboutus ruen-abus anchor" id="wrapper__aboutus">
-                <div class="aboutus" id="aboutus">
-                    <div class="aboutus__main">
-
-                        <div class="container cont__dev" id = "header">
-                        <div class="aboutus__nav">
-                            <div class="aboutus__menu device">
-                                    <img id="slidemenu" src="img\menu.svg" alt="">
-                            </div>
-                            <div class="nav__logo" >
-                                <a href="#wrapper__aboutus">
-                                    <img src="img\logo.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="nav__links">
-                                <a href="#wrapper__services" class="link">Наши Услуги</a>
-                                <a href="#wrapper__choise" class="link">Почему Мы</a>
-                                <a href="#wrapper__numbers" class="link">О Нас В Цифрах</a>
-                                <a href="#wrapper__contacts" class="link">Контакты</a>
-                            </div>
-                            <div class="left">
-                                <a class="nav__button call" id="call"><p>Позвонить</p></a>
-                                <div class="nav__language">
-                                    <div class="language__active">
-                                        <a class="active__text">rus</a>
-                                        <img class="arr" src="img\triangle.svg" alt="">
-                                    </div>
-                                    <div class="language__items">
-                                        <a href="lv.html" class="language__item">lv</a>
-                                        <a href="en.html" class="language__item">eng</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <script>
-                              window.addEventListener("scroll", function(){
-                                var header = document.getElementById("header");
-                                header.classList.toggle("sticky", window.scrollY > 0);
-                              })
-                            </script>
-                        </div>
-                        </div>
-
-                        <div class="container" id="second_section">
-                        <div class="aboutus__jumbotron">
-                            <div class="content__mousescroll device">
-                                <img src="img\scroll.svg" alt="">
-                            </div>
-                            <div class="jumbotron__img desctop">
-                                <img src="img\jumb-img.svg" alt="">
-                            </div>
-                            <div class="jumbotron__content">
-                                <p class="subtitle">Ispace - интернет агенство</p>
-                                <h1 class="title">IT решения <br/>
-                                    для вашего бизнеса </h1>
-                                <ul class="content__capabilities">
-                                    <li>Разработка веб-сайтов</li>
-                                    <li>Веб-дизайн</li>
-                                    <li>Программирование</li>
-                                </ul>
-                                <ul class="content__features">
-                                    <li>
-                                        <img src="img\wallet.svg" alt="">
-                                        <p>Невысокие цены</p>
-                                    </li>
-                                    <li>
-                                        <img src="img\medal.svg" alt="">
-                                        <p>Качественная работа в срок</p>
-                                    </li>
-                                </ul>
-                                <ul class="content__buttons">
-                                    <a class="button aboutus-alert desctop anchor">О Нас</a>
-                                    <a class="button works-alert desctop">Текущие Работы</a>
-                                </ul>
-                            </div>
-                            <div class="content__mousescroll desctop">
-                                <img src="img\scroll.svg" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    </div>
+        <div class="circle"></div>
+      </div>
+      <div class="wrapper__aboutus anchor" id="wrapper__aboutus">
+        <div class="aboutus" id="aboutus">
+          <div class="aboutus__main">
+            <div class="aboutus__nav" id="header">
+              <div class="aboutus__menu device">
+                <img id="slidemenu" src="img\menu.svg" alt="">
+              </div>
+              <div class="nav__logo">
+                <a href="index.html"><img src="img\logo.svg" alt=""></a>
+              </div>
+              <div class="nav__links">
+                <a href="#wrapper__services" class="link href1">Наши Услуги</a>
+                <a href="#wrapper__choise" class="link">Почему Мы</a>
+                <a href="#wrapper__numbers" class="link">О Нас В Цифрах</a>
+                <a href="#wrapper__contacts" class="link">Контакты</a>
+              </div>
+              <div class="left">
+                <a class="nav__button call" id="call"><p>Позвонить</p></a>
+                <div class="nav__language">
+                  <div class="language__active">
+                    <a class="active__text">rus</a>
+                    <img class="arr" src="img\triangle.svg" alt="">
+                  </div>
+                  <div class="language__items">
+                    <a href="lv.html" class="language__item">lv</a>
+                    <a href="en.html" class="language__item">eng</a>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="aboutus__jumbotron">
+                <div class="content__mousescroll device">
+                  <img src="img\scroll.svg" alt="">
+                </div>
+                <div class="jumbotron__img">
+                  <img src="img\jumb-img.svg" alt="">
+                </div>
+                <div class="jumbotron__content">
+                  <p class="subtitle">Ispace - интернет агенство</p>
+                  <h1 class="title">IT решения <br> для вашего бизнеса </h1>
+                    <ul class="content__capabilities">
+                      <li>Разработка веб-сайтов</li>
+                      <li>Веб-дизайн</li>
+                      <li>Программирование</li>
+                    </ul>
+                    <ul class="content__features">
+                      <li>
+                        <img src="img\wallet.svg" alt="">
+                          <p>Невысокие цены</p>
+                      </li>
+                      <li>
+                        <img src="img\medal.svg" alt="">
+                          <p>Качественная работа в срок</p>
+                      </li>
+                    </ul>
+                    <ul class="content__buttons">
+                      <a class="button aboutus-alert desctop anchor">О Нас</a>
+                      <a class="button works-alert desctop">Текущие Работы</a>
+                      <a class="button aboutus-alert device">Узнать Больше</a>
+                    </ul>
+                  </div>
+                  <div class="content__mousescroll desctop">
+                      <img src="img\scroll.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__services">
+          <div id="wrapper__services"></div>
+          <div class="services__background">
+            <h1 class="background__title">Услуги</h1>
+          </div>
+          <div class="container">
+            <div class="services">
+              <h2 class="h2__title">Наши Услуги</h2>
+              <div class="serv">
+                <div class="services__items">
+                  <div class="item">
+                    <img src="img\prod.svg" class="item__img" alt="">
+                    <p class="item__text anchor">Создание сайтов</p>
+                  </div>
+                  <div class="item">
+                    <img src="img\mobile-phone.svg" class="item__img" alt="">
+                      <p class="item__text" style="font-size: 20px;">Разработка мобильных приложений</p>
+                  </div>
+                </div>
+                <div class="services__items">
+                  <div class="item">
+                    <img src="img\design.svg" class="item__img" alt="">
+                    <p class="item__text">Веб-дизайн</p>
+                  </div>
+                  <div class="item">
+                    <img src="img\web-browser.svg" class="item__img" alt="">
+                    <p class="item__text">Базы данных и CMS</p>
+                  </div>
+                </div>
+                <div class="services__items">
+                  <div class="item">
+                    <img src="img\advert.svg" class="item__img" alt="">
+                    <p class="item__text">Seo и Продвижение</p>
+                  </div>
+                  <div class="item">
+                    <img src="img\repair.svg" class="item__img" alt="">
+                    <p class="item__text">Правки уже готовых проектов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__choise">
+            <div id="wrapper__choise"></div>
+            <div class="choise__background">
+              <h1 class="background__title">Почему Мы</h1>
+            </div>
+            <div class="choise__content">
+              <div class="container">
+                <h2 class="h2__title">Почему Мы?</h2>
+                  <div class="content">
+                    <div class="choise__img desctop">
+                      <img src="img\choise-back.svg" alt="">
+                    </div>
+                    <div class="choise__items">
+                      <ul class="content__items">
+                        <li class="item">
+                          <div class="rect">
+                            <div class="item__content">
+                              <img src="img\rectangle.svg" alt="">
+                              <p>Невысокие расценки на весь спектр услуг</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="rect">
+                            <div class="item__content">
+                              <img src="img\rectangle.svg" alt="">
+                              <p class="anchor">Всю работу выполняем сами, своей командой </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="rect">
+                            <div class="item__content ">
+                              <img src="img\rectangle.svg" alt="">
+                              <p>Постоянно на связи с клиентами по всем вопросам </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="rect">
+                            <div class="item__content ">
+                              <img src="img\rectangle.svg" alt="">
+                              <p>Поэтапная оплата, не надо сразу платить всю сумму</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="under">
+              <div id="wrapper__numbers"></div>
+              <div class="container">
+                <div class="under__title h2__title">Своей работой мы помогаем расти вашему бизнесу в web-простанстве.</div>
+                  <div class="under__img device">
+                    <img src="img\choise-back.svg" alt="">
+                  </div>
+              </div>
+            </div>
+            <div class="wrapper__numbers">
+              <div class="numbers__background">
+                <h1 class="background__title">Цифры</h1>
+              </div>
+              <div class="numbers__content">
+                <div class="container">
+                  <div class="numbers">
+                    <h2 class="h2__title anchor">О нас в цифрах</h2>
+                    <div class="numbers__content">
+                      <div class="content__img">
+                        <img src="img\numbers.svg" alt="">
+                      </div>
+                      <div class="numbers__blocks">
+                        <div class="block__row">
+                          <div class="block">
+                            <div class="block__content">
+                              <h3 class="block__title">Выполненных проектов</h3>
+                              <p class="block__subtitle">44</p>
+                            </div>
+                          </div>
+                          <div class="block">
+                            <div class="block__content">
+                              <h3 class="block__title">Лет на рынке </h3>
+                              <p class="block__subtitle" id="seven">7</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="block">
+                          <div class="block__content">
+                            <h3 class="block__title" id="res">Знание языков </h3>
+                            <p class="block__subtitle">HTML, CSS, Jquery, PHP, Java Script, SQL, JAVA, Python</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-        </div>
+            <div class="wrapper__contacts">
+              <div id="wrapper__contacts"></div>
+              <div class="contacts__background">
+                <div class="circle"></div>
+                <h1 class="background__title">Контакты</h1>
+              </div>
+              <div class="container">
+                <div class="contacts">
+                  <h2 class="h2__title anchor">Контакты</h2>
+                  <div class="contacts__content">
+                    <div class="contacts__datas">
+                      <div class="content">
+                        <ul class="contacts__items">
+                          <h2 class="h2__title">Контакты</h2>
+                          <li class="item item1">
+                            <h2 class="item__title">Телефон :</h2>
+                            <h3 class="item__subtitle">+ (371) 26858674</h3>
+                          </li>
+                          <li class="item item1">
+                            <h2 class="item__title">E-mail:</h2>
+                            <h3 class="item__subtitle">dsriga@gmail.com</h3>
+                          </li>
+                          <li class="item item1">
+                            <h2 class="item__title">Адрес офиса:</h2>
+                            <h3 class="item__subtitle">Slokas 52 (LV-1007) Рига, Латвия</h3>
+                          </li>
+                          <li class="item item1" id="pe2">
+                            <h2 class="item__title">Время работы :</h2>
+                            <h3 class="item__subtitle">Ежедневно</h3>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="contacts__map">
+                      <iframe class="desctop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.710162515062!2d24.060934615977462!3d56.95376688089159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecffd5268be5f%3A0xc439fb05a5f73f44!2zU2xva2FzIGllbGEgNTIsIEt1cnplbWVzIHJham9ucywgUsSrZ2EsIExWLTEwMDcsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1605369204062!5m2!1sru!2sua" width="1170" height="545" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                      <iframe class="device" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.710162515062!2d24.060934615977462!3d56.95376688089159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecffd5268be5f%3A0xc439fb05a5f73f44!2zU2xva2FzIGllbGEgNTIsIEt1cnplbWVzIHJham9ucywgUsSrZ2EsIExWLTEwMDcsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1605369204062!5m2!1sru!2sua" width="769" height="545" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="contacts__rect desctop"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper__form">
+              <div class="container">
+                <div class="form">
+                  <div class="form__content">
+                    <h2 class="h2__title">Оставьте вашу заявку, мы свяжемся с вами в ближайшее время.</h2>
+                    <form class="desctop" action="form.php" method="POST">
+                      <input placeholder="Имя" type="text">
+                      <input placeholder="Тел./E-mail" type="text">
+                      <input placeholder="Ваше сообщение" type="text">
+                      <button class="button cont__btn" href="">Отправить</button>
+                    </form>
+                    <div class="device">
+                      <form action="form.php" method="POST">
+                        <input placeholder="Напишите ваше имя" type="text">
+                        <input placeholder="Напишите контактный номер" type="number">
+                        <input placeholder="Введите E’Mail" type="text">
+                        <input placeholder="Опишите заявку" type="text">
+                        <button class="button cont__btn" href="">Оставить заявку</button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="form__img">
+                    <img src="img\form.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper__footer  anchor">
+              <div class="container">
+                <div class="footer desctop">
+                  <div class="footer__column">
+                    <a href="index.html" class="logo">
+                      <img src="img\logo.svg" alt="">
+                    </a>
+                    <p class="footer__text">Обслуживание клиентов</p>
+                    <p class="footer__text">Телефон - + (371) 26858674</p>
+                    <a id="call" class="call button foot__btn">Позвонить</a>
+                  </div>
+                  <div class="footer__column information ">
+                    <h2 class="h2__title">Информация</h2>
+                    <a class="footer__text aboutus-alert">О Нас</a>
+                    <a href="#wrapper__services" class="footer__text">Наши Услуги</a>
+                    <a class="footer__text works-alert">Текущие работы</a>
+                    <a href="#wrapper__choise" class="footer__text">Почему Мы</a>
+                    <a href="#wrapper__numbers" class="footer__text">О Нас В Цифрах</a>
+                    <a href="#wrapper__contacts" class="footer__text">Контакты</a>
+                  </div>
+                  <div class="footer__column contact__col">
+                    <h2 class="h2__title">Контакты</h2>
+                    <ul class="contacts__items">
+                      <li class="item">
+                        <h2 class="item__title">Телефон :</h2>
+                        <h3 class="item__subtitle">+ (371) 26858674</h3>
+                      </li>
+                      <li class="item">
+                        <h2 class="item__title">E-mail:</h2>
+                        <h3 class="item__subtitle">dsriga@gmail.com</h3>
+                      </li>
+                      <li class="item">
+                        <h2 class="item__title">Адрес офиса:</h2>
+                        <h3 class="item__subtitle">Slokas 52 (LV-1007) Рига, Латвия</h3>
+                      </li>
+                      <li class="item">
+                        <h2 class="item__title">Время работы :</h2>
+                        <h3 class="item__subtitle">Ежедневно</h3>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer__buttons">
+                    <a href="#wrapper__aboutus" class="button__up">
+                      <img src="img\arrow-up.svg" alt="">
+                    </a>
+                    <a id="call" class="call button__phone">
+                      <img src="img\phone.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="button__facebook">
+                      <img src="img\facebook.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="footer device">
+                  <div class="column">
+                    <div class="footer__column">
+                    <a href="index.html" class="logo">
+                      <img src="img\logo.svg" alt="">
+                    </a>
+                    <p class="footer__text">Обслуживание клиентов</p>
+                    <p class="footer__text">Телефон - + (371) 26858674</p>
+                    <a id="call" class="call button foot__btn">Позвонить</a>
+                  </div>
+                  <div class="footer__column">
+                    <div class="info">
+                      <a class="footer__text aboutus-alert">О Нас</a>
+                      <a class="footer__text works-alert">Текущие работы</a>
+                      <a href="#wrapper__services" class="footer__text">Наши Услуги</a>
+                      <a href="#wrapper__choise" class="footer__text">Почему Мы</a>
+                      <a href="#wrapper__numbers" class="footer__text">О Нас В Цифрах</a>
+                      <a href="#wrapper__contacts" class="footer__text">Контакты</a>
+                    </div>
+                    <h2 class="h2__title">Контакты</h2>
+                    <ul class="contacts__items">
+                      <li class="item item1">
+                        <h2 class="item__title">Адрес офиса:</h2>
+                        <h3 class="item__subtitle">Slokas 52 (LV-1007) Рига, Латвия</h3>
+                      </li>
+                      <li class="item item1">
+                        <h2 class="item__title">Время работы :</h2>
+                        <h3 class="item__subtitle">Ежедневно</h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__buttons">
+                  <a href="#wrapper__aboutus" class="button__up">
+                    <img src="img\arrow-up.svg" alt="">
+                  </a>
+                  <a class="button__instagram">
+                    <img src="img\instagram.svg" alt="">
+                  </a>
+                  <a class="button__telegram">
+                    <img src="img\telegram.svg" alt="">
+                  </a>
+                  <a href="https://www.facebook.com/" target="_blank" class="button__facebook">
+                    <img src="img\facebook.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <p class="footer__text__down">Ipsace 2020. Все права защищены.</p>
+            </div>
+          </div>
 
-        <div class="wrapper__services" id="wrapper__services">
+
           <div class="wrapper__aside">
               <a class="arrow-up" href="#wrapper__aboutus">
                   <img src="img\arrow-up-orange.svg" alt="">
@@ -130,476 +425,139 @@
                   <img src="img\facebook-blue.svg" alt="">
               </a>
           </div>
-            <div class="services__background">
-                <h1 class="background__title" id="background_title_1">Услуги</h1>
-            </div>
-            <div class="container">
-                <div class="services">
-                    <h2 class="h2__title">Наши Услуги</h2>
-                    <div class="serv">
-                        <div class="services__items">
-                            <div class="item">
-                                <img src="img\prod.svg" class="item__img" alt="">
-                                <p class="item__text anchor">Создание сайтов
-                                </p>
-                            </div>
-                            <div class="item">
-                                <img src="img\mobile-phone.svg" class="item__img" alt="">
-                                <p class="item__text" style="font-size: 20px;">Разработка мобильных приложений
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="services__items">
-                            <div class="item">
-                                <img src="img\design.svg" class="item__img" alt="">
-                                <p class="item__text">Веб-дизайн
-                                </p>
-                            </div>
-                            <div class="item">
-                                <img src="img\web-browser.svg" class="item__img" alt="">
-                                <p class="item__text">Базы данных и CMS
-                                    </p>
-                            </div>
-                        </div>
-
-                        <div class="services__items">
-                            <div class="item">
-                                <img src="img\advert.svg" class="item__img" alt="">
-                                <p class="item__text">Seo и Продвижение
-                                </p>
-                            </div>
-                            <div class="item">
-                                <img src="img\repair.svg" class="item__img" alt="">
-                                <p class="item__text">Правки уже готовых проектов
-                                </p>
-                            </div>
-                        </div>
+        </div>
+        <div class="alert alert__wrapper__call">
+            <div class="alert__call">
+                <div class="btn__close" id="close">
+                    <img src="img\close.svg" alt="">
+                </div>
+                <div class="call__content">
+                    <h2 class="h2__title">Сделать заказ и получить больше информации по IT разработкам : </h2>
+                    <ul class="content__info">
+                        <li>
+                            <p class="first">Тел. :</p>
+                            <p class="second"> +(371) 26858674 </p>
+                        </li>
+                        <li class="subtitle">(Whats App/Telegram/Viber)</li>
+                        <li>
+                            <p class="first">E-mail: </p>
+                            <p class="second"> dsriga@gmail.com</p>
+                        </li>
+                    </ul>
+                    <div class="logo">
+                        <a href="index.html"><img src="img\logo.svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="alert alert__wrapper__aboutus">
+            <div class="alert__aboutus">
 
-        <div class="wrapper__choise" id="wrapper__choise">
-            <div class="choise__background">
-                <h1 class="background__title">Почему Мы</h1>
-            </div>
-            <div class="choise__content">
-                <div class="container">
-                    <h2 class="h2__title">Почему Мы?</h2>
-                    <div class="content">
-                        <div class="choise__img desctop">
-                            <img src="img\choise-back.svg" alt="">
-                        </div>
-                        <div class="choise__items">
-                            <ul class="content__items">
-                                <li class="item">
-                                    <div class="rect">
-                                      <div class="item__content">
-                                          <img src="img\rectangle.svg" alt="">
-                                          <p>Невысокие расценки на весь спектр услуг</p>
-                                      </div>
-                                    </div>
-
-                                </li>
-                                <li class="item">
-                                    <div class="rect">
-                                      <div class="item__content">
-                                          <img src="img\rectangle.svg" alt="">
-                                          <p class="anchor">Всю работу выполняем сами, своей командой </p>
-                                      </div>
-                                    </div>
-
-                                </li>
-                                <li class="item  ">
-                                    <div class="rect">
-                                      <div class="item__content ">
-                                          <img src="img\rectangle.svg" alt="">
-                                          <p>Постоянно на связи с клиентами по всем вопросам </p>
-                                      </div>
-                                    </div>
-
-                                </li>
-                                <li class="item">
-                                    <div class="rect">
-                                      <div class="item__content ">
-                                          <img src="img\rectangle.svg" alt="">
-                                          <p>Поэтапная оплата, не надо сразу платить всю сумму</p>
-                                      </div>
-                                    </div>
-
-                                </li>
-                            </ul>
-                        </div>
+                <div class="aboutus__content">
+                    <div class="btn__close" id="close">
+                    <img src="img\close.svg" alt="">
+                </div>
+                    <h2 class="h2__title">Главная / О нас</h2>
+                    <p>Интернет агенство "Ispace" предлагает своим клиентам полный спектр услуг по созданию, обслуживанию и продвижению ИТ проектов. Мы разрабатываем : веб-сайты, административные панели, мобильные приложения, программный Софт. Также создаем для ваших коммерческих и частных проектов веб-дизайн любой сложности. Отлично работаем с SEO технологией по продвижению сайтов, делаем полную оптимизацию по развитию ваших товаров и услуг в Google, Yandex .. также Instagram, Facebook. Работаем уже с готовыми сайтами, вносим любые правки. Все виды работ по фронт и бэк-энду.  </p>
+                    <p>За всей подробной информацией вы всегда можете обратиться к нам по телефону или написать на эл.почту. </p>
+                    <h3>Будем рады сотрудничеству. </h3>
+                    <div class="logo">
+                        <a href="index.html"><img src="img\logo.svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="under" id="wrapper__numbers" >
-            <div class="container">
-                <div class="under__title h2__title">Своей работой мы помогаем рости вашему бизнесу в web-простанстве.
-                </div>
-
-                <div class="under__img device">
-                    <img src="img\choise-back.svg" alt="">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="wrapper__numbers" >
-            <div class="numbers__background">
-                <h1 class="background__title">Цифры</h1>
-            </div>
-            <div class="numbers__content">
-                <div class="container">
-                    <div class="numbers">
-                        <h2 class="h2__title anchor">О нас в цифрах </h2>
-                        <div class="numbers__content">
-                            <div class="content__img">
-                                <img src="img\numbers.svg" alt="">
-                            </div>
-                            <div class="numbers__blocks">
-                                <div class="block__row">
-                                    <div class="block">
-                                        <div class="block__content">
-                                            <h3 class="block__title">Выполненных проектов</h3>
-                                            <p class="block__subtitle">44</p>
-                                        </div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="block__content">
-                                            <h3 class="block__title">Лет на рынке </h3>
-                                            <p class="block__subtitle">7</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="block">
-                                    <div class="block__content">
-                                        <h3 class="block__title">Знание языков </h3>
-                                        <p class="block__subtitle">HTML, CSS, Jquery, PHP, Java Script, SQL, JAVA, Python</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrapper__contacts" id="wrapper__contacts">
-            <div class="contacts__background">
-                <div class="circle"></div>
-                <h1 class="background__title">К<div class="blue">о</div>нтакты</h1>
-            </div>
-            <div class="container">
-                <div class="contacts">
-                    <h2 class="h2__title anchor">Контакты</h2>
-                    <div class="contacts__content">
-                        <div class="contacts__datas">
-                            <div class="content">
-                                <ul class="contacts__items">
-                                    <h2 class="h2__title">Контакты</h2>
-                                    <li class="item">
-                                        <h2 class="item__title">Телефон :</h2>
-                                        <h3 class="item__subtitle">+ (371) 26858674</h3>
-                                    </li>
-                                    <li class="item">
-                                        <h2 class="item__title">E-mail:</h2>
-                                        <h3 class="item__subtitle">dsriga@gmail.com</h3>
-                                    </li>
-                                    <li class="item">
-                                        <h2 class="item__title">Адрес офиса:</h2>
-                                        <h3 class="item__subtitle">Slokas 52 (LV-1007) Рига, Латвия</h3>
-                                    </li>
-                                    <li class="item">
-                                        <h2 class="item__title">Время работы :</h2>
-                                        <h3 class="item__subtitle">Ежедневно</h3>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="contacts__map">
-                            <iframe class="desctop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.710162515062!2d24.060934615977462!3d56.95376688089159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecffd5268be5f%3A0xc439fb05a5f73f44!2zU2xva2FzIGllbGEgNTIsIEt1cnplbWVzIHJham9ucywgUsSrZ2EsIExWLTEwMDcsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1605369204062!5m2!1sru!2sua" width="1170" height="545" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            <iframe class="device" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2175.7101613996933!2d24.063123!3d56.9537669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU3JzEzLjYiTiAyNMKwMDMnNDcuMiJF!5e0!3m2!1sru!2sua!4v1605957028259!5m2!1sru!2sua" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                        <div class="contacts__rect desctop" id="square"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrapper__form">
-            <div class="container">
-                <div class="form">
-                    <div class="form__content">
-                        <h2 class="h2__title">Оставьте вашу заявку, мы свяжемся с вами в ближайшее время.</h2>
-
-                        <form class="desctop" action="">
-                            <input placeholder="Имя" type="text">
-                            <input placeholder="Тел./E-mail" type="text">
-                            <input placeholder="Ваше сообщение" type="text">
-                            <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
-                            <a class="button cont__btn" href="">Отправить</a>
-                        </form>
-
-                        <div class="device">
-
-                            <form action="">
-                                <input placeholder="Напишите ваше имя" type="text">
-                                <input placeholder="Напишите контактный номер" type="number">
-                                <input placeholder="Введите E’Mail" type="text">
-                                <input placeholder="Опишите заявку" type="text">
-                                <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
-                                <a class="button cont__btn" href="">Оставить заявку</a>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="form__img">
-                        <img src="img\form.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrapper__footer  anchor">
-            <div class="container">
-                <div class="footer desctop">
-                    <div class="footer__column">
-                        <a href="#wrapper__aboutus" class="logo">
-                            <img src="img\logo.svg" alt="">
-                        </a>
-                        <p class="footer__text">Обслуживание клиентов</p>
-                        <p class="footer__text">Телефон - + (371) 26858674</p>
-                        <a id="call" class="call button foot__btn">Позвонить</a>
-                    </div>
-                    <div class="footer__column information ">
-                        <h2 class="h2__title">Информация</h2>
-                        <a  class="footer__text aboutus-alert">О Нас</a>
-                        <a href="#wrapper__services" class="footer__text">Наши Услуги</a>
-                        <a  class="footer__text works-alert">Текущие работы</a>
-                        <a href="#wrapper__choise" class="footer__text">Почему Мы</a>
-                        <a href="#wrapper__numbers" class="footer__text">О Нас В Цифрах</a>
-                        <a href="#wrapper__contacts" class="footer__text">Контакты</a>
-                    </div>
-                    <div class="footer__column contact__col">
-                        <h2 class="h2__title">Контакты</h2>
-                        <ul class="contacts__items">
-                            <li class="item">
-                                <h2 class="item__title">Телефон :</h2>
-                                <h3 class="item__subtitle">+ (371) 26858674</h3>
-                            </li>
-                            <li class="item">
-                                <h2 class="item__title">E-mail:</h2>
-                                <h3 class="item__subtitle">dsriga@gmail.com</h3>
-                            </li>
-                            <li class="item">
-                                <h2 class="item__title">Адрес офиса:</h2>
-                                <h3 class="item__subtitle">Slokas 52 (LV-1007) Рига, Латвия</h3>
-                            </li>
-                            <li class="item">
-                                <h2 class="item__title">Время работы :</h2>
-                                <h3 class="item__subtitle">Ежедневно</h3>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__buttons">
-                        <a href="#wrapper__aboutus" class="button__up">
-                            <img src="img\arrow-up.svg" alt="">
-                        </a>
-                        <a id="call" class="call button__phone">
-                            <img src="img\phone.svg" alt="">
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank" class="button__facebook">
-                            <img src="img\facebook.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer device">
-                    <div class="column">
-                        <div class="footer__column">
-                            <a href="#wrapper__aboutus" class="logo">
-                                <img src="img\logo.svg" alt="">
-                            </a>
-                            <p class="footer__text">Обслуживание клиентов</p>
-                            <p class="footer__text">Телефон - + (371) 26858674</p>
-                            <a id="call" class="call button foot__btn">Позвонить</a>
-                        </div>
-                        <div class="footer__column">
-                            <div class="info">
-                                <a  class="footer__text aboutus-alert">О Нас</a>
-                                <a href="#wrapper__services" class="footer__text" href="">Наши Услуги</a>
-                                <a href="#wrapper__choise" class="footer__text">Почему Мы</a>
-                            </div>
-                            <h2 class="h2__title">Контакты</h2>
-                            <ul class="contacts__items">
-                                <li class="item">
-                                    <h2 class="item__title">Адрес офиса:</h2>
-                                    <h3 class="item__subtitle">Slokas 52 (LV-1007) Рига, Латвия</h3>
-                                </li>
-                                <li class="item">
-                                    <h2 class="item__title">Время работы :</h2>
-                                    <h3 class="item__subtitle">Ежедневно</h3>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__buttons">
-                        <a href="#wrapper__aboutus" class="button__up">
-                            <img src="img\arrow-up.svg" alt="">
-                        </a>
-                        <a class="button__instagram">
-                            <img src="img\instagram.svg" alt="">
-                        </a>
-                        <a class="button__telegram">
-                            <img src="img\telegram.svg" alt="">
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank" class="button__facebook">
-                            <img src="img\facebook.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <p class="footer__text__down">Ipsace 2020. Все права защищены.</p>
-            </div>
-        </div>
-        <!--
-        <div class="aside">
-            <span></span>
-            <div class="arrow"></div>
-            <div class="phone"></div>
-            <div class="facebook"></div>
-            <span></span>
-        </div>
-    -->
-
-
-
-
-
-    </div>
-
-<div class="alert alert__wrapper__call">
-    <div class="alert__call">
-        <div class="btn__close" id="close">
-            <img src="img\close.svg" alt="">
-        </div>
-        <div class="call__content">
-            <h2 class="h2__title">Сделать заказ и получить больше информации по IT разработкам : </h2>
-            <ul class="content__info">
+        <div class="alert alert__wrapper__works">
+          <div class="alert__works">
+            <div class="works__content">
+              <div class="btn__close" id="close">
+                <img src="img\close.svg" alt="">
+              </div>
+              <h2 class="h2__title">Главная / Текущие работы</h2>
+              <p>Работы в процессе : </p>
+              <ul>
                 <li>
-                    <p class="first">Тел. :</p>
-                    <p class="second"> +(371) 26858674 </p>
+                  <a href="" class="work__link">
+                    <p class="link__text">Сайт автомойки Washline</p>
+                    <img src="img\link.svg" alt="">
+                  </a>
                 </li>
-                <li class="subtitle">(Whats App/Telegram/Viber)</li>
                 <li>
-                    <p class="first">E-mail: </p>
-                    <p class="second"> dsriga@gmail.com</p>
+                  <a href="" class="work__link">
+                    <p class="link__text">Сайт Интернет магазина Salemarket</p>
+                    <img src="img\link.svg" alt="">
+                  </a>
                 </li>
-            </ul>
-            <div class="logo">
-                <img src="img\logo.svg" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="alert alert__wrapper__aboutus">
-    <div class="alert__aboutus">
-        <div class="btn__close" id="close">
-            <img src="img\close.svg" alt="">
-        </div>
-        <div class="aboutus__content">
-            <h2 class="h2__title">Главная / О нас</h2>
-            <p>Интернет агенство "Ispace" предлагает своим клиентам полный спектр услуг по созданию, обслуживанию и продвижению ИТ проектов. Мы разрабатываем : веб-сайты, административные панели, мобильные приложения, программный Софт. Также создаем для ваших коммерческих и частных проектов веб-дизайн любой сложности. Отлично работаем с SEO технологией по продвижению сайтов, делаем полную оптимизацию по развитию ваших товаров и услуг в Google, Yandex .. также Instagram, Facebook. Работаем уже с готовыми сайтами, вносим любые правки. Все виды работ по фронт и бэк-энду.  </p>
-            <p>За всей подробной информацией вы всегда можете обратиться к нам по телефону или написать на эл.почту. </p>
-            <h3>Будем рады сотрудничеству. </h3>
-            <div class="logo">
-                <img src="img\logo.svg" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="alert alert__wrapper__works">
-    <div class="alert__works">
-        <div class="btn__close" id="close">
-            <img src="img\close.svg" alt="">
-        </div>
-        <div class="works__content">
-            <h2 class="h2__title">Главная / Текущие работы</h2>
-            <p>Работы в процессе : </p>
-            <ul>
-                <li>
+                 <li>
                     <a href="" class="work__link">
-                        <p class="link__text">Сайт автомойки Washline</p>
+                      <p class="link__text">Сайт агентства недвижимости <br> Pro Estate </p>
                         <img src="img\link.svg" alt="">
                     </a>
                 </li>
-                <li>
-                    <a href="" class="work__link">
-                        <p class="link__text">Сайт Интернет магазина Salemarket</p>
-                        <img src="img\link.svg" alt="">
-                    </a>
+                 <li>
+                  <a href="" class="work__link">
+                    <p class="link__text">Сайт автосервиса BP Auto</p>
+                    <img src="img\link.svg" alt="">
+                  </a>
                 </li>
-            </ul>
-            <div class="logo">
-                <img src="img\logo.svg" alt="">
+                <li>
+                  <a href="" class="work__link">
+                    <p class="link__text">Сайт для компании по автоподбору </p>
+                    <img src="img\link.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="logo" id="oi">
+                  <a href="index.html"><img src="img\logo.svg" alt=""></a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-
-<div class="wrapper__menu">
-    <div class="nav__links">
-        <div class="links">
-            <div class="logo menulogo">
+        <div class="wrapper__menu">
+          <div class="nav__links">
+            <div class="links">
+              <div class="logo menulogo">
                 <a href="#wrapper__aboutus">
-                    <img src="img\logo.svg" alt="">
+                  <img src="img\logo.svg" alt="">
                 </a>
-            </div>
-            <a  class="link aboutus-alert">О Нас</a>
-            <a class="link works-alert">Текущие работы</a>
-            <a href="#wrapper__services" class="link">Наши Услуги</a>
-            <a href="#wrapper__choise" class="link">Почему Мы</a>
-            <a href="#wrapper__numbers" class="link">О Нас В Цифрах</a>
-            <a href="#wrapper__contacts" class="link">Контакты</a>
-            <ul class="content__info">
+              </div>
+              <a class=" links1 aboutus-alert">О Нас</a>
+              <a class=" links1 works-alert">Текущие работы</a>
+              <a href="#wrapper__services" class="link">Наши Услуги</a>
+              <a href="#wrapper__choise" class="link">Почему Мы</a>
+              <a href="#wrapper__numbers" class="link">О Нас В Цифрах</a>
+              <a href="#wrapper__contacts" class="link">Контакты</a>
+              <ul class="content__info">
                 <li>
-                    <p class="first">Тел. :</p>
-                    <p class="second"> +(371) 26858674 </p>
+                  <p class="first">Тел. :</p>
+                  <p class="second"> +(371) 26858674 </p>
                 </li>
                 <li class="subtitle">(Whats App/Telegram/Viber)</li>
                 <li>
-                    <p class="first">E-mail: </p>
-                    <p class="second"> dsriga@gmail.com</p>
+                  <p class="first">E-mail: </p>
+                  <p class="second"> dsriga@gmail.com</p>
                 </li>
-            </ul>
-            <div class="menu__language">
+              </ul>
+              <div class="menu__language">
                 <div class="language__items">
-                    <a href="index.html" class="active__lang language__item">
-                        <img src="img\russia.svg" alt="">
-                    </a>
-                    <a href="lv.html"class="language__item">
-                        <img src="img\latvia.svg" alt="">
-                    </a>
-                    <a href="en.html" class="language__item">
-                        <img src="img\united-kingdom.svg" alt="">
-                    </a>
+                  <a href="index.html" class="active__lang language__item">
+                    <img src="img\russia.svg" alt="">
+                  </a>
+                  <a href="lv.html" class="language__item">
+                    <img src="img\latvia.svg" alt="">
+                  </a>
+                  <a href="en.html" class="language__item">
+                    <img src="img\united-kingdom.svg" alt="">
+                  </a>
                 </div>
+              </div>
             </div>
+            <div class="btn__close" id="close">
+                <img src="img\close.svg" alt="">
+            </div>
+          </div>
         </div>
-        <div class="btn__close" id="close">
-            <img src="img\close.svg" alt="">
-        </div>
-    </div>
-</div>
-
-
-
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="script.js"></script>
-</body>
+
+  </body>
 </html>
