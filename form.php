@@ -21,7 +21,7 @@
   $email = trim($email);
   $text = trim($text);
 
-  if (mail("novikovn383@gmail.com", "Заявка с сайта", "ФИО:".$name. ". Телефон:".$number.". Текст: ". $text.". E-mail: ".$email ,"From: nikolaynovikov333@gmail.com \r\n"))
+  if (mail("novikovn383@gmail.com", "Заявка с сайта", "ФИО:".$name. ". Телефон:".$number.". Текст: ". $text. ,"From: nikolaynovikov333@gmail.com \r\n"))
    {     echo "сообщение успешно отправлено";
   } else {
       echo "при отправке сообщения возникли ошибки";
