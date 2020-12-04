@@ -2376,6 +2376,12 @@ margin: auto;
 }
 }
 @media screen and (max-width: 500px) {
+  .wrapper__choise .choise__content .content__items .item{
+    height: auto;
+  }
+  .wrapper__choise .choise__content .content__items .item .rect{
+    height: auto !important;
+  }
   .content__item{
    padding: 0px;
   }
@@ -3020,12 +3026,4 @@ margin-bottom: 20px;
    position: relative;
    top: 50px;
    }
-}
-@media screen and (max-width: 400px){
-  .wrapper__choise .choise__content .content__items .item{
-    height: auto;
-  }
-  .wrapper__choise .choise__content .content__items .item .rect{
-    height: auto !important;
-  }
 }
