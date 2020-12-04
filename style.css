@@ -2381,12 +2381,12 @@ margin: auto;
     font-size: 100px;
   }
   .wrapper__contacts .contacts .contacts__content .contacts__map{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 }
 @media screen and (max-width: 500px) {
   .wrapper__contacts .contacts .contacts__content .contacts__map{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
   .wrapper__choise .choise__content .content__items .item{
     height: auto;
