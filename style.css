@@ -1752,8 +1752,9 @@ display: none;
     margin-left: 30px;
   }
   .desctop {
-    display: none !important;
+    display: none;
   }
+
 
   .wrapper__aside {
     display: none !important;
@@ -2518,7 +2519,7 @@ top: 0px;
     display: flex !important;
   }
   .desctop {
-    display: none !important;
+    display: none ;
   }
   .wrapper__aside {
     display: none !important;
