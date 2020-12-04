@@ -1069,6 +1069,12 @@ height: 55px;
   left: 1651.5px;
   top: -5px;
 }
+#contacs{
+  margin-top: 0px;
+}
+#las_title{
+  margin-top: 0px;
+}
 .aside span {
   width: 0px;
   height: 157px;
@@ -2373,9 +2379,15 @@ margin: auto;
   }
   .background__title {
     font-size: 100px;
-}
+  }
+  .wrapper__contacts .contacts .contacts__content .contacts__map{
+    margin-bottom: 100px;
+  }
 }
 @media screen and (max-width: 500px) {
+  .wrapper__contacts .contacts .contacts__content .contacts__map{
+    margin-bottom: 100px;
+  }
   .wrapper__choise .choise__content .content__items .item{
     height: auto;
   }
