@@ -2395,6 +2395,17 @@ margin: auto;
   }
 }
 @media screen and (max-width: 500px) {
+  #why_we{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .contacts>.h2__title{
+    top: -45px;
+  }
+  .h2__title{
+    margin-top: 40px;
+  }
   .form__content .h2__title{
     margin-top: -250px;
   }
