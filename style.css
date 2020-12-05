@@ -901,7 +901,7 @@ width: 100%;
   background-color: #021A58;
   color: white;
   padding: 57px 0 71px;
- margin: -7em 0 0 0 !important;
+ margin: -7em 0 0 0 ;
   width: 100%;
 }
 .wrapper__footer .footer {
@@ -1732,7 +1732,7 @@ display: none;
   }
    .wrapper__footer {
     width: 100% !important;
-    margin: -7em 0 0 0 !important;
+    margin: -7em 0 0 0;
     padding-top: 20px !important;
   }
 .wrapper__aboutus .aboutus__jumbotron .jumbotron__content {
@@ -2188,13 +2188,14 @@ width: 100%;
  .alert__wrapper__call .alert__call .call__content {
 
   }
-  .left{
 
-  }
 }
 @media (max-width: 700px) {
+  .wrapper__contacts .contacts .contacts__content{
+    margin-bottom: 10px;
+  }
   .form__content .h2__title{
-    margin-top: -550px;
+    margin-top: -650px;
   }
   .wrapper__choise .choise__content .content__items .item .rect{
     padding-top: 0px;
@@ -2228,7 +2229,7 @@ width: 100%;
  top: 3570px;
 }
   .wrapper__form .form .form__img {
-margin-top: 49px;
+margin-top: -100px;
   }
  .wrapper__choise .rect {
     width:  120vw !important;
@@ -2331,7 +2332,7 @@ iframe {
 }
 @media (max-width: 700px) {
   .wrapper__footer{
-    margin: -30em 0 0 0 !important
+    margin: -25em 0 0 0
   }
   .choise__content .h2__title{
     margin-top: 100px;
@@ -2394,6 +2395,9 @@ margin: auto;
   }
 }
 @media screen and (max-width: 500px) {
+  .form__content .h2__title{
+    margin-top: -250px;
+  }
   .wrapper__contacts .contacts .contacts__content .contacts__map{
     margin-bottom: 150px;
   }
@@ -2538,10 +2542,6 @@ top: 0px;
   }
   .wrapper__aboutus .aboutus__main .aboutus__nav .nav__links {
     display: none;
-  }
-  .wrapper__aboutus .aboutus__main .aboutus__nav .nav__logo {
-
-
   }
   .wrapper__aboutus .aboutus__main .aboutus__nav .nav__logo img {
     width: 200px;
@@ -2747,16 +2747,6 @@ top: 40px;
     padding: 20px !important;
     height: auto !important;
     width: auto !important;
-  }
-
-  .wrapper__form {
-    margin-top: 0em !important;
-    margin-bottom: 0 !important;
-  }
-  .wrapper__form{
-    flex-direction: column;
-    height: 1400px;
-
   }
   .wrapper__form .form .form__content {
     width: 100% !important;
