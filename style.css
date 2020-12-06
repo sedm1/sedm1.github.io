@@ -426,7 +426,7 @@ width: 100%;
 }
 #wrapper__numbers{
   position: absolute;
-  top: 20;
+  top: -20;
 }
 .wrapper__services .services__background {
   position: relative;
@@ -706,14 +706,7 @@ width: 100%;
   letter-spacing: 0.09em;
   color: #F4522F;
 }
-.wrapper__contacts {
-  margin-top: 60px;
-  position: relative;
-}
-#wrapper__contacts{
-  position: absolute;
-  top: -110;
-}
+
 .wrapper__contacts .contacts__background .circle {
   left: -505px;
   top: 160.389em;
