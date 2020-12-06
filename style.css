@@ -2555,6 +2555,7 @@ top: 0px;
   }
   .desctop {
     display: none ;
+    opacity: 0;
   }
   .wrapper__aside {
     display: none !important;
