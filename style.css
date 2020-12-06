@@ -2419,7 +2419,7 @@ margin: auto;
     margin-top: 40px;
   }
   .form__content .h2__title{
-    margin-top: -250px;
+    margin-top: -250px !important;
   }
   .wrapper__contacts .contacts .contacts__content .contacts__map{
     margin-bottom: 150px;
