@@ -404,7 +404,7 @@ width: 100%;
   -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
   -o-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 130px;
 }
 .aboutus .aboutus__main .aboutus__jumbotron .content__mousescroll:hover {
