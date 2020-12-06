@@ -14,7 +14,13 @@
     <script>
       window.addEventListener("scroll", function(){
         var header = document.getElementById("header");
+        var first_block = document.getElementById("ww11")
         header.classList.toggle("sticky", window.scrollY > 0);
+        if (window.scrollY > 0){
+          first_block.style.marginTop = 105 +"px";
+        } else{
+          first_block.style.marginTop = 0 +"px";
+        }
       })
     </script>
   </head>
@@ -58,7 +64,7 @@
                 </div>
               </div>
             </div>
-            <div class="container">
+            <div class="container" id="ww11">
               <div class="aboutus__jumbotron">
                 <div class="content__mousescroll device">
                   <img src="img\scroll.svg" alt="">
@@ -86,7 +92,7 @@
                     </ul>
                     <ul class="content__buttons">
                       <a class="button aboutus-alert desctop anchor">О Нас</a>
-                      <a class="button works-alert desctop">Текущие Работы</a>
+                      <a class="button works-alert desctop" id="w111">Текущие Работы</a>
                       <a class="button aboutus-alert device">Узнать Больше</a>
                     </ul>
                   </div>

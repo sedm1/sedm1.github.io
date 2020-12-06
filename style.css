@@ -415,6 +415,18 @@ width: 100%;
 
 .wrapper__services {
   margin-top: -8.48em;
+  position: relative;
+}
+#wrapper__services{
+  top: -108;
+  position: absolute;
+}
+.under{
+  position: relative;
+}
+#wrapper__numbers{
+  position: absolute;
+  top: 20;
 }
 .wrapper__services .services__background {
   position: relative;
@@ -447,7 +459,7 @@ width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 120px;
+  margin-bottom: 130px;
 }
 .wrapper__services .services__items .item {
   display: -webkit-box;
@@ -485,6 +497,11 @@ width: 100%;
 
 .wrapper__choise {
   margin-top: 0.333em;
+  position: relative;
+}
+#wrapper__choise{
+  position: absolute;
+  top: -70
 }
 .wrapper__choise .choise__background {
   position: relative;
@@ -691,6 +708,11 @@ width: 100%;
 }
 .wrapper__contacts {
   margin-top: 60px;
+  position: relative;
+}
+#wrapper__contacts{
+  position: absolute;
+  top: -110;
 }
 .wrapper__contacts .contacts__background .circle {
   left: -505px;
@@ -823,6 +845,7 @@ width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: -150px;
 }
 .wrapper__form .form .form__content {
   width: 120%;
