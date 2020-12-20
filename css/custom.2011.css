@@ -1,0 +1,219 @@
+.right {float : right}
+
+.text-right {text-align : right}
+
+.tetx-center {text-align : center}
+
+.clearfix {width : 100%;clear : both}
+
+.pb-40 {padding-bottom : 40px}
+
+table {border-collapse : collapse;border-spacing : 0}
+
+td, th {padding : 0}
+
+thead {display : table-header-group}
+
+.table {border-collapse : collapse !important}
+
+.table-bordered td, .table-bordered th {border : 1px solid #DDDDDD !important}
+
+.table {width : 100%;margin-bottom : 20px}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {padding : 10px 8px;line-height : 1.428571429;vertical-align : top;border-top : 1px solid #DDDDDD;color : #000000;font-family : Roboto, sans-serif;font-weight : 300;font-size : 15px}
+
+.table > thead > tr > td {font-size : 14px;font-weight : 400;text-transform : uppercase;padding-bottom : 12px}
+
+.table > thead > tr > th {vertical-align : bottom;border-bottom : 2px solid #DDDDDD}
+
+.hide-scroll {overflow : hidden}
+
+#checkout > .container, #random > .container {width : 1027px;margin : 0 auto;padding : 35px 0 0px 0}
+
+#checkout > .container {margin-top : 60px}
+
+#checkout > .container h1 {font-size : 23px;font-family : Roboto, sans-serif;margin-bottom : 50px}
+
+.text-center {text-align : center}
+
+#checkout > .container .other-discont {height : 63px;color : #FFFFFF;background : #A70B15;text-align : center;margin-top : 33px;font-family : Roboto, sans-serif;margin-bottom : 37px}
+
+#checkout > .container .other-discont p {font-size : 16px;font-weight : 700;padding : 10px 0 3px 0}
+
+#checkout > .container .other-discont a {color : rgba(255, 255, 255, .6);font-size : 13px}
+
+#checkout > .container .other-discont a:focus, #checkout > .container .other-discont a:hover {color : #FFFFFF}
+
+#checkout td > img {width : 95px;height : 128px;float : left;padding-right : 15px}
+
+#checkout .table tr > td:first-child {vertical-align : middle !important;width : 15px;text-align : center}
+
+#checkout tr > td a {font-size : 13px;line-height : 17px;text-transform : uppercase;padding : 2px 0 11px 0;color : #A3A3A3;text-decoration : none;display : block}
+
+#checkout tr > td a:hover {text-decoration : underline}
+
+#checkout tr > td .row {font-size : 11px;margin-bottom : 6px;color : #A3A3A3}
+
+#checkout tr > td.total-row {color : #A70B15;font-weight : 700}
+
+#checkout tr > td.text-right {text-align : right !important}
+
+#checkout .table > tfoot > tr > td .text-grey {color : #A3A3A3;padding-right : 56px}
+
+#checkout .table > tfoot > tr > td {padding-top : 37px}
+
+#checkout .table > tfoot > tr > td .total {font-size : 15px;font-weight : 700;color : #A70B15;text-align : right;padding-right : 11px}
+
+.total-row .price {padding-right : 11px}
+
+#modal-success {text-align : center;width : 414px;height : 86px;margin-left : calc(50% - 207px);margin-top : 200px;padding : 20px;font-size : 24px;display : block;background : #FFFFFF;font-family : Roboto, sans-serif}
+
+#info #right-column #order-button a + a {margin-left : 10px}
+
+#info #right-column #order-button a:first-child {background : #C79795}
+
+.product-view .modal {font-family : Roboto, sans-serif}
+
+.product-view .modal .row .col-xs-3 {width : 40%;float : left;padding-top : 8px;color : #CAC8C9;font-size : 14px}
+
+.product-view .modal .row .col-xs-9 {width : 60%;float : left}
+
+.product-view .modal a.close-modal {background : url(../images/modal-close.png) no-repeat 0 0}
+
+.product-view .modal .row {margin-bottom : 20px}
+
+.product-view .modal .row select {border : 1px solid #CAC8C9;color : #7D8082}
+
+.product-view .modal .row select {height : 35px;-webkit-appearance : none;background-image : url(../images/select.png);background-position : right center;background-repeat : no-repeat;line-height : 1em;-moz-appearance : none;text-indent : .01px;text-overflow : "";-ms-appearance : none;appearance : none !important;font-size : 14px}
+
+.product-view .modal .row select::-ms-expand {display : none}
+
+.product-view .modal .row select {padding : 6px 20px 6px 20px;width : 100%}
+
+.product-view .modal .btn.btn-primary {font-size : 16px;font-family : Roboto, sans-serif;text-transform : uppercase;color : #FFFFFF;padding : 8px 20px 8px 20px;margin-top : 20px;display : inline-block;background-color : #C79795;border : none;cursor : pointer}
+
+.empty h2 {font-family : Roboto, sans-serif;font-size : 24px !important;margin-bottom : 36px}
+
+.empty .button-white {margin : auto;float : none}
+
+.order-form {font-family : Roboto, sans-serif}
+
+.order-form .box {width : 680px;border : 1px solid #CAC8C9;padding : 30px 70px}
+
+.order-form .box table {width : 100%;text-align : left}
+
+.order-form .box tr > td {width : 50%;vertical-align : top}
+
+.order-form .box .selectize-control, .order-form .box input, .order-form .box label, .order-form .box select, .order-form .box textarea {clear : both;margin-left : 15px;margin-right : 15px}
+
+.order-form .box input, .order-form .box label, .order-form .box select, .order-form .box textarea {width : calc(100% - 46px);clear : both;margin-left : 15px;margin-right : 15px}
+
+.order-form .box .selectize-control {width : calc(100% - 30px)}
+
+.order-form .box .selectize-control .selectize-input {border : 1px solid #CAC8C9}
+
+.order-form .box .selectize-control {top : 0}
+
+.order-form .box input, .order-form .box textarea {border : 1px solid #CAC8C9;padding : 6px 8px}
+
+.order-form .box textarea {margin-bottom : 20px}
+
+.col-xs-4 {width : 33.33333333%;display : block;float : left}
+
+.order-form {display : none}
+
+.button-dark {color : #FFFFFF;background-color : #000000;text-transform : uppercase;text-decoration : none;padding : 15px 40px;font-family : Roboto, sans-serif}
+
+.button-white {color : #000000;background : #FFFFFF;box-shadow : inset 0 0 0 1px #000000;text-transform : uppercase;text-decoration : none;padding : 15px 40px;float : left;font-family : Roboto, sans-serif;text-align : center}
+
+.col-xs-4 .button-dark {padding : 8px 20px;display : block;max-width : 92px;text-align : center}
+
+#random h2, .order-form h2 {font-size : 24px;font-family : Roboto, sans-serif;margin-bottom : 50px}
+
+#bg_layer {position : fixed;z-index : 15;width : 100%;height : 100%;background : rgba(0, 0, 0, .1);display : none}
+
+#product-cart::-webkit-scrollbar {width : 0}
+
+#product-cart {overflow : -moz-scrollbars-none;-ms-overflow-style : none;width : 262px}
+
+.sidebars {display : none}
+
+.sidebars > .sidebar {position : fixed;color : #000000;z-index : 1000;font-family : Roboto, sans-serif}
+
+.sidebar.right {top : 0;right : 0;bottom : 0;width : 297px;background : #FFFFFF;margin-right : -29px;overflow-x : hidden;overflow-y : auto}
+
+.sidebar .top-column {min-height : 100%;position : relative;display : inline-block}
+
+.sidebars .container {font-family : Roboto, sans-serif;font-weight : 400;color : #000000;margin : 23px 12px 0 17px;padding : 0 !important;min-width : initial;width : initial;}
+
+.btn-danger {top : 21px;left : 212px;position : absolute;min-width : 12px !important;padding : 0 !important}
+
+.btn-danger img {width : 12px;height : 12px;border : 0}
+
+.sidebars .basket_title {font-size : 14px;letter-spacing : -.3px;padding-bottom : 3px}
+
+.sidebars .item {width : 244px;border-bottom : 1px solid #BFBFBF;padding-bottom : 30px;min-height : 76px}
+
+.sidebars .list {height : 291px;margin-bottom : 325px;overflow-x : hidden;overflow-y : scroll}
+
+.sidebars .item img {width : 63px;height : 95px;float : left}
+
+.sidebars .item .content {text-transform : uppercase;margin-left : 73px;color : grey;position : relative}
+
+.sidebars .item .content .name {font-size : 13px;line-height : 17px;top : -2px;position : relative}
+
+.sidebars .item .content .description {width : 95%;font-size : 11px;margin : 14px 0;text-align : justify}
+
+.sidebars .item .content .description:after {content : "";display : inline-block;height : 1px;width : 100%}
+
+.sidebars .item .content .description .col {display : inline-block;padding-right : 1em}
+
+.sidebars .item .content .description .col:after {content : "/";left : 13px;position : relative}
+
+.sidebars .item .content .description .col:last-child:after {content : ""}
+
+.sidebars .item .content .description .col:last-child {text-transform : lowercase;padding-right : 0}
+
+.sidebars .item .content .price {font-size : 13px;font-weight : 700;color : #000000;margin-top : 4px}
+
+#checkout tr > td .price:before, #checkout tr > td .total:before, .sidebars .item .content .price:before {content : "€";padding-right : 3px}
+
+.sidebars .item .content .delete {width : 12px;height : 12px;float : right;margin-right : 7px;margin-top : -12px}
+
+.sidebars .item .content .delete img {width : 12px;height : auto;bottom : 1.5px;right : 8px;position : absolute;border : 0}
+
+.sidebars .total-cart {width : 100%;height : 0;bottom : 289px;position : absolute}
+
+.sidebars .total-cart .container {margin-top : 0;margin-bottom : 0;margin-left : 23px;margin-right : 60px}
+
+.sidebars .total-cart .sum {font-size : 14px;margin-bottom : 14px}
+
+.sidebars .total-cart .sum:nth-child(2) {margin-bottom : 0}
+
+.sidebars .total-cart .sum .name {min-width : 65%;float : left}
+
+.sidebars .total-cart .sum .col {margin-left : 65%;text-align : right}
+
+.sidebars .total-cart .sum:nth-child(2) .col {font-weight : 700;color : #A70B15}
+
+.sidebars .total-cart .sum:nth-child(2) .col:before {content : "€";margin-right : 2px}
+
+.sidebars .total-cart .buttons {padding-top : 38px}
+
+.sidebars .total-cart .buttons #order-button {margin-bottom : 23px;width : 191.55px}
+
+.sidebars .total-cart .buttons #continue-button {width : 196.55px}
+
+.sidebars .total-cart .buttons #continue-button a {min-width : 160.55px;text-align : center;letter-spacing : 0;}
+
+.sidebars .total-cart .buttons #order-button a {text-align : center;display : block;padding-left : 0;padding-right : 0}
+
+#continue-button a, .basket #order-button a, .basket .total .price label, .request .content input[type=submit], .sidebars #order-button a {font-size : 13px;font-weight : 400;color : #FFFFFF;background-color : #000000;text-transform : uppercase;text-decoration : none;padding : 11px 18px 10px 18px;display : inline-block;border : 0;cursor : pointer;font-family : Roboto, sans-serif}
+
+#continue-button.transparent a, .basket #order-button.transparent a, .sidebars #order-button.transparent a {color : #000000;background : #FFFFFF;box-shadow : inset 0 0 0 1px #000000;font-family : Roboto, sans-serif}
+
+
+.h-cart
+{
+  cursor: pointer;
+}

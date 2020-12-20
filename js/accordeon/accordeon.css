@@ -1,0 +1,68 @@
+ul.menu {
+	font: 16px/27px 'Circe-Regular', sans-rerif;
+	text-transform: uppercase;
+	list-style-type: none;
+	margin-bottom: 57px;
+}
+ul.menu ul {
+	top: 1px;
+	margin-bottom: 8px;
+	position: relative;
+}
+ul.menu a {
+	display: block;
+	text-decoration: none;
+	text-align: left;
+}
+ul.menu li {
+}
+ul.menu li a, ul.menu ul.menu li a {
+	padding: 0;
+	color: #000;
+} 
+/* фон и градиент пунктов меню при наведении */ 
+.menu li a:hover {
+}
+
+ul.menu li ul li a, ul.menu ul.menu li ul li a {
+	font: 14px/22px 'Circe-Light', sans-rerif;
+	text-transform: none;
+	background: none;
+	color: #000;
+}
+ul.menu li ul li a:hover, ul.menu ul.menu li ul li a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+ul.menu li ul li #current {
+	text-decoration: underline;
+}
+ul.menu ul.menu li a:hover {
+}
+ul.menu ul.menu {
+}
+ul.menu a, ul.menu ul.menu li a, ul.menu a, ul.menu ul.menu li a {
+	color: #af2c25;
+    background: transparent url("../../images/arrow1.png") no-repeat center right;
+	margin-right: 21px;
+}
+ul.menu a.active, ul.menu ul.menu li a.active, ul.menu a.active:hover, ul.menu ul.menu li a.active:hover {
+	color: #af2c25;
+    background: transparent url("../../images/arrow1_red.png") no-repeat center right;
+}
+div.panel {
+}
+ul.menu div.panel a, ul.menu div.panel li a:hover {
+}
+ul.menu div.panel a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+a.back {
+	color: #777;
+	font-size: 0.8em;
+	position: fixed;
+	bottom: 20px;
+	left: 10px;
+	text-decoration: none;
+}

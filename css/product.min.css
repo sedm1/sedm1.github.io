@@ -1,0 +1,135 @@
+#product {width : 1027px;padding : 37px 0 48px 0;overflow : hidden;margin : 0 auto;left : 14px;position : relative}
+
+#info {width : 1013px;height : 460px}
+
+#cat-nav {margin : 0 12px 30px 1px}
+
+#cat-nav ul {font : 14px Circe-Light, sans-serif;text-align : justify;overflow : hidden;cursor : default;border-bottom : 1px solid #CAC8C9;padding-bottom : 4px}
+
+#cat-nav li {display : inline}
+
+#cat-nav li a {display : inline-block;text-transform : uppercase;text-decoration : none;color : #9C9E9F}
+
+#cat-nav a:hover {color : #000000}
+
+#cat-nav #active {color : #000000}
+
+#cat-nav ul:after {content : "";margin-left : 100%;overflow : hidden;display : inline-block}
+
+#info #left-column {width : 357px;height : 100%;float : left;position : relative}
+
+#info #left-column #main-photo {width : 357px;height : 454px;background : url(../images/empty.png) #F8F8F8 no-repeat center}
+
+#info #left-column img {width : 100%;height : 100%}
+
+#info #right-column {height : 100%;margin-left : 357px;padding-left : 43px;bottom : 6px;position : relative}
+
+#info #right-column #title {font : 24px/32px Circe-Light, sans-serif;text-transform : uppercase;display : block}
+
+#info #right-column #season {font : 18px Circe-Regular, sans-serif;margin-left : 14px}
+
+#info #right-column #description {font : 16px/24px Circe-Light, sans-serif;color : #7D8082;display : block;margin-top : 5px;position : absolute}
+
+.size-product {font-family : "Ubuntu Medium", arial;font-size : 14px;color : #000000;margin-bottom : 15px}
+
+.size-product > select.select-size:focus {outline : 0}
+
+.size-product > select.select-size {color : #999999;box-sizing : border-box;border : 1px solid #000000;width : 188px;height : 30px;display : inline-block;padding : 6px 10px;margin-left : 18px;margin-right : 14px}
+
+.selectize-control {margin-right : 14px}
+
+#info #right-column .size-error {
+	display : none;
+	font-size : 16px;
+	font-weight : 600;
+	color:#BA0C17;
+	margin-bottom : 13px;
+	}
+
+#info #right-column #article {font : 15px Circe-Light, sans-serif;text-transform : uppercase;display : block;margin : 8px 0 3px 0}
+
+#info #right-column #price {font : 24px Circe-Bold, sans-serif;text-transform : uppercase;color : #AF2C25;display : block;margin : 0 0 5px 0}
+
+#info #right-column #order-button {font : 16px Circe-Light, sans-serif;display : block}
+
+#info #right-column #order-button a {color : #FFFFFF;background-color : #000000;text-transform : uppercase;text-decoration : none;padding : 6.5px 20px 5px 20px}
+
+.order-button-sold {margin-top : 23px;cursor : default}
+
+#info #right-column #small-photo {width : 104%;bottom : 0;position : absolute}
+
+#info #right-column #small-photo li {width : 155px;height : 174px;display : block;margin-right : 25px;float : left}
+
+#info #right-column #small-photo li img {width : 100%;height : 100%}
+
+#item-list {width : 100%;float : left;margin : 37px 0 8px 0;padding : 1px}
+
+#item-list h1 {font : 24px Circe-Light, sans-serif;text-transform : uppercase;margin-bottom : 10px}
+
+#item-list li {margin : 0 8px 20px 2px}
+
+#item-list .symbol {margin-right : 11px}
+
+.filter-more {color : #7D8082;text-decoration : underline;font-size : 14px;position : relative;top : 10px}
+
+.filter-more:hover {text-decoration : none}
+
+.modal-size {background : #FFFFFF;padding : 40px 150px 5px 150px;text-align : left;margin : 40px auto;position : relative;max-width : 1024px;min-width : 960px;box-sizing : border-box;-webkit-box-sizing : border-box;-moz-box-sizing : border-box}
+
+.table-filter-details {width : 100%;margin-bottom : 45px}
+
+.table-filter-details.jeans tbody td {width : 33%}
+
+.table-filter-details th {border-left : 1px solid #FFFFFF;border-bottom : 2px solid #C2C2C2}
+
+.table-filter-details th:first-child {border-left : 1px solid #000000}
+
+.table-filter-details th:last-child {border-right : 1px solid #000000}
+
+.table-filter-details tbody td {border : 1px solid #C2C2C2}
+
+.table-filter-details thead th {background : #000000;color : #FFFFFF;font : 14px Circe-Light, sans-serif;text-align : center;text-transform : uppercase;padding : 10px 4px}
+
+.table-filter-details thead .table-filter-name {background : #E6E6E6;text-align : center;padding : 10px 4px}
+
+.table-filter-details thead .table-filter-name td {color : #000000;padding : 10px 4px;font : 14px Circe-Light, sans-serif;text-transform : uppercase}
+
+.table-filter-details tbody td {color : #000000;font : 14px Circe-Light, sans-serif;text-align : center;padding : 6px 4px}
+
+.table-filter-details tbody tr:nth-child(even) {background : #E6E6E6}
+
+i.select-size {background-image : url(../images/select_size.png);background-repeat : no-repeat;width : 18px;height : 8px;display : inline-block;padding-right : 8px}
+
+button.mfp-close {background : url(../images/close_modal.png) top center no-repeat;width : 32px;height : 32px;top : -40px;opacity : 1}
+
+.mfp-close:active {top : -40px}
+
+.nav-product {position : absolute;bottom : 0;right : 0}
+
+ul.tab {list-style-type : none !important;margin : 0;padding : 0;overflow : hidden;background-color : #FFFFFF}
+
+ul.tab li:last-child {border-right : 1px solid #000000}
+
+ul.tab li {float : left;list-style-type : none !important;margin : 0;border-left : 1px solid #000000;border-top : 1px solid #000000}
+
+ul.tab li a {display : inline-block;color : #000000;text-align : center;padding : 10px 15px;text-decoration : none;transition : .3s;font-size : 12px;font : 14px Circe-Light, sans-serif}
+
+ul.tab li a.active, ul.tab li a:focus, ul.tab li a:hover {background-color : #000000;color : #FFFFFF}
+
+.tabcontent {display : none;padding : 6px 12px;border : 1px solid #B8B8B8;width : 337px;height : 210px;overflow-y : scroll;font : 14px Circe-Light, sans-serif}
+
+.tabcontent p.payment-text {color : #A24E45;font : 14px Circe-Light, sans-serif;margin-bottom : 10px}
+
+.tabcontent p.payment-rule {color : #000000;font : 14px Circe-Light, sans-serif}
+
+.tabcontent ul.payment-rules {color : #828282;font : 14px Circe-Light, sans-serif;margin-bottom : 10px;list-style-image : url(../images/list.png);list-style-position : inside}
+
+@-webkit-keyframes fadeEffect {
+	from {opacity : 0}
+	to {opacity : 1}
+	}
+
+@keyframes fadeEffect {
+	from {opacity : 0}
+	to {opacity : 1}
+	}
