@@ -1,5 +1,0 @@
-User-agent: *
-# запрещаем индексировать административную панель
-Disallow: /admin
-Host: nboutlet.eu
-Sitemap: http://nboutlet.eu/sitemap.xml
