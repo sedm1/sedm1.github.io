@@ -262,7 +262,9 @@ h2{
 	margin-left: 98px;
 }
 
-
+.close_btn_1{
+	display: none;
+}
 .about_text{
 	margin-left: 24px;
 }
