@@ -8,12 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" href="base_setings\base_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header >
       <div class="block block1">
           <div class="block1200">
-              <div class="menu">
+            <button onclick="menuBlocker()" class="close_btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+              <div class="menu" id="menu">
+                <button onclick="menuBlocker()" class="close_btn_1"><i class="fa fa-times" aria-hidden="true"></i></button>
                   <li>О нас</li>
                   <li>Услуги</li>          <!-- BUG:  Поставить на font-awesome-->
                   <li>Цены</li>
@@ -24,8 +28,15 @@
                   <li>Районы</li>
                   <li>Статьи</li>
                   <li>Контакты</li>
+
               </div>
           </div>
+          <script>
+            var menu = document.getElementById('menu')
+            function menuBlocker(){
+              menu.classList.toggle('blockM')
+            }
+          </script>
       </div>
     </header>
     <div class="block block2">
@@ -41,8 +52,17 @@
                       <div class="num"><img src="img/icon_phone.png" alt="" class="header_img"><div class="p_header">+7 (960) 252-52-02</div></div>
                       <p class="p_telefon">Пн-Вс: 09:00-21:00</p>
                   </div>
-                  <div class="knopka knopka_svetl knopka_first"><img src="img/icon_phone_min.png" alt=""><p class="call_text">Заказать звонок</p></div>
+                  <div class="knopka knopka_svetl knopka_first" onmouseover="mouseOver()" onmouseout="mouseout()"><img src="img/icon_phone_min.png" alt="" id="phone_w"><p class="call_text">Заказать звонок</p></div>
                 </div>
+                <script>
+                  var img = document.getElementById("phone_w");
+                  function mouseOver(){
+                    img.src = 'img/icon_phone_min_w.png'
+                  }
+                  function mouseout(){
+                    img.src = 'img/icon_phone_min.png'
+                  }
+                </script>
             </div>
         </div>
     </div>
@@ -171,14 +191,14 @@
                     <div class="block_table">
                       <div class="left_block_header">
                         <div class="num_table">1</div>
-                        <div class="name_table">Визуальная диагностика 1</div>
+                        <div class="name_table">Визуальная диагностика <span style="color: #206BD1; font-size: 9px; margin-top:-15px ">1</span></div>
                       </div>
                       <div class="price_table">500.00р</div>
                     </div>
                     <div class="block_table">
                       <div class="left_block_header">
                         <div class="num_table">2</div>
-                        <div class="name_table">Инструментальная диагностика</div>
+                        <div class="name_table">Инструментальная диагностика <span style="color: #206BD1; font-size: 9px; margin-top:-15px ">2</span></div>
                       </div>
                       <div class="price_table">660.00р</div>
                     </div>
@@ -230,7 +250,16 @@
                   </div>
                 </div>
             </div>
-            <div class="show_all_price"><img src="img/3/Group%2010.png" alt="" class="mrg_rght">Показать весь прайс-лист</div>
+            <div class="show_all_price" onmouseover="MouseOver1()" onmouseout="MouseOut1()"><img src="img/3/Group%2010.png" alt="" class="mrg_rght" id="img_s">Показать весь прайс-лист</div>
+            <script>
+              var img_s = document.getElementById('img_s');
+              function MouseOver1(){
+                img_s.src = 'img/3/Group_10_w.png'
+              }
+              function MouseOut1(){
+                img_s.src = 'img/3/Group%2010.png'
+              }
+            </script>
         </div>
       </div>
     </section>
@@ -313,73 +342,78 @@
         <div class="block9_1">
             <h2>Обслуживанием станции метро</h2>
             <div class="metro">
-              <div class="first_column">
-                <div class="metro_min">Автово</div>
-                <div class="metro_min">Адмиралтейская 1</div>
-                <div class="metro_min">Академическая</div>
-                <div class="metro_min">Балтийская</div>
-                <div class="metro_min">Бухарестская</div>
-                <div class="metro_min">Василеостровская</div>
-                <div class="metro_min">Владимирская</div>
-                <div class="metro_min">Волковская</div>
-                <div class="metro_min">Выборгская</div>
-                <div class="metro_min">Горьковская</div>
-                <div class="metro_min">Гостиный двор </div>
-                <div class="metro_min">Гражданский проспект</div>
-                <div class="metro_min">Девяткино</div>
-                <div class="metro_min">Достоевская</div>
-                <div class="metro_min">Елизаровская</div>
+              <div class="f_col">
+                <div class="first_column">
+                  <div class="metro_min">Автово</div>
+                  <div class="metro_min">Адмиралтейская 1</div>
+                  <div class="metro_min">Академическая</div>
+                  <div class="metro_min">Балтийская</div>
+                  <div class="metro_min">Бухарестская</div>
+                  <div class="metro_min">Василеостровская</div>
+                  <div class="metro_min">Владимирская</div>
+                  <div class="metro_min">Волковская</div>
+                  <div class="metro_min">Выборгская</div>
+                  <div class="metro_min">Горьковская</div>
+                  <div class="metro_min">Гостиный двор </div>
+                  <div class="metro_min">Гражданский проспект</div>
+                  <div class="metro_min">Девяткино</div>
+                  <div class="metro_min">Достоевская</div>
+                  <div class="metro_min">Елизаровская</div>
+                </div>
+                <div class="second_column">
+                  <div class="metro_min">Звенигородская</div>
+                  <div class="metro_min">Кировский завод</div>
+                  <div class="metro_min">Комендантский проспект</div>
+                  <div class="metro_min">Крестовский остров</div>
+                  <div class="metro_min">Купчино</div>
+                  <div class="metro_min">Ладожская</div>
+                  <div class="metro_min">Ленинский проспект</div>
+                  <div class="metro_min">Лиговский проспект</div>
+                  <div class="metro_min">Ломоносовская</div>
+                  <div class="metro_min">Маяковская</div>
+                  <div class="metro_min">Международная</div>
+                  <div class="metro_min">Московская</div>
+                  <div class="metro_min">Московские ворота</div>
+                  <div class="metro_min">Нарвская</div>
+                  <div class="metro_min">Невский проспект</div>
+                  <div class="metro_min">Новочеркасская</div>
+                </div>
               </div>
-              <div class="second_column">
-                <div class="metro_min">Звенигородская</div>
-                <div class="metro_min">Кировский завод</div>
-                <div class="metro_min">Комендантский проспект</div>
-                <div class="metro_min">Крестовский остров</div>
-                <div class="metro_min">Купчино</div>
-                <div class="metro_min">Ладожская Ленинский проспект</div>
-                <div class="metro_min">Лиговский проспект</div>
-                <div class="metro_min">Ломоносовская</div>
-                <div class="metro_min">Маяковская</div>
-                <div class="metro_min">Международная</div>
-                <div class="metro_min">Московская</div>
-                <div class="metro_min">Московские ворота</div>
-                <div class="metro_min">Нарвская</div>
-                <div class="metro_min">Невский проспект</div>
-                <div class="metro_min">Новочеркасская</div>
-              </div>
-              <div class="third_column">
-                <div class="metro_min">Обводный канал</div>
-                <div class="metro_min">Обухово</div>
-                <div class="metro_min">Озерки</div>
-                <div class="metro_min">Парк Победы</div>
-                <div class="metro_min">Парнас</div>
-                <div class="metro_min">Петроградская</div>
-                <div class="metro_min">Пионерская</div>
-                <div class="metro_min">Площадь Александра Невского 1, 2</div>
-                <div class="metro_min">Площадь Восстания</div>
-                <div class="metro_min">Площадь Ленина</div>
-                <div class="metro_min">Площадь Мужества</div>
-                <div class="metro_min">Политехническая Приморская</div>
-                <div class="metro_min">Пролетарская</div>
-                <div class="metro_min">Проспект Большевиков</div>
-                <div class="metro_min">Проспект Ветеранов</div>
-              </div>
-              <div class="fird_column">
-                <div class="metro_min">Проспект Просвещения</div>
-                <div class="metro_min">Пушкинская</div>
-                <div class="metro_min">Рыбацкое</div>
-                <div class="metro_min">Садовая</div>
-                <div class="metro_min">Сенная площадь</div>
-                <div class="metro_min">Спасская Спортивная</div>
-                <div class="metro_min">Старая Деревня</div>
-                <div class="metro_min">Технологический институт 1, 2</div>
-                <div class="metro_min">Удельная</div>
-                <div class="metro_min">Улица Дыбенко</div>
-                <div class="metro_min">Фрунзенская</div>
-                <div class="metro_min">Чёрная речка</div>
-                <div class="metro_min">Чернышевская</div>
-                <div class="metro_min">Чкаловская</div>
-                <div class="metro_min">Электросила</div>
+              <div class="sec_col">
+                <div class="third_column">
+                  <div class="metro_min">Обводный канал</div>
+                  <div class="metro_min">Обухово</div>
+                  <div class="metro_min">Озерки</div>
+                  <div class="metro_min">Парк Победы</div>
+                  <div class="metro_min">Парнас</div>
+                  <div class="metro_min">Петроградская</div>
+                  <div class="metro_min">Пионерская</div>
+                  <div class="metro_min">Площадь Александра Невского</div>
+                  <div class="metro_min">Площадь Восстания</div>
+                  <div class="metro_min">Площадь Ленина</div>
+                  <div class="metro_min">Площадь Мужества</div>
+                  <div class="metro_min">Политехническая Приморская</div>
+                  <div class="metro_min">Пролетарская</div>
+                  <div class="metro_min">Проспект Большевиков</div>
+                  <div class="metro_min">Проспект Ветеранов</div>
+                </div>
+                <div class="fird_column">
+                  <div class="metro_min">Проспект Просвещения</div>
+                  <div class="metro_min">Пушкинская</div>
+                  <div class="metro_min">Рыбацкое</div>
+                  <div class="metro_min">Садовая</div>
+                  <div class="metro_min">Сенная площадь</div>
+                  <div class="metro_min">Спасская Спортивная</div>
+                  <div class="metro_min">Старая Деревня</div>
+                  <div class="metro_min">Технологический институт 1, 2</div>
+                  <div class="metro_min">Удельная</div>
+                  <div class="metro_min">Улица Дыбенко</div>
+                  <div class="metro_min">Фрунзенская</div>
+                  <div class="metro_min">Чёрная речка</div>
+                  <div class="metro_min">Чернышевская</div>
+                  <div class="metro_min">Чкаловская</div>
+                  <div class="metro_min">Электросила</div>
+                </div>
               </div>
             </div>
         </div>
@@ -512,46 +546,39 @@
 
         </div>
     </div>
-    <div class="block block13">
+    <section class="block13">
+      <div class="block">
         <div class="block1200">
             <h2>Отзывы заказчиков</h2>
             <div class="reviews">
                 <div class="reviews_min">
+                  <div class="img_block"><img src="img/face.jpg" alt=""></div>
+                  <div class="text_block">
                     <div class="reviews_title">Ремонт холодильника Атлант</div>
                     <div class="review_author">Александра Иванова</div>
-                    <p>Спасибо Дмитрию! Все отлично, приехал вовремя, приятный мастер, сделал быстро, дешевле почти на треть, чем другие. Отзыв размещен на Авито</p>
+                    <p>Спасибо Дмитрию! Все отлично, приехал вовремя, приятный мастер, сделал быстро, дешевле почти на треть, чем другие. </br></br> Отзыв размещен на <a href="">Авито</a></p>
+                  </div>
                 </div>
-                <div class="reviews_min">
+                <div class="reviews_min"id="hidden">
+                  <div class="img_block"><img src="img/face.jpg" alt=""></div>
+                  <div class="text_block">
                     <div class="reviews_title">Ремонт холодильника Атлант</div>
                     <div class="review_author">Александра Иванова</div>
-                    <p>Спасибо Дмитрию! Все отлично, приехал вовремя, приятный мастер, сделал быстро, дешевле почти на треть, чем другие. Отзыв размещен на Авито</p>
+                    <p>Спасибо Дмитрию! Все отлично, приехал вовремя, приятный мастер, сделал быстро, дешевле почти на треть, чем другие.</br></br> Отзыв размещен на <a href="">Авито</a></p>
+                  </div>
                 </div>
-                <div class="reviews_min">
-                    <div class="reviews_title">Ремонт холодильника Атлант</div>
-                    <div class="review_author">Александра Иванова</div>
-                    <p>Спасибо Дмитрию! Все отлично, приехал вовремя, приятный мастер, сделал быстро, дешевле почти на треть, чем другие. Отзыв размещен на Авито</p>
-                </div>
-                <div class="reviews_min">
-                    <div class="reviews_title">Ремонт холодильника Атлант</div>
-                    <div class="review_author">Александра Иванова</div>
-                    <p>Спасибо Дмитрию! Все отлично, приехал вовремя, приятный мастер, сделал быстро, дешевле почти на треть, чем другие. Отзыв размещен на Авито</p>
-                </div>
-                <div class="reviews_min">
-                    <div class="reviews_title">Ремонт холодильника Атлант</div>
-                    <div class="review_author">Александра Иванова</div>
-                    <p>Спасибо Дмитрию! Все отлично, приехал вовремя, приятный мастер, сделал быстро, дешевле почти на треть, чем другие. Отзыв размещен на Авито</p>
-                </div>
+
             </div>
+            <button><div class="round_left_1 round"><i class="fa fa-angle-left" aria-hidden="true"></i></div></button>
+            <button><div class="round_right_1 round"><i class="fa fa-angle-right" aria-hidden="true"></i></div></button>
         </div>
-    </div>
+      </div>
+    </section>
     <div class="block block14">
         <div class="block1200">
             <h2>Работаем со всеми брендами</h2>
             <div class="brends">
                 <div class="brend_min"><img src="img/9/33726131b9b81274dffa38b8383b4654.png" alt=""></div>
-                <div class="brend_min"><img src="img/9/75a05e1e11011d174868ec53e564925a.jpg" alt=""></div>
-                <div class="brend_min"><img src="img/9/7974a8eeb1a7ac9eaf7f0ef3c182f03e.jpg" alt=""></div>
-                <div class="brend_min"><img src="img/9/99d8674c5033543e3b2da5b329d244a8.jpg" alt=""></div>
                 <div class="brend_min"><img src="img/9/aa4f70b9ba4fdac1afb7f35ab9d9b976.jpg" alt=""></div>
                 <div class="brend_min"><img src="img/9/b1c3baddcaa5371a78136c79f9b5b760.jpg" alt=""></div>
                 <div class="brend_min"><img src="img/9/db845943c744849e39a9e44d61f22a91.jpg" alt=""></div>
@@ -559,11 +586,12 @@
             </div>
         </div>
     </div>
-    <div class="block block15">
-        <div class="block1200">
+    <section class="bg_section_15">
+      <div class="block block15">
+        <div class="block15_1">
             <div class="questions">
-                <h2>Остались вопросы?</h2>
-                <h2 class="blue">Задайте их нам!</h2>
+                <h3>Остались вопросы?</h3></br>
+                <h3 class="blue">Задайте их нам!</h3>
                 <p>Заполните форму, и нажмите кнопку отправить! Мы вам перезвоним в ближайшее время!</p>
             </div>
             <div class="questions_form">
@@ -580,11 +608,12 @@
                         <p>Ваш номер телефона</p>
                         <input type="text" placeholder="+7 (978) 777-77-77" name="q_telefon" id="q_telefon">
                     </div>
-                    <div class="knopka_form_q knopka_temn"><img src="img/1/Mask%20Group.png">Отправить</div>
+                    <button class="knopka_form_q knopka_temn">Отправить</button>
                 </form>
             </div>
         </div>
-    </div>
+      </div>
+    </section>
     <div class="block block16">
         <div class="block1200">
             <div class="footer">
