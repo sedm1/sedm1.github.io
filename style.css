@@ -121,7 +121,9 @@ header{
 	background-size: cover;
 	height: 691px;
 	margin-bottom: 100px;
+  position: relative;
 }
+
 .block3{
 	padding-top: 70px
 }
@@ -175,6 +177,15 @@ header{
 	padding-bottom: 52px;
 	box-shadow: 4px 15px 30px rgba(53, 72, 98, 0.25);
 	border-radius: 4px;
+  position: relative;
+}
+.door{
+  position: absolute;
+  right: -235px;
+  width: 64%;
+  height: 100%;
+  z-index: 100;
+  top: -40px
 }
 .input{
 	width: 100%;
@@ -189,7 +200,11 @@ header{
 	top: -10px;
 	left: 20px;
 	font-family: "MuseoSansCyrl300";
-	font-size: 14px
+	font-size: 14px;
+	background-color: #fff;
+  z-index: 100;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 .input input, select{
 	width: 100%;
@@ -207,6 +222,7 @@ header{
 	font-size: 16px;
 	color:rgba(0, 0, 0, 0.7);
 	padding-bottom: 0px;
+  font-family: "MuseoSansCyrl300";
 }
 .input select{
 	background-color: #fff;
@@ -232,8 +248,16 @@ header{
 background: linear-gradient(270deg, rgba(32,107,209,1) 28%, rgba(7,43,92,1) 59%);
 font-family: "MuseoSansCyrl700";
 transition: all 0.2s;
+overflow: hidden;
+position: relative;
+z-index: 100
 }
-
+.first_form button img{
+  position: absolute;
+  left: 5px;
+  top: 0;
+  z-index: -10
+}
 h2{
 	text-align: center;
 	color: #333333;
@@ -245,21 +269,24 @@ h2{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+  margin-bottom: 50px;
 }
-.about_min{
-	display: flex;
-	align-items: center;
-	margin-left: 91px;
-	margin-bottom: 67px;
+.about_min {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    max-width: 356px;
+    width: 100%;
 }
 .about_min img{
 	width: 54px;
 }
 .about_min:nth-child(1), .about_min:nth-child(4n+4){
-	margin-left: 0px;
+	margin-left: auto;
 }
 .about_min:nth-child(5){
-	margin-left: 98px;
+	margin: auto;
 }
 
 .close_btn_1{
@@ -269,7 +296,7 @@ h2{
 	margin-left: 24px;
 }
 #about_min_t{
-	width: 305px;
+	width: auto;
 }
 .about_header{
 	font-size: 28px;
@@ -397,6 +424,15 @@ h2{
 	display: flex;
 	justify-content: center;
 	margin-top: 45px;
+  align-items: flex-start;
+}
+.master_min_hidden{
+  display: none;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 45px;
+  max-width: 216px;
+
 }
 .masters_min{
 	text-align: center;
@@ -406,6 +442,18 @@ h2{
 	padding-left: 26px;
 	padding-right: 26px;
 	padding-bottom: 45px;
+  position: relative;
+}
+.masters_min:hover{
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
+  padding-bottom: 11px;
+}
+.masters_min:hover .master_min_hidden{
+  display: block;
+}
+.masters_min:hover #knopka_s{
+  margin-top: -145px !important;
+  
 }
 .masters_min p{
 	font-family: "MuseoSansCyrl300";
@@ -949,6 +997,11 @@ footer{
 
 }
 @media screen and (max-width: 1200px){
+  .door{
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px){
 	.reviews{
 		overflow: hidden;
     max-width: 55%;
@@ -1095,8 +1148,13 @@ footer{
 	.knopka_form_q{
 		padding-left: 252px;
 	}
+  .door{
+    display: block;
+    height: 706px;
+  }
 }
 @media screen and (max-width: 888px){
+
 	.masters{
 		flex-wrap: wrap;
 	}
@@ -1142,6 +1200,11 @@ footer{
 		padding-bottom: 100px;
 		height: auto;
 	}
+}
+@media screen and (max-width: 850px){
+  .door{
+    display: none;
+  }
 }
 @media screen and (max-width: 822px){
 	.footer_min_block{

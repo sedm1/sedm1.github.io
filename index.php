@@ -1,3 +1,9 @@
+<? header('Content-Type: text/html; charset=utf-8') ?>
+<? if($_COOKIE['user_holod'] != 1): ?>
+<form action="user.php" method="post">
+        <input type="text" placeholder="логин" name="name">
+    </form>
+<? exit; endif;  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,11 +124,14 @@
                       <div class="input"><p class="input_text">Марка</p><input type="text" name="marka" id="marka" placeholder="Bosch"></div>
                       <div class="input" id="input_textarea"><p class="input_text">Ваша проблема</p><textarea name="problem" id="problem" cols="30" rows="10" placeholder="Не запускается"></textarea></div>
                       <div class="input"><p class="input_text">Адрес или ближайшее метро</p><input type="text" name="adress" id="adress" placeholder="Заозерная 1"></div>
-                      <button type="button" name="button">Вызвать мастера</button>
+                      <button type="button" name="button"><img src="img/1/Mask Group.png" alt="">Вызвать мастера</button>
+                      <img src="img/1/door.png" alt="" class="door">
                   </form>
               </div>
+
           </div>
       </div>
+
     </section>
     <div class="block block4">
         <div class="block1200">
@@ -271,24 +280,28 @@
                     <img src="img/4/master.png" alt="">
                     <div class="masters_header">Григорий Александрович</div>
                     <p>Стаж: <span style="color: #206BD1">15 лет</span></p>
+                    <div class="master_min_hidden">Текст описание краткое, Текст описание краткое,Текст описание краткое,Текст описание краткое</div>
                 </div>
                 <div class="masters_min">
                     <img src="img/4/master.png" alt="">
                     <div class="masters_header">Григорий Александрович</div>
                     <p>Стаж: <span style="color: #206BD1">15 лет</span></p>
+                    <div class="master_min_hidden">Текст описание краткое, Текст описание краткое,Текст описание краткое,Текст описание краткое</div>
                 </div>
                 <div class="masters_min">
                     <img src="img/4/master.png" alt="">
                     <div class="masters_header">Григорий Александрович</div>
                     <p>Стаж: <span style="color: #206BD1">15 лет</span></p>
+                    <div class="master_min_hidden">Текст описание краткое, Текст описание краткое,Текст описание краткое,Текст описание краткое</div>
                 </div>
                 <div class="masters_min">
                     <img src="img/4/master.png" alt="">
                     <div class="masters_header">Григорий Александрович</div>
                     <p>Стаж: <span style="color: #206BD1">15 лет</span></p>
+                    <div class="master_min_hidden">Текст описание краткое, Текст описание краткое,Текст описание краткое,Текст описание краткое</div>
                 </div>
             </div>
-            <button class="knopka knopka_temn">Вызвать мастера</button>
+            <button id="knopka_s" class="knopka knopka_temn">Вызвать мастера</button>
         </div>
     </div>
     <section class="bg_section_3">
