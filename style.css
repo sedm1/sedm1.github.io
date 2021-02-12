@@ -335,6 +335,7 @@ footer .container{
   .container{
     width: 95%;
     overflow-x: hidden;
+    padding-bottom: 20px;
   }
   .header_title{
     font-size: 9vw;
@@ -346,6 +347,9 @@ footer .container{
   }
   .slick-prev, .slick-next{
     display: none !important;
+  }
+  .title_block{
+    padding-bottom: 15px;
   }
 
 }
@@ -366,9 +370,7 @@ footer .container{
   .project__text, .project__img{
     width: 100%
   }
-  .title_block{
-    padding-bottom: 15px;
-  }
+
   .title_block p, .title_block a{
     margin-left: 5px;
   }
