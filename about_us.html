@@ -18,14 +18,23 @@
       <div class="bg_gradient">
         <header>
           <nav>
-            <ul class="menu">
+            <button type="button" name="button" id="openMenu" onclick="openMenu()">
+              <label for="openMenu"><i class="fa fa-bars" aria-hidden="true"></i></label>
+            </button>
+            <ul class="menu" id="menu">
               <li><a href="index.html">Главная</a></li>
               <li><a href="about_us.html">О нас</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Проекты</a></li>
+              <li><a href="project.html">Проекты</a></li>
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
+          <script>
+            var i = document.getElementById('menu');
+            var btn = document.getElementById('openMenu')
+            function openMenu(){
+              i.classList.toggle('block')
+            }
+          </script>
         </header>
         <div class="container f_sec">
           <div class="title_block">
@@ -148,8 +157,7 @@
         <div class="nav">
           <li><a href="index.html">главная</a></li>
           <li><a href="about_us.html">о нас</a></li>
-          <li><a href="#">услуги</a></li>
-          <li><a href="#">проекты</a></li>
+          <li><a href="project.html">проекты</a></li>
           <li><a href="contacts.html">контакты</a></li>
         </div>
       </div>

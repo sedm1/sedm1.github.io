@@ -70,3 +70,54 @@ h2{
 .mrg{
   margin-top: 50px;
 }
+@media screen and (max-width: 1500px){
+  .text_block{
+    height: auto;
+  }
+  .img_block{
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px){
+  .text_block{
+    font-size: 2vw
+  }
+  .text_block, .img_block{
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 950px){
+  .special {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+@media screen and (max-width: 420px){
+  .text_block, .img_block{
+    max-width: 85%;
+    width: 85%
+  }
+  .flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .text_block{
+    font-size: 3vw
+  }
+  .plus_text{
+    font-size: 5vw;
+  }
+  .special {
+    align-items: flex-start;
+    font-size: 5vw;
+  }
+  .plus{
+    width: 16px;
+    height: 19px;
+    margin-top: 0px;
+  }
+  .bg_gradient i{
+    left: 42%
+  }
+}

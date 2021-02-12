@@ -42,7 +42,6 @@ hr{
   margin-bottom: 0px;
 }
 input {
-  padding-left: 20px;
   border:none;
   outline:none;
 }
@@ -51,10 +50,7 @@ textarea{
   border:none;
   outline:none;
 }
-textarea:focus{
-  border:none;
-  outline:none;
-}
+
 select{
   border:none;
   outline:none;
