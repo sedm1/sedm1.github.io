@@ -5,7 +5,9 @@
 .flex{
   flex-wrap: wrap;
 }
-
+.container{
+  padding-bottom: 20px;
+}
 .prim{
   width: 40%;
   display: flex;
@@ -42,4 +44,42 @@
   position: absolute;
   top: 10px;
   left: 10px
+}
+.third__project{
+  margin-top: 20px !important;
+}
+@media screen and (max-width: 920px){
+  .flex{
+    flex-direction: column;
+  }
+  .prim{
+    justify-content: flex-start;
+  }
+  .project__block .project{
+    height: 214px;
+  }
+}
+@media screen and (max-width: 420px){
+  .third__project{
+    margin-top: 0px !important;
+  }
+  .flex {
+    align-items: flex-start;
+    align-items: center;
+  }
+  .prim{
+    flex-direction: column;
+  }
+  .prime__text {
+    text-align: center;
+  }
+  .project__block .project{
+    height: 180px;
+    margin-bottom: 20px;
+    width: 78%
+  }
+  .project__block{
+    flex-direction: column;
+  }
+
 }
