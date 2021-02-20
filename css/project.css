@@ -5,9 +5,7 @@
 .flex{
   flex-wrap: wrap;
 }
-.container{
-  padding-bottom: 20px;
-}
+
 .prim{
   width: 40%;
   display: flex;
