@@ -31,7 +31,7 @@
   flex-wrap: wrap;
 }
 .project__block .project{
-  width: 48%;
+  width: 40%;
   height: 300px;
   margin: auto;
   overflow: hidden;
@@ -58,9 +58,10 @@ footer{
   }
   .project__block .project{
     height: 214px;
+    width: 47%
   }
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 550px){
   .third__project{
     margin-top: 0px !important;
   }

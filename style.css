@@ -177,7 +177,7 @@ hr{
 }
 .slider__element{
   width: 15%;
-  height: 75px;
+  height: 100px;
   margin-left: 30px;
   margin-right: 30px
 }
@@ -284,7 +284,6 @@ footer .container{
   .container{
     width: 95%;
     overflow-x: hidden;
-    padding-bottom: 20px;
   }
   .header_title{
     font-size: 9vw;
@@ -294,15 +293,6 @@ footer .container{
     line-height: 28px;
     max-width: 404px;
   }
-<<<<<<< HEAD
-=======
-  .slick-prev, .slick-next{
-    display: none !important;
-  }
-  .title_block{
-    padding-bottom: 15px;
-  }
->>>>>>> 4589c06bbb8c772373c528ba572cfa627e188812
 
 }
 @media screen and (max-width: 550px){
@@ -318,10 +308,6 @@ footer .container{
   .project__text, .project__img{
     width: 100%
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> 4589c06bbb8c772373c528ba572cfa627e188812
   .title_block p, .title_block a{
     margin-left: 5px;
   }
