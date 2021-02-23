@@ -109,11 +109,10 @@ background: linear-gradient(125deg, rgba(87,126,226,0.77) 28%, rgba(53,118,255,0
   margin-top: 100px;
 }
 .bg_gradient i{
-  margin: 0 auto;
   color: #fff;
   font-size: 80px;
   position: absolute;
-  left: 49%;
+  left: calc(50% - 25px);
   bottom: 25px;
 }
 .block_text{

@@ -14,7 +14,7 @@
 .bg_gradient i{
   position: absolute;
   bottom: 25px;
-  left: 49%
+  left: calc(50% - 25px)
 }
 .title_block{
   margin: 0 auto;
