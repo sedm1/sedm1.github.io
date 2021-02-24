@@ -234,6 +234,9 @@ footer .container{
   max-width: 420px;
   text-align: left;
 }
+.flex__1{
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 1410px) {
   .header_logo{
     display: none;
