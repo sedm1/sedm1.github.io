@@ -215,6 +215,25 @@ footer .container{
   font-size: 18px;
   font-weight: 400;
 }
+.prim{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.prime__number{
+  font-size: 200px;
+  color: #4A4EB0;
+  margin-right: 20px;
+}
+.prime__text{
+  color: #000;
+  font-size: 45px;
+  max-width: 420px;
+  text-align: left;
+}
 @media screen and (max-width: 1410px) {
   .header_logo{
     display: none;
