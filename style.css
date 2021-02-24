@@ -236,6 +236,8 @@ footer .container{
 }
 .flex__1{
   flex-wrap: wrap;
+  display: flex;
+    justify-content: space-between;
 }
 @media screen and (max-width: 1410px) {
   .header_logo{
