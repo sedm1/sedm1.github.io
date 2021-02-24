@@ -225,14 +225,19 @@ footer .container{
 .prime__number{
   font-size: 200px;
   color: #4A4EB0;
+  margin-right: 5px;
 }
 .prime__text{
   color: #000;
-  font-size: 18px;
+  font-size: 21px;
   max-width: 100%;
   text-align: left;
   margin-top: 70px;
   font-weight: 700;
+}
+.prime__subtitle {
+    text-align: left;
+    margin-top: 10px;
 }
 .flex__1{
   flex-wrap: wrap;
