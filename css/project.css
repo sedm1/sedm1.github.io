@@ -2,29 +2,6 @@
   display: flex;
   justify-content: center;
 }
-.flex{
-  flex-wrap: wrap;
-}
-
-.prim{
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-}
-.prime__number{
-  font-size: 200px;
-  color: #4A4EB0;
-  margin-right: 20px;
-}
-.prime__text{
-  color: #000;
-  font-size: 45px;
-  max-width: 420px;
-  text-align: left;
-}
 .project__block{
   display: flex;
   justify-content: center;
@@ -40,8 +17,21 @@
 .opic{
   color: #fff;
   position: absolute;
-  top: 10px;
-  left: 10px
+  top: 0px;
+  left: 0px;
+  padding-left: 15px;
+  padding-right: 30px;
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+.opic__adres {
+    position: absolute;
+    bottom: 15px;
+}
+.opic_title {
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 600px;
 }
 .third__project{
   margin-top: 20px !important;
@@ -49,12 +39,14 @@
 footer{
   margin-top: 20px;
 }
+@media screen and (max-width: 1050px){
+  .opic_title{
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 920px){
   .flex{
     flex-direction: column;
-  }
-  .prim{
-    justify-content: flex-start;
   }
   .project__block .project{
     height: 214px;
@@ -68,12 +60,6 @@ footer{
   .flex {
     align-items: flex-start;
     align-items: center;
-  }
-  .prim{
-    flex-direction: column;
-  }
-  .prime__text {
-    text-align: center;
   }
   .project__block .project{
     height: 180px;

@@ -52,6 +52,9 @@ body{
   flex-direction: column;
   padding-top: 150px;
 }
+#openMenu i{
+  z-index: 1000;
+}
 .services__title{
   text-align: left;
   color: #4A4EB0;
