@@ -276,6 +276,12 @@ footer .container{
   .title_block{
     margin-top: 250px;
   }
+  .prim{
+    width: 100%
+  }
+  .flex__1{
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 800px){
   .title_block{
