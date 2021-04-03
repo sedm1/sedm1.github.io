@@ -508,9 +508,41 @@ height: 42px;
   }
 }
 @media screen and (max-width: 400px){
-
+  .window__menu{
+    width: 230px;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+  .window__menu input{
+    padding-left: 17px;
+    font-size: 9px;
+    height: 26px
+  }
+  .window__menu p{font-size: 11px}
+  .window__menu button{
+    margin-top: 29px;
+    font-size: 8px;
+    padding: 7px 10px;
+  }
+  .window__text {
+    font-size: 6px;
+    line-height: 7px;
+}
+  .window__menu h2{
+    font-size: 14px;
+  }
+  .close_btn i {
+    top: -60px;
+    right: -30px;
+}
   .number{
     margin-right: -25px;
+  }
+  .menu li a{
+    font-size: 14px
+  }
+  form {
+    margin-top: 30px;
   }
   header{
     padding-top: 13px;
