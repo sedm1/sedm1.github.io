@@ -293,7 +293,9 @@ form{
   right: -42px;
   font-size: 25px;
 }
-
+.close_window i{
+  cursor: pointer
+}
 @media screen and (max-width: 1024px) {
   .container{
     width: 81.96%
