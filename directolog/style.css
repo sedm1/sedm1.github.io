@@ -285,6 +285,7 @@ form{
 }
 #close_window{
   display: none;
+  cursor: pointer;
 }
 .close_btn i{
   position: absolute;
