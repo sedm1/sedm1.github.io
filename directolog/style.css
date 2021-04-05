@@ -291,12 +291,13 @@ form{
   display: none;
   cursor: pointer;
 }
-.close_btn i{
+.close_btn img{
   position: absolute;
   top: -72px;
   right: -42px;
-  font-size: 25px;
   cursor: pointer;
+  width: 25px;
+  height: 25px;
 }
 
 @media screen and (max-width: 1024px) {
