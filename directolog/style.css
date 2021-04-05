@@ -26,7 +26,7 @@
     font-weight: 400;
 }
 html{
-  height: auto;
+  height: 100vh;
 }
 body{
   font-family: "ArialBold";
@@ -47,8 +47,8 @@ header{
 section{
   display: flex;
   align-items: center;
-  height: calc(100% - 79px);
   padding-bottom: 20px;
+  padding-top: 120px
 }
 .flex_s{
   display: flex;
@@ -412,8 +412,6 @@ form{
     display: block;
   }
   section{
-    max-height: 110vh;
-    overflow-y: hidden;
     padding-top: 33px;
     padding-bottom: 58px;
   }
