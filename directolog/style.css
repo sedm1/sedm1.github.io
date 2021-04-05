@@ -278,6 +278,7 @@ form{
   line-height: 14px;
   text-align: center;
   margin-top: 23px;
+  font-family: "ArialRegular";
 }
 .window__text a{
   color: #FF8A00;
