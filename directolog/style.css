@@ -48,7 +48,6 @@ section{
   display: flex;
   align-items: center;
   padding-bottom: 20px;
-  padding-top: 120px
 }
 .flex_s{
   display: flex;
@@ -403,7 +402,7 @@ form{
     font-size: 13px;
   }
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 750px){
   ul{
     height: 278px;
     bottom: -278px;
