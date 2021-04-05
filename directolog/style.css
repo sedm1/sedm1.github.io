@@ -293,8 +293,8 @@ form{
 }
 .close_btn img{
   position: absolute;
-  top: -72px;
-  right: -42px;
+  top: -66px;
+  right: -16px;
   cursor: pointer;
   width: 25px;
   height: 25px;
@@ -514,6 +514,7 @@ height: 42px;
     width: 230px;
     padding-left: 21px;
     padding-right: 21px;
+    padding-top: 32px;
   }
   .window__menu input{
     padding-left: 17px;
@@ -533,9 +534,11 @@ height: 42px;
   .window__menu h2{
     font-size: 14px;
   }
-  .close_btn i {
-    top: -60px;
-    right: -30px;
+  .close_btn img {
+    width: 15px;
+    height: 15px;
+    top: -38px;
+    right: -9px;
 }
   .number{
     margin-right: -25px;
