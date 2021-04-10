@@ -309,7 +309,7 @@ form{
   width: 25px;
   height: 25px;
 }
-.first_round, .second_round, .third_round, .main_round, .main_round i{
+.first_round, .second_round, .third_round, .main_round, .main_round i, .round__text{
   display: none;
 }
 @media screen and (max-width: 1024px) {
