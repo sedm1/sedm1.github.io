@@ -25,23 +25,35 @@
     font-style: normal;
     font-weight: 400;
 }
-html{
-  height: 100vh
-}
 body{
   font-family: "ArialBold";
   color: #fff;
   background: linear-gradient(180deg, #000000 0%, #222222 100%);
 }
+.overflow{
+  overflow-y: hidden;
+}
 .container{
   width:1185px;
   margin: 0 auto;
+}
+#black__bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(57, 57, 57, 0.6);
+    z-index: 2000;
+    display: none;
+}
+#menu2{
+  z-index: 2100;
 }
 header{
   background-color: #242323;
   padding-top: 21px;
   padding-bottom: 21px;
   position: relative;
+  z-index: 2100
 }
 section{
   display: flex;
@@ -221,7 +233,7 @@ margin-top: -2px;
   width: 100%;
   height: 100vh;
   background: rgba(47, 46, 50, 0.6);
-  z-index: 1000;
+  z-index: 3000;
   justify-content: center;
   align-items: center;
   display: none;
@@ -349,8 +361,11 @@ form{
     font-size: 20px;
   }
   section{
-    padding-top: 54px;
-    display: block
+    min-height: 100vh;
+    max-height: none;
+    height: auto;
+    padding-top: 33px;
+    padding-bottom: 58px;
   }
   .block__title{
     max-width: 357px;
@@ -358,7 +373,7 @@ form{
     line-height: 34px
   }
   .block{
-    display: block;
+    display: block !important;
   }
   .undertitle__block{
     margin-top: 26px;
@@ -454,6 +469,7 @@ form{
     color: #fff;
     font-size: 7px;
     margin-right: 7px;
+    display: block;
   }
   ul{
     height: 278px;
@@ -463,8 +479,8 @@ form{
     display: block;
   }
   section{
-    max-height: 110vh;
-    overflow-y: hidden;
+    max-height: none;
+    height: auto;
     padding-top: 33px;
     padding-bottom: 58px;
   }
