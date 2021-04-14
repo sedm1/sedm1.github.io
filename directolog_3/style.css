@@ -187,7 +187,8 @@ margin-top: -2px;
   background-color: #FF8A00;
   border-radius: 5px;
   margin-right: 29px;
-  color: #fff
+  color: #fff;
+  font-family: "ArialRegular";
 }
 .link__text{
   max-width: 302px;
@@ -249,7 +250,7 @@ margin-top: -2px;
 }
 .window__menu{
   width: 385px;
-  padding-top: 32px;
+  padding-top: 55px;
   padding-bottom: 29px;
   padding-left: 32px;
   padding-right: 34px;
@@ -315,7 +316,7 @@ form{
 }
 .close_btn img{
   position: absolute;
-  top: 29px;
+  top: -65px;
   right: -16px;
   cursor: pointer;
   width: 25px;
