@@ -110,6 +110,7 @@ section{
 .number{
   font-size: 20px;
   margin-right: 27px;
+  color: #fff
 }
 .call{
   color: #fff;
@@ -435,6 +436,7 @@ form{
   #burger{
     width: 25px;
     height: 14px;
+    margin-left: 0px;
   }
   .first_round, .second_round, .third_round, .main_round, .main_round i{
     display: block;
