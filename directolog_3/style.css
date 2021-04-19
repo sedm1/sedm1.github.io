@@ -444,6 +444,8 @@ form{
     align-items: center;
     border-radius: 10px;
     background: #FF8A00;
+    width: 51px;
+    height: 34px;
 
   }
   .main_round i{
