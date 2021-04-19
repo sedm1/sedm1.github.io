@@ -110,7 +110,7 @@ section{
 .number{
   font-size: 20px;
   margin-right: 27px;
-  color: #fff
+  color: #fff !important
 }
 .call{
   color: #fff;
