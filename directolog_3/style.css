@@ -438,40 +438,23 @@ form{
     height: 14px;
     margin-left: 0px;
   }
-  .first_round, .second_round, .third_round, .main_round, .main_round i{
-    display: block;
-  }
-  .first_round, .second_round, .third_round, .main_round{
+   .main_round{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background: rgba(196, 196, 196, 0.2)
-  }
-  .first_round{
-    width: 73px;
-    height: 73px;
-  }
-  .second_round{
-    width: 61px;
-    height: 61px;
-  }
-  .third_round{
-    width: 49px;
-    height: 49px;
-  }
-  .main_round{
-    width: 38px;
-    height: 38px;
+    border-radius: 10px;
+    background: #FF8A00;
+
   }
   .main_round i{
     color: #fff;
     font-size: 20px;
+    display: block;
   }
   .play_round {
     position: absolute;
     right: 0;
-    bottom: -35px;
+    bottom: -19px;
     display: flex;
     align-items: center;
   }
