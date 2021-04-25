@@ -44,6 +44,7 @@ body{
     background: rgba(57, 57, 57, 0.6);
     z-index: 2000;
     display: none;
+    cursor: pointer
 }
 #menu2{
   z-index: 2100;
@@ -443,9 +444,9 @@ form{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background: #FF8A00;
-    width: 51px;
-    height: 34px;
+    background: #c4302b;
+    width: 46px;
+    height: 30px;
 
   }
   .main_round i{
