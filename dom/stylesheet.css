@@ -55,3 +55,14 @@
     font-weight: 800;
     font-style: normal;
 }
+@font-face {
+	font-family: 'Gilroy-MediumItalic';
+	src: url('../fonts/gilroy-mediumitalic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-mediumitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-mediumitalic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-mediumitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-mediumitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-mediumitalic.svg#gilroy-mediumitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: 500;
+    font-style: italic;
+}
