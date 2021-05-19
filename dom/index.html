@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="base_setings\base_style.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Главная</title>
+  </head>
+  <body id="body">
+    <div class="modal_window" id="modalwindow">
+      <div class="content__info" id="content__info">
+        <button id="modalClode" onclick="modalWindow()"></button>
+        <label class="modalClode" for="modalClode"><i class="fa fa-times" aria-hidden="true"></i></label>
+        <div class="info__header flex_sc">
+          <div class="info__title">Оставьте заявку и наш менеджер свяжется с Вами!</div>
+          <div class="info__img"><img src="img/info_img.png" alt=""></div>
+        </div>
+        <form action="">
+          <input type="text" placeholder="Ваше имя" class="info__input">
+          <input type="text" placeholder="+7" class="info__input">
+          <input type="text" placeholder="Ваш e-mail" class="info__input">
+          <button class="info__button">Получить консультацию</button>
+        </form>
+      </div>
+    </div>
+    <header>
+      <div class="container flex_se">
+        <div class="logo"><img src="img/logo.jpg" alt=""></div>
+        <div class="header__info flex_sc">
+          <div class="number">
+            <div class="number__item">8-925-123-45-20</div>
+            <div class="number__item">8-925-123-45-20</div>
+          </div>
+          <div class="city">
+            <div class="city__tem">г. Москва, Волгоградский проспект, д. 47 БЦ “КУБ”</div>
+            <div class="city__tem">Как добраться?</div>
+          </div>
+          <button class="call uppercase" onclick="modalWindow()">обратный звонок</button>
+        </div>
+      </div>
+      <div class="container">
+        <nav>
+          <ul class="menu" id="menu">
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Услуги и цены</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <button id="openBtn" onclick="openMenu()"></button>
+          <label for="openBtn" class='open_btn'><i class="fa fa-bars" aria-hidden="true"></i></label>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="slider">
+          <div class="slider__item">
+            <div class="slider__img"><img src="img\first-slider-img.jpg" alt=""></div>
+            <div class="slider__content flex_sc">
+              <div class="left__slider_content">
+                <h1>Построим уютный дом в Москве <span style="color: #fde910">за 3 месяца</span></h1>
+                <p>Подберем идеальное решение исходя из Вашего бюджета</p>
+                <div class="round_border_flex_cc">
+                  <div class="round flex_cc">
+                    <button class="playVideo flex_cc"><div class="trg"></div></button>
+                  </div>
+                </div>
+              </div>
+              <div class="right__slider_content flex_cc">
+                <div class="content__info">
+                  <div class="info__header flex_sc">
+                    <div class="info__title">Оставьте заявку и наш менеджер свяжется с Вами!</div>
+                    <div class="info__img"><img src="img/info_img.png" alt=""></div>
+                  </div>
+                  <form action="">
+                    <input type="text" placeholder="Ваше имя" class="info__input">
+                    <input type="text" placeholder="+7" class="info__input">
+                    <input type="text" placeholder="Ваш e-mail" class="info__input">
+                    <button class="info__button">Получить консультацию</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="find__section">
+      <div class="container">
+        <div class="find flex_sc">
+          <div class="find__item main__find">
+            <div class="main_find__title uppercase">поиск проекта</div>
+            <div class="radio flex_a">
+              <div class="radio__item">
+                <input type="radio" name="radio" id="radio_1">
+                <label for="radio_1">SIP панели</label>
+              </div>
+              <div class="radio__item">
+                <input type="radio" name="radio" id="radio_2">
+                <label for="radio_2">Каркасные</label>
+              </div>
+              <div class="radio__item">
+                <input type="radio" name="radio" id="radio_3">
+                <label for="radio_3">Из камня</label>
+              </div>
+            </div>
+            <div class="input">
+              <p>Этажность</p>
+              <input type="text"value="Все">
+              <p>Площадь, м2</p>
+              <input type="text"value="Все">
+              <p>Цена</p>
+              <input type="text"value="Все">
+            </div>
+            <button>Найти проект</button>
+          </div>
+          <div class="find__item">
+            <div class="item__bg_img"><img src="img/project_1.jpg" alt=""></div>
+            <div class="item__bg"></div>
+            <div class="find__content">
+              <div class="find__img"><img src="img/find_1.png" alt=""></div>
+              <div class="find__info">
+                <div class="find__title">дома из sip-панелей</div>
+                <div class="find__price">за <span style="background-color: rgba(222, 0, 41, 0.2)">999999</span> р/м2</div>
+              </div>
+            </div>
+            <div class="bottom__find flex_sc">
+              <a href="#">Проекты</a>
+              <a href="#">Комплектация</a>
+            </div>
+          </div>
+          <div class="find__item">
+            <div class="item__bg_img"><img src="img/project_1.jpg" alt=""></div>
+            <div class="item__bg"></div>
+            <div class="find__content">
+              <div class="find__img"><img src="img/find_1.png" alt=""></div>
+              <div class="find__info">
+                <div class="find__title">дома из sip-панелей</div>
+                <div class="find__price">за <span style="background-color: rgba(222, 0, 41, 0.2)">999999</span> р/м2</div>
+              </div>
+            </div>
+            <div class="bottom__find flex_sc">
+              <a href="#">Проекты</a>
+              <a href="#">Комплектация</a>
+            </div>
+          </div>
+          <div class="find__item">
+            <div class="item__bg_img"><img src="img/project_1.jpg" alt=""></div>
+            <div class="item__bg"></div>
+            <div class="find__content">
+              <div class="find__img"><img src="img/find_1.png" alt=""></div>
+              <div class="find__info">
+                <div class="find__title">дома из sip-панелей</div>
+                <div class="find__price">за <span style="background-color: rgba(222, 0, 41, 0.2)">999999</span> р/м2</div>
+              </div>
+            </div>
+            <div class="bottom__find flex_sc">
+              <a href="#">Проекты</a>
+              <a href="#">Комплектация</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="project__header flex_sc">
+          <h1>наши работы</h1>
+          <div class="slider_btn">
+            <div></div>
+            <div id="checked"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="projects flex_sc">
+          <div class="project__item">
+            <div class="project_place">
+              <div class="adres">Адрес:</div>
+              <div class="adres__item">04.05.09</div>
+            </div>
+            <div class="project_img__block flex_sc">
+              <div class="img_block__left">
+                <img src="img\project_1.jpg" alt="">
+                <img src="img\project_2.jpg" alt="">
+                <img src="img\project_3.jpg" alt="">
+              </div>
+              <div class="img_block__main">
+                <img src="img\project_4.jpg" alt="">
+              </div>
+              <div class="img_block__right">
+                <img src="img\project_5.jpg" alt="">
+                <img src="img\project_6.jpg" alt="">
+                <img src="img\project_7.jpg" alt="">
+              </div>
+            </div>
+            <div class="footer__project flex_se">
+              <div class="project__info">
+                <div class="info">
+                  <div class="project__title">Площадь:</div>
+                  <div class="project__sum">100 м2</div>
+                </div>
+                <div class="info">
+                  <div class="project__title">Цена:</div>
+                  <div class="project__sum" id="price">1540000 р</div>
+                </div>
+              </div>
+              <a href="" class="more_info">Подробнее<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project__item">
+            <div class="project_place">
+              <div class="adres">Адрес:</div>
+              <div class="adres__item">04.05.09</div>
+            </div>
+            <div class="project_img__block flex_sc">
+              <div class="img_block__left">
+                <img src="img\project_1.jpg" alt="">
+                <img src="img\project_2.jpg" alt="">
+                <img src="img\project_3.jpg" alt="">
+              </div>
+              <div class="img_block__main">
+                <img src="img\project_4.jpg" alt="">
+              </div>
+              <div class="img_block__right">
+                <img src="img\project_5.jpg" alt="">
+                <img src="img\project_6.jpg" alt="">
+                <img src="img\project_7.jpg" alt="">
+              </div>
+            </div>
+            <div class="footer__project flex_se">
+              <div class="project__info">
+                <div class="info">
+                  <div class="project__title">Площадь:</div>
+                  <div class="project__sum">100 м2</div>
+                </div>
+                <div class="info">
+                  <div class="project__title">Цена:</div>
+                  <div class="project__sum" id="price">1540000 р</div>
+                </div>
+              </div>
+              <a href="" class="more_info">Подробнее<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_section__text"><a href="#">все проекты</a></div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <hr>
+        <h1>новости компании</h1>
+        <div class="news flex_sc">
+          <div class="news__item">
+            <div class="item__img"><img src="img/news_1.jpg" alt=""></div>
+            <div class="bg_filter"></div>
+            <div class="item__bottom">Начинается строительство каркасного дома 8,6х10,7м</div>
+            <a href="" class="more_info">Подробнее<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="news__item">
+            <div class="item__img"><img src="img/news_1.jpg" alt=""></div>
+            <div class="bg_filter"></div>
+            <div class="item__bottom">Начинается строительство каркасного дома 8,6х10,7м</div>
+            <a href="" class="more_info">Подробнее<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="news__item">
+            <div class="item__img"><img src="img/news_1.jpg" alt=""></div>
+            <div class="bg_filter"></div>
+            <div class="item__bottom">Начинается строительство каркасного дома 8,6х10,7м</div>
+            <a href="" class="more_info">Подробнее<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer_section__text"><a href="#">больше нововостей</a></div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h1>Видео-отзывы заказчиков о нашей компании</h1>
+        <div class="video flex_sc">
+          <div class="video__item">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PS1UaCo6mJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video__item">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PS1UaCo6mJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video__item">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PS1UaCo6mJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="footer_section__text"><a href="#">Все отзывы</a></div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="statya">Статья --------</div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="news_2 flex_sc">
+          <div class="news__item">
+            <div class="item__img"><img src="img/kredit.jpg" alt=""></div>
+            <div class="bg_filter"></div>
+            <div class="item__bottom">Материнский капитал</div>
+            <a href="" class="more_info">Подробнее<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="news__item">
+            <div class="item__img"><img src="img/kredit_2.jpg" alt=""></div>
+            <div class="bg_filter"></div>
+            <div class="item__bottom">Кредит на строительство</div>
+            <a href="" class="more_info">Подробнее<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container flex_a">
+        <div class="footer__logo"><img src="img/logo.jpg" alt=""></div>
+        <div class="footer__nav">
+          <div class="nav__title">Проекты</div>
+          <a href="#">Дома из SIP-панелей</a>
+          <a href="#">Каркасные дома</a>
+          <a href="#">Каменные дома</a>
+        </div>
+        <div class="footer__nav">
+          <div class="nav__title">Услуги и цены</div>
+          <a href="#">Проектирование</a>
+          <a href="#">Продажа SIP-панелей</a>
+          <a href="#">Комплектующие</a>
+          <a href="#">Инженерные коммуникации</a>
+          <a href="#">Кредит и ипотека</a>
+        </div>
+        <div class="footer__nav">
+          <div class="nav_up">
+            <div class="nav__title">Портфолио</div>
+            <a href="#">Живые фото домов</a>
+          </div>
+          <div class="nav_down">
+            <div class="nav__title">Отзывы</div>
+            <a href="#">Видео-отзывы</a>
+            <a href="#">Отзывы от руки</a>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="nav_up">
+            <div class="nav__title">Контакты</div>
+            <a href="#">Наши контакты</a>
+          </div>
+          <div class="nav_down">
+            <div class="nav__title">Акции</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__text">© 2013 - 2021 House-Stroy. Все права защищены.</div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
