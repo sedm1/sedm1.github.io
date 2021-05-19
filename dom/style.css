@@ -162,10 +162,11 @@ nav{
   font-size: 50px;
   line-height: 67px;
   letter-spacing: -0.01em;
+  text-transform: none;
 }
 .left__slider_content p{
   color: #000;
-  font-family: 'Gilroy-Medium';
+  font-family: 'Gilroy-Semibold';
   font-style: italic;
   font-size: 17px;
   letter-spacing: 0.04em;
