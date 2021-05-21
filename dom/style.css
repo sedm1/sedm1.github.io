@@ -527,6 +527,12 @@ hr{
   bottom: -50px;
   right: 0;
 }
+#mrg{
+  margin-bottom: 0px;
+}
+#mrg_2{
+  margin-top: 25px;
+}
 /*VIDEO BLOCK SETTINGS*/
 .video__item{
   width: 33.33%;
