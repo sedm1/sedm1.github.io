@@ -777,10 +777,10 @@ footer{
     padding-left: 20px;
   }
   .img_block__main img {
-    height: 230px;
+    height: 220px;
   }
   .news__item{
-    height: 210px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 450px){
@@ -817,7 +817,7 @@ footer{
 }
 @media screen and (max-width: 340px){
   .footer__project.flex_se{
-    margin-top: 200px;
+    margin-top: 180px;
   }
   .news__item{
     height: 280px;
