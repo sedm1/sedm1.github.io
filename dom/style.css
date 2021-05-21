@@ -80,11 +80,14 @@ header{
 .header__info{
   color: #000;
 }
-.number, .city__item{
+.number a, .city__item{
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: -0.045em;
   display: flex;
   flex-direction: column;
+}
+.city a{
+  text-decoration: underline;
 }
 .number{
   font-size: 20px;
