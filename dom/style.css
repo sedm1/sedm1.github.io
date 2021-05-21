@@ -14,7 +14,7 @@ button{
 }
 h1{
   font-family: 'Gilroy-Medium';
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 0.04em;
   color: rgba(0, 0, 0, 0.9);
   margin-bottom: 49px;
@@ -87,7 +87,7 @@ header{
   flex-direction: column;
 }
 .number{
-  font-size: 25px;
+  font-size: 20px;
   margin-right: 21px;
 }
 .city{
@@ -95,7 +95,7 @@ header{
 }
 .call{
   font-family: 'Gilroy-Bold';
-  font-size: 20px;
+  font-size: 17px;
   padding: 13px 54px;
   margin-left: 14px;
 }
@@ -535,7 +535,7 @@ hr{
 /*Statya*/
 .statya{
   color: rgba(0, 0, 0, 0.8);
-  font-size: 40px;
+  font-size: 35px;
   line-height: 48px;
   margin-bottom: 86px;
 }
