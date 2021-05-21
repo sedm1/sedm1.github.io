@@ -729,6 +729,10 @@ footer{
   }
 }
 @media screen and (max-width: 550px){
+  .statya{
+    font-size: 27px;
+    line-height: 29px;
+  }
   .slider{
     height: 500px
   }
