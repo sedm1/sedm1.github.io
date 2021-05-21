@@ -285,7 +285,7 @@ nav{
   max-width: 282px;
   overflow: hidden;
   position: relative;
-  height: 477px;
+  height: 546px;
 }
 .main__find{
   padding: 18px 20px;
@@ -374,7 +374,7 @@ input[type = "radio"] {
   background: #DE0029;
   border-radius: 5px;
   padding: 26px 24px;
-  margin-top: 40px;
+  margin-top: 113px;
 }
 .bottom__find a{
   color: #fff;
@@ -530,7 +530,7 @@ hr{
 /*VIDEO BLOCK SETTINGS*/
 .video__item{
   width: 33.33%;
-  height: 190px;
+  height: 220px;
   margin-right: 10px;
 }
 .video__item:last-child{
@@ -539,8 +539,8 @@ hr{
 /*Statya*/
 .statya{
   color: rgba(0, 0, 0, 0.8);
-  font-size: 35px;
-  line-height: 48px;
+  font-size: 20px;
+  line-height: 28px;
   margin-bottom: 86px;
 }
 /*NEWS BLOCK SETTINGS*/
