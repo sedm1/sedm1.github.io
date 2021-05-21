@@ -558,7 +558,7 @@ hr{
 }
 /*FOOTER SETINGS*/
 footer{
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%),linear-gradient(0deg, #DE0029, #DE0029);
+  background: #DE0029;
   padding-top: 49px;
   padding-bottom: 26px;
   margin-top: 230px;
