@@ -567,14 +567,12 @@ footer{
   padding-bottom: 26px;
   margin-top: 230px;
 }
+footer .container{
+    justify-content: space-between;
+}
 .flex_a{
   display: flex;
   align-items: flex-start;
-}
-.footer__logo{
-  width: 97px;
-  height: 97px;
-  margin-right: 26px;
 }
 .nav_up, .nav_down, .footer__nav{
   display: flex;
@@ -685,10 +683,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .footer__logo{
-    margin-bottom: 21px;
-    margin-right: 0px;
   }
   .footer__nav{
     width: auto;
