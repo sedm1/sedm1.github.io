@@ -636,7 +636,15 @@ hr{
   font-size: 25px
 }
 #tiktok{
-  height: 40px;
+  width: 25px;
+  height: 32px;
+}
+#odnokl{
+  width: 20px;
+  height: 32px;
+}
+#youtube{
+  width: 42px;
 }
 .under__button{
   font-size: 12px;
