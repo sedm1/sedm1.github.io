@@ -11,3 +11,8 @@ function modalWindow(){
   modalwindow.classList.toggle('flex');
   content.classList.toggle('block');
 }
+document.addEventListener('click', function(e) {
+  if (e.target.id != 'menu') {
+    openMenu()
+  }
+});

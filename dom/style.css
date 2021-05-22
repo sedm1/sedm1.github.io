@@ -117,7 +117,7 @@ nav{
   margin-right: 81px;
   height: 100%;
   display: flex;
-  align-items: center;
+  padding-top: 16px;
 }
 .menu li:last-child{
   margin-right: 0px;
@@ -125,6 +125,14 @@ nav{
 .menu li a{
   color: #fff;
   font-size: 20px;
+}
+.li_info__item ol{
+  padding: 0px;
+  font-size: 24px;
+    line-height: 32px;
+}
+.li_info__item ol a{
+  color: #000
 }
 .li_info{
     position: relative;
@@ -135,7 +143,7 @@ nav{
     z-index: 200;
     background: rgba(255, 255, 255, 0.6);
     border: 2px solid #000000;
-    margin-top: 90px;
+    margin-top: 40px;
     display: none;
 }
 #info_block_1:hover #info_1{
@@ -832,11 +840,31 @@ footer .container{
   .round_border{
     margin-left: 0px;
   }
+  .header__info{
+    flex-direction: column;
+  }
   .number{
+    margin-right: 0px;
+    margin-left: 10px
+  }
+  .number a:nth-child(2){
+    display: none;
+  }
+  .city{
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 10px
+  }
+  .city__item:first-child{
     display: none;
   }
 }
 @media screen and (max-width: 550px){
+  .news_2 .news__item .item__bottom{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 15px;
+  }
   .under__footer_block{
     padding-left: 0px;
     padding-right: 0px;
@@ -863,7 +891,7 @@ footer .container{
     width: 93%
   }
   .statya{
-    font-size: 27px;
+    font-size: 20px;
     line-height: 29px;
   }
   .slider{
@@ -924,6 +952,15 @@ footer .container{
   }
 }
 @media screen and (max-width: 450px){
+  .footer_section__text{
+    margin-top: 20px
+  }
+  .footer_section__text a{
+    font-size: 14px
+  }
+  h1{
+    font-size: 30px
+  }
   .logo{
     width: 110px;
     height: 110px;
@@ -952,7 +989,7 @@ footer .container{
     line-height: 5vw
   }
   .video__item{
-    height: auto;
+    height: 200px;
   }
 }
 @media screen and (max-width: 340px){
