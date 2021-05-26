@@ -698,6 +698,9 @@ footer .container{
   font-size: 10px;
   text-align: center
 }
+.adres__item{
+  text-align: right;
+}
 /*ADAPTATION*/
 @media screen and (max-width: 1520px){
   .under__footer_block{
