@@ -701,6 +701,15 @@ footer .container{
 .adres__item{
   text-align: right;
 }
+#mrg_bot{
+  margin-bottom: 10px;
+}
+.news__aders{
+  position: absolute;
+  top: -42px;
+  text-align: right;
+  right: 0px;
+}
 /*ADAPTATION*/
 @media screen and (max-width: 1520px){
   .under__footer_block{
@@ -778,8 +787,9 @@ footer .container{
   }
   .news__item {
     width: 60%;
-    margin-bottom: 70px;
+    margin-bottom: 112px;
     margin-right: 0px;
+        height: 400px;
   }
   .video{
     flex-direction: column;
@@ -869,7 +879,7 @@ footer .container{
 }
 @media screen and (max-width: 550px){
   .slider {
-    height: 310px;
+    height: 250px;
   }
   .news_2 .news__item .item__bottom{
     padding-top: 16px;
