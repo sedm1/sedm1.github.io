@@ -1,0 +1,33 @@
+.projects{
+  flex-wrap: wrap;
+}
+.projects__item{
+  width: 33.3333%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.projects_item__img{
+  width: 200px;
+  height: 200px;
+  background: #C4C4C4;
+  margin-bottom: 10px;
+}
+.project_item__title{
+  color: #004F92;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 680px){
+  .projects__item{
+    width: 50%
+  }
+}
+@media screen and (max-width: 450px){
+  .projects__item{
+    width: 100%
+  }
+}
