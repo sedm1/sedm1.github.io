@@ -67,7 +67,12 @@ header{
   position: relative;
 }
 .main__img{
-  height: 100%
+  height: 100%;
+  overflow: hidden;
+}
+.main__img video{
+  width: 100vw;
+  height: auto;
 }
 .main__img_bg{
   width: 100%;

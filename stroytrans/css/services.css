@@ -8,9 +8,13 @@
   flex-direction: row-reverse;
 }
 .services__img{
-  min-width: 40%;
+  min-width: 38%;
+  max-width: 38%;
   height: 300px;
    background: #C4C4C4;
+   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .services__textBlock{
   width: 40%
@@ -33,12 +37,19 @@
     margin-bottom: 30px;
   }
   .services__img, .services__textBlock{
-    min-width: 420%;
+    min-width: 420px;
+    max-width: 420px;
     text-align: center
+  }
+}
+@media screen and (max-width: 800px){
+  .services__img{
+    height: auto
   }
 }
 @media screen and (max-width: 420px){
   .services__img, .services__textBlock{
-    min-width: 100%
+    min-width: 100%;
+    max-width: 100%;
   }
 }
