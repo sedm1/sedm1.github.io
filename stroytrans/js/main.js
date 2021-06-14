@@ -29,3 +29,21 @@ form.addEventListener('submit', function(evt) {
   this.submit();
   alert("Письмо было успешно отправлено")
 });
+
+//Менюшка
+var body = document.getElementById("body");
+var menu = document.getElementById("menu")
+function openMenu(){
+  body.classList.toggle("overflow");
+  menu.classList.toggle("block_menu")
+}
+
+//Закрепление header'a при скроле
+window.onscroll = function() {
+  var head = document.getElementById("header");
+  if (window.pageYOffset > 200) {
+    head.classList.add("fixed");
+  } else {
+      head.classList.remove("fixed");
+    }
+};

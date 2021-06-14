@@ -58,3 +58,14 @@
     margin-right: 0px;
   }
 }
+.block_menu{
+  left: -76px;
+}
+.overflow{
+  overflow-y: hidden;
+}
+.fixed{
+  position: fixed;
+  z-index: 1001;
+  width: 100%
+}

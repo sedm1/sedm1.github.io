@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body id="body">
     <section>
-      <header>
+      <header id="header">
         <div class="container flex_sc">
           <div class="left__header_info flex_a">
             <div class="logo"></div>
-            <ul class="menu">
+            <ul class="menu" id="menu">
               <li><a href="index.html">Главная</a></li>
               <li><a href="services.html">Услуги</a></li>
               <li><a href="projects.html">Проекты</a></li>
@@ -28,6 +28,8 @@
             <p>+7 (888)-888-88-88</p>
             <p>stroytrans@mail.ru</p>
           </div>
+          <button id="openBtn" onclick="openMenu()"></button>
+          <label for="openBtn" id="lbl"><i class="fa fa-bars" aria-hidden="true"></i></label>
         </div>
       </header>
       <section class="main_img_section">
@@ -49,24 +51,28 @@
           <div class="advantage__item">
             <div class="right__advantage__item">1</div>
             <div class="left__advantage__item">
+              <div class="advantage_item__title">Опыт работы</div>
               <p>Мы на рынке уже ** лет и знаем толк в работе. За нашими плечами проекты, которые прослужат еще долгое время </p>
             </div>
           </div>
           <div class="advantage__item">
             <div class="right__advantage__item">2</div>
             <div class="left__advantage__item">
+              <div class="advantage_item__title">Собственный поставщик</div>
               <p>Вся техника и материалы поставляется  единым поставщиком.  Уже * лет мы сотрудничаем и уверены в качестве производимого материала</p>
             </div>
           </div>
           <div class="advantage__item">
             <div class="right__advantage__item">3</div>
             <div class="left__advantage__item">
+              <div class="advantage_item__title">Рассрочка</div>
               <p>У нас возможна рассрочка в несколько этапов. Возможен расчет по определенному проценту каждый месяц</p>
             </div>
           </div>
           <div class="advantage__item">
             <div class="right__advantage__item">4</div>
             <div class="left__advantage__item">
+              <div class="advantage_item__title">Соблюдение сроков</div>
               <p>Все сроки прописаны в договоре и при любом отклонении графика обсуждаются детали и предлагается другой вариант</p>
             </div>
           </div>
