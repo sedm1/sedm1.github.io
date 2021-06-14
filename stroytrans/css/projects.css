@@ -31,8 +31,9 @@
   margin-bottom: 100px;
 }
 .slider_bg__title{
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 .slider__bg hr{
   width: 50px;
