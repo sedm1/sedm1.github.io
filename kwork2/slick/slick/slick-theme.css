@@ -1,24 +1,8 @@
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
-.slick-list {}
+
 /* Лента слайдов */
 .slick-track{display: flex;}
 /* Слайд */
 .slick-slide{max-width: 1120px;}
-
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
 /* Стрелка */
 .slider{position:relative}
 .slick-arrow{
@@ -43,8 +27,6 @@
     right: 1%;
     background-image: url('img/arrow-right.png');
 }
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
 /* Точки (булиты) */
 .slick-dots{
     display: flex; 
