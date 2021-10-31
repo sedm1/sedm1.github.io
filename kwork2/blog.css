@@ -1,0 +1,13 @@
+.pt-cv-wrapper {
+    color: #000;
+}
+.pt-cv-title{
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-size:32px
+}
+.pt-cv-content a {
+    color: #fff;
+    background-color: lightgreen;
+    padding: 4px;
+}
