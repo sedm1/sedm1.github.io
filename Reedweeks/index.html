@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+    <header>
+        <div class="container animate__backInRight">
+            <div class="left__header">
+                <div class="menu__button">
+                    <button id="openMenu" onclick="menuOpen()"></button>
+                    <label for="openMenu" class="lbl_menu"><div class="open_menuImg"><img src="img/menu.png" alt="menu" class="imgimg"></div></label>
+                </div>
+                <div class="logo"><img src="img/Logo.png" alt="Logo"></div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Самовывоз</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right__header">
+                <div class="number">
+                    <div class="phone__icon"><img src="img/phone.png" alt="phone__icon"></div>
+                    +7(966) 143-44-22
+                </div>
+                <div class="header__icon">
+                    <div class="icon__item"><img src="img/like.png" alt="like"></div>
+                    <div class="icon__item"><img src="img/search.png" alt="search"></div>
+                    <div class="icon__item cart">
+                        <img src="img/cart.png" alt="cart">
+                        <div class="col">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main__section">
+        <div class="main__container">
+            <div class="left_main">
+                <div class="col">
+                    <div class="col__item">01</div>
+                    <div class="col__item">02</div>
+                    <div class="col__item">03</div>
+                </div>
+                <div class="info__main">
+                    <h2>Топовый рюкзак успей купить</h2>
+                    <p>1 800 ₽</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+        </div>
+        <div class="right_main"><img src="img/backpack.png" alt="backpack"></div>
+    </section>
+    <section class="categorii">
+        <div class="main__container">
+            <div class="categoris__button">
+                <button class="categori__button" onclick="categoriiOpen()">
+                    <img src="img/ctg.png" alt="ctg">
+                    Категории товаров
+                </button>
+                <button class="categori__button" onclick="categoriiOpen()">
+                    <img src="img/home.png" alt="ctg">
+                    самовывоз
+                </button>
+            </div>
+            <div class="categori__block">
+                <a href="#" class="categori__link">
+                    <div class="categori__icon"><img src="img/i1.png" alt="i1"></div>
+                    <div class="categori__name">Одежда</div>
+                </a>
+                <a href="#" class="categori__link">
+                    <div class="categori__icon"><img src="img/i3.png" alt="i1"></div>
+                    <div class="categori__name">Аксессуары</div>
+                </a>
+                <a href="#" class="categori__link">
+                    <div class="categori__icon"><img src="img/i4.png" alt="i1"></div>
+                    <div class="categori__name">Игрушки</div>
+                </a>
+                <a href="#" class="categori__link">
+                    <div class="categori__icon"><img src="img/i5.png" alt="i1"></div>
+                    <div class="categori__name">Лето/Пляж</div>
+                </a>
+                <a href="#" class="categori__link">
+                    <div class="categori__icon"><img src="img/i2.png" alt="i1"></div>
+                    <div class="categori__name">Электроника</div>
+                </a>
+                <a href="#" class="categori__link">
+                    <div class="categori__icon"><img src="img/i6.png" alt="i1"></div>
+                    <div class="categori__name">Для дома</div>
+                </a>
+                <a href="#" class="categori__link">
+                    <div class="categori__icon"><img src="img/i7.png" alt="i1"></div>
+                    <div class="categori__name">Запчасти для самокатов</div>
+                </a>
+                <a href="#" class="categori__link">
+                    <div class="categori__icon"><img src="img/i8.png" alt="i1"></div>
+                    <div class="categori__name">Запчасти для пылесосов</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="tovar">
+        <div class="container">
+            <div class="tovar__buttons">
+                <button class="button__item"><div class="ct__img" id="ct_1">
+                    <img src="img/ct_1_white.png" alt="ct"  class="ct_img__img">
+                </div>
+                Одежда
+                </button>
+                <button class="button__item">
+                    <div class="ct__img" id="ct_2">
+                    <img src="img/ct_2.png" alt="ct" class="ct_img__img">
+                    <img src="img/ct_2-1.png" alt="ct" class="ct_img__img">
+                </div>
+                    Аксессуары
+                </button>
+                <button class="button__item">
+                    <div class="ct__img" id="ct_3">
+                    <img src="img/cat_3.png" alt="ct" class="ct_img__img">
+                    <img src="img/ct_3-1.png" alt="ct" class="ct_img__img">
+                </div>Игрушки
+                </button>
+                <button class="button__item">
+                    <div class="ct__img" id="ct_4">
+                    <img src="img/ct_4.png" alt="ct" class="ct_img__img">
+                    <img src="img/ct_4-1.png" alt="ct" class="ct_img__img">
+                </div>
+                    Лето/Пляж
+                </button>
+                <button class="button__item">
+                    <div class="ct__img" id="ct_5">
+                    <img src="img/ct_5.png" alt="ct" class="ct_img__img">
+                    <img src="img/ct_5-1.png" alt="ct" class="ct_img__img">
+                </div>Электроника
+                </button>
+                <button class="button__item">
+                    <div class="ct__img" id="ct_6">
+                    <img src="img/ct_7.png" alt="ct" class="ct_img__img">
+                    <img src="img/ct_7-1.png" alt="ct" class="ct_img__img">
+                </div>Для дома
+                </button>
+                <button class="button__item">
+                    <div class="ct__img" id="ct_7">
+                    <img src="img/ct_6.png" alt="ct" class="ct_img__img">
+                    <img src="img/ct_6-1.png" alt="ct" class="ct_img__img">
+                </div>Запчасти для гаджетов
+                </button>
+            </div>
+            <div class="main__container">
+                <div class="tovars__title">
+                    <div class="catalog__icon"><img src="img/fire.png" alt="fire" id="fire"></div>
+                    <h1>Хиты продаж</h1>
+                </div>
+                <div class="tovar__items">
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comapny__info">
+        <div class="main__container">
+            <div class="info__text">
+                <h2>Преимущества покупок<br> в REDWEEKS </h2>
+                <p>Мы подбираем товары для детей и взрослых. У нас каждый найдет подарок для любимых и близких людей. Например, на Новый год вся семья ждет новогодние презенты. Чтобы вы не теряли время на поиски, предлагаем купить прикольные подарки в одном месте. Ознакомьтесь с витриной, где представлены акционные товары, загляните в раздел «Прикольные подарки». Добрые с юмором подарки ждут своих обладателей</p>
+                <div class="advantages">
+                    <div class="advantages__item">
+                        <div class="advantages__img"><img src="img/adv_1.png" alt="icon" id="adv_1"></div>
+                        <div class="advantages__text">Быстрая доставка и доставка по регионам</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__img"><img src="img/adv_2.png" alt="icon" id="adv_2"></div>
+                        <div class="advantages__text">Бесплатный самовывоз</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__img"><img src="img/adv_3.png" alt="icon" id="adv_3"></div>
+                        <div class="advantages__text">Низкие цены</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__img"><img src="img/adv_4.png" alt="icon" id="adv_4"></div>
+                        <div class="advantages__text">Работаем каждый день с 10 до 19</div>
+                    </div>
+                </div>
+            </div>
+            <div class="info__img"><img src="img/info__icon1.png" alt="infoimg"></div>
+        </div>
+    </section>
+    <section class="tovar">
+        <div class="container">
+            <div class="main__container" id="mrg_0">
+                <div class="tovars__title">
+                    <div class="catalog__icon"><img src="img/news.png" alt="new" id="news"></div>
+                    <h1>Новинки</h1>
+                </div>
+                <div class="tovar__items">
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price">1 900 ₽</div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comapny__info">
+        <div class="main__container reverse">
+            <div class="info__text">
+                <h2>REDWEEKS — интернет-магазин<br> прикольных подарков по смешным ценам</h2>
+                <p>REDWEEKS — это магазин классных подарков. От мягких игрушек до современных гаджетов — так мы презентуем себя вкратце.У вас намечается грандиозный праздник, день рождения любимых домочадцев или близкого друга? Не знаете, что преподнести в подарок? Загляните в каталог товаров. Рассмотрите картинку, ознакомьтесь с таблицей размеров, чтобы подобрать одежду по фигуре. Уверены, здесь найдется та вещица, которая зацепит ваше сердце и приглянется глазу. Кроме того, предоставляем запчасти для электротранспорта, которые тоже могут быть преподнесены в дар. Владельцам гироскутеров они точно не станут лишними. Если приобрести оригинальную запчасть для электротранспорта со скидкой, то вашему сюрпризу не будет цены. Наша акционная витрина с товарами со скидкой В любой момент она сориентирует вас по информации об актуальных акциях. Витрина обновляется в постоянном режиме. Загляните в карточку товара и найдете описание и характеристики, время, в течение которого действует скидка. Успейте заказать подарки с приколом и другие товары по смешным ценам.</p>
+            </div>
+            <div class="info__img_2"><img src="img/info__icon2.png" alt="infoimg"></div>
+        </div>
+    </section>
+    <section class="tovar">
+        <div class="container">
+            <div class="main__container" id="mrg_0">
+                <div class="tovars__title">
+                    <div class="catalog__icon"><img src="img/wow.png" alt="wow" id="wow"></div>
+                    <h1>Акции</h1>
+                </div>
+                <div class="tovar__items">
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price"><span class="old__price">1900 ₽</span><span class="new_price">200 ₽</span></div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price"><span class="old__price">1900 ₽</span><span class="new_price">200 ₽</span></div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price"><span class="old__price">1900 ₽</span><span class="new_price">200 ₽</span></div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price"><span class="old__price">1900 ₽</span><span class="new_price">200 ₽</span></div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price"><span class="old__price">1900 ₽</span><span class="new_price">200 ₽</span></div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    <div class="tovar__item">
+                        <div class="tovar_up">
+                            <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                            <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                        </div>
+                        <div class="tovar__down">
+                            <div class="tovar__price"><span class="old__price">1900 ₽</span><span class="new_price">200 ₽</span></div>
+                            <button class="addbutton">+</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="main__container">
+           <div class="question__item">
+               <div class="questiom">Можно ли в живую потрогать товары, представленные в магазине?</div>
+               <div class="answer">В Москве работает самовывоз, куда можно подойти или приехать, предварительно согласовав с нами время визита. Наши консультанты покажут ассортимент, ознакомят с ценами. Помогут выбрать смешные подарки, которые обязательно понравятся адресату. <br><br>Мы находимся по адресу: Москва, Алтуфьевское ш., 37, стр. 1 (Центр торговли, этаж 3). <br>Позвонить нам можно по номерам: +79661434422.</div>
+           </div>
+           <div class="question__item">
+                <div class="questiom">Интересно, а как о вашем интернет-магазине отзываются покупатели?</div>
+                <div class="answer">В Москве работает самовывоз, куда можно подойти или приехать, предварительно согласовав с нами время визита. Наши консультанты покажут ассортимент, ознакомят с ценами. Помогут выбрать смешные подарки, которые обязательно понравятся адресату. <br><br>Мы находимся по адресу: Москва, Алтуфьевское ш., 37, стр. 1 (Центр торговли, этаж 3). <br>Позвонить нам можно по номерам: +79661434422.</div>
+            </div> 
+            <div class="question__item">
+                <div class="questiom">Находимся проездом в Москве. Можем ли мы самостоятельно забрать товар?</div>
+                <div class="answer">В Москве работает самовывоз, куда можно подойти или приехать, предварительно согласовав с нами время визита. Наши консультанты покажут ассортимент, ознакомят с ценами. Помогут выбрать смешные подарки, которые обязательно понравятся адресату. <br><br>Мы находимся по адресу: Москва, Алтуфьевское ш., 37, стр. 1 (Центр торговли, этаж 3). <br>Позвонить нам можно по номерам: +79661434422.</div>
+            </div>  
+            <div class="question__item">
+                <div class="questiom">Какие гарантии предусмотрены?</div>
+                <div class="answer">В Москве работает самовывоз, куда можно подойти или приехать, предварительно согласовав с нами время визита. Наши консультанты покажут ассортимент, ознакомят с ценами. Помогут выбрать смешные подарки, которые обязательно понравятся адресату. <br><br>Мы находимся по адресу: Москва, Алтуфьевское ш., 37, стр. 1 (Центр торговли, этаж 3). <br>Позвонить нам можно по номерам: +79661434422.</div>
+            </div> 
+        </div>
+    </section>
+    <footer>
+        <div class="main__container">
+            <div class="footer__logo"><img src="img/footer_logo.png" alt=""></div>
+            <nav>
+                <ul class="footer__menu">
+                    <li><a href="#">доставка и оплата</a></li>
+                    <li><a href="#">контакты</a></li>
+                    <li><a href="#">отзывы</a></li>
+                    <li><a href="#">о нас</a></li>
+                    <li><a href="#">статьи</a></li>
+                    <li><a href="#">самовывоз</a></li>
+                </ul>
+            </nav>
+            <div class="footer__info">
+                <div class="footer__item"><img src="img/phone_white.png" alt="icon">+7(966) 143-44-22</div>
+                <div class="footer__item"><img src="img/me_white.png" alt="icon">info@redweeks.ru</div>
+                <div class="footer__item"><img src="img/loc_white.png" alt="icon">г. Москва Алтуфьевское <br>ш.,37, стр. 1 (Центр торговли, этаж 3)</div>
+            </div>
+        </div>
+        <div class="footer__text">Обращаем Ваше внимание на то, что данная информация представлена в ознакомительных целях и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса РФ. Для получения подробной информации о стоимости товара и услуг, пожалуйста, обращайтесь к менеджерам компании.</div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
