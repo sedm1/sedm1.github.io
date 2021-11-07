@@ -84,6 +84,42 @@ header
                 height: 19px
         .header__icon
             @include flex-centerX
+            position: relative
+            .search-box 
+                display: flex
+                align-items: center
+                position: relative
+                margin-right: 30px
+                .search-btn 
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    align-items: center
+                    color: $black
+                    font-size: 19px
+                    border-radius: 50%
+                    text-decoration: none
+                    opacity: 0.5
+                .search-txt 
+                    border: none
+                    outline: none
+                    background: none
+                    padding: 0
+                    color: $black
+                    font-size: 16px
+                    transition: .4s
+                    line-height: 40px
+                    width: 0
+                    position: absolute
+                    right: 20px
+                    background-color: #F1F3F4
+                    z-index: 10
+            &:hover
+                .search-txt  
+                    width: 240px
+                    padding-left: 10px
+                    border: 1px solid #3B3943
+                    border-radius: 9px
             .icon__item
                 width:20px
                 height: 18px
@@ -106,67 +142,46 @@ header
                 right: -8px
                 font-size:11px
 .main__section
-    position: relative
     width: 1150px
     margin: 0 auto
-    padding-top: 96px
-    .right_main
-        position: absolute
-        right: 5%
-        top:18%
-        width: 408px
-        height: 490px
-        transform: rotate(9.87deg)
+    padding-top: 110px
     .main__container
-        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%)
-        clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%)
-        background: linear-gradient(180deg, #3D3B44 0%, #2F2C3C 98.21%)
-        border-radius: 20px
         height: 556px
-        display: flex
-        justify-content: space-between
-        padding-top: 84px
+        background-image: url("img/main_bg.png")
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        padding-top: 50px
         padding-left: 20px
+        padding-right: 20px
+        .right_main
+            width: 408px
+            height: 490px
         .left_main
-            display: flex
-            align-items: flex-start
-            color: #fff
-            font-family: $SHE
-            .col
+            .slider__item
                 display: flex
-                flex-direction: column
-                font-size: 40px
-                .col__item
-                    display: flex
-                    align-items: center
-                    &:nth-child(2)
-                        opacity: 0.3
-                    &:nth-child(3)
-                        opacity: 0.1
-                        
-                    &::before
-                        content: "—"
-                        color: #FF4444
-                        margin-right: 16px
-            .info__main
+                justify-content: space-between
                 margin-left: 50px
-                h2
-                    width: 466px
-                    font-size: 56px
-                    line-height: 64px
-                    margin-bottom: 25px
-                p
-                    font-size: 96px
-                    font-family: $SFHY
-                button
-                    background: #FF5555
-                    border-radius: 20px
+                .info__main
+                    margin-left: 50px
                     color: #fff
-                    padding: 18px 25px
-                    font-size:20px
-                    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%)
-                    clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%)
-                    margin-top: 45px
+                    h2
+                        max-width: 466px
+                        font-size: 56px
+                        line-height: 64px
+                        margin-bottom: 25px
+                    p
+                        font-size: 96px
+                        font-family: $SFHY
+                    button
+                        background: #FF5555
+                        border-radius: 20px
+                        color: #fff
+                        padding: 18px 25px
+                        font-size:20px
+                        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%)
+                        clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%)
+                        margin-top: 45px
 
 //Second Blcok
 .categorii
@@ -201,6 +216,8 @@ header
             display: flex
             flex-direction: column
             align-items: flex-start
+            footer
+                display: none
             .button__item
                 width: 256px
                 display: flex
@@ -393,12 +410,13 @@ header
             font-family: $SFR
             font-size: 16px
             max-width: 928px
-            display: none
-            transition: 0.5s
+            height: 0px
+            transition: .5s
             margin-top: 30px
+            overflow: hidden
     .question__item.ans__active
         .answer
-            display: block
+            height: 150px
         &::after
             transform: rotate(90deg)
 footer
@@ -451,24 +469,28 @@ footer
         width: 97%
     
 @media screen and ( max-width: 1220px)
-    .main__section
-        width: 100%
-        .right_main
-            top: 25%
-            width: 251px
-            height: 283px
-        .main__container
-            padding-top: 20px
-            -webkit-clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%)
-            clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%)
-            .left_main
-                flex-direction: column
-                .info__main
-                    margin-left: 0px
-                .col
-                    flex-direction: row
     .main__container
         width: 97%
+    .main__section
+        width: 100%
+        .main__container 
+            .left_main 
+                .slider__item
+                    margin-left: 0px
+                    padding-top: 40px 
+                    .info__main
+                        margin-left: 0px
+                        h2
+                            font-size: 41px
+                            line-height: 41px
+                            margin-bottom: 21px
+                        p
+                            font-size: 50px
+                        button
+                            margin-top: 20px
+            .right_main
+                width: 254px
+                height: 350px
     header 
         padding: 20px 0px
         .container 
@@ -481,20 +503,42 @@ footer
         .container
             .tovar__buttons 
                 position: fixed
-                top: 53px
+                top: -100%
                 left: 0
                 background: #ECEEEF
                 width: 100%
                 height: 100vh
                 z-index: 120
-                display: none
+                transition: .5s
+                justify-content: space-between
+                footer
+                    overflow: hidden
+                    display: block
+                    width:100%
+                    position: relative
+                    .round
+                        width: 116%
+                        height: 200px
+                        background: #ECEEEF
+                        top: -145px
+                        right: -8%
+                        border-radius: 100%
+                        position: absolute
+                    .main__container 
+                        .footer__menu 
+                            li
+                                margin-bottom: 10px
+                        .footer__info 
+                            .footer__item
+                                margin-bottom: 15px
+
             .main__container
                     margin: 0 auto
             .tovar__items 
                 justify-content: space-around
                 
                 .tovar__item
-                    width: 48%
+                    width: 26%
                     height: 275px
                     padding: 13px 10px
                     .tovar__img
@@ -556,24 +600,19 @@ footer
                     margin-right: 0px
 @media screen and ( max-width: 790px)
     .main__section
-        .right_main
-            top: 36%
-        .main__container
-            height: 407px
-            .col
-                .col__item
-                    font-size: 20px
-                    margin-right: 10px
-                    &::before
-                        margin-right: 6px
-            .left_main
-                .info__main
-                    h2
-                        font-size: 32px
-                        line-height: auto
-                        margin-bottom: 2px
-                    p
-                        font-size: 57px
+        width: 100%
+        .main__container 
+            .left_main 
+                .slider__item
+                    .info__main
+                        max-width: 45%
+                        h2
+                            font-size: 25px
+                        p
+                            font-size: 35px
+            .right_main
+                margin-top:55px
+
     .categorii 
         .main__container 
             .categoris__button 
@@ -582,11 +621,10 @@ footer
                 justify-content: center
             
             .categori__block
-                display: none
                 position: fixed
                 width: 100%
                 height: calc( 100vh -  53px)
-                top: 58px
+                top: -1000px
                 left: 0
                 background: #fff
                 z-index: 100
@@ -596,6 +634,7 @@ footer
                 align-content: flex-start
                 margin-top: 0px
                 padding-bottom: 15px
+                transition: .5s
                 .categori__link
                     box-shadow: 0px 8.85938px 8.85938px rgba(12, 31, 56, 0.06), 0px 2.53125px 21.5156px rgba(26, 71, 132, 0.1)
                     border-radius: 10px
@@ -636,27 +675,24 @@ footer
     
     .footer__info
         text-align: center
+    .tovar 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    width: 247px
 @media screen and ( max-width: 500px)
+    .tovar 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    width: 45%
     .main__section
-        .right_main
-            width: 153px
-            height: 184px
-        .main__container
-            .left_main
-                .info__main
-                    h2
-                        font-size: 32px
-                        line-height: 37px
-                        margin-bottom: 2px
-                        max-width: 259px
-                        margin-top: 10px
-                    p
-                        font-size: 30px
-                    button
-                        margin-top: 19px
-
-
-
+        width: 100%
+        .main__container 
+            .right_main
+                width: 190px
+                height: 253px
+                margin-top:140px
     header
         .container
             padding-right: 5px
@@ -693,9 +729,16 @@ footer
                 max-width: 95%
             .answer
                 font-size: 14px
+@media screen and (max-width:400px)
+    .main__section 
+        .main__container 
+            .right_main
+                width: 148px
+                height: 199px
+                margin-top: -20px
 
 .open
-    display: flex !important
+    top: 53px !important
     overflow: scroll
 .overflow
     overflow-y: hidden

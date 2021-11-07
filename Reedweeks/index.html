@@ -7,13 +7,15 @@
     <title>Главная</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
 </head>
 <body>
     <header>
         <div class="container animate__backInRight">
             <div class="left__header">
                 <div class="menu__button">
-                    <button id="openMenu" onclick="menuOpen()"></button>
+                    <button id="openMenu" onclick="menuOpen2()"></button>
                     <label for="openMenu" class="lbl_menu"><div class="open_menuImg"><img src="img/menu.png" alt="menu" class="imgimg"></div></label>
                 </div>
                 <div class="logo"><img src="img/Logo.png" alt="Logo"></div>
@@ -33,7 +35,11 @@
                 </div>
                 <div class="header__icon">
                     <div class="icon__item"><img src="img/like.png" alt="like"></div>
-                    <div class="icon__item"><img src="img/search.png" alt="search"></div>
+                    <div class="search-box ">
+                        <input type="text" class="search-txt" placeholder="Поиск...">
+                        <button href="#" class="search-btn icon__item"><i class="fa fa-search" aria-hidden="true"></i></и>
+                    </div>
+                    
                     <div class="icon__item cart">
                         <img src="img/cart.png" alt="cart">
                         <div class="col">0</div>
@@ -45,19 +51,34 @@
     <section class="main__section">
         <div class="main__container">
             <div class="left_main">
-                <div class="col">
-                    <div class="col__item">01</div>
-                    <div class="col__item">02</div>
-                    <div class="col__item">03</div>
+                <div class="slider__item">
+                    <div class="info__main">
+                        <h2>Топовый рюкзак успей купить</h2>
+                        <p>1 800 ₽</p>
+                        <button>Подробнее</button>
+                    </div>
+                    <div class="right_main"><img src="img/backpack.png" alt="backpack"></div>
                 </div>
-                <div class="info__main">
-                    <h2>Топовый рюкзак успей купить</h2>
-                    <p>1 800 ₽</p>
-                    <button>Подробнее</button>
+                <div class="slider__item">
+                    <div class="info__main">
+                        <h2>Топовый рюкзак успей купить</h2>
+                        <p>1 800 ₽</p>
+                        <button>Подробнее</button>
+                    </div>
+                    <div class="right_main"><img src="img/backpack.png" alt="backpack"></div>
                 </div>
+                <div class="slider__item">
+                    <div class="info__main">
+                        <h2>Топовый рюкзак успей купить</h2>
+                        <p>1 800 ₽</p>
+                        <button>Подробнее</button>
+                    </div>
+                    <div class="right_main"><img src="img/backpack.png" alt="backpack"></div>
+                </div>
+                
             </div>
         </div>
-        <div class="right_main"><img src="img/backpack.png" alt="backpack"></div>
+        
     </section>
     <section class="categorii">
         <div class="main__container">
@@ -110,49 +131,69 @@
     <section class="tovar">
         <div class="container">
             <div class="tovar__buttons">
-                <button class="button__item"><div class="ct__img" id="ct_1">
-                    <img src="img/ct_1_white.png" alt="ct"  class="ct_img__img">
+                <div>
+                    <button class="button__item"><div class="ct__img" id="ct_1">
+                        <img src="img/ct_1_white.png" alt="ct"  class="ct_img__img">
+                    </div>
+                    Одежда
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_2">
+                        <img src="img/ct_2.png" alt="ct" class="ct_img__img">
+                        <img src="img/ct_2-1.png" alt="ct" class="ct_img__img">
+                    </div>
+                        Аксессуары
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_3">
+                        <img src="img/cat_3.png" alt="ct" class="ct_img__img">
+                        <img src="img/ct_3-1.png" alt="ct" class="ct_img__img">
+                    </div>Игрушки
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_4">
+                        <img src="img/ct_4.png" alt="ct" class="ct_img__img">
+                        <img src="img/ct_4-1.png" alt="ct" class="ct_img__img">
+                    </div>
+                        Лето/Пляж
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_5">
+                        <img src="img/ct_5.png" alt="ct" class="ct_img__img">
+                        <img src="img/ct_5-1.png" alt="ct" class="ct_img__img">
+                    </div>Электроника
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_6">
+                        <img src="img/ct_7.png" alt="ct" class="ct_img__img">
+                        <img src="img/ct_7-1.png" alt="ct" class="ct_img__img">
+                    </div>Для дома
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_7">
+                        <img src="img/ct_6.png" alt="ct" class="ct_img__img">
+                        <img src="img/ct_6-1.png" alt="ct" class="ct_img__img">
+                    </div>Запчасти для гаджетов
+                    </button>
                 </div>
-                Одежда
-                </button>
-                <button class="button__item">
-                    <div class="ct__img" id="ct_2">
-                    <img src="img/ct_2.png" alt="ct" class="ct_img__img">
-                    <img src="img/ct_2-1.png" alt="ct" class="ct_img__img">
-                </div>
-                    Аксессуары
-                </button>
-                <button class="button__item">
-                    <div class="ct__img" id="ct_3">
-                    <img src="img/cat_3.png" alt="ct" class="ct_img__img">
-                    <img src="img/ct_3-1.png" alt="ct" class="ct_img__img">
-                </div>Игрушки
-                </button>
-                <button class="button__item">
-                    <div class="ct__img" id="ct_4">
-                    <img src="img/ct_4.png" alt="ct" class="ct_img__img">
-                    <img src="img/ct_4-1.png" alt="ct" class="ct_img__img">
-                </div>
-                    Лето/Пляж
-                </button>
-                <button class="button__item">
-                    <div class="ct__img" id="ct_5">
-                    <img src="img/ct_5.png" alt="ct" class="ct_img__img">
-                    <img src="img/ct_5-1.png" alt="ct" class="ct_img__img">
-                </div>Электроника
-                </button>
-                <button class="button__item">
-                    <div class="ct__img" id="ct_6">
-                    <img src="img/ct_7.png" alt="ct" class="ct_img__img">
-                    <img src="img/ct_7-1.png" alt="ct" class="ct_img__img">
-                </div>Для дома
-                </button>
-                <button class="button__item">
-                    <div class="ct__img" id="ct_7">
-                    <img src="img/ct_6.png" alt="ct" class="ct_img__img">
-                    <img src="img/ct_6-1.png" alt="ct" class="ct_img__img">
-                </div>Запчасти для гаджетов
-                </button>
+                <footer>
+                    <div class="round"></div>
+                    <div class="main__container">
+                        <nav>
+                            <ul class="footer__menu">
+                                <li><a href="#">доставка и оплата</a></li>
+                                <li><a href="#">контакты</a></li>
+                                <li><a href="#">отзывы</a></li>
+                                <li><a href="#">о нас</a></li>
+                                <li><a href="#">статьи</a></li>
+                                <li><a href="#">самовывоз</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer__info">
+                            <div class="footer__item"><img src="img/phone_white.png" alt="icon">+7(966) 143-44-22</div>
+                            <div class="footer__item"><img src="img/me_white.png" alt="icon">info@redweeks.ru</div>                        </div>
+                    </div>
+                </footer>
             </div>
             <div class="main__container">
                 <div class="tovars__title">
@@ -450,5 +491,7 @@
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

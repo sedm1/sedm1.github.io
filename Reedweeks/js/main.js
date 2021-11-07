@@ -20,7 +20,7 @@ function changeMenuImg(){
         $('.imgimg').prop('src', 'img/menu.png')
     }
 }
-function menuOpen(){
+function menuOpen2(){
     changeMenuImg()
     //Закрывать или открывать окно в зависимости от того, открыто ли меню категорий
     if ($("div.categori__block").hasClass("open")){
