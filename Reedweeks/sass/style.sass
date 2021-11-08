@@ -91,6 +91,7 @@ header
                 align-items: center
                 position: relative
                 margin-right: 30px
+                max-width:10px
                 .search-btn 
                     display: flex
                     justify-content: center
@@ -115,12 +116,12 @@ header
                     right: 20px
                     background-color: #F1F3F4
                     z-index: 10
-            &:hover
-                .search-txt  
-                    width: 240px
-                    padding-left: 10px
-                    border: 1px solid #3B3943
-                    border-radius: 9px
+                &:hover
+                    .search-txt  
+                        width: 240px
+                        padding-left: 10px
+                        border: 1px solid #3B3943
+                        border-radius: 9px
             .icon__item
                 width:20px
                 height: 18px
@@ -147,7 +148,7 @@ header
     margin: 0 auto
     padding-top: 110px
     .main__container
-        height: 556px
+        height: 565px
         background-image: url("img/main_bg.png")
         background-repeat: no-repeat
         background-position: center center
@@ -155,6 +156,7 @@ header
         padding-top: 50px
         padding-left: 20px
         padding-right: 20px
+        border-radius: 20px
         .right_main
             width: 408px
             height: 490px
@@ -175,14 +177,18 @@ header
                         font-size: 96px
                         font-family: $SFHY
                     button
-                        background: #FF5555
-                        border-radius: 20px
                         color: #fff
                         padding: 18px 25px
                         font-size:20px
-                        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%)
-                        clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%)
+                        width: 165px
+                        height: 67px
+                        background-image: url("img/button__bg.png") 
+                        background-repeat: no-repeat
+                        background-position: center center
+                        background-size: cover
                         margin-top: 45px
+                        background-color: transparent
+                        border-radius: 20px
 
 //Second Blcok
 .categorii
@@ -199,13 +205,19 @@ header
             text-align: center
             padding: 0px 46px
             margin-top:60px
+            transition: .5s
+            z-index: 5
             .categori__icon
+                transition: .5s
                 height: 85px
                 img
                     width: auto
             .categori__name
                 font-size: 20px
                 margin-top: 20px    
+            &:hover    
+                .categori__icon
+                    transform: scale(1.2)
 .tovar
     .container
         display: flex
@@ -362,7 +374,9 @@ header
                         background: rgba(255, 68, 68, 0.9)
                         padding-bottom: 4px
                         padding-left: 1px
-
+                        transition: .3s
+                        &:hover
+                            opacity: 0.7
                         .cartIImg
                             width: 24px
                             height: 24px
