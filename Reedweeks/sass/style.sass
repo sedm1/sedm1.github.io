@@ -511,6 +511,7 @@ footer
                 z-index: 120
                 transition: .5s
                 justify-content: space-between
+                opacity: 0
                 footer
                     overflow: hidden
                     display: block
@@ -633,6 +634,7 @@ footer
                 flex-direction: row
                 align-content: flex-start
                 margin-top: 0px
+                opacity: 0
                 padding-bottom: 15px
                 transition: .5s
                 .categori__link
@@ -699,6 +701,9 @@ footer
             .logo
                 width: 96px
                 height: 17px
+            .header__icon:hover 
+                .search-txt
+                    width: 288px
     .comapny__info 
         .main__container 
             .info__text 
@@ -736,9 +741,15 @@ footer
                 width: 148px
                 height: 199px
                 margin-top: -20px
+    header
+        .container
+            .header__icon:hover 
+                .search-txt
+                    width: 260px
 
 .open
     top: 53px !important
     overflow: scroll
+    opacity: 1!important
 .overflow
     overflow-y: hidden
