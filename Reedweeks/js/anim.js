@@ -1,5 +1,4 @@
 new Skroll({
-    mobile:true
 })
     .add(".info__img",{
         delay:10,

@@ -309,6 +309,31 @@ header
                     max-width: 302px
                 .tovar__down
                     @include flex-centerJ
+                    .mb__icon
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        
+                        div       
+                            &:nth-child(2)
+                                display: flex
+                                align-items: center
+                                display: none
+                                .mab__item
+                                    width: 15px
+                                    height: 15px
+                                    border-radius: 100%
+                                    background: #dddddd
+                                    padding: 7px
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    box-sizing: content-box
+                                    &:first-child
+                                        margin-right: 10px
+                                    img
+                                        width: 13px
+                                        height: 13px
                     .tovar__price
                         font-size: 24px
                         font-family: $SFBK
@@ -337,6 +362,11 @@ header
                         background: rgba(255, 68, 68, 0.9)
                         padding-bottom: 4px
                         padding-left: 1px
+
+                        .cartIImg
+                            width: 24px
+                            height: 24px
+                            display: none
 .comapny__info
     margin-top: 80px
     .reverse
@@ -549,7 +579,12 @@ footer
                     .tovar__down
                         flex-direction: column
                         align-items: flex-start
-                        margin-top: 30px 
+                        margin-top: 30px
+                        .mb__icon
+                            width:100%
+                            div
+                                &:nth-child(2)
+                                   display: flex 
                         .tovar__price
                             font-size: 15px
                         .addbutton
@@ -559,6 +594,9 @@ footer
                             width: 100%
                             height: 33px
                             padding: 0px
+                            display: flex
+                            align-items: center
+                            position: relative
                 .tovar__title
                     font-size: 12px
                     line-height: 14px
@@ -684,7 +722,6 @@ footer
             .tovar__items 
                 .tovar__item
                     min-height: 275px
-                    max-height: 305px
                     height: max-content
                     padding-bottom: 10px
                     .tovar__title
@@ -729,12 +766,14 @@ footer
     .tovar-2 
         .container 
             .tovar__items
-                position: relative 
+                position: relative
+                margin-top: 30px 
                 .tovar__item
                     background: transparent
                     box-shadow: none
                     padding: 0
                     margin-top: 0px
+                    padding-left: 1%
                     .slider__sett
                         width: 247px
                         margin: 0 auto
@@ -742,11 +781,11 @@ footer
                         border-radius: 30px
                         padding: 13px 10px
                         display: flex
-                        height: 406px
+                        height: auto
                         flex-direction: column
                         justify-content: space-between
         .slick-arrow
-            top: -45px
+            top: -70px
             position: absolute
             background-repeat: no-repeat
             background-size: cover
@@ -828,6 +867,11 @@ footer
             .header__icon:hover 
                 .search-txt
                     width: 260px
+    .tovar-2 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    padding-left: 2%
 
 .open
     top: 53px !important
