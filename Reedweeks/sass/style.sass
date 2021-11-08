@@ -210,6 +210,7 @@ header
         display: flex
         align-items: flex-start
         margin-top: 124px
+        
         .main__container
             margin-left: 74px
         .tovar__buttons
@@ -286,12 +287,12 @@ header
                 box-shadow: 0px 14px 14px rgba(12, 31, 56, 0.06), 0px 4px 34px rgba(26, 71, 132, 0.1)
                 border-radius: 30px
                 width: 352px
-                height: 426px
                 display: flex
                 flex-direction: column
                 justify-content: space-between
                 padding: 12px 23px 23px 25px
                 margin-top: 40px
+                min-height: 275px
                 .tovar__img
                     width: 292px 
                     height: 259px
@@ -539,15 +540,15 @@ footer
                 justify-content: space-around
                 
                 .tovar__item
-                    width: 26%
-                    height: 275px
+                    width: 32%
                     padding: 13px 10px
                     .tovar__img
                         width: 100%
                         height: 118px
                     .tovar__down
                         flex-direction: column
-                        align-items: flex-start 
+                        align-items: flex-start
+                        margin-top: 30px 
                         .tovar__price
                             font-size: 15px
                         .addbutton
@@ -677,20 +678,99 @@ footer
     
     .footer__info
         text-align: center
+    .tovar-2
+        .container 
+            .tovar__items 
+                .tovar__item
+                    min-height: 275px
+                    max-height: 305px
+                    height: max-content
+                    padding-bottom: 10px
+                    .tovar__title
+                        position: relative
+                        &::before
+                            content: "В наличии"
+                            color: #219653
+                            position: absolute
+                            bottom: -20px
+                            left: 0
+                    .tovar__down 
+                        .tovar__price
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start
+                            .old__price
+                                font-size: 14px
+                                font-family: $SFR
+                            .new_price
+                                margin-left: 0px
+                                color: $black
+                                font-size: 24px
     .tovar 
         .container 
             .tovar__items 
                 .tovar__item
-                    width: 247px
+                    .tovar__title
+                        font-size: 14px
 @media screen and ( max-width: 500px)
     .tovar 
         .container 
             .tovar__items 
                 .tovar__item
                     width: 45%
+                    .slider__sett
+                        display: flex
+                        height: 406px
+                        flex-direction: column
+                        justify-content: space-between
+                    .tovar__title
+                        font-size: 12px
+    .tovar-2 
+        .container 
+            .tovar__items
+                position: relative 
+                .tovar__item
+                    background: transparent
+                    box-shadow: none
+                    padding: 0
+                    margin-top: 0px
+                    .slider__sett
+                        width: 247px
+                        margin: 0 auto
+                        box-shadow: 0px 14px 14px rgba(12, 31, 56, 0.06), 0px 4px 34px rgba(26, 71, 132, 0.1)
+                        border-radius: 30px
+                        padding: 13px 10px
+                        display: flex
+                        height: 406px
+                        flex-direction: column
+                        justify-content: space-between
+        .slick-arrow
+            top: -45px
+            position: absolute
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center center
+            width: 11px
+            height: 13px
+            font-size: 0
+        .slick-next
+            right: 0px
+            background-image: url("img/btn-next.png")
+        .slick-prev
+            right: 20px
+            background-image: url("img/btn-pre.png")
+        .slick-slider 
+            .slick-track
+                padding-bottom: 30px
     .main__section
         width: 100%
-        .main__container 
+        .main__container
+            padding-left: 0px
+            padding-right: 0px
+            .left_main 
+                .slider__item 
+                    .info__main
+                        max-width: 70%
             .right_main
                 width: 190px
                 height: 253px
@@ -737,6 +817,7 @@ footer
 @media screen and (max-width:400px)
     .main__section 
         .main__container 
+            height:440px
             .right_main
                 width: 148px
                 height: 199px
