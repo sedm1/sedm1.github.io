@@ -23,6 +23,7 @@ function changeMenuImg(){
     }
 }
 function menuOpen2(){
+    alert("Кнопка работает")
     changeMenuImg()
     //Закрывать или открывать окно в зависимости от того, открыто ли меню категорий
     if ($("div.categori__block").hasClass("open")){
