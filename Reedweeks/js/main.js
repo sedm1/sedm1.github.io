@@ -45,3 +45,6 @@ $(window).scroll(function () {
         $('.header').css("position", "static")
     }
   });
+$(".search-btn").on("click", function(){
+    $(".search-txt").toggleClass("search-txt-active")
+})
