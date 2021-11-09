@@ -40,7 +40,7 @@ if ($(window).width() < '1220'){
 }
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-      $('.header').css("position", "fixed")
+      $('.header').css("position", "sticky")
     } else {
         $('.header').css("position", "static")
     }
