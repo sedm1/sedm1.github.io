@@ -6,7 +6,16 @@ $(document).ready(function(){
             slidesToShow: 1,
             autoplay: true,
             arrows: false,
-            dots: true
+            dots: true,
+            responsive: [
+              {
+                breakpoint: 790,
+                settings: {
+                  vertical: false,
+                  verticalSwiping: false,
+                }
+              }
+            ]
         });
       });
     if ($(window).width() < '500'){

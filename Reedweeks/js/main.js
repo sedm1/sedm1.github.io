@@ -16,8 +16,10 @@ function categoriiOpen(){
 function changeMenuImg(){
     if ($('.imgimg').attr('src') == "img/menu.png"){
         $('.imgimg').prop('src', 'img/close.png')
+        $('.imgimg').css({'width': "21px", 'height':'21px'})
     } else{
         $('.imgimg').prop('src', 'img/menu.png')
+        $('.imgimg').css({'width': "", 'height':''})
     }
 }
 function menuOpen2(){
