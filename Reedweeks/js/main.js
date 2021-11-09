@@ -37,3 +37,10 @@ function menuOpen2(){
 if ($(window).width() < '1220'){
     $(".addbutton").html('Добавить в корзину');
 }
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.header').css("position", "fixed")
+    } else {
+        $('.header').css("position", "static")
+    }
+  });
