@@ -4,7 +4,6 @@ $(document).ready(function(){
             vertical: true,
             verticalSwiping: true,
             slidesToShow: 1,
-            autoplay: true,
             arrows: false,
             dots: true,
             responsive: [
