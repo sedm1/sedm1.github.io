@@ -49,7 +49,7 @@ li
 .round
     position: absolute
     background: #A157FF
-    opacity: 0.7
+    opacity: 0.6
     filter: blur(154px)
     width: 274px
     height: 199px
@@ -62,6 +62,8 @@ li
     left: 0px
 .main__section 
     .main__container
+        .round
+            opacity: 0.7
         .round-bottom
             left: -10%
             bottom: 5%
@@ -877,7 +879,7 @@ footer
                     box-shadow: none
                     padding: 0
                     margin-top: 0px
-                    padding-left: 1%
+                    padding-left: 2%
                     .slider__sett
                         width: 247px
                         margin: 0 auto
@@ -973,7 +975,7 @@ footer
                     font-size: 12px
                     &:nth-child(3)
                         text-align: left
-@media screen and (max-width:400px)
+@media screen and (max-width:401px)
     .main__section
         padding-top: 10px 
         .main__container 
@@ -985,7 +987,8 @@ footer
         .container 
             .tovar__items 
                 .tovar__item
-                    padding-right: 2%
+                    padding-right: 0%
+                    padding-left: 1%
     .questions 
         .question__item 
         .question__item.ans__active 
@@ -997,7 +1000,13 @@ footer
                 .search-box 
                     .search-txt-active
                         width: 260px
-
+@media screen and (max-width:399px)
+    .tovar-2 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    padding-right: 0%
+                    padding-left: 1%
 .open
     top: 53px !important
     overflow: scroll
