@@ -36,7 +36,7 @@ function menuOpen2(){
     }
 }
 if ($(window).width() < '1220'){
-    $(".addbutton").html('Добавить в корзину');
+    $(".addbutton__text").html('Добавить в корзину');
 }
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {

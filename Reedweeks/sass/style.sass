@@ -2,6 +2,7 @@ $black: #3B3943
 $headerColor: #F1F3F4
 $SFR: 'SF Pro Regular' //400
 $SFM: 'SF Pro Medium' //500
+$SFRM: "SF-Pro-Rounded-Medium" //500
 $SFSB: 'SF Pro Semibold' //600
 $SHE: 'SF-Pro-Rounded-Bold' //700
 $SFB: 'SF Pro Bold' //700
@@ -43,6 +44,22 @@ img
     height: 100%
 li
     list-style: none
+.categorii, .tovar, .comapny__info
+    position: relative
+.round
+    position: absolute
+    background: #A157FF
+    opacity: 0.6
+    filter: blur(154px)
+    width: 274px
+    height: 199px
+    border-radius: 100%
+.round-top
+    top: 0
+    right: 0px
+.round-bottom
+    bottom: 0
+    left: 0px
 //HEADER
 header
     background-color: $headerColor
@@ -183,6 +200,7 @@ header
                         font-size: 56px
                         line-height: 64px
                         margin-bottom: 25px
+                        font-family: $SHE
                     p
                         font-size: 96px
                         font-family: $SFHY
@@ -207,16 +225,37 @@ header
 
 //Second Blcok
 .categorii
+    .mobile-text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: 15px 
+        color: $black
+        font-family: $SFR
+        margin-top: 15px
+        display: none
+        .mobile-text__item
+            @include flex-centerX
+            margin-bottom: 10px
+            &:last-child
+                margin-bottom: 0px
+            .text__item-img
+                margin-right: 5px
+                img
+                    width: 19px
+                    height: auto
     .categori__button
-            display: none
+        display: none
     .categori__block
         @include flex-centerX
         flex-wrap: wrap
         margin-top: 20px
+        justify-content: space-evenly
         .categori__link
             @include flex-centerX
             flex-direction: column
-            width: 25%
+            width: 21%
             text-align: center
             padding: 0px 46px
             margin-top:60px
@@ -224,12 +263,13 @@ header
             z-index: 5
             .categori__icon
                 transition: .5s
-                height: 85px
+                height: 95px
                 img
                     width: auto
             .categori__name
                 font-size: 20px
-                margin-top: 20px    
+                margin-top: 20px
+                font-family: $SFRM    
             &:hover    
                 .categori__icon
                     transform: scale(1.2)
@@ -393,10 +433,13 @@ header
                         transition: .3s
                         &:hover
                             opacity: 0.7
-                        .cartIImg
-                            width: 24px
-                            height: 24px
-                            display: none
+                        .addbutton__text
+                            position: relative
+                            &::before
+                                content: url("img/cart_white.png")
+                                margin-right: 5px
+                                display: none
+                            
 .comapny__info
     margin-top: 80px
     .reverse
@@ -458,14 +501,16 @@ header
         margin-bottom:30px
         transition: 0.5s
         position: relative
+        transition: .5s
         &::after
-            content: '▶'
+            content: url("img/arrow.png")
             position: absolute
             top: 14px
             right: 20px
             color: #FF5555
+            transition: .5s
         .questiom
-            font-family: $SFB
+            font-family: $SHE
             font-size:30px
             max-width: 90%
         .answer
@@ -535,6 +580,8 @@ footer
         width: 97%
     
 @media screen and ( max-width: 1220px)
+    .round
+        display: none
     .main__container
         width: 97%
     .main__section
@@ -631,6 +678,10 @@ footer
                             display: flex
                             align-items: center
                             position: relative
+                            .addbutton__text
+                                display: flex
+                                &::before
+                                    display: block
                 .tovar__title
                     font-size: 12px
                     line-height: 14px
@@ -650,6 +701,7 @@ footer
                 right: 0
             .info__img_2
                 left: 0
+                opacity: 0.1 !important
     footer
         .footer__text
             text-align: center 
@@ -699,7 +751,7 @@ footer
                 position: fixed
                 width: 100%
                 height: calc( 100vh -  53px)
-                top: -100%
+                top: -130%
                 left: 0
                 background: #fff
                 z-index: 100
@@ -752,7 +804,7 @@ footer
     
     .footer__info
         text-align: center
-    .tovar-2
+    .tovar
         .container 
             .tovar__items 
                 .tovar__item
@@ -761,6 +813,7 @@ footer
                     padding-bottom: 10px
                     .tovar__title
                         position: relative
+                        font-size: 14px
                         &::before
                             content: "В наличии"
                             color: #219653
@@ -779,13 +832,10 @@ footer
                                 margin-left: 0px
                                 color: $black
                                 font-size: 24px
-    .tovar 
-        .container 
-            .tovar__items 
-                .tovar__item
-                    .tovar__title
-                        font-size: 14px
 @media screen and ( max-width: 500px)
+    .categorii
+        .mobile-text
+            display: flex
     header 
         .container 
             .header__icon 
@@ -849,16 +899,20 @@ footer
             padding-left: 0px
             padding-right: 0px
             border-radius: 0px
+            height: 310px
             .left_main 
                 .slider__item 
                     padding-left: 7px
                     padding-right: 7px
+                    padding-top: 8px
                     .info__main
                         max-width: 70%
+                        h2
+                            line-height: 30px
             .right_main
                 width: auto
                 height: auto
-                margin-top:140px
+                margin-top:0px
     header
         .container
             padding-right: 5px
@@ -883,7 +937,7 @@ footer
                 height: 400px
                 top: auto
                 bottom: 0
-                right: 10%
+                right: 0px
                 img
                     width: 100%
             .info__img_2
@@ -900,7 +954,6 @@ footer
     .main__section
         padding-top: 10px 
         .main__container 
-            height:440px
             .right_main
                 width: auto
                 height: 136px

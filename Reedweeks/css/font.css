@@ -115,3 +115,8 @@
     src: url("../fonts/SF-pro-heavy.ttf");
     font-weight: 900;
 }
+@font-face {
+    font-family: "SF-Pro-Rounded-Medium";
+    src: url("../fonts/SF-Pro-Rounded-Medium.ttf");
+    font-weight: 500;
+}
