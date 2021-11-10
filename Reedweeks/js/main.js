@@ -35,7 +35,7 @@ function menuOpen2(){
         $("body").toggleClass("overflow")
     }
 }
-if ($(window).width() < '1220'){
+if ($(window).width() > '0'){
     $(".addbutton__text").html('Добавить в корзину');
 }
 $(window).scroll(function () {
