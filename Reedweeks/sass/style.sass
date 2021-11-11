@@ -271,6 +271,7 @@ header
         flex-wrap: wrap
         margin-top: 20px
         justify-content: center
+        align-items: flex-start
         .categori__link
             @include flex-centerX
             flex-direction: column
@@ -314,7 +315,7 @@ header
                 padding-left:14px
                 padding-top: 10px
                 padding-bottom: 10px
-                font-size: 20px
+                font-size: 19px
                 transition: .3s
                 border-radius: 6px
                 background: transparent
@@ -334,21 +335,32 @@ header
                     margin-top: 0px
                 .ct__img
                     margin-right: 10px
+                    width: 24px
+                    display: flex
+                    align-items: center
+                    justify-content: center
                         
                 #ct_1
-                    @include icon-size(19px, 26px)
+                    img
+                        @include icon-size(19px, 26px)
                 #ct_2
-                    @include icon-size(19px, 26px)
+                    img
+                        @include icon-size(19px, 26px)
                 #ct_3
-                    @include icon-size(20px, 24px)
+                    img
+                        @include icon-size(20px, 24px)
                 #ct_4
-                    @include icon-size(21px, 14px)
+                    img
+                        @include icon-size(21px, 14px)
                 #ct_5
-                    @include icon-size(24px, 28px)
+                    img
+                        @include icon-size(24px, 28px)
                 #ct_6
-                    @include icon-size(24px, 24px)
+                    img
+                        @include icon-size(24px, 24px)
                 #ct_7
-                    @include icon-size(22px, 16px)
+                    img
+                        @include icon-size(22px, 16px)
             .active
                 background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
                 color: #fff
@@ -394,6 +406,13 @@ header
                     font-size: 17px
                     line-height: 21px
                     max-width: 302px
+                    position: relative
+                    &::before
+                        content: "В наличии"
+                        color: #219653
+                        position: absolute
+                        bottom: -20px
+                        left: 0
                 .tovar__down
                     @include flex-centerJ
                     flex-direction: column
@@ -528,12 +547,12 @@ header
         position: relative
         transition: .5s
         &::after
-            content: url("img/arrow.png")
+            content: url("img/arrow.svg")
             position: absolute
             top: 14px
             right: 20px
-            color: #FF5555
             transition: .5s
+            transform: rotate(-90deg)
         .questiom
             font-family: $SHE
             font-size:30px
@@ -542,15 +561,16 @@ header
             font-family: $SFR
             font-size: 16px
             max-width: 928px
-            height: 0px
+            max-height: 0px
             transition: .5s
             margin-top: 30px
             overflow: hidden
     .question__item.ans__active
         .answer
-            height: 150px
+            max-height: 500px
         &::after
-            transform: rotate(90deg)
+            opacity: 0.5
+            transform: rotate(0deg)
 footer
     background: linear-gradient(180deg, #46444F 0%, #2F2C3C 98.21%)
     padding: 70px 0px
@@ -822,14 +842,8 @@ footer
                     height: max-content
                     padding-bottom: 10px
                     .tovar__title
-                        position: relative
                         font-size: 14px
-                        &::before
-                            content: "В наличии"
-                            color: #219653
-                            position: absolute
-                            bottom: -20px
-                            left: 0
+                        
                     .tovar__down 
                         .tovar__price
                             display: flex
@@ -846,7 +860,8 @@ footer
     .tovar 
         .container 
             .tovar__items 
-                .tovar__item 
+                .tovar__item
+                    border-radius: 15px 
                     .tovar__down 
                         .addbutton 
                             font-size: 10px
@@ -912,20 +927,22 @@ footer
             font-size: 0
         .slick-next
             right: 0px
-            background-image: url("img/btn-next.png")
+            background-image: url("img/btn-next.svg")
         .slick-prev
             right: 20px
-            background-image: url("img/btn-pre.png")
+            background-image: url("img/btn-pre.svg")
         .slick-slider 
             .slick-track
                 padding-bottom: 30px
     .main__section
         width: 100%
+        padding-top: 0px
         .main__container
             padding-left: 0px
             padding-right: 0px
             border-radius: 0px
             height: 310px
+            width: 100%
             .left_main 
                 .slider__item 
                     padding-left: 7px
@@ -938,7 +955,7 @@ footer
             .right_main
                 width: auto
                 height: auto
-                margin-top:0px
+                margin-top:-30px
     header
         .container
             padding-right: 5px
@@ -973,7 +990,7 @@ footer
         .question__item 
             .questiom
                 font-size: 20px
-                max-width: 95%
+                max-width: 90%
             .answer
                 font-size: 14px
     footer 
