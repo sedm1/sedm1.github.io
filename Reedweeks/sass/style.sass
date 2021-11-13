@@ -60,13 +60,6 @@ li
 .round-bottom
     bottom: 0
     left: 0px
-.main__section 
-    .main__container
-        .round
-            opacity: 0.7
-        .round-bottom
-            left: -10%
-            bottom: 5%
 //HEADER
 header
     background-color: $headerColor
@@ -394,11 +387,13 @@ header
                 margin-top: 40px
                 min-height: 275px
                 .tovar__img
-                    width: 292px 
+                    width: auto 
                     height: 259px
+                    margin: 0 auto
                     margin-bottom: 20px
                     display: flex
                     justify-content: center
+                    
                     img
                         width: auto
                 .tovar__title
@@ -631,7 +626,8 @@ footer
         width: 97%
     .main__section
         width: 100%
-        .main__container 
+        .main__container
+            
             .left_main 
                 .slider__item
                     margin-left: 0px
@@ -1005,7 +1001,6 @@ footer
                         text-align: left
 @media screen and (max-width:401px)
     .main__section
-        padding-top: 10px 
         .main__container 
             .right_main
                 width: auto
@@ -1035,15 +1030,68 @@ footer
                 .tovar__item
                     padding-right: 0%
                     padding-left: 1%
+    
+@media screen and (max-height:700px) and (max-width: 1440px)
+    header 
+        .container 
+            .menu
+                font-size: 17px
+                margin-left: 100px
+    .main__section 
+        .main__container
+            background-image: url("img/main_bg_4.png")
+            height: 503px
+            .left_main 
+                .slider__item 
+                    .info__main 
+                        h2
+                            font-size: 48px
+                            line-height: 64px
+            .right_main
+                width: auto
+                height: 400px
+    .categorii 
+        .categori__block 
+            .categori__link 
+                .categori__icon
+                    height: 84px
+                .categori_name
+                    font-size: 18px
+                    margin-top: 12px
+    .tovar 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    width: 304px
+                    .tovar__img
+                        height: 210px
+    .comapny__info 
+        .main__container 
+            .info__text 
+                h2
+                    font-size: 26px
+                    line-height: 36px
+                .advantages
+                    font-size: 18px 
+                    .advantages__item
+                        margin-bottom: 19px
+            .info__img
+                width: auto
+                height: 505px
+    .tovar 
+        .container 
+            .tovar__items 
+                .tovar__item 
+                    .tovar__down 
+                        .tovar__price
+                            font-size: 20px
+                    .addbutton
+                        margin-top: 10px
+
+
 .open
     top: 53px !important
     overflow: scroll
     opacity: 1!important
 .overflow
     overflow-y: hidden
-@keyframes ripple
-  0%
-    transform: scale(0)
-  
-  100%
-    transform: scale(100)
