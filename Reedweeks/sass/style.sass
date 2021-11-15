@@ -667,9 +667,10 @@ footer
                 justify-content: space-between
                 opacity: 0
                 footer
-                    overflow-y: hidden
+                    overflow: hidden
                     display: block
-                    width:100%
+                    width: 100%
+                    max-width: 100%
                     position: relative
                     margin-top: 2px
                     &::before
@@ -891,8 +892,10 @@ footer
                         justify-content: space-between
                     .tovar__title
                         font-size: 12px
+                        line-height: 15px
     .tovar-2 
-        .container 
+        .container
+            width: 100% 
             .tovar__items
                 position: relative
                 margin-top: 30px 
@@ -901,17 +904,22 @@ footer
                     box-shadow: none
                     padding: 0
                     margin-top: 0px
-                    padding-left: 2%
+                    padding-left: 0%
                     .slider__sett
-                        width: 247px
-                        margin: 0 auto
+                        margin: 0 5px
                         box-shadow: 0px 14px 14px rgba(12, 31, 56, 0.06), 0px 4px 34px rgba(26, 71, 132, 0.1)
-                        border-radius: 30px
+                        border-radius: 15px
                         padding: 13px 10px
                         display: flex
                         height: auto
                         flex-direction: column
                         justify-content: space-between
+                    .tovar__down
+                        .mb__icon
+                            align-items: flex-end
+                        .tovar__price
+                            .new_price
+                                font-size: 20px
         .slick-arrow
             top: -70px
             position: absolute
@@ -1011,7 +1019,6 @@ footer
             .tovar__items 
                 .tovar__item
                     padding-right: 0%
-                    padding-left: 1%
     .questions 
         .question__item 
         .question__item.ans__active 
@@ -1023,14 +1030,6 @@ footer
                 .search-box 
                     .search-txt-active
                         width: 260px
-@media screen and (max-width:399px)
-    .tovar-2 
-        .container 
-            .tovar__items 
-                .tovar__item
-                    padding-right: 0%
-                    padding-left: 1%
-    
 @media screen and (max-height:700px) and (min-width: 1220px)
     header 
         .container 
@@ -1095,3 +1094,5 @@ footer
     opacity: 1!important
 .overflow
     overflow-y: hidden
+    touch-action: none
+    -ms-touch-action: none

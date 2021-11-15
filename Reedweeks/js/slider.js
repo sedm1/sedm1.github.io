@@ -18,17 +18,8 @@ $(document).ready(function(){
     if ($(window).width() < '500'){
         $(".pre-slider").slick({
             infinite: true,
-            slidesToShow: 1.2,
+            slidesToShow: 2,
             slidesToScroll: 1,
-            responsive: [
-                {
-                  breakpoint: 400,
-                  settings: {
-                    slidesToShow: 1.1,
-                    slidesToScroll: 1
-                  }
-                }
-              ]
         });
     }
 })
