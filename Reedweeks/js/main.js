@@ -39,7 +39,7 @@ if ($(window).width() > '0'){
     $(".addbutton__text").html('Добавить в корзину');
 }
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 80) {
       $('.header').css("position", "fixed")
     } else {
         $('.header').css("position", "static")
