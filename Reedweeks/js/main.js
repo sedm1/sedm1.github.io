@@ -33,6 +33,7 @@ function menuOpen2(){
     } else{
         $(".tovar__buttons").toggleClass("open")
         $("body").toggleClass("overflow")
+        $("html").toggleClass("overflow")
     }
 }
 if ($(window).width() > '0'){
