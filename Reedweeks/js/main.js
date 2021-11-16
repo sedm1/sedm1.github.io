@@ -39,13 +39,6 @@ function menuOpen2(){
 if ($(window).width() > '0'){
     $(".addbutton__text").html('Добавить в корзину');
 }
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 80) {
-      $('.header').css("position", "fixed")
-    } else {
-        $('.header').css("position", "static")
-    }
-  });
 $(".search-btn").on("click", function(){
     $(".search-txt").toggleClass("search-txt-active")
 })
