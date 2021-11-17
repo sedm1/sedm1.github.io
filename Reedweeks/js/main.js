@@ -34,6 +34,7 @@ function menuOpen2(){
         $(".tovar__buttons").toggleClass("open")
         $("body").toggleClass("overflow")
         $("html").toggleClass("overflow")
+        
     }
 }
 if ($(window).width() > '0'){
