@@ -46,5 +46,3 @@ if ($(window).width() > '0'){
 $(".search-btn").on("click", function(){
     $(".search-txt").toggleClass("search-txt-active")
 })
-
-
