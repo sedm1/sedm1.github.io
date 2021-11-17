@@ -53,13 +53,15 @@ li
     filter: blur(154px)
     width: 274px
     height: 199px
-    border-radius: 100%
+    border-radius: 100% 
 .round-top
     top: 0
     right: 0px
 .round-bottom
     bottom: 0
     left: 0px
+.wrap
+    padding-left: 125px
 //HEADER
 header
     background-color: $headerColor
@@ -303,6 +305,7 @@ header
             position: sticky
             left: 0
             top: 100px
+            z-index: 90
                 
             footer
                 display: none
@@ -319,6 +322,7 @@ header
                 border-radius: 6px
                 background: transparent
                 margin-top: 8px
+                z-index: 150
                 &:hover
                     background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
                     color: #fff
@@ -624,7 +628,9 @@ footer
 @media screen and (max-width: 1720px)
     .container
         width: 97%
-    
+    .wrap
+        padding-left: 0px
+
 @media screen and ( max-width: 1220px)
     .round
         display: none
