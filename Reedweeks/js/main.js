@@ -31,9 +31,8 @@ function menuOpen2(){
         changeMenuImg()
         //$('.imgimg').prop('src', 'img/menu.png')
     } else{
-        $(".tovar__buttons").toggleClass("open")
+        $(".tovar__buttons").toggleClass("open-2")
         $("body").toggleClass("overflow")
-        $("html").toggleClass("overflow")
         
     }
 }
