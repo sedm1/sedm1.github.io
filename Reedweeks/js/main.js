@@ -12,6 +12,8 @@ function categoriiOpen(){
     changeMenuImg()
     $(".categori__block").toggleClass("open")
     $("body").toggleClass("overflow")
+    $("html").toggleClass("overflow")
+    $("header").toggleClass("header-block")
 }
 function changeMenuImg(){
     if ($('.imgimg').attr('src') == "img/menu.png"){
