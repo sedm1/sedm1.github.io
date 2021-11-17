@@ -8,12 +8,15 @@ for(var i = 0; i < accordion.length; i++){
         this.classList.toggle('ans__active')
     })
 }
-function categoriiOpen(){
-    changeMenuImg()
-    $(".categori__block").toggleClass("open")
+function Blockbody(){
     $("body").toggleClass("overflow")
     $("html").toggleClass("overflow")
     $("header").toggleClass("header-block")
+}
+function categoriiOpen(){
+    changeMenuImg()
+    $(".categori__block").toggleClass("open")
+    Blockbody()
 }
 function changeMenuImg(){
     if ($('.imgimg').attr('src') == "img/menu.png"){
@@ -34,14 +37,8 @@ function menuOpen2(){
         //$('.imgimg').prop('src', 'img/menu.png')
     } else{
         $(".tovar__buttons").toggleClass("open-2")
-        $("body").toggleClass("overflow")
-        $("html").toggleClass("overflow")
-        $("header").toggleClass("header-block")
-        
+        Blockbody()
     }
-}
-if ($(window).width() > '0'){
-    $(".addbutton__text").html('Добавить в корзину');
 }
 $(".search-btn").on("click", function(){
     $(".search-txt").toggleClass("search-txt-active")
