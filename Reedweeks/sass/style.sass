@@ -1,23 +1,5 @@
-$black: #3B3943
-$headerColor: #F1F3F4
-$SFR: 'SF Pro Regular' //400
-$SFM: 'SF Pro Medium' //500
-$SFRM: "SF-Pro-Rounded-Medium" //500
-$SFSB: 'SF Pro Semibold' //600
-$SHE: 'SF-Pro-Rounded-Bold' //700
-$SFB: 'SF Pro Bold' //700
-$SFBK: 'SF Pro Black' //800
-$SFHY: 'SF-Pro-Rounded-Heavy' //900
-@mixin flex-centerX
-    display: flex
-    align-items: center
-@mixin flex-centerJ
-    display: flex
-    align-items: center
-    justify-content: space-between
-@mixin icon-size($w, $h)
-    width: $w
-    height: $h
+@import font
+@import mixins
 *
     padding: 0
     margin: 0
@@ -62,6 +44,31 @@ li
     left: 0px
 .wrap
     padding-left: 125px
+//ALL Main sett
+.section__title
+    font-family: $SHE
+    font-size: 30px
+    color: $black
+    margin-top: 50px
+    margin-bottom: 10px
+.section__describe
+    color: rgba(59, 57, 67, 0.7)
+    font-size: 20px
+    line-height: 28px
+    max-width: 426px
+.section__link
+    @include flex-centerX
+    margin-top: 90px
+    a
+        margin-right: 10px
+        width: 24px
+        height: 17px
+    p
+        color: $black
+        opacity: 0.5
+        font-size: 12px
+
+
 //HEADER
 header
     background-color: $headerColor
@@ -173,13 +180,18 @@ header
                 top: -9px
                 right: -8px
                 font-size:11px
+//Настройки для второй картинки
+#slick-slide01
+    .right_main
+        img
+            padding-right: 50px
 .main__section
     width: 1150px
     margin: 0 auto
     padding-top: 10px
     .main__container
         height: 565px
-        background-image: url("img/main_bg.png")
+        background-image: url("img/main_bg.svg")
         background-repeat: no-repeat
         background-position: center center
         background-size: cover
@@ -189,7 +201,7 @@ header
         border-radius: 20px
         overflow: hidden
         .right_main
-            width: 408px
+            width: auto
             height: 490px
         .left_main
             .slider__item
@@ -200,7 +212,7 @@ header
                     margin-left: 50px
                     color: #fff
                     h2
-                        max-width: 466px
+                        max-width: 490px
                         font-size: 56px
                         line-height: 64px
                         margin-bottom: 25px
@@ -214,7 +226,7 @@ header
                         font-size:20px
                         width: 165px
                         height: 67px
-                        background-image: url("img/button__bg.png") 
+                        background-image: url("img/button__bg.svg") 
                         background-repeat: no-repeat
                         background-position: center center
                         background-size: cover
@@ -344,25 +356,25 @@ header
                         
                 #ct_1
                     img
-                        @include icon-size(19px, 26px)
+                        @include icon-size(21px, 21px)
                 #ct_2
                     img
-                        @include icon-size(19px, 26px)
+                        @include icon-size(24px, 24px)
                 #ct_3
                     img
-                        @include icon-size(20px, 24px)
+                        @include icon-size(21px, 25px)
                 #ct_4
                     img
-                        @include icon-size(21px, 14px)
+                        @include icon-size(24px, 24px)
                 #ct_5
                     img
                         @include icon-size(24px, 28px)
                 #ct_6
                     img
-                        @include icon-size(24px, 24px)
+                        @include icon-size(24px, 22px)
                 #ct_7
                     img
-                        @include icon-size(22px, 16px)
+                        @include icon-size(24px, 24px)
             .active
                 background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
                 color: #fff
@@ -484,8 +496,9 @@ header
                         .addbutton__text
                             display: flex
                             position: relative
+                            align-items: center
                             &::before
-                                content: url("img/cart-white_b.png")
+                                content: url("img/cart-white_b.svg")
                                 margin-right: 5px
                             
 .comapny__info
@@ -654,8 +667,8 @@ footer
                         button
                             margin-top: 20px
             .right_main
-                width: 254px
-                height: 350px
+                width: auto
+                height: 340px
     header 
         padding: 20px 0px
         .container 
@@ -693,7 +706,7 @@ footer
                         width: 106%
                         height: 65px
                         background: #ECEEEF
-                        top: -14px
+                        top: -11px
                         right: -3%
                         position: absolute
                         border-radius: 0 0 50% 50% / 0 0 100% 100%
@@ -871,6 +884,12 @@ footer
                                 color: $black
                                 font-size: 24px
 @media screen and ( max-width: 500px)
+    #slick-slide01
+        .right_main
+            margin-top: 0px
+            img
+                height: 205px
+
     .tovar 
         .container 
             .tovar__items 
@@ -882,7 +901,7 @@ footer
                             padding: 0px
                             .addbutton__text
                                 &::before
-                                    content: url("img/cart_white.png")
+                                    content: url("img/cart-white.svg")
     .categorii
         .mobile-text
             display: flex
@@ -975,8 +994,7 @@ footer
                             line-height: 30px
             .right_main
                 width: auto
-                height: auto
-                margin-top:-30px
+                height: 175px
     header
         .container
             padding-right: 5px
@@ -1025,6 +1043,11 @@ footer
                     &:nth-child(3)
                         text-align: left
 @media screen and (max-width:401px)
+    #slick-slide01
+        .right_main
+            img
+                height: 185px
+                padding-right: 20px
     .main__section
         .main__container 
             .right_main
