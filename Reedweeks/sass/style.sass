@@ -110,8 +110,22 @@ header
             margin-left: 150px
             li
                 margin-right: 40px
+                position: relative
                 &:last-child
                     margin-right:0px
+                a
+                    &::before
+                        width: 0px
+                        height: 2px
+                        background-color: $black
+                        position: absolute
+                        bottom: -5px
+                        left: 0px
+                        content: ""
+                        transition: .4s
+                    &:hover
+                        &::before
+                            width: 100%
         .number
             @include flex-centerX
             font-size: 15px

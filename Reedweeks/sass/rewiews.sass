@@ -32,12 +32,35 @@ input, textarea
     position: relative
     &:first-child
         margin-bottom: 15px
+.place_holder 
+    z-index: 100   
+    left: 10px
+    cursor: text  
+    position: absolute
+    top: 18px
+    left: 20px
+    width: 100%
+    display: none
+    color: lightgrey
+
+.placeinput input:invalid + .place_holder 
+     display: inline
+
+/*вся проблема в том, если placeholder больше инпута*/
+.placeinput 
+    position: relative
+    overflow: hidden
+.place_holder span 
+    color: red
+
 textarea
     height: 100%
     width: 448px
 .rating
     margin-top: 35px
     margin-bottom: 30px
+    display: flex
+    align-items: center
     .rating__title
         font-size: 15px
         font-family: $SFSB
@@ -92,6 +115,41 @@ textarea
     font-size: 16px
     font-family: $SFR
     line-height: 24px
+.rating-area
+  overflow: hidden
+  height: 20px
+
+  &:not(:checked)
+    >
+      input
+        display: none
+
+      label
+        float: right
+        padding: 0
+        cursor: pointer
+        margin-right: 10px
+        &:first-child
+            margin-right: 0px
+        &:before
+          content: url("../img/starOff.svg")
+    > label:hover
+      content: url("../img/starOn.svg")
+      ~ label
+        content: url("../img/starOn.svg")
+  > input:checked ~ label
+    content: url("../img/starOn.svg")
+  >
+    input:checked
+      + label:hover, ~ label:hover
+        content: url("../img/starOn.svg")
+        ~ label
+          content: url("../img/starOn.svg")
+    label:hover ~ input:checked ~ label
+      content: url("../img/starOn.svg")
+
+.rate-area > label:active
+  position: relative        
 footer
     margin-top: 60px
 @media screen and (max-width: 1150px)

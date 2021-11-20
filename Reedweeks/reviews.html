@@ -66,11 +66,11 @@
                 <nav>
                     <ul class="footer__menu">
                         <li><a href="#">доставка и оплата</a></li>
-                        <li><a href="#">контакты</a></li>
-                        <li><a href="#">отзывы</a></li>
-                        <li><a href="#">о нас</a></li>
-                        <li><a href="#">статьи</a></li>
-                        <li><a href="#">самовывоз</a></li>
+                        <li><a href="contacts.html">контакты</a></li>
+                        <li><a href="reviews.html">отзывы</a></li>
+                        <li><a href="aboutUs.html">о нас</a></li>
+                        <li><a href="news.html">статьи</a></li>
+                        <li><a href="pickup.html">самовывоз</a></li>
                     </ul>
                 </nav>
                 <div class="footer__info">
@@ -90,9 +90,9 @@
                 <nav>
                     <ul class="menu animate__animated animate__backInLeft">
                         <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Самовывоз</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="pickup.html">Самовывоз</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -130,8 +130,14 @@
             <form action="" method="POST">
                 <div class="data">
                     <div class="input__block">
-                        <input type="text" placeholder="Имя" class="input__item">
-                        <input type="text" placeholder="E-mail" class="input__item">
+                        <label class="placeinput">
+                            <input required="1" type="text" id="text" class="input__item"/>
+                            <div class="place_holder">Имя<span>*</span></div>
+                        </label>
+                        <label class="placeinput">
+                            <input required="1" type="text" id="text" class="input__item"/>
+                            <div class="place_holder">E-mail<span>*</span></div>
+                        </label>
                     </div>
                     <div class="textarea__block">
                         <textarea placeholder="Текст отзыва"></textarea>
@@ -139,7 +145,18 @@
                 </div>
                 <div class="rating">
                     <div class="rating__title">Оценка</div>
-                    <div class="rating__item"></div>
+                    <div class="rating-area">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label for="star-5" title="Оценка «5»"></label>	
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label for="star-4" title="Оценка «4»"></label>    
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label for="star-3" title="Оценка «3»"></label>  
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label for="star-2" title="Оценка «2»"></label>    
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label for="star-1" title="Оценка «1»"></label>
+                    </div>
                 </div>
                 <button class="more__info" type="submit">Отправить отзыв</button>
             </form>
@@ -228,11 +245,11 @@
             <nav>
                 <ul class="footer__menu">
                     <li><a href="#">доставка и оплата</a></li>
-                    <li><a href="#">контакты</a></li>
-                    <li><a href="#">отзывы</a></li>
-                    <li><a href="#">о нас</a></li>
-                    <li><a href="#">статьи</a></li>
-                    <li><a href="#">самовывоз</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                    <li><a href="reviews.html">отзывы</a></li>
+                    <li><a href="aboutUs.html">о нас</a></li>
+                    <li><a href="news.html">статьи</a></li>
+                    <li><a href="pickup.html">самовывоз</a></li>
                 </ul>
             </nav>
             <div class="footer__info">
