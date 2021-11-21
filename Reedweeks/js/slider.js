@@ -32,5 +32,38 @@ $(document).ready(function(){
       speed: 500
     });
   }
+  if ($(window).width() < '1200'){
+    $("#card__slider").slick({
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 500,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  }
+  
     
 })

@@ -619,8 +619,22 @@ footer
             text-transform: uppercase
             li
                 margin-right: 20px
+                position: relative
                 &:last-child
                     margin-right: 0px
+                a
+                    &::before
+                        width: 0px
+                        height: 2px
+                        background-color: #fff
+                        position: absolute
+                        bottom: -5px
+                        left: 0px
+                        content: ""
+                        transition: .4s
+                    &:hover
+                        &::before
+                            width: 100%
         .footer__info
             display: flex
             max-width: 355px
