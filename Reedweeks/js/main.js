@@ -19,11 +19,11 @@ function categoriiOpen(){
     Blockbody()
 }
 function changeMenuImg(){
-    if ($('.imgimg').attr('src') == "img/menu.png"){
-        $('.imgimg').prop('src', 'img/close.png')
+    if ($('.imgimg').attr('src') == "img/menu.svg"){
+        $('.imgimg').prop('src', 'img/close.svg')
         $('.imgimg').css({'width': "21px", 'height':'21px'})
     } else{
-        $('.imgimg').prop('src', 'img/menu.png')
+        $('.imgimg').prop('src', 'img/menu.svg')
         $('.imgimg').css({'width': "", 'height':''})
     }
 }
