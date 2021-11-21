@@ -44,21 +44,21 @@ $(document).ready(function(){
       centerMode: true,
       responsive: [
         {
-          breakpoint: 800,
+          breakpoint: 801,
           settings: {
             slidesToShow: 4
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 601,
           settings: {
             slidesToShow: 3
           }
         },
         {
-          breakpoint: 450,
+          breakpoint: 451,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 3
           }
         }
       ]
