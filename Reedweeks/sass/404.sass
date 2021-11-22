@@ -1,16 +1,16 @@
 @import font
 @import mixins
 @import modal
-$black: #222931
+$black2: #222931
 header
-    background: $black
+    background: $black2
     color: #fff
     position: static !important
     .container 
         .header__icon 
             .search-box 
                 .search-btn
-                    background: $black
+                    background: $black2
 .error
     background-image: url("../img/error_bg.svg")
     width: 100%
@@ -26,9 +26,9 @@ footer
     background: #fff
     .main__container 
         .footer__info, .footer__menu
-            color: $black
+            color: $black2
     .footer__text
-        color: $black
+        color: $black2
 .main__error
     width: 100%
     height: 504px
@@ -52,6 +52,13 @@ footer
             position: absolute
             top: 2px
             right: -30px
+.tovar__buttons
+    footer
+        background-color: $black2
+        margin-top: 20px
+        .main__container
+            .footer__menu, .footer__info
+                color: #fff
 @media screen and (max-width: 850px)
     .error
         .main__section
@@ -90,5 +97,4 @@ footer
     .error__title
         font-size: 20px
         line-height: 26px
-.header-active
-    background-color: #F1F3F4
+    

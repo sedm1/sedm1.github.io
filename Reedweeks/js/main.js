@@ -36,15 +36,11 @@ function changeMenuImg404(){
         $('.imgimg').css({'width': "", 'height':''})
     }
 }
-function changeHeader(){
-    console.log("aaa")
-}
 function menuOpen2(){
     var locationPage = location.href.match(/[\d\w-]+\.\w+$/)
     //Проверяем страницу на 404, так как в 404 header другого цвета
     if (locationPage[0] == '404.html'){
         changeMenuImg404()
-        changeHeader()
     } else {
         changeMenuImg()
     }
