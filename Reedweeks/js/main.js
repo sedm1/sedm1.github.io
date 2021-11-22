@@ -39,12 +39,18 @@ function changeMenuImg404(){
 function menuOpen2(){
     var locationPage = location.href.match(/[\d\w-]+\.\w+$/)
     //Проверяем страницу на 404, так как в 404 header другого цвета
-    if (!locationPage[0] == '404.html'){
+    if (locationPage[0] == null){
         changeMenuImg()
-        
-    } else {
-        changeMenuImg404()
+    } else{
+        if (!locationPage[0] == '404.html'){
+            changeMenuImg()
+            
+        } else {
+            changeMenuImg404()
+        }
     }
+    
+    
     //Закрывать или открывать окно в зависимости от того, открыто ли меню категорий
     if ($("div.categori__block").hasClass("open")){
         categoriiOpen()
