@@ -43,7 +43,7 @@
   border-radius: 0 0 50% 50%/0 0 100% 100%;
 }
 .tovar__buttons .button__item {
-  width: 271px;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
