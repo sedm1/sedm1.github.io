@@ -43,10 +43,9 @@ function menuOpen2(){
         changeMenuImg()
     } else{
         if (!locationPage[0] == '404.html'){
-            changeMenuImg()
-            
-        } else {
             changeMenuImg404()
+        } else {
+            changeMenuImg()
         }
     }
     
