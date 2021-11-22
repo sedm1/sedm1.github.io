@@ -42,7 +42,7 @@ function menuOpen2(){
     if (window.location.pathname == '/Reedweeks/'){
         changeMenuImg()
     } else{
-        if (!locationPage[0] == '404.html'){
+        if (locationPage[0] == '404.html'){
             changeMenuImg404()
         } else {
             changeMenuImg()
