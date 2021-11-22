@@ -19,7 +19,7 @@ function categoriiOpen(){
     Blockbody()
 }
 function changeMenuImg(){
-    if ($('.imgimg').attr('src') == "img/menu.svg"){
+    if ($('.imgimg').attr('src') == ("img/menu.svg")){
         $('.imgimg').prop('src', 'img/close.svg')
         $('.imgimg').css({'width': "21px", 'height':'21px'})
     } else{
@@ -27,17 +27,35 @@ function changeMenuImg(){
         $('.imgimg').css({'width': "", 'height':''})
     }
 }
+function changeMenuImg404(){
+    if ($('.imgimg').attr('src') == ("img/menu_white.svg")){
+        $('.imgimg').prop('src', 'img/close.svg')
+        $('.imgimg').css({'width': "21px", 'height':'21px'})
+    } else{
+        $('.imgimg').prop('src', 'img/menu_white.svg')
+        $('.imgimg').css({'width': "", 'height':''})
+    }
+}
+function changeHeader(){
+    console.log("aaa")
+}
 function menuOpen2(){
-    
-    changeMenuImg()
+    var locationPage = location.href.match(/[\d\w-]+\.\w+$/)
+    //Проверяем страницу на 404, так как в 404 header другого цвета
+    if (locationPage[0] == '404.html'){
+        changeMenuImg404()
+        changeHeader()
+    } else {
+        changeMenuImg()
+    }
     //Закрывать или открывать окно в зависимости от того, открыто ли меню категорий
     if ($("div.categori__block").hasClass("open")){
         categoriiOpen()
-        changeMenuImg()
         //$('.imgimg').prop('src', 'img/menu.png')
     } else{
         $(".tovar__buttons").toggleClass("open-2")
         Blockbody()
+        
     }
 }
 $(".search-btn").on("click", function(){
