@@ -29,7 +29,7 @@ function changeMenuImg(){
 }
 function changeMenuImg404(){
     if ($('.imgimg').attr('src') == ("img/menu_white.svg")){
-        $('.imgimg').prop('src', 'img/close.svg')
+        $('.imgimg').prop('src', 'img/close-white.svg')
         $('.imgimg').css({'width': "21px", 'height':'21px'})
     } else{
         $('.imgimg').prop('src', 'img/menu_white.svg')
