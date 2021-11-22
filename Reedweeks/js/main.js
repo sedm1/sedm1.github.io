@@ -8,6 +8,19 @@ for(var i = 0; i < accordion.length; i++){
         this.classList.toggle('ans__active')
     })
 }
+$(".option__icon").on("click", parseData)
+function parseData(){
+    var atribut = $(this).attr('data-art')
+    $(".option__title").removeClass("cart-active")
+    $(".option__title").removeClass("card-active-d")
+    if (atribut == 1){
+        $("#option___title-1").addClass("card-active-d")
+        $(".option__descript").addClass("cart-active")
+    } else{
+        $("#option___title-" + atribut).addClass("cart-active")
+    }
+    
+}
 function Blockbody(){
     $("body").toggleClass("overflow")
     $("html").toggleClass("overflow")

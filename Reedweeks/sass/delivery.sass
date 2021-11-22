@@ -15,12 +15,10 @@ body
     width: 25%
     max-width: 229px
     font-family: $SFR
-    &:first-child
-        padding-bottom: 7px
-        border-bottom: 1px solid #371A45
-        opacity: 0.9
+    min-height: 142px
     .option__icon
         height: 80px
+        cursor: pointer
         img
             width: auto
     .option__title
@@ -38,6 +36,9 @@ body
     .option__descript
         max-width: 209px
         font-size: 10px
+        margin: 0
+        line-height: normal
+        margin-top: 1px
 .option__text
     font-family: $SFR
     line-height: 20px
@@ -216,6 +217,14 @@ footer
             width: 80px
     .card
         margin-top: 50px
-    
-    
+#option___title-1, #option___title-2, #option___title-3,#option___title-4
+    display: none   
+.cart-active
+    display: block !important
+    padding-bottom: 7px
+    border-bottom: 1px solid #371A45
+    opacity: 0.9
+.card-active-d
+    display: block !important
+
 
