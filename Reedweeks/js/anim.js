@@ -11,11 +11,6 @@ new Skroll({
             e.style["opacity"] = 1;
         }
     })
-    .add(".question__item",{
-        animation:"topToBottom",
-        duration:700,
-        delay:100
-    })
     .add(".tovar__item",{
         animation:"topToBottom",
         duration:1000,

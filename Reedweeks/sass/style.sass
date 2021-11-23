@@ -1,5 +1,7 @@
 @import font
 @import mixins
+html
+    zoom: 0.85
 *
     padding: 0
     margin: 0
@@ -690,8 +692,8 @@ footer
                     .info__main
                         margin-left: 0px
                         h2
-                            font-size: 41px
-                            line-height: 41px
+                            font-size: 6vw
+                            line-height: 57px
                             margin-bottom: 21px
                         p
                             font-size: 50px
@@ -810,15 +812,18 @@ footer
                 .footer__item
                     margin-right: 0px
 @media screen and ( max-width: 790px)
+    html
+        zoom: 1
     .main__section
         width: 100%
         .main__container 
             .left_main 
                 .slider__item
                     .info__main
-                        max-width: 45%
+                        max-width: none
                         h2
-                            font-size: 25px
+                            font-size: 6vw
+                            
                         p
                             font-size: 35px
             .right_main

@@ -164,6 +164,10 @@
                         <label for="star-1" title="Оценка «1»"></label>
                     </div>
                 </div>
+                <div class="fl_upld">
+                    <label><input id="fl_inp" type="file" name="file">Загрузите фото</label>
+                    <div id="fl_nm"></div>
+                    </div>
                 <button class="more__info" type="submit">Отправить отзыв</button>
             </form>
         </div>
@@ -269,5 +273,13 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready( function() {
+            $("#fl_inp").change(function(){
+                 var filename = $(this).val().replace(/.*\\/, "");
+                 $("#fl_nm").html(filename);
+            });
+        });
+    </script>
 </body>
 </html>

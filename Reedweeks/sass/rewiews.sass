@@ -44,7 +44,27 @@ input, textarea
     color: lightgrey
 
 .placeinput input:invalid + .place_holder 
-     display: inline
+    display: inline
+.fl_upld
+    width:300px
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+#fl_inp
+    display: none
+.fl_upld 
+    label
+        cursor: pointer
+        border: 1px solid #FF5555
+        border-radius: 3px
+        padding: 10px 25px
+        text-align: center
+        transition: .3s
+        border-radius: 10px
+        &:hover
+           filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)) 
+#fl_nm
+    margin-left: 20px
 
 /*вся проблема в том, если placeholder больше инпута*/
 .placeinput 
@@ -58,7 +78,7 @@ textarea
     width: 448px
 .rating
     margin-top: 35px
-    margin-bottom: 30px
+    margin-bottom: 20px
     display: flex
     align-items: center
     .rating__title
