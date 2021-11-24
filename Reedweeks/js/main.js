@@ -90,6 +90,7 @@ $("#number-footer").click(function(){
 })
 $("#email-footer").click(function(){
     $("#modal__title").text("Получить письмо")
+    $("#placePhone").attr("placeholder", "Ваш E-mail")
     openModal()
 })
 $(".arrowModal").click(function(){
