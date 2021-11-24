@@ -76,3 +76,23 @@ function menuOpen2(){
 $(".search-btn").on("click", function(){
     $(".search-txt").toggleClass("search-txt-active")
 })
+function openModal(){
+    $(".modalPhoneBg").toggleClass("block")
+    $("body").toggleClass("over")
+}
+$("#number").click(function(){
+    $("#modal__title").text("Получить звонок")
+    openModal()
+})
+$("#number-footer").click(function(){
+    $("#modal__title").text("Получить звонок")
+    openModal()
+})
+$("#email-footer").click(function(){
+    $("#modal__title").text("Получить письмо")
+    openModal()
+})
+$(".arrowModal").click(function(){
+    openModal()
+})
+

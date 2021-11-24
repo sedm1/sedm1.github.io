@@ -1,7 +1,7 @@
 @import font
 @import mixins
 html
-    zoom: 0.75
+    zoom: 0.8
 *
     padding: 0
     margin: 0
@@ -650,6 +650,7 @@ footer
                 display: flex
                 align-items: flex-start
                 margin-bottom: 30px
+                cursor: pointer
                 img   
                     margin-right: 9px
                 &:last-child
@@ -668,8 +669,60 @@ footer
         max-width:1120px
         margin: 0 auto
         margin-top: 35px
-
-
+#number
+    cursor: pointer
+.modalPhoneBg
+    zoom: 1.35
+    position: fixed
+    width: 100%
+    height: 100vh
+    background: rgba(0,0,0,0.4)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1000000000
+    display: none
+    top: 0
+    left: 0
+    .arrowModal
+        position: absolute
+        width: 20px
+        height:  20px
+        top: -6px
+        right: -6px
+        cursor: pointer
+    .modalPhone
+        border-radius: 10px
+        background: #fff
+        padding: 10px 18px
+        min-width: 400px
+        position: relative
+        h1
+            color: $black
+            text-align: center
+            margin-bottom: 30px
+        form
+            display: flex
+            flex-direction: column
+            margin-top: 0px !important
+            input
+                height: 40px
+                width: 100%
+                margin-bottom: 10px
+                border: 1px solid #000
+                border-radius: 10px
+                padding-left: 15px
+            button
+                color: #fff
+                @include flex-centerX
+                justify-content: center
+                background: rgba(255, 68, 68, 0.9)
+                margin-top: 15px
+                border-radius: 15px
+                font-size: 18px
+                width: 100%
+                height: 33px
+                padding: 20px 0px
 @media screen and (max-width: 1720px)
     .container
         width: 97%
@@ -1080,6 +1133,9 @@ footer
                     &:nth-child(3)
                         text-align: left
 @media screen and (max-width:401px)
+    .modalPhoneBg
+        .modalPhone
+            width: 100%
     #slick-slide01
         .right_main
             img
@@ -1183,5 +1239,10 @@ footer
     height: 100%
     max-height: 100%
     position: relative
+.over
+    overflow-y: hidden
+    position: relative
 .header-block
     position: fixed
+.block
+    display: flex

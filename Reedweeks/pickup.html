@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
+    <div class="modalPhoneBg">
+        <div class="modalPhone">
+            <div class="arrowModal"><img src="img/close.svg" alt="close"></div>
+            <h1 id="modal__title">Получить звонок</h1>
+            <form action="">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="text" placeholder="Ваше имя">
+                <button type="submit" class="more__info">Получить звонок</button>
+            </form>
+        </div>
+    </div>
     <div class="tovar__buttons">
         <div>
             <button class="button__item">
@@ -102,8 +113,8 @@
                 </nav>
             </div>
             <div class="right__header animate__animated animate__backInRight">
-                <div class="number">
-                    <div class="phone__icon"><img src="img/phone.svg" alt="phone__icon"></div>
+                <div class="number" id="number">
+                    <div class="phone__icon" ><img src="img/phone.svg" alt="phone__icon"></div>
                     +7(966) 143-44-22
                 </div>
                 <div class="header__icon">
@@ -187,8 +198,8 @@
                 </ul>
             </nav>
             <div class="footer__info">
-                <div class="footer__item"><img src="img/phone_white.png" alt="icon" id="footer__i1">+7(966) 143-44-22</div>
-                <div class="footer__item"><img src="img/me_white.png" alt="icon" id="footer__i2">info@redweeks.ru</div>
+                <<div class="footer__item" id="number-footer"><img src="img/phone_white.png" alt="icon" id="footer__i1">+7(966) 143-44-22</div>
+                <div class="footer__item" id="email-footer"><img src="img/me_white.png" alt="icon" id="footer__i2">info@redweeks.ru</div>
                 <div class="footer__item"><img src="img/loc_white.png" alt="icon" id="footer__i3">г. Москва Алтуфьевское <br>ш.,37, стр. 1 (Центр торговли, этаж 3)</div>
             </div>
         </div>
