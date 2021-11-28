@@ -8,73 +8,307 @@
     display: block
     top: 0
 .tovar__buttons_tovar
-            display: flex
-            flex-direction: column
-            align-items: flex-start
-            position: sticky
-            left: 0
-            top: 100px
-            z-index: 90
-            footer
-                display: none
-            .button__item
-                min-width: 271px
-                display: flex
-                padding-right: 11px
-                align-items: center
-                padding-left:14px
-                padding-top: 10px
-                padding-bottom: 10px
-                font-size: 19px
-                transition: .3s
-                border-radius: 6px
-                background: transparent
-                margin-top: 8px
-                z-index: 150
-                text-align: left
-                &:hover
-                    background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
-                    color: #fff
-                    .ct_img__img
-                            &:first-child
-                                display: none
-                            &:nth-child(2)
-                                display: block
-                .ct_img__img
-                    &:nth-child(2)
-                        display: none
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    position: sticky
+    left: 0
+    top: 100px
+    z-index: 90
+    footer
+        display: none
+    .button__item
+        min-width: 271px
+        display: flex
+        padding-right: 11px
+        align-items: center
+        padding-left:14px
+        padding-top: 10px
+        padding-bottom: 10px
+        font-size: 19px
+        transition: .3s
+        border-radius: 6px
+        background: transparent
+        margin-top: 8px
+        z-index: 150
+        text-align: left
+        &:hover
+            background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
+            color: #fff
+            .ct_img__img
                 &:first-child
-                    margin-top: 0px
-                .ct__img
-                    margin-right: 10px
-                    width: 24px
-                    display: flex
-                    align-items: center
-                    justify-content: center
+                    display: none
+                &:nth-child(2)
+                    display: block
+        .ct_img__img
+            &:nth-child(2)
+                display: none
+        &:first-child
+            margin-top: 0px
+        .ct__img
+            margin-right: 10px
+            width: 24px
+            display: flex
+            align-items: center
+            justify-content: center
                         
-                #ct_1
-                    img
-                        @include icon-size(21px, 21px)
-                #ct_2
-                    img
-                        @include icon-size(24px, 24px)
-                #ct_3
-                    img
-                        @include icon-size(21px, 25px)
-                #ct_4
-                    img
-                        @include icon-size(24px, 24px)
-                #ct_5
-                    img
-                        @include icon-size(24px, 28px)
-                #ct_6
-                    img
-                        @include icon-size(24px, 22px)
-                #ct_7
-                    img
-                        @include icon-size(24px, 24px)
-            .active
-                background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
-                color: #fff
+        #ct_1
+            img
+                @include icon-size(21px, 21px)
+        #ct_2
+            img
+                @include icon-size(24px, 24px)
+        #ct_3
+            img
+                @include icon-size(21px, 25px)
+        #ct_4
+            img
+                @include icon-size(24px, 24px)
+        #ct_5
+            img
+                @include icon-size(24px, 28px)
+        #ct_6
+            img
+                @include icon-size(24px, 22px)
+        #ct_7
+            img
+                @include icon-size(24px, 24px)
+    .active
+        background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
+        color: #fff
 .tovarD
-    margin-top: 60px  
+    margin-top: 60px
+    .container
+        display: flex
+        align-items: flex-start
+.good__info
+    display: flex
+    align-items: flex-start
+.good__img
+    display: flex
+    flex-direction: column
+    max-width: 448px
+.good__main_img
+    width: 100%
+    height: 397px
+    position: relative
+    .addTolove
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        top: 0
+        right: 0
+        border-radius: 100%
+        width: 52px
+        height: 52px
+        img
+            width: 20px
+            height: 20px
+.main__p
+    opacity: 0.5
+    font-size: 20px
+    line-height: 26px
+.good__descript
+    margin-left: 32px
+.good_pob__img
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 30px
+    img
+        width: 20%
+        max-width: 76px
+        height: 76px
+        cursor: pointer
+h1
+    max-width: 410px
+    font-size: 30px
+    line-height: 30px
+    font-family: $SFB
+    margin-bottom: 20px
+.good__undTitle
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    .descript__item
+        &:first-child
+            font-size: 20px
+            color: #219653
+            margin-right: 30px
+            font-family: $SFSB
+.good__price
+    font-family: $SFHY
+    font-size: 35px
+.goods__color
+    margin-top: 30px
+    p
+        margin-bottom: 15px
+.color__block
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+input[type=radio]
+        display: none
+.form_radio_btn
+    margin-right: 20px
+    margin-bottom: 20px 
+    label 
+        display: inline-block
+        cursor: pointer
+        box-shadow: 0px 14px 14px rgba(12, 31, 56, 0.06), 0px 4px 34px rgba(26, 71, 132, 0.1)
+        border-radius: 16px
+        user-select: none
+        padding: 17px 20px
+        max-width: 191px
+        font-size: 14px
+.form_radio_btn
+    input
+        &:checked + label
+            background: #FF5555
+            color: #fff
+.button__item
+    padding: 13px 19px
+    font-size:20px
+    background-color: transparent
+    border-radius: 15px
+    transition: .3s
+    font-family: $SFSB
+    .btn__icon
+        position: relative
+        margin-left: 20px
+        &::before
+            position: absolute
+            top: 0px
+.button__block
+    margin-top: 30px
+.addToCart
+    color: #fff
+    background: #FF5555
+    width: 214px
+    margin-right: 40px
+    &:hover
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25))
+    .btn__icon
+        &::before
+            left: -35px
+            content: url("../img/cart_white.svg")
+.recall
+    width: 251px
+    border: 1px solid #000
+    .btn__icon
+        &::before
+            left: -35px
+            content: url("../img/phone.svg")
+.character
+    margin-top: 150px
+    .mrg
+        margin-top: 60px
+.character__pre_title
+    font-size: 20px
+    margin-top: 45px    
+.character__item
+    display: flex
+    align-items: flex-start
+    margin-top: 15px
+    p
+        &:first-child
+            min-width: 300px
+        &:nth-child(2)
+            max-width: 684px
+            margin-left: 14%                           
+#hits_2
+    .container
+        flex-direction: column
+        width: 100%
+        .tovar__items
+            justify-content: space-between
+            width: 100%
+            margin: 0
+            margin-top: 45px
+            .tovar__item
+                max-width: 352px
+                margin: 0
+                .tovar__down 
+                    .mb__icon 
+                        div
+                            &:nth-child(2)
+                                .mab__item
+                                    &:first-child
+                                        background: #dddddd
+
+footer
+    margin-top: 100px
+@media screen and (max-width: 1220px)
+    .tovar__buttons_tovar
+        display: none
+    #hits_2
+        .container 
+            .tovar__items
+                min-width: 0
+                display: block
+                .tovar__item
+                    margin: 0px 20px
+                    max-width: none
+@media screen and (max-width: 900px)
+    .good__info, .good_pob__img
+        flex-direction: column
+    .good__descript
+        margin-left: 0px
+        margin-top: 30px
+    .good__img
+        flex-direction: row
+    .good_pob__img
+        margin-left: 10px
+        img
+            width: auto
+            max-width: none
+    .character
+        margin-top: 80px
+
+
+@media screen and (max-width: 650px)
+    .main__p
+        font-size: 16px
+        line-height: 20px
+    .character__item 
+        p
+            &:nth-child(2)
+                margin-left: 2%
+    .good__img
+        flex-direction: column
+    .good_pob__img
+        flex-direction: row
+        margin-left: 0px
+        margin-top: 10px
+        img
+            width: 20%
+            max-width: 60px
+            height: 60px
+    .character
+        margin-top: 40px
+    .button__item
+        margin-bottom: 20px
+    .section__link
+        font-size: 10px
+        p
+            
+            &:first-child, &:last-child
+                display: none
+@media screen and (max-width: 650px)
+    .main__p
+        font-size: 14px
+    .character__item 
+        p
+            &:first-child
+                min-width: 192px
+    .section__link
+        margin-top: 40px
+@media screen and (max-width: 450px)
+    .good__main_img
+        height: auto
+    h1
+        font-size: 26px
+        margin-bottom: 10px
+    .good__undTitle
+        margin-bottom: 10px

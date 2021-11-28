@@ -84,6 +84,10 @@ $("#number").click(function(){
     $("#modal__title").text("Получить звонок")
     openModal()
 })
+$("#number2").click(function(){
+    $("#modal__title").text("Получить звонок")
+    openModal()
+})
 $("#number-footer").click(function(){
     $("#modal__title").text("Получить звонок")
     openModal()
