@@ -13,31 +13,31 @@ new Skroll({
     })
     .add(".tovar__item",{
         animation:"topToBottom",
-        duration:1000,
+        duration:600,
         delay:  0,
         wait: -200
     })
     .add(".info__img",{
         delay:0,
-        duration:900,
+        duration:400,
         animation:"topToBottom",
         wait: -200
     })
     .add(".info__img_2",{
         delay:0,
-        duration:900,
+        duration:400,
         animation:"topToBottom",
         wait: -200
     })
     .add(".info__text",{
         animation:"topToBottom",
         delay:0,
-        duration:600,
+        duration:300,
         wait: -200
     })
     .add(".categori__button",{
         delay:0,
-        duration:900,
+        duration:500,
         animation:"zoomIn",
         wait: -200
     })
