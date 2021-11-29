@@ -14,27 +14,32 @@ new Skroll({
     .add(".tovar__item",{
         animation:"topToBottom",
         duration:1000,
-        delay:100
+        delay:  0,
+        wait: -200
     })
     .add(".info__img",{
-        delay:10,
+        delay:0,
         duration:900,
         animation:"topToBottom",
+        wait: -200
     })
     .add(".info__img_2",{
-        delay:10,
+        delay:0,
         duration:900,
         animation:"topToBottom",
+        wait: -200
     })
     .add(".info__text",{
         animation:"topToBottom",
-        delay:150,
-        duration:600
+        delay:0,
+        duration:600,
+        wait: -200
     })
     .add(".categori__button",{
-        delay:10,
+        delay:0,
         duration:900,
-        animation:"zoomIn"
+        animation:"zoomIn",
+        wait: -200
     })
     
     
