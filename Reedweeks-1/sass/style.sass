@@ -1,0 +1,1226 @@
+@import font
+@import mixins
+html
+    zoom: 0.85
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+body
+    font-family: $SFM
+    color: $black
+    position: relative
+button, a
+    text-decoration: none
+    color: inherit
+    font-family: inherit
+    border: 0 none
+    outline: 0 none
+    cursor: pointer
+.container
+    width: 1720px
+    margin: 0 auto
+.main__container
+    width: 1150px
+    margin: 0 auto
+img
+    width: 100%
+    height: 100%
+li
+    list-style: none
+.categorii, .tovar, .comapny__info, .main__section .main__container
+    position: relative
+.round
+    position: absolute
+    background: #A157FF
+    opacity: 0.6
+    filter: blur(154px)
+    width: 274px
+    height: 199px
+    border-radius: 100% 
+.round-top
+    top: 0
+    right: 0px
+.round-bottom
+    bottom: 0
+    left: 0px
+//ALL Main sett
+.section__title
+    font-family: $SHE
+    font-size: 30px
+    color: $black
+    margin-top: 50px
+    margin-bottom: 10px
+.section__describe
+    color: rgba(59, 57, 67, 0.7)
+    font-size: 20px
+    line-height: 28px
+    max-width: 426px
+.section__link
+    @include flex-centerX
+    margin-top: 90px
+    a
+        margin-right: 10px
+        width: 24px
+        height: 17px
+    p
+        color: $black
+        opacity: 0.5
+        font-size: 12px
+
+
+//HEADER
+header
+    background-color: $headerColor
+    padding: 30px 0px
+    width: 100%
+    z-index: 120
+    top: 0
+    left: 0
+    position: sticky
+    .left__header, .right__header
+        @include flex-centerX
+    .container
+        @include flex-centerJ
+        .menu__button
+            z-index: 130
+            cursor: pointer
+            display: flex
+            align-items: center
+            .lbl_menu
+                z-index: 2000
+                cursor: pointer
+        #openMenu
+            width: 0px
+            height: 0px
+            z-index: 130
+        .open_menuImg
+            width: 28px
+            height: 18px
+            display: none
+            z-index: 150
+            cursor: pointer
+        
+        .logo
+            width: 166px
+            height: 31px
+        .menu
+            @include flex-centerX
+            font-size:20px
+            margin-left: 150px
+            li
+                margin-right: 40px
+                position: relative
+                &:last-child
+                    margin-right:0px
+                a
+                    &::before
+                        width: 0px
+                        height: 2px
+                        background-color: $black
+                        position: absolute
+                        bottom: -5px
+                        left: 0px
+                        content: ""
+                        transition: .4s
+                    &:hover
+                        &::before
+                            width: 100%
+        .number
+            @include flex-centerX
+            font-size: 15px
+            font-family: $SFR
+            margin-right: 27px
+            .phone__icon
+                margin-right: 9px
+                width: 19px
+                height: 19px
+        .header__icon
+            @include flex-centerX
+            position: relative
+            .search-box 
+                display: flex
+                align-items: center
+                position: relative
+                margin-right: 30px
+                max-width:10px
+                .search-btn 
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    align-items: center
+                    border-radius: 50%
+                    text-decoration: none
+                    img
+                        width: 20px 
+                        height: 20px
+                .search-txt 
+                    border: none
+                    outline: none
+                    background: none
+                    padding: 0
+                    color: $black
+                    font-size: 16px
+                    transition: .4s
+                    line-height: 40px
+                    width: 0
+                    position: absolute
+                    right: 20px
+                    background-color: #F1F3F4
+                    z-index: 10
+                .search-txt-active  
+                    width: 240px
+                    padding-left: 10px
+                    border: 1px solid #3B3943
+                    border-radius: 9px
+            .icon__item
+                width:22px
+                height: 20px
+                margin-right: 30px
+                cursor: pointer
+                &:last-child
+                    margin-right: 0px
+        .cart
+            position: relative
+            .col
+                position: absolute
+                width: 18px 
+                height: 18px
+                border-radius: 100%
+                @include flex-centerX
+                justify-content: center
+                background-color: #FF5555
+                color: #fff
+                top: -9px
+                right: -8px
+                font-size:11px
+//Настройки для второй картинки
+#slick-slide01
+    .right_main
+        img
+            padding-right: 50px
+.main__section
+    width: 1150px
+    margin: 0 auto
+    padding-top: 10px
+    .main__container
+        height: 565px
+        background-image: url("img/main_bg.svg")
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        padding-top: 50px
+        padding-left: 20px
+        padding-right: 20px
+        border-radius: 20px
+        overflow: hidden
+        .right_main
+            width: auto
+            height: 490px
+        .left_main
+            .slider__item
+                display: flex
+                justify-content: space-between
+                margin-left: 50px
+                .info__main
+                    margin-left: 50px
+                    color: #fff
+                    h2
+                        max-width: 490px
+                        font-size: 56px
+                        line-height: 64px
+                        margin-bottom: 25px
+                        font-family: $SHE
+                    p
+                        font-size: 96px
+                        font-family: $SFHY
+                    button
+                        color: #fff
+                        padding: 18px 25px
+                        font-size:20px
+                        width: 165px
+                        height: 67px
+                        background-image: url("img/button__bg.svg") 
+                        background-repeat: no-repeat
+                        background-position: center center
+                        background-size: cover
+                        margin-top: 45px
+                        background-color: transparent
+                        border-radius: 20px
+                        position: relative
+                        overflow: hidden
+                        &:hover
+                            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25))
+                    .ripple-effect
+                        display: inline-block
+                        position: absolute
+                        top: 0
+                        left: 0
+                        height:0
+                        width:0
+                        border: 2px solid rgba(255,255,255,0.3)
+                        border-radius: 5000px
+                        animation: ripple 1s ease forwards
+                        z-index: 1
+  
+
+//Second Blcok
+.categorii
+    .mobile-text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: 15px 
+        color: $black
+        font-family: $SFR
+        margin-top: 15px
+        display: none
+        .mobile-text__item
+            @include flex-centerX
+            margin-bottom: 10px
+            &:last-child
+                margin-bottom: 0px
+            .text__item-img
+                margin-right: 5px
+                img
+                    width: 19px
+                    height: auto
+    .categori__button
+        display: none
+        .ctg_spanText
+            font-size: 7px
+    .categori__block
+        @include flex-centerX
+        flex-wrap: wrap
+        margin-top: 20px
+        justify-content: center
+        align-items: flex-start
+        .categori__link
+            @include flex-centerX
+            flex-direction: column
+            width: 21%
+            text-align: center
+            padding: 0px 46px
+            margin-top:60px
+            transition: .5s
+            z-index: 5
+            .categori__icon
+                transition: .5s
+                height: 95px
+                img
+                    width: auto
+            .categori__name
+                font-size: 20px
+                margin-top: 20px
+                font-family: $SFRM    
+            &:hover    
+                .categori__icon
+                    transform: scale(1.2)
+.tovar
+    margin-top: 124px
+    margin-bottom: 60px
+    .container
+        display: flex
+        align-items: flex-start
+        margin-top: 124px
+        
+        .tovar__buttons
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            position: sticky
+            left: 0
+            top: 100px
+            z-index: 90
+            footer
+                display: none
+            .button__item
+                min-width: 271px
+                display: flex
+                padding-right: 11px
+                align-items: center
+                padding-left:14px
+                padding-top: 10px
+                padding-bottom: 10px
+                font-size: 19px
+                transition: .3s
+                border-radius: 6px
+                background: transparent
+                margin-top: 8px
+                z-index: 150
+                text-align: left
+                &:hover
+                    background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
+                    color: #fff
+                    .ct_img__img
+                            &:first-child
+                                display: none
+                            &:nth-child(2)
+                                display: block
+                .ct_img__img
+                    &:nth-child(2)
+                        display: none
+                &:first-child
+                    margin-top: 0px
+                .ct__img
+                    margin-right: 10px
+                    width: 24px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                        
+                #ct_1
+                    img
+                        @include icon-size(21px, 21px)
+                #ct_2
+                    img
+                        @include icon-size(24px, 24px)
+                #ct_3
+                    img
+                        @include icon-size(21px, 25px)
+                #ct_4
+                    img
+                        @include icon-size(24px, 24px)
+                #ct_5
+                    img
+                        @include icon-size(24px, 28px)
+                #ct_6
+                    img
+                        @include icon-size(24px, 22px)
+                #ct_7
+                    img
+                        @include icon-size(24px, 24px)
+            .active
+                background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
+                color: #fff
+                
+        .tovars__title
+            @include flex-centerX
+            .catalog__icon
+                margin-right: 25px
+            #fire
+                @include icon-size(52px, 67px)
+            #news, #wow
+                @include icon-size(67px, 67px)
+            h1
+                font-size: 30px
+                font-family: $SFB
+        .tovar__items
+            display: flex
+            align-items: flex-start
+            flex-wrap: wrap
+            justify-content: space-between
+            margin-top: 5px
+            .tovar__item
+                background: #FFFFFF
+                box-shadow: 0px 14px 14px rgba(12, 31, 56, 0.06), 0px 4px 34px rgba(26, 71, 132, 0.1)
+                border-radius: 30px
+                width: 352px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                padding: 12px 23px 23px 25px
+                margin-top: 40px
+                min-height: 275px
+                .tovar__img
+                    width: auto 
+                    height: 259px
+                    margin: 0 auto
+                    margin-bottom: 20px
+                    display: flex
+                    justify-content: center
+                    
+                    img
+                        width: auto
+                .tovar__title
+                    font-family: $SFSB
+                    font-size: 17px
+                    line-height: 21px
+                    max-width: 302px
+                    position: relative
+                    &::before
+                        content: "В наличии"
+                        color: #219653
+                        position: absolute
+                        bottom: -20px
+                        left: 0
+                .tovar__down
+                    @include flex-centerJ
+                    flex-direction: column
+                    align-items: flex-start
+                    margin-top: 30px
+                    .mb__icon
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        width: 100%
+                        div       
+                            &:nth-child(2)
+                                display: flex
+                                align-items: center
+                                .mab__item
+                                    width: 15px
+                                    height: 15px
+                                    border-radius: 100%
+                                    background: #dddddd
+                                    padding: 7px
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    box-sizing: content-box
+                                    cursor: pointer
+                                    &:first-child
+                                        margin-right: 10px
+                                    img
+                                        width: 13px
+                                        height: 13px
+                    .tovar__price
+                        font-size: 24px
+                        font-family: $SFBK
+                        .old__price
+                            position: relative
+                            &::before
+                                content: ""
+                                background-color:  #FF5555
+                                position: absolute
+                                bottom: 50%
+                                width: 100%
+                                height: 3px
+                                transform: rotate(-15deg)
+                                border-radius: 7px
+                        .new_price
+                            color: #FF5555
+                            margin-left: 20px
+                    .addbutton
+                        color: #fff
+                        @include flex-centerX
+                        justify-content: center
+                        background: rgba(255, 68, 68, 0.9)
+                        transition: .3s
+                        margin-top: 15px
+                        border-radius: 9px
+                        font-size: 18px
+                        width: 100%
+                        height: 33px
+                        padding: 20px 0px
+                        display: flex
+                        align-items: center
+                        position: relative
+                        &:hover
+                            opacity: 0.7
+                        .addbutton__text
+                            display: flex
+                            position: relative
+                            align-items: center
+                            &::before
+                                content: url("img/cart-white_b.svg")
+                                margin-right: 5px
+                            
+.comapny__info
+    margin-top: 80px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+.reverse
+    flex-direction: row-reverse
+.info__text
+    h2
+        font-family: $SFB
+        font-size: 30px
+        line-height: 45px 
+        margin-bottom: 25px
+    p
+        font-family: $SFR
+        font-size: 16px 
+        line-height: 22px
+        max-width: 605px
+    .advantages
+        display: flex
+        align-items: center
+        margin-top: 40px
+        flex-wrap: wrap
+        font-size: 20px
+        justify-content: space-between
+        max-width: 605px
+        .advantages__item
+            display: flex
+            flex-direction: column
+            width: 240px
+            margin-bottom: 35px
+            #adv_1
+                @include icon-size(78px, 60px)
+            #adv_2
+                @include icon-size(58px, 60px)
+            #adv_3
+                @include icon-size(60px, 34px)
+            #adv_4
+                @include icon-size(46px, 46px)
+            .advantages__text
+                margin-top:20px
+.info__img
+    width: 502px
+    height: 594px
+    img
+        width: auto
+.info__img_2
+    width: 358px
+    height: 428px
+    img
+        width: auto                  
+#mrg_0
+    margin: 0 auto
+.questions            
+    .question__item
+        cursor: pointer
+        margin-bottom:30px
+        transition: 0.5s
+        position: relative
+        transition: .5s
+        &::after
+            content: url("img/arrow.svg")
+            position: absolute
+            top: 14px
+            right: 20px
+            transition: .5s
+            transform: rotate(-90deg)
+        .questiom
+            font-family: $SHE
+            font-size:30px
+            max-width: 90%
+        .answer
+            font-family: $SFR
+            font-size: 16px
+            max-width: 928px
+            max-height: 0px
+            transition: .5s
+            margin-top: 30px
+            overflow: hidden
+    .question__item.ans__active
+        .answer
+            max-height: 500px
+        &::after
+            opacity: 0.5
+            transform: rotate(0deg)
+footer
+    background: linear-gradient(180deg, #46444F 0%, #2F2C3C 98.21%)
+    padding: 70px 0px
+    .main__container
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        .footer__logo
+            width: 160px
+            height: 32px
+        .footer__menu
+            @include flex-centerX
+            font-size: 12px 
+            color: #fff
+            text-transform: uppercase
+            li
+                margin-right: 20px
+                position: relative
+                &:last-child
+                    margin-right: 0px
+                a
+                    &::before
+                        width: 0px
+                        height: 2px
+                        background-color: #fff
+                        position: absolute
+                        bottom: -5px
+                        left: 0px
+                        content: ""
+                        transition: .4s
+                    &:hover
+                        &::before
+                            width: 100%
+        .footer__info
+            display: flex
+            max-width: 355px
+            color: #fff
+            justify-content: space-between
+            flex-wrap: wrap
+            .footer__item
+                display: flex
+                align-items: flex-start
+                margin-bottom: 30px
+                cursor: pointer
+                img   
+                    margin-right: 9px
+                &:last-child
+                    margin-bottom: 0px
+                #footer__i1
+                    @include icon-size(19px, 19px)
+                #footer__i2
+                    @include icon-size(19px, 17px)
+                #footer__i3
+                    @include icon-size(15px, 18px)
+    .footer__text
+        color: #fff
+        font-size: 12px
+        line-height: 14px
+        font-family: $SFR
+        max-width:1120px
+        margin: 0 auto
+        margin-top: 35px
+#number
+    cursor: pointer
+.modalPhoneBg
+    zoom: 1.35
+    position: fixed
+    width: 100%
+    height: 100vh
+    background: rgba(0,0,0,0.4)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1000000000
+    display: none
+    top: 0
+    left: 0
+    .arrowModal
+        position: absolute
+        width: 20px
+        height:  20px
+        top: 6px
+        right: 6px
+        cursor: pointer
+    .modalPhone
+        border-radius: 10px
+        background: #fff
+        padding: 10px 18px
+        min-width: 400px
+        position: relative
+        h1
+            color: $black
+            text-align: center
+            margin-bottom: 30px
+        form
+            display: flex
+            flex-direction: column
+            margin-top: 0px !important
+            input
+                height: 40px
+                width: 100%
+                margin-bottom: 10px
+                border: 1px solid #000
+                border-radius: 10px
+                padding-left: 15px
+            button
+                color: #fff
+                @include flex-centerX
+                justify-content: center
+                background: rgba(255, 68, 68, 0.9)
+                margin-top: 15px
+                border-radius: 15px
+                font-size: 18px
+                width: 100%
+                height: 33px
+                padding: 20px 0px
+@media screen and (max-width: 1720px)
+    .container
+        width: 97%
+    .wrap
+        padding-left: 0px
+
+@media screen and ( max-width: 1220px)
+    .round
+        display: none
+    .main__container
+        width: 97%
+    .main__section
+        width: 100%
+        .main__container
+            
+            .left_main 
+                .slider__item
+                    margin-left: 0px
+                    padding-top: 40px 
+                    .info__main
+                        margin-left: 0px
+                        h2
+                            font-size: 6vw
+                            line-height: 57px
+                            margin-bottom: 21px
+                        p
+                            font-size: 50px
+                        button
+                            margin-top: 20px
+            .right_main
+                width: auto
+                height: 340px
+    header 
+        padding: 20px 0px
+        .container 
+            .menu
+                display: none
+            .open_menuImg
+                display: block
+                margin-right: 10px
+    .tovar 
+        .container
+            .tovar__buttons 
+                position: fixed
+                top: -120%
+                left: 0
+                background: #ECEEEF
+                width: 100%
+                height: 100vh
+                z-index: 120
+                transition: .5s
+                justify-content: space-between
+                opacity: 0
+                overflow-x: hidden
+                overflow-y: auto
+                -webkit-overflow-scrolling: touch
+                footer
+                    display: block
+                    width: 100%
+                    max-width: 100%
+                    position: relative
+                    margin-top: 20px
+                    height: 95%
+                    padding-bottom: 120px
+                    &::before
+                        content: ""
+                        width: 106%
+                        height: 65px
+                        background: #ECEEEF
+                        top: -11px
+                        right: -3%
+                        position: absolute
+                        border-radius: 0 0 50% 50% / 0 0 100% 100%
+                    .main__container 
+                        .footer__menu 
+                            li
+                                margin-bottom: 10px
+                        .footer__info 
+                            .footer__item
+                                margin-bottom: 15px
+
+            .main__container
+                    margin: 0 auto
+            .tovar__items 
+                justify-content: space-around
+                
+                .tovar__item
+                    width: 32%
+                    padding: 13px 10px
+                    .tovar__img
+                        width: 100%
+                        height: 118px
+                    .tovar__down
+                        
+                        
+                        .tovar__price
+                            font-size: 15px
+                        .addbutton
+                .tovar__title
+                    font-size: 12px
+                    line-height: 14px
+                    
+                
+    .comapny__info 
+            .info__text
+                z-index:20
+            .info__img, .info__img_2
+                z-index: 10
+                position: absolute
+                top: 0
+                opacity: 0.2 !important
+            .info__img
+                right: 0
+            .info__img_2
+                left: 0
+                opacity: 0.1 !important
+    footer
+        .footer__text
+            text-align: center 
+        .main__container
+            flex-direction: column
+            align-items: center
+            .footer__logo
+                margin-bottom: 20px
+            .footer__menu
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                text-align: center
+                margin-bottom: 20px
+                li
+                    margin-right: 0px
+                    margin-bottom: 20px
+            .footer__info
+                flex-wrap: wrap
+                flex-direction: column
+                align-items: center
+                .footer__item
+                    margin-right: 0px
+@media screen and ( max-width: 790px)
+    html
+        zoom: 1
+    .main__section
+        width: 100%
+        .main__container 
+            .left_main 
+                .slider__item
+                    .info__main
+                        max-width: none
+                        h2
+                            font-size: 6vw
+                            
+                        p
+                            font-size: 35px
+            .right_main
+                margin-top:55px
+
+    .categorii 
+        .main__container 
+            .categoris__button 
+                display: flex
+                align-items: center
+                justify-content: center
+            
+            .categori__block
+                position: fixed
+                width: 100%
+                height: calc( 100vh -  53px)
+                top: -130%
+                left: 0
+                background: #fff
+                z-index: 200
+                align-items: center
+                justify-content: space-evenly
+                flex-direction: row
+                align-content: flex-start
+                margin-top: 0px
+                opacity: 0
+                padding-bottom: 100px
+                transition: .5s
+                overflow-y: auto
+                -webkit-overflow-scrolling: touch
+                .categori__link
+                    box-shadow: 0px 8.85938px 8.85938px rgba(12, 31, 56, 0.06), 0px 2.53125px 21.5156px rgba(26, 71, 132, 0.1)
+                    border-radius: 10px
+                    width: 41%
+                    height: auto
+                    padding: 2px 2px
+                    margin-top: 15px
+                    padding-top: 17px
+                    padding-bottom: 5px
+            .categori__button
+                display: flex
+                flex-direction: column
+                align-items: center
+                background: #FF5555
+                border-radius: 20px
+                color: #fff
+                text-align: center
+                padding: 14px 27px
+                font-size:15px
+                max-width: 135px
+                height: 91px
+                width: 135px
+                img
+                    width: 20px
+                    height: 20px
+                    margin-bottom: 10px
+                &:first-child
+                    margin-right: 30px
+    header
+        padding: 20px 0px
+        .container
+            .open_menuImg
+                display: block
+                margin-right: 10px
+            .logo
+                width: 141px
+                height: 22px
+            .number
+                display: none
+    
+    .footer__info
+        text-align: center
+    .tovar
+        margin-top: 60px
+        margin-bottom: 60px
+        .container 
+            .tovar__items 
+                .tovar__item
+                    width: 45%
+                    min-height: 275px
+                    height: max-content
+                    padding-bottom: 10px
+                    .tovar__title
+                        font-size: 14px
+                        
+                    .tovar__down 
+                        .tovar__price
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start
+                            .old__price
+                                font-size: 14px
+                                font-family: $SFR
+                            .new_price
+                                margin-left: 0px
+                                color: $black
+                                font-size: 24px
+@media screen and ( max-width: 500px)
+    .main__section
+        width: 100%
+        padding-top: 0px
+        .main__container
+            padding-left: 0px
+            padding-right: 0px
+            border-radius: 0px
+            height: 340px
+            width: 100%
+            .left_main 
+                .slider__item 
+                    padding-left: 7px
+                    padding-right: 7px
+                    padding-top: 8px
+                    .info__main
+                        max-width: 70%
+                        h2
+                            line-height: 30px
+            .right_main
+                width: 100%
+                height: 175px                  
+    #slick-slide01
+        .right_main
+            margin-top: 0px
+            max-width: 156px
+            width: 156px
+            img
+                height: 225px
+                max-width: 156px
+                width: 156px
+
+    .tovar 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    border-radius: 15px 
+                    .tovar__title
+                        line-height: 16px
+                    .tovar__img
+                        height: 95px
+                    .tovar__down 
+                        .addbutton 
+                            font-size: 10px
+                            padding: 0px
+                            .addbutton__text
+                                &::before
+                                    content: url("img/cart-white.svg")
+                        .tovar__price 
+                            .new_price
+                                font-size: 16px
+                            .old__price 
+                                font-size: 11px
+                                &::before
+                                    height: 2px
+                .slick-slide
+                    margin: 0 5px !important
+        .tovar__buttons
+            .button__item
+                font-size: 18px
+                width: 100%
+            .tovar__items
+                .tovar__item
+                    width: 45%
+                    .slider__sett
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                    .tovar__title
+                        font-size: 12px
+                        line-height: 15px
+    .categorii   
+        .mobile-text
+            display: flex
+    header 
+        .container
+            padding-right: 5px 
+            .header__icon 
+                .search-box 
+                    .search-txt-active
+                        width: 189px
+            .logo
+                width: 96px
+                height: 17px
+            
+    .slick-arrow
+        top: -40px
+        position: absolute
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        width: 11px
+        height: 13px
+        font-size: 0
+    .slick-next
+        right: 0px
+        background-image: url("img/btn-next.svg")
+    .slick-prev
+        right: 20px
+        background-image: url("img/btn-pre.svg")
+    .slick-slider 
+        .slick-track
+            padding-bottom: 30px
+       
+    .comapny__info 
+            .info__text 
+                h2
+                    font-size: 20px
+                    margin-bottom: 10px
+                    line-height: 30px
+                p
+                    font-size: 14px
+                .advantages
+                    flex-direction: column
+                    align-items: flex-start
+            .info__img
+                width: 294px
+                height: 400px
+                top: auto
+                bottom: 0
+                right: 0px
+                img
+                    width: 100%
+            .info__img_2
+                width: 300px
+                height: 373px
+    .questions 
+        .question__item 
+            .questiom
+                font-size: 20px
+                max-width: 90%
+            .answer
+                font-size: 14px
+    footer 
+        .footer__text
+            padding: 0px 4%
+        .main__container 
+            .footer__info 
+                .footer__item
+                    align-items: center
+                    font-size: 12px
+                    &:nth-child(3)
+                        text-align: left
+@media screen and (max-width:401px)
+    .modalPhoneBg
+        .modalPhone
+            width: 100%
+    #slick-slide01
+        .right_main
+            img
+                height: 205px
+                padding-right: 20px
+    .main__section
+        .main__container 
+            .right_main
+                height: auto
+                margin-top: 50px
+                width: 56%
+    .tovar-2 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    padding-right: 0%
+    .questions 
+        .question__item 
+        .question__item.ans__active 
+            .answer
+                height: 200px
+    header 
+        .container 
+            .header__icon 
+                .search-box 
+                    .search-txt-active
+                        width: 260px
+@media screen and (max-height:700px) and (min-width: 1220px)
+    header 
+        .container 
+            .menu
+                font-size: 17px
+                margin-left: 100px
+    .main__section 
+        .main__container
+            background-image: url("img/main_bg_4.png")
+            height: 503px
+            .left_main 
+                .slider__item 
+                    .info__main 
+                        h2
+                            font-size: 48px
+                            line-height: 64px
+            .right_main
+                width: auto
+                height: 400px
+    .categorii 
+        .categori__block 
+            .categori__link 
+                .categori__icon
+                    height: 84px
+                .categori_name
+                    font-size: 18px
+                    margin-top: 12px
+    .tovar 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    width: 304px
+                    .tovar__img
+                        height: 210px
+    .comapny__info 
+            .info__text 
+                h2
+                    font-size: 26px
+                    line-height: 36px
+                .advantages
+                    font-size: 18px 
+                    .advantages__item
+                        margin-bottom: 19px
+            .info__img
+                width: auto
+                height: 505px
+    .tovar
+        
+        .container 
+            .tovar__items 
+                .tovar__item 
+                    .tovar__down 
+                        .tovar__price
+                            font-size: 20px
+                    .addbutton
+                        margin-top: 10px
+
+
+.open
+    top: 53px !important
+    overflow: scroll
+    opacity: 1!important
+    z-index: 2000
+.open-2
+    top: 53px !important
+    overflow: scroll
+    opacity: 1!important
+    z-index: 2000
+    position: fixed
+.overflow
+    overflow-y: hidden
+    touch-action: none
+    -ms-touch-action: none
+    height: 100%
+    max-height: 100%
+    position: relative
+.over
+    overflow-y: hidden
+    position: relative
+.header-block
+    position: fixed
+.block
+    display: flex

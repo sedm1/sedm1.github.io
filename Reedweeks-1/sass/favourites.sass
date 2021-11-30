@@ -1,0 +1,105 @@
+@import font
+@import mixins
+@import modal
+.tovar
+    .container
+        width: 1120px
+.tovar__item
+    max-width: 256px
+.tovar 
+    .container
+        margin-top: 25px 
+        .tovar__items
+            justify-content: flex-start
+            margin: 0px -16px
+            width: 100%
+            .tovar__item
+                margin: 0px 12px
+                margin-bottom: 40px
+                padding-bottom: 20px 
+                min-height: 435px
+                .tovar__down 
+                    .mb__icon 
+                        div
+                            &:nth-child(2)
+                                .mab__item
+                                    &:first-child
+                                        background: #FF5555
+                .tovar__title
+                    &::before
+                        bottom: -35px
+                .tovar__img
+                    height: 186px
+#hits
+    .container
+        flex-direction: column
+        .tovar__items
+            justify-content: space-between
+            width: 100%
+            margin: 0
+            margin-top: 45px
+            .tovar__item
+                max-width: 352px
+                margin: 0
+                .tovar__down 
+                    .mb__icon 
+                        div
+                            &:nth-child(2)
+                                .mab__item
+                                    &:first-child
+                                        background: #dddddd
+                
+footer
+    margin-top: 100px
+    
+@media screen and (max-width: 1200px)
+    .tovar 
+        .container
+            width: 100%
+            .tovar__items
+                justify-content: center
+@media screen and (max-width: 800px)
+    #hits 
+        .container 
+            .tovar__items 
+                .tovar__item
+                    margin: 0px 20px
+    .slick-track
+        padding: 40px 0px
+    .tovar 
+        .container
+            margin-top: 25px 
+            .tovar__items
+                margin: 0 auto
+                justify-content: space-evenly
+                .tovar__item
+                    width: 45%
+                    margin-left: 0px
+                    margin-right: 0px
+@media screen and (max-width: 500px) 
+    #hits 
+        .container 
+            .tovar__items 
+                margin-top: 0px 
+                .tovar__item
+                    margin: 0px 10px
+    .tovar 
+        .container 
+            .tovar__items
+                .tovar__item 
+                    .tovar__down 
+                        .addbutton
+                            font-size: 13px
+                    .tovar__img
+                        height: 150px
+    footer
+        margin-top: 40px
+@media screen and (max-width: 360px) 
+    .tovar 
+        .container 
+            .tovar__items
+                .tovar__item 
+                    .tovar__down 
+                        .addbutton
+                            font-size: 10px
+    

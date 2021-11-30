@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самовывоз</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/tovar.css">
+    <link rel="stylesheet" href="css/sidescroll.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+</head>
+<body>
+    <div class="modalPhoneBg">
+        <div class="modalPhone">
+            <div class="arrowModal"><img src="img/close.svg" alt="close"></div>
+            <h1 id="modal__title">Получить звонок</h1>
+            <form action="">
+                <input type="text" placeholder="Ваш телефон" id="placePhone">
+                <input type="text" placeholder="Ваше имя">
+                <button type="submit" class="more__info">Получить звонок</button>
+            </form>
+        </div>
+    </div>
+    <div class="tovar__buttons">
+        <div>
+            <button class="button__item">
+                <div class="ct__img" id="ct_1">
+                    <img src="img/ct_1.svg" alt="ct" class="ct_img__img">
+                    <img src="img/ct_1_2.svg" alt="ct" class="ct_img__img">
+                </div>
+                Одежда
+            </button>
+            <button class="button__item">
+                <div class="ct__img" id="ct_2">
+                <img src="img/ct_2.svg" alt="ct" class="ct_img__img">
+                <img src="img/ct_2-1.svg" alt="ct" class="ct_img__img">
+            </div>
+                Аксессуары
+            </button>
+            <button class="button__item">
+                <div class="ct__img" id="ct_3">
+                <img src="img/ct_3.svg" alt="ct" class="ct_img__img">
+                <img src="img/ct_3-1.svg" alt="ct" class="ct_img__img">
+            </div>Игрушки
+            </button>
+            <button class="button__item">
+                <div class="ct__img" id="ct_4">
+                <img src="img/ct_4.svg" alt="ct" class="ct_img__img">
+                <img src="img/ct_4-1.svg" alt="ct" class="ct_img__img">
+            </div>
+                Лето/Пляж
+            </button>
+            <button class="button__item">
+                <div class="ct__img" id="ct_5">
+                <img src="img/ct_5.svg" alt="ct" class="ct_img__img">
+                <img src="img/ct_5-1.svg" alt="ct" class="ct_img__img">
+            </div>Электроника
+            </button>
+            <button class="button__item">
+                <div class="ct__img" id="ct_6">
+                <img src="img/ct_7.svg" alt="ct" class="ct_img__img">
+                <img src="img/ct_7-1.svg" alt="ct" class="ct_img__img">
+            </div>Для дома
+            </button>
+            <button class="button__item">
+                <div class="ct__img" id="ct_7">
+                <img src="img/ct_6.svg" alt="ct" class="ct_img__img">
+                <img src="img/ct_6-1.svg" alt="ct" class="ct_img__img">
+            </div>Запчасти для пылесосов 
+            </button>
+            <button class="button__item">
+                <div class="ct__img" id="ct_8">
+                <img src="img/ct_8.svg" alt="ct" class="ct_img__img">
+                <img src="img/ct_8-1.svg" alt="ct" class="ct_img__img">
+            </div>Запчасти для самокатов
+            </button>
+        </div>
+        <footer>
+            <div class="main__container">
+                <nav>
+                    <ul class="footer__menu">
+                        <li><a href="delivery.html">доставка и оплата</a></li>
+                        <li><a href="contacts.html">контакты</a></li>
+                        <li><a href="reviews.html">отзывы</a></li>
+                        <li><a href="aboutUs.html">о нас</a></li>
+                        <li><a href="news.html">статьи</a></li>
+                        <li><a href="pickup.html">самовывоз</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <div class="footer__item" ><img src="img/phone_white.png" alt="icon" id="footer__i1">+7(966) 143-44-22</div>
+                    <div class="footer__item"><img src="img/me_white.png" alt="icon" id="footer__i2">info@redweeks.ru</div>                        </div>
+            </div>
+        </footer>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="left__header">
+                <div class="menu__button">
+                    <button id="openMenu" onclick="menuOpen2()"></button>
+                    <label for="openMenu" class="lbl_menu"><div class="open_menuImg"><img src="img/menu.svg" alt="menu" class="imgimg"></div></label>
+                </div>
+                <a href="index.html" class="logo animate__animate danimate__backInLeft"><img src="img/logo_black.svg" alt="Logo"></a>
+                <nav>
+                    <ul class="menu animate__animated animate__backInLeft">
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="pickup.html">Самовывоз</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right__header animate__animated animate__backInRight">
+                <div class="number" id="number">
+                    <div class="phone__icon" ><img src="img/phone.svg" alt="phone__icon"></div>
+                    +7(966) 143-44-22
+                </div>
+                <div class="header__icon">
+                    <a class="icon__item" href="favourites.html"><img src="img/like.svg" alt="like"></a>
+                    <div class="search-box ">
+                        <input type="text" class="search-txt" placeholder="Поиск...">
+                        <button href="#" class="search-btn icon__item"><img src="img/Search.svg" alt="seach"></button>
+                    </div>
+                    
+                    <div class="icon__item cart">
+                        <img src="img/Buy.svg" alt="cart">
+                        <div class="col">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="main__container">
+            <div class="section__link">
+                <a href="index.html"><img src="img/link.svg" alt="link"></a>
+                <p>Товары и услуги</p>
+                <p>Электроника</p>
+                <p>Power bank</p>
+                <p>Power bank "единорог" 8800 mah голубой</p>
+            </div>
+        </div>
+    </section>
+    <section class="tovarD">
+        <div class="container">
+            <div class="tovar__buttons_tovar">
+                <div>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_1">
+                            <img src="img/ct_1.svg" alt="ct" class="ct_img__img">
+                            <img src="img/ct_1_2.svg" alt="ct" class="ct_img__img">
+                        </div>
+                        Одежда
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_2">
+                        <img src="img/ct_2.svg" alt="ct" class="ct_img__img">
+                        <img src="img/ct_2-1.svg" alt="ct" class="ct_img__img">
+                    </div>
+                        Аксессуары
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_3">
+                        <img src="img/ct_3.svg" alt="ct" class="ct_img__img">
+                        <img src="img/ct_3-1.svg" alt="ct" class="ct_img__img">
+                    </div>Игрушки
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_4">
+                        <img src="img/ct_4.svg" alt="ct" class="ct_img__img">
+                        <img src="img/ct_4-1.svg" alt="ct" class="ct_img__img">
+                    </div>
+                        Лето/Пляж
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_5">
+                        <img src="img/ct_5.svg" alt="ct" class="ct_img__img">
+                        <img src="img/ct_5-1.svg" alt="ct" class="ct_img__img">
+                    </div>Электроника
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_6">
+                        <img src="img/ct_7.svg" alt="ct" class="ct_img__img">
+                        <img src="img/ct_7-1.svg" alt="ct" class="ct_img__img">
+                    </div>Для дома
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_7">
+                        <img src="img/ct_6.svg" alt="ct" class="ct_img__img">
+                        <img src="img/ct_6-1.svg" alt="ct" class="ct_img__img">
+                    </div>Запчасти для пылесосов 
+                    </button>
+                    <button class="button__item">
+                        <div class="ct__img" id="ct_8">
+                        <img src="img/ct_8.svg" alt="ct" class="ct_img__img">
+                        <img src="img/ct_8-1.svg" alt="ct" class="ct_img__img">
+                    </div>Запчасти для самокатов
+                    </button>
+                </div>
+            </div>
+            <div class="main__container">
+                <div class="good__info">
+                    <div class="good__img">
+                        <div class="good__main_img">
+                            <img src="img/poni_1.jpg" alt="poni">
+                            <button class="addTolove"><img src="img/like.svg" alt="like"></button>
+                        </div>
+                        <div class="good_pob__img">
+                            <img src="img/poni_2.jpg" alt="poni">
+                            <img src="img/poni_1.jpg" alt="poni">
+                            <img src="img/poni_2.jpg" alt="poni">
+                            <img src="img/poni_1.jpg" alt="poni">
+                            <img src="img/poni_2.jpg" alt="poni">
+                        </div>
+                    </div>
+                    <div class="good__descript">
+                        <h1 class="good__title">Power Bank "Единорог" 8800 mAh голубой</h1>
+                        <div class="good__undTitle">
+                            <p class="descript__item">В наличии</p>
+                            <p class="descript__item main__p">Код: 03032019</p>
+                        </div>
+                        <h2 class="good__price">890 ₽</h2>
+                        <div class="goods__color">
+                            <p class="main__p">Размер:</p>
+                            <div class="color__block">
+                                <div class="form_radio_btn">
+                                    <input id="radio-1" type="radio" name="radio" value="s" checked>
+                                    <label for="radio-1">S ( рост 145-155 см)</label>
+                                </div>
+                                 
+                                <div class="form_radio_btn">
+                                    <input id="radio-2" type="radio" name="radio" value="M">
+                                    <label for="radio-2">M ( рост 155-165 см)</label>
+                                </div>
+                                 
+                                <div class="form_radio_btn">
+                                    <input id="radio-3" type="radio" name="radio" value="L">
+                                    <label for="radio-3">L ( рост 165-175 см)</label>
+                                </div>
+                                <div class="form_radio_btn">
+                                    <input id="radio-4" type="radio" name="radio" value="XL">
+                                    <label for="radio-4">XL ( рост 175-185 см)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button__block">
+                            <button class="addToCart button__item"><span class="btn__icon">Купить товар</span></button>
+                            <button class="recall button__item" id="number2"><span class="btn__icon">Перезвонить мне</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="character">
+                    <h1 class="charakter__title">Описание</h1>
+                    <p class="character__descript main__p">Яркий и необычный повербанк (powebank) в форме единорога. Повербанк небольшого размера, так что поместится даже в женскую сумочку! А объема повербанка (8800 mAh) хватит на 2-3 полных зарядки вашего девайса! В комплекте идет micro-usb провод для зарядки повербанка. Так же повербанк продается в картоной крафтовой коробке, так что его не стыдно будет подарить!) Отличный подарок на любой случай - день рождения, новый год или 1 сентября. Отличный вариант что бы выделится летом, или удивить своих близких подарком. Повербанк подходит для IPHONE всех моделей. Повербанк подходит для ANDROID всех моделей. Уважанимые покупатели, повербанк объемом 8800 мА*ч. Каждое изделие упаковано в индивидуальную крафтовую коробку!</p>
+                    <h1 class="character__title mrg">Характеристики</h1>
+
+                    <h1 class="character__pre_title">Питание</h1>
+                    <div class="character__item">
+                        <p class="main__p">Время зарядки аккумулятора</p>
+                        <p class="main__p">60 мин</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Емкость аккумулятора</p>
+                        <p class="main__p">8800 мА*ч; 8800 мАч; 8800 mAh</p>
+                    </div>
+
+                    <h1 class="character__pre_title">Интерфейсы и разъемы</h1>
+                    <div class="character__item">
+                        <p class="main__p">Количество портов USB</p>
+                        <p class="main__p">1</p>
+                    </div>
+
+                    <h1 class="character__pre_title">Дополнительная информация</h1>
+                    <div class="character__item">
+                        <p class="main__p">Вес товара с упаковкой (г)</p>
+                        <p class="main__p">300 г.</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Вес товара без упаковки (г)</p>
+                        <p class="main__p">290 г.</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Высота предмета</p>
+                        <p class="main__p">2 см</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Глубина предмета</p>
+                        <p class="main__p">16 см</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Ширина предмета</p>
+                        <p class="main__p">10 см</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Ширина упаковки</p>
+                        <p class="main__p">12 см</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Высота упаковки</p>
+                        <p class="main__p">20 см</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Глубина упаковки</p>
+                        <p class="main__p">16 см</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Страна производства</p>
+                        <p class="main__p">Россия</p>
+                    </div>
+                    <div class="character__item">
+                        <p class="main__p">Комплектация</p>
+                        <p class="main__p">внешний аккумулятор; powerbank; Повербанк; Кабель - 1 шт; Портативное зарядное устройство; Повербанк -1 шт; PowerBank - 1 шт.; переносная зарядка</p>
+                    </div>
+
+                    <h1 class="character__pre_title">Другие функции</h1>
+                    <div class="character__item">
+                        <p class="main__p">Транспортировка</p>
+                        <p class="main__p">коробка</p>
+                    </div>
+                </div>
+                <section class="tovar" id="hits_2">
+                    <div class="container">
+                        <div class="tovars__title">
+                            <div class="catalog__icon"><img src="img/fire.svg" alt="fire" id="fire"></div>
+                            <h1>Хиты продаж</h1>
+                        </div>
+                        <div class="tovar__items" id="hits_slider_2">
+                            <div class="tovar__item">
+                                <div class="tovar_up">
+                                    <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                                    <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                                </div>
+                                <div class="tovar__down">
+                                    <div class="mb__icon">
+                                        <div class="tovar__price">1 900 ₽</div>
+                                        <div>
+                                            <div class="mab__item"><img src="img/like.svg" alt="i"></div>
+                                            <div class="mab__item"><img src="img/phone.svg" alt="i"></div>
+                                        </div>
+                                    </div>
+                                    <button class="addbutton"><div class="addbutton__text">Добавить в корзину</div></button>
+                                </div>
+                            </div>
+                            <div class="tovar__item">
+                                <div class="tovar_up">
+                                    <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                                    <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                                </div>
+                                <div class="tovar__down">
+                                    <div class="mb__icon">
+                                        <div class="tovar__price">1 900 ₽</div>
+                                        <div>
+                                            <div class="mab__item"><img src="img/like.svg" alt="i"></div>
+                                            <div class="mab__item"><img src="img/phone.svg" alt="i"></div>
+                                        </div>
+                                    </div>
+                                    <button class="addbutton"><span class="addbutton__text">Добавить в корзину</span></button>
+                                </div>
+                            </div>
+                            <div class="tovar__item">
+                                <div class="tovar_up">
+                                    <div class="tovar__img"><img src="img/tovar_1.png" alt="tovar"></div>
+                                    <div class="tovar__title">Кигуруми Дневная Фурия</div>
+                                </div>
+                                <div class="tovar__down">
+                                    <div class="mb__icon">
+                                        <div class="tovar__price">1 900 ₽</div>
+                                        <div>
+                                            <div class="mab__item"><img src="img/like.svg" alt="i"></div>
+                                            <div class="mab__item"><img src="img/phone.svg" alt="i"></div>
+                                        </div>
+                                    </div>
+                                    <button class="addbutton"><span class="addbutton__text">Добавить в корзину</span></button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="main__container">
+            <a href="index.html" class="footer__logo"><img src="img/logo_while.svg" alt="logo"></a>
+            <nav>
+                <ul class="footer__menu">
+                    <li><a href="delivery.html">доставка и оплата</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                    <li><a href="reviews.html">отзывы</a></li>
+                    <li><a href="aboutUs.html">о нас</a></li>
+                    <li><a href="news.html">статьи</a></li>
+                    <li><a href="pickup.html">самовывоз</a></li>
+                </ul>
+            </nav>
+            <div class="footer__info">
+                <div class="footer__item" id="number-footer"><img src="img/phone_white.png" alt="icon" id="footer__i1">+7(966) 143-44-22</div>
+                <div class="footer__item" id="email-footer"><img src="img/me_white.png" alt="icon" id="footer__i2">info@redweeks.ru</div>
+                <div class="footer__item"><img src="img/loc_white.png" alt="icon" id="footer__i3">г. Москва Алтуфьевское <br>ш.,37, стр. 1 (Центр торговли, этаж 3)</div>
+            </div>
+        </div>
+        <div class="footer__text">Обращаем Ваше внимание на то, что данная информация представлена в ознакомительных целях и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса РФ. Для получения подробной информации о стоимости товара и услуг, пожалуйста, обращайтесь к менеджерам компании.</div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+@import font
+@import mixins
+@import modal
+
+body
+    color: $black
+form
+    margin-top: 55px
+.data
+    display: flex
+input, textarea
+    background: #FEFEFE
+    border: 1px solid #ECECEC
+    border-radius: 10px
+    font-size: 15px
+    color: rgb(59, 57, 67)
+    padding: 18px 20px
+    resize: none
+    outline: 0 none
+input, textarea
+    &:focus
+        border: 1px solid #000
+::-webkit-input-placeholder
+    color: rgba(59, 57, 67, 0.5)
+.input__block
+    display: flex
+    flex-direction: column
+    margin-right: 32px
+.input__item
+    width: 352px
+    height: 55px
+    position: relative
+    &:first-child
+        margin-bottom: 15px
+.place_holder 
+    z-index: 100   
+    left: 10px
+    cursor: text  
+    position: absolute
+    top: 18px
+    left: 20px
+    width: 100%
+    display: none
+    color: lightgrey
+
+.placeinput input:invalid + .place_holder 
+    display: inline
+.fl_upld
+    width:300px
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+#fl_inp
+    display: none
+.fl_upld 
+    label
+        cursor: pointer
+        border: 1px solid #FF5555
+        border-radius: 3px
+        padding: 10px 25px
+        text-align: center
+        transition: .3s
+        border-radius: 10px
+        &:hover
+           filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)) 
+#fl_nm
+    margin-left: 20px
+
+/*вся проблема в том, если placeholder больше инпута*/
+.placeinput 
+    position: relative
+    overflow: hidden
+.place_holder span 
+    color: red
+
+textarea
+    height: 100%
+    width: 448px
+.rating
+    margin-top: 35px
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+    .rating__title
+        font-size: 15px
+        font-family: $SFSB
+        margin-right: 15px
+.more__info
+    color: #fff
+    padding: 13px 19px
+    font-size:20px
+    background-color: transparent
+    border-radius: 15px
+    background: #FF5555
+    transition: .3s
+    font-family: $SFSB
+    &:hover
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25))
+.reviews
+    margin-top: 50px
+    .main__container
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: space-between
+.revievs__item
+    width: 50%
+    max-width: 544px
+    padding: 30px
+    padding-right: 71px
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05)
+    border-radius: 20px
+    margin-bottom: 40px
+.revievs__header
+    display: flex
+    align-items: center
+    font-size: 18px
+    margin-bottom: 20px
+    .revievs__icon
+        width: 24px 
+        height: 24px
+        margin-right: 25px
+    .revievs__name
+        margin-right: 28px
+    .revievs__calendar
+        width: 18px
+        height: 20px
+        margin-right: 18px
+.revievs__rating
+    width: 152px
+    height: 24px
+    margin-bottom: 20px
+.revievs__descript
+    opacity: 0.7
+    font-size: 16px
+    font-family: $SFR
+    line-height: 24px
+.rating-area
+  overflow: hidden
+  height: 20px
+
+  &:not(:checked)
+    >
+      input
+        display: none
+
+      label
+        float: right
+        padding: 0
+        cursor: pointer
+        margin-right: 10px
+        &:first-child
+            margin-right: 0px
+        &:before
+          content: url("../img/starOff.svg")
+    > label:hover
+      content: url("../img/starOn.svg")
+      ~ label
+        content: url("../img/starOn.svg")
+  > input:checked ~ label
+    content: url("../img/starOn.svg")
+  >
+    input:checked
+      + label:hover, ~ label:hover
+        content: url("../img/starOn.svg")
+        ~ label
+          content: url("../img/starOn.svg")
+    label:hover ~ input:checked ~ label
+      content: url("../img/starOn.svg")
+
+.rate-area > label:active
+  position: relative        
+footer
+    margin-top: 60px
+@media screen and (max-width: 1150px)
+    .revievs__item
+        max-width: none
+        width: 100%
+    .data
+        flex-direction: column
+    .input__block
+        margin-right: 0px
+    textarea
+        width: 352px
+        margin-top: 15px
+        height: 125px
+@media screen and (max-width: 450px)
+    .revievs__item
+        padding-right: 11px
+        padding-left: 10px
+    textarea, .input__item
+        width: 100%
+    .revievs__descript
+        font-size:14px
+    form
+        margin-top: 30px
+    .section__link
+        margin-top: 50px
+    .revievs__item
+        margin-bottom: 30px
+    footer
+        margin-top: 30px
+    
