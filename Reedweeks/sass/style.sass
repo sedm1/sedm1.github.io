@@ -574,14 +574,14 @@ header
 .questions            
     .question__item
         cursor: pointer
-        margin-bottom:30px
+        margin-bottom:40px
         transition: 0.5s
         position: relative
         transition: .5s
         &::after
             content: url("img/arrow.svg")
             position: absolute
-            top: 14px
+            top: 4px
             right: 20px
             transition: .5s
             transform: rotate(-90deg)
@@ -595,12 +595,12 @@ header
             max-width: 928px
             max-height: 0px
             transition: .5s
-            margin-top: 30px
             line-height: 22px
             overflow: hidden
     .question__item.ans__active
         .answer
             max-height: 500px
+            margin-top: 30px
         &::after
             opacity: 0.5
             transform: rotate(0deg)
@@ -1098,7 +1098,8 @@ footer
                 width: 300px
                 height: 373px
     .questions 
-        .question__item 
+        .question__item
+            margin-bottom: 25px
             .questiom
                 font-size: 20px
                 max-width: 90%
