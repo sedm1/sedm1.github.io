@@ -1,0 +1,164 @@
+@import font
+@import mixins
+@import modal
+#tovar
+    display: block
+    top: 0
+.tovar__buttons_tovar
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    position: sticky
+    left: 0
+    top: 100px
+    z-index: 90
+    footer
+        display: none
+    .button__item
+        min-width: 271px
+        display: flex
+        padding-right: 11px
+        align-items: center
+        padding-left:14px
+        padding-top: 10px
+        padding-bottom: 10px
+        font-size: 19px
+        transition: .3s
+        border-radius: 6px
+        background: transparent
+        margin-top: 8px
+        z-index: 150
+        text-align: left
+        &:hover
+            background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
+            color: #fff
+            .ct_img__img
+                &:first-child
+                    display: none
+                &:nth-child(2)
+                    display: block
+        .ct_img__img
+            &:nth-child(2)
+                display: none
+        &:first-child
+            margin-top: 0px
+        .ct__img
+            margin-right: 10px
+            width: 24px
+            display: flex
+            align-items: center
+            justify-content: center
+                        
+        #ct_1
+            img
+                @include icon-size(21px, 21px)
+        #ct_2
+            img
+                @include icon-size(24px, 24px)
+        #ct_3
+            img
+                @include icon-size(21px, 25px)
+        #ct_4
+            img
+                @include icon-size(24px, 24px)
+        #ct_5
+            img
+                @include icon-size(24px, 28px)
+        #ct_6
+            img
+                @include icon-size(24px, 22px)
+        #ct_7
+            img
+                @include icon-size(24px, 24px)
+    .active
+        background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
+        color: #fff
+.tovarD
+    margin-top: 60px
+    .container
+        display: flex
+        align-items: flex-start
+.categ
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: flex-start
+.categ__item
+    min-height: 263px
+    width: 25%
+    max-width: 256px
+    padding: 20px 36px
+    box-shadow: 0px 4px 44px rgba(55, 26, 69, 0.2)
+    border-radius: 20px
+    text-align: center
+    margin-bottom: 30px
+.categ__img
+    margin: 0 auto
+    margin-bottom: 10px
+    img
+        width: auto
+        height: 105px    
+.categ__title
+    font-size: 18px
+    font-family: $SHE
+.categ__link
+    margin-top: 8px
+    color: rgba(59, 57, 67, 0.7)
+    font-size: 16px
+.info__mainn
+    padding-left: 74px
+#hits_2
+    .container
+        flex-direction: column
+        width: 100%
+        .tovar__items
+            justify-content: space-between
+            width: 100%
+            margin: 0
+            margin-top: 45px
+            .tovar__item
+                max-width: 352px
+                margin: 0
+                .tovar__down 
+                    .mb__icon 
+                        div
+                            &:nth-child(2)
+                                .mab__item
+                                    &:first-child
+                                        background: #dddddd
+footer
+    margin-top: 100px
+@media screen and (max-width: 1220px)
+    .info__mainn
+        padding-left: 0px
+    .tovar__buttons_tovar
+        display: none
+    #hits_2
+        .container 
+            .tovar__items
+                min-width: 0
+                display: block
+                .tovar__item
+                    margin: 0px 20px
+                    max-width: none
+    .categ__item
+        max-width: 45%
+        width: 50%
+    .categ
+        justify-content: space-between
+        align-items: center
+@media screen and (max-width: 650px)
+    #hits_2 
+        .container
+            margin-top: 20px
+    footer
+        margin-top: 50px
+    .categ__item
+        padding: 10px 3px
+    .categ__title
+        font-size: 16px
+    .categ__link
+        font-size: 13px
+@media screen and (max-width: 450px)
+    .section__link, .section__title
+        margin-top: 20px
