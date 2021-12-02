@@ -13,11 +13,14 @@ function parseData(){
     var atribut = $(this).attr('data-art')
     $(".option__title").removeClass("cart-active")
     $(".option__title").removeClass("card-active-d")
+    $(".option_text__item").removeClass("openText")
     if (atribut == 1){
         $("#option___title-1").addClass("card-active-d")
         $(".option__descript").addClass("cart-active")
+        $("#option__text-1").addClass("openText")
     } else{
         $("#option___title-" + atribut).addClass("cart-active")
+        $("#option__text-"+ atribut).addClass("openText")
     }
     
 }
