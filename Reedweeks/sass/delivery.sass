@@ -115,6 +115,7 @@ body
     align-items: center
     div
         min-width: 12px
+        max-width: 12px
         height: 12px
         border: 3px solid #FF5555
         border-radius: 12px
@@ -147,6 +148,10 @@ body
     width: 100px
     img
         height: auto
+.click__phone
+    color: #FF5555
+    font-size: 16px
+    font-family: $SFB
 footer
     margin-top: 100px
 @media screen and (max-width: 1200px)
@@ -191,12 +196,10 @@ footer
         max-width: none
         text-align: center
         margin-bottom: 30px
-        &:first-child
-            border-bottom: 0px
 @media screen and (max-width: 800px)
     .option__item 
         .option__title
-            font-size: 12px
+            font-size: 11px
             line-height: 16px
     .section__link
         margin-top: 40px  
@@ -221,13 +224,10 @@ footer
             width: 80px
     .card
         margin-top: 50px
-#option___title-1, #option___title-2, #option___title-3,#option___title-4
-    display: none   
 .cart-active
     display: block !important
     padding-bottom: 7px
     border-bottom: 1px solid #371A45
-    opacity: 0.9
 .card-active-d
     display: block !important
 

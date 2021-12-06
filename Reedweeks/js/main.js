@@ -11,15 +11,13 @@ for(var i = 0; i < accordion.length; i++){
 $(".option__icon").on("click", parseData)
 function parseData(){
     var atribut = $(this).attr('data-art')
-    $(".option__title").removeClass("cart-active")
-    $(".option__title").removeClass("card-active-d")
     $(".option_text__item").removeClass("openText")
+    $(".option__item").removeClass("cart-active")
     if (atribut == 1){
-        $("#option___title-1").addClass("card-active-d")
-        $(".option__descript").addClass("cart-active")
         $("#option__text-1").addClass("openText")
+        $("#option___title-1").addClass("cart-active")
     } else{
-        $("#option___title-" + atribut).addClass("cart-active")
+        $("#option___title-"+ atribut).addClass("cart-active")
         $("#option__text-"+ atribut).addClass("openText")
     }
     

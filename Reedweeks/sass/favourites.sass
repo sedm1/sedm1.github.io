@@ -39,8 +39,8 @@
             margin: 0
             margin-top: 45px
             .tovar__item
-                max-width: 352px
-                margin: 0
+                max-width: none
+                margin: 0 15px  
                 .tovar__down 
                     .mb__icon 
                         div
@@ -51,7 +51,9 @@
                 
 footer
     margin-top: 100px
-    
+.slick-track 
+    width: 100%
+    padding: 20px 0px
 @media screen and (max-width: 1200px)
     .tovar 
         .container
@@ -76,6 +78,7 @@ footer
                     width: 45%
                     margin-left: 0px
                     margin-right: 0px
+                    min-height: auto
 @media screen and (max-width: 500px) 
     #hits 
         .container 
