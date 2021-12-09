@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 19" width="15" height="19">
+	<title>yan-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ff7979 } 
+	</style>
+	<g id="_x31_57_x2C__Twitter_x2C__Location_x2C__Map">
+		<g id="Layer">
+			<path id="Layer" fill-rule="evenodd" class="shp0" d="M7.53 0.09C11.65 0.09 14.99 3.37 14.99 7.41C14.99 11.07 10.77 16.67 7.56 19.09C3.42 15.81 0.05 11.13 0.05 7.41C0.05 3.37 3.4 0.09 7.53 0.09ZM11.16 7.26C11.16 5.29 9.53 3.7 7.52 3.7C5.52 3.7 3.89 5.29 3.89 7.26C3.89 9.22 5.52 10.81 7.52 10.81C9.53 10.81 11.16 9.22 11.16 7.26Z" />
+		</g>
+	</g>
+	<g id="Layer_1">
+	</g>
+</svg>
