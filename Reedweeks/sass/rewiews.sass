@@ -44,10 +44,7 @@ input, textarea
     color: lightgrey
 
 .placeinput input:invalid + .place_holder 
-    display: inline
-.fl_upld
-    width:300px
-    margin-bottom: 30px
+    display: inline 
 #fl_inp
     display: none
 .rev_a
@@ -55,19 +52,29 @@ input, textarea
     align-items: center
     
 .fl_upld
+    display: flex
+    align-items: center
+    width:300px
+    margin-bottom: 30px
     label
         cursor: pointer
         text-align: center
-        width: 20px 
-        height: 20px
-        display: flex
-        align-items: center
+        border: 1px solid #FF5555
+        border-radius: 3px
+        padding: 10px 25px
+        text-align: center
+        transition: .3s
+        border-radius: 10px
+        background-image: linear-gradient(to left,transparent,transparent 50%,#FF5555 50%,#FF5555)
+        background-position: 100% 0
+        background-size: 200% 100%
+        transition: all .25s ease-in
+        &:hover
+            background-position: 0 0
+            color: #fff
+           
 #fl_nm
-    margin-top: 10px
-    max-width: 90%
-    overflow: hidden
-.rev__text
-    margin-left: 10px
+    margin-left: 20px
 /*вся проблема в том, если placeholder больше инпута*/
 .placeinput 
     position: relative
