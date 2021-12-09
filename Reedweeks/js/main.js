@@ -81,20 +81,12 @@ function openModal(){
     $(".modalPhoneBg").toggleClass("block")
     $("body").toggleClass("over")
 }
-$("#number").click(function(){
-    $("#modal__title").text("Получить звонок")
-    openModal()
-})
-$("#number2").click(function(){
-    $("#modal__title").text("Получить звонок")
-    openModal()
-})
-$("#number-footer").click(function(){
+$(".phone__open").click(function(){
     $("#modal__title").text("Получить звонок")
     openModal()
 })
 $("#email-footer").click(function(){
-    $("#modal__title").text("Получить письмо")
+    $("#modal__title").text("Написать письмо")
     $("#placePhone").attr("placeholder", "Ваш E-mail")
     openModal()
 })

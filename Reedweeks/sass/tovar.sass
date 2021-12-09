@@ -162,6 +162,8 @@ input[type=radio]
         padding: 17px 20px
         max-width: 191px
         font-size: 14px
+        width: 191px
+        text-align: center
 .form_radio_btn
     input
         &:checked + label
@@ -272,7 +274,7 @@ footer
 
 @media screen and (max-width: 650px)
     .main__p
-        font-size: 16px
+        font-size: 14px
         line-height: 20px
     .character__item 
         p
@@ -298,9 +300,6 @@ footer
             
             &:first-child, &:last-child
                 display: none
-@media screen and (max-width: 650px)
-    .main__p
-        font-size: 14px
     .character__item 
         p
             &:first-child
@@ -315,3 +314,11 @@ footer
         margin-bottom: 10px
     .good__undTitle
         margin-bottom: 10px
+    .form_radio_btn 
+        label
+            width: auto
+            font-size: 12px
+    .form_radio_btn
+        margin-right: 0px
+    .color__block
+        justify-content: space-between
