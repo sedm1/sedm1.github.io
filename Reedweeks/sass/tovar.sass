@@ -118,7 +118,7 @@
     margin-top: 30px
     img
         width: 20%
-        max-width: 76px
+        margin: 0px 5px
         height: 76px
         cursor: pointer
 h1
@@ -140,6 +140,7 @@ h1
 .good__price
     font-family: $SFHY
     font-size: 35px
+    margin-bottom: 20px
 .goods__color
     margin-top: 30px
     p
@@ -242,6 +243,40 @@ input[type=radio]
     .slick-slider 
         .slick-track
             padding: 30px 0px
+.color-choose
+    margin-top: 15px
+    div 
+        display: inline-block
+    input[type="radio"] 
+        display: none
+        + label 
+            display: inline-block
+            width: 32px
+            height: 32px
+            margin: -1px 10px 0 0
+            vertical-align: middle
+            cursor: pointer
+            border-radius: 50%
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33)
+.color-choose 
+    input[type="radio"]#red + label 
+        background-color: #FF5555
+    input[type="radio"]#white + label 
+        background-color: #fff
+    input[type="radio"]#green + label 
+        background-color: #219653
+    input[type="radio"]#black + label 
+        background-color: #000
+    input[type="radio"]#blue + label 
+        background-color: #22A7F0
+    input[type="radio"]#perple + label 
+        background-color: #A157FF
+    input[type="radio"]#yellow + label 
+        background-color: #FCB127
+.color-choose input[type="radio"]:checked + label 
+    background-image: url(../img/choose.svg)
+    background-repeat: no-repeat
+    background-position: center
 footer
     margin-top: 100px
 @media screen and (max-width: 1220px)
@@ -256,18 +291,15 @@ footer
                     margin: 0px 20px
                     max-width: none
 @media screen and (max-width: 900px)
-    .good__info, .good_pob__img
+    .good__info
         flex-direction: column
     .good__descript
         margin-left: 0px
         margin-top: 30px
-    .good__img
-        flex-direction: row
     .good_pob__img
         margin-left: 10px
         img
             width: auto
-            max-width: none
     .character
         margin-top: 80px
 
@@ -281,14 +313,13 @@ footer
             &:nth-child(2)
                 margin-left: 2%
     .good__img
-        flex-direction: column
+        max-width: 100%
     .good_pob__img
         flex-direction: row
         margin-left: 0px
         margin-top: 10px
         img
             width: 20%
-            max-width: 60px
             height: 60px
     .character
         margin-top: 40px
@@ -307,6 +338,9 @@ footer
     .section__link
         margin-top: 40px
 @media screen and (max-width: 450px)
+    .color-choose 
+        input[type=radio] + label
+            margin: -1px 2px 0 0
     .good__main_img
         height: auto
     h1

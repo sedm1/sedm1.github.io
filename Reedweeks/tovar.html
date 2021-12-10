@@ -205,15 +205,16 @@
                 <div class="good__info">
                     <div class="good__img">
                         <div class="good__main_img">
-                            <img src="img/poni_1.jpg" alt="poni">
+                            <img src="img/poni_1.jpg" alt="poni" class="main__poni">
                             <button class="addTolove"><img src="img/like.svg" alt="like"></button>
                         </div>
-                        <div class="good_pob__img">
-                            <img src="img/poni_2.jpg" alt="poni">
-                            <img src="img/poni_1.jpg" alt="poni">
-                            <img src="img/poni_2.jpg" alt="poni">
-                            <img src="img/poni_1.jpg" alt="poni">
-                            <img src="img/poni_2.jpg" alt="poni">
+                        <div class="good_pob__img" id="good_pob__img">
+                            <img src="img/poni_2.jpg" alt="poni" onclick="getImGSrc('img/poni_2.jpg')">
+                            <img src="img/poni_1.jpg" alt="poni" onclick="getImGSrc('img/poni_1.jpg')">
+                            <img src="img/poni_2.jpg" alt="poni" onclick="getImGSrc('img/poni_2.jpg')">
+                            <img src="img/poni_1.jpg" alt="poni" onclick="getImGSrc('img/poni_1.jpg')">
+                            <img src="img/poni_2.jpg" alt="poni" onclick="getImGSrc('img/poni_2.jpg')">
+                            <img src="img/poni_1.jpg" alt="poni" onclick="getImGSrc('img/poni_1.jpg')">
                         </div>
                     </div>
                     <div class="good__descript">
@@ -223,6 +224,16 @@
                             <p class="descript__item main__p">Код: 03032019</p>
                         </div>
                         <h2 class="good__price">890 ₽</h2>
+                        <p class="main__p">Цвет:</p>
+                        <div class="color-choose">
+                            <div><input id="red" checked="checked" name="color" type="radio" value="red" data-image="red" /> <label for="red"></label></div>
+                            <div><input id="white" name="color" type="radio" value="white" data-image="white" /> <label for="white"></label></div>
+                            <div><input id="green" name="color" type="radio" value="green" data-image="green" /> <label for="green"></label></div>
+                            <div><input id="black" name="color" type="radio" value="black" data-image="black" /> <label for="black"></label></div>
+                            <div><input id="blue" name="color" type="radio" value="blue" data-image="blue" /> <label for="blue"></label></div>
+                            <div><input id="perple" name="color" type="radio" value="perple" data-image="perple" /> <label for="perple"></label></div>
+                            <div><input id="yellow" name="color" type="radio" value="yellow" data-image="yellow" /> <label for="yellow"></label></div>
+                        </div>
                         <div class="goods__color">
                             <p class="main__p">Размер:</p>
                             <div class="color__block">

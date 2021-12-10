@@ -62,8 +62,6 @@ function menuOpen2(){
             changeMenuImg()
         }
     }
-    
-    
     //Закрывать или открывать окно в зависимости от того, открыто ли меню категорий
     if ($("div.categori__block").hasClass("open")){
         categoriiOpen()
@@ -74,13 +72,20 @@ function menuOpen2(){
         
     }
 }
-$(".search-btn").on("click", function(){
-    $(".search-txt").toggleClass("search-txt-active")
-})
 function openModal(){
     $(".modalPhoneBg").toggleClass("block")
     $("body").toggleClass("over")
 }
+function getImGSrc(any){
+    $(".main__poni").attr('src', any);
+}
+
+
+
+$(".search-btn").on("click", function(){
+    $(".search-txt").toggleClass("search-txt-active")
+})
+
 $(".phone__open").click(function(){
     $("#modal__title").text("Получить звонок")
     openModal()
