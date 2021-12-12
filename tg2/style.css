@@ -5,6 +5,7 @@
   outline: 0 none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "PT Serif", serif;
 }
 
 body {
@@ -74,6 +75,7 @@ header .container {
           align-items: center;
   height: 50px;
   color: #fff;
+  font-weight: 700;
 }
 .button__block .header__button:first-child, .right__header .header__button:first-child {
   margin-right: 20px;
@@ -197,6 +199,7 @@ header .container {
   color: #021245;
   margin-top: 25px;
   margin-bottom: 10px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .inst {
@@ -275,6 +278,7 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "PT Sans", sans-serif;
 }
 .end__button button div {
   margin-left: 7px;
