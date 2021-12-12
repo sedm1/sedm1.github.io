@@ -1,0 +1,286 @@
+$blue: rgba(0, 63, 128, 0.8)
+*
+    padding: 0
+    margin: 0
+    border: 0 none
+    outline: 0 none
+    box-sizing: border-box
+body
+    position: relative
+.container
+    width: 1240px
+    margin: 0 auto
+button
+    background: transparent
+    cursor: pointer
+    font-size: inherit
+    font-family: inherit
+img
+    width: 100%
+    height: 100%
+header
+    background: $blue
+    padding: 20px 0px
+    font-size: 18px
+    color: #fff
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+
+.menu
+    width: 45px
+    height: 45px
+    cursor: pointer
+.button__block, .right__header
+    display: flex
+    align-items: center
+    .header__button
+        border: 2px solid #FFFFFF
+        border-radius: 39px
+        padding: 7px 
+        padding-left: 20px
+        padding-right: 12px
+        display: flex
+        align-items: center
+        height: 50px
+        color: #fff
+        &:first-child
+            margin-right: 20px
+.button__icon
+    margin-left: 12px
+#grill
+    width: 39px
+    height: 34px
+#col
+    width: 25px
+    height: 26px
+.header__logo
+    margin-left: 30%
+.lang
+    margin-left: 20px
+    color: #fff
+.section__title
+    color: $blue
+    font-size: 24px
+    text-align: center
+    margin-top: 20px
+    color: $blue
+.section__desc
+    font-size: 14px 
+    margin-top: 2px
+    text-align: center
+    color: $blue
+.main__section
+    margin-top: 35px
+.tovar__item
+    width: 100%
+    display: flex !important
+    align-items: flex-start
+    justify-content: space-between
+.tovar__img
+    width: 560px
+    height: 575px
+    position: relative
+.ecol
+    border: 50px solid transparent 
+    border-left: 50px solid #009C30
+    border-top: 50px solid #009C30
+    position: absolute
+    top: 0
+    left: 0
+.colories
+    position: absolute
+    bottom: 20px
+    right: 20px
+    font-size: 24px
+    text-align: center
+    border: 1px solid #FFFFFF
+    border-radius: 5px
+    color: #fff
+    padding: 10px 5px
+    .color__des
+        margin-top: 3px
+.tovar__info
+    -webkit-box-shadow: 0px 0px 8px -1px rgba(0, 63, 128, 0.28)
+    -moz-box-shadow: 0px 0px 8px -1px rgba(0, 63, 128, 0.28)
+    box-shadow: 0px 0px 8px -1px rgba(0, 63, 128, 0.28)
+    padding-top: 54px
+    padding-left: 23px
+    padding-right: 29px
+    padding-bottom: 45px
+    font-size: 24px
+    width: 550px
+.categ
+    color: #000
+    display: flex
+    align-items: center
+    li
+        margin-left: 30px
+        &:first-child
+            list-style: none
+            margin-left: 0px
+.tovar__title
+    font-size: 64px
+    color: #021245
+    margin-top: 25px
+    margin-bottom: 10px
+.inst
+    color: #021245
+    line-height: 35px
+.belk
+    display: flex
+    align-items: flex-start
+    justify-content: space-around
+    margin-top: 30px
+.belk__item
+    display: flex
+    flex-direction: column
+    text-align: center
+    color: #021245
+    font-size: 24px
+    img
+        margin: 0 auto
+.belk__col
+    margin-top: 15px
+    margin-bottom: 2px
+#belk_1
+    width: 47px
+    height: 60px
+#belk_2
+    width: 71px
+    height: 56px
+#belk_3
+    width: 60px
+    height: 60px
+.end__button
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    margin-top: 65px
+    button
+        font-size: 24px
+        border-radius: 38px
+        border: 2px solid #003F80
+        display: flex
+        align-items: center
+        div
+            margin-left: 7px
+        &:first-child
+            color: #003F80
+            padding: 6px 21px
+        &:nth-child(2)
+            background: #003F80  
+            color: #fff
+            padding: 6px
+            padding-left: 30px
+            padding-right: 25px
+.arrow__end
+    width: 32px
+    height: 14px
+    margin-left: 7px
+#grill_2
+    width: 34px
+    height: 30px
+    margin-left: 7px
+.footer 
+    display: flex
+    justify-content: space-between
+    padding: 30px 75px
+    height: 190px
+    max-width: 100%
+    background: rgba(0, 55, 128, 0.5)
+    position: relative
+    margin-top: 100px
+    img
+        width: auto
+        height: auto
+    &::before
+        content: ""
+        background: url("img/footer.png")
+        background-repeat: no-repeat
+        background-size: cover
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1       
+    .contacts 
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        color: #fff
+    .links 
+        height: 100%
+        display: flex
+        flex-wrap: wrap
+        color: #fff
+        max-width: 396px
+        justify-content: space-between
+        a
+            color: #fff
+        .socials 
+            width: 100%
+.active
+    left: 0
+@media screen and (max-width: 1240px)
+    .container
+        width: 100%
+    .tovar__item
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    .tovar__info
+        margin-top: 30px
+    .footer 
+        padding: 30px 16px
+        flex-wrap: wrap
+        min-height: 190px
+        height: auto
+  
+
+    .footer .contacts 
+        width: 100%
+        margin-bottom: 24px
+@media screen and (max-width: 700px)
+    .footer
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        align-items: center
+    .tovar__img, .tovar__info
+        width: 100%
+        height: auto
+    .header__button
+        display: none !important
+    .tovar__info
+        font-size: 4vw
+        line-height: normal
+    .tovar__title 
+        font-size: 12vw
+    .menu
+        width: 35px
+        height: 35px
+@media screen and (max-width: 400px)
+    .end__button
+        flex-direction: column
+        button
+            &:first-child
+                margin-bottom: 15px
+  
+    
+
+
+  
+
+
+  
+
+
+
+
+
