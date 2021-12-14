@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категории</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="shortcut icon" href="/iconsprite/favicon.svg">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header mb">
+            <div class="burger" onclick="togglemeny()">
+                <div></div>
+            </div>
+            <div class="logo">
+                <a href="#" class="logo"><img src="./img/logo.svg" alt="logo"></a>
+            </div>
+            <nav class="nav s">
+                <a class="link cart kor " href="" style="width: 70px;"></a>
+                <a class="link cart kar" href="">Корзина</a>
+                <a class="link order" href="http://z-o-n.ru/order/id_100531/resto_1">Заказать столик</a>
+                <div>
+                    <a class="link" href="">EN</a>
+                    <span class="mf s">|</span>
+                    <a class="link" href="">FR</a>
+                </div>
+
+            </nav>
+            <div class="menu">
+                <div class="menu-wrapp" style="width: 357px;">
+                    <div class="burger" onclick="togglemeny()" style="background-color: blue;">
+                        <div></div>
+                    </div>
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="img/menulogo.webp" type="image/webp"><img class="logo"
+                                src="img/menulogo.png" alt=""></picture>
+                    </a>
+
+                </div>
+                <div class="link-list sf m">
+                    <a class="link" href="about.html">О нас</a>
+                    <a class="link" href="">Галерея</a>
+                    <a class="link" href="">Меню</a>
+                    <a class="link" href="">Винная карта</a>
+                    <a class="link" href="">Барная карта</a>
+                    <a class="link" href="dostavka.html">Доставка</a>
+                    <a class="link" href="">Бронирование</a>
+                    <a class="link" href="">Акции и бонусы</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="category__intro">
+                <h1 class="category__title">Рекомендованные</h1>
+            </section>
+            <section class="category__cards">
+                <div class="container">
+
+                
+                    <div class="card">
+                        <div class="card__intro">
+                            <h1 class="card__title">Свежий салат</h1>
+                            <a href="#" class="card__price">430 руб</a>
+                        </div>
+                        <div class="card__content">
+                            <img src="./img/salad.svg" alt="salad" class="card__img">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__intro">
+                            <h1 class="card__title">Свежий салат</h1>
+                            <a href="#" class="card__price">430 руб</a>
+                        </div>
+                        <div class="card__content">
+                            <img src="./img/salad.svg" alt="salad" class="card__img">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__intro">
+                            <h1 class="card__title">Свежий салат</h1>
+                            <a href="#" class="card__price">430 руб</a>
+                        </div>
+                        <div class="card__content">
+                            <img src="./img/salad.svg" alt="salad" class="card__img">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__intro">
+                            <h1 class="card__title">Свежий салат</h1>
+                            <a href="#" class="card__price">430 руб</a>
+                        </div>
+                        <div class="card__content">
+                            <img src="./img/salad.svg" alt="salad" class="card__img">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__intro">
+                            <h1 class="card__title">Свежий салат</h1>
+                            <a href="#" class="card__price">430 руб</a>
+                        </div>
+                        <div class="card__content">
+                            <img src="./img/salad.svg" alt="salad" class="card__img">
+                        </div>
+                    </div>
+                </div>  
+                
+            </section>
+            <div class="categ__menu" id="categ__menu">
+                <button class="categ__open" onclick="OpenCateg()"><img src="img/arrow.svg" alt="arrow"></button>
+                <nav>
+                    <ul class="categ">
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/11.png" alt="categ"></div>
+                                <div class="categ__text">Новинки</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/22.png" alt="categ"></div>
+                                <div class="categ__text">Завтраки</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/33.png" alt="categ"></div>
+                                <div class="categ__text">Холодные закуски и салаты</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/44.png" alt="categ"></div>
+                                <div class="categ__text">Горячие блюда</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/55.png" alt="categ"></div>
+                                <div class="categ__text">Супы</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/66.png" alt="categ"></div>
+                                <div class="categ__text">Гриль</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/77.png" alt="categ"></div>
+                                <div class="categ__text">Паста</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/88.png" alt="categ"></div>
+                                <div class="categ__text">Напитки</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/99.png" alt="categ"></div>
+                                <div class="categ__text">Десерты</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="categ__item">
+                                <div class="categ__img"><img src="img/110.png" alt="categ"></div>
+                                <div class="categ__text">Рекомендованые</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+        <footer class="footer m">
+
+            <div class="contacts sf">
+                <p>Наши контакты</p>
+                <p>Москва, ул. Люсиновская, д. 36/50</p>
+                <p>+7 (495) 665-92-42</p>
+                <p>blancs@mail.ru</p>
+            </div>
+            <div class="logo"><img src="img/Group414.png" alt="" class="image"></div>
+            <div class="links sf">
+                <div>
+                    <a href="about.html">О компании</a></br>
+                    <a href="bisnes.html">Для бизнеса</a></br>
+                    <a href="">Время работы:</a>
+                </div>
+                <div>
+                    <a href="">Бонусы</a></br>
+                    <a href="dostavka.html">Доставка</a></br>
+                    <p>пн-вс 10:00-23:00</p>
+                </div>
+                <div>
+                    <a class="socials" href="">
+                        Присоединяйтесь:
+                        <img src="img/Group405.png" alt="" class="image">
+                        <img src="img/Group406.png" alt="" class="image">
+                        <img src="img/Group407.png" alt="" class="image">
+                        <img src="img/Group408.png" alt="" class="image">
+                        <img src="img/Group409.png" alt="" class="image">
+                        <img src="img/Group410.png" alt="" class="image">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+
+</html>
