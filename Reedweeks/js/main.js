@@ -90,11 +90,6 @@ $(".phone__open").click(function(){
     $("#modal__title").text("Получить звонок")
     openModal()
 })
-$("#email-footer").click(function(){
-    $("#modal__title").text("Написать письмо")
-    $("#placePhone").attr("placeholder", "Ваш E-mail")
-    openModal()
-})
 $(".arrowModal").click(function(){
     openModal()
 })
