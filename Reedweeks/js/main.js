@@ -94,3 +94,7 @@ $(".arrowModal").click(function(){
     openModal()
 })
 
+if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+    $(".goog").hide()
+}
+    
