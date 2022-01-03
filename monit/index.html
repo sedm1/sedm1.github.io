@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontConnect.css">
+</head>
+<body>
+    <div class="modal__bg">
+        <div class="modal__window" id="reg">
+            <button onclick="clodeModal()" id="clode__btn"></button>
+            <label for="clode__btn"><img src="img/close.svg" alt="close" class="close"></label>
+            <div class="modal__header">
+                <h1 class="modal__title">Регистрация</h1>
+                <button class="smen" onclick="openLog()">Войти</button>
+            </div>
+            <hr class="modal__line">
+            <button class="google"><img src="img/google.png" alt="google" class="goog">Войти с помощью Google</button>
+            <div class="modal__text">или зарегистрируйтесь:</div>
+            <form action="">
+                <div class="input__item">
+                    <div class="input__title">Имя</div>
+                    <input type="text" placeholder="Ваше имя">
+                    <p class="allert"></p>
+                </div>
+                <div class="input__item">
+                    <div class="input__title">E-mail</div>
+                    <input type="text" placeholder="Ваш e-mail">
+                </div>
+                <div class="input__item">
+                    <div class="input__title">Пароль</div>
+                    <input type="text" placeholder="Придумайте пароль">
+                    <p class="allert"></p>
+                </div>
+                <div class="input__item">
+                    <div class="input__title">Телефон</div>
+                    <input type="text" placeholder="+7 (999) 999-99-99">
+                    <p class="allert"></p>
+                </div>
+                <div class="input__item">
+                    <div class="input__title ">Код из смс</div>
+                    <input type="text" class="sms">
+                </div>
+                <div class="carptcha"></div>
+                <center><button type="submit" class="form__button reg__btn">Регистрация</button></center>
+            </form>
+        </div>
+        <div class="modal__window" id="log">
+            <button onclick="clodeModal()" id="clode__btn"></button>
+            <label for="clode__btn"><img src="img/close.svg" alt="close" class="close"></label>
+            <div class="modal__header">
+                <h1 class="modal__title">Авторизация</h1>
+                <button class="smen" onclick="openReg()">Регистрация</button>
+            </div>
+            <hr class="modal__line">
+            <button class="google"><img src="img/google.png" alt="google" class="goog">Войти с помощью Google</button>
+            <div class="modal__text">или с помощью e-mail:</div>
+            <form action="">
+                <div class="input__item">
+                    <div class="input__title">E-mail</div>
+                    <input type="text" placeholder="Ваш e-mail">
+                </div>
+                <div class="input__item">
+                    <div class="input__title">Пароль</div>
+                    <input type="text" placeholder="Ваш пароль">
+                </div>
+                <div class="carptcha"></div>
+                <div class="zab" onclick="openRek()">Забыли пароль?</div>
+                
+                <div class="f_bt">
+                    <button type="submit" class="form__button reg__btn">Войти</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__window" id="rek">
+            <button onclick="clodeModal()" id="clode__btn"></button>
+            <label for="clode__btn"><img src="img/close.svg" alt="close" class="close"></label>
+            <div class="rek__title">Забыли пароль?</div>
+            <div class="rek__descript">На ваш почтовый адрес, указанный при регистрации, высланы дальнейшие инструкции.</div>
+        </div>
+    </div>
+    
+    <header>
+        <p class="main__descript">Добро пожаловать на </p>
+        <h2 class="main__title">Мониторинг сайтов</h2>
+        <div class="button__block">
+            <button class="reg" onclick="openReg()">Регистрация</button>
+            <button class="log" onclick="openLog()">Войти</button>
+        </div>
+    </header>
+    <main></main>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

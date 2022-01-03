@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'GillBold';
+    src: url('../font/GillSansProCyrillic-Bold.eot');
+    src: local('Gill Sans Pro Cyrillic Bold'), local('GillSansProCyrillic-Bold'),
+        url('../font/GillSansProCyrillic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansProCyrillic-Bold.woff2') format('woff2'),
+        url('../font/GillSansProCyrillic-Bold.woff') format('woff'),
+        url('../font/GillSansProCyrillic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillMedium';
+    src: url('../font/GillSansProCyrillic-Medium.eot');
+    src: local('Gill Sans Pro Cyrillic Medium'), local('GillSansProCyrillic-Medium'),
+        url('../font/GillSansProCyrillic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansProCyrillic-Medium.woff2') format('woff2'),
+        url('../font/GillSansProCyrillic-Medium.woff') format('woff'),
+        url('../font/GillSansProCyrillic-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillLight';
+    src: url('../font/GillSansProCyrillic-Light.eot');
+    src: local('Gill Sans Pro Cyrillic Light'), local('GillSansProCyrillic-Light'),
+        url('../font/GillSansProCyrillic-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansProCyrillic-Light.woff2') format('woff2'),
+        url('../font/GillSansProCyrillic-Light.woff') format('woff'),
+        url('../font/GillSansProCyrillic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'GillSansC';
+    src: url('../font/GillSansC-Bold.eot');
+    src: local('GillSansC Bold'), local('GillSansC-Bold'),
+        url('../font/GillSansC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansC-Bold.woff2') format('woff2'),
+        url('../font/GillSansC-Bold.woff') format('woff'),
+        url('../font/GillSansC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GillSansLightCLight';
+    src: url('../font/GillSansLightC.eot');
+    src: local('GillSansLightC'),
+        url('../font/GillSansLightC.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansLightC.woff2') format('woff2'),
+        url('../font/GillSansLightC.woff') format('woff'),
+        url('../font/GillSansLightC.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillSansCondCBold';
+    src: url('../font/GillSansCondC-Bold.eot');
+    src: local('GillSansCondC Bold'), local('GillSansCondC-Bold'),
+        url('../font/GillSansCondC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansCondC-Bold.woff2') format('woff2'),
+        url('../font/GillSansCondC-Bold.woff') format('woff'),
+        url('../font/GillSansCondC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GillSansCondBlackC';
+    src: url('../font/GillSansCondBlackC.eot');
+    src: local('GillSansCondBlackC'),
+        url('../font/GillSansCondBlackC.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansCondBlackC.woff2') format('woff2'),
+        url('../font/GillSansCondBlackC.woff') format('woff'),
+        url('../font/GillSansCondBlackC.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillSansCReg';
+    src: url('../font/GillSansC.eot');
+    src: local('GillSansC'),
+        url('../font/GillSansC.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansC.woff2') format('woff2'),
+        url('../font/GillSansC.woff') format('woff'),
+        url('../font/GillSansC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GillSansExtraBoldC';
+    src: url('../font/GillSansExtraBoldC.eot');
+    src: local('GillSansExtraBoldC'),
+        url('../font/GillSansExtraBoldC.eot?#iefix') format('embedded-opentype'),
+        url('../font/GillSansExtraBoldC.woff2') format('woff2'),
+        url('../font/GillSansExtraBoldC.woff') format('woff'),
+        url('../font/GillSansExtraBoldC.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
