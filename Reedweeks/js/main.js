@@ -79,9 +79,6 @@ function openModal(){
 function getImGSrc(any){
     $(".main__poni").attr('src', any);
 }
-
-
-
 $(".search-btn").on("click", function(){
     $(".search-txt").toggleClass("search-txt-active")
 })
@@ -97,4 +94,57 @@ $(".arrowModal").click(function(){
 if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
     $(".goog").hide()
 }
+
+$(".like__item").click(function(){
+    $(this).toggleClass("likeActive")
+    if ($(this).children("img").attr('src') == "img/like.svg"){
+        $(this).children("img").attr('src',"img/like_white.svg")
+    } else{
+        $(this).children("img").attr('src',"img/like.svg")
+    }
     
+})
+$(".addbutton").click(function(){
+    var item = $(this).parents(".tovar__item")
+    item.css("transform", "scale(1.1)")
+    setTimeout(function (){
+        item.css("transform", "scale(1)")
+    }, 200)
+})
+
+function changeToFlex(){
+    $("#changeToBlock").children().attr("src", "img/rd_1.svg")
+    $("#changeToFlex").children().attr("src", "img/kv_2.svg")
+    $("#changeBlock").css("display", "flex")
+    var tovar = $(".tovar__item")
+    tovar.css({"width": "", "padding": "", "flex-direction": "", "justify-content": ""})
+    //Обращаемся на прямую
+    $(".tovar__img").css({"height": "", "margin": "", "margin-right": ""})
+    $(".tovar_up").css("display", "")
+    $(".tovar__title").css({"fontSize": "", "line-height": "", "max-width": "", "height": ""})
+    $(".tovar__down").css({"flex-direction": "", "align-items": "", "margin-bottom": ""})
+    $(".addbutton").css({"min-width": "", "height":""})
+    $(".mb__icon").css({"margin-bottom": "", "margin-right": ""})
+    $(".tovar__price").css({"margin-right": ""})
+    $(".mab__item").css({"width": "", "height":""})
+    $(".mab__item img").css({"width": "", "height":""})
+
+}
+
+function changeToBlock(){
+    $("#changeToFlex").children().attr("src", "img/kv_1.svg")
+    $("#changeToBlock").children().attr("src", "img/rd_2.svg")
+    $("#changeBlock").css("display", "block")
+    var tovar = $(".tovar__item")
+    tovar.css({"width": "100%", "padding": "28px 21px", "flex-direction": "row", "justify-content": "space-between"})
+    //Обращаемся на прямую
+    $(".tovar__img").css({"height": "190px", "margin": "0", "margin-right": "20px"})
+    $(".tovar_up").css("display", "flex")
+    $(".tovar__title").css({"fontSize": "25px", "line-height": "29px", "max-width": "439px", "height": "80%"})
+    $(".tovar__down").css({"flex-direction": "row", "align-items": "flex-end", "margin-bottom": "16px"})
+    $(".addbutton").css({"min-width": "250px", "height":"53px"})
+    $(".mb__icon").css({"margin-bottom": "2px", "margin-right": "35px"})
+    $(".tovar__price").css({"margin-right": "15px"})
+    $(".mab__item").css({"width": "30px", "height":"30px"})
+    $(".mab__item img").css({"width": "20px", "height":"20px"})
+}

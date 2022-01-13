@@ -88,10 +88,13 @@
     width: 25%
     max-width: 256px
     padding: 20px 36px
-    box-shadow: 0px 4px 44px rgba(55, 26, 69, 0.2)
     border-radius: 20px
     text-align: center
     margin-bottom: 30px
+    cursor: pointer
+    transition: .3s
+    &:hover
+        box-shadow: 0px 4px 44px rgba(55, 26, 69, 0.2)
 .categ__img
     margin: 0 auto
     margin-bottom: 10px
@@ -106,7 +109,7 @@
     color: rgba(59, 57, 67, 0.7)
     font-size: 16px
 .info__mainn
-    padding-left: 74px
+    padding-left: 140px
 #hits_2
     .container
         flex-direction: column
@@ -116,9 +119,10 @@
             width: 100%
             margin: 0
             margin-top: 45px
+            .slick-track
+                padding: 20px 0px
             .tovar__item
-                max-width: 352px
-                margin: 0
+                margin: 0 20px
                 .tovar__down 
                     .mb__icon 
                         div
@@ -148,6 +152,7 @@ footer
         justify-content: space-between
         align-items: center
 @media screen and (max-width: 650px)
+    
     #hits_2 
         .container
             margin-top: 20px
@@ -155,6 +160,8 @@ footer
         margin-top: 50px
     .categ__item
         padding: 10px 3px
+        padding-bottom: 0px
+        min-height: 196px
     .categ__title
         font-size: 16px
     .categ__link
@@ -162,3 +169,6 @@ footer
 @media screen and (max-width: 450px)
     .section__link, .section__title
         margin-top: 20px
+    .categ__img 
+        img
+            height: 80px

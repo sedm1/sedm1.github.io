@@ -1,0 +1,280 @@
+@import font
+@import mixins
+@import modal
+.section__link
+    margin-top: 25px
+.link__categ, .sort__menu
+    display: flex
+    align-items: center
+    p
+        margin-left: 30px
+        transition: .5s
+        cursor: pointer
+        font-size: 12px
+        &:first-child
+            margin-left: 0px
+        &:hover
+            color: #FF5757
+.sort
+    display: flex
+    align-items: center
+    .sort__title
+        margin-right: 25px
+.sort__menu
+    p
+        font-size: 14px
+        font-family: $SFM
+        color: rgba(59, 57, 67, 0.5)
+.tovar__setting
+    margin-top: 45px
+    .main__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 0 10px
+.setka, .setka__item
+    display: flex
+    align-items: center
+.col__line
+    margin-right: 25px
+.col__item
+    cursor: pointer
+.col_line__title
+    margin-right: 10px
+    color: rgba(59, 57, 67, 0.5)
+.setka_sett
+    button
+        &:first-child
+            margin-right: 15px
+
+#tovar
+    display: block
+    top: 0
+.tovar__buttons_tovar
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    position: sticky
+    left: 0
+    top: 100px
+    z-index: 90
+    footer
+        display: none
+    .button__item
+        min-width: 271px
+        display: flex
+        padding-right: 11px
+        align-items: center
+        padding-left:14px
+        padding-top: 10px
+        padding-bottom: 10px
+        font-size: 19px
+        transition: .3s
+        border-radius: 6px
+        background: transparent
+        margin-top: 8px
+        z-index: 150
+        text-align: left
+        &:hover
+            background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
+            color: #fff
+            .ct_img__img
+                &:first-child
+                    display: none
+                &:nth-child(2)
+                    display: block
+        .ct_img__img
+            &:nth-child(2)
+                display: none
+        &:first-child
+            margin-top: 0px
+        .ct__img
+            margin-right: 10px
+            width: 24px
+            display: flex
+            align-items: center
+            justify-content: center
+                        
+        #ct_1
+            img
+                @include icon-size(21px, 21px)
+        #ct_2
+            img
+                @include icon-size(24px, 24px)
+        #ct_3
+            img
+                @include icon-size(21px, 25px)
+        #ct_4
+            img
+                @include icon-size(24px, 24px)
+        #ct_5
+            img
+                @include icon-size(24px, 28px)
+        #ct_6
+            img
+                @include icon-size(24px, 22px)
+        #ct_7
+            img
+                @include icon-size(24px, 24px)
+    .active
+        background: linear-gradient(91.93deg, #FF5757 -6.24%, #FF9A9A 108.54%)
+        color: #fff
+.tovarD
+    margin-top: 60px
+    .container
+        display: flex
+        align-items: flex-start
+    .main__container
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-left: 15px
+        padding: 0 10px
+.tovar__item
+    background: #FFFFFF
+    box-shadow: 0px 14px 14px rgba(12, 31, 56, 0.06), 0px 4px 34px rgba(26, 71, 132, 0.1)
+    border-radius: 30px
+    width: 256px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 12px 23px 23px 25px
+    margin-top: 40px
+    min-height: 275px
+    transition: .7s
+    .tovar__img
+        width: auto 
+        height: 259px
+        margin: 0 auto
+        margin-bottom: 20px
+        display: flex
+        justify-content: center
+        
+        img
+            width: auto
+    .tovar__title
+        font-family: $SFSB
+        font-size: 17px
+        line-height: 21px
+        max-width: 302px
+        position: relative
+        &::before
+            content: "В наличии"
+            color: #219653
+            position: absolute
+            bottom: -20px
+            left: 0
+    .tovar__down
+        @include flex-centerJ
+        flex-direction: column
+        align-items: flex-start
+        margin-top: 30px
+        .mb__icon
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            div       
+                &:nth-child(2)
+                    display: flex
+                    align-items: center
+                    .mab__item
+                        width: 15px
+                        height: 15px
+                        border-radius: 100%
+                        background: #dddddd
+                        padding: 7px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        box-sizing: content-box
+                        cursor: pointer
+                        &:first-child
+                            margin-right: 10px
+                        img
+                            width: 13px
+                            height: 13px
+        .tovar__price
+            font-size: 24px
+            font-family: $SFBK
+        .addbutton
+            color: #fff
+            @include flex-centerX
+            justify-content: center
+            background: rgba(255, 68, 68, 0.9)
+            transition: .3s
+            margin-top: 15px
+            border-radius: 9px
+            font-size: 18px
+            width: 100%
+            height: 33px
+            padding: 20px 0px
+            display: flex
+            align-items: center
+            position: relative
+            &:hover
+                opacity: 0.7
+            .addbutton__text
+                display: flex
+                position: relative
+                align-items: center
+                &::before
+                    content: url("../img/cart-white_b.svg")
+                    margin-right: 5px
+footer
+    margin-top: 100px
+.col_line__title_smal
+    display: none
+@media screen and (max-width: 1200px)
+    .tovar__buttons_tovar
+        display: none
+@media screen and (max-width: 800px)
+    .tovarD 
+        .main__container
+            padding: 0
+            margin: 0
+    .setka_sett 
+        display: none
+    .tovar__item
+        width: 48%
+        min-height: 275px
+        height: max-content
+        padding: 10px 5px
+        .tovar__title
+            font-size: 14px
+        .tovar__img
+            height: auto
+        .tovar__down 
+
+            .tovar__price
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                font-size: 15px
+                .old__price
+                    font-size: 14px
+                    font-family: $SFR
+                .new_price
+                    margin-left: 0px
+                    color: $black
+                    font-size: 24px
+    .col_line__title 
+        font-size: 12px
+    .sort, .sort__menu
+        flex-direction: column
+        align-items: flex-start
+        p
+            margin-left: 0px
+            margin-top: 5px
+    .col_line__title_smal
+        display: block
+    .big
+        display: none
+@media screen and (max-width: 500px)
+    .tovar__item 
+        .tovar__down 
+            .addbutton
+                padding: 0
+                font-size: 11px
+    

@@ -253,17 +253,6 @@ header
                         background-size: cover
                         &:hover
                             filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25))
-                    .ripple-effect
-                        display: inline-block
-                        position: absolute
-                        top: 0
-                        left: 0
-                        height:0
-                        width:0
-                        border: 2px solid rgba(255,255,255,0.3)
-                        border-radius: 5000px
-                        animation: ripple 1s ease forwards
-                        z-index: 1
   
 
 //Second Blcok
@@ -425,6 +414,7 @@ header
                 padding: 12px 23px 23px 25px
                 margin-top: 40px
                 min-height: 275px
+                transition: .7s
                 .tovar__img
                     width: auto 
                     height: 259px
@@ -1257,3 +1247,5 @@ footer
     padding: 10px 15px
     border: 1px solid #000
     border-radius: 10px
+.likeActive
+    background: #FF5555 !important
