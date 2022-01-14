@@ -129,7 +129,6 @@
         align-items: flex-start
         flex-wrap: wrap
         justify-content: space-between
-        margin-left: 15px
         padding: 0 10px
 .tovar__item
     background: #FFFFFF
@@ -229,6 +228,9 @@ footer
 #hits_2
     .container
         flex-direction: column
+        width: 1120px
+        padding-left: 277px
+        box-sizing: content-box
         .tovar__items
             justify-content: space-between
             width: 100%
@@ -245,9 +247,27 @@ footer
                                 .mab__item
                                     &:first-child
                                         background: #dddddd
+.aaa
+    .main__container
+        padding: 0px 10px
+        padding-left: 140px
+.tovar__setting
+    .main__container
+        padding-left: 140px
 @media screen and (max-width: 1200px)
+    .aaa
+        .main__container
+            padding-left: 0px
+    .tovar__setting
+        .main__container
+            padding-left: 0px
     .tovar__buttons_tovar
         display: none
+    #hits_2
+        .container
+            width: 100%
+            padding-left: 0px
+            box-sizing: border-box
 @media screen and (max-width: 800px)
     .tovarD 
         .main__container
@@ -296,4 +316,7 @@ footer
             .addbutton
                 padding: 0
                 font-size: 11px
+                border-radius: 15px
+    .tovar__item
+        width: 49%
     
