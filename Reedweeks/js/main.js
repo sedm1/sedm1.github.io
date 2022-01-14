@@ -148,3 +148,18 @@ function changeToBlock(){
     $(".main__container .mab__item").css({"width": "30px", "height":"30px"})
     $(".main__container .mab__item img").css({"width": "20px", "height":"20px"})
 }
+if ($(window).width() < 850){
+    $(document).ready(function(){
+        $(".card__item").slice(0, 1).show();
+        $("#col_tov").text("Ещё " + $(".card__item:hidden").length + " товара, показать?")
+        $("#loadMore").on("click", function(e){
+            e.preventDefault();
+            $(".card__item:hidden").slice(0, 1).slideDown();
+            $("#col_tov").text("Ещё " + $(".card__item:hidden").length + " товара, показать?")
+            if($(".card__item:hidden").length == 0) {
+                $("#col_tov").text("Больше товара нет").addClass("noContent");
+            }
+        });
+    })
+}
+
