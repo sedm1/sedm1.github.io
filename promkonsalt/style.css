@@ -1322,7 +1322,37 @@ footer .container {
 .aa__item:last-child {
   margin-bottom: 0px;
 }
-
+#main__slider .slick-track{
+  height: 561px;
+}
+#main__slider .slick-dots{
+  top: auto;
+  bottom: 21px;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main__slider .slick-dots .slick-active{
+  background: #1B97A2;
+}
+#main__slider .slick-dots li{
+  cursor: pointer;
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid #1B97A2;
+  opacity: 1;
+  background: transparent;
+  margin-right: 35px
+}
+#main__slider .slick-dots li:last-child{
+  margin-right: 0px
+}
+#main__slider .slick-dots li button{
+  font-size: 0
+}
 @media screen and (max-width: 1100px) {
   .container {
     width: 100%;
@@ -1651,7 +1681,7 @@ footer .container {
     max-width: 100%;
   }
 
-  .main__section {
+  #main__slider .slick-track{
     height: 461px;
   }
 

@@ -1,6 +1,42 @@
 @import font
 @import mixins
 @import modal
+.simple-pagination
+    position: absolute
+    bottom: -70px
+    left: 10px
+.light-theme 
+    .current
+        background: #FF5555
+        color: #fff
+        border-radius: 100%
+        width: 32px
+        height: 32px
+        border: 0 none
+        box-shadow: none
+.light-theme a, .light-theme span 
+    border-radius: 100%
+    width: 32px
+    height: 32px
+    border: 0 none
+    box-shadow: none 
+    display: flex
+    align-items: center
+    justify-content: center
+    background: transparent
+    font-size: 20px
+    margin: 0px 5px
+.next, .prev
+    font-size: 0 !important
+    background: #fff !important
+    background-position: center center
+    background-repeat: no-repeat !important
+    margin-top: 4px !important
+.next
+    background-image: url("../img/a-right.svg") !important
+    
+.prev
+    background-image: url("../img/a-left.svg") !important
 .section__link
     margin-top: 25px
 .link__categ, .sort__menu
@@ -254,6 +290,8 @@ footer
 .tovar__setting
     .main__container
         padding-left: 140px
+#changeBlock
+    position: relative
 @media screen and (max-width: 1200px)
     .aaa
         .main__container

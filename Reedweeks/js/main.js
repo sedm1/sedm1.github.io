@@ -1,7 +1,4 @@
-$(".button__item").click(function (){
-    $(".button__item").removeClass("active")
-    $(this).addClass("active");
-})
+
 const accordion = document.getElementsByClassName('question__item')
 for(var i = 0; i < accordion.length; i++){
     accordion[i].addEventListener('click', function(){
