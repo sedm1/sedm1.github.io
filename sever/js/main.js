@@ -18,7 +18,8 @@ $(".question__item").on("click", function(){
     $(this).children(".question__answer").toggleClass("question__answer-active")
     $(this).children(".question__arrow").toggleClass("question__arrow-active")
 })
-
-AOS.init({
+if($(window).width() > 800){
+  AOS.init({
     duration: 600,
-});
+  });
+}
