@@ -175,7 +175,14 @@ header
         flex-direction: column
     .rules .rules__img
         margin-right: 0px
-    .adv .adv__img, .strateg .strateg__img
+    .adv 
+        .adv__img
+            width: 50%
+            margin-top: 40px
+        .container
+            flex-direction: column
+
+    .strateg .strateg__img
         display: none
     .find 
         .container
@@ -200,11 +207,17 @@ header
         font-weight: 700
         max-width: 100%
     header
-        flex-direction: column
+        justify-content: space-between
+    .logo
+        width: 50px
+
     .logo
         margin-right: 0px
-    .menu li
-        margin-right: 15px
+    .menu 
+        li
+            margin-right: 10px
+            a
+                font-size: 13px
     .main__text h1
         font-size: 12vw
     .inovation 
@@ -220,6 +233,8 @@ header
             font-size: 14vw
         .adv__item
             max-width: 100%
+        .adv__img
+            width: 90%
     .strateg 
         .section__title
             font-size: 13vw

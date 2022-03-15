@@ -8,12 +8,20 @@
     color: #000
 html
     scroll-behavior: smooth
+    max-width: 100%
+    overflow-x: hidden
+body
+    max-width: 100%
+    overflow-x: hidden
 a, button
     text-decoration: none
     color: inherit
     font-family: inherit
     border: 0 none
     outline: 0 none
+button
+    &:hover
+        transform: scale(1.1) !important
 img
     width: 100%
     height: auto
@@ -40,7 +48,7 @@ span
     padding: 23px 55px
     border-radius: 5px
     box-shadow: rgb(0 0 0 / 44%) 0px 0px 0px 0px
-    transition: all 0.1s linear 0s
+    transition: all 0.3s linear 0s
     cursor: pointer
     font-weight: 500
     font-size: 16px
