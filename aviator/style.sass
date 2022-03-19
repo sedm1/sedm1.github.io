@@ -21,12 +21,25 @@ body
             margin-right: 0px
         &:hover
             color: rgb(255, 24, 66)
+.bg-2
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-image: url("../img/avi_bg.jpg")
+    background-size: cover
+    background-position: right center
+    background-repeat: no-repeat
+    background-size: 70% 100%
+    opacity: 0.6
 .main__section, .where, .prom_avi, .pox, .slogan, .autor, .play
     background-image: url("../img/bg.jpg")
     background-size: cover
     background-position: center center
     background-repeat: no-repeat
     padding: 40px 0px
+    position: relative
 .logo
     font-size: 30px
     font-weight: 300
@@ -164,6 +177,9 @@ body
     .where__text 
         text-align: center
 @media screen and (max-width: 750px)
+    .bg-2
+        background-size: 100% 50%
+        
     .main__section
         padding-top: 20px
     .menu
