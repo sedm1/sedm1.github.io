@@ -27,6 +27,15 @@
   margin-top: 20px;
 }
 
+.main__d {
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  max-width: 519px;
+  margin-top: 50px;
+  line-height: 155%;
+}
+
 .play .bt {
   width: 100%;
   display: -webkit-box;
