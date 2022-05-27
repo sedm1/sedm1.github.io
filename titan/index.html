@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
 </head>
@@ -36,11 +36,31 @@
         <div class="mainheader">
                 <div class="logo"><img src="img/logo.svg" alt="Logo"></div>
                 <div class="mainheader__input">
-                    <input type="text" placeholder="Search for part number, description, brand, model...">
+                    <input type="text" placeholder="Search for part number, description, brand, model..." class="header__input-item">
                     <button class="search"><img src="img/icons/Search.svg" alt="Search"></button>
+                    <button class="clodesearch"><img src="img/icons/Crest.svg" alt="crest"></button>
                 </div>
                 <div class="mainheader__links">
-                    <div class="links__item"><a href="#" class="logIn">log in</a></div>
+                    <div class="links__item">
+                        <button class="logIn">log in</button>
+                        
+                        <div class="login__form">
+                            <div class="trg__form"></div>
+                            <form action="">
+                                <div class="form__item">
+                                    <p class="form__item-title">Email</p>
+                                    <input type="text" class="form_item-input">
+                                </div>
+                                <div class="form__item">
+                                    <p class="form__item-title">Password</p>
+                                    <input type="password" class="form_item-input">
+                                </div>
+                                <button type="submit" class="form__btn">Log in</button>
+                            </form>
+                            <button class="dont_akk">Don’t have an account? Create an account</button>
+                            <center><a class="forgot">Forgot password?</a></center>
+                        </div>
+                    </div>
                     <div class="links__item lists">
                         <div class="links__img"><img src="img/icons/like.svg" alt="like"></div>
                         <a href="#" class="logIn">lists</a>
@@ -174,9 +194,104 @@
                         <a href="#" class="categories-title">Brakes</a>
                     </div>
                 </div>
+                <div class="banner">
+                    <div class="banner__logo"><img src="img/logo_2.svg" alt="logo2"></div>
+                    <div class="banner__text">
+                        <h5 class="banner__title">CNH Industrial Catalogue</h5>
+                        <p class="banner__descript">Didn’t find what you were looking for? Try searching from <br/>Case IH Parts lookup</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__banner"></div>
+            <div class="about__rect">
+                <h3 class="about__title">Establishing the direction in agricultural and construction technology</h3>
+            </div>
+            <div class="container">
+                <p class="about__text">With nearly 40 years of experience, the Titan Machinery Inc. group from the United States of America owns and manages a worldwide equipment and services distribution network in the agricultural and construction industries. Titan Machinery is the largest distributor of agricultural and construction machinery in the U.S. and one of the largest importers and distributors of such equipment worldwide. Titan Machinery's main partner is CNH Industrial, which includes famous brands amongst which Case IH, Case Construction, Iveco, New Holland Agriculture and New Holland Construction. Titan Machinery is also the world's largest distributor of CNH Industrial products.</p>
+                <div class="advantages">
+                    <div class="advantages__item">
+                        <div class="adv__header">
+                            <div class="adv__icon"><img src="img/icons/gruz.svg" alt="adv"></div>
+                            <h4 class="advantages__title">FAST DELIVERY</h4>
+                        </div>
+                        <div class="adva__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="adv__header">
+                            <div class="adv__icon"><img src="img/icons/aticetka.svg" alt="adv"></div>
+                            <h4 class="advantages__title">PERSONAL DISCOUNTS</h4>
+                        </div>
+                        <div class="adva__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="adv__header">
+                            <div class="adv__icon"><img src="img/icons/person.svg" alt="adv"></div>
+                            <h4 class="advantages__title">THE BEST CUSTOMER SUPPORT</h4>
+                        </div>
+                        <div class="adva__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__footer">
+                <div class="container">
+                    <div class="quetion">
+                        <div class="que__title">Need help with your order?</div>
+                        <div class="que__answ">Our customer service is here to help!</div>
+                    </div>
+                    <div class="about__contacts">
+                        <div class="contacts__item">
+                            <div class="adv__icon"><img src="img/icons/Phone.svg" alt="adv"></div>
+                            <div class="ans__text">0748 77 88 99</div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="adv__icon"><img src="img/icons/Mail.svg" alt="adv"></div>
+                            <div class="ans__text">Parts@titanmachinery.ro</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer__logo"><img src="img/logo-black.svg" alt="FooterLogo"></div>
+            <div class="footer__menu">
+                <div class="footer__menu-item">
+                    <h4 class="footer__menu__title">Products</h4>
+                    <ul>
+                        <li><a href="#">Shop by Brand</a></li>
+                        <li><a href="#">Shop by Category</a></li>
+                        <li><a href="#">CNHi Catalogue</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-item">
+                    <h4 class="footer__menu__title">FAQ</h4>
+                    <ul>
+                        <li><a href="#">Payments & Invoices</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-item">
+                    <h4 class="footer__menu__title">Account</h4>
+                    <ul>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Create an account</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-item">
+                    <h4 class="footer__menu__title">Contact</h4>
+                    <ul>
+                        <li><a href="#">Our locations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>

@@ -2,289 +2,345 @@
 @import 'colors'
 @import 'mixins'
 @import 'base'
-header
-    color: $white
-    background: $darkBg
-.preheader
-    background: $black
-    padding: 6px 1.85%
-    +flexa
-    justify-content: space-between
-    &__info
-        +flexa
-    &__item
-        +flexa
-        margin-right: 26px
-        &:last-child
-            margin-right: 0px
-    &__img
-        width: 13px
-        margin-right: 8px
-        fill: #fff
-        background: red
-    &__text
-        font-size: 12px
-        font-weight: 400
-        font-family: 'Poppins', sans-serif
-.mainheader
-    +flexa
-    justify-content: space-between
-    padding-right: 0.9%
-    &__input
-        max-width: 71%
-        width: 100%
-        height: 40px
-        color: $gray
-        position: relative
-        input
-            width: 100%
-            height: 100%
-            border-radius: 4px
-            padding-left: 18px
-            &::placeholder
-                opacity: 0.5
-        .search
-            background: none
-            width: 20px
-            height: 20px
-            position: absolute
-            top: 10px
-            right: 9px
-    &__links
-        +flexa
-        text-transform: uppercase
-        color: $white
-        .links__item
-            +flexa
-        .links__img
-            margin-right: 10px
-        .links__item
-            margin-right: 28px
-            &:last-child
-                margin-right: 0px
-.logo
-    width: 190px
-    height: 69px
-.underheader
-    text-transform: uppercase
-    background: rgba(255, 255, 255, 0.1)
-    padding-left: 1%
-    .tovarlist
-        +flexa
-    .tovarlist__title
-        font-weight: 400
-    .befn
-        &::before
-            content: none
-    li
-        padding: 15px 
-        padding-right: 31px
-        letter-spacing: 0.04em
-    .befy
-        position: relative
-        transition: .5s
-        cursor: pointer
-        &:hover
-            background: $white
-            color: $black
-        &::before
-            content: url("../img/icons/arr_down.svg")
-            width: 8px
-            height: 4px
-            position: absolute
-            right: 15px
-            top: 10px
+@import 'header'
 .Sectionbg
-    background: $bg-active
+	background: $bg-active
 .mainScreen
-    padding-top: 40px
-    padding-bottom: 48px
-    
-    .container
-        display: flex
-        justify-content: space-between
+	padding-top: 40px
+	padding-bottom: 48px
+	
+	.container
+		display: flex
+		justify-content: space-between
 .main__slider
-    max-width: 792px
-    background: $black
-    .slick-arrow
-        display: none !important
+	max-width: 792px
+	background: $black
+	.slick-arrow
+		display: none !important
 .slick-slide
-    +bg
-    height: 396px !important
-    overflow: hidden
-    
+	+bg
+	height: 396px !important
+	overflow: hidden
+	
 #slide-1
-    background-image: url("../img/slider-1.png")    
+	background-image: url("../img/slider-1.png")    
 #slide-2
-    background-image: url("../img/slider-2.png")    
+	background-image: url("../img/slider-2.png")    
 .rect
-    background: rgba(0, 0, 0, 0.5)
-    transform: matrix(0.97, 0, -0.28, 1, 0, 0)
-    max-width: 401px
-    width: 100%
-    height: 100%
-    margin-left: -60px
-    padding-top: 28px
-    color: $white
-    padding-left: 50px
+	background: rgba(0, 0, 0, 0.5)
+	transform: matrix(0.97, 0, -0.28, 1, 0, 0)
+	max-width: 401px
+	width: 100%
+	height: 100%
+	margin-left: -60px
+	padding-top: 28px
+	color: $white
+	padding-left: 50px
 .slide__title
-    margin-bottom: 2px
-    transform: matrix(0.97, 0, 0.28, 1, 0, 0)
-    letter-spacing: 1px
+	margin-bottom: 2px
+	transform: matrix(0.97, 0, 0.28, 1, 0, 0)
+	letter-spacing: 1px
 .slide__descript
-    font-weight: 400
-    max-width: 290px
-    transform: matrix(0.97, 0, 0.28, 1, 0, 0)
-    font-family: 'Poppins', sans-serif
-    margin-left: 15px
-    letter-spacing: 0.03em
-    line-height: 18px
-    span
-        font-weight: 700
-        letter-spacing: 0.03em
+	font-weight: 400
+	max-width: 290px
+	transform: matrix(0.97, 0, 0.28, 1, 0, 0)
+	font-family: 'Poppins', sans-serif
+	margin-left: 15px
+	letter-spacing: 0.03em
+	line-height: 18px
+	span
+		font-weight: 700
+		letter-spacing: 0.03em
 .slider__button
-    padding: 10px 38px
-    background: $bgSemi
-    border-radius: 4px
-    font-family: 'Poppins', sans-serif
-    color: $darkBg
-    font-weight: 600
-    letter-spacing: 0.5px
-    margin-top: 16px
-    transform: matrix(0.97, 0, 0.28, 1, 0, 0)
-    margin-left: 30px
+	padding: 10px 38px
+	background: $bgSemi
+	border-radius: 4px
+	font-family: 'Poppins', sans-serif
+	color: $darkBg
+	font-weight: 600
+	letter-spacing: 0.5px
+	margin-top: 16px
+	transform: matrix(0.97, 0, 0.28, 1, 0, 0)
+	margin-left: 30px
 .main__news
-    display: flex
-    flex-direction: column
-    margin-left: 30px
+	display: flex
+	flex-direction: column
+	margin-left: 30px
 .news__item
-    border: 1px solid $bgSemi
-    border-radius: 4px
-    margin-bottom: 24px
-    width: 326px
-    background: $white
-    position: relative
-    height: 116px
-    &:last-child
-        margin-bottom: 0px
-        
+	border: 1px solid $bgSemi
+	border-radius: 4px
+	margin-bottom: 24px
+	width: 326px
+	background: $white
+	position: relative
+	height: 116px
+	&:last-child
+		margin-bottom: 0px
+		
 .news__text
-    background: rgba(255, 255, 255, 0.7)
-    border-radius: 4px 0px 0px 4px
-    padding: 26px 16px
-    padding-right: 18px
-    max-width: 190px
-    height: 100%
+	background: rgba(255, 255, 255, 0.7)
+	border-radius: 4px 0px 0px 4px
+	padding: 26px 16px
+	padding-right: 18px
+	max-width: 190px
+	height: 100%
 .news__title
-    text-transform: uppercase
-    color: $red
-    font-size: 16px
+	text-transform: uppercase
+	color: $red
+	font-size: 16px
 .news__descirpt
-    font-weight: 400
-    color: $gray
-    font-family: 'Poppins', sans-serif
+	font-weight: 400
+	color: $gray
+	font-family: 'Poppins', sans-serif
 #news-1
-    background-image: url("../img/news-1.png")
+	background-image: url("../img/news-1.png")
 #news-2
-    background-image: url("../img/news-2.png")
+	background-image: url("../img/news-2.png")
 #news-3
-    background-image: url("../img/news-3.png")
+	background-image: url("../img/news-3.png")
 .news__bg
-    +bg
-    background-position: 85% center
-    background-size: auto 100%
+	+bg
+	background-position: 85% center
+	background-size: auto 100%
 .news__link
-    background: $darkBg
-    width: 40px
-    height: 40px
-    border-radius: 100%
-    position: absolute
-    top: 50%
-    right: 16px
-    transform: translateY(-50%) rotate(180deg)
-    +flexa
-    justify-content: center
-    img
-        width: 10px
+	background: $darkBg
+	width: 40px
+	height: 40px
+	border-radius: 100%
+	position: absolute
+	top: 50%
+	right: 16px
+	transform: translateY(-50%) rotate(180deg)
+	+flexa
+	justify-content: center
+	img
+		width: 10px
 .brands
-    padding-bottom: 32px
-    .slick-arrow
-        display: none !important
+	padding-bottom: 32px
+	.slick-arrow
+		display: none !important
 .brands__title
-    text-transform: uppercase
-    font-size: 16px
-    margin-bottom: 16px
-    text-align: center
+	text-transform: uppercase
+	font-size: 16px
+	margin-bottom: 16px
+	text-align: center
 .brands__item
-    height: 63px !important
-    img
-        width: 150px
+	height: 63px !important
+	img
+		width: 150px
 .brands__slider
-    margin-bottom: 28px
+	margin-bottom: 28px
 .brand__link
-    padding: 12px 32px
-    background: $bgSemi
-    border-radius: 4px
-    font-family: 'Poppins', sans-serif
-    color: $darkBg
-    font-weight: 600
-    letter-spacing: 0.5px
+	padding: 12px 32px
+	background: $bgSemi
+	border-radius: 4px
+	font-family: 'Poppins', sans-serif
+	color: $darkBg
+	font-weight: 600
+	letter-spacing: 0.5px
 .categorie
-    text-transform: uppercase
-    color: $gray
-    margin-top: 58px
-    h2
-        text-transform: uppercase
-        letter-spacing: 0.02em
+	text-transform: uppercase
+	color: $gray
+	margin-top: 58px
+	h2
+		text-transform: uppercase
+		letter-spacing: 0.02em
 .categories
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    margin-top: 44px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 44px
 .categories__item
-    +bg
-    background-position: 85% center
-    background-size: 118px 90%
-    max-width: 364px
-    width: 100%
-    border: 1px solid $bgSemi
-    border-radius: 4px
-    height: 118px
-    +flexa
-    margin-bottom: 24px
-    padding-left: 17px
+	+bg
+	background-position: 85% center
+	background-size: 118px 90%
+	max-width: 364px
+	width: 100%
+	border: 1px solid $bgSemi
+	border-radius: 4px
+	height: 118px
+	+flexa
+	margin-bottom: 24px
+	padding-left: 17px
 .categories-title
-    color: $red
-    text-transform: uppercase
-    font-weight: 500
-    font-size: 14px
-    &::after
-        content: url("../img/icons/min_arr_left.svg")
-        width: 10px
-        height: 10px
-        margin-left: 8px
-        
+	color: $red
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 14px
+	&::after
+		content: url("../img/icons/min_arr_left.svg")
+		width: 10px
+		height: 10px
+		margin-left: 8px
+		
 #categorie-1
-    background-image: url("../img/categorie/categorie-1.png")
+	background-image: url("../img/categorie/categorie-1.png")
 #categorie-2
-    background-image: url("../img/categorie/categorie-2.png")
+	background-image: url("../img/categorie/categorie-2.png")
 #categorie-3
-    background-image: url("../img/categorie/categorie-3.png")
+	background-image: url("../img/categorie/categorie-3.png")
 #categorie-4
-    background-image: url("../img/categorie/categorie-4.png")
+	background-image: url("../img/categorie/categorie-4.png")
 #categorie-5
-    background-image: url("../img/categorie/categorie-5.png")
+	background-image: url("../img/categorie/categorie-5.png")
 #categorie-6
-    background-image: url("../img/categorie/categorie-6.png")
+	background-image: url("../img/categorie/categorie-6.png")
 #categorie-7
-    background-image: url("../img/categorie/categorie-7.png")
+	background-image: url("../img/categorie/categorie-7.png")
 #categorie-8
-    background-image: url("../img/categorie/categorie-8.png")
+	background-image: url("../img/categorie/categorie-8.png")
 #categorie-9
-    background-image: url("../img/categorie/categorie-9.png")
+	background-image: url("../img/categorie/categorie-9.png")
 #categorie-10
-    background-image: url("../img/categorie/categorie-10.png")
+	background-image: url("../img/categorie/categorie-10.png")
 #categorie-11
-    background-image: url("../img/categorie/categorie-11.png")
+	background-image: url("../img/categorie/categorie-11.png")
 #categorie-12
-    background-image: url("../img/categorie/categorie-12.png")
+	background-image: url("../img/categorie/categorie-12.png")
+.banner
+	background: $red
+	width: 100%
+	padding-top: 19px
+	padding-bottom: 17px
+	padding-left: 40px
+	border: 1px solid $bgSemi
+	border-radius: 4px
+	+flexa
+	&__logo
+		width: 126px
+		height: 88px
+		margin-right: 39px
+	&__text
+		color: $white
+		margin-left: 9px
+		margin-top: -10px
+	&__title
+		font-size: 16px
+		margin-bottom: 10px
+	&__descript
+		font-weight: 400
+		text-transform: none
+		font-family: 'Poppins', sans-serif
+		line-height: 18px
+.about
+	background: $darkBg
+	margin-top: 100px
+	color: $white
+	.container
+		max-width: $AboutContainer
+		padding-bottom: 69px
+.about__banner
+	width: 100%
+	height: 276px
+	background: url("../img/traktor.png")
+	+bg
+.about__rect
+	background: #C00000
+	transform: matrix(0.97, 0, -0.28, 1, 0, 0)
+	max-width: 1146px
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+	padding: 32px 0px
+	margin-left: -45px
+	padding-right: 23px
+.about__title
+	text-transform: uppercase
+	max-width: 581px
+	transform: matrix(0.97, 0, 0.28, 1, 0, 0)
+	letter-spacing: 0.03em
+	line-height: 32px
+.about__text
+	color: $white
+	font-size: 16px
+	font-weight: 300
+	line-height: 24px
+	font-family: 'Poppins', sans-serif
+	margin-top: 24px
+	margin-left: 10px
+.advantages
+	margin-top: 35px
+	display: flex
+	justify-content: space-between
+	margin-left: 10px
+.advantages__item
+	display: flex
+	flex-direction: column
+	max-width: 292px
+	width: 100%
+	color: $white
+.adv__header
+	transform: matrix(0.97, 0, -0.28, 1, 0, 0)
+	background: rgba(255, 255, 255, 0.1)
+	+flexa
+.adv__icon
+	background: $red
+	+flexa
+	justify-content: center
+	width: 48px
+	height: 48px
+	margin-left: -8px
+	transform: matrix(0.97, 0, 0.28, 1, 0, 0)
+	img
+		width: 22px
+		height: 22px
+.advantages__title
+	text-transform: uppercase
+	margin-left: 8px
+	transform: matrix(0.97, 0, 0.28, 1, 0, 0)
+.adva__text
+	margin-top: 16px
+	font-weight: 400
+	font-size: 16px
+	font-family: 'Poppins', sans-serif
+.about__footer
+	background: $black
+	color: $white
+	.container
+		padding: 12px 0
+		max-width: $AboutContainer  
+		+flexa
+		justify-content: space-between
+.quetion
+	font-size: 18px
+	font-family: 'Poppins', sans-serif
+	padding-left: 10px
+.que__title
+	font-weight: 700
+.que__answ
+	font-weight: 400  
+.about__contacts
+	+flexa
+.contacts__item
+	margin-right: 51px
+	text-transform: uppercase
+	+flexa
+	&:last-child
+		margin-right: 0px
+	.adv__icon
+		margin-right: 12px
+		transform: none
+footer
+	padding-top: 78px
+	padding-bottom: 40px
+	.container
+		display: flex
+.footer__menu
+	display: flex
+	margin-left: 84px
+.footer__menu-item
+	margin-right: 61px
+	&:last-child
+		margin-right: 0px
+	ul
+		li
+			margin-bottom: 24px
+			font-family: 'Poppins', sans-serif
+			color: $gray
+			font-size: 16px
+			font-weight: 300
+.footer__menu__title
+	text-transform: uppercase    
+	color: $gray
+	margin-bottom: 32px
