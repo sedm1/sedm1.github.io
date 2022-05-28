@@ -1,0 +1,162 @@
+.categorie
+	text-transform: uppercase
+	color: $gray
+	margin-top: 58px
+	h2
+		text-transform: uppercase
+		letter-spacing: 0.02em
+.categories
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 44px
+.categories__item
+	+bg
+	background-position: 85% center
+	background-size: 118px 90%
+	max-width: 364px
+	width: 100%
+	border: 1px solid $bgSemi
+	border-radius: 4px
+	height: 118px
+	+flexa
+	margin-bottom: 24px
+	padding-left: 17px
+.categories-title
+	color: $red
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 14px
+	&::after
+		content: url("../img/icons/min_arr_left.svg")
+		width: 10px
+		height: 10px
+		margin-left: 8px
+		
+#categorie-1
+	background-image: url("../img/categorie/categorie-1.png")
+#categorie-2
+	background-image: url("../img/categorie/categorie-2.png")
+#categorie-3
+	background-image: url("../img/categorie/categorie-3.png")
+#categorie-4
+	background-image: url("../img/categorie/categorie-4.png")
+#categorie-5
+	background-image: url("../img/categorie/categorie-5.png")
+#categorie-6
+	background-image: url("../img/categorie/categorie-6.png")
+#categorie-7
+	background-image: url("../img/categorie/categorie-7.png")
+#categorie-8
+	background-image: url("../img/categorie/categorie-8.png")
+#categorie-9
+	background-image: url("../img/categorie/categorie-9.png")
+#categorie-10
+	background-image: url("../img/categorie/categorie-10.png")
+#categorie-11
+	background-image: url("../img/categorie/categorie-11.png")
+#categorie-12
+	background-image: url("../img/categorie/categorie-12.png")
+.banner
+	background: $red
+	width: 100%
+	padding-top: 19px
+	padding-bottom: 17px
+	padding-left: 40px
+	border: 1px solid $bgSemi
+	border-radius: 4px
+	position: relative
+	+flexa
+	&__logo
+		width: 126px
+		height: 88px
+		margin-right: 39px
+	&__text
+		color: $white
+		margin-left: 9px
+		margin-top: -10px
+	&__title
+		font-size: 16px
+		margin-bottom: 10px
+	&__descript
+		font-weight: 400
+		text-transform: none
+		font-family: 'Poppins', sans-serif
+		line-height: 18px
+	&__link
+		position: absolute
+		right: 41px
+		top: 50%
+		transform: translateY(-50%)
+#loadMore
+	width: 100%
+	+flexa
+	padding: 37px 0
+	color: $red
+	text-transform: uppercase
+	justify-content: center
+	border: 1px solid $bgSemi
+	border-radius: 4px
+	margin-bottom: 16px
+	display: none
+@media screen and (max-width: $SmallDesktop)
+	.banner
+		padding-left: 32px
+		padding-bottom: 8px
+@media screen and (max-width: $MainContainer)
+	.categorie
+		.container
+			width: 94%
+	.categories__item
+		max-width: 334px
+@media screen and (max-width: $TabletContainer)
+	.categories__item
+		max-width: 309px
+	
+@media screen and (max-width: $SmallTablte)
+	
+	.categorie
+		margin-top: 40px
+	.categories__item
+		max-width: 48%
+		display: none
+		margin-bottom: 15px
+	.banner__logo
+		margin-right: 47px
+	#loadMore
+		display: block
+@media screen and (max-width: $MobileContainer)
+	
+	.categories__item
+		max-width: 100%
+	.categorie
+		h2
+			font-size: 22px
+	.banner
+		position: relative
+		padding: 31px 16px
+		flex-direction: column
+		align-items: flex-start
+		padding-bottom: 0px
+		&__link
+			position: static
+			width: 40px
+			height: 40px
+			background: rgba(255, 255, 255, 0.2)
+			border-radius: 40px
+			margin-top: 30px
+			margin-left: 10px
+			+flexa
+			justify-content: center
+			img
+				width: 10px
+				height: 10px
+		&__text
+			margin-top: 0px
+		&__logo
+			position: absolute
+			width: 44px
+			height: 31px
+			top: 6px
+			right: 16px
+			margin-right: 0px

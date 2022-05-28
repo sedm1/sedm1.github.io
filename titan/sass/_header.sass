@@ -1,0 +1,188 @@
+header
+	color: $white
+	background: $darkBg
+.preheader
+	background: $black
+	padding: 6px 1.85%
+	+flexa
+	justify-content: space-between
+	&__info
+		+flexa
+	&__item
+		+flexa
+		margin-right: 26px
+		&:last-child
+			margin-right: 0px
+	&__img
+		width: 13px
+		margin-right: 8px
+		fill: #fff
+	&__text
+		font-size: 12px
+		font-weight: 400
+		font-family: 'Poppins', sans-serif
+	&__languge
+		+flexa
+.lang__img
+	width: 24px
+	height: 26px
+	margin-right: 4px
+	display: flex
+.lang__title
+	font-weight: 400
+	font-size: 12px
+.mainheader
+	+flexa
+	justify-content: space-between
+	padding-right: 0.9%
+	&__input
+		max-width: 71%
+		width: 100%
+		height: 38px
+		color: $gray
+		position: relative
+		transition: .5s
+		input
+			width: 100%
+			height: 100%
+			border-radius: 4px
+			padding-left: 18px
+			transition: .3s
+			border: 1px solid transparent
+			&::placeholder
+				opacity: 0.5
+			&:hover
+				border: 1px solid $black
+	&__links
+		+flexa
+		text-transform: uppercase
+		color: $white
+		.links__item
+			+flexa
+			position: relative
+			
+		.links__img
+			margin-right: 10px
+		.links__item
+			margin-right: 28px
+			
+			&:last-child
+				margin-right: 0px
+.icon
+	width: 16px
+	height: 21px
+	display: none
+.logIn
+	text-transform: uppercase
+.search
+	background: none
+	width: 20px
+	height: 20px
+	position: absolute
+	top: 10px
+	right: 9px
+.clodesearch
+	display: none
+.clodesearch-active
+	width: 12px
+	height: 12px
+	background: transparent 
+	position: absolute
+	top: 8px
+	right: 17px
+	display: block
+.header__input-item-active
+	max-width: 90% !important
+	input
+		border-color: $red !important
+.mainheader-active
+	padding: 16px 0
+	justify-content: center
+.search-active
+	right: -40px
+	background: $red
+	width: 47px
+	height: 38px
+	+flexa
+	justify-content: center
+	top: 0
+	border-radius: 0px 1px 1px 0px
+	img
+		width: 20px
+		height: 20px
+.logo
+	width: 190px
+	height: 71px
+.underheader
+	text-transform: uppercase
+	background: rgba(255, 255, 255, 0.1)
+	padding-left: 1%
+	.tovarlist
+		+flexa
+	.tovarlist__title
+		font-weight: 400
+	.befn
+		&::before
+			content: none
+	li
+		padding: 15px 
+		padding-right: 31px
+		letter-spacing: 0.04em
+	.befy
+		position: relative
+		transition: .5s
+		cursor: pointer
+		&:hover
+			background: $white
+			color: $black
+		&::before
+			content: url("../img/icons/arr_down.svg")
+			width: 8px
+			height: 4px
+			position: absolute
+			right: 15px
+			top: 10px
+.input-mobile, .mobile
+	display: none
+@media screen and (max-width: $SmallDesktop)
+	.mainheader__input
+		max-width: 59.44%
+	.mainheader
+		padding-right: 2.2%
+	.preheader
+		padding: 6px 2.45%
+@media screen and (max-width: $TabletContainer)
+	.mainheader
+		padding-right: 2.9%
+	.mainheader__input
+		max-width: 52.82%
+@media screen and (max-width: $SmallTablte)
+	.mainheader__input 
+		max-width: 29.5%
+@media screen and (max-width: $MobileContainer)
+	.icon
+		display: block !important
+	.links__img
+		+flexa
+		justify-content: center
+	.logIn, .underline, .mainheader__input, .underheader
+		display: none
+	.input-mobile
+		display: block
+		max-width: 100%
+		input
+			border-radius: 0
+			height: 48px
+		.search
+			top: 14px
+	.mobile
+		display: flex
+		justify-content: space-between
+	.burger
+		width: 48px
+		height: 48px
+		+flexa
+		justify-content: center
+		img
+			width: 16px
+			height: 14px

@@ -1,0 +1,155 @@
+.popular
+	margin-top: 60px
+	padding-top: 72px
+	padding-bottom: 60px
+	.slick-slider
+		margin-left: -67px
+	.slick-list
+		&::before, &::after
+			content: ""
+			height: 100%
+			width: 55px
+			
+			position: absolute
+			top: 0
+			z-index: 20
+		&::before
+			left: 0
+			background: $bg-active
+		&::after
+			right: -5px
+			background: rgba(241, 241, 242, 0.7)
+			
+	.slick-prev
+		display: none !important
+	.slick-next
+		background: rgba(230, 230, 231, 0.5)
+		width: 40px
+		height: 40px
+		border-radius: 40px
+		background-image: url("../img/icons/arr__right.svg")
+		+bg
+		background-size: 5px 8px
+		font-size: 0px
+		bac
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 0
+.popular__container
+	max-width: $SmallDesktop
+	margin: 0 auto
+	width: 100%
+.popular__item
+	border: 1px solid $bgSemi
+	border-radius: 4px
+	position: relative
+	background: $white
+	margin: 0px 13px
+.populat__img
+	width: 100%
+	height: 209px
+	+flexa
+	justify-content: center
+	img
+		max-height: 100%
+		width: auto
+.popular__text
+	padding: 8px
+	padding-top: 0
+.popular__subtitle
+	+flexa
+	text-transform: uppercase
+	&-item
+		color: $gray
+		letter-spacing: 0.02em
+		&:first-child
+			color: $whiteGray
+			margin-right: 8px
+.popular__title
+	font-family: 'Poppins', sans-serif
+	font-size: 16px
+	font-weight: 400
+	margin-bottom: 9px
+.availible__block
+	+flexa
+	margin-bottom: 4px
+.avalible__event
+	width: 8px
+	height: 8px
+	border-radius: 100%
+	margin-right: 4px
+.true
+	background: $green
+.false
+	background: $red
+.avalible__title
+	font-family: 'Poppins', sans-serif
+	font-size: 12px
+	font-weight: 400
+.price__block
+	+flexa
+.old__price, .new__price
+	font-weight: 400
+	font-size: 18px
+.popular__slider
+	margin-top: 73px
+.old__price
+	color: $whiteGray
+	position: relative
+	margin-right: 8px
+	&::before
+		content: ""
+		width: 100%
+		height: 1px
+		background: $whiteGray
+		position: absolute
+		top: 50%
+		transform: translateY(50%)
+		left: 0
+.new__price
+	color: $red
+.addToCart
+	background: $bgSemi
+	border-radius: 4px
+	width: 100%
+	padding: 12px 0
+	margin-top: 12px
+	+flexa
+	justify-content: center
+	img
+		width: 16px
+		height: 16px
+		margin-right: 8px
+.skidka, .popular__add
+	position: absolute
+	left: 0
+	text-transform: uppercase
+	padding: 0px 4px
+	font-size: 18px
+	font-weight: 400
+	color: $white
+.skidka
+	background: $red
+	top: 16px
+.popular__add
+	top: 45px
+	background: $darkBg
+	letter-spacing: 0.02em
+@media screen and (max-width: $SmallDesktop)
+	.popular
+		padding-bottom: 71px
+@media screen and (max-width: $TabletContainer)
+	.popular__container
+		max-width: 1176px
+@media screen and (max-width: $SmallTablte)
+	.popular
+		padding-top: 81px
+	.popular__container
+		width: 91%
+	.popular__add, .skidka
+		font-size: 14px
+	.popular__slider
+		margin-top: 39px
+	
+		

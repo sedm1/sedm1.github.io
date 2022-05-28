@@ -31,17 +31,21 @@
                         <a class="preheader__text">FAQ</a>
                     </div>
                 </div>
-                <div class="preheader__languge"></div>
+                <div class="preheader__languge">
+                    <div class="lang__img"><img src="img/icons/GB.svg"></div>
+                    <div class="lang__title">EN / lei</div>
+                </div>
         </div>
         <div class="mainheader">
                 <div class="logo"><img src="img/logo.svg" alt="Logo"></div>
-                <div class="mainheader__input">
-                    <input type="text" placeholder="Search for part number, description, brand, model..." class="header__input-item">
+                <div class="mainheader__input" id="mainheader__input_open">
+                    <input type="text" placeholder="Search for part number, description, brand, model..." class="header__input-item" id="no_mobile-input">
                     <button class="search"><img src="img/icons/Search.svg" alt="Search"></button>
                     <button class="clodesearch"><img src="img/icons/Crest.svg" alt="crest"></button>
                 </div>
                 <div class="mainheader__links">
                     <div class="links__item">
+                        <button class="logIn icon"><img src="img/icons/person.svg" alt="person"></button>
                         <button class="logIn">log in</button>
                         
                         <div class="login__form">
@@ -61,15 +65,23 @@
                             <center><a class="forgot">Forgot password?</a></center>
                         </div>
                     </div>
-                    <div class="links__item lists">
+                    <button class="links__item lists">
                         <div class="links__img"><img src="img/icons/like.svg" alt="like"></div>
                         <a href="#" class="logIn">lists</a>
-                    </div>
-                    <div class="links__item">
+                    </button>
+                    <button class="links__item">
                         <div class="links__img"><img src="img/icons/cart_sett.svg" alt="cart"></div>
                         <a href="#" class="logIn">Cart (10)</a>
-                    </div>
+                    </button>
                 </div>
+        </div>
+        <div class="mobile">
+            <div class="mainheader__input input-mobile">
+                <input type="text" placeholder="Search..." class="header__input-item">
+                <button class="search"><img src="img/icons/Search.svg" alt="Search"></button>
+                <button class="clodesearch"><img src="img/icons/Crest.svg" alt="crest"></button>
+            </div>
+            <button class="burger"><img src="img/icons/burger.svg" alt="burger"></button>
         </div>
         <div class="underheader">
             <div class="tovarlist">
@@ -84,74 +96,76 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="mainScreen Sectionbg">
-            <div class="container">
-                <div class="main__slider">
-                    <div class="slick-slide" id="slide-1">
-                        <div class="rect">
-                            <h2 class="slide__title">Harvesting Promo</h2>
-                            <p class="slide__descript">Harvesting promotions are now live. Up <span> to —50% off</span> from selected parts</p>
-                            <button class="slider__button">Discover now</button>
+    <main>  
+        <section class="flex">
+            <section class="mainScreen Sectionbg">
+                <div class="container">
+                    <div class="main__slider">
+                        <div class="slick-slide slide-1">
+                            <div class="rect">
+                                <h2 class="slide__title">Harvesting Promo</h2>
+                                <p class="slide__descript">Harvesting promotions are now live. Up <span> to —50% off</span> from selected parts</p>
+                                <button class="slider__button">Discover now</button>
+                            </div>
+                        </div>
+                        <div class="slick-slide slide-2">
+                            <div class="rect">
+                                <h2 class="slide__title">Harvesting Promo</h2>
+                                <p class="slide__descript">Harvesting promotions are now live. Up <span> to —50% off</span> from selected parts</p>
+                                <button class="slider__button">Discover now</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="slick-slide" id="slide-2">
-                        <div class="rect">
-                            <h2 class="slide__title">Harvesting Promo</h2>
-                            <p class="slide__descript">Harvesting promotions are now live. Up <span> to —50% off</span> from selected parts</p>
-                            <button class="slider__button">Discover now</button>
+                    <div class="main__news">
+                        <div class="news__item" >
+                            <div class="news__bg" id="news-1">
+                                <div class="news__text">
+                                    <h5 class="news__title">Maintenance Parts</h5>
+                                    <p class="news__descirpt">Need an oil change? <br/>Get your filters here!</p>
+                                </div>
+                            </div>
+                            <a href="#" class="news__link"><img src="img/icons/big_arrow-left-white.svg" alt="arr"></a>
+                        </div>
+                        <div class="news__item" >
+                            <div class="news__bg" id="news-2">
+                                <div class="news__text">
+                                    <h5 class="news__title">Wear & Tear</h5>
+                                    <p class="news__descirpt">Some parts just are <br/> meant to be replaced</p>
+                                </div>
+                            </div>
+                            <a href="#" class="news__link"><img src="img/icons/big_arrow-left-white.svg" alt="arr"></a>
+                        </div>
+                        <div class="news__item" >
+                            <div class="news__bg" id="news-3">
+                                <div class="news__text">
+                                    <h5 class="news__title">Tools & accessories</h5>
+                                    <p class="news__descirpt">Find the perfect<br/> wrench for the job</p>
+                                </div>
+                            </div>
+                            <a href="#" class="news__link"><img src="img/icons/big_arrow-left-white.svg" alt="arr"></a>
                         </div>
                     </div>
                 </div>
-                <div class="main__news">
-                    <div class="news__item" >
-                        <div class="news__bg" id="news-1">
-                            <div class="news__text">
-                                <h5 class="news__title">Maintenance Parts</h5>
-                                <p class="news__descirpt">Need an oil change? <br/>Get your filters here!</p>
-                            </div>
-                        </div>
-                        <a href="#" class="news__link"><img src="img/icons/big_arrow-left.svg" alt="arr"></a>
-                    </div>
-                    <div class="news__item" >
-                        <div class="news__bg" id="news-2">
-                            <div class="news__text">
-                                <h5 class="news__title">Wear & Tear</h5>
-                                <p class="news__descirpt">Some parts just are <br/> meant to be replaced</p>
-                            </div>
-                        </div>
-                        <a href="#" class="news__link"><img src="img/icons/big_arrow-left.svg" alt="arr"></a>
-                    </div>
-                    <div class="news__item" >
-                        <div class="news__bg" id="news-3">
-                            <div class="news__text">
-                                <h5 class="news__title">Tools & accessories</h5>
-                                <p class="news__descirpt">Find the perfect<br/> wrench for the job</p>
-                            </div>
-                        </div>
-                        <a href="#" class="news__link"><img src="img/icons/big_arrow-left.svg" alt="arr"></a>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        <section class="brands Sectionbg">
-            <h5 class="brands__title">We have no. 1 brands in agricultural and construction technology</h5>
-            <div class="brands__slider">
-                <div class="brands__item"><img src="img/brands/brand-1.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-2.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-3.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-4.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-5.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-6.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-7.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-8.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-9.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-10.png" alt="brand"></div>
-                <div class="brands__item"><img src="img/brands/brand-5.png" alt="brand"></div>
                 
-            </div>
-            <center><a href="#" class="brand__link">View all brands</a></center>
+            </section>
+            <section class="brands Sectionbg">
+                <h5 class="brands__title">We have no. 1 brands in agricultural and construction technology</h5>
+                <div class="brands__slider">
+                    <div class="brands__item"><img src="img/brands/brand-1.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-2.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-3.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-4.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-5.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-6.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-7.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-8.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-9.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-10.png" alt="brand"></div>
+                    <div class="brands__item"><img src="img/brands/brand-5.png" alt="brand"></div>
+                    
+                </div>
+                <center><a href="#" class="brand__link">View all brands</a></center>
+            </section>
         </section>
         <section class="categorie">
             <div class="container">
@@ -194,21 +208,179 @@
                         <a href="#" class="categories-title">Brakes</a>
                     </div>
                 </div>
+                <button id="loadMore">VIEW ALL CATEGORIES</button>
                 <div class="banner">
                     <div class="banner__logo"><img src="img/logo_2.svg" alt="logo2"></div>
                     <div class="banner__text">
                         <h5 class="banner__title">CNH Industrial Catalogue</h5>
                         <p class="banner__descript">Didn’t find what you were looking for? Try searching from <br/>Case IH Parts lookup</p>
                     </div>
+                    <a href="#" class="banner__link"><img src="img/icons/big_arrow-left-white.svg" alt="arr"></a>
+                </div>
+            </div>
+        </section>
+        <section class="popular Sectionbg">
+            <div class="popular__container">
+                <h2>POPULAR PRODUCTS</h2>
+                <div class="popular__slider">
+                    <div class="popular__item" >
+                        <div class="populat__img"><img src="img/categorie/categorie-1.png" alt="img"></div>
+                        <div class="popular__text">
+                            <div class="popular__subtitle">
+                                <div class="popular__subtitle-item">Fleetguard</div>
+                                <div class="popular__subtitle-item">LF793</div>
+                            </div>
+                            <h5 class="popular__title">Spin-On Oil Filter</h5>
+                            <div class="availible__block">
+                                <div class="avalible__event true"></div>
+                                <div class="avalible__title">Available in stock</div>
+                            </div>
+                            <div class="price__block">
+                                <div class="old__price">64.31 lei</div>
+                                <div class="new__price">48.87 lei</div>
+                                <!--<div class="price">1,528.74 lei</div>-->
+                            </div>
+                            <button class="addToCart"><img src="img/icons/cart.svg" alt="cart"> Add to cart</button>
+                        </div>
+                        <div class="skidka">-24%</div>
+                        <div class="popular__add">Easter Special deal</div>
+                    </div>
+                    <div class="popular__item" >
+                        <div class="populat__img"><img src="img/categorie/categorie-2.png" alt="img"></div>
+                        <div class="popular__text">
+                            <div class="popular__subtitle">
+                                <div class="popular__subtitle-item">Fleetguard</div>
+                                <div class="popular__subtitle-item">LF793</div>
+                            </div>
+                            <h5 class="popular__title">Spin-On Oil Filter</h5>
+                            <div class="availible__block">
+                                <div class="avalible__event true"></div>
+                                <div class="avalible__title">Available in stock</div>
+                            </div>
+                            <div class="price__block">
+                                <div class="old__price">64.31 lei</div>
+                                <div class="new__price">48.87 lei</div>
+                                <!--<div class="price">1,528.74 lei</div>-->
+                            </div>
+                            <button class="addToCart"><img src="img/icons/cart.svg" alt="cart"> Add to cart</button>
+                        </div>
+                        <div class="skidka">-12%</div>
+                    </div>
+                    <div class="popular__item" >
+                        <div class="populat__img"><img src="img/categorie/categorie-5.png" alt="img"></div>
+                        <div class="popular__text">
+                            <div class="popular__subtitle">
+                                <div class="popular__subtitle-item">Fleetguard</div>
+                                <div class="popular__subtitle-item">LF793</div>
+                            </div>
+                            <h5 class="popular__title">Spin-On Oil Filter</h5>
+                            <div class="availible__block">
+                                <div class="avalible__event true"></div>
+                                <div class="avalible__title">Available in stock</div>
+                            </div>
+                            <div class="price__block">
+                                <div class="old__price">64.31 lei</div>
+                                <div class="new__price">48.87 lei</div>
+                                <!--<div class="price">1,528.74 lei</div>-->
+                            </div>
+                            <button class="addToCart"><img src="img/icons/cart.svg" alt="cart"> Add to cart</button>
+                        </div>
+                        <div class="popular__add">Easter Special deal</div>
+                    </div>
+                    <div class="popular__item" >
+                        <div class="populat__img"><img src="img/categorie/categorie-7.png" alt="img"></div>
+                        <div class="popular__text">
+                            <div class="popular__subtitle">
+                                <div class="popular__subtitle-item">Fleetguard</div>
+                                <div class="popular__subtitle-item">LF793</div>
+                            </div>
+                            <h5 class="popular__title">Spin-On Oil Filter</h5>
+                            <div class="availible__block">
+                                <div class="avalible__event true"></div>
+                                <div class="avalible__title">Available in stock</div>
+                            </div>
+                            <div class="price__block">
+                                <div class="old__price">64.31 lei</div>
+                                <div class="new__price">48.87 lei</div>
+                                <!--<div class="price">1,528.74 lei</div>-->
+                            </div>
+                            <button class="addToCart"><img src="img/icons/cart.svg" alt="cart"> Add to cart</button>
+                        </div>
+                        <div class="skidka">-24%</div>
+                    </div>
+                    <div class="popular__item" >
+                        <div class="populat__img"><img src="img/categorie/categorie-8.png" alt="img"></div>
+                        <div class="popular__text">
+                            <div class="popular__subtitle">
+                                <div class="popular__subtitle-item">Fleetguard</div>
+                                <div class="popular__subtitle-item">LF793</div>
+                            </div>
+                            <h5 class="popular__title">Spin-On Oil Filter</h5>
+                            <div class="availible__block">
+                                <div class="avalible__event true"></div>
+                                <div class="avalible__title">Available in stock</div>
+                            </div>
+                            <div class="price__block">
+                                <div class="old__price">64.31 lei</div>
+                                <div class="new__price">48.87 lei</div>
+                                <!--<div class="price">1,528.74 lei</div>-->
+                            </div>
+                            <button class="addToCart"><img src="img/icons/cart.svg" alt="cart"> Add to cart</button>
+                        </div>
+                        <div class="skidka">-24%</div>
+                    </div>
+                    <div class="popular__item" >
+                        <div class="populat__img"><img src="img/categorie/categorie-1.png" alt="img"></div>
+                        <div class="popular__text">
+                            <div class="popular__subtitle">
+                                <div class="popular__subtitle-item">Fleetguard</div>
+                                <div class="popular__subtitle-item">LF793</div>
+                            </div>
+                            <h5 class="popular__title">Spin-On Oil Filter</h5>
+                            <div class="availible__block">
+                                <div class="avalible__event true"></div>
+                                <div class="avalible__title">Available in stock</div>
+                            </div>
+                            <div class="price__block">
+                                <div class="old__price">64.31 lei</div>
+                                <div class="new__price">48.87 lei</div>
+                                <!--<div class="price">1,528.74 lei</div>-->
+                            </div>
+                            <button class="addToCart"><img src="img/icons/cart.svg" alt="cart"> Add to cart</button>
+                        </div>
+                        <div class="skidka">-24%</div>
+                        <div class="popular__add">Easter Special deal</div>
+                    </div>
+                    <div class="popular__item" >
+                        <div class="populat__img"><img src="img/categorie/categorie-1.png" alt="img"></div>
+                        <div class="popular__text">
+                            <div class="popular__subtitle">
+                                <div class="popular__subtitle-item">Fleetguard</div>
+                                <div class="popular__subtitle-item">LF793</div>
+                            </div>
+                            <h5 class="popular__title">Spin-On Oil Filter</h5>
+                            <div class="availible__block">
+                                <div class="avalible__event true"></div>
+                                <div class="avalible__title">Available in stock</div>
+                            </div>
+                            <div class="price__block">
+                                <div class="old__price">64.31 lei</div>
+                                <div class="new__price">48.87 lei</div>
+                                <!--<div class="price">1,528.74 lei</div>-->
+                            </div>
+                            <button class="addToCart"><img src="img/icons/cart.svg" alt="cart"> Add to cart</button>
+                        </div>
+                        <div class="skidka">-24%</div>
+                        <div class="popular__add">Easter Special deal</div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="about">
             <div class="about__banner"></div>
-            <div class="about__rect">
-                <h3 class="about__title">Establishing the direction in agricultural and construction technology</h3>
-            </div>
+            <div class="about__rect"></div>
             <div class="container">
+                <h3 class="about__title">Establishing the direction in agricultural and construction technology</h3>
                 <p class="about__text">With nearly 40 years of experience, the Titan Machinery Inc. group from the United States of America owns and manages a worldwide equipment and services distribution network in the agricultural and construction industries. Titan Machinery is the largest distributor of agricultural and construction machinery in the U.S. and one of the largest importers and distributors of such equipment worldwide. Titan Machinery's main partner is CNH Industrial, which includes famous brands amongst which Case IH, Case Construction, Iveco, New Holland Agriculture and New Holland Construction. Titan Machinery is also the world's largest distributor of CNH Industrial products.</p>
                 <div class="advantages">
                     <div class="advantages__item">
@@ -227,7 +399,7 @@
                     </div>
                     <div class="advantages__item">
                         <div class="adv__header">
-                            <div class="adv__icon"><img src="img/icons/person.svg" alt="adv"></div>
+                            <div class="adv__icon"><img src="img/icons/call.svg" alt="adv"></div>
                             <h4 class="advantages__title">THE BEST CUSTOMER SUPPORT</h4>
                         </div>
                         <div class="adva__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
@@ -292,6 +464,7 @@
             </div>
         </div>
     </footer>
+    <a href="#" class="wt"><img src="img/icons/whatsapp-svgrepo-com 1.svg" alt="wt"></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>

@@ -1,0 +1,60 @@
+footer
+	padding-top: 78px
+	padding-bottom: 40px
+	.container
+		display: flex
+.footer__menu
+	display: flex
+	margin-left: 64px
+	width: 75%
+	justify-content: space-around
+.footer__menu-item
+	margin-right: 0px
+	&:last-child
+		margin-right: 0px
+	ul
+		li
+			margin-bottom: 24px
+			font-family: 'Poppins', sans-serif
+			color: $gray
+			font-size: 16px
+			font-weight: 300
+.footer__menu__title
+	text-transform: uppercase    
+	color: $gray
+	margin-bottom: 32px
+	
+@media screen and (max-width: $TabletContainer)
+	.footer__menu
+		margin-left: 31px
+		width: 77%
+@media screen and (max-width: $SmallTablte)
+	footer
+		.container
+			width: 94%
+	.footer__menu
+		flex-wrap: wrap
+		margin-left: 21%
+		justify-content: flex-end
+	.footer__menu-item
+		margin-right: 0px
+		width: 38%
+	.footer__menu-item ul li
+		max-width: 150px
+@media screen and (max-width: $MobileContainer)
+	footer 
+		padding-top: 56px
+		.container
+			flex-direction: column
+	.footer__logo
+		width: 131px
+		margin-bottom: 41px
+	.footer__menu
+		flex-direction: column
+		justify-content: flex-start
+		margin-left: 0
+	.footer__menu-item
+		margin-top: 16px
+		width: 100%
+	.footer__menu__title
+		margin-bottom: 24px
