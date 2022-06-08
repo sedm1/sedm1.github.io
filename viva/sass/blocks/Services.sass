@@ -1,0 +1,90 @@
+.services__header
+    +flexa 
+    justify-content: space-between
+.input__block
+    width: 507px
+    height: 71px
+    position: relative
+    input
+        width: 100%
+        height: 100%
+        padding-left: 30px
+        padding-right: 60px
+        font-family: $GeometriaMedium
+        border: 2px solid $Yellow
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2)
+        border-radius: 15px
+        background: $ShineGray
+        &::placeholder
+            color: rgba(255, 255, 255, 0.4)
+    button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 30px
+        width: 28px
+        height: 28px
+.services__block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 25px
+.services__item
+    background: $ShineGray
+    border-radius: 20px
+    border: 1px solid $Yellow
+    padding: 30px
+    max-width: 397px
+    width: 100%
+    margin-top: 55px
+    height: 250px
+    overflow: hidden
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.services__title
+    font-family: $HeuristicaBold
+    letter-spacing: 0.05em
+    font-size: 24px
+#ser__small
+    font-size: 18px
+.services__link
+    opacity: 0.5
+    text-decoration: underline
+    font-family: $GeometriaRegular
+    font-size: 16px
+    position: relative
+    max-width: 90px
+    &::after
+        content: url("../img/icons/arr-right.svg")
+        position: absolute
+        top: 3px
+        right: -15px
+        width: 7px
+        height: 14px
+.services__img
+    position: absolute
+    right: -20px
+    bottom: 0px
+    max-width: 260px
+#small__ser-img
+    max-width: 200px
+@media screen and (max-width: $MainContainer)
+    .services__block
+        justify-content: space-around
+@media screen and (max-width: 910px)
+    .services__header
+        flex-direction: column
+        align-items: flex-start
+        .title__block
+            margin-bottom: 40px
+@media screen and (max-width: 600px)
+    .services__item
+        max-width: 100%
+        margin-top: 39px
+    .services__form, .input__block
+        width: 100%
+@media screen and (max-width: 360px)
+    .services__img
+        max-width: 200px

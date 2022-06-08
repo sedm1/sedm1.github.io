@@ -1,0 +1,103 @@
+.actions__block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 80px
+.action__item
+    max-width: 618px
+    width: 100%
+    border-radius: 20px
+.action__bg
+    border-radius: 20px
+    padding: 30px 0
+    padding-left: 30px
+    +flexa 
+    justify-content: space-between
+.action__left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    .services__link
+        color: $Black
+.action__bg-big
+    
+#action__item-1, #action__item-2
+    height: 250px
+#action__item-1
+    background: linear-gradient(279.29deg, #FFBB00 0%, #FEC62B 53.69%)
+#action__item-2
+    background: linear-gradient(42.66deg, #2C2C2C 47.67%, #8D2C2C 70.23%, #FF2C2C 91.87%)
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2)
+#action__bg-1, #action__bg-2
+    width: 100%
+    height: 100%
+    +bg(cover, center, center)
+#action__bg-1
+    background-image: url("../img/flag.png")
+    .action__title
+        color: $Black
+#action__bg-2
+    background-image: url("../img/col.png")
+    .action__title
+        color: $White
+.action__title
+    font-size: 24px
+    font-family: $HeuristicaBold
+    line-height: 30px
+.action__button
+    color: $White
+    background: linear-gradient(266.26deg, #FD1D1D 0%, #FF4343 71.17%)
+    border-radius: 50px
+    padding: 13px 35px
+    max-width: 180px
+    font-family: $MontserratAlternates
+    font-weight: 600
+    font-size: 16px
+.action__right
+    max-height: 208px
+    img
+        height: 208px
+.action__item-small
+    padding: 23px 30px
+    color: $White
+#action__item-3, #action__item-4
+    margin-top: 55px
+#action__item-3
+    background: $ShineGray
+    box-shadow: -1px -1px 2px rgba(78, 101, 114, 0.3), 1px 1px 2px rgba(52, 67, 76, 0.5), inset 10px -10px 20px rgba(52, 67, 76, 0.2), inset -10px 10px 20px rgba(52, 67, 76, 0.2), inset 10px 10px 20px rgba(78, 101, 114, 0.9), inset -10px -10px 25px rgba(52, 67, 76, 0.9)
+    border-radius: 20px
+#action__item-4
+    background: linear-gradient(270.74deg, #FF5A00 0%, #FF7C34 50.13%)
+    overflow: hidden
+    position: relative
+.skidka
+    position: absolute
+    right: 40px
+    bottom: -30px
+    color: rgba(255, 255, 255, 0.4)
+    font-family: $MontserratAlternates
+    font-weight: 700
+    font-size: 90px
+@media screen and ( max-width:  $MainContainer)
+    .actions__block
+        flex-direction: column
+        align-items: center
+    .action__item
+        max-width: 80%
+    #action__item-2, #action__item-3, #action__item-4
+        margin-top: 30px
+@media screen and ( max-width:  600px)
+    .action__item
+        max-width: 100%
+    .action__bg
+        padding: 18px 0
+        padding-left: 14px
+    #action__item-1, #action__item-2
+        height: 200px
+    .action__right 
+        img
+            height: 130px
+    .action__title
+        font-size: 20px
+    

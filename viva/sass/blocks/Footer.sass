@@ -1,0 +1,113 @@
+footer
+    background: $ShineGray
+    border: 7px solid $Yellow
+    border-radius: 100px 100px 0px 0px
+    padding-top: 80px
+    padding-bottom: 30px
+    border-bottom: 0px
+    border-right: 0px
+    border-left: 0px
+    .soz__block
+        margin-top: 0px
+        justify-content: flex-start
+        +flexa
+        .soz__item
+            width: 38px
+            height: 38px
+            display: block
+            margin-right: 35px
+            &:last-child
+                margin-right: 0px
+.footer__logo
+    max-width: 286px
+    max-height: 175px
+    display: block
+.footer__blocks
+    display: flex
+    justify-content: space-between
+    .section__title
+        margin-bottom: 15px
+    hr
+        width: 351px
+        height: 2px
+        background: $Yellow
+        margin-bottom: 21px
+    .footer__item
+        font-family: $Montserrat
+
+.footer__menu
+    +flexa 
+    flex-wrap: wrap
+    max-width: 300px
+    width: 100%
+    justify-content: space-between
+    li
+        text-transform: uppercase
+        margin-bottom: 40px
+        list-style: none
+        width: 48%
+        white-space: nowrap
+.adress
+    max-width: 347px
+.footer__number
+    margin: 30px 0
+    .footer__item
+        &:first-child
+            margin-bottom: 10px
+.work__time, .politik
+    font-family: $Montserrat
+    font-weight: 600
+.footer__info
+    margin-top: 63px
+.footer__down
+    margin-top: 41px
+    +flexa 
+    justify-content: space-between
+.footer__text
+    font-family: $Montserrat
+    font-size: 20px
+.prava
+    font-weight: 300
+.dev
+    margin-top: 10px
+    color: $Yellow
+.pays
+    +flexa 
+    .pay__item
+        width: 114px
+        margin-right: 40px
+        &:last-child
+            margin-right: 0px
+@media screen and (max-width: $MainContainer)
+    .footer__blocks, .footer__down
+        flex-direction: column
+        align-items: center
+        text-align: center
+    .footer__row
+        margin-bottom: 30px
+    .footer__menu
+        max-width: 350px
+    footer
+        .soz__block
+            justify-content:  center
+    .footer__info
+        text-align: center
+    .pays
+        margin-top: 30px
+@media screen and (max-width:600px)
+    .footer__blocks, .footer__down, .footer__info
+        text-align: left
+        align-items: flex-start
+    .footer__blocks 
+        hr
+            width: 100%
+    .footer__menu 
+        max-width: 300px
+    footer
+        .soz__block
+            justify-content: flex-start
+    .pays 
+        justify-content: space-between
+        .pay__item
+            width: 30%
+            margin-right: 0px

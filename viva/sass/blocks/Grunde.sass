@@ -1,0 +1,96 @@
+.section__title-second
+    font-family: $GeometriaBold
+    font-size: 18px
+    margin-top: 41px
+.grunde
+    background: url("../img/bg__line.png")
+    +bg(cover, 50%, 58%)
+    padding-bottom: 190px
+    margin-bottom: 0px
+    .title__block
+        align-items: flex-start
+        .title__line
+            margin-top: 15px
+.grunde__block
+    margin-top: 90px
+    display: flex
+    justify-content: space-between
+.grunde__img
+    width: 618px
+    height: 450px
+    border: 2px solid $Yellow
+    border-radius: 20px
+    margin-top: 25px
+    img
+        width: 100%
+        height: 100%
+        border-radius: 20px
+.grunde__item
+    display: flex
+    margin-bottom: 40px
+    .item__num
+        color: $Yellow
+        font-size: 42px
+        font-family: $MontserratAlternates
+        font-weight: 600
+        margin-right: 30px
+    .item__title
+        max-width: 563px
+        font-family: $GeometriaRegular
+        line-height: 30px
+.grunde__button
+    box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
+    border-radius: 100px
+    padding: 13px 0
+    display: flex
+    justify-content: center
+    background: $Yellow
+    color: $Black
+    margin-top: 71px
+    max-width: 247px
+    margin-left: 55px
+.grunde__banner
+    margin-top: 80px
+    padding: 30px
+    background: $ShineGray
+    max-width: 618px
+    width: 100%
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2)
+    border-radius: 30px
+    span
+        color: $Yellow
+@media screen and ( max-width:  $MainContainer)
+    .grunde__block
+        flex-direction: column
+        align-items: center
+    .section__title-second
+        margin-top: 20px
+    .grunde__block, .grunde__banner, .grunde__text
+        margin-top: 30px
+    
+@media screen and ( max-width:  900px)
+    .grunde 
+        background: none
+        .title__block 
+            .title__line
+                display: none
+    .grunde__img
+        width: 100%
+        height: auto
+    .grunde__banner
+        font-size: 16px
+        margin: 0 auto
+        margin-top: 30px
+    .grunde__item 
+        .item__num
+            min-width: 24px
+        .item__title
+            font-size: 16px
+            line-height: normal
+@media screen and ( max-width:  600px)
+    .grunde__button
+        max-width: 100%
+        margin-left: 0px
+    .grunde__banner
+        padding: 15px
+    

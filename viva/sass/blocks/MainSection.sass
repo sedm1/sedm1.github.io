@@ -1,0 +1,102 @@
+.mainSlider
+    width: 100%
+    height: 697px
+    background: $Black
+    border-bottom: 3px solid $Yellow
+.main__slide
+    width: 100%
+    height: 100%
+    background-image: url("../img/main_bg.jpg")
+    +bg(1209px 100%, center, right)
+    padding-top: 157px
+.black__bg
+    width: 100%
+    height: 100%
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 32.1%, rgba(0, 0, 0, 0.658446) 47.94%, rgba(0, 0, 0, 0.459053) 49.48%, rgba(0, 0, 0, 0) 63.16%)
+.main__title
+    font-family: $HeuristicaBold
+    font-size: 42px
+    max-width: 655px
+    letter-spacing: 0.05em
+    margin-bottom: 62px
+.main__descript   
+    font-family: $GeometriaRegular
+    font-weight: 400
+    position: relative
+    max-width: 320px
+    padding: 25px 0
+    &::after
+        content: ""
+        position: absolute
+        left: -25px
+        top: 0
+        height: 100%
+        width: 3px
+        background: $Yellow
+.main__button
+    margin-top: 60px
+    background: $Yellow
+    color: $Black
+    padding: 15px 55px
+    box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
+    border-radius: 100px
+    font-weight: 600
+.slick-list, .slick-track
+    height: 100%
+.slick-arrow
+    position: absolute
+    z-index: 20
+    font-size: 0
+    width: 15px
+    height: 30px
+    bottom: 60px
+    +bg(cover, center, center)
+.slick-prev
+    background-image: url("../img/icons/slick-left.svg")
+    right: 145px
+.slick-next
+    background-image: url("../img/icons/slick-right.svg")
+    right: 100px
+.slick-dots
+    position: absolute
+    bottom: 76px
+    right: 190px
+    +flexa
+    li
+        font-size: 0
+        width: 60px
+        height: 2px
+        background: $White
+        margin-right: 20px
+        cursor: pointer
+        &:last-child
+            margin-right: 0px
+    .slick-active
+        background: $Yellow
+@media screen and ( max-width:  900px)
+    .black__bg
+        padding-left: 20px
+        padding-right: 20px
+@media screen and ( max-width:  600px)
+    .main__title
+        font-size: 7vw
+        margin-bottom: 30px
+    .main__descript
+        border-left: 3px solid $Yellow
+        padding-left: 10px
+        max-width: 100%
+        font-size: 16px
+        &::after
+            display: none
+    .main__slide
+        padding-top: 60px
+    .main__button
+        width: 100%
+    .mainSlider 
+        height: calc(100vh - 82px)
+    .slick-next
+        right: 20px
+    .slick-prev
+        right: 78px
+    .slick-dots
+        right: 123px
