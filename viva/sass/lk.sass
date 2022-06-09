@@ -1,0 +1,273 @@
+@import 'vars'
+@import 'colors'
+@import 'base'
+@import 'fonts'
+
+@import "blocks/Header"
+@import "blocks/PreLinks"
+.profile-block
+    .container
+        display: flex
+        justify-content: space-between
+.profile
+    max-width: 838px
+    width: 100%
+    position: relative
+    &::after
+        width: 100%
+        height: 73px
+        content: ""
+        background: linear-gradient(180deg, rgba(65, 84, 95, 0) 0%, $ShineGray 100%)
+        border-radius: 0px 0px 20px 20px
+        position: absolute
+        bottom: 0
+        left: 0
+.profile__date
+    background: $ShineGray
+    border: 1px solid $Yellow
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1)
+    padding: 25px
+    max-height: 451px
+    border-radius: 20px
+.profile__date-header
+    +flexa
+    justify-content: space-between
+.header__left
+    +flexa 
+    .profile__img-block
+        margin-right: 30px
+        position: relative
+        width: 100px
+        height: 100px
+        label
+            background: $Yellow
+            width: 30px
+            height: 30px
+            font-size: 33px
+            font-family: $Montserrat
+            font-weight: 300
+            border-radius: 30px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%) translateY(50%)
+            bottom: 0px
+            +flexa 
+            justify-content: center
+    .profile__img
+        background: #698696
+        border-radius: 20px
+        width: 100%
+        +flexa
+        justify-content: center
+        padding: 18px
+        height: 100%
+    #file
+        display: none
+.page__title
+    font-family: $HeuristicaRegular
+    font-size: 14px
+    text-transform: uppercase
+.profile__line
+    background: $Yellow
+    width: 2px
+    height: 20px
+    margin-top: 9px
+    margin-bottom: 13px
+.profile__name-item
+    font-family: $HeuristicaBold
+    font-size: 24px
+    text-transform: uppercase
+.redact-1
+    cursor: pointer
+.redact-2
+    background: $Yellow
+    box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
+    border-radius: 100px
+    font-weight: 600
+    padding: 11px 26px
+    font-size: 14px
+    color: $Black
+.profile__redict
+    margin-top: 54px
+.redict__item
+    +flexa 
+    justify-content: space-between
+    margin-bottom: 49px
+    &:last-child
+        margin-bottom: 0px
+.redict__text
+    width: 206px
+.redict__descript
+    color: $Yellow
+    font-family: $GeometriaRegular
+    font-size: 14px
+.redict__arrow
+    width: 100px
+    height: 20px
+.redict__input
+    width: 336px
+    height: 50px
+    padding-left: 20px
+    font-size: 16px
+    color: $White
+    background: #5C707A
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+    border-radius: 15px
+    &::placeholder
+        color: rgba(255, 255, 255, 0.5)
+        font-size: 16px
+.service__book
+    background: $ShineGray
+    padding: 35px 30px
+    padding-right: 20px
+    border: 1px solid $Yellow
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1)
+    border-radius: 20px
+    max-height: 555px
+    overflow-y: scroll
+    margin-top: 50px
+    padding-right: 56px
+    border-bottom: 0px
+    &::-webkit-scrollbar 
+        width: 6px
+    &::-webkit-scrollbar-track 
+        background: transparent
+        border-radius: 30px
+    &::-webkit-scrollbar-thumb 
+        background-color: $Yellow
+        border-radius: 30px
+    &::-webkit-scrollbar-track-piece
+        margin: 25px 0
+        background: #5C707A
+        
+
+.book__header
+    +flexa 
+    justify-content: space-between
+.book__title
+    font-size: 32px
+    font-family: $HeuristicaRegular
+.book__btn
+    background: $Yellow
+    box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
+    border-radius: 100px
+    font-weight: 600
+    padding: 15px 23px
+    font-size: 16px
+    color: $Black
+.book__line
+    width: 2px
+    height: 70px
+    background: $Yellow
+    margin-top: 11px
+.book__items
+    margin-top: 21px
+.book__item
+    background: #5C707A
+    border-radius: 15px
+    +flexa 
+    justify-content: space-between
+    padding: 20px
+    margin-bottom: 30px
+    &:last-child
+        margin-bottom: 0px
+    .item__descript
+        color: $Yellow
+        font-size: 14px
+    .item__title
+        font-family: $HeuristicaBold
+        margin-top: 3px
+    .item__date
+        +flexa 
+.date__day
+    color: $Yellow
+    text-transform: uppercase
+    margin-right: 15px  
+    font-family: $MontserratAlternates
+    font-weight: 700
+.correct__date 
+    font-family: $MontserratAlternates
+    font-weight: 500
+.privileges__cart
+    background: $ShineGray
+    border: 1px solid $Yellow
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1)
+    border-radius: 20px
+    padding: 25px
+    max-height: 453px
+    padding-bottom: 30px
+    height: 100%
+.cart__img
+    width: 100%
+    height: auto
+    filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.2))
+    margin-bottom: 25px
+    img
+        border-radius: 20px
+.cart__title-block
+    +flexa 
+    justify-content: space-between
+    .cart__title
+        text-transform: uppercase
+        font-family: $HeuristicaBold
+        font-size: 20px
+    .cart__line
+        width: 193px
+        height: 2px
+        background: $Yellow
+.profile__privileges
+    max-width: 397px
+.privileges__block
+    margin: 20px 0px
+    +flexa 
+    justify-content: space-between
+    .item__title
+        font-family: $GeometriaBold
+        font-size: 28px
+        margin-bottom: 3px
+    .item__descript
+        font-size: 14px
+        font-family: $GeometriaRegular
+.privileges__link
+    color: $Yellow
+    font-size: 16px
+    font-family: $GeometriaRegular
+    float: right
+    text-decoration: underline
+@media screen and ( max-width:  $MainContainer)
+    .profile-block 
+        .container
+            flex-direction: column
+            align-items: center
+    .profile__privileges
+        margin-top: 30px
+@media screen and ( max-width: 650px)
+    .redict__arrow
+        display: none
+    .book__header, .redict__item, .header__left
+        flex-direction: column
+        align-items: flex-start
+    .book__btn
+        margin-top: 15px
+    .profile__date, .privileges__cart
+        max-height: none
+    .redict__input
+        margin-top: 20px
+        width: 100%
+    .service__book
+        padding: 19px 15px
+        padding-right: 15px
+    .profile__name
+        margin-top: 30px
+    .privileges__cart
+        padding-bottom: 40px
+    .book__item, .profile__date-header
+        flex-wrap: wrap
+    .redact-2
+        margin-top: 20px
+    .redict__item
+        margin-bottom: 25px
+    .redict__input
+        margin-top: 10px
+@import "blocks/Questions"
+@import "blocks/Footer"
