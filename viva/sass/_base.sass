@@ -20,6 +20,8 @@ input
 button
     font-family: $MontserratAlternates
     background: transparent
+    font-weight: 600
+    color: $Black
 img
     width: 100%
     height: auto
@@ -51,12 +53,20 @@ section
 hr
     border: 0 none
     outline: 0 none
-
+.vertical-line
+    width: 2px
+    height: 100px
+    background: $Yellow
+    margin: 20px 0px
 
 @media screen and ( max-width:  $MainContainer)
     .container
-        width: 98%
+        width: 96%
 @media screen and ( max-width:  600px)
+    section
+        margin-bottom: 100px
+    .container
+        width: 93%
     .title__line 
         width: 60px
     h2

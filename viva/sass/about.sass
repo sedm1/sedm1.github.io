@@ -5,8 +5,389 @@
 
 @import "blocks/Header"
 @import "blocks/PreLinks"
+.bg-line
+    +bg(250%, 65%, 49%)
+    background-image: url("../img/bg__line-2.svg")
+.MainScreen
+    background: linear-gradient(101.6deg, #41545F 38.67%, #2E424D 100%)
+    border-radius: 30px
+    padding: 96px 50px
+    display: flex
+    justify-content: space-between
+    position: relative
+    overflow: hidden
+    .section__title
+        letter-spacing: 0.03em
+        max-width: 788px
+    .setion__descript
+        font-family: $GeometriaRegular
+        max-width: 457px
+    .main__button
+        padding: 15px 55px
+        background: $Yellow
+        margin-top: 50px
+        box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
+        border-radius: 100px
+    .main__img
+        position: absolute
+        right: -20px
+        bottom: -53px
+        width: 600px
+.main__banner
+    background: linear-gradient(101.6deg, $ShineGray 38.67%, $Mainbg 100%)
+    border: 1px solid $Yellow
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2)
+    border-radius: 30px
+    margin-top: 80px
+    font-family: $GeometriaRegular
+    padding: 30px
+    width: 100%
+    line-height: 25px
+.art
+    .title__block
+        flex-direction: column
+        align-items: flex-start
+        max-width: 598px
+    .section__title
+        margin-top: 20px
+@import "blocks/Times"
+.art__block
+    margin-top: 40px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+.section__descript
+    font-family: $GeometriaBold
+    color: rgba(255, 255, 255, 0.6)
+.art__banners
+    max-width: 507px
+    width: 100%
+.art__img__block
+    position: relative
+    .art__img
+        border: 2px solid $Yellow
+        width: 100%
+        border-radius: 30px
+        img
+            border-radius: 30px
+            height: 100%
+    .small__art-img
+        position: absolute
+        right: 30px
+        top: -50%
+        transform: translateY(30px)
+        border: 2px solid $Yellow
+        border-radius: 30px
+        width: 270px
+        img
+            border-radius: 30px
+            height: 100%
+.times__row
+    max-width: 351px
+.times__item
+    margin-bottom: 0px
+    align-items: flex-start
+    height: 92px
+    .item__round
+        min-width: 15px
+        max-width: 15px
+.times__row
+    justify-content: space-between
+    &::before
+        height: 195px
+.art__footer
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-top: 20px
+    .footer__text
+        font-family: $GeometriaRegular
+        line-height: 25px
+        max-width: 728px
+        font-size: 18px
+    .art__banner
+        width: 507px
+        background: $Yellow
+        border-radius: 30px
+        .art__bg
+            +bg(cover, center, right)
+            background-image: url("../img/banner__auto.png")
+            width: 100%
+            height: 100%
+            padding: 20px 30px
+        &-title
+            color: $Black
+            font-family: $MontserratAlternates
+            font-weight: 600
+            max-width: 201px
+            margin-bottom: 40px
+            font-size: 24px
+        &-link
+            font-size: 16px
+            font-family: $GeometriaRegular
+            color: rgba(0, 0, 0, 0.7)
+            text-decoration: underline
+#video
+    width: 100%
+    height: 600px
+    position: relative
+    video
+        border-radius: 30px
+        width: 100%
+        height: 100%
+        display: block
+    video[poster]
+        object-fit: cover
+    #video-over 
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: 1
+        display: none
+    #video-play 
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+        width: 150px
+        height: 150px
+        cursor: pointer
+        z-index: 1000
+    .video__title
+        position: absolute
+        left: 40px
+        bottom: 40px
+        max-width: 581px
+        border-left: 3px solid $Yellow
+        padding-left: 30px
+        font-size: 37px
+        font-family: $HeuristicaBold
+        font-weight: 600
+        span
+            color: $Yellow       
+.video-is-playing 
+    #video-over 
+        display: block !important
+    #video-play 
+        opacity: 0 !important
+        visibility: hidden !important
+            
+.mark__title-block
+    +flexa 
+    justify-content: center
+    .mark-line
+        width: 100px
+        height: 3px
+        background: $Yellow
+        margin: 30px 0px
+    .section__title
+        max-width: 462px
+        line-height: 43px
+        text-align: center
+        letter-spacing: 0.02em
+.mark__slider
+    margin-top: 80px
+    .mark__item
+        height: 286px
+        background: $ShineGray
+        border: 1px solid $Yellow
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2)
+        border-radius: 30px
+        text-align: center
+        padding: 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin: 0 24px 
+        .mark__title
+            letter-spacing: -0.022em
+            font-family: $MontserratAlternates
+            font-weight: 600
+        .item__img
+            width: 100%
+            +flexa 
+            justify-content: center
+            height: 160px
 
+            img
+                width: auto
+                max-width: 100%
+                max-height: 160px
+    .slick-prev, .slick-next
+        position: absolute
+        bottom: -73px
+        font-size: 0px
+        +bg(100%, center, center)
+        width: 30px
+        height: 14px
+    .slick-prev
+        left: 0
+        background-image: url("../img/icons/mark-left.svg")
+    .slick-next
+        right: 0
+        background-image: url("../img/icons/mark-right.svg")
+.adv__header
+    +flexa 
+    justify-content: space-between
+    .adv__descript
+        font-family: $GeometriaRegular
+        line-height: 25px
+        max-width: 617px
+    .header__img
+        width: 590px
+        border: 2px solid $Yellow
+        filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2))
+        border-radius: 30px
+        img
+            border-radius: 30px
+.adv__main
+    margin-top: 80px
+    &-title
+        color: rgba(255, 255, 255, 0.6)
+        font-family: $GeometriaBold
+.adv__block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 51px
+.adv__item
+    max-width: 618px
+    width: 100%
+    margin-bottom: 85px
+    .item__number
+        color: $Yellow
+        font-size: 47px
+        margin-left: 20px
+        margin-bottom: -12px
+        font-family: $MontserratAlternates
+        font-weight: 600
 
+    .item__text
+        background: $ShineGray
+        border: 1px solid $Yellow
+        border-radius: 20px
+        padding: 30px
+        font-family: $GeometriaRegular
+        line-height: 25px
+.rerits__slider
+    margin-top: 61px
+    .slick-prev, .slick-next
+        position: absolute
+        top: -66px
+        font-size: 0px
+        +bg(100%, center, center)
+        width: 16px
+        height: 32px
+    .slick-prev
+        right: 46px
+        background-image: url("../img/icons/slick-left.svg")
+    .slick-next
+        right: 0
+        background-image: url("../img/icons/slick-right.svg")
+.rerits__item
+    background: $ShineGray
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2)
+    border-radius: 30px
+    padding: 30px 40px
+    padding-right: 50px
+    margin: 0 24px
+    .rerits__header
+        +flexa 
+    .rerits__img
+        width: 80px
+        height: 80px
+        border-radius: 100%
+        margin-right: 25px
+        img 
+            border-radius: 100%
+    .rerits__name
+        font-size: 24px
+        letter-spacing: 0.02em
+        font-family: $HeuristicaBold
+    .rerits__text
+        margin-top: 30px
+        font-family: $Montserrat
+        font-weight: 400
+        line-height: 25px
+@media screen and ( max-width: $MainContainer)
+    .bg-line
+        background: none
+    .MainScreen 
+        .main__img
+            width: 50%
+    .times__block, .art__block, .art__footer, .adv__header
+        flex-direction: column
+        align-items: flex-start
+    .art__banners
+        margin-top: 150px
+    .times__row
+        max-width: none
+    .art__footer 
+        .footer__text
+            margin: 20px 0px
+    .header__img
+        margin-top: 20px
+@media screen and (max-width: 900px)
+    .MainScreen 
+        flex-direction: column
+        align-items: flex-start
+        .main__img
+            position: static
+            width: 100%
+            margin-top: 30px
+@media screen and ( max-width:  600px)
+    .adv__header 
+        .header__img
+            width: 100%
+    #video 
+        height: 400px
+        #video-play
+            width: 71px
+            height: 71px
+        .video__title
+            font-size: 5vw
+            left: 20px
+            bottom: 20px
+            padding-left: 20px
+    .art__footer
+        .art__banner
+            width: 100%
+            .art__bg
+                padding: 15px 10px
+        .art__banner-title, .footer__text
+            font-size: 16px
+    .MainScreen
+        padding: 30px 15px
+        .section__title
+            font-size: 6vw
+        .setion__descript
+            font-size: 16px
+        .main__button
+            width: 100%
+    .main__banner, .section__descript, .adv__header .adv__descript, .adv__item .item__text
+        font-size: 16px
+    .mark__title-block 
+        flex-direction: column
+        .mark-line
+            transform: rotate(90deg)
+            margin-top: 65px
+            &:first-child
+                display: none
+        .section__title
+            max-width: 100%
+    .art__img__block 
+        .small__art-img
+            width: 200px
+    .adv__item
+        margin-bottom: 10px
+    .adv__block
+        margin-top: 20px
+    .rerits__item
+        margin: 0
+        padding: 20px 15px
+        padding-right: 15px
 @import "blocks/Questions"
 @import "blocks/BonusCard"
 @import "blocks/Cart"

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>О нас</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,17 +16,211 @@
 <body>
     <div id="includedHeader"></div>
     <main>
-        <section class="pre__link-block">
+        <div class="container">
+            <ul class="pre__links">
+                <li class="pre__links-item"><a href="/">Главная</a></li>
+                <div class="pre__links-line"></div>
+                <li class="pre__links-item"><a href="about.html">О компании</a></li>
+            </ul>
+        </div>
+        <div class="bg-line">
+            <section class="about__main">
+                <div class="container">
+                    <div class="MainScreen">
+                        <div class="main__text">
+                            <h2 class="section__title">Автосервис Viva Motors в Москве: профессионализм и доступность</h2>
+                            <div class="vertical-line"></div>
+                            <p class="setion__descript">Viva Motors Алтуфьево: профессиональный ремонт и обслуживание авто по низким ценам </p>
+                            <button class="main__button">Записаться</button>
+                        </div>
+                        <div class="main__img"><img src="img/abot_house.png" alt="House"></div>
+                    </div>
+                    <div class="main__banner">
+                        Автосервис может быть доступным и профессиональным, соответствовать общепризнанным мировым стандартам: в этом можно убедиться, сотрудничая с Viva Motors в Москве. Мы следим за качеством работ на всех этапах, используем только сертифицированное современное и проверенное оборудование, предоставляем широкий спектр услуг под любой запрос клиента, с легкостью решаем сложные технические задачи, не «задирая» при этом прайс «до небес».
+                    </div>
+                </div>
+            </section>
+            <section class="art">
+                <div class="container">
+                    <div class="title__block">
+                        <div class="vertical-line"></div>
+                        <h2 class="section__title">Виды работ в автосервисе на Алтуфьевском шоссе</h2>
+                    </div>
+                    <div class="art__block">
+                        <div class="art__text">
+                            <p class="section__descript">В Viva Motors вы можете оперативно и по разумной стоимости:</p>
+                            <div class="times__block">
+                                <div class="times__row">
+                                    <div class="times__item">
+                                        <div class="item__round"></div>
+                                        <div class="item__title">Заправить кондиционер</div>
+                                    </div>
+                                    <div class="times__item">
+                                        <div class="item__round"></div>
+                                        <div class="item__title">Пройти полное сервисное обслуживание</div>
+                                    </div>
+                                    <div class="times__item times__item-last">
+                                        <div class="item__round"></div>
+                                        <div class="item__title">Заменить масло</div>
+                                    </div>
+                                </div>
+                                <div class="times__row">
+                                    <div class="times__item">
+                                        <div class="item__round"></div>
+                                        <div class="item__title">Выполнить комплексную диагностику автомобиля</div>
+                                    </div>
+                                    <div class="times__item">
+                                        <div class="item__round"></div>
+                                        <div class="item__title">Заказать запчасти для легковых автомобилей, иномарок</div>
+                                    </div>
+                                    <div class="times__item times__item-last">
+                                        <div class="item__round"></div>
+                                        <div class="item__title">Осуществить частичный/капитальный ремонт стартеров, ходовой части, двигателя, форсунок, топливной системы и т.д.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="art__banners">
+                            <div class="art__img__block">
+                                <div class="art__img"><img src="img/abot__art.jpg" alt="art"></div>
+                                <img class="small__art-img" src="img/small__art.jpg" alt="smallArt">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art__footer">
+                        <div class="footer__text">Миссия автосервиса Viva Motors Абрамцевская — на собственном примере доказать, что диагностика, профессиональный ремонт, техническое обслуживание автомобиля могут быть качественным и доступным. </div>
+                        <div class="art__banner">
+                            <div class="art__bg">
+                                <h3 class="art__banner-title">Услуги нашего автосервиса</h3>
+                                <a href="#" class="art__banner-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="video__block">
             <div class="container">
-                <ul class="pre__links">
-                    <li class="pre__links-item"><a href="/">Главная</a></li>
-                    <div class="pre__links-line"></div>
-                    <li class="pre__links-item"><a href="about.html">О компании</a></li>
-                </ul>
+                <div id="video">
+                    <div class="video-control" id="video-play"><img src="img/icons/video.svg" alt="video"></div>
+					<div class="video-control" id="video-over"></div>
+                    <video id="myVideo" preload="auto" poster="img/poster.png">
+						<source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+						<source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm' />
+						<source id='ogv' src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg' />
+					</video>
+                    <h3 class="video__title">Немного о нашем  <br/>автосервисе в <span> видео формате</span></h3>
+                </div>
             </div>
         </section>
-        <section class="about__main">
-            <div class="container"></div>
+        <section class="mark">
+            <div class="container">
+                <div class="mark__title-block">
+                    <div class="mark-line"></div>
+                    <h2 class="section__title">Марки автомобилей с которыми мы работаем</h2>
+                    <div class="mark-line"></div>
+                </div>
+                <div class="mark__slider">
+                    <div class="mark__item">
+                        <div class="item__img"><img src="img/marks/romeo.png" alt="mark"></div>
+                        <div class="mark__title">Alfa Romeo</div>
+                    </div>
+                    <div class="mark__item">
+                        <div class="item__img"><img src="img/marks/acuro.png" alt="mark"></div>
+                        <div class="mark__title">Acura</div>
+                    </div>
+                    <div class="mark__item">
+                        <div class="item__img"><img src="img/marks/audi.png" alt="mark"></div>
+                        <div class="mark__title">Audi</div>
+                    </div>
+                    <div class="mark__item">
+                        <div class="item__img"><img src="img/marks/bmw.png" alt="mark"></div>
+                        <div class="mark__title">BMW</div>
+                    </div>
+                    <div class="mark__item">
+                        <div class="item__img"><img src="img/marks/dodge.png" alt="mark"></div>
+                        <div class="mark__title">Dodge</div>
+                    </div>
+                    <div class="mark__item">
+                        <div class="item__img"><img src="img/marks/izusu.png" alt="mark"></div>
+                        <div class="mark__title">Isuzu</div>
+                    </div>
+                    <div class="mark__item">
+                        <div class="item__img"><img src="img/marks/jeep.png" alt="mark"></div>
+                        <div class="mark__title">Jeep</div>
+                    </div>
+                    <div class="mark__item">
+                        <div class="item__img"><img src="img/marks/nissan.png" alt="mark"></div>
+                        <div class="mark__title">Nisan</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="adv">
+            <div class="container">
+                <div class="adv__header">
+                    <div class="header__text">
+                        <h2 class="section__title">Преимущества компании</h2>
+                        <div class="vertical-line"></div>
+                        <p class="adv__descript">Лучшие доказательства нашего профессионализма сотрудников автосервиса Бибирево в Москве — не только сертификаты качества, но и десятки положительных отзывов довольных заказчиков, которые вновь и вновь доверяют нам свои автомобили. За время работы Viva Motors неоднократно демонстрировал, что для результата одного технико-технологического оснащения недостаточно: необходимо слушать и слышать, грамотно выстраивать коммуникацию с клиентом. </p>
+                    </div>
+                    <div class="header__img"><img src="img/adv.jpg" alt="adv"></div>
+                </div>
+                <div class="adv__main">
+                    <div class="adv__main-title">Наш автосервис в Алтуфьево лучший, потому что:</div>
+                    <div class="adv__block">
+                        <div class="adv__item">
+                            <div class="item__number">1</div>
+                            <div class="item__text">Оперативный. Независимо от того какая услуга требуется клиенту автосервиса (Абрамцевская, 30), мы моментально обрабатываем запрос (оставить заявку можно онлайн или в телефонном режиме), находим проблему/причину поломки и предлагаем эффективный вариант (один или несколько) устранения. </div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">2</div>
+                            <div class="item__text">Современный. Мы проводим ремонтные работы с использованием новейших технологий, оборудования. Специалисты автосервиса метро Алтуфьево регулярно проходят обучение, повышают квалификацию, чтобы качество обслуживания в Viva Motors было еще лучше.</div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">3</div>
+                            <div class="item__text">Профессиональный. На СТО работают только компетентные специалисты, которые глубоко разбираются не только в своих, но и смежных нишах.</div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">4</div>
+                            <div class="item__text">Надежный и безопасный. Мы даем гарантию на все виды работ и следим за «целостью-сохранностью» автомобиля во время ремонта/поведения диагностики.</div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">5</div>
+                            <div class="item__text">Использует индивидуальный подход. Сотрудники автосервиса Алтуфьево в Москве всегда учитывают персональные пожелания клиента.</div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">6</div>
+                            <div class="item__text">Автосервис Viva Motors отвечает за качество обслуживания, добросовестность, честность, порядочность. Можете сами убедиться лично посетив нашу компанию.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <div class="questions__block">
+                    <div class="questions__text">
+                        <h1 class="questions__title">Остались вопросы или хотите <span> заказать услугу</span>?</h1>
+                        <hr class="questions__line">
+                        <p class="questions__descript">Свяжитесь с нашим оператором любым удобным для вас способом</p>
+                    </div>
+                    <div class="questions__buttons">
+                        <div class="questions__soz">
+                            <a href="#" class="questions__soz-item">
+                                <img src="img/soz/wt-1.png" alt="questionsImage">
+                            </a>
+                            <a href="#" class="questions__soz-item">
+                                <img src="img/soz/tg-1.png" alt="questionsImage">
+                            </a>
+                            <a href="#" class="questions__soz-item">
+                                <img src="img/soz/vb-1.png" alt="questionsImage">
+                            </a>
+                        </div>
+                        <button class="questions__button">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="bonus__card">
             <div class="container">
@@ -45,6 +239,37 @@
                     </div>
                 </div>
                 
+            </div>
+        </section>
+        <section class="rerits">
+            <div class="container">
+                <div class="title__block">
+                    <div class="title__line"></div>
+                    <h2 class="section__title">Отзывы о Нас </h2>
+                </div>
+                <div class="rerits__slider">
+                    <div class="rerits__item">
+                        <div class="rerits__header">
+                            <div class="rerits__img"><img src="img/rerites/rer-1.png" alt="rerits"></div>
+                            <div class="rerits__name">Иван Николаев</div>
+                        </div>
+                        <div class="rerits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis est ac justo varius, mattis tincidunt eros laoreet.</div>
+                    </div>
+                    <div class="rerits__item">
+                        <div class="rerits__header">
+                            <div class="rerits__img"><img src="img/rerites/rer-1.png" alt="rerits"></div>
+                            <div class="rerits__name">Иван Николаев</div>
+                        </div>
+                        <div class="rerits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis est ac justo varius, mattis tincidunt eros laoreet.</div>
+                    </div>
+                    <div class="rerits__item">
+                        <div class="rerits__header">
+                            <div class="rerits__img"><img src="img/rerites/rer-1.png" alt="rerits"></div>
+                            <div class="rerits__name">Иван Николаев</div>
+                        </div>
+                        <div class="rerits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis est ac justo varius, mattis tincidunt eros laoreet.</div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="cart">

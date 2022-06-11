@@ -29,6 +29,8 @@ input {
 button {
   font-family: "Montserrat Alternates";
   background: transparent;
+  font-weight: 600;
+  color: #000;
 }
 
 img {
@@ -91,12 +93,27 @@ hr {
   outline: 0 none;
 }
 
+.vertical-line {
+  width: 2px;
+  height: 100px;
+  background: #FFBB00;
+  margin: 20px 0px;
+}
+
 @media screen and (max-width: 1280px) {
   .container {
-    width: 98%;
+    width: 96%;
   }
 }
 @media screen and (max-width: 600px) {
+  section {
+    margin-bottom: 100px;
+  }
+
+  .container {
+    width: 93%;
+  }
+
   .title__line {
     width: 60px;
   }
@@ -909,8 +926,7 @@ footer .soz__block .soz__item:last-child {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.footer__text {
+.footer__down .footer__text {
   font-family: "Montserrat";
   font-size: 20px;
 }
