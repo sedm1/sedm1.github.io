@@ -188,6 +188,69 @@
         width: 100%
         img
             border-radius: 20px
+@media screen and (max-width: $MainContainer)
+    .error 
+        .container
+            flex-direction: column
+            align-items: center
+        .main__banner-item
+            max-width: 100%
+        .main__banner-img
+            margin-top: 40px
+            max-width: 60%
+    .zamen__item
+        flex-direction: column
+        align-items: center
+        margin-top: 40px
+        &:nth-child(3)
+            flex-direction: column-reverse
+        .zamen__text
+            max-width: 100%
+        .zamen__img
+            margin: 20px 0px
+            max-width: 60%
+@media screen and (max-width: 900px)
+    .mainScreen
+        margin-bottom: 0px 
+        .container
+            flex-direction: column
+            align-items: flex-start
+            .main__descript
+                margin: 40px 0px
+    .mainScreen__img
+        max-width: 100%
+        margin-top: 30px
+    .main
+        background: linear-gradient(311deg, #FFBB00 6.74%, rgba(46, 66, 77, 0) 30%)
+        padding-bottom: 10px
+    .main__banner-item, .error .main__banner-item
+        padding: 20px
+        font-size: 16px
+    .section__describe, .zamen__item .zamen__text .text__descript-item
+        font-size: 16px
+    .error .main__banner-img, .zamen__item .zamen__img
+        max-width: 100%
+    .adv__block .adv__item
+        max-width: 100%
+        margin: 20px 0px
+@media screen and (max-width: 600px)
+    .mainScreen 
+        .container 
+            .main__title
+                font-size: 5vw
+            .main__descript
+                font-size: 3vw
+            .main__button
+                width: 100%
+    .services__item
+        margin-top: 23px
+    .services__block
+        margin-top: 0px
+    .inheit .tovar__title
+        font-size: 5vw
+        margin-left: 0px
+    .vertical-line
+        display: none
 @import "blocks/Actions"
 @import "blocks/Questions"
 @import "blocks/Cart"
