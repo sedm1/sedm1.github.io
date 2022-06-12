@@ -917,6 +917,10 @@ header .container {
   }
 }
 @media screen and (max-width: 600px) {
+  .adv__block .adv__item {
+    height: auto;
+  }
+
   .mainScreen .container .main__title {
     font-size: 5vw;
   }
@@ -1586,5 +1590,6 @@ footer .soz__block .soz__item:last-child {
 @media screen and (max-width: 380px) {
   .footer__menu li {
     white-space: normal;
+    font-size: 13px;
   }
 }
