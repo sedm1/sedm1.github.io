@@ -1130,3 +1130,8 @@ footer .soz__block .soz__item:last-child {
     margin-right: 0px;
   }
 }
+@media screen and (max-width: 380px) {
+  .footer__menu li {
+    white-space: normal;
+  }
+}
