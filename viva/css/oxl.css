@@ -469,6 +469,12 @@ header .container {
     max-width: 200px;
   }
 }
+.services__block {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .services__item {
   height: 343px;
   max-width: 286px;
