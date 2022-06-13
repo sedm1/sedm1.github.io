@@ -10,6 +10,7 @@
 
 body {
   background: #2E424D;
+  position: relative;
 }
 
 a, button, input {
@@ -367,7 +368,7 @@ header .container {
 .adv__block .adv__item {
   max-width: 396px;
   width: 100%;
-  margin: 55px 15px;
+  margin: 25px 15px;
 }
 .adv__block .adv__item .item__text {
   background: #41545F;
@@ -670,6 +671,8 @@ header .container {
 }
 .action__left .services__link {
   color: #000;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 #action__item-1, #action__item-2 {
@@ -793,11 +796,6 @@ header .container {
 
   #action__item-2, #action__item-3, #action__item-4 {
     margin-top: 30px;
-  }
-
-  .services__link {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1059,6 +1057,34 @@ footer .soz__block .soz__item:last-child {
 }
 .pays .pay__item:last-child {
   margin-right: 0px;
+}
+
+.topRound {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #FFBB00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.topRound:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
+          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
+}
+.topRound img {
+  width: 30px;
 }
 
 @media screen and (max-width: 1280px) {

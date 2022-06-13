@@ -1476,6 +1476,34 @@ footer .soz__block .soz__item:last-child {
   margin-right: 0px;
 }
 
+.topRound {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #FFBB00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.topRound:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
+          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
+}
+.topRound img {
+  width: 30px;
+}
+
 @media screen and (max-width: 1280px) {
   .footer__blocks, .footer__down {
     -webkit-box-orient: vertical;

@@ -19,6 +19,7 @@ $(function(){
 		}
 	});
 })
+
 function FormClose(){
     $(".redact-2").hide()
     $(".profile__redict").hide()
