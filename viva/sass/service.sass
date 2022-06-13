@@ -1,0 +1,382 @@
+@import 'vars'
+@import 'colors'
+@import 'base'
+@import 'fonts'
+
+@import "blocks/Header"
+@import "blocks/PreLinks"
+@import "blocks/Services"
+.main__title
+    font-size: 48px
+    font-family: $HeuristicaBold
+    font-weight: 700
+    margin-top: 80px
+    margin-bottom: 40px
+    text-transform: uppercase
+    span
+        color: $Yellow
+.services
+    .section__title
+        font-family: $GeometriaRegular
+        margin-right: 20px
+.services__header
+    flex-direction: column
+    align-items: flex-start
+    form
+        margin-top: 43px
+        width: 100%
+        .input__block
+            width: 100%
+.mainBanner
+    .container  
+        padding: 40px
+        background: $ShineGray
+        border: 2px solid $Yellow
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2)
+        border-radius: 30px
+        font-family: $GeometriaRegular
+        line-height: 25px
+        span
+            color: $Yellow
+            font-family: $GeometriaBold
+.premain
+    .container
+        +flexa 
+        justify-content: space-between
+        .premain__descript
+            font-family: $GeometriaRegular
+            max-width: 587px
+            line-height: 25px
+.rem
+    +bg(150%, center, 70%)
+    background-image: url("../img/bg__line-3.svg")
+    .vertical-line
+        margin: 30px 0px
+        height: 184px
+    .rem__block
+        +flexa 
+        justify-content: space-between
+    .rem__text
+        padding: 30px
+        background: $ShineGray
+        border: 1px solid $Yellow
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2)
+        border-radius: 20px
+        line-height: 25px
+        font-family: $GeometriaRegular
+        max-width: 618px
+        margin-top: 40px
+    .rem__img
+        max-width: 397px
+        width: 100%
+    #rem__img-2
+        max-width: 547px
+.abu__item
+    +flexa 
+    justify-content: space-between
+.abu__img
+    max-width: 585px
+    width: 100%
+    img
+        border-radius: 20px
+.abu__text
+    max-width: 587px
+    width: 100%
+    .vertical-line
+        margin: 20px 0px
+.abu__descript
+    font-family: $GeometriaRegular
+    line-height: 25px
+@import "blocks/Times"
+.topl__descript
+    max-width: 618px
+    color: $Yellow
+    margin-top: 40px
+    font-family: $GeometriaBold
+    line-height: 25px
+.topl
+    .times__item
+        margin-bottom: 70px
+        .item__title
+            font-family: $GeometriaRegular
+    .times__row
+        &::before
+            height: 280px
+.topl__footer
+    +flexa 
+    justify-content: space-between
+    margin-top: 80px
+    .topl__text
+        padding: 30px
+        font-family: $GeometriaRegular
+        line-height: 25px
+        background: $ShineGray
+        border: 1px solid $Yellow
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2)
+        border-radius: 20px
+        max-width: 618px
+    .topl__img
+        max-width: 552px
+        border: 2px solid $Yellow
+        border-radius: 20px
+        height: 250px
+        img
+            max-width: 550px
+            width: 100%
+            border-radius: 20px
+            height: 248px
+.comp__item
+    +flexa 
+    justify-content: space-between
+.comp__img
+    max-width: 555px
+    width: 100%
+    img
+        border-radius: 20px
+.comp__text
+    max-width: 587px
+    width: 100%
+    .vertical-line
+        margin: 20px 0px
+.comp__descript
+    font-family: $GeometriaRegular
+    line-height: 25px
+.zapr
+    .title__block
+        margin-bottom: 113px
+    .zapr__descript
+        margin-bottom: 30px
+        font-family: $GeometriaRegular
+        line-height: 25px
+        max-width: 618px
+        span
+            color: $Yellow
+            font-family: $GeometriaBold
+.zapr__block
+    +flexa 
+    justify-content: space-between
+    .times__block
+        margin-top: 50px
+    .zapr__img
+        max-width: 587px
+        width: 100%
+        border-radius: 20px
+        border: 1px solid $Yellow
+        img
+            border-radius: 20px
+    .times__item 
+        .item__title
+            font-family: $GeometriaRegular
+            max-width: none
+    .times__row
+        &::before
+            height: 220px
+
+
+
+.razvl__block
+    +flexa 
+    justify-content: space-between
+    .topl__descript
+        margin-top: 40px
+    .times__block
+        margin-top: 50px
+    .razvl__img
+        max-width: 563px
+        width: 100%
+        img
+            border-radius: 20px
+    .times__item 
+        max-width: 530px
+        .item__title
+            font-family: $GeometriaRegular
+            max-width: none
+    .times__row
+        &::before
+            top: 17px
+            height: 220px
+.razvl__banner
+    background: $ShineGray
+    border: 1px solid $Yellow
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2)
+    border-radius: 20px
+    padding: 30px
+    font-family: $GeometriaRegular
+    line-height: 25px
+    max-width: 507px
+.shin
+    .container
+        +flexa 
+        justify-content: space-between
+    .shin__img
+        max-width: 583px
+        width: 100%
+        img
+            height: 390px
+    #times__row-2
+        margin-left: 45px
+        &::before
+            height: 115px
+    .times__row
+        &::before
+            height: 220px
+    .times__item 
+        .item__title
+            font-family: $GeometriaRegular
+.shin__descript
+    margin-top: 40px
+    color: rgba(255, 255, 255, 0.6)
+    font-family: $GeometriaBold
+@media screen and (max-width: $MainContainer)
+    .shin 
+        .times__block
+            flex-direction: column
+            align-items: flex-start
+        #times__row-2
+            margin-left: 0px
+        .container
+            flex-direction: column
+            align-items: flex-start
+    .razvl__block
+        flex-direction: column
+        align-items: flex-start
+        .times__item
+            max-width: 100%
+    .zapr 
+        .zapr__descript
+            max-width: none
+    .zapr__block
+        flex-direction: column
+        align-items: flex-start
+    .comp__item
+        flex-direction: column
+        align-items: flex-start
+    .comp__text
+        margin-top: 20px
+        max-width: 100%
+    .topl
+        .times__block
+            flex-direction: column
+            align-items: flex-start
+        .times__item 
+            .item__title
+                max-width: 100%
+    .topl__footer
+        flex-direction: column
+        align-items: flex-start
+        margin-top: 0px
+        .topl__img
+            margin-top: 30px
+            width: 100%
+            height: auto
+            img
+                max-width: 100%
+                width: auto
+                height: auto
+    .premain 
+        .container
+            flex-direction: column
+            align-items: flex-start
+            .premain__descript
+                font-size: 3vw
+                line-height: normal
+    .rem
+        background: none
+        .rem__block
+            flex-direction: column
+            align-items: flex-start
+        .rem__img
+            margin-top: 30px
+    .abu__item
+        flex-direction: column
+        align-items: flex-start
+    .abu__text
+        margin-top: 40px
+@media screen and (max-width: 600px)
+    .shin
+        .times__item 
+            .item__title
+                max-width: 100%
+        .shin__img 
+            img
+                height: auto
+    .shin__descript
+        font-size: 16px
+    .razvl__banner
+        padding: 20px
+        font-size: 16px
+    .razvl__block 
+        .topl__descript
+            font-size: 16px
+    .razvl
+        .title__line
+            display: none
+    .razvl__text
+        margin-top: 20px
+        .times__item 
+            .item__round
+                min-width: 15px
+                max-width: 15px
+    .zapr 
+        .title__block
+            margin-bottom: 40px
+        .title__line
+            display: none
+        .times__item 
+            .item__round
+                min-width: 15px
+                max-width: 15px
+        .zapr__descript
+            font-size: 16px
+    .comp__text 
+        .vertical-line
+            height: 80px
+    .comp__descript
+        font-size: 16px
+        line-height: normal
+    .topl
+        .title__line
+            display: none
+        .topl__descript
+            font-size: 16px
+            line-height: normal
+    .topl__footer 
+        .topl__text
+            font-size: 16px
+            padding: 20px
+    .abu__descript
+        font-size: 16px
+        line-height: normal
+    .abu__text 
+        .vertical-line
+            height: 80px
+    .mainBanner 
+        .container
+            padding: 20px
+            font-size: 16px
+    .main__title
+        font-size: 7vw
+    .services 
+        .section__title
+            font-size: 3vw
+    .rem 
+        .rem__text
+            font-size: 16px
+            padding: 20px
+        .vertical-line
+            height: 80px
+@media screen and (max-width: 420px)
+    .zapr
+        .times__row
+            &::before
+                top: 28px
+@media screen and (max-width: 370px)
+    .razvl__block 
+        .times__row
+            &::before 
+                top: 37px
+                height: 230px
+
+@import "blocks/Actions"
+@import "blocks/Questions"
+@import "blocks/Footer"
