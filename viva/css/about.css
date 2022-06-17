@@ -10,6 +10,7 @@
 
 body {
   background: #2E424D;
+  position: relative;
 }
 
 a, button, input {
@@ -384,7 +385,8 @@ header .container {
   margin-bottom: 81px;
 }
 .times__item .item__round {
-  width: 15px;
+  min-width: 15px;
+  max-width: 15px;
   height: 15px;
   border-radius: 100%;
   background: #FFBB00;

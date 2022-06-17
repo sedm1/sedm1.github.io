@@ -468,7 +468,8 @@ header .container {
   margin-bottom: 81px;
 }
 .times__item .item__round {
-  width: 15px;
+  min-width: 15px;
+  max-width: 15px;
   height: 15px;
   border-radius: 100%;
   background: #FFBB00;
@@ -668,6 +669,7 @@ header .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  z-index: 1000;
 }
 .action__left .services__link {
   color: #000;
@@ -711,6 +713,7 @@ header .container {
   opacity: 0.6;
   max-width: 90%;
   overflow: hidden;
+  z-index: 1;
 }
 #action__bg-1 .action__title {
   color: #000;

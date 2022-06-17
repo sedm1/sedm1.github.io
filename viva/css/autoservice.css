@@ -10,6 +10,7 @@
 
 body {
   background: #2E424D;
+  position: relative;
 }
 
 a, button, input {
@@ -598,6 +599,7 @@ header .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  z-index: 1000;
 }
 .action__left .services__link {
   color: #000;
@@ -641,6 +643,7 @@ header .container {
   opacity: 0.6;
   max-width: 90%;
   overflow: hidden;
+  z-index: 1;
 }
 #action__bg-1 .action__title {
   color: #000;

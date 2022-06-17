@@ -1,0 +1,267 @@
+@import 'vars'
+@import 'colors'
+@import 'base'
+@import 'fonts'
+
+@import "blocks/Header"
+@import "blocks/PreLinks"
+.adv__block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .adv__item
+        margin: 25px 0px
+        background: $ShineGray
+        border: 1px solid $Yellow
+        border-radius: 20px
+        padding: 30px
+        width: 100%
+        .item__number
+            color: $Yellow
+            font-family: $Montserrat
+            font-size: 40px
+            font-weight: 600
+        .item__text
+            font-family: $Montserrat
+            font-weight: 400
+            font-size: 16px
+            line-height: 25px
+.pre__links
+    margin-top: 0px
+    padding-top: 30px
+.main
+    background: linear-gradient(208.52deg, $Yellow 6.74%, rgba(46, 66, 77, 0) 30%)
+.mainScreen
+    .container
+        +flexa
+        justify-content: space-between
+        .main__title
+            font-size: 30px
+            font-family: $HeuristicaBold
+            letter-spacing: 0.03em
+        .main__descript
+            position: relative
+            font-family: $GeometriaRegular
+            margin: 85px 0px
+            max-width: 550px
+            &::before
+                content: ""
+                position: absolute
+                height: 100px
+                width: 3px
+                left: -25px
+                top: -50%
+                background: $Yellow
+        .main__button
+            background: $Yellow
+            box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
+            border-radius: 100px
+            padding: 15px 55px
+    &__img
+        max-width: 617px
+        width: 100%
+        img
+            border-radius: 20px
+.main__banner
+    &-item
+        padding: 30px
+        background: $ShineGray
+        border: 2px solid $Yellow
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2)
+        border-radius: 30px
+    .text__descript-item
+        margin-bottom: 0px
+.text__descript-item
+    font-family: $GeometriaRegular
+    margin-bottom: 30px
+    line-height: 25px
+    span
+        color: $Yellow
+        font-family: $GeometriaBold
+    &:last-child
+        margin-bottom: 0px
+.pol-diag__main
+    +flexa 
+    justify-content: space-between
+    margin-top: 50px
+    .text__descript-item, .pol-diag__img
+        max-width: 618px
+        width: 100%
+.rem
+    #first
+        margin-bottom: 100px
+    .adv__block
+        margin-top: 100px
+        .adv__item
+            max-width: none
+            margin:0px
+            background: none
+            border: none
+            border-radius:0px
+            padding: 0px
+            width: auto
+            position: relative
+            .item__text
+                background: $ShineGray
+                border: 1px solid $Yellow
+                border-radius: 20px
+                padding: 30px
+                width: 100%
+                max-width: 618px
+            .item__number
+                position: absolute
+                left: 20px
+                top: -38px
+.rem-diag__main
+    +flexa 
+    justify-content: space-between
+    
+    .rem__text
+        max-width: 618px
+    .section__describe
+        color: rgba(255, 255, 255, 0.6)
+        font-family: $GeometriaBold
+    .rem-diag__img
+        max-width: 618px
+        width: 100%
+        border-radius: 20px
+        img
+            border-radius: 20px
+    #vkl-3
+        max-width: 507px
+        border: 2px solid $Yellow
+    .plus
+        +flexa 
+        justify-content: space-between
+        margin: 64px 0px
+        .plust__item
+            font-family: $GeometriaRegular
+            +flexa 
+            .item__round
+                background: $Yellow
+                box-shadow: 0px 0px 10px $Yellow
+                min-width: 15px
+                width: 15px
+                height: 15px
+                border-radius: 100%
+                margin-right: 20px
+.how
+    +bg(120%, center, center)
+    background-image: url("../img/bg__line-4.png")
+    .tovar__title
+        max-width: 798px
+        margin-left: 40px
+    .adv__item
+        max-width: 397px
+        margin-top: 0px
+        margin-bottom: 50px
+    .how__maim
+        +flexa 
+        justify-content: space-between
+    .how__img
+        max-width: 507px
+    .how__text
+        max-width: 618px
+    #text__descript-span
+        max-width: 453px
+        margin-top: 40px
+        
+.ser
+    .title__block
+        margin-bottom: 50px
+    .tovar__title
+        max-width: 798px
+        margin-left: 40px
+    .ser__main
+        +flexa 
+        justify-content: space-between
+    .ser__img, .ser__text
+        max-width: 618px
+        width: 100%
+    .ser__text
+        .text__descript-item
+            &:last-child
+                margin-top: 30px
+    .ser__img
+        border-radius: 20px
+        border: 1px solid $Yellow
+        img
+            border-radius: 20px
+@media screen and (max-width: $MainContainer)
+    .mainScreen 
+        .container
+            flex-direction: column
+            align-items: flex-start
+            .mainScreen__img
+                margin-top: 30px
+    .main
+        background:  linear-gradient(322deg, #FFBB00 6.74%, rgba(46, 66, 77, 0) 30%)
+    .pol-diag__main
+        flex-direction: column
+        align-items: flex-start
+        .text__descript-item
+            max-width: 100%
+        .pol-diag__img
+            max-width: 100%
+            margin-top: 30px
+    
+    .rem-diag__main
+        flex-direction: column-reverse
+        align-items: flex-start
+        .rem-diag__img
+            margin-top: 30px
+        .rem__text
+            max-width: 100%
+        .plus
+            max-width: 500px
+    .rem 
+        #first
+            flex-direction: column
+        .title__block
+            margin-bottom: 30px
+        .adv__block
+            margin-top: 0px
+            justify-content: center
+            .adv__item
+                margin-top: 50px
+    .how 
+        background: none
+        .how__maim
+            flex-direction: column
+            align-items: flex-start
+        .how__img
+            margin-top: 30px
+        .adv__item
+            max-width: 100%
+    .ser 
+        .ser__main
+            flex-direction: column
+            align-items: flex-start
+        .ser__text
+            max-width: 100%
+            margin-bottom: 30px
+    
+@media screen and (max-width: 600px)
+    .main__banner-item
+        padding: 20px
+    .text__descript-item
+        font-size: 16px
+    .vertical-line, .title__line  
+        display: none
+    .rem-diag__main 
+        .section__describe
+            font-size: 16px
+        .plus
+            flex-direction: column
+            align-items: flex-start
+            .plust__item
+                &:last-child
+                    margin-top: 20px
+    .how .tovar__title, .ser .tovar__title
+        margin-left: 0px
+        max-width: none
+        margin-bottom: 20px
+@import "blocks/Actions"
+@import "blocks/Questions"
+@import "blocks/Cart"
+@import "blocks/Footer"

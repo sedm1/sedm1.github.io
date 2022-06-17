@@ -630,6 +630,9 @@ header .container {
   line-height: 25px;
   font-family: "geometria_regular";
 }
+.inheit .tovar__title {
+  margin-left: 40px;
+}
 
 .adv__block {
   display: -webkit-box;
@@ -710,7 +713,7 @@ header .container {
 }
 
 @media screen and (max-width: 1280px) {
-  .error .container {
+  .error .error__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -906,6 +909,7 @@ header .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  z-index: 1000;
 }
 .action__left .services__link {
   color: #000;
@@ -949,6 +953,7 @@ header .container {
   opacity: 0.6;
   max-width: 90%;
   overflow: hidden;
+  z-index: 1;
 }
 #action__bg-1 .action__title {
   color: #000;
