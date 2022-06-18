@@ -13,7 +13,124 @@
     <meta name='robots' content='noindex,nofollow' />
 </head>
 <body>
-    <div id="includedHeader"></div>
+    <div class="modal__bg">
+        <div class="zvonok modal__window">
+            <h3 class="zvon__title">Заказать звонок</h3>
+            <p class="zvon__descript">Отправьте нам ваш номер и наш менеджер свяжеться с вами в ближайшее времяю</p>
+            <form action="">
+                <div class="zvon__input-block">
+                    <input type="text" required id="int-1">
+                    <label for="int-1">Введите ваш номер телефона <span>*</span></label>
+                </div>
+                <button class="zvon__btn">Записаться</button>
+            </form>
+            <div class="zvon__footer">Нажимая «Отправить» вы соглашаетесь с <a href=""> политикой обработки персональных данных</a></div>
+        </div>
+        <div class="zapis modal__window">
+            <form action="">
+                <div class="zapis__block">
+                    <div class="zapis__text">
+                        <h3 class="zapis__title">
+                            Запишитесь на автосервис в Москве
+                        </h3>
+                        <input type="text" placeholder="Укажите ваше имя">
+                        <input type="text" placeholder="Введите номер телефона">
+                    </div>
+                    <div class="zapis__img"><img src="img/PhoneCart.jpg" alt="PhoneCart"></div>
+                </div>
+                <div class="zapis__main">
+                    <h3 class="zapis-pretitle">Укажите желаемую дату и время</h3>
+                    <div class="int__block">
+                        <input type="text" class="block__item" placeholder="Укажите дату" onfocus="(this.type = 'date')">
+                        <input type="text" class="block__item" placeholder="Укажите время" onfocus="(this.type = 'time')">
+                    </div>
+                    <div class="zap__footer">
+                        <button class="zap__button">Отправить</button>
+                        <div class="zap__sogl"><span> -</span> Нажимая «Отправить» вы соглашаетесь с <a href="#"> политикой обработки персональных данных</a></div>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="burger__block">
+        <div class="burger__header">
+            <button class="burder-close"><img src="img/icons/closeModal.svg" alt="closeModal"></button>
+        </div>
+        <div class="burger__main">
+            <form action="" class="search">
+                <div class="input__block">
+                    <input type="text" placeholder="Введите название услуги">
+                    <button><img src="img/icons/search.svg" alt="Search"></button>
+                </div>
+            </form>
+            <div class="mobile__block">
+                <a href="services.html" class="header__link">услуги</a>
+                <ul class="menu">
+                    <li><a href="bonus.html">bonus</a></li>
+                    <li><a href="actions.html">акции</a></li>
+                    <li><a href="about.html">о компании</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                    <li>
+                        <button class="lich_kab">личный кабинет</button>
+                        <div class="reg__block">
+                            <div class="reg__bg">
+                                <button class="LogIn" >Войти</button>
+                                <div class="reg__line"></div>
+                                <button class="reg">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="burger__info">
+                <div class="info__numbers">
+                    <a href="tel: +74952601800" class="numbers__item">+7 (495) 260-18-00</a>
+                    <a href="tel:+79169183454" class="numbers__item">+7 (916) 918-34-54</a>
+                </div>
+                <div class="info__adres">
+                    Абрамцевская ул., 30, стр. 4, Москва, Россия
+                </div>
+                <div class="info__workTime">
+                    ПН-ВС 09:00 - 21:00
+                </div>
+                <div class="soz__block">
+                    <a class="soz__item"><img src="img/soz/whatsapp.svg" alt="soz"></a>
+                    <a class="soz__item"><img src="img/soz/inst.svg" alt="soz"></a>
+                    <a class="soz__item"><img src="img/soz/viber.svg" alt="soz"></a>
+                    <a class="soz__item"><img src="img/soz/vk.svg" alt="soz"></a>
+                </div>
+            </div>
+            <a href="" class="pol">Политика конфиденциальности</a>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="left__header">
+                <a class="logo" href="https://sedm1.github.io/viva/"><img src="img/header_logo.png" alt="Logo"></a>
+                <a href="services.html" class="header__link">услуги</a>
+            </div>
+            <div class="right__header">
+                <ul class="menu">
+                    <li><a href="bonus.html">bonus</a></li>
+                    <li><a href="actions.html">акции</a></li>
+                    <li><a href="about.html">о компании</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                    <li>
+                        <button class="lich_kab">личный кабинет</button>
+                        <div class="reg__block">
+                            <div class="reg__bg">
+                                <button class="LogIn">Войти</button>
+                                <div class="reg__line"></div>
+                                <button class="reg">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="header__burger"><img src="img/burger.png" alt="burger"></button>
+            </div>
+        </div>
+    </header>
     <section class="tovar">
         <div class="container">
             <ul class="pre__links">
@@ -43,7 +160,7 @@
                     <div class="tovar__img">
                         <div class="tovar__img-item"><img src="img/services/gur.png" alt="tovar"></div>
                         <div class="tovar__img-info">
-                            <button class="tovar__img-button">Записаться</button>
+                            <button class="tovar__img-button zapisat">Записаться</button>
                             <div class="price">от 1 240 ₽</div>
                         </div>
                     </div>
@@ -74,7 +191,7 @@
                     <div class="action__bg action__bg-big" id="action__bg-2">
                         <div class="action__left">
                             <h3 class="action__title">Бесплатная диагностика <br/>ходовой части</h3>
-                            <a href="#" class="action__button">Записаться</a>
+                            <button class="action__button zapisat">Записаться</button>
                         </div>
                         <div class="action__right">
                             <img src="img/services/serv-7.png" alt="ServiceImg">

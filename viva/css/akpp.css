@@ -8,9 +8,16 @@
   font-size: 18px;
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   background: #2E424D;
   position: relative;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 a, button, input {
@@ -151,6 +158,7 @@ hr {
 header {
   border-bottom: 3px solid #FFBB00;
   padding: 5px 0;
+  background: #41545F;
 }
 header .container {
   display: -webkit-box;
@@ -196,9 +204,65 @@ header .container {
   font-size: 16px;
   font-family: "Montserrat";
   font-weight: 400;
+  position: relative;
 }
 .menu li:last-child {
   margin-right: 61px;
+}
+.menu li button {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #ffffff;
+}
+.menu .reg__block {
+  position: absolute;
+  z-index: 2000;
+  background: #506774;
+  border-radius: 70px;
+  width: 320px;
+  left: -74px;
+  top: 60px;
+  display: none;
+}
+.menu .reg__block .reg__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px 26px;
+}
+.menu .reg__block .reg__bg::before {
+  content: url("../img/icons/trg.svg");
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.menu .reg__block .reg__line {
+  min-width: 1px;
+  height: 30px;
+  background: #FFBB00;
+  margin: 0px 20px;
+}
+.menu .reg__block .LogIn, .menu .reg__block .reg {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-transform: none;
+}
+.menu .reg__block-active {
+  display: block;
 }
 
 .header__burger {
@@ -209,6 +273,17 @@ header .container {
 @media screen and (max-width: 1140px) {
   header .menu {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu .reg__block {
+    left: -14px;
+    top: 42px;
+  }
+  .menu .reg__block .reg__bg::before {
+    left: 24px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media screen and (max-width: 500px) {
@@ -1534,5 +1609,513 @@ footer .soz__block .soz__item:last-child {
   .footer__menu li {
     white-space: normal;
     font-size: 13px;
+  }
+}
+.burger__block {
+  background: #41545F;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 0px 50px;
+  position: absolute;
+  top: -1000px;
+  right: 0px;
+  max-width: 527px;
+  width: 100%;
+  z-index: 1000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.burger__block-active {
+  top: 0px;
+}
+
+.burger__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 27px 0px;
+  border-bottom: 3px solid #FFBB00;
+}
+.burger__header .burder-close {
+  width: 26px;
+  height: 26px;
+  margin-left: 50px;
+  margin-right: 80px;
+}
+
+.burger__main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+.burger__main .input__block {
+  width: 100%;
+  height: 61px;
+  position: relative;
+}
+.burger__main .input__block input {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 60px;
+  font-family: "geometria_medium";
+  border: 2px solid #FFBB00;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: #41545F;
+}
+.burger__main .input__block input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "geometria_medium";
+}
+.burger__main .input__block input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "geometria_medium";
+}
+.burger__main .input__block input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "geometria_medium";
+}
+.burger__main .input__block input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "geometria_medium";
+}
+.burger__main .input__block input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "geometria_medium";
+}
+.burger__main .input__block button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 30px;
+  width: 23px;
+  height: 23px;
+}
+.burger__main .mobile__block {
+  margin-top: 40px;
+  border-bottom: 1px solid #ffffff;
+  display: none;
+}
+.burger__main .mobile__block .header__link {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 12px 0px;
+}
+.burger__main .mobile__block .menu {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+.burger__main .mobile__block .menu li {
+  max-width: 48%;
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 40px;
+}
+.burger__main .burger__info {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ffffff;
+}
+.burger__main .burger__info .info__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-decoration: underline;
+}
+.burger__main .burger__info .info__adres {
+  max-width: 345px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.burger__main .burger__info .info__workTime {
+  margin-top: 30px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #FFBB00;
+}
+.burger__main .burger__info .soz__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+.burger__main .burger__info .soz__block a {
+  width: 41px;
+  height: 41px;
+  display: block;
+}
+.burger__main .pol {
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.modal__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000000;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.zvonok {
+  background: #2E424D;
+  padding: 30px;
+  max-width: 396px;
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+  opacity: 0;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.zvonok .zvon__title {
+  font-family: "Heuristica_Bold";
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.zvonok .zvon__descript {
+  max-width: 264px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "geometria_regular";
+  margin: 0 auto;
+  font-size: 16px;
+}
+.zvonok form {
+  margin-top: 40px;
+}
+.zvonok form .zvon__input-block {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.zvonok form input {
+  width: 100%;
+  height: 50px;
+  background: #41545F;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "geometria_regular";
+  padding-left: 20px;
+}
+.zvonok form label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-family: "geometria_regular";
+}
+.zvonok form label span {
+  color: red;
+}
+.zvonok form input:focus + label {
+  display: none;
+}
+.zvonok form input:valid + label {
+  display: none;
+}
+.zvonok .zvon__btn {
+  padding: 11px 50px;
+  margin: 0 auto;
+  background: #FFBB00;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
+          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
+  border-radius: 100px;
+}
+.zvonok .zvon__footer {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "geometria_regular";
+}
+.zvonok .zvon__footer a {
+  text-decoration: underline;
+}
+
+.zapis {
+  background: #2E424D;
+  border-radius: 30px;
+  padding: 40px 30px;
+  max-width: 618px;
+  width: 100%;
+  opacity: 0;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.zapis .zapis__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.zapis .zapis__text {
+  max-width: 318px;
+  width: 100%;
+}
+.zapis .zapis__img {
+  max-width: 137px;
+  width: 100%;
+}
+.zapis .zapis__img img {
+  border-radius: 20px;
+}
+.zapis .zapis__title {
+  font-family: "Heuristica_Bold";
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.zapis input {
+  background: #41545F;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: "geometria_regular";
+  color: #ffffff;
+  margin: 15px 0px;
+  height: 50px;
+  width: 100%;
+}
+.zapis input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-family: "geometria_regular";
+  color: rgba(255, 255, 255, 0.5);
+}
+.zapis input::-moz-placeholder {
+  font-size: 16px;
+  font-family: "geometria_regular";
+  color: rgba(255, 255, 255, 0.5);
+}
+.zapis input:-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "geometria_regular";
+  color: rgba(255, 255, 255, 0.5);
+}
+.zapis input::-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "geometria_regular";
+  color: rgba(255, 255, 255, 0.5);
+}
+.zapis input::placeholder {
+  font-size: 16px;
+  font-family: "geometria_regular";
+  color: rgba(255, 255, 255, 0.5);
+}
+.zapis .zapis__main {
+  margin-top: 25px;
+}
+.zapis .zapis__main .int__block {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.zapis .zapis__main .int__block input {
+  max-width: 264px;
+  padding-right: 20px;
+}
+.zapis .zapis-pretitle {
+  font-size: 16px;
+  font-family: "Heuristica_Bold";
+}
+.zapis .zap__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+.zapis .zap__button {
+  background: #FFBB00;
+  padding: 11px 55px;
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
+          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
+  border-radius: 100px;
+}
+.zapis .zap__sogl {
+  max-width: 300px;
+  font-family: "geometria_regular";
+  font-size: 13px;
+}
+.zapis .zap__sogl a {
+  text-decoration: underline;
+}
+.zapis .zap__sogl span {
+  color: #FFBB00;
+  font-family: "geometria_bold";
+}
+
+.modal__window-preactive {
+  display: block;
+}
+
+.modal__window-active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .zapis .zapis__img {
+    display: none;
+  }
+  .zapis .zapis__text {
+    max-width: 100%;
+  }
+  .zapis .zapis__main .int__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .zapis .zapis__main .int__block input {
+    max-width: 100%;
+  }
+  .zapis .zap__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .zapis .zap__button {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .burger__block {
+    max-width: 100%;
+    border-radius: 0px;
+    max-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .burger__main {
+    padding: 38px 15px;
+  }
+  .burger__main .mobile__block {
+    display: block;
+  }
+  .burger__main .input__block input {
+    font-size: 16px;
+    padding-left: 20px;
+    height: 51px;
+  }
+  .burger__main .input__block input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .burger__main .input__block input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .burger__main .input__block input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .burger__main .input__block input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .burger__main .input__block input::placeholder {
+    font-size: 16px;
+  }
+  .burger__main .input__block button {
+    top: 15px;
+    right: 20px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  .burger__header .burder-close {
+    margin-right: 15px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .burger__main .mobile__block .menu li:last-child {
+    max-width: 100%;
+  }
+
+  .info__numbers, .info__adres, .burger__main .burder__info .info__workTime {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .zvonok {
+    padding: 17px 7px;
+    border-radius: 15px;
   }
 }
