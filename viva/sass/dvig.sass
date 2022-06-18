@@ -1,0 +1,281 @@
+@import 'vars'
+@import 'colors'
+@import 'base'
+@import 'fonts'
+
+@import "blocks/Header"
+@import "blocks/PreLinks"
+@import "blocks/Times"
+@import "blocks/Services"
+.mainScreen
+    .container
+        +flexa
+        justify-content: space-between
+        .main__title
+            font-size: 36px
+            font-family: $HeuristicaBold
+            letter-spacing: 0.03em
+            max-width: 773px
+        .main__descript
+            position: relative
+            font-family: $GeometriaRegular
+            margin: 85px 0px
+            max-width: 550px
+            &::before
+                content: ""
+                position: absolute
+                height: 100px
+                width: 3px
+                left: -25px
+                top: -50%
+                background: $Yellow
+        .main__button
+            background: $Yellow
+            box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
+            border-radius: 100px
+            padding: 15px 55px
+    &__img
+        max-width: 600px
+        width: 100%
+
+.services__block
+    justify-content: space-evenly
+.services__item
+    height: 343px
+    max-width: 286px
+.services__title
+    font-family: $MontserratAlternates
+    font-weight: 600
+    font-size: 16px
+    letter-spacing: -0.022em
+.services__link
+    color: $Yellow
+    align-self: flex-end
+.services__img
+    position: static
+    top: auto
+    right: auto
+    max-height: 160px
+    width: max-content
+    align-self: center
+.services__header
+    flex-direction: column
+    align-items: flex-start
+    .title__block
+        margin-bottom: 43px
+        .arr
+            width: 20px
+            margin-left: 14px
+    .section__title
+        font-size: 18px
+        font-family: $GeometriaRegular
+.services__form, .input__block
+    width: 100%
+.main__banner
+    &-item
+        padding: 30px
+        background: $ShineGray
+        border: 2px solid $Yellow
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2)
+        border-radius: 30px
+    .text__descript-item
+        margin-bottom: 0px
+.text__descript-item
+    font-family: $GeometriaRegular
+    margin-bottom: 30px
+    span
+        color: $Yellow
+        font-family: $GeometriaBold
+    &:last-child
+        margin-bottom: 0px
+.section__describe
+    font-family: $GeometriaBold
+    color: rgba(255, 255, 255, 0.6)
+    margin-top: 41px
+
+
+.adv__block
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap
+    .adv__item
+        margin: 25px 0px
+        background: $ShineGray
+        border: 1px solid $Yellow
+        border-radius: 20px
+        padding: 30px
+        max-width: 397px
+        width: 100%
+        .item__number
+            color: $Yellow
+            font-family: $Montserrat
+            font-size: 40px
+            margin-bottom: 15px
+            font-weight: 600
+        .item__text
+            font-family: $Montserrat
+            font-weight: 400
+            font-size: 16px
+            line-height: 25px
+.prich
+    .title__block
+        margin-bottom: 40px
+    .tovar__title
+        margin-left: 40px
+        max-width: 501px
+    .prich__text
+        max-width: 602px
+    .prich__item
+        +flexa 
+        justify-content: space-between
+    .prich__img
+        max-width: 667px
+    .prich__list
+        margin-top: 68px
+        +flexa 
+        justify-content: space-between
+        .list__item
+            +flexa 
+        .item__img
+            width: 60px
+            height: 60px
+            background: $ShineGray
+            border: 1px solid $Yellow
+            border-radius: 10px
+            margin-right: 30px
+            padding: 12px
+        .item__text
+            font-family: $GeometriaMedium
+            font-size: 24px
+.error
+    .container  
+        +flexa 
+        justify-content: space-between
+    .text__descript-item
+        max-width: 838px
+    .main__banner-img
+        max-width: 397px
+.erorr-2
+    .main__banner-item
+        max-width: 618px
+    .main__banner-img  
+        max-width: 550px
+    .unflex
+        display: block
+        .tovar__title
+            max-width: 708px
+.grunde
+    margin-bottom: 0px
+    .tovar__title
+        max-width: 688px
+        margin-left: 24px
+    .section__describe
+        margin-top: 40px
+        color: rgba(255, 255, 255, 0.6)
+        font-family: $GeometriaBold
+    .container
+        +flexa 
+        justify-content: space-between
+    .grunde__img
+        max-width: 600px
+        width: 100%
+    .grunde__text
+        max-width: 592px
+    .unflex
+        display: block
+    .times__row
+        &::before
+            height: 160px
+    .times__item
+        align-items: flex-start
+        .item__title
+            font-family: $GeometriaRegular
+            max-width: none
+.inheit
+    .text__descript-item
+        max-width: 507px
+        font-size: 24px
+    .inherit__footer
+        margin: 0 auto
+        max-width: 838px
+        font-family: $GeometriaRegular
+        text-align: center
+        margin-top: 60px
+@media screen and (max-width: $MainContainer)
+    .mainScreen
+        margin-bottom: 0px 
+        .container
+            flex-direction: column
+            align-items: flex-start
+            .main__descript
+                margin: 40px 0px
+        .mainScreen__img
+            margin-top: 30px
+    .prich 
+        .prich__item
+            flex-direction: column
+            align-items: flex-start
+        .prich__img
+            margin-top: 60px
+            align-self: center
+        .prich__text
+            max-width: 100%
+    .error 
+        .container
+            flex-direction: column-reverse
+            align-items: center
+        .text__descript-item
+            max-width: 100%
+            margin-bottom: 40px
+    .erorr-2 
+        .main__banner-item
+            max-width: 100%
+            margin-top: 40px
+    .grunde 
+        .container
+            flex-direction: column
+            align-items: flex-start
+@media screen and (max-width: 600px)
+    .prich 
+        .tovar__title
+            max-width: none
+            margin-left: 0px
+        .prich__list
+            flex-direction: column
+            align-items: flex-start
+            .list__item
+                &:first-child
+                    margin-bottom: 30px
+    .grunde .tovar__title
+        max-width: none
+        margin-left: 0px
+    .inheit .inherit__footer
+        font-size: 16px
+    .text__descript-item
+        font-size: 16px
+    .main__banner-item
+        padding: 20px
+    .adv__block 
+        .adv__item
+            height: auto
+    .mainScreen 
+        .container 
+            .main__title
+                font-size: 5vw
+            .main__descript
+                font-size: 3vw
+            .main__button
+                width: 100%
+    .vertical-line, .title__line 
+        display: none
+    .grunde .section__describe
+        font-size: 16px
+@media screen and (max-width: 430px)
+    .grunde 
+        .times__row
+            &::before
+                height: 192px
+@import "blocks/Actions"
+@import "blocks/Questions"
+@import "blocks/Footer"
+@import "blocks/modal"
