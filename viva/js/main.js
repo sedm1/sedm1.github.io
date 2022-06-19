@@ -97,3 +97,30 @@ $(".zapisat").click(function(){
 	closeAllModal()
 	openModal("zapis", "modal__window-active")
 })
+$(".car__descript-round").click(function(){
+	var clas = $(this).attr("id")
+	var CarBg = $(".car__bg")
+
+	CarBg.addClass("car__bg-active")
+	$("." + clas).css({"display":"flex"})
+	setTimeout(() => {
+		CarBg.addClass("car__bg-op")
+	}, 200)
+	setTimeout(() => {
+		$(".md-main__img").addClass("md-main__img-active")
+		$("body").addClass("bb")
+	}, 400)
+	setTimeout(() => {
+		$(".xod__descript-item").addClass("xod__descript-item-active")
+	}, 800)
+})
+$(".prev").click(function(){
+	var Modals = $(".car__bg .container")
+	var CarBg = $(".car__bg")
+	Modals.css({"display":""})
+	CarBg.removeClass("car__bg-active")
+	$("body").removeClass("bb")
+	CarBg.removeClass("car__bg-op")
+	$(".md-main__img").removeClass("md-main__img-active")
+	$(".xod__descript-item").removeClass("xod__descript-item-active")
+})
