@@ -63,6 +63,7 @@ $(".redact-1").click(function(){
 $(".item__more-info").click(function(){
 	closeAllModal()
 	openModalBg()
+	$("body").addClass("block-bb")
 	var id = $(this).attr('id')
 	openModal(id, "modal__window-active")
 })
@@ -70,6 +71,7 @@ $(".closeMore").click(function(){
 	closeAllModal()
 	var parent = $(this).parent(".more")
 	closeModal(parent, "modal__window-active")
+	$("body").removeClass("block-bb")
 })
 $(".abo").click(function(){
 	$(".about").toggleClass("about-active")

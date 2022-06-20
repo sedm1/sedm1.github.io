@@ -19,6 +19,17 @@ body {
   overflow-x: hidden;
   max-width: 100%;
 }
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 30px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #FFBB00;
+  border-radius: 30px;
+}
 
 a, button, input {
   font-size: inherit;
@@ -106,6 +117,11 @@ hr {
   height: 100px;
   background: #FFBB00;
   margin: 20px 0px;
+}
+
+.block-bb {
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 1280px) {
@@ -315,6 +331,84 @@ header .container {
   height: 2px;
   margin: 0px 10px;
   background: #FFBB00;
+}
+
+.more {
+  padding: 30px 40px;
+  max-width: 838px;
+  width: 100%;
+  background: #41545F;
+  border-radius: 30px;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+}
+.more__title {
+  color: #FFBB00;
+  font-size: 24px;
+  font-family: "Heuristica_Bold";
+}
+.more__services {
+  margin-top: 20px;
+  max-height: 55vh;
+  overflow-y: scroll;
+}
+.more__services::-webkit-scrollbar {
+  width: 6px;
+}
+.more__services::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 30px;
+}
+.more__services::-webkit-scrollbar-thumb {
+  background-color: #FFBB00;
+  border-radius: 30px;
+}
+.more__services::-webkit-scrollbar-track-piece {
+  margin: 25px 0;
+  background: #5C707A;
+}
+.more__services .service__item {
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #ffffff;
+}
+.more__services .service__item:first-child {
+  border-top: none;
+}
+.more__services .item__descript {
+  max-width: 80%;
+  line-height: 25px;
+  font-family: "geometria_regular";
+}
+.more__services .item__price {
+  color: #FFBB00;
+  font-family: "geometria_bold";
+}
+.more .zap {
+  background: #FFBB00;
+  padding: 15px 55px;
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
+          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
+  border-radius: 100px;
+  margin-top: 40px;
+}
+.more .closeMore {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 27px;
+  right: 35px;
 }
 
 .pre__links {
@@ -604,6 +698,15 @@ header .container {
   height: 170px;
   border-radius: 20px;
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .auto__price-item .item__img img {
   border-radius: 20px;
@@ -936,6 +1039,45 @@ header .container {
   }
 }
 @media screen and (max-width: 650px) {
+  .auto__price-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .more__title {
+    font-size: 18px;
+  }
+
+  .more {
+    border-radius: 20px;
+    padding: 20px 30px;
+  }
+  .more .closeMore {
+    top: 20px;
+  }
+  .more .zap {
+    width: 100%;
+  }
+
+  .more__services .item__descript {
+    font-size: 14px;
+    line-height: normal;
+    max-width: 100%;
+  }
+  .more__services .item__price {
+    margin-top: 20px;
+  }
+  .more__services .service__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
   .warum__block .warum__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

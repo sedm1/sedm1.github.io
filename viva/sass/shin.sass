@@ -5,6 +5,61 @@
 
 @import "blocks/Header"
 @import "blocks/PreLinks"
+.more
+    padding: 30px 40px
+    max-width: 838px
+    width: 100%
+    background: $ShineGray
+    border-radius: 30px
+    position: relative
+    opacity: 0
+    transition: .5s
+    display: none
+    &__title
+        color: $Yellow
+        font-size: 24px
+        font-family: $HeuristicaBold
+    &__services
+        margin-top: 20px
+        max-height: 55vh
+        overflow-y: scroll
+        &::-webkit-scrollbar 
+            width: 6px
+        &::-webkit-scrollbar-track 
+            background: transparent
+            border-radius: 30px
+        &::-webkit-scrollbar-thumb 
+            background-color: $Yellow
+            border-radius: 30px
+        &::-webkit-scrollbar-track-piece
+            margin: 25px 0
+            background: #5C707A
+        .service__item
+            padding: 20px 0px
+            +flexa 
+            justify-content: space-between
+            border-top: 1px solid $White
+            &:first-child
+                border-top: none
+        .item__descript
+            max-width: 80%
+            line-height: 25px
+            font-family: $GeometriaRegular
+        .item__price
+            color: $Yellow
+            font-family: $GeometriaBold
+    .zap
+        background: $Yellow
+        padding: 15px 55px
+        box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
+        border-radius: 100px
+        margin-top: 40px
+    .closeMore
+        width: 20px
+        height: 20px
+        position: absolute
+        top: 27px 
+        right: 35px
 .pre__links
     margin-top: 0px
     padding-top: 30px
@@ -117,6 +172,8 @@
             height: 170px
             border-radius: 20px
             margin-bottom: 40px
+            +flexa 
+            justify-content: center
             img
                 border-radius: 20px
                 width: auto
@@ -306,7 +363,29 @@
     .adv__block 
         .adv__item
             margin: 15px 10px
+    
 @media screen and ( max-width:  650px)
+    .auto__price-block
+        justify-content: center
+    .more__title
+        font-size: 18px
+    .more
+        border-radius: 20px
+        padding: 20px 30px
+        .closeMore
+            top: 20px
+        .zap
+            width: 100%
+    .more__services 
+        .item__descript
+            font-size: 14px
+            line-height: normal
+            max-width: 100%
+        .item__price
+            margin-top: 20px
+        .service__item
+            flex-direction: column
+            align-items: flex-start
     .warum__block 
         .warum__list
             flex-direction: column

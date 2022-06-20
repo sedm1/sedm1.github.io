@@ -13,6 +13,14 @@ body
     position: relative
     overflow-x: hidden
     max-width: 100%
+    &::-webkit-scrollbar 
+        width: 6px
+    &::-webkit-scrollbar-track 
+        background: transparent
+        border-radius: 30px
+    &::-webkit-scrollbar-thumb 
+        background-color: $Yellow
+        border-radius: 30px
 a, button, input
     font-size: inherit
     color: inherit
@@ -64,6 +72,9 @@ hr
     height: 100px
     background: $Yellow
     margin: 20px 0px
+.block-bb
+    max-height: 100vh
+    overflow-y: hidden
 
 @media screen and ( max-width:  $MainContainer)
     .container
