@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Шиномонтаж</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="css/shin.css">
+        <meta name='robots' content='noindex,nofollow' />
+    </head>
+    <body>
+        <div class="modal__bg">
+            <div class="zvonok modal__window">
+                <h3 class="zvon__title">Заказать звонок</h3>
+                <p class="zvon__descript">Отправьте нам ваш номер и наш менеджер свяжеться с вами в ближайшее времяю</p>
+                <form action="">
+                    <div class="zvon__input-block">
+                        <input type="text" required id="int-1">
+                        <label for="int-1">Введите ваш номер телефона <span>*</span></label>
+                    </div>
+                    <button class="zvon__btn">Записаться</button>
+                </form>
+                <div class="zvon__footer">Нажимая «Отправить» вы соглашаетесь с <a href=""> политикой обработки персональных данных</a></div>
+            </div>
+            <div class="zapis modal__window">
+                <form action="">
+                    <div class="zapis__block">
+                        <div class="zapis__text">
+                            <h3 class="zapis__title">
+                                Запишитесь на автосервис в Москве
+                            </h3>
+                            <input type="text" placeholder="Укажите ваше имя">
+                            <input type="text" placeholder="Введите номер телефона">
+                        </div>
+                        <div class="zapis__img"><img src="img/PhoneCart.jpg" alt="PhoneCart"></div>
+                    </div>
+                    <div class="zapis__main">
+                        <h3 class="zapis-pretitle">Укажите желаемую дату и время</h3>
+                        <div class="int__block">
+                            <input type="text" class="block__item" placeholder="Укажите дату" onfocus="(this.type = 'date')">
+                            <input type="text" class="block__item" placeholder="Укажите время" onfocus="(this.type = 'time')">
+                        </div>
+                        <div class="zap__footer">
+                            <button class="zap__button">Отправить</button>
+                            <div class="zap__sogl"><span> -</span> Нажимая «Отправить» вы соглашаетесь с <a href="#"> политикой обработки персональных данных</a></div>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="burger__block">
+            <div class="burger__header">
+                <button class="burder-close"><img src="img/icons/closeModal.svg" alt="closeModal"></button>
+            </div>
+            <div class="burger__main">
+                <form action="" class="search">
+                    <div class="input__block">
+                        <input type="text" placeholder="Введите название услуги">
+                        <button><img src="img/icons/search.svg" alt="Search"></button>
+                    </div>
+                </form>
+                <div class="mobile__block">
+                    <a href="services.html" class="header__link">услуги</a>
+                    <ul class="menu">
+                        <li><a href="bonus.html">bonus</a></li>
+                        <li><a href="actions.html">акции</a></li>
+                        <li><a href="about.html">о компании</a></li>
+                        <li><a href="contacts.html">контакты</a></li>
+                        <li>
+                            <button class="lich_kab">личный кабинет</button>
+                            <div class="reg__block">
+                                <div class="reg__bg">
+                                    <button class="LogIn" >Войти</button>
+                                    <div class="reg__line"></div>
+                                    <button class="reg">Зарегистрироваться</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger__info">
+                    <div class="info__numbers">
+                        <a href="tel: +74952601800" class="numbers__item">+7 (495) 260-18-00</a>
+                        <a href="tel:+79169183454" class="numbers__item">+7 (916) 918-34-54</a>
+                    </div>
+                    <div class="info__adres">
+                        Абрамцевская ул., 30, стр. 4, Москва, Россия
+                    </div>
+                    <div class="info__workTime">
+                        ПН-ВС 09:00 - 21:00
+                    </div>
+                    <div class="soz__block">
+                        <a class="soz__item"><img src="img/soz/whatsapp.svg" alt="soz"></a>
+                        <a class="soz__item"><img src="img/soz/inst.svg" alt="soz"></a>
+                        <a class="soz__item"><img src="img/soz/viber.svg" alt="soz"></a>
+                        <a class="soz__item"><img src="img/soz/vk.svg" alt="soz"></a>
+                    </div>
+                </div>
+                <a href="" class="pol">Политика конфиденциальности</a>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="left__header">
+                    <a class="logo" href="https://sedm1.github.io/viva/"><img src="img/header_logo.png" alt="Logo"></a>
+                    <a href="services.html" class="header__link">услуги</a>
+                </div>
+                <div class="right__header">
+                    <ul class="menu">
+                        <li><a href="bonus.html">bonus</a></li>
+                        <li><a href="actions.html">акции</a></li>
+                        <li><a href="about.html">о компании</a></li>
+                        <li><a href="contacts.html">контакты</a></li>
+                        <li>
+                            <button class="lich_kab">личный кабинет</button>
+                            <div class="reg__block">
+                                <div class="reg__bg">
+                                    <button class="LogIn">Войти</button>
+                                    <div class="reg__line"></div>
+                                    <button class="reg">Зарегистрироваться</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="header__burger"><img src="img/burger.png" alt="burger"></button>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="container">
+                <ul class="pre__links">
+                    <li class="pre__links-item"><a href="/">Главная</a></li>
+                    <div class="pre__links-line"></div>
+                    <li class="pre__links-item"><a href="services.html">Услуги</a></li>
+                    <div class="pre__links-line"></div>
+                    <li class="pre__links-item"><a href="">Шиномонтаж</a></li>
+                </ul>
+            </div>
+            
+            <section class="mainScreen">
+                <div class="container">
+                    <div class="mainScreen__text">
+                        <h1 class="main__title">Шиномонтаж и балансировка шин в Москве  </h1>
+                        <p class="main__descript">VIVA MOTORS: шиномонтаж и балансировка колес по низкой цене</p>
+                        <button class="main__button zapisat">Записаться</button>
+                    </div>
+                    <div class="mainScreen__img"><img src="img/shImg.png" alt="shImg"></div>
+                </div>
+            </section>
+        
+            <section class="auto__price">
+                <div class="container">
+                    <div class="auto__price-block">
+                        <div class="auto__price-item">
+                            <div class="item__img"><img src="img/sh-1.png" alt="autoprice"></div>
+                            <h3 class="item__title">Шиномонтаж (выбрать по диаметру)</h3>
+                            <button class="item__more-info" id="sh-1">Подробнее</button>
+                        </div>
+                        <div class="auto__price-item">
+                            <div class="item__img"><img src="img/sh-2.png" alt="autoprice"></div>
+                            <h3 class="item__title">Шиномонтаж Run Flat</h3>
+                            <button class="item__more-info" id="sh-2">Подробнее</button>
+                        </div>
+                        <div class="auto__price-item">
+                            <div class="item__img"><img src="img/sh-3.png" alt="autoprice"></div>
+                            <h3 class="item__title">Шиномонтаж низкопрофильной резины </h3>
+                            <button class="item__more-info" id="sh-3">Подробнее</button>
+                        </div>
+                        <div class="auto__price-item">
+                            <div class="item__img"><img src="img/sh-4.png" alt="autoprice"></div>
+                            <h3 class="item__title">Дополнительные услуги</h3>
+                            <button class="item__more-info" id="sh-4">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__banner">
+                <div class="container ">
+                    <div class="main__banner-item text__descript-item">Колеса выполняют функцию связующего звена между дорожным покрытием и автомобилем. От их целостности, состояния зависит безопасность водителя, пассажиров транспортного средства и качество, комфорт езды. <span> Шиномонтаж легковых автомобилей</span> — самая популярная и востребованная услуга автосервиса. Так, <span>сезонная замена резины на летнюю/зимнюю, ремонт проколотого колеса</span>, регулярная проверка шин, услуга балансировки колес — все это помогает восстанавливать, поддерживать предсказуемость управления, надежность передвижения на легковом авто, иномарке.</div>
+                </div>
+            </section>
+        </section>
+        <section class="warum">
+            <div class="container">
+                <div class="title__block">
+                    <div class="title__line"></div>
+                    <h2 class="tovar__title">Когда необходим шиномонтаж на СТО</h2>
+                </div>
+                <div class="warum__block">
+                    <div class="warum__img"><img src="img/topimg.png" alt="top"></div>
+                    <div class="warum__text">
+                        <div class="text__descript-item">Протектор шин неизбежно изнашивается при соприкосновении с дорожным полотном, однако скорость этого процесса обуславливается качеством покрытия, стилем вождения, различными непредвиденными ситуациями на дороге. «Грыжи» — следствие наездов на ямы, препятствия с последующим повреждением кордового металлического слоя шины. Диагональные вмятины, односторонний износ протектора часто свидетельствуют о других неполадках:</div>
+                        <div class="warum__list">
+                            <div class="list__item">
+                                <div class="item__img"><img src="img/icons/wheel-alignment.png" alt="icon"></div>
+                                <div class="item__text">Неправильно выполненной регулировке сход-развала</div>
+                            </div>
+                            <div class="list__item">
+                                <div class="item__img"><img src="img/icons/shock-absorber.png" alt="icon"></div>
+                                <div class="item__text">Проблемах с элементами подвески и т.д. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="warum__footer">
+                    <div class="main__banner-item text__descript-item">при обычной езде по качественным городским дорогам шиномонтаж с балансировкой колес можно проводить не чаще 2 раз в год. Приверженцы агрессивной модели вождения могут сталкиваться с необходимостью замены, ремонта колес на шиномонтаже значительно чаще. </div>
+                    <div class="warum__footer-img"><img src="img/warum-footer.png" alt="shin"></div>
+                </div>
+            </div>
+        </section>
+        <section class="grunde">
+            <div class="container">
+                <div class="title__block">
+                    <div class="title__line"></div>
+                    <h2 class="tovar__title">Почему стоит обратиться в VIVA MOTORS</h2>
+                </div>
+                <div class="grunde__block">
+                    <div class="grunde__text">
+                        <div class="text__descript-item">Чтобы своевременно посетить СТО, воспользоваться профессиональной помощью и не допустить серьезных поломок с последующим дорогостоящим ремонтом или ДТП, автовладельцам рекомендуется регулярно осматривать покрышки на предмет износа (насторожить должны такие признаки: истирание протектора по краям, посередине, «грыжи», бугорки, вмятины, трещины на резине). Об износе шин свидетельствует и уменьшение глубины протектора,  появление вибрации автомобиля во время движения по ровной дороге. </div>
+                        <p class="section__describe">Неотрегулированная балансировка колес легкового автомобиля, несвоевременная замена колес на шиномонтаже могут привести к:</p>
+                    </div>
+                    <div class="grunde__img"><img src="img/grunde-1.jpg" alt="grunde-1"></div>
+                </div>
+                <div class="times__block">
+                    <div class="times__row">
+                        <div class="times__item">
+                            <div class="item__round"></div>
+                            <div class="item__title">Быстрому износу, поломке ходовой части автомобиля</div>
+                        </div>
+                        <div class="times__item">
+                            <div class="item__round"></div>
+                            <div class="item__title">Снижению сцепления шин с дорожным покрытием</div>
+                        </div>
+                    </div>
+                    <div class="times__row">
+                        <div class="times__item">
+                            <div class="item__round"></div>
+                            <div class="item__title">Повреждению шин, частей подвески и разрыву колеса</div>
+                        </div>
+                        <div class="times__item">
+                            <div class="item__round"></div>
+                            <div class="item__title">Разрушению шаровых опор, ступичного подшипника, рулевых тяг, вибрации руля, биению колеса</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prof__slider">
+                    <div class="slider__item"><img src="img/prof-1.jpg" alt="slider-item"></div>
+                    <div class="slider__item"><img src="img/prof-2.jpg" alt="slider-item"></div>
+                    <div class="slider__item"><img src="img/prof-3.jpg" alt="slider-item"></div>
+                    <div class="slider__item"><img src="img/prof-2.jpg" alt="slider-item"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="title__block">
+                    <div class="vertical-line"></div>
+                    <h2 class="section__title">Что входит в услугу шиномонтажа в автосервисе</h2>
+                </div>
+                <p class="text__descript-item">Мастера СТО в Москве проведут плановую или внеочередную замену износившихся покрышек, осуществят зачистку дисков, осуществят замену бескамерного вентиля. Также специалисты VIVA MOTORS:</p>
+                <div class="adv__main">
+                    <div class="adv__block">
+                        <div class="adv__item">
+                            <div class="item__number">1</div>
+                            <div class="item__text">Выполнят диагностику, аппаратную мойку колес</div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">2</div>
+                            <div class="item__text">Устранят проколы, порезы резины, грыжи шин</div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">3</div>
+                            <div class="item__text">Произведут проверку давления и подкачку колес</div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">4</div>
+                            <div class="item__text">Осуществят балансировку колес автомобиля для профилактики и устранения вибрации</div>
+                        </div>
+                        <div class="adv__item">
+                            <div class="item__number">5</div>
+                            <div class="item__text">Поменяют резину на зимнюю или летнюю</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="service__descript etaps">
+            <div class="container">
+                <div class="title__block">
+                    <div class="title__line"></div>
+                    <h2 class="tovar__title">Как попасть на шиномонтаж в VIVA MOTORS</h2>
+                </div>
+                <div class="service__descript-item">
+                    <div class="text__descript-item main__banner-item">Чтобы воспользоваться услугами шиномонтажа и балансировки колес частных, коммерческих автомобилей в нашем автосервисе, заполните заявку на сайте компании или свяжитесь с нами по одному из контактных телефонов. Гарантийное обслуживание, низкие цены, возможность купить (заказать) оригинальные запчасти для вашего авто, современное оборудование и высокий профессионализм сотрудников СТО — вот почему стоит выбрать VIVA MOTORS в Москве. </div>
+                    <div class="descript__img"><img src="img/4-sh.png" alt="describe"></div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="title__block">
+                    <div class="title__line"></div>
+                    <h2 class="section__title">Другие услуги VIVA MOTORS</h2>
+                </div>
+                <div class="services__block">
+                    <div class="services__item">
+                        <h3 class="services__title">Автосервис</h3>
+                        <a href="autoservice.html" class="services__link">Подробнее</a>
+                        <img class="services__img" src="img/services/ser-1.png" alt="servicesImg">
+                    </div>
+                    <div class="services__item">
+                        <h3 class="services__title">Автомойка</h3>
+                        <a href="moyka.html" class="services__link">Подробнее</a>
+                        <img class="services__img" src="img/services/ser-2.png" alt="servicesImg">
+                    </div>
+                    <div class="services__item">
+                        <h3 class="services__title">Сход-развал</h3>
+                        <a href="razval.html" class="services__link">Подробнее</a>
+                        <img class="services__img" src="img/services/ser-3.png" alt="servicesImg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="actions">
+            <div class="container">
+                <div class="title__block">
+                    <div class="title__line"></div>
+                    <h2 class="section__title">Акции</h2>
+                </div>
+                <div class="actions__block">
+                    <div class="action__item" id="action__item-1">
+                        <div class="action__bg action__bg-big" id="action__bg-1">
+                            <div class="action__left">
+                                <h3 class="action__title">Бесплатная замена <br/>масла</h3>
+                                <a href="#" class="services__link">Подробнее</a>
+                            </div>
+                            <div class="action__right">
+                                <img src="img/services/g-energy.png" alt="ServiceImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action__item" id="action__item-2">
+                        <div class="action__bg action__bg-big" id="action__bg-2">
+                            <div class="action__left">
+                                <h3 class="action__title">Бесплатная диагностика <br/>ходовой части</h3>
+                                <button class="action__button zapisat">Записаться</butt>
+                            </div>
+                            <div class="action__right">
+                                <img src="img/services/serv-7.png" alt="ServiceImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action__item action__item-small" id="action__item-3">
+                        Скидка на сервис
+                    </div>
+                    <div class="action__item action__item-small" id="action__item-4">
+                        Скидка на сервис
+                        <div class="skidka">50%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cart">
+            <div class="container">
+                <div class="title__block">
+                    <h2 class="section__title">Контакты </h2>
+                </div>
+                <div class="cart__block">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6734f6a77b4d748112cde2c3fda4129f463b6ce3909baf01ae287d947488b1a3&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    <div class="cart__info">
+                        <div class="cart__item">
+                            <h1 class="item__title">Адрес</h1>
+                            <hr>
+                            <p class="item__descript">Абрамцевская ул., 30, стр. 4, Москва</p>
+                        </div>
+                        <div class="cart__item">
+                            <h1 class="item__title">Телефон</h1>
+                            <hr>
+                            <p class="item__descript">+7 (495) 260-18-00</p>
+                            <p class="item__descript">+7 (916) 918-34-54</p>
+                        </div>
+                        <div class="cart__item">
+                            <h1 class="item__title">График</h1>
+                            <hr>
+                            <p class="item__descript">ПН-ВС 09:00 - 21:00</p>
+                        </div>
+                        <div class="soz__block">
+                            <a class="soz__item"><img src="img/soz/whatsapp.svg" alt="soz"></a>
+                            <a class="soz__item"><img src="img/soz/inst.svg" alt="soz"></a>
+                            <a class="soz__item"><img src="img/soz/viber.svg" alt="soz"></a>
+                            <a class="soz__item"><img src="img/soz/vk.svg" alt="soz"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__banner">
+                    <div class="banner__title">20% скидка на первую запись</div>
+                    <div class="banner__button zapisat">Записаться</div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="includedFooter"></div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
