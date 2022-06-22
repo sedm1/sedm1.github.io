@@ -58,4 +58,13 @@
             $('html, body').animate({ scrollTop: 0 })
         })
     })
+    $(".soz__item img").hover(function(){
+    $(this).attr("src", function(index, attr){
+        return attr.replace(".svg", "-active.svg");
+    });
+    }, function(){
+        $(this).attr("src", function(index, attr){
+        return attr.replace("-active.svg", ".svg");
+    });
+    });
 </script>

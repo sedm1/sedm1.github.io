@@ -50,11 +50,23 @@ button {
   background: transparent;
   font-weight: 600;
   color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
+          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
+}
+
+.header__burger:hover, .input__block button:hover, .action__button:hover, .slick-arrow:hover, .lich_kab:hover, .LogIn:hover, .reg:hover, .action__bg button:hover, .item__more-info:hover, .closeMore:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 span {
@@ -365,8 +377,6 @@ header .container {
   padding: 15px 55px;
   background: #FFBB00;
   margin-top: 50px;
-  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
-          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
   border-radius: 100px;
 }
 .MainScreen .main__img {
@@ -843,11 +853,14 @@ header .container {
   width: 100%;
   margin-bottom: 85px;
 }
+.adv__item:nth-child(2) .item__text {
+  min-height: 212px;
+}
 .adv__item .item__number {
   color: #FFBB00;
-  font-size: 47px;
+  font-size: 57px;
   margin-left: 20px;
-  margin-bottom: -12px;
+  margin-bottom: -14px;
   font-family: "Montserrat Alternates";
   font-weight: 600;
 }
@@ -882,6 +895,12 @@ header .container {
   background-image: url("../img/icons/slick-right.svg");
 }
 
+.rerites__container {
+  max-width: 652px;
+  width: 100%;
+  padding: 10px 0px;
+}
+
 .rerits__item {
   background: #41545F;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
@@ -889,7 +908,9 @@ header .container {
   border-radius: 30px;
   padding: 30px 40px;
   padding-right: 50px;
-  margin: 0 24px;
+  max-width: 618px;
+  width: 100%;
+  margin: 0 auto;
 }
 .rerits__item .rerits__header {
   display: -webkit-box;
@@ -1112,8 +1133,6 @@ header .container {
   padding: 16px 31px;
   margin-left: 40px;
   font-weight: 600;
-  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
-          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
   border-radius: 100px;
 }
 
@@ -1210,6 +1229,12 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 16px;
+  font-family: "Montserrat Alternates";
+  color: rgba(255, 255, 255, 0.4);
+}
+.card__links a {
+  text-decoration: underline;
 }
 
 .card__button {
@@ -1221,13 +1246,6 @@ header .container {
   padding: 15px 41px;
   margin-right: 40px;
   font-weight: 600;
-}
-
-.card__links {
-  font-size: 16px;
-  font-family: "Montserrat Alternates";
-  color: rgba(255, 255, 255, 0.4);
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1365,8 +1383,6 @@ header .container {
   color: #000;
   background: #FFBB00;
   padding: 15px 107px;
-  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
-          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
   border-radius: 100px;
 }
 

@@ -7,6 +7,9 @@
 @import "blocks/PreLinks"
 @import "blocks/Services"
 @import 'blocks/Car'
+.car
+    background-image: url("../img/service__bg-line.png")
+    +bg(171%, 76%, 59%)
 .main__title
     font-size: 48px
     font-family: $HeuristicaBold
@@ -143,6 +146,10 @@
     font-family: $GeometriaRegular
     line-height: 25px
 .zapr
+    background-size: 950px
+    background-repeat: no-repeat
+    background-position: right -554px top
+    background-image: url(../img/bg__tovar.svg)
     .title__block
         margin-bottom: 113px
     .zapr__descript
@@ -210,10 +217,8 @@
         +flexa 
         justify-content: space-between
     .shin__img
-        max-width: 583px
+        max-width: 503px
         width: 100%
-        img
-            height: 390px
     #times__row-2
         margin-left: 45px
         &::before
@@ -244,6 +249,7 @@
         .times__item
             max-width: 100%
     .zapr 
+        background: none
         .zapr__descript
             max-width: none
     .zapr__block

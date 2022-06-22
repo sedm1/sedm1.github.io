@@ -126,3 +126,36 @@ $(".prev").click(function(){
 	$(".md-main__img").removeClass("md-main__img-active")
 	$(".xod__descript-item").removeClass("xod__descript-item-active")
 })
+
+
+$('.label__item').click(function(){
+	//setTimeout нужен что бы состояние checked успело перейти на следующий input. Иначе будет получать не тот id
+	setTimeout(() => {
+		const all = $(".action__item")
+		var nume = $('input[name="rad"]:checked').attr("id")
+		all.each(function(){
+			$(this).removeClass("hid non")
+			$(".block__min").css({"display":"", "justify-content": "", "flex-direction": ""})
+			if($(this).hasClass(nume)){
+				$(this).addClass("hid")
+				setTimeout(() => {
+					$(this).addClass("non")
+					if($(".big-item").hasClass("hid")){
+						$(".block__min").css({"display":"flex", "justify-content": "space-between", "flex-direction": "row"})
+					}
+				}, 2000)
+			}
+		})
+	}, 100)
+	
+
+})
+$(".soz__item img").hover(function(){
+    $(this).attr("src", function(index, attr){
+        return attr.replace(".svg", "-active.svg");
+    });
+}, function(){
+    $(this).attr("src", function(index, attr){
+        return attr.replace("-active.svg", ".svg");
+    });
+});

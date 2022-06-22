@@ -45,11 +45,13 @@ $(function(){
       autoplay: true,
       autoplaySpeed: 3000,
       dots: false,
+      variableWidth: true,
       responsive: [
         {
           breakpoint: 650,
           settings: {
             slidesToShow: 1,
+            variableWidth: false,
           }
         },
       ]

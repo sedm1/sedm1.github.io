@@ -5,7 +5,9 @@
 
 @import "blocks/Header"
 @import "blocks/PreLinks"
-
+.pre__links
+    margin-top: 0px
+    padding-top: 30px
 .mainScreen
     .container
         display: flex
@@ -32,10 +34,15 @@
             background: $Yellow
     .main__button
         padding: 15px 55px
-        background: $Yellow
+        background: $Yellow 
         border-radius: 100px
-        box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
         margin-top: 85px
+    .mainImg
+        max-width: 728px
+        width: 100%
+.main__bg
+    background-image: url("../img/bg-bonus.png")
+    +bg(cover, 55%, 75%)
 .mainBanner
     .container
         background: $ShineGray
