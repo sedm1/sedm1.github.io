@@ -554,6 +554,8 @@ header .container {
   width: 100%;
   max-width: 850px;
   height: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .car__descript-item {
@@ -578,12 +580,84 @@ header .container {
   -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 10000;
+  position: relative;
 }
 .car__descript-round:hover {
   -webkit-box-shadow: 0px 0px 20px #FFBB00;
           box-shadow: 0px 0px 20px #FFBB00;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+}
+.car__descript-round:hover::before {
+  opacity: 1;
+}
+.car__descript-round::before {
+  content: "";
+  -webkit-box-shadow: inset 0px 0px 50px rgba(255, 187, 0, 0.6);
+          box-shadow: inset 0px 0px 50px rgba(255, 187, 0, 0.6);
+  width: 186px;
+  height: 151px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+}
+
+#md__xod::before {
+  width: 148px;
+  height: 179px;
+  top: -84px;
+  left: -30px;
+}
+
+#md__dvig::before {
+  width: 186px;
+  height: 131px;
+  top: -44px;
+  left: -50px;
+}
+
+#md__akpp::before {
+  width: 128px;
+  height: 83px;
+  top: -44px;
+  left: -60px;
+}
+
+#md__sis::before {
+  width: 168px;
+  height: 141px;
+  top: -74px;
+  left: -70px;
+}
+
+#md__diag::before {
+  display: none;
+}
+
+#md__rul::before {
+  width: 132px;
+  height: 87px;
+  top: -45px;
+  left: -40px;
+}
+
+.car-drop {
+  -webkit-filter: drop-shadow(7px 0px 23px #FFBB00);
+          filter: drop-shadow(7px 0px 23px #FFBB00);
+}
+
+.round-active {
+  -webkit-box-shadow: 0px 0px 20px #FFBB00;
+          box-shadow: 0px 0px 20px #FFBB00;
+}
+.round-active::before {
+  opacity: 1;
 }
 
 .car__descript-round:hover ~ .car__descript__text {
@@ -602,6 +676,7 @@ header .container {
   text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 #car__slide-1 {
@@ -2117,7 +2192,6 @@ header .container {
 }
 .topl__footer .topl__img {
   max-width: 552px;
-  border: 2px solid #FFBB00;
   border-radius: 20px;
 }
 .topl__footer .topl__img img {

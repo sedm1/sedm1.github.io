@@ -9,6 +9,7 @@
     width: 100%
     max-width: 850px
     height: auto
+    transition: .3s
 
 .car__descript-item
     position: absolute
@@ -19,16 +20,69 @@
     max-width: 21px
     height: 21px
     background: $Yellow
-    
     border-radius: 21px
     outline: 1px solid
     outline-color: rgba(255, 255, 255, .5)
     outline-offset: 0px
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1)
     z-index: 10000
+    position: relative
     &:hover 
         box-shadow: 0px 0px 20px $Yellow
-        transform: scale(1.2)
+        &::before
+            opacity: 1
+    &::before
+        content: ""
+        box-shadow: inset 0px 0px 50px rgba(255, 187, 0, 0.6)
+        width: 186px
+        height: 151px
+        position: absolute
+        top: 0
+        left: 0
+        border-radius: 100%
+        transform: scale(1)
+        transition: .3s
+        opacity: 0
+        filter: blur(6px)
+#md__xod
+    &::before
+        width: 148px
+        height: 179px
+        top: -84px
+        left: -30px
+#md__dvig
+    &::before
+        width: 186px
+        height: 131px
+        top: -44px
+        left: -50px
+#md__akpp
+    &::before
+        width: 128px
+        height: 83px
+        top: -44px
+        left: -60px
+#md__sis
+    &::before
+        width: 168px
+        height: 141px
+        top: -74px
+        left: -70px
+#md__diag
+    &::before
+        display: none    
+#md__rul    
+    &::before
+        width: 132px
+        height: 87px
+        top: -45px
+        left: -40px
+.car-drop
+    filter: drop-shadow(7px 0px 23px $Yellow)
+.round-active
+    box-shadow: 0px 0px 20px $Yellow
+    &::before
+        opacity: 1
 .car__descript-round:hover ~ .car__descript__text
     box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5)
 .car__descript__text
@@ -41,6 +95,7 @@
     font-weight: 400
     text-align: center
     transition: .3s
+    cursor: pointer
 #car__slide-1
     left: 150px
     top: 98px

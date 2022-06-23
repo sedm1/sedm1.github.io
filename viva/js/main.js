@@ -116,6 +116,23 @@ $(".car__descript-round").click(function(){
 		$(".xod__descript-item").addClass("xod__descript-item-active")
 	}, 800)
 })
+$(".car__descript__text").click(function(){
+	var clas = $(this).attr("id")
+	var CarBg = $(".car__bg")
+
+	CarBg.addClass("car__bg-active")
+	$("." + clas).css({"display":"flex"})
+	setTimeout(() => {
+		CarBg.addClass("car__bg-op")
+	}, 200)
+	setTimeout(() => {
+		$(".md-main__img").addClass("md-main__img-active")
+		$("body").addClass("bb")
+	}, 400)
+	setTimeout(() => {
+		$(".xod__descript-item").addClass("xod__descript-item-active")
+	}, 800)
+})
 $(".prev").click(function(){
 	var Modals = $(".car__bg .container")
 	var CarBg = $(".car__bg")
@@ -126,8 +143,16 @@ $(".prev").click(function(){
 	$(".md-main__img").removeClass("md-main__img-active")
 	$(".xod__descript-item").removeClass("xod__descript-item-active")
 })
-
-
+$("#md__diag").hover(function(){
+	$(".car__img").toggleClass("car-drop")
+})
+$(".md__diag-clas").hover(function(){
+	$(".car__img").toggleClass("car-drop")
+})
+$(".car__descript__text").hover(function(){
+	var a = $($(this).siblings("button"))
+	a.toggleClass("round-active")
+})
 $('.label__item').click(function(){
 	//setTimeout нужен что бы состояние checked успело перейти на следующий input. Иначе будет получать не тот id
 	setTimeout(() => {

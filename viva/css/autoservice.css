@@ -1774,6 +1774,11 @@ footer .soz__block .soz__item:last-child {
   bottom: 20px;
 }
 
+#a-6 .services__img {
+  bottom: 45px;
+  max-width: 250px;
+}
+
 #ser-1 .services__img {
   bottom: -40px;
 }
