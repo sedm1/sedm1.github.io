@@ -9,7 +9,7 @@
 @import 'blocks/Car'
 .car
     background-image: url("../img/service__bg-line.png")
-    +bg(171%, 76%, 59%)
+    +bg(218%, 76%, 63%)
 .main__title
     font-size: 48px
     font-family: $HeuristicaBold
@@ -52,7 +52,7 @@
             max-width: 587px
             line-height: 25px
 .rem
-    +bg(150%, center, 70%)
+    +bg(150%, center, 77%)
     background-image: url("../img/bg__line-3.svg")
     .vertical-line
         margin: 30px 0px
@@ -123,12 +123,12 @@
         max-width: 552px
         border: 2px solid $Yellow
         border-radius: 20px
-        height: 250px
+
         img
             max-width: 550px
             width: 100%
             border-radius: 20px
-            height: 248px
+            height: 250px
 .comp__item
     +flexa 
     justify-content: space-between
@@ -146,10 +146,10 @@
     font-family: $GeometriaRegular
     line-height: 25px
 .zapr
-    background-size: 950px
-    background-repeat: no-repeat
-    background-position: right -554px top
-    background-image: url(../img/bg__tovar.svg)
+    +bg(46%, 125%, 40%)
+    background-image: url(../img/zapr-bg__line.png)
+    margin-bottom: 0px
+    padding-bottom: 170px
     .title__block
         margin-bottom: 113px
     .zapr__descript
@@ -388,3 +388,18 @@
 @import "blocks/Questions"
 @import "blocks/Footer"
 @import "blocks/modal"
+#ser-1
+    .services__img
+        bottom: -40px
+#ser-2
+    .services__img
+        bottom: 10px
+#ser-3
+    .services__img
+        right: -155px
+        bottom: 5px
+        max-width: 390px
+#ser-6
+    .services__img
+        max-width: 210px
+        bottom: -20px

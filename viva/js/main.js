@@ -143,7 +143,7 @@ $('.label__item').click(function(){
 					if($(".big-item").hasClass("hid")){
 						$(".block__min").css({"display":"flex", "justify-content": "space-between", "flex-direction": "row"})
 					}
-				}, 2000)
+				}, 1000)
 			}
 		})
 	}, 100)

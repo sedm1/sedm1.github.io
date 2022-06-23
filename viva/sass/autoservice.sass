@@ -7,6 +7,11 @@
 @import "blocks/PreLinks"
 .pre__links
     margin-bottom: 0px
+    margin-top: 0px
+    padding-top: 30px
+.main
+    background-image: url("../img/au-bg__line.png")
+    +bg(cover, center, 40%)
 .mainScreen
     .container
         +flexa
@@ -34,7 +39,7 @@
             border-radius: 100px
             padding: 15px 55px
     &__img
-        max-width: 728px
+        max-width: 768px
         width: 100%
 @import "blocks/Services"
 .services__header
@@ -71,6 +76,9 @@
         .section__title
             margin: 0px 20px
             text-align: center
+@media screen and (max-width: $MainContainer)
+    .main
+        background: none
 @media screen and (max-width: 1000px)
     .mainScreen 
         .container
@@ -95,3 +103,21 @@
 @import "blocks/Cart"
 @import "blocks/Footer"
 @import "blocks/modal"
+#a-3
+    .services__img
+        bottom: 20px
+#ser-1
+    .services__img
+        bottom: -40px
+#ser-2
+    .services__img
+        bottom: 10px
+#ser-3
+    .services__img
+        right: -155px
+        bottom: 5px
+        max-width: 390px
+#ser-6
+    .services__img
+        max-width: 210px
+        bottom: -20px

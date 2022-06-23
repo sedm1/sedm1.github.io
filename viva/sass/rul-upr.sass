@@ -12,7 +12,11 @@
     margin-bottom: 120px
 .main
     background-image: url("../img/bg__line-5.png")
-    +bg(180%, center, 46%)
+    +bg(183%, center, 67%)
+    margin-bottom: 0px
+    padding-bottom: 170px
+    .main__banner
+        margin-bottom: 0px
 .mainScreen
     .container
         +flexa
@@ -56,12 +60,17 @@
     letter-spacing: -0.022em
 .services__link
     align-self: flex-end
+.services__img-bl
+    height: 160px
+    width: 100%
+    +flexa 
+    justify-content: center
 .services__img
     position: static
     top: auto
     right: auto
     max-height: 160px
-    height: 160px
+    
     width: max-content
     max-width: 100%
     align-self: center
@@ -91,6 +100,7 @@
 .text__descript-item
     font-family: $GeometriaRegular
     margin-bottom: 30px
+    line-height: 25px
     span
         color: $Yellow
         font-family: $GeometriaBold
@@ -192,6 +202,8 @@
         margin-bottom: 80px
         max-width: 570px
 .grunde
+    .title__block
+        margin-bottom: 40px
     .container
         +flexa 
         justify-content: space-between

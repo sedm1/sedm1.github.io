@@ -535,6 +535,11 @@ header .container {
     max-width: 200px;
   }
 }
+.car {
+  padding-bottom: 170px;
+  margin-bottom: 0;
+}
+
 .car__block {
   position: relative;
   display: -webkit-box;
@@ -1806,9 +1811,9 @@ header .container {
 }
 .car {
   background-image: url("../img/service__bg-line.png");
-  background-size: 171%;
+  background-size: 218%;
   background-repeat: no-repeat;
-  background-position: 76% 59%;
+  background-position: 76% 63%;
 }
 
 .main__title {
@@ -1880,7 +1885,7 @@ header .container {
 .rem {
   background-size: 150%;
   background-repeat: no-repeat;
-  background-position: center 70%;
+  background-position: center 77%;
   background-image: url("../img/bg__line-3.svg");
 }
 .rem .vertical-line {
@@ -2114,13 +2119,12 @@ header .container {
   max-width: 552px;
   border: 2px solid #FFBB00;
   border-radius: 20px;
-  height: 250px;
 }
 .topl__footer .topl__img img {
   max-width: 550px;
   width: 100%;
   border-radius: 20px;
-  height: 248px;
+  height: 250px;
 }
 
 .comp__item {
@@ -2157,10 +2161,12 @@ header .container {
 }
 
 .zapr {
-  background-size: 950px;
+  background-size: 46%;
   background-repeat: no-repeat;
-  background-position: right -554px top;
-  background-image: url(../img/bg__tovar.svg);
+  background-position: 125% 40%;
+  background-image: url(../img/zapr-bg__line.png);
+  margin-bottom: 0px;
+  padding-bottom: 170px;
 }
 .zapr .title__block {
   margin-bottom: 113px;
@@ -4452,7 +4458,7 @@ footer .soz__block .soz__item:last-child {
   width: 100%;
 }
 .zapis .zapis__img {
-  max-width: 137px;
+  max-width: 145px;
   width: 100%;
 }
 .zapis .zapis__img img {
@@ -4542,8 +4548,6 @@ footer .soz__block .soz__item:last-child {
 .zapis .zap__button {
   background: #FFBB00;
   padding: 11px 55px;
-  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
-          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
   border-radius: 100px;
 }
 .zapis .zap__sogl {
@@ -4657,4 +4661,22 @@ footer .soz__block .soz__item:last-child {
     padding: 17px 7px;
     border-radius: 15px;
   }
+}
+#ser-1 .services__img {
+  bottom: -40px;
+}
+
+#ser-2 .services__img {
+  bottom: 10px;
+}
+
+#ser-3 .services__img {
+  right: -155px;
+  bottom: 5px;
+  max-width: 390px;
+}
+
+#ser-6 .services__img {
+  max-width: 210px;
+  bottom: -20px;
 }

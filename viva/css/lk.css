@@ -1459,7 +1459,7 @@ footer .soz__block .soz__item:last-child {
   width: 100%;
 }
 .zapis .zapis__img {
-  max-width: 137px;
+  max-width: 145px;
   width: 100%;
 }
 .zapis .zapis__img img {
@@ -1549,8 +1549,6 @@ footer .soz__block .soz__item:last-child {
 .zapis .zap__button {
   background: #FFBB00;
   padding: 11px 55px;
-  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
-          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
   border-radius: 100px;
 }
 .zapis .zap__sogl {

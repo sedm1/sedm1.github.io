@@ -367,6 +367,7 @@ header .container {
   line-height: 50px;
   letter-spacing: 0.03em;
   margin-bottom: 87px;
+  max-width: 673px;
 }
 .mainScreen .main__descript {
   font-family: "geometria_regular";
@@ -392,13 +393,14 @@ header .container {
 .mainScreen .mainImg {
   max-width: 728px;
   width: 100%;
+  margin-top: -130px;
 }
 
 .main__bg {
   background-image: url("../img/bg-bonus.png");
-  background-size: cover;
+  background-size: 140%;
   background-repeat: no-repeat;
-  background-position: 55% 75%;
+  background-position: 55% 90%;
 }
 
 .mainBanner .container {
@@ -583,13 +585,6 @@ header .container {
   padding: 30px;
   max-width: 397px;
   width: 100%;
-  position: relative;
-}
-.card__services .card__services-item::before {
-  content: url("../img/icons/arr__down.svg");
-  position: absolute;
-  top: 36px;
-  right: 25px;
 }
 .card__services-title {
   font-size: 20px;
@@ -703,9 +698,9 @@ header .container {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .mainScreen .mainImg {
+    margin-top: 30px;
   }
 
   .banner__plus {
@@ -1447,7 +1442,7 @@ footer .soz__block .soz__item:last-child {
   width: 100%;
 }
 .zapis .zapis__img {
-  max-width: 137px;
+  max-width: 145px;
   width: 100%;
 }
 .zapis .zapis__img img {
@@ -1537,8 +1532,6 @@ footer .soz__block .soz__item:last-child {
 .zapis .zap__button {
   background: #FFBB00;
   padding: 11px 55px;
-  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
-          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
   border-radius: 100px;
 }
 .zapis .zap__sogl {

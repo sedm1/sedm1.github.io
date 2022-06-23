@@ -347,6 +347,15 @@ header .container {
 
 .pre__links {
   margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
+.main {
+  background-image: url("../img/au-bg__line.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 40%;
 }
 
 .mainScreen .container {
@@ -388,7 +397,7 @@ header .container {
   padding: 15px 55px;
 }
 .mainScreen__img {
-  max-width: 728px;
+  max-width: 768px;
   width: 100%;
 }
 
@@ -641,6 +650,11 @@ header .container {
   text-align: center;
 }
 
+@media screen and (max-width: 1280px) {
+  .main {
+    background: none;
+  }
+}
 @media screen and (max-width: 1000px) {
   .mainScreen .container {
     -webkit-box-orient: vertical;
@@ -1552,7 +1566,7 @@ footer .soz__block .soz__item:last-child {
   width: 100%;
 }
 .zapis .zapis__img {
-  max-width: 137px;
+  max-width: 145px;
   width: 100%;
 }
 .zapis .zapis__img img {
@@ -1642,8 +1656,6 @@ footer .soz__block .soz__item:last-child {
 .zapis .zap__button {
   background: #FFBB00;
   padding: 11px 55px;
-  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
-          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.3);
   border-radius: 100px;
 }
 .zapis .zap__sogl {
@@ -1757,4 +1769,26 @@ footer .soz__block .soz__item:last-child {
     padding: 17px 7px;
     border-radius: 15px;
   }
+}
+#a-3 .services__img {
+  bottom: 20px;
+}
+
+#ser-1 .services__img {
+  bottom: -40px;
+}
+
+#ser-2 .services__img {
+  bottom: 10px;
+}
+
+#ser-3 .services__img {
+  right: -155px;
+  bottom: 5px;
+  max-width: 390px;
+}
+
+#ser-6 .services__img {
+  max-width: 210px;
+  bottom: -20px;
 }

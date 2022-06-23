@@ -7,6 +7,16 @@
 @import "blocks/PreLinks"
 @import "blocks/Times"
 @import "blocks/Services"
+.pre__links
+    margin-top: 0px
+    padding-top: 30px
+.main
+    background-image: url("../img/dvig__bg-line.png")
+    +bg(cover, 40%, 45%)
+    margin-bottom: 0px
+    padding-bottom: 170px
+    .main__banner
+        margin-bottom: 0px
 .mainScreen
     .container
         +flexa
@@ -34,11 +44,14 @@
             border-radius: 100px
             padding: 15px 55px
     &__img
-        max-width: 600px
+        max-width: 520px
         width: 100%
+        margin-bottom: -250px
 
 .services__block
-    justify-content: space-evenly
+    justify-content: center
+    .services__item
+        margin: 23px 16px
 .services__item
     height: 343px
     max-width: 286px
@@ -104,6 +117,7 @@
         padding: 30px
         max-width: 397px
         width: 100%
+        
         .item__number
             color: $Yellow
             font-family: $Montserrat
@@ -209,6 +223,7 @@
                 margin: 40px 0px
         .mainScreen__img
             margin-top: 30px
+            margin-bottom: 0
     .prich 
         .prich__item
             flex-direction: column

@@ -57,7 +57,7 @@
     position: static
     top: auto
     right: auto
-    max-height: 160px
+    max-height: 130px
     width: max-content
     align-self: center
 .services__header
@@ -109,6 +109,11 @@
     font-family: $GeometriaBold
     color: rgba(255, 255, 255, 0.6)
     margin-top: 41px
+.error-bg
+    background-image: url("../img/error-bg__line.png")
+    +bg(128%, center, 88%)
+    margin-bottom: 0px
+    padding-bottom: 170px
 .error__item
     margin-top: 80px
     +flexa
@@ -124,7 +129,7 @@
         width: 100%
         padding: 30px
     .main__banner-img
-        max-width: 582px
+        max-width: 663px
         width: 100%
         img
             border-radius: 20px
@@ -140,7 +145,7 @@
         margin-left: 40px
 .adv__block
     display: flex
-    justify-content: space-between
+    justify-content: space-evenly
     flex-wrap: wrap
     .adv__item
         margin: 27px 0px
@@ -148,7 +153,6 @@
         border: 1px solid $Yellow
         border-radius: 20px
         padding: 30px
-        height: 150px
         max-width: 397px
         width: 100%
         display: flex
@@ -156,7 +160,7 @@
             color: $Yellow
             font-family: $Montserrat
             font-size: 40px
-            margin-bottom: 15px
+            margin-top: -15px
             font-weight: 600
             margin-right: 20px
         .item__text
@@ -186,8 +190,12 @@
         width: 100%
         img
             border-radius: 20px
+@media screen and ( min-width:  1600px)
+    .error-bg
+        +bg(cover, 0px, -930px)
 @media screen and (max-width: $MainContainer)
-
+    .error-bg
+        display: none
     .error 
         .error__item
             flex-direction: column
