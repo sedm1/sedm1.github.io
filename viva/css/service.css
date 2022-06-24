@@ -814,7 +814,7 @@ header .container {
 }
 
 .car__bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: #2E424D;
@@ -835,6 +835,8 @@ header .container {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  height: 100vh;
+  overflow: hidden;
 }
 .car__bg .container {
   position: relative;
@@ -881,11 +883,6 @@ header .container {
   opacity: 1;
 }
 
-.bb {
-  max-height: 100vh;
-  overflow-y: hidden;
-}
-
 .xod__img {
   max-width: 831px;
 }
@@ -901,6 +898,11 @@ header .container {
   opacity: 0;
   -webkit-transition: 1.2s;
   transition: 1.2s;
+}
+
+.bb {
+  overflow: hidden;
+  height: 100%;
 }
 
 .xod__descript-link {
@@ -2626,7 +2628,7 @@ header .container {
   }
 }
 .car__bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: #2E424D;
@@ -2647,6 +2649,8 @@ header .container {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  height: 100vh;
+  overflow: hidden;
 }
 .car__bg .container {
   position: relative;
@@ -2693,11 +2697,6 @@ header .container {
   opacity: 1;
 }
 
-.bb {
-  max-height: 100vh;
-  overflow-y: hidden;
-}
-
 .xod__img {
   max-width: 831px;
 }
@@ -2713,6 +2712,11 @@ header .container {
   opacity: 0;
   -webkit-transition: 1.2s;
   transition: 1.2s;
+}
+
+.bb {
+  overflow: hidden;
+  height: 100%;
 }
 
 .xod__descript-link {

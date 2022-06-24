@@ -103,7 +103,6 @@ $(".zapisat").click(function(){
 $(".car__descript-round").click(function(){
 	var clas = $(this).attr("id")
 	var CarBg = $(".car__bg")
-
 	CarBg.addClass("car__bg-active")
 	$("." + clas).css({"display":"flex"})
 	setTimeout(() => {
@@ -120,7 +119,6 @@ $(".car__descript-round").click(function(){
 $(".car__descript__text").click(function(){
 	var clas = $(this).attr("id")
 	var CarBg = $(".car__bg")
-
 	CarBg.addClass("car__bg-active")
 	$("." + clas).css({"display":"flex"})
 	setTimeout(() => {

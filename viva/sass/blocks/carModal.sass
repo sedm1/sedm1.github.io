@@ -1,5 +1,5 @@
 .car__bg
-    position: absolute
+    position: fixed
     top: 0
     left: 0
     background: #2E424D
@@ -13,6 +13,8 @@
     display: none
     opacity: 0
     transition: .5s
+    height: 100vh
+    overflow: hidden
     .container
         position: relative
         +flexa 
@@ -34,9 +36,6 @@
     display: flex
 .car__bg-op
     opacity: 1
-.bb
-    max-height: 100vh
-    overflow-y: hidden
 .xod__img
     max-width: 831px
 .xod__descript-item
@@ -45,6 +44,9 @@
     align-items: flex-start
     opacity: 0
     transition: 1.2s
+.bb
+    overflow: hidden
+    height: 100%
 .xod__descript-link
     min-width: 21px 
     width: 21px
