@@ -943,6 +943,7 @@ header .container {
   font-size: 30px;
   font-family: "Heuristica_Bold";
   letter-spacing: 0.03em;
+  max-width: 520px;
 }
 .mainScreen .container .main__descript {
   position: relative;
@@ -965,7 +966,7 @@ header .container {
   padding: 15px 55px;
 }
 .mainScreen__img {
-  max-width: 617px;
+  max-width: 730px;
   width: 100%;
 }
 .mainScreen__img img {
@@ -1616,6 +1617,9 @@ footer .soz__block .soz__item:last-child {
   }
 }
 @media screen and (max-width: 900px) {
+  .mainScreen {
+    border-bottom: 2px solid #FFBB00;
+  }
   .mainScreen .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1631,6 +1635,7 @@ footer .soz__block .soz__item:last-child {
 
   .mainScreen__img {
     max-width: 100%;
+    margin-top: 30px;
   }
 
   .art .desc__block .text__descript-item {

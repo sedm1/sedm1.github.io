@@ -73,6 +73,7 @@
             font-size: 30px
             font-family: $HeuristicaBold
             letter-spacing: 0.03em
+            max-width: 520px
         .main__descript
             position: relative
             font-family: $GeometriaRegular
@@ -91,7 +92,7 @@
             border-radius: 100px
             padding: 15px 55px
     &__img
-        max-width: 617px
+        max-width: 730px
         width: 100%
         img
             border-radius: 20px
@@ -323,6 +324,7 @@
             margin: 20px 0px
 @media screen and ( max-width: 900px )
     .mainScreen 
+        border-bottom: 2px solid $Yellow
         .container
             flex-direction: column
             align-items: flex-start
@@ -330,6 +332,7 @@
                 margin: 40px 0px
     .mainScreen__img
         max-width: 100%
+        margin-top: 30px
     .art .desc__block 
         .text__descript-item
             max-width: 100%
