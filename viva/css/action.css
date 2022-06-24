@@ -580,7 +580,7 @@ header .container {
 .action__header .abo {
   padding: 19px 68px;
   border-radius: 100px;
-  background: grey;
+  background: #41545F;
   color: #ffffff;
   font-family: "geometria_bold";
 }
