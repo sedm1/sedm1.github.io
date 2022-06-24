@@ -92,7 +92,6 @@ footer
     img
         width: 30px
 .backRound
-    position: fixed
     top: 10px
     left: 10px
     width: 40px
@@ -105,6 +104,17 @@ footer
     img
         width: 20px
         transform: rotate(-90deg)
+.backRound-cont
+    position: fixed
+    top: 158px
+    left: 50%
+    transform: translateX(-54%)
+@media screen and ( max-width:  1400px)
+    .backRound-cont
+        top: 82px
+        transform: translateX(0)
+        left: 10px
+    
 @media screen and (max-width: $MainContainer)
     .footer__blocks, .footer__down
         flex-direction: column

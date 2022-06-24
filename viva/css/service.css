@@ -4152,7 +4152,6 @@ footer .soz__block .soz__item:last-child {
 }
 
 .backRound {
-  position: fixed;
   top: 10px;
   left: 10px;
   width: 40px;
@@ -4177,6 +4176,22 @@ footer .soz__block .soz__item:last-child {
           transform: rotate(-90deg);
 }
 
+.backRound-cont {
+  position: fixed;
+  top: 158px;
+  left: 50%;
+  -webkit-transform: translateX(-54%);
+          transform: translateX(-54%);
+}
+
+@media screen and (max-width: 1400px) {
+  .backRound-cont {
+    top: 82px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    left: 10px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .footer__blocks, .footer__down {
     -webkit-box-orient: vertical;

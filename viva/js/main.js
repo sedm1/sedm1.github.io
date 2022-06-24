@@ -74,6 +74,7 @@ $(".closeMore").click(function(){
 	$("body").removeClass("block-bb")
 })
 $(".abo").click(function(){
+	$(this).toggleClass("abo-active")
 	$(".about").toggleClass("about-active")
 	$(".actions__block").toggleClass("none")
 	$(".action__label").toggleClass("dis")
