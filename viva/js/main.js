@@ -184,3 +184,27 @@ $(".soz__item img").hover(function(){
         return attr.replace("-active.svg", ".svg");
     });
 });
+$(".next-step").click(function(){
+	$(".reg__modal .input__block-reg").hide()
+	$(".reg__modal .pol").hide()
+	$(".next-step").hide()
+	$(".Tolog-form__btn").hide()
+	$(".kod__text").css({"display": "block"})
+	$("#kod").css({"display": "block"})
+})
+$(".LogIn").click(function(){
+	closeAllModal()
+	openModal("log__modal", "modal__window-active")
+})
+$(".reg").click(function(){
+	closeAllModal()
+	openModal("reg__modal", "modal__window-active")
+})
+$(".Tolog-form__btn").click(function(){
+	closeAllModal()
+	openModal("log__modal", "modal__window-active")
+})
+$(".Toreg-form__btn").click(function(){
+	closeAllModal()
+	openModal("reg__modal", "modal__window-active")
+})

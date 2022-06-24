@@ -58,7 +58,7 @@ button:hover {
           box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
 }
 
-.header__burger:hover, .input__block button:hover, .action__button:hover, .slick-arrow:hover, .lich_kab:hover, .LogIn:hover, .reg:hover, .action__bg button:hover, .item__more-info:hover, .closeMore:hover {
+.header__burger:hover, .input__block button:hover, .action__button:hover, .slick-arrow:hover, .lich_kab:hover, .LogIn:hover, .reg:hover, .action__bg button:hover, .item__more-info:hover, .closeMore:hover, .Tolog-form__btn:hover, .Toreg-form__btn:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1754,12 +1754,34 @@ footer .soz__block .soz__item:last-child {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.topRound:hover {
-  -webkit-box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
-          box-shadow: 0px 0px 30px rgba(255, 187, 0, 0.5);
-}
 .topRound img {
   width: 30px;
+}
+
+.backRound {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: #FFBB00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.backRound img {
+  width: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 @media screen and (max-width: 1280px) {
@@ -2244,12 +2266,196 @@ footer .soz__block .soz__item:last-child {
   font-family: "geometria_bold";
 }
 
-.modal__window-preactive {
-  display: block;
+.reg__modal {
+  background: #2E424D;
+  border-radius: 30px;
+  padding: 40px 30px;
+  padding-bottom: 60px;
+  max-width: 396px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.reg__modal .reg__title {
+  font-family: "Heuristica_Bold";
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+.reg__modal .input__block-reg {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+.reg__modal .input__block-reg input {
+  background: #41545F;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.reg__modal .input__block-reg input:focus + label {
+  display: none;
+}
+.reg__modal .input__block-reg input:valid + label {
+  display: none;
+}
+.reg__modal .input__block-reg label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: "geometria_regular";
+  font-weight: 400;
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+.reg__modal .input__block-reg label span {
+  color: red;
+}
+.reg__modal .reg__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.reg__modal .next-step {
+  background: #FFBB00;
+  padding: 11px 50px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.reg__modal .Tolog-form__btn {
+  color: #FFBB00;
+  font-size: 16px;
+}
+.reg__modal .pol {
+  font-size: 14px;
+  font-family: "geometria_regular";
+  font-weight: 400;
+  margin-top: 30px;
+}
+.reg__modal .pol a {
+  text-decoration: underline;
 }
 
-.modal__window-active {
-  opacity: 1;
+.log__modal {
+  background: #2E424D;
+  border-radius: 30px;
+  padding: 40px 30px;
+  padding-bottom: 60px;
+  max-width: 396px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.log__modal .log__title {
+  font-family: "Heuristica_Bold";
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+.log__modal .input__block-log {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+.log__modal .input__block-log input {
+  background: #41545F;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.log__modal .input__block-log input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+.log__modal .input__block-log input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+.log__modal .input__block-log input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+.log__modal .input__block-log input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+.log__modal .input__block-log input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+.log__modal .log__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.log__modal .next-step-log {
+  background: #FFBB00;
+  padding: 11px 50px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.log__modal .Toreg-form__btn {
+  color: #FFBB00;
+  font-size: 16px;
+}
+.log__modal .pol {
+  font-size: 14px;
+  font-family: "geometria_regular";
+  font-weight: 400;
+  margin-top: 30px;
+}
+.log__modal .pol a {
+  text-decoration: underline;
+}
+
+.kod__text {
+  display: none;
+  font-size: 16px;
+  font-family: "geometria_regular";
+  font-weight: 400;
+}
+.kod__text span {
+  color: #FFBB00;
+  font-weight: 700;
+}
+
+#kod {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -2342,4 +2548,11 @@ footer .soz__block .soz__item:last-child {
     padding: 17px 7px;
     border-radius: 15px;
   }
+}
+.modal__window-preactive {
+  display: block;
+}
+
+.modal__window-active {
+  opacity: 1;
 }
