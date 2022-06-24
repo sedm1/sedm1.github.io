@@ -15,6 +15,51 @@
 </head>
     <body>
         <div class="modal__bg">
+            <div class="reg__modal modal__window">
+                <h3 class="reg__title">Регистрация</h3>
+                <form action="">
+                    <div class="input__block-reg">
+                        <input type="text" required id="input__block_int-1">
+                        <label class="inp__text" for="input__block_int-1">Введите ваше имя <span> *</span></label>
+                    </div>
+                    <div class="input__block-reg">
+                        <input type="text" required id="input__block_int-2">
+                        <label class="inp__text" for="input__block_int-2">Укажите вашу почту <span> *</span></label>
+                    </div>
+                    <div class="input__block-reg">
+                        <input type="text" required id="input__block_int-3">
+                        <label class="inp__text" for="input__block_int-3">Введите ваш номер телефона <span> *</span></label>
+                    </div>
+                    <div class="input__block-reg" id="kod">
+                        <input type="text" required id="input__block_int-4">
+                        <label class="inp__text" for="input__block_int-4">Введите код подтверждения</label>
+                    </div>
+                </form>
+                <div class="reg__btn">
+                    <button class="next-step">Продолжить</button>
+                    <button class="Tolog-form__btn">Войти</button>
+                    <div class="kod__text">Выслать код повторно через - <span> 03:25</span></div>
+                </div>
+                
+                <div class="pol">Нажимая «Продолжить» вы соглашаетесь с <a href=""> политикой обработки персональных данных</a></div>
+            </div>
+            <div class="log__modal modal__window">
+                <h3 class="log__title">Войти в личный кабинет</h3>
+                <form action="">
+                    <div class="input__block-log">
+                        <input type="text" required placeholder="Введите ваш телефон или почту">
+                    </div>
+                    <div class="input__block-log">
+                        <input type="text" required placeholder="Введите ваш пароль">
+                    </div>
+                </form>
+                <div class="log__btn">
+                    <button class="next-step-log">Войти</button>
+                    <button class="Toreg-form__btn">Зарегестрироваться</button>
+                </div>
+                
+                <div class="pol">Нажимая «Продолжить» вы соглашаетесь с <a href=""> политикой обработки персональных данных</a></div>
+            </div>
             <div class="zvonok modal__window">
                 <h3 class="zvon__title">Заказать звонок</h3>
                 <p class="zvon__descript">Отправьте нам ваш номер и наш менеджер свяжеться с вами в ближайшее времяю</p>
