@@ -790,8 +790,10 @@ header .container {
     font-size: 16px;
   }
 
+  .card__block {
+    height: auto;
+  }
   .card__block .card__descript-block {
-    height: 150px;
     padding: 20px;
   }
   .card__block .card__descript-header .card__title {
@@ -810,6 +812,20 @@ header .container {
 
   .dopBonus .dopBonus__left-item {
     padding: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .card__block .card__descript-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .card__block .program__block {
+    margin-top: 10px;
   }
 }
 .questions__block {

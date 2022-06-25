@@ -280,8 +280,8 @@
     .card__art-descript
         font-size: 16px
     .card__block 
+        height: auto
         .card__descript-block
-            height: 150px
             padding: 20px
         .card__descript-header 
             .card__title
@@ -296,7 +296,13 @@
     .dopBonus 
         .dopBonus__left-item
             padding: 20px
-
+@media screen and (max-width: 350px)
+    .card__block 
+        .card__descript-header
+            flex-direction: column
+            align-items: flex-start
+        .program__block
+            margin-top: 10px
 @import "blocks/Questions"
 @import "blocks/Footer"
 @import "blocks/modal"
