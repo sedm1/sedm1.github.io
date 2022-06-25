@@ -684,9 +684,7 @@ header .container {
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 25px;
-  max-height: 453px;
   padding-bottom: 30px;
-  height: 100%;
 }
 
 .cart__img {
@@ -737,6 +735,8 @@ header .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .privileges__block .item__title {
   font-family: "geometria_bold";
@@ -747,12 +747,24 @@ header .container {
   font-size: 14px;
   font-family: "geometria_regular";
 }
+.privileges__block .privileges__item:last-child {
+  margin-top: 20px;
+}
 
 .privileges__link {
   color: #FFBB00;
   font-size: 16px;
   font-family: "geometria_regular";
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
   text-decoration: underline;
 }
 
@@ -1409,8 +1421,6 @@ footer .soz__block .soz__item:last-child {
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  max-height: 90vh;
-  overflow: scroll;
 }
 .zvonok .zvon__title {
   font-family: "Heuristica_Bold";
@@ -1493,8 +1503,6 @@ footer .soz__block .soz__item:last-child {
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  max-height: 90vh;
-  overflow: scroll;
 }
 .zapis .zapis__block {
   display: -webkit-box;
@@ -1891,6 +1899,11 @@ footer .soz__block .soz__item:last-child {
   }
 }
 @media screen and (max-width: 380px) {
+  .zvonok, .zapis {
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+
   .burger__main .mobile__block .menu li:last-child {
     max-width: 100%;
   }

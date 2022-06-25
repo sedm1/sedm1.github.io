@@ -127,8 +127,6 @@
     opacity: 0
     display: none
     transition: .3s
-    max-height: 90vh
-    overflow: scroll
     .zvon__title
         font-family: $HeuristicaBold
         font-size: 24px
@@ -193,8 +191,6 @@
     opacity: 0
     display: none
     transition: .3s
-    max-height: 90vh
-    overflow: scroll
     .zapis__block
         +flexa 
         justify-content: space-between
@@ -435,6 +431,9 @@
             margin-right: 15px
             margin-left: 0px
 @media screen and ( max-width:  380px)
+    .zvonok,.zapis
+        max-height: 90vh
+        overflow-y: scroll
     .burger__main 
         .mobile__block 
             .menu 

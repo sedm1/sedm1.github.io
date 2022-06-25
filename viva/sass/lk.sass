@@ -192,9 +192,7 @@
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1)
     border-radius: 20px
     padding: 25px
-    max-height: 453px
     padding-bottom: 30px
-    height: 100%
 .cart__img
     width: 100%
     height: auto
@@ -219,6 +217,7 @@
     margin: 20px 0px
     +flexa 
     justify-content: space-between
+    flex-wrap: wrap
     .item__title
         font-family: $GeometriaBold
         font-size: 28px
@@ -226,11 +225,17 @@
     .item__descript
         font-size: 14px
         font-family: $GeometriaRegular
+    .privileges__item
+        &:last-child
+            margin-top: 20px
 .privileges__link
     color: $Yellow
     font-size: 16px
     font-family: $GeometriaRegular
-    float: right
+    display: flex
+    justify-content: flex-end
+    width: max-content
+    margin-left: auto
     text-decoration: underline
 @media screen and ( max-width:  $MainContainer)
     .profile-block 

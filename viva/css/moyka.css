@@ -1961,8 +1961,6 @@ footer .soz__block .soz__item:last-child {
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  max-height: 90vh;
-  overflow: scroll;
 }
 .zvonok .zvon__title {
   font-family: "Heuristica_Bold";
@@ -2045,8 +2043,6 @@ footer .soz__block .soz__item:last-child {
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  max-height: 90vh;
-  overflow: scroll;
 }
 .zapis .zapis__block {
   display: -webkit-box;
@@ -2443,6 +2439,11 @@ footer .soz__block .soz__item:last-child {
   }
 }
 @media screen and (max-width: 380px) {
+  .zvonok, .zapis {
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+
   .burger__main .mobile__block .menu li:last-child {
     max-width: 100%;
   }
