@@ -224,6 +224,13 @@ header .container {
   border-radius: 10px;
   font-size: 16px;
   font-family: "Montserrat";
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.header__link:hover {
+  color: #000;
+  background: #FFBB00;
+  border-color: #FFBB00;
 }
 
 .menu li {
@@ -233,9 +240,14 @@ header .container {
   font-family: "Montserrat";
   font-weight: 400;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .menu li:last-child {
   margin-right: 61px;
+}
+.menu li:hover {
+  color: #FFBB00;
 }
 .menu li button {
   text-transform: uppercase;
@@ -1895,6 +1907,8 @@ footer .soz__block .soz__item:last-child {
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  max-height: 90vh;
+  overflow: scroll;
 }
 .zvonok .zvon__title {
   font-family: "Heuristica_Bold";
@@ -1977,6 +1991,8 @@ footer .soz__block .soz__item:last-child {
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  max-height: 90vh;
+  overflow: scroll;
 }
 .zapis .zapis__block {
   display: -webkit-box;
@@ -2360,6 +2376,11 @@ footer .soz__block .soz__item:last-child {
     right: 20px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  .burger__main .pol {
+    font-size: 4vw;
+    margin: 0 auto;
+    margin-top: 40px;
   }
 
   .burger__header .burder-close {

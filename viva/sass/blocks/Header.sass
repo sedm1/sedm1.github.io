@@ -20,6 +20,11 @@ header
     border-radius: 10px
     font-size: 16px
     font-family: $Montserrat
+    transition: .5s
+    &:hover
+        color: $Black
+        background: $Yellow
+        border-color: $Yellow
 .menu
     li
         margin-right: 50px
@@ -28,8 +33,11 @@ header
         font-family: $Montserrat
         font-weight: 400
         position: relative
+        transition: .3s
         &:last-child
             margin-right: 61px
+        &:hover
+            color: $Yellow
         button
             text-transform: uppercase
             font-size: 16px
