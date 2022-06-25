@@ -207,3 +207,7 @@ $(".Toreg-form__btn").click(function(){
 	closeAllModal()
 	openModal("reg__modal", "modal__window-active")
 })
+$(".closeModal").click(function(){
+	closeAllModal()
+	closeModalBg()
+})
