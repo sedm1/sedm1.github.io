@@ -330,6 +330,10 @@ header .container {
   .header__link {
     display: none;
   }
+
+  .header__burger {
+    height: auto;
+  }
 }
 .pre__links {
   display: -webkit-box;
@@ -663,6 +667,25 @@ header .container {
 @media screen and (max-width: 360px) {
   .services__img {
     max-width: 200px;
+  }
+
+  .input__block input {
+    padding-left: 20px;
+  }
+  .input__block input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .input__block input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .input__block input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .input__block input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .input__block input::placeholder {
+    font-size: 16px;
   }
 }
 .pre__links {
@@ -2392,7 +2415,7 @@ footer .soz__block .soz__item:last-child {
     overflow-y: scroll;
   }
 
-  .burger__main .mobile__block .menu li:last-child {
+  .burger__main .mobile__block .menu li:nth-child(5) {
     max-width: 100%;
   }
 

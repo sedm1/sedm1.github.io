@@ -330,6 +330,10 @@ header .container {
   .header__link {
     display: none;
   }
+
+  .header__burger {
+    height: auto;
+  }
 }
 .pre__links {
   display: -webkit-box;
@@ -1772,7 +1776,7 @@ footer .soz__block .soz__item:last-child {
     overflow-y: scroll;
   }
 
-  .burger__main .mobile__block .menu li:last-child {
+  .burger__main .mobile__block .menu li:nth-child(5) {
     max-width: 100%;
   }
 
