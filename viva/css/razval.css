@@ -404,6 +404,7 @@ header .container {
   background: #FFBB00;
   border-radius: 100px;
   padding: 15px 55px;
+  color: #000;
 }
 .mainScreen__img {
   max-width: 728px;
@@ -687,6 +688,8 @@ header .container {
   }
   .mainScreen .container .main__button {
     width: 100%;
+    display: block;
+    text-align: center;
   }
   .mainScreen .mainScreen__img {
     margin-top: 110px;
