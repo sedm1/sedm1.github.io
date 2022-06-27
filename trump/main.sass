@@ -1,0 +1,137 @@
+$blue: #1F73DF
+$bluelight: #4D85E4
+$blueBg: #EAF1FB
+$red: #FF251C
+$white: #ffffff
+$black: #292929
+$pink: #FFE9E8
+=flexa
+    display: flex
+    align-items: center
+=bg 
+    background-repeat: none
+    background-size: cover
+    background-position: center center
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-size: 16px
+    font-weight: 500
+    font-family: 'Inter', sans-serif
+img
+    width: 100%
+    display: block
+li
+    list-style: none
+a, button
+    color: inherit
+    font-family: inherit
+    font-size: inherit
+    text-decoration: none
+    background: none
+    cursor: pointer
+.container
+    max-width: 1140px
+    width: 100%
+    margin: 0 auto
+header
+    padding: 12px 0px
+    .container
+        +flexa 
+        justify-content: space-between
+.header__logo
+    width: 137px
+.header__buttons
+    +flexa 
+    .header__button
+        margin-right: 18px
+        width: 193px
+        text-align: center
+        padding: 18px 0px
+        text-transform: uppercase
+        color: $white
+        font-size: 20px
+        font-weight: 700
+        transition: .3s
+        border-radius: 5px
+        &:last-child
+            margin-right: 0px
+        &:hover
+            transform: scale(1.05)
+#header__button-1
+    background: $blue
+#header__button-2
+    background: $bluelight
+#header__button-3
+    background: $red
+.mainScreen
+    +bg
+    background-image: url("img/mainBg.png")
+    padding: 110px 0px
+.main__title, .main__descript
+    color: $black
+    text-align: center
+.main__title
+    font-weight: 700
+    font-size: 65px
+    margin-bottom: 14px
+    text-transform: uppercase
+.main__descript
+    font-weight: 600
+    font-size: 38px
+.main__block
+    +flexa 
+    justify-content: space-between
+    margin-top: 61px
+.main__img
+    max-width: 572px
+    width: 100%
+.main__text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 489px
+    width: 100%
+.text__item
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 72px
+    &:last-child
+        margin-bottom: 0px
+    &:first-child
+        align-self: flex-end
+
+    .item__pre
+        background: $white
+        padding: 11px 12px
+        color: $red 
+        font-size: 14px
+        font-weight: 500
+        border-radius: 8px
+        margin-bottom: -10px
+        margin-left: 11px
+        z-index: 10
+    .item__text-block
+        background: $white
+        padding: 5px
+        border-radius: 8px
+        .item__text
+            background: $blue
+            border-radius: 8px
+            padding: 11px 34px
+            color: $white
+            font-size: 24px
+            font-weight: 500
+.text__item-big
+    width: 100%
+    .item__pre
+        border: 1px solid $red
+        text-transform: uppercase
+        font-size: 23px
+        font-weight: 900
+    .item__text-block
+        .item__text
+            font-size: 53px
+            padding: 11px 24px
