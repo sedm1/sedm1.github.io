@@ -285,12 +285,12 @@ header
     &::after
         content: ""
         width: 100%
-        height: 350px
+        height: 250px
         +bg
-        background-image: url("img/wave_down.svg")
+        background-image: url("img/wave_down.png")
         position: absolute
         left: 0
-        bottom: -350px
+        bottom: -249px
 .let
     .section__title
         text-align: center
@@ -347,8 +347,7 @@ header
 .we
     display: flex
     justify-content: center
-    margin-top: 150px
-    padding-top: 120px
+    margin-top: 130px
 .we__img
     width: 100%
 footer
@@ -378,6 +377,10 @@ footer
     flex-direction: column
     padding: 19px 17px
     z-index: 30
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%)
+    border-radius: 10px
+    border-bottom-right-radius: 0px
+    border-top-right-radius: 0px
     .soz__item
         width: 50px
         height: 50px
@@ -390,11 +393,23 @@ footer
 .we__img-mobile
     display: none
 @media screen and ( max-width:  1215px)
+    .we
+        margin-top: 200px
     .slick-next
         right: 0px
     .slick-prev
         left: 0px
 @media screen and ( max-width:  1140px)
+    .main__text
+        max-width: 290px
+    .text__item-big 
+        .item__text-block 
+            width: 100%
+            .item__text
+                font-size: 24px
+                text-align: center
+        .item__pre
+            font-size: 12px
     .integrations, .partners
         max-width: 49%
     .benefits 
@@ -417,6 +432,8 @@ footer
             img
                 width: auto
                 max-width: 80%
+    .main__block
+        justify-content: space-evenly
 @media screen and (max-width: 950px)
     .main__img 
         margin-right: 23px
