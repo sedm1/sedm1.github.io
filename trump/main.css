@@ -646,6 +646,10 @@ footer .left__footer a:first-child {
           transform: scale(1.1);
 }
 
+.we__img-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1215px) {
   .slick-next {
     right: 0px;
@@ -699,8 +703,8 @@ footer .left__footer a:first-child {
     width: 100%;
   }
   .part__block .part__item img {
-    width: 100%;
-    max-width: 94px;
+    width: auto;
+    max-width: 80%;
   }
 }
 @media screen and (max-width: 950px) {
@@ -809,6 +813,15 @@ footer .left__footer a:first-child {
   }
 }
 @media screen and (max-width: 550px) {
+  .we {
+    padding-top: 50px;
+  }
+
+  .we__img img {
+    width: 115%;
+    margin-left: -6%;
+  }
+
   .sidebar {
     padding: 10px 16px;
   }
