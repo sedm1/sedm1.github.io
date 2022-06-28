@@ -684,21 +684,6 @@ footer .left__footer a:first-child {
     max-width: 448px;
   }
 
-  .main__text {
-    max-width: 270px;
-  }
-
-  .text__item .item__text-block .item__text {
-    font-size: 16px;
-  }
-
-  .text__item-big .item__text-block .item__text {
-    font-size: 24px;
-  }
-  .text__item-big .item__pre {
-    font-size: 12px;
-  }
-
   .part__block {
     max-width: 100%;
   }
@@ -712,6 +697,29 @@ footer .left__footer a:first-child {
   }
 }
 @media screen and (max-width: 950px) {
+  .main__img {
+    margin-right: 23px;
+  }
+
+  .main__text {
+    max-width: 47%;
+  }
+
+  .text__item .item__text-block .item__text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .text__item-big .item__text-block {
+    width: 100%;
+  }
+  .text__item-big .item__text-block .item__text {
+    font-size: 24px;
+  }
+  .text__item-big .item__pre {
+    font-size: 12px;
+  }
+
   .integrations, .partners {
     max-width: 100%;
   }
