@@ -285,12 +285,12 @@ header
     &::after
         content: ""
         width: 100%
-        height: 150px
+        height: 350px
         +bg
         background-image: url("img/wave_down.svg")
         position: absolute
         left: 0
-        bottom: -150px
+        bottom: -350px
 .let
     .section__title
         text-align: center
@@ -345,15 +345,12 @@ header
         font-size: 16px
         font-weight: 900
 .we
-    background-image: url("img/bgFlag.png")
-    +bg
     display: flex
     justify-content: center
-    margin-top: 90px
+    margin-top: 150px
     padding-top: 120px
 .we__img
     width: 100%
-    max-width: 1133px
 footer
     background: $blue
     padding: 8px 0px
@@ -426,6 +423,7 @@ footer
             width: 100%
             img
                 width: 100%
+                max-width: 94px
 @media screen and (max-width: 950px)
     .part__block 
         max-width: 560px
@@ -481,6 +479,7 @@ footer
             img
                 max-height: 60px
                 max-width: 100%
+                width: auto
 @media screen and ( max-width:  550px)
     .sidebar
         padding: 10px 16px
