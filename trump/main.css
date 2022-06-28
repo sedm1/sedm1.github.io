@@ -633,7 +633,7 @@ footer .left__footer a:first-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 19px 15px;
+  padding: 19px 17px;
   z-index: 30;
 }
 .sidebar .soz__item {
@@ -793,7 +793,7 @@ footer .left__footer a:first-child {
 }
 @media screen and (max-width: 550px) {
   .sidebar {
-    padding: 10px 14px;
+    padding: 10px 16px;
   }
   .sidebar .soz__item {
     width: 30px;
