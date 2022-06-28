@@ -660,6 +660,10 @@ footer .left__footer a:first-child {
   }
 }
 @media screen and (max-width: 1140px) {
+  .integrations, .partners {
+    max-width: 49%;
+  }
+
   .benefits .benefit__item {
     max-width: 49%;
   }
@@ -696,7 +700,7 @@ footer .left__footer a:first-child {
   }
 
   .part__block {
-    max-width: 99%;
+    max-width: 100%;
   }
   .part__block .part__item {
     max-width: 33.33%;
@@ -708,6 +712,10 @@ footer .left__footer a:first-child {
   }
 }
 @media screen and (max-width: 950px) {
+  .integrations, .partners {
+    max-width: 100%;
+  }
+
   .part__block {
     max-width: 560px;
   }
