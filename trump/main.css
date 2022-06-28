@@ -395,7 +395,7 @@ header .container {
           justify-content: center;
 }
 .payments__item img {
-  max-width: 173px;
+  max-width: 160px;
   max-height: 80px;
   width: auto;
 }
@@ -633,11 +633,12 @@ footer .left__footer a:first-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 19px 20px;
+  padding: 19px 15px;
+  z-index: 30;
 }
 .sidebar .soz__item {
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -792,7 +793,7 @@ footer .left__footer a:first-child {
 }
 @media screen and (max-width: 550px) {
   .sidebar {
-    padding: 10px 10px;
+    padding: 10px 14px;
   }
   .sidebar .soz__item {
     width: 30px;
