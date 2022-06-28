@@ -847,8 +847,10 @@ footer .left__footer a:first-child {
   }
 
   .benefits .benefit__item {
-    max-width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 11px;
+  }
+  .benefits .benefit__item .benefit__text {
+    font-size: 3vw;
   }
 
   .section__title {
@@ -868,6 +870,21 @@ footer .left__footer a:first-child {
   }
 }
 @media screen and (max-width: 550px) {
+  .benefits .benefit__item {
+    margin-bottom: 11px;
+    padding: 26px 8px;
+  }
+  .benefits .benefit__item .benefit__text {
+    font-size: 4vw;
+  }
+  .benefits .benefit__item .benefit__star {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    font-size: 13px;
+    padding-top: 2px;
+  }
+
   .we__img img {
     width: 115%;
     margin-left: -6%;
