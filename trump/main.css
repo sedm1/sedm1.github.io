@@ -668,6 +668,11 @@ footer .left__footer a:first-child {
   }
 }
 @media screen and (max-width: 1140px) {
+  .let::after {
+    height: 140px;
+    bottom: -139px;
+  }
+
   .main__text {
     max-width: 290px;
   }
@@ -723,6 +728,10 @@ footer .left__footer a:first-child {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+
+  .we {
+    margin-top: 90px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -839,6 +848,7 @@ footer .left__footer a:first-child {
 
   .benefits .benefit__item {
     max-width: 100%;
+    margin-bottom: 0px;
   }
 
   .section__title {
@@ -858,10 +868,6 @@ footer .left__footer a:first-child {
   }
 }
 @media screen and (max-width: 550px) {
-  .we {
-    padding-top: 50px;
-  }
-
   .we__img img {
     width: 115%;
     margin-left: -6%;
@@ -935,8 +941,8 @@ footer .left__footer a:first-child {
     margin-top: 160px;
   }
   .let::after {
-    bottom: -100px;
-    height: 100px;
+    bottom: -59px;
+    height: 60px;
   }
   .let::before {
     top: -100px;
