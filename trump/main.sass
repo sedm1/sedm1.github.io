@@ -9,7 +9,7 @@ $pink: #FFE9E8
     display: flex
     align-items: center
 =bg 
-    background-repeat: none
+    background-repeat: no-repeat
     background-size: cover
     background-position: center center
 *
@@ -19,6 +19,11 @@ $pink: #FFE9E8
     font-size: 16px
     font-weight: 500
     font-family: 'Inter', sans-serif
+html
+    scroll-behavior: smooth
+html, body
+    max-width: 100%
+    overflow-x: hidden
 img
     width: 100%
     display: block
@@ -35,6 +40,11 @@ a, button
     max-width: 1140px
     width: 100%
     margin: 0 auto
+.section__title
+    font-size: 50px
+    font-weight: 700
+    color: $black
+    text-transform: uppercase
 header
     padding: 12px 0px
     .container
@@ -135,3 +145,363 @@ header
         .item__text
             font-size: 53px
             padding: 11px 24px
+.benefits
+    margin-top: 75px
+    .benefits__block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 28px
+    .benefit__item 
+        max-width: 365px
+        width: 100%
+        border-radius: 5px
+        padding: 15px 25px
+        padding-right: 6px
+        background: $pink
+        margin-bottom: 22px
+        +flexa
+        .benefit__star
+            background-image: url("img/redStar.svg")
+            +bg
+            min-width: 53px
+            width: 53px
+            height: 51px
+            margin-right: 10px
+            color: $red
+            font-size: 16px
+            font-weight: 800
+            +flexa
+            justify-content: center
+            padding-top: 5px
+        .benefit__text
+            font-size: 24px
+            font-weight: 700
+        &:nth-child(2n)
+            background: $blueBg
+            .benefit__star
+                background-image: url("img/blueStar.svg")
+                color: $blue
+.part
+    margin-top: 38px
+    .container
+        display: flex
+        justify-content: space-between
+.integrations
+    .section__title
+        color: $red
+.partners
+    .section__title
+        color: $blue
+.part__block
+    margin-top: 28px
+    border: 2px solid #EAF1FB
+    border-radius: 15px
+    padding: 12px 20px
+    +flexa
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 560px
+    .part__item
+        max-width: 160px
+        width: 160px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 8px 0px
+        height: 73px
+        img
+            max-height: 73px
+            max-width: 160px
+            width: auto
+.line
+    margin-top: 30px
+    .container
+        +flexa
+    hr
+        max-width: 1080px
+        width: 100%
+        background: $blue
+        height: 3px
+    .blueStar, .redStar
+        width: 20px
+        height: 20px
+        margin-left: 10px
+.payments
+    margin-top: 21px
+.payments__slider
+    margin-top: 28px
+
+.payments__item
+    margin: 0px 10px
+    border: 1px solid #EAF1FB
+    border-radius: 5px
+    height: 90px
+    display: flex !important
+    align-items: center
+    justify-content: center
+    img
+        max-width: 173px
+        max-height: 90px
+        width: auto
+.slick-arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    font-size: 0px
+    outline: 0 none
+    border: 0 none
+    background: $blue
+    width: 36px
+    height: 36px
+    border-radius: 36px
+    padding: 4px 
+.slick-next, .slick-prev
+    +bg
+    +flexa
+    justify-content: center
+    background-size: 10px 10px
+    border: 1px dashed $blue
+    z-index: 20
+.slick-next
+    background-image: url("img/arr_right.png")
+    right: -38px
+.slick-prev
+    background-image: url("img/arr_left.png")
+    left: -38px
+.let
+    position: relative
+    background: $blueBg
+    margin-top: 230px
+    &::before
+        content: ""
+        width: 100%
+        height: 150px
+        +bg
+        background-image: url("img/wave_up.svg")
+        position: absolute
+        left: 0
+        top: -150px
+    &::after
+        content: ""
+        width: 100%
+        height: 300px
+        +bg
+        background-image: url("img/wave_down.svg")
+        position: absolute
+        left: 0
+        bottom: -300px
+.let
+    .section__title
+        text-align: center
+    &__true
+        position: absolute
+        top: 5px
+        right: 5px
+        width: 35px
+        height: 35px
+        border-radius: 100%
+        background: $red 
+        +flexa 
+        justify-content: center
+        img
+            width: 13px
+.let__block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap   
+    margin-top: 35px    
+.let__item
+    position: relative
+    max-width: 193px
+    width: 100%
+    +flexa 
+    flex-direction: column
+    text-align: center
+    height: 239px
+    justify-content: space-between
+    margin-bottom: 39px
+    .item__img
+        width: 170px
+        height: 170px
+        border: 2px dashed rgba(31, 115, 223, 0.5)
+        border-radius: 100%
+        background: $white
+        margin-bottom: 10px
+        +flexa 
+        justify-content: center
+        position: relative
+        img
+            width: auto
+            max-width: 105px
+            max-height: 77px
+    .item__title
+        font-size: 14px
+        font-weight: 400
+        margin-bottom: 4px
+        max-width: 163px
+    .item__date 
+        color: $blue
+        font-size: 16px
+        font-weight: 900
+.we
+    background-image: url("img/bgFlag.png")
+    +bg
+    display: flex
+    justify-content: center
+    margin-top: 220px
+    padding-top: 80px
+.we__img
+    width: 100%
+    max-width: 1133px
+footer
+    background: $blue
+    padding: 8px 0px
+    color: $white
+    .container
+        +flexa 
+        justify-content: space-between
+    .copy
+        font-size: 14px
+        font-weight: 400
+    .left__footer
+        a
+            font-size: 14px
+            font-weight: 400
+            &:first-child
+                margin-right: 70px
+@media screen and ( max-width:  1215px)
+    .slick-next
+        right: 0px
+    .slick-prev
+        left: 0px
+@media screen and ( max-width:  1140px)
+    .container
+        max-width: 98%
+    .main__title
+        font-size: 48px
+    .main__descript
+        font-size: 24px
+    .main__img
+        max-width: 448px
+    .main__text
+        max-width: 270px
+    .text__item 
+        .item__text-block 
+            .item__text
+                font-size: 16px
+    .text__item-big 
+        .item__text-block 
+            .item__text
+                font-size: 24px
+        .item__pre
+            font-size: 12px
+    .part 
+        .container
+            flex-direction: column
+            align-items: center
+            text-align: center
+    .part__block
+        margin-top: 16px
+    .partners
+        margin-top: 30px
+@media screen and ( max-width:  750px)
+    header 
+        .container
+            flex-direction: column
+    .header__buttons
+        margin-top: 10px
+        flex-direction: column
+        width: 98%
+        .header__button
+            margin-right: 0px
+            margin-top: 15px
+            width: 100%
+    .main__block
+        flex-direction: column
+    .main__text
+        max-width: 100%
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+    .text__item-big
+        width: auto
+        margin-bottom: 0px
+    .text__item 
+        &:last-child
+            align-self: flex-start
+    .main__title        
+        font-size: 7vw
+    .main__descript
+        font-size: 3.5vw
+    .benefits 
+        .benefit__item
+            max-width: 100%
+    .section__title
+        text-align: center
+    .part__block 
+        .part__item
+            max-width: 30%
+            width: 100%
+            height: 36px
+            margin: 16px 4px
+            img
+                max-height: 36px
+                max-width: 100%
+@media screen and ( max-width:  550px)
+    .header__logo
+        width: 90px
+    .header__buttons 
+        .header__button
+            font-size: 14px
+    .text__item
+        margin-bottom: 20px
+    .main__img
+        max-width: 80%
+    .main__text
+        flex-direction: column
+    .let__item 
+        max-width: 30%
+        height: auto
+        .item__title
+            display: none
+        .item__img
+            width: 75px
+            height: 75px
+            img
+                max-width: 43px
+                max-height: 60px
+        .item__date
+            font-size: 10px
+    .let__true
+        width: 16px
+        height: 16px
+        top: 0px
+        right: 0px
+        img
+            width: 11px !important
+    .section__title
+        font-size: 9vw
+    .let
+        margin-top: 160px
+        &::after
+            bottom: -100px
+            height: 100px
+        &::before
+            top: -100px
+            height: 100px
+    .we
+        margin-top: 20px
+    footer 
+        .container 
+            flex-direction: column
+            align-items: center
+        .copy
+            font-size: 11px
+        .left__footer 
+            margin-top: 10px
+            a
+                font-size: 11px  
+        
+    
+
