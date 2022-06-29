@@ -874,13 +874,17 @@ footer .left__footer a:first-child {
     margin-bottom: 11px;
     padding: 26px 8px;
   }
+  .benefits .benefit__item:last-child {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
   .benefits .benefit__item .benefit__text {
     font-size: 4vw;
   }
   .benefits .benefit__item .benefit__star {
-    width: 45px;
+    width: 47px;
     height: 45px;
-    min-width: 45px;
+    min-width: 47px;
     font-size: 13px;
     padding-top: 2px;
   }
