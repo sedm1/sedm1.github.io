@@ -865,11 +865,18 @@ footer .left__footer a:first-child {
   }
   .part__block .part__item img {
     max-height: 60px;
-    max-width: 100%;
+    max-width: 70%;
     width: auto;
   }
 }
 @media screen and (max-width: 550px) {
+  .mainScreen {
+    padding-bottom: 40px;
+  }
+
+  .benefits {
+    margin-top: 40px;
+  }
   .benefits .benefit__item {
     margin-bottom: 11px;
     padding: 26px 8px;
@@ -959,7 +966,7 @@ footer .left__footer a:first-child {
   }
 
   .let {
-    margin-top: 160px;
+    margin-top: 120px;
   }
   .let::after {
     bottom: -59px;
