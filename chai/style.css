@@ -246,10 +246,6 @@ button {
     max-width: 98%;
   }
 
-  .main__title, .main__descript {
-    text-align: center;
-  }
-
   .main__descript {
     margin: 0 auto;
   }
@@ -262,7 +258,6 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
   }
 
   .cer__img {
@@ -295,7 +290,6 @@ button {
   }
 
   .art__item {
-    text-align: center;
     margin-bottom: 20px;
   }
 
