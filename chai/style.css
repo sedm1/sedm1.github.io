@@ -370,4 +370,8 @@ li {
   .cer__button {
     width: 100%;
   }
+
+  .vzed__img {
+    height: auto;
+  }
 }
