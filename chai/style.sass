@@ -11,7 +11,7 @@ $gray: #54382F
 img
     width: 100%
     height: auto
-
+    display: block
 a, button
     border: 0 none
     outline: 0 none
@@ -135,8 +135,7 @@ li
             color: inherit
             font-weight: 600
     &__button
-        padding: 18px 0px
-        width: 100%
+        padding: 18px 66px
         font-weight: 600
         font-size: 14px
 .list__descript
@@ -192,11 +191,14 @@ li
         padding: 18px 66px
         margin-top: 30px
         font-weight: 600
+        font-size: 14px
 @media screen and (max-width: 1170px)
     .container
         max-width: 98%
-    .main__descript
-        margin: 0 auto
+    .art__item
+        &:nth-child(2n)
+            margin: 0px 20px
+@media screen and (max-width: 1023px)
     .cer__item
         flex-direction: column
         align-items: center
@@ -214,29 +216,50 @@ li
         align-items: center
         justify-content: center
     .art__item
-        margin-bottom: 20px
+        margin-bottom: 60px
+        &:nth-child(2n)
+            margin: 0px
+            margin-bottom: 60px
+        &:last-child
+            margin-bottom: 0px
     .vzed .container
         flex-direction: column-reverse
     .vzed__img
         max-width: 587px
         margin-bottom: 30px
+    .cer
+        margin-bottom: 60px
+    .vzed
+        margin: 60px 0px
 @media screen and (max-width: 600px)
+    .art__descript
+        margin-bottom: 0px
+    .art__price
+        margin-top: 20px
+    .art__img
+        height: auto
     .art__item
         max-width: 100%
+        margin-bottom: 60px
     .cer
         margin-bottom: 0px
+    .cer__img 
+        img
+            max-height: none
+            height: auto
     .cer__item
         &:last-child
             margin-bottom: 60px
-    .art__item
-        margin-bottom: 60px
+    .art__button
+        width: 100%
     .vzed
-        margin-top: 0px
+        margin-top: 60px
         margin-bottom: 60px
     .vzed__info
         margin-right: 0px
     .vzed__button
         width: 100%
+        margin-top: 15px
     .cer__button
         width: 100%
     .vzed__img
