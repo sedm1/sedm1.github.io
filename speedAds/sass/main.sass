@@ -1,0 +1,151 @@
+@import "vars"
+@import "fonts"
+*
+    padding: 0
+    margin: 0
+    font-family: 'Poppins', sans-serif
+body
+    position: relative
+    background: $mainBg
+    display: flex
+    flex-direction: column
+    height: 100vh
+    overflow: hidden
+img
+    width: 100%
+    height: auto
+button,a
+    border: 0 none
+    outline: 0 none
+    font-family: inherit
+    color: inherit
+    cursor: pointer
+    text-decoration: none
+.round
+    width: 198px
+    height: 198px
+    border-radius: 100%
+    background: rgba(200, 241, 53, 0.6)
+    filter: blur(196px)
+    position: absolute
+#round-1
+    top: -200px
+    left: -200px
+#round-2
+    bottom: -200px
+    left: -200px
+#round-3
+    bottom: -200px
+    right: -200px
+span
+    font-size: inherit
+    font-family: inherit
+main
+    flex-grow: 1
+h1
+    font-family: 'RoadBold'
+    font-size: 68px
+    font-weight: 700
+    color: $white
+    text-transform: uppercase
+    text-align: center
+    margin-top: 37px
+    span
+        color: $red
+.header__container
+    max-width: $headerContainer
+    width: 100%
+    margin: 0 auto
+    +flexa 
+    justify-content: space-between
+.logo
+    width: 223px
+.soz
+    +flexa 
+    &__item
+        margin-right: 27px
+        width: 27px
+        &:last-child
+            margin-right: 0px
+.button__block
+    +flexa 
+    margin-top: 65px
+    justify-content: center
+    .main__button
+        background: rgba(217, 217, 217, 0.08)
+        border: 1px solid rgba(200, 241, 53, 0.8)
+        border-radius: 10px
+        padding: 20px 0px
+        letter-spacing: -0.01em
+        font-weight: 600
+        color: $white
+        max-width: 360px
+        width: 100%
+        text-align: center
+        &:first-child
+            margin-right: 122px
+.marque
+    max-width: 100%
+    width: 100%
+    background: rgba(217, 217, 217, 0.04)
+    backdrop-filter: blur(6px)
+    overflow-x: hidden
+    margin-top: 222px
+    &__text
+        font-family: 'Comix'
+        text-transform: uppercase
+        font-size: 42px
+        color: rgba(217, 217, 217, 0.04)
+        -webkit-text-stroke: 1px $green
+        -webkit-text-fill-color: rgba(217, 217, 217, 0.04)
+        margin-right: 71px
+footer
+    margin-top: 95px
+    color: $white
+    padding-bottom: 20px
+    font-weight: 400
+    .last
+        margin-left: 35px
+@media screen and (max-width: 850px)
+    .button__block 
+        flex-direction: column
+        .main__button
+            max-width: 80%
+            &:first-child
+                margin-right: 0px
+                margin-bottom: 20px
+    h1
+        font-size: 9vw
+    .marque
+        margin-top: 148px
+    footer
+        padding-left: 20px
+        .header__container
+            flex-direction: column-reverse
+            align-items: flex-start
+        .last
+            margin-left: 0px
+    .footer__right
+        display: flex
+        flex-direction: column
+    .footer__text
+        margin-bottom: 6px
+    .copy
+        margin-top: 9px
+@media screen and (max-width: 450px)
+    header
+        padding-top: 12px
+        .header__container
+            align-items: flex-start
+            justify-content: flex-end
+        .soz
+            padding-top: 20px
+            &__item
+                margin-right: 10px
+        .logo
+            width: 156px
+    h1
+        font-size: 10vw
+    .button__block 
+        .main__button
+            max-width: 90%
