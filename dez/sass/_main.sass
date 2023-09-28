@@ -1,0 +1,70 @@
+@import 'mixins'
+@import 'colors'
+$MainContainer: 1180px
+$mainZIndex: 1
+$menuZIndex: 2
+$ModalZIndex: 3
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+    font-size: 18px
+h1, h2, h3
+    font-family: 'Ubuntu', sans-serif
+    text-transform: uppercase
+h1
+    font-weight: 700
+    font-size: 64px
+h2
+    font-weight: 700
+    font-size: 38px
+h3
+    font-weight: 500
+    font-size: 30px
+li
+    list-style: none
+a
+    +inher
+    text-decoration: none
+button
+    border: 0 none
+    outline: 0 none
+    +inher
+    cursor: pointer
+.mainButton
+    padding: 20px 30px
+    border-radius: 46px
+    border: 2px solid $black
+    box-shadow: 2px 2px 0px 0px $black
+    font-size: 20px
+    transition: .3s
+    font-weight: 600
+    font-size: 20px
+    &-green
+        background: $green
+        &:hover,&:active
+            background: $greenl
+            box-shadow: 4px 4px 0px 0px $black
+    &-pur
+        background: $purple
+        &:hover,&:active
+            background: $purplel
+            box-shadow: 4px 4px 0px 0px $black
+span
+    +inher
+img
+    max-width: 100%
+    width: 100%
+    height: auto
+.container
+    max-width: $MainContainer
+    width: 100%
+    margin: 0 auto
+.menu
+    +flexa
+section
+    margin-bottom: 120px
+input, textarea
+    border: 0 none
+    outline: 0 none

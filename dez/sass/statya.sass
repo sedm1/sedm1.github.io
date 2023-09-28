@@ -1,0 +1,50 @@
+@import 'main'
+@import 'header'
+@import 'footer'
+.main__img
+  max-width: 100%
+  width: 100%
+  position: relative
+  margin-bottom: 30px
+  img
+    border-radius: 20px
+
+.img__title
+  text-align: center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  color: #fff
+  max-width: 850px
+  width: 100%
+
+.main__title
+  font-size: 20px
+  font-weight: 600
+  margin-bottom: 20px
+
+.main__text
+  font-size: 16px
+  font-weight: 400
+  margin-bottom: 20px
+  line-height: 25px
+
+  span
+    font-weight: 600
+    font-size: 16px
+    color: inherit
+
+.main__tips
+  margin-left: 20px
+  position: relative
+
+  &::before
+    content: ""
+    width: 4px
+    height: 4px
+    border-radius: 100%
+    position: absolute
+    top: 10px
+    left: -15px
+    background-color: #000

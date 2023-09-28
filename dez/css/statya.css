@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0 none;
+  outline: 0 none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.mainButton {
+  padding: 20px 30px;
+  border-radius: 46px;
+  border: 2px solid #323843;
+  -webkit-box-shadow: 2px 2px 0px 0px #323843;
+          box-shadow: 2px 2px 0px 0px #323843;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 20px;
+}
+.mainButton-green {
+  background: #CBE857;
+}
+.mainButton-green:hover, .mainButton-green:active {
+  background: #E2F497;
+  -webkit-box-shadow: 4px 4px 0px 0px #323843;
+          box-shadow: 4px 4px 0px 0px #323843;
+}
+.mainButton-pur {
+  background: #C68DFF;
+}
+.mainButton-pur:hover, .mainButton-pur:active {
+  background: #D2AEF6;
+  -webkit-box-shadow: 4px 4px 0px 0px #323843;
+          box-shadow: 4px 4px 0px 0px #323843;
+}
+
+span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+input, textarea {
+  border: 0 none;
+  outline: 0 none;
+}
+
+header {
+  padding: 30px 0px;
+}
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  max-width: 270px;
+  width: 100%;
+}
+
+.menu li {
+  margin-right: 40px;
+  font-weight: 400;
+}
+.menu li:last-child {
+  margin-right: 0px;
+}
+
+footer {
+  padding: 60px 0px;
+  background: #323843;
+  color: #fff;
+}
+
+.footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mail__img {
+  width: 24px;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.info__soz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.soz__item {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__menu nav {
+  margin-right: 64px;
+}
+.footer__menu nav li {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer__menu nav:last-child {
+  margin-right: 0px;
+}
+
+.polit {
+  margin-top: 52px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+
+.main__img {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.main__img img {
+  border-radius: 20px;
+}
+
+.img__title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  max-width: 850px;
+  width: 100%;
+}
+
+.main__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main__text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.main__text span {
+  font-weight: 600;
+  font-size: 16px;
+  color: inherit;
+}
+
+.main__tips {
+  margin-left: 20px;
+  position: relative;
+}
+.main__tips::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  background-color: #000;
+}
