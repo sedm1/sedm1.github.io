@@ -2,15 +2,72 @@
 @import 'colors'
 header
     padding: 30px 0px
+    transition: .3s
     .container
         +flexa
         justify-content: space-between
 .header__logo
     max-width: 270px
     width: 100%
+.header__button
+    display: none
+.header-active
+    background: $gray
 .menu
     li
         margin-right: 40px
         font-weight: 400
         &:last-child
             margin-right: 0px
+    &-active
+        opacity: 1 !important
+.menu__footer
+    display: none
+    margin-top: 60px
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    &-info
+        .mail
+            width: 24px
+        .mail-text
+            font-size: 16px
+            margin-top: 5px
+    &-soz
+        +flexa
+        .soz-item
+            width: 40px
+            margin-right: 10px
+            &:last-child
+                margin-right: 0px
+@media screen and (max-width: $MainContainer)
+    .header__button
+        display: block
+    .menu__footer
+        display: flex
+    .menu
+        opacity: 0
+        display: none
+        transition: .3s
+        position: absolute
+        top: 105px
+        left: 0
+        z-index: $menuZIndex
+        width: 100%
+        padding: 40px
+        background: #fff
+        flex-direction: column
+        align-items: flex-start
+        li
+            padding: 15px 0px
+            margin-right: 0px
+            border-bottom: 1px solid $gray
+            width: 100%
+            font-size: 18px
+            font-weight: 600
+@media screen and (max-width: 500px)
+    .menu__footer
+        flex-direction: column
+        align-items: flex-start
+        &-soz
+            margin-top: 5px

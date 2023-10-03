@@ -1,0 +1,181 @@
+@import 'main'
+@import 'header'
+@import 'footer'
+.main__block
+    .container
+        display: flex
+        justify-content: space-between
+    .mainButton
+        margin-top: 30px
+.main__info
+    margin-top: 63px
+.main__img
+    max-width: 580px
+    width: 100%
+    margin-left: 17px
+    &-mobile 
+        display: none
+.main__title
+    margin-bottom: 15px
+.how
+    &__block
+        margin-top: 60px
+        display: flex
+    &__item
+        max-width: 380px
+        border-radius: 20px
+        background: #EAD4FF
+        padding: 30px
+        margin-right: 20px
+        &:last-child
+            margin-right: 0px
+        .item__icon
+            width: 60px
+        .item__title
+            margin-top: 30px
+            margin-bottom: 5px
+            font-size: 24px
+            font-weight: 600
+        .item__descript
+            line-height: 25px
+            color: #505661
+.eks
+    &__block
+        padding: 60px 100px
+        border-radius: 20px
+        background: #F1F1FA
+    &__title
+        text-align: center
+    &__item
+        margin-top: 30px
+        +flexa
+        &-img
+            min-width: 60px
+            width: 60px
+            height: 60px
+            margin-right: 20px
+        &-title
+            font-size: 20px
+            font-weight: 500
+.comand
+    &__title
+        max-width: 579px
+    &__item
+        margin-top: 60px
+        +flexa 
+        justify-content: space-between
+        &:nth-child(2n + 1)
+            flex-direction: row-reverse
+        .item__text
+            max-width: 579px
+            &-title
+                font-size: 24px
+                font-weight: 600
+                margin-bottom: 20px
+            &-descript
+                font-weight: 400
+                font-size: 18px
+        .item__img
+            max-width: 481px
+            width: 100%
+            border-radius: 20px
+            img
+                border-radius: 20px
+.quest
+    &__title
+        margin-bottom: 60px
+    .accordion
+        &__item
+            border-bottom: 2px solid #323843
+            border-color: rgba(50, 56, 67, 0.4)
+            &:first-child
+                border-top: 2px solid #323843
+                border-color: rgba(50, 56, 67, 0.4)
+        &__title
+            position: relative
+            display: block
+            cursor: pointer
+            font-size: 24px
+            font-weight: 600
+            padding: 32px 0px
+            +flexa
+            justify-content: space-between
+            flex-direction: row-reverse
+            .accordion__arrow
+                transition: .3s
+                color: $black
+        &-active
+            .accordion__title-text
+                color: #B66DFF
+            .accordion__arrow svg path
+                stroke: #B66DFF
+        &__rotate
+            transform: rotate(180deg)
+
+        &__content
+            font-size: 16px
+            line-height: 24px
+            display: none
+            padding-bottom: 30px
+.ank
+    margin-top: 45px
+@media screen and (max-width: $MainContainer)
+    .comand__title
+        font-size: 24px
+    .comand__item
+        flex-direction: column
+        &:nth-child(2n + 1)
+            flex-direction: column
+        .item__img
+            max-width: 600px
+            margin-bottom: 10px
+@media screen and (max-width: $MobileContainer)
+    .main__block 
+        .container
+            flex-direction: column
+    .main__img
+        display: none
+        &-mobile
+            display: block
+            margin-top: 30px
+            max-width: 100%
+    .how__block
+        flex-direction: column
+        margin-top: 20px
+    .how__item
+        max-width: 100%
+        margin-right: 0px
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0px
+        .item__title
+            margin-top: 10px
+            font-size: 18px
+        .item__descript
+            font-size: 14px
+        .item__icon
+            width: 40px
+    .eks
+        &__block
+            padding: 20px
+            border-radius: 20px
+            background: #F1F1FA
+        &__title
+            font-size: 18px
+            line-height: 21px
+        &__item
+            &-img
+                min-width: 25px
+                width: 25px
+                height: 25px
+                margin-right: 10px
+            &-title
+                font-size: 16px
+    .comand__item 
+        .item__text-title
+            font-size: 18px
+        .item__text-descript
+            font-size: 16px
+    .quest 
+        .accordion__title
+            font-size: 18px

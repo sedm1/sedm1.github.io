@@ -1,6 +1,7 @@
 @import 'mixins'
 @import 'colors'
 $MainContainer: 1180px
+$MobileContainer: 768px
 $mainZIndex: 1
 $menuZIndex: 2
 $ModalZIndex: 3
@@ -10,6 +11,9 @@ $ModalZIndex: 3
     box-sizing: border-box
     font-family: 'Montserrat', sans-serif
     font-size: 18px
+    scroll-behavior: smooth
+body
+    position: relative
 h1, h2, h3
     font-family: 'Ubuntu', sans-serif
     text-transform: uppercase
@@ -27,11 +31,13 @@ li
 a
     +inher
     text-decoration: none
+    cursor: pointer
 button
     border: 0 none
     outline: 0 none
     +inher
     cursor: pointer
+    background: none
 .mainButton
     padding: 20px 30px
     border-radius: 46px
@@ -68,3 +74,18 @@ section
 input, textarea
     border: 0 none
     outline: 0 none
+@media screen and (max-width: $MainContainer)
+    section
+        margin-bottom: 60px
+    .mainButton
+        padding: 15px 25px
+        font-size: 16px
+    .container
+        max-width: 96%
+    h1
+        font-size: 28px
+    h2
+        font-size: 24px
+        line-height: 33px
+    h3
+        font-size: 18px

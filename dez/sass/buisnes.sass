@@ -1,0 +1,285 @@
+@import 'main'
+@import 'header'
+@import '_spec.sass'
+@import 'slider'
+@import 'footer'
+.main__info
+    margin-top: 90px
+    .container
+        +flexa
+        justify-content: space-between
+    .info__text
+        max-width: 581px
+        width: 100%
+    .info__img
+        max-width: 581px
+        width: 100%
+        border-radius: 20px
+        img
+            border-radius: 20px
+    &-title
+        margin-bottom: 15px
+    &-descript
+        font-size: 20px
+        font-weight: 500
+        color: #000
+    &-button
+        +flexa
+        margin-top: 60px
+        .main__button-item
+            padding: 20px 30px
+            border-radius: 46px
+            border: 1px solid #323843
+            margin-right: 35px
+            &:last-child
+                margin-right: 0px
+            &-active
+                border: 1px solid #EAD4FF
+                background: #EAD4FF
+.dov
+    &__title
+        text-align: center
+    &__block
+        padding: 22px 0px
+        border-top: 2px solid #C3CDE0
+        border-bottom: 2px solid #C3CDE0
+        margin-top: 32px
+        .container
+            display: flex
+            justify-content: space-between
+        
+    &__item
+        max-width: 200px
+        width: 100%
+        +flexa
+.quest
+    background: #F1F1FA
+    padding: 30px 0px
+    &__title
+        margin-bottom: 15px
+        text-align: center
+    &__descript
+        margin-bottom: 60px
+        display: block
+        text-align: center
+        color: #000000
+    .accordion
+        &__title
+            position: relative
+            display: block
+            cursor: pointer
+            font-size: 24px
+            font-weight: 600
+            padding: 32px 0px
+            +flexa
+            justify-content: space-between
+            flex-direction: row-reverse
+            .accordion__arrow
+                transition: .3s
+                color: $black
+        &-active
+            .accordion__title-text
+                color: #B66DFF
+            .accordion__arrow svg path
+                stroke: #B66DFF
+        &__rotate
+            transform: rotate(180deg)
+
+        &__content
+            font-size: 16px
+            line-height: 24px
+            display: none
+            padding-bottom: 30px
+.count
+    .container
+        +flexa
+        justify-content: space-between
+        padding: 60px 30px
+        border-radius: 20px
+        border: 1px solid #C68DFF
+    &__item
+        text-align: center
+    &__descript
+        font-size: 24px
+        font-weight: 600
+.zad
+    &__title
+        text-align: center
+        margin-bottom: 15px
+    &__descript
+        text-align: center
+    &__item
+        margin-top: 30px
+        padding: 60px
+        border-radius: 20px
+        background: #F1F1FA
+        border: 2px solid #323843
+        +flexa
+        justify-content: space-between
+        &-descript
+            margin-top: 20px
+    &__text
+        max-width: 634px
+        width: 100%
+    &__button
+        max-width: 376px
+        border-radius: 20px
+        background: #EAD4FF
+        padding: 48px 20px
+        text-align: center
+        &-title
+            font-size: 24px
+            font-weight: 500
+            margin-bottom: 30px
+.statya
+    &__title
+        margin-bottom: 15px
+        text-align: center
+    &__descript
+        text-align: center
+    &__block
+        display: flex
+        flex-wrap: wrap
+        margin-top: 60px
+    &__item
+        border-radius: 20px
+        transition: .3s
+        border: 2px solid $black
+        padding: 20px
+        margin-right: 20px
+        max-width: 580px
+        width: 100%
+        &-img
+            border-radius: 20px
+            max-height: 402px
+            margin-bottom: 40px
+            img
+                border-radius: 20px
+        &:nth-child(2n )
+            margin-right: 0px
+        &:hover
+            box-shadow: 10px 10px 0px 0px #323843
+        &-read
+            width: 100%
+            display: block
+            transition: .3s
+            width: 100%
+            text-align: right
+            font-size: 16px
+            font-weight: 600
+            margin-top: 24px
+            transition: .3s
+            &:hover
+                color: #B66DFF
+            
+.form
+    background: #EAD4FF
+    padding: 101px 0px
+    margin-bottom: 0px
+    .container
+        display: flex
+        justify-content: space-between
+    &__title
+        max-width: 372px
+        margin-bottom: 20px
+    &__form
+        max-width: 576px
+        width: 100%
+        .item__name
+            font-size: 22px
+            font-weight: 600
+            font-family: 'Montserrat Alternates', sans-serif
+        input, textarea
+            width: 100%
+            margin-top: 8px
+            background: #fff
+            border-radius: 10px
+            font-size: 20px
+            font-weight: 600
+            $color: $black
+            &::placeholder
+                font-size: 20px
+                font-weight: 600
+                $color: $black
+        input
+            padding: 20px 30px
+            margin-bottom: 16px
+        textarea
+            padding: 20px 30px
+            height: 110px
+            resize: none
+            margin-bottom: 32px
+    .mainButton
+        margin-top: 16px
+@media screen and (max-width: $MainContainer)
+    .form 
+        .container
+            flex-direction: column
+        &__text
+            margin: 0 auto
+            margin-bottom: 30px
+        &__title
+            max-width: 512px
+        &__form
+            margin: 0 auto
+    .main__info 
+        .container
+            flex-direction: column
+            align-items: flex-start
+        .info__img
+            margin-top: 30px
+    .statya__block
+        justify-content:  center
+    .statya__item
+        margin-right: 0px
+        margin-bottom: 20px
+@media screen and (max-width: 900px)
+    .count 
+        .container
+            flex-direction: column
+        &__item
+            margin-right: 0px
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0px
+@media screen and (max-width: $MobileContainer)
+
+    .dov__block 
+        .container
+            justify-content: space-evenly
+            flex-wrap: wrap
+    .dov__item
+        max-width: 43%
+        margin-bottom: 10px
+    .quest 
+        .accordion__title
+            font-size: 18px
+    .form
+        padding: 40px 0px
+        &__form 
+            .item__name
+                font-size: 16px
+            input, textarea
+                font-size: 14px
+                padding-left: 15px
+                &::placeholder
+                    font-size: 14px
+        &__descript
+            font-size: 14px
+    .zad
+        &__item
+            flex-direction: column
+            padding: 30px 15px
+        &__text
+            max-width: 100%
+        &__button
+            margin-top: 30px
+    .main__info
+        margin-top: 60px
+    .main__info-button
+        flex-direction: column
+        align-items: flex-start
+    .main__button-item
+        margin-right: 0px
+        &:nth-child(1)
+            margin-bottom: 10px

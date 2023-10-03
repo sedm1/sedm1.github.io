@@ -1,0 +1,254 @@
+@import 'main'
+@import 'header'
+@import '_spec.sass'
+@import 'slider'
+@import 'footer'
+.tabs
+    margin-top: 100px
+    .container
+        display: flex
+    &__item
+        padding: 20px 30px
+        border-radius: 46px
+        font-weight: 400
+        margin-right: 15px
+        border: 1px solid #323843
+        &:last-child
+            margin-right: 0px
+        &-active
+            background: #EAD4FF
+            border: 1px solid transparent
+.tab
+    display: none
+    &-active
+        display: block
+.title-block
+    position: relative
+    width: fit-content
+.main
+    &__info
+        margin-top: 84px
+        .container
+            +flexa
+            justify-content: space-between
+    &__title
+        
+        margin-bottom: 15px
+    &__cons
+        position: absolute
+        top: -20px
+        right: -240px
+        padding: 10px 
+        background: #E4FF95
+        border-radius: 10px
+        transform: rotate(-4deg)
+    &__descript
+        max-width: 511px
+        font-size: 20px
+        font-weight: 500
+        color: #000
+        line-height: 27px
+    &__img
+        +flexa
+        &-block
+            width: 60px
+            height: 60px
+            margin-right: 15px
+        &-text
+            font-size: 20px
+            font-weight: 500
+            color: #000
+.tips
+    padding-top: 87px
+    height: 654px
+    background: #F1F1FA
+    background-image: url("../img/tips.png")
+    background-position:33% 78px
+    background-size: 715px 512px
+    background-repeat: no-repeat
+    .container
+        position: relative
+        height: 100%
+    &__item
+        +flexa
+        position: absolute
+        max-width: 352px
+        font-weight: 500
+        font-size: 20px
+        .item__img
+            margin-right: 15px
+            min-width: 50px
+            width: 50px
+            height: 50px
+#tips__item
+    &_1
+        top: 0
+        left: 0
+    &_2
+        top: 106px
+        right:107px
+    &_3
+        left: 158px
+        top: 272px
+    &_4
+        top: 315px
+        right: 230px
+        .item__img
+            width: 120px
+            height: 100px
+.we
+    .container
+        +flexa
+        justify-content: space-between
+    &__block
+        margin-top: 30px
+    &__item
+        +flexa
+        margin-bottom: 15px
+        .item__list
+            min-width: 38px
+            width: 38px
+            height: 38px
+            border-radius: 38px
+            border: 2px solid #292D32
+            +flexa
+            justify-content: center
+            font-weight: 600
+            font-size: 20px
+            margin-right: 10px
+            background: #CFF000
+        .item__text
+            font-size: 20px
+            font-weight: 500
+            max-width: 510px
+        &:last-child
+            margin-botom: 0px
+    &__img
+        max-width: 559px
+        margin-left: 60px
+        border-radius: 20px
+        img
+            border-radius: 20px
+.spec
+    .slick-list.draggable
+        max-width: 90%
+        margin: 0 auto
+    .slick-next
+        right: 34px
+    .slick-prev
+        left: 34px
+.cost
+    .container
+        +flexa
+        justify-content: space-between
+        padding: 60px
+        border-radius: 20px
+        border: 2px solid #323843
+    &__info
+        margin-right: 60px
+        max-width: 600px
+        width: 100%
+    .info__item
+        margin-bottom: 30px
+        +flexa
+        &:last-child
+            margin-bottom: 0px
+    .item__img
+        min-width: 58px
+        width: 58px
+        height: 58px
+        margin-right: 20px
+    .item__text
+        &-title
+            font-size: 18px
+            font-weight: 600
+            margin-bottom: 15px
+            color: #323843
+        &-descript
+            font-size: 16px
+            color: #323843
+            line-height: 24px
+    &__price
+        padding: 48px 70px
+        border-radius: 20px
+        background: #EAD4FF
+        text-align: center
+    .price__title
+        font-size: 20px
+        font-weight: 400
+    .price__count
+        margin: 5px 0px
+    .price__lessons
+        font-size: 16px 
+        font-weight: 400
+        margin-bottom: 30px
+@media screen and (max-width: 1640px)
+    .tips
+        background-position: 29% 78px
+@media screen and (max-width: 1440px)
+    .tips
+        background-position: 23% 78px
+@media screen and (max-width: 1240px)
+    .tips
+        background-position: 10% 78px
+    .tabs
+        margin-top: 50px
+@media screen and (max-width: $MainContainer)
+    .spec .slick-list.draggable
+        max-width: 100%
+    .cost
+        .container
+            flex-direction: column
+        &__price
+            margin-top: 30px
+        &__info
+            margin-right: 0px
+    .we
+        .container
+            flex-direction: column
+        &__img
+            margin-left: 0px
+            margin-top: 20px
+    .tips
+        background-image: none
+        &__item
+            max-width: none
+            position: static
+            margin-bottom: 10px
+            height: none
+            padding-bottom: 60px
+    .main__info 
+        .container
+            flex-direction: column
+            align-items: flex-start
+        .main__img
+            margin-top: 20px
+    .tabs 
+        overflow-x: scroll
+        padding: 10px 0px
+        .container
+            min-width: 960px
+            width: 960px
+@media screen and (max-width: $MobileContainer)
+    .we__item 
+        .item__text
+            font-size: 16px
+    .main__descript
+        font-size: 16px
+    .main__info
+        margin-top: 30px
+    .title-block
+        display: flex
+        flex-direction: column-reverse
+        .main__cons
+            position: static
+            transform: rotate(0)
+            margin-bottom: 10px
+    .cost 
+        .container
+            padding: 40px 20px
+        &__price
+            width: 100%
+@media screen and (max-width: 350px)
+    .cost__price
+        padding: 40px 20px

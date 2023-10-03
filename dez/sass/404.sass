@@ -1,0 +1,41 @@
+@import 'main'
+@import 'header'
+@import 'footer'
+.error
+    &-block
+        display: flex
+        justify-content: space-between
+        background: $gray
+        border-radius: 20px
+        padding: 48px 101px
+    &-info
+        max-width: 580px
+        margin-top: 100px
+    &__title
+        margin-bottom: 30px
+    &__img
+        max-width: 480px
+        width: 100%
+.mainButton
+    margin-top: 60px
+@media screen and (max-width: $MainContainer)
+    .error
+        .container
+            max-width: 100%
+        &-block
+            border-radius: 0px
+            padding: 48px 2%
+        &__descript
+            max-width: 450px
+@media screen and (max-width: $MobileContainer)
+    .error-block
+        flex-direction: column
+        align-items: center
+        text-align: center
+        img
+            max-width: 320px
+            margin-right: 70px
+    .error-info
+        margin-top: 0px
+    .mainButton
+        margin-top: 20px

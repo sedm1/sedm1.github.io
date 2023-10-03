@@ -13,16 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&display=swap" rel="stylesheet">
     <title>Главная - Дезориентация</title>
     <style>
-        .history .slick-prev{
+        .slick-prev{
             background-image: url("/img/svg/slick-left.svg");
         }
-        .history .slick-next{
+        .slick-next{
             background-image: url("/img/svg/slick-right.svg");
+        }
+        .how .bg-line{
+            background-image: url("/img/bg-2.png");
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header__logo"><img src="img/svg/logo.svg" alt="Logo"></div>
             <ul class="menu">
@@ -32,90 +35,334 @@
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Для бизнеса</a></li>
+                <div class="menu__footer">
+                    <div class="menu__footer-info">
+                        <img src="img/svg/mail-black.svg" alt="mail" class="mail">
+                        <div class="mail-text">dmitriy.babkin@dezorientaciya.ru</div>
+                    </div>
+                    <div class="menu__footer-soz">
+                        <a class="soz-item"><img src="img/svg/tg-black.svg" alt="TgBlack"></a>
+                        <a class="soz-item"><img src="img/svg/yad-black.svg" alt="YadBlack"></a>
+                    </div>
+                </div>
             </ul>
+            <button class="header__button"><img src="img/svg/menu.svg" alt="Menu"></button>
         </div>
     </header>
     <main>
-        <section class="main">
-            <div class="container">
-                <div class="main__text">
-                    <h1 class="main__title">Сервис HR решений</h1>
-                    <p class="main__descript">Определимся с профессией, построим карьеру, найдем лучших людей для бизнеса</p>
-                    <button class="mainButton mainButton-green">Оставить заявку</button>
-                    <div class="sugg">
-                        <div class="sugg_img"><img src="img/main__person.jpg" alt="SugImg"></div>
-                        <div class="sugg__text">
-                            <h2 class="sugg__count">100+</h2>
-                            <p class="sugg__descript">клиентов построили карьеру с нами</p>
+        <div class="bg-line">
+            <section class="main">
+                <div class="container">
+                    <div class="main__text">
+                        <h1 class="main__title">Сервис HR решений</h1>
+                        <p class="main__descript">Определимся с профессией, построим карьеру, найдем лучших людей для бизнеса</p>
+                        <button class="mainButton mainButton-green">Оставить заявку</button>
+                        <div class="sugg">
+                            <div class="sugg_img"><img src="img/main__person.jpg" alt="SugImg"></div>
+                            <div class="sugg__text">
+                                <h2 class="sugg__count">100+</h2>
+                                <p class="sugg__descript">клиентов построили карьеру с нами</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__img"><img src="img/main__img.png" alt="MainImg"></div>
+                </div>
+            </section>
+            <section class="resh">
+                <div class="container">
+                    <h2 class="resh__title">Какие решения предоставляем?</h2>
+                    <div class="resh__block">
+                        <div class="resh__item">
+                            <div class="item__img"><img src="img/resh-1.jpg" alt="ReshItem"></div>
+                            <p class="item__title">Профориентация помогает определиться с выбором карьеры, учитывая интересы и сильные стороны человека</p>
+                        </div>
+                        <div class="resh__item">
+                            <div class="item__img"><img src="img/resh-2.jpg" alt="ReshItem"></div>
+                            <p class="item__title">Карьерный консультант поможет изучить рынок той или иной профессии, составить резюме, подготовиться к интервью, простроить карту развития</p>
+                        </div>
+                        <div class="resh__item">
+                            <div class="item__img"><img src="img/resh-3.jpg" alt="ReshItem"></div>
+                            <p class="item__title">Команда опытных рекрутеров, специализирующихся на своих рынках быстро найдет самых подходящих специалистов </p>
                         </div>
                     </div>
                 </div>
-                <div class="main__img"><img src="img/main__img.png" alt="MainImg"></div>
-            </div>
-        </section>
-        <section class="resh">
+            </section>
+            <section class="sort">
+                <div class="container">
+                    <div class="sort__text">
+                        <h2 class="sort__title">Соориентируем на карьерном пути </h2>
+                        <div class="sort__item-block">
+                            <button class="sort__item sort__item-active" data-sort="1">Учащихся от 14 лет</button>
+                            <button class="sort__item" data-sort="2">Взрослых</button>
+                            <button class="sort__item" data-sort="3">Карьерная консультация</button>
+                            <button class="sort__item" data-sort="4">Готовое резюме</button>
+                        </div>
+                    </div>
+                    <div class="sort__content sort__content-active" id="sort__content-1">
+                        <div class="sort__content-item">
+                            <h3 class="item__title">Мы поможем 1</h3>
+                            <ul class="sort__list">
+                                <li>Определить интересы и способности вашего ребенка.</li>
+                                <li>Поможем развить осознанный выбор.</li>
+                                <li>Найдем конкретное решение в виде нескольких вариантов профессионального и образовательного развития ребенка.</li>
+                                <li>Поддержим в принятии решений,  связанных с выбором определенного направления карьеры.</li>
+                            </ul>
+                        </div>
+                        <div class="sort__content-item">
+                            <div class="item__img"><img src="img/FFF.png" alt="MainPerson"></div>
+                            <div class="item__text">Команда опытных спецаилистов</div>
+                        </div>
+                        <div class="sort__content-item">
+                            <h3 class="item__title">3000 руб. / сессия</h3>
+                            <button class="mainButton mainButton-pur">Подобрать специалиста</button>
+                        </div>
+                    </div>
+                    <div class="sort__content" id="sort__content-2">
+                        <div class="sort__content-item">
+                            <h3 class="item__title">Мы поможем 2</h3>
+                            <ul class="sort__list">
+                                <li>Определить интересы и способности вашего ребенка.</li>
+                                <li>Поможем развить осознанный выбор.</li>
+                                <li>Найдем конкретное решение в виде нескольких вариантов профессионального и образовательного развития ребенка.</li>
+                                <li>Поддержим в принятии решений,  связанных с выбором определенного направления карьеры.</li>
+                            </ul>
+                        </div>
+                        <div class="sort__content-item">
+                            <div class="item__img"><img src="img/FFF.png" alt="MainPerson"></div>
+                            <div class="item__text">Команда опытных спецаилистов</div>
+                        </div>
+                        <div class="sort__content-item">
+                            <h3 class="item__title">3000 руб. / сессия</h3>
+                            <button class="mainButton mainButton-pur">Подобрать специалиста</button>
+                        </div>
+                    </div>
+                    <div class="sort__content" id="sort__content-3">
+                        <div class="sort__content-item">
+                            <h3 class="item__title">Мы поможем 3</h3>
+                            <ul class="sort__list">
+                                <li>Определить интересы и способности вашего ребенка.</li>
+                                <li>Поможем развить осознанный выбор.</li>
+                                <li>Найдем конкретное решение в виде нескольких вариантов профессионального и образовательного развития ребенка.</li>
+                                <li>Поддержим в принятии решений,  связанных с выбором определенного направления карьеры.</li>
+                            </ul>
+                        </div>
+                        <div class="sort__content-item">
+                            <div class="item__img"><img src="img/FFF.png" alt="MainPerson"></div>
+                            <div class="item__text">Команда опытных спецаилистов</div>
+                        </div>
+                        <div class="sort__content-item">
+                            <h3 class="item__title">3000 руб. / сессия</h3>
+                            <button class="mainButton mainButton-pur">Подобрать специалиста</button>
+                        </div>
+                    </div>
+                    <div class="sort__content" id="sort__content-4">
+                        <div class="sort__content-item">
+                            <h3 class="item__title">Мы поможем 4</h3>
+                            <ul class="sort__list">
+                                <li>Определить интересы и способности вашего ребенка.</li>
+                                <li>Поможем развить осознанный выбор.</li>
+                                <li>Найдем конкретное решение в виде нескольких вариантов профессионального и образовательного развития ребенка.</li>
+                                <li>Поддержим в принятии решений,  связанных с выбором определенного направления карьеры.</li>
+                            </ul>
+                        </div>
+                        <div class="sort__content-item">
+                            <div class="item__img"><img src="img/FFF.png" alt="MainPerson"></div>
+                            <div class="item__text">Команда опытных спецаилистов</div>
+                        </div>
+                        <div class="sort__content-item">
+                            <h3 class="item__title">3000 руб. / сессия</h3>
+                            <button class="mainButton mainButton-pur">Подобрать специалиста</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how">
+                <div class="container">
+                    <h2 class="how__title">как это работает</h2>
+                    <div class="how__item">
+                        <div class="item__text">
+                            <h3 class="item__count">01</h3>
+                            <h3 class="item__title">Отправка заявки</h3>
+                            <p class="item__descript">Мы свяжемся с вами в Telegram, подберем специалиста и назначим консультацию</p>
+                        </div>
+                        <div class="item__icon"><img src="img/how_1.png" alt="HowIcon"></div>
+                    </div>
+                    <div class="how__item">
+                        <div class="item__text">
+                            <h3 class="item__count">02</h3>
+                            <h3 class="item__title">Знакомство со специалистом</h3>
+                            <p class="item__descript">Первый звонок бесплатный и длится 20-30 минут. На нем вы сможете задать любые вопросы и узнать, как будет выстроена дальнейшая работа</p>
+                        </div>
+                        <div class="item__icon"><img src="img/how_2.png" alt="HowIcon"></div>
+                    </div>
+                    <div class="how__item">
+                        <div class="item__text">
+                            <h3 class="item__count">03</h3>
+                            <h3 class="item__title">Начало консультаций</h3>
+                            <p class="item__descript">На консультациях специалист будет задавать вопросы о вашем опыте, мотивации, интересах, причинах того или иного профессионального выбора</p>
+                        </div>
+                        <div class="item__icon"><img src="img/how_3.png" alt="HowIcon"></div>
+                    </div>
+                    <div class="how__item">
+                        <div class="item__text">
+                            <h3 class="item__count">04</h3>
+                            <h3 class="item__title">Активная работа со специалистом</h3>
+                            <p class="item__descript">Вы получите комплекс проверенных тестов и диагностик, результаты которых будете обсуждать и анализировать вместе со специалистом на встречах</p>
+                        </div>
+                        <div class="item__icon"><img src="img/how_4.png" alt="HowIcon"></div>
+                    </div>
+                    <div class="how__item how__item-last">
+                        <div class="item__text">
+                            <h3 class="item__count">05</h3>
+                            <h3 class="item__title">Достижение успеха</h3>
+                            <p class="item__descript">В итоге составите список из специальностей, среди которых выберете конкретную и сформулируете дальнейший план действий по ее освоению</p>
+                        </div>
+                        <div class="item__icon"><img src="img/how_5.png" alt="HowIcon"></div>
+                    </div>
+                    <button class="mainButton mainButton-green">Хочу попробовать!</button>
+                </div>
+            </section>
+        </div>
+        <section class="spec">
             <div class="container">
-                <h2 class="resh__title">Какие решения предоставляем?</h2>
-                <div class="resh__block">
-                    <div class="resh__item">
-                        <div class="item__img"><img src="img/resh-1.jpg" alt="ReshItem"></div>
-                        <p class="item__title">Профориентация помогает определиться с выбором карьеры, учитывая интересы и сильные стороны человека</p>
+                <div class="spec__header">
+                    <h2 class="spec__title">наши специалисты</h2>
+                    <a href="#" class="spec__all">Все специалисты</a>
+                </div>
+                <div class="spec__main">
+                    <div class="spec__item">
+                        <div class="front">
+                            <div class="front__main">
+                                <div class="main__img"><img src="img/spec-img.png" alt="FrontImg"></div>
+                                <p class="front__name cart__title">Ольга Урванцева</p>
+                                <p class="front__job">Психолог, профориентолог</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="back__main">
+                                <div class="back__header">
+                                    <div class="back__title cart__title">Татьяна Худякова</div>
+                                    <div class="back__item">
+                                        <div class="item__title">Специализация:</div>
+                                        <div class="item__descript-block">
+                                            <p class="item__descript">Профориентолог</p>
+                                            <p class="item__descript">Карьерный консультант</p>
+                                        </div>  
+                                    </div>
+                                    <div class="back__item">
+                                        <div class="item__title">Умения:</div>
+                                        <div class="item__descript-block">
+                                            <p class="item__descript">Поможет Вам найти свой путь в жизни.</p>
+                                            <p class="item__descript">Составит натальную карту и предскажет будущее.</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="back__footer">
+                                    <a href="#" class="back__pod">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="resh__item">
-                        <div class="item__img"><img src="img/resh-2.jpg" alt="ReshItem"></div>
-                        <p class="item__title">Карьерный консультант поможет изучить рынок той или иной профессии, составить резюме, подготовиться к интервью, простроить карту развития</p>
+                    <div class="spec__item">
+                        <div class="front">
+                            <div class="front__main">
+                                <div class="main__img"><img src="img/spec-img.png" alt="FrontImg"></div>
+                                <p class="front__name cart__title">Ольга Урванцева</p>
+                                <p class="front__job">Психолог, профориентолог</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="back__main">
+                                <div class="back__header">
+                                    <div class="back__title cart__title">Татьяна Худякова</div>
+                                    <div class="back__item">
+                                        <div class="item__title">Специализация:</div>
+                                        <div class="item__descript-block">
+                                            <p class="item__descript">Профориентолог</p>
+                                            <p class="item__descript">Карьерный консультант</p>
+                                        </div>  
+                                    </div>
+                                    <div class="back__item">
+                                        <div class="item__title">Умения:</div>
+                                        <div class="item__descript-block">
+                                            <p class="item__descript">Поможет Вам найти свой путь в жизни.</p>
+                                            <p class="item__descript">Составит натальную карту и предскажет будущее.</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="back__footer">
+                                    <a href="#" class="back__pod">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="resh__item">
-                        <div class="item__img"><img src="img/resh-3.jpg" alt="ReshItem"></div>
-                        <p class="item__title">Команда опытных рекрутеров, специализирующихся на своих рынках быстро найдет самых подходящих специалистов </p>
+                    <div class="spec__item">
+                        <div class="front">
+                            <div class="front__main">
+                                <div class="main__img"><img src="img/spec-img.png" alt="FrontImg"></div>
+                                <p class="front__name cart__title">Ольга Урванцева</p>
+                                <p class="front__job">Психолог, профориентолог</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="back__main">
+                                <div class="back__header">
+                                    <div class="back__title cart__title">Татьяна Худякова</div>
+                                    <div class="back__item">
+                                        <div class="item__title">Специализация:</div>
+                                        <div class="item__descript-block">
+                                            <p class="item__descript">Профориентолог</p>
+                                            <p class="item__descript">Карьерный консультант</p>
+                                        </div>  
+                                    </div>
+                                    <div class="back__item">
+                                        <div class="item__title">Умения:</div>
+                                        <div class="item__descript-block">
+                                            <p class="item__descript">Поможет Вам найти свой путь в жизни.</p>
+                                            <p class="item__descript">Составит натальную карту и предскажет будущее.</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="back__footer">
+                                    <a href="#" class="back__pod">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec__item">
+                        <div class="front">
+                            <div class="front__main">
+                                <div class="main__img"><img src="img/spec-img.png" alt="FrontImg"></div>
+                                <p class="front__name cart__title">Ольга Урванцева</p>
+                                <p class="front__job">Психолог, профориентолог</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="back__main">
+                                <div class="back__header">
+                                    <div class="back__title cart__title">Татьяна Худякова</div>
+                                    <div class="back__item">
+                                        <div class="item__title">Специализация:</div>
+                                        <div class="item__descript-block">
+                                            <p class="item__descript">Профориентолог</p>
+                                            <p class="item__descript">Карьерный консультант</p>
+                                        </div>  
+                                    </div>
+                                    <div class="back__item">
+                                        <div class="item__title">Умения:</div>
+                                        <div class="item__descript-block">
+                                            <p class="item__descript">Поможет Вам найти свой путь в жизни.</p>
+                                            <p class="item__descript">Составит натальную карту и предскажет будущее.</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="back__footer">
+                                    <a href="#" class="back__pod">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="how">
-            <div class="container">
-                <h2 class="how__title">как это работает</h2>
-                <div class="how__item">
-                    <div class="item__text">
-                        <h3 class="item__count">01</h3>
-                        <h3 class="item__title">Отправка заявки</h3>
-                        <p class="item__descript">Мы свяжемся с вами в Telegram, подберем специалиста и назначим консультацию</p>
-                    </div>
-                    <div class="item__icon"><img src="img/how_1.png" alt="HowIcon"></div>
-                </div>
-                <div class="how__item">
-                    <div class="item__text">
-                        <h3 class="item__count">02</h3>
-                        <h3 class="item__title">Знакомство со специалистом</h3>
-                        <p class="item__descript">Первый звонок бесплатный и длится 20-30 минут. На нем вы сможете задать любые вопросы и узнать, как будет выстроена дальнейшая работа</p>
-                    </div>
-                    <div class="item__icon"><img src="img/how_2.png" alt="HowIcon"></div>
-                </div>
-                <div class="how__item">
-                    <div class="item__text">
-                        <h3 class="item__count">03</h3>
-                        <h3 class="item__title">Начало консультаций</h3>
-                        <p class="item__descript">На консультациях специалист будет задавать вопросы о вашем опыте, мотивации, интересах, причинах того или иного профессионального выбора</p>
-                    </div>
-                    <div class="item__icon"><img src="img/how_3.png" alt="HowIcon"></div>
-                </div>
-                <div class="how__item">
-                    <div class="item__text">
-                        <h3 class="item__count">04</h3>
-                        <h3 class="item__title">Активная работа со специалистом</h3>
-                        <p class="item__descript">Вы получите комплекс проверенных тестов и диагностик, результаты которых будете обсуждать и анализировать вместе со специалистом на встречах</p>
-                    </div>
-                    <div class="item__icon"><img src="img/how_4.png" alt="HowIcon"></div>
-                </div>
-                <div class="how__item how__item-last">
-                    <div class="item__text">
-                        <h3 class="item__count">05</h3>
-                        <h3 class="item__title">Достижение успеха</h3>
-                        <p class="item__descript">В итоге составите список из специальностей, среди которых выберете конкретную и сформулируете дальнейший план действий по ее освоению</p>
-                    </div>
-                    <div class="item__icon"><img src="img/how_5.png" alt="HowIcon"></div>
-                </div>
-                <button class="mainButton mainButton-green">Хочу попробовать!</button>
             </div>
         </section>
         <section class="form">
@@ -211,6 +458,150 @@
                     <h2 class="sert__title">Дарите успех и вдохновение</h2>
                     <p class="sert__descript">Подарите своим близким подарочный сертификат на карьерную консультацию! Позвольте им открыть новые горизонты, исследовать свои потенциалы и достичь новых высот в своей карьере.</p>
                     <button class="mainButton mainButton-green">Подарить сертификат</button>
+                </div>
+            </div>
+        </section>
+        <section class="insait">
+            <div class="container">
+                <h2 class="insait__title">Инсайты к успеху: <br/>полезные статьи для карьеры</h2>
+                <p class="insait__descript">Получите советы по развитию навыков и осознанному выбору профессии.</p>
+                <div class="insait__button">
+                    <button class="button__item button__item-active" data-insait="1">профориентация для всех</button>
+                    <button class="button__item" data-insait="2">хочу  поменять работу</button>
+                    <button class="button__item" data-insait="3">выбрать новую профессию</button>
+                    <button class="button__item" data-insait="4">устроиться на работу</button>
+                    <button class="button__item" data-insait="5">для успеха в карьере</button>
+                </div>
+                <h3 class="insait__actual">Актуальное</h3>
+                <div class="insait__news insait__news-active" id="insait__news-1">
+                    <div class="news__img">
+                        <div class="news__img-block">
+                            <img src="img/news__img.png" alt="NewsImg">
+                            <div class="img__text">
+                                <h3 class="img__tite">Как перейти в IT</h3>
+                                <p class="img__descript">Советы профессиональных карьерных консультантов</p>
+                            </div>
+                        </div>
+                        <a href="#" class="news__img-read">Читать</a>
+                    </div>
+                    <div class="news__info">
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">1</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">2</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="insait__news" id="insait__news-2">
+                    <div class="news__img">
+                        <div class="news__img-block">
+                            <img src="img/news__img.png" alt="NewsImg">
+                            <div class="img__text">
+                                <h3 class="img__tite">Как перейти в IT</h3>
+                                <p class="img__descript">Советы профессиональных карьерных консультантов</p>
+                            </div>
+                        </div>
+                        <a href="#" class="news__img-read">Читать</a>
+                    </div>
+                    <div class="news__info">
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">3</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">4</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="insait__news" id="insait__news-3">
+                    <div class="news__img">
+                        <div class="news__img-block">
+                            <img src="img/news__img.png" alt="NewsImg">
+                            <div class="img__text">
+                                <h3 class="img__tite">Как перейти в IT</h3>
+                                <p class="img__descript">Советы профессиональных карьерных консультантов</p>
+                            </div>
+                        </div>
+                        <a href="#" class="news__img-read">Читать</a>
+                    </div>
+                    <div class="news__info">
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">5</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">6</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="insait__news" id="insait__news-4">
+                    <div class="news__img">
+                        <div class="news__img-block">
+                            <img src="img/news__img.png" alt="NewsImg">
+                            <div class="img__text">
+                                <h3 class="img__tite">Как перейти в IT</h3>
+                                <p class="img__descript">Советы профессиональных карьерных консультантов</p>
+                            </div>
+                        </div>
+                        <a href="#" class="news__img-read">Читать</a>
+                    </div>
+                    <div class="news__info">
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">7</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">8</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="insait__news" id="insait__news-5">
+                    <div class="news__img">
+                        <div class="news__img-block">
+                            <img src="img/news__img.png" alt="NewsImg">
+                            <div class="img__text">
+                                <h3 class="img__tite">Как перейти в IT</h3>
+                                <p class="img__descript">Советы профессиональных карьерных консультантов</p>
+                            </div>
+                        </div>
+                        <a href="#" class="news__img-read">Читать</a>
+                    </div>
+                    <div class="news__info">
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">9</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                        <div class="news__info-block">
+                            <h1 class="news__info-number">10</h1>
+                            <h3 class="news__info-title">Почему важны карьерные консультации</h3>
+                            <p class="news__info-descript">Как карьерный консультант помогает достичь успеха в карьере</p>
+                            <a href="#" class="news__info-link"><img src="img/news__arrow.png" alt="NewsArrow"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -347,5 +738,21 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/accordion.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script>
+        $(".sort__item").click((e) => {
+            $(".sort__item").removeClass("sort__item-active")
+            $(e.target).addClass("sort__item-active")
+            $(".sort__content").removeClass("sort__content-active")
+            $(("#sort__content-"+$(e.target).attr("data-sort"))).addClass("sort__content-active")
+        })
+
+        $(".button__item").click((e) => {
+            $(".button__item").removeClass("button__item-active")
+            $(e.target).addClass("button__item-active")
+            $('.insait__news').removeClass("insait__news-active")
+            $("#insait__news-"+ $(e.target).attr("data-insait")).addClass("insait__news-active")
+        })
+    </script>
 </body>
 </html>

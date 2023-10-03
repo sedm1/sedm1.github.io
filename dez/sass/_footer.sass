@@ -39,3 +39,21 @@ footer
   font-size: 16px
   font-weight: 400
   display: block
+@media screen and (max-width: $MainContainer)
+  .footer__menu
+    flex-direction: column
+    margin-right: 9%
+    nav
+      margin-right: 0px
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0px
+@media screen and ( max-width: $MobileContainer)
+  .footer__menu
+    margin-right: 0px
+    margin-top: 49px
+  .footer__main
+    flex-direction: column
+  .info__soz
+    margin-top: 17px
+  

@@ -1,6 +1,16 @@
 @import 'sass/main'
 @import 'sass/header'
+@import 'sass/spec'
+@import 'sass/slider'
+@import 'sass/_insait'
 @import 'sass/footer'
+.bg-line
+    position: relative
+    .bg-line-item
+        position: absolute
+        z-index: $mainZIndex
+        left: 250px
+        top: 80px
 .main
     margin-top: 60px
     &__text
@@ -49,9 +59,65 @@
             border-radius: 20px
     .item__title
         font-weight: 400
+.sort
+    .container
+        display: flex
+        justify-content: space-between
+    &__item-block
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-top: 70px
+        .sort__item
+            margin-bottom: 30px
+            padding: 20px 30px
+            border-radius: 46px
+            font-size: 20px
+            font-weight: 500
+            color: #323843
+            text-align: left
+            &:last-child
+                margin-bottom: 0px
+            &-active
+                background: #CBE857
+    &__text
+        max-width: 578px
+    &__content
+        display: none
+        &-active
+            display: block
+        &-item
+            background: #E4FF95
+            border: 2px solid $black
+            border-radius: 20px
+            margin-bottom: 20px
+            max-width: 680px
+            width: 100%
+            &:last-child
+                margin-bottom: 0px
+            &:nth-child(1)
+                padding: 28px 38px
+            &:nth-child(2)
+                +flexa
+                padding: 29px 41px
+            &:nth-child(3)
+                padding: 47px 42px
+            
+        .mainButton
+            margin-top: 23px
+        .item__img
+            margin-right: 45px
+        .item__text
+            font-size: 16px
+    &__list
+        margin-top: 18px
+        padding-left: 26px
+        li
+            list-style: disc
 .how
     background: $purpleBg
     padding: 60px 0px
+    position: relative
     &__item
         +flexa
         margin-bottom: 112px
@@ -77,6 +143,8 @@
         max-width: 205px
         width: 100%
         margin-left: 100px
+    button
+        margin-top: 30px
 .form
     background: #EAD4FF
     padding: 101px 0px
@@ -136,7 +204,6 @@
     &__title
         max-width: 533px
         text-transform: uppercase
-        line-height: 45px
         text-align: center
         margin: 0 auto
     &__slider
@@ -176,40 +243,6 @@
         margin-top: 30px
         font-size: 16px
         font-weight: 600
-    .slick-arrow
-        font-size: 0px
-        width: 65px
-        height: 65px
-        border-radius: 100%
-        background-color: $black
-        position: absolute
-        top: 50%
-        transform: translateY(-50%)
-        z-index: $mainZIndex
-        +bg
-        background-size: 40px
-    .slick-next
-        right: -28px
-    .slick-prev
-        left: -28px
-    .slick-dots
-        position: absolute
-        left: 50%
-        transform: translateX(-50%)
-        +flexa
-        bottom: -60px
-        li
-            width: 28px
-            height: 28px
-            font-size: 0px
-            border-radius: 100%
-            background: #EAD4FF
-            margin-right: 20px
-            cursor: pointer
-            &:last-child
-                margin-right: 0px
-        .slick-active
-            background: $purple
 .dov
     &__title
         text-align: center
@@ -262,3 +295,132 @@
             line-height: 24px
             display: none
             padding-bottom: 30px
+@media screen and (max-width: $MainContainer)
+    .history__slider
+        margin-top: 30px
+    .resh 
+        .item__img
+            max-width: 692px
+            img
+                height: 227px
+    .resh__block 
+        flex-direction: column
+        align-items: center
+    .resh__item 
+        max-width: 692px
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0px
+    .how
+        .item__descript
+            font-size: 16px
+        .item__icon
+            max-width: 140px
+    .form 
+        .container
+            flex-direction: column
+        &__text
+            margin: 0 auto
+            margin-bottom: 30px
+        &__title
+            max-width: 512px
+        &__form
+            margin: 0 auto
+    .sert__img
+        max-width: 281px
+@media screen and (max-width: $MobileContainer)
+    .sort 
+        .container
+            flex-direction: column
+        &__content
+            margin-top: 15px
+            &-item
+                max-width: 100%
+                padding: 20px 15px !important
+        &__item-block 
+            margin-top: 15px
+            .sort__item
+                font-size: 14px
+                padding: 12px 20px
+                margin-bottom: 5px
+        &__list
+            li
+                font-size: 16px
+    .main
+        margin-top: 30px
+        .main__img
+            display: none
+    .main__text
+        padding-top: 0px
+    .sugg
+        margin-top: 30px
+        flex-direction: column-reverse
+        align-items: flex-start
+        &_img
+            margin-top: 10px
+            max-width: 130px
+        &__text
+            margin-left: 0px
+            +flexa
+        &__descript
+            font-size: 14px
+            margin-left: 5px
+    .how
+        &__title
+            text-align: left
+        &__item
+            flex-direction: row-reverse
+            align-items: flex-start
+        .item__icon
+            margin: 0px !important
+            margin-right: 10px !important
+            width: 60px
+        .item__descript
+            font-size: 14px
+    .spec__all
+        display: none
+    .form
+        padding: 40px 0px
+    .form__form 
+        .item__name
+            font-size: 16px
+        input, textarea
+            font-size: 14px
+            padding-left: 15px
+            &::placeholder
+                font-size: 14px
+    .form__descript
+        font-size: 14px
+    .history__slider 
+        .slider__item
+            padding: 30px 20px
+    .history__title
+        text-align: left
+    .history 
+        .item__header 
+            .item__name
+                font-size: 18px
+        .item__descript
+            font-size: 14px
+    .sert 
+        padding: 30px 20px
+        .container
+            flex-direction: column
+            align-items: flex-start
+        &__img
+            margin-bottom: 20px
+            width: 150px 
+        &__title
+            font-size: 20px
+        &__descript
+            font-size: 14px
+    .dov__block 
+        .container
+            justify-content: space-evenly
+            flex-wrap: wrap
+    .dov__item
+        max-width: 43%
+        margin-bottom: 10px
+    .quest 
+        .accordion__title
+            font-size: 18px
