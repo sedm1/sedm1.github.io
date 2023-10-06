@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Статья - Дезориентация</title>
     <link rel="stylesheet" href="css/statya.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,15 +12,26 @@
 <body>
     <header>
         <div class="container">
-            <div class="header__logo"><img src="img/svg/logo.svg" alt="Logo"></div>
+            <div class="header__logo"><img src="img/logo.png" alt="Logo"></div>
             <ul class="menu">
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Специалисты</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="spec.html">Специалисты</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">FAQ</a></li>
-                <li><a href="#">Для бизнеса</a></li>
+                <li><a href="buisnes.html">Для бизнеса</a></li>
+                <div class="menu__footer">
+                    <div class="menu__footer-info">
+                        <img src="img/svg/mail-black.svg" alt="mail" class="mail">
+                        <div class="mail-text">dmitriy.babkin@dezorientaciya.ru</div>
+                    </div>
+                    <div class="menu__footer-soz">
+                        <a class="soz-item"><img src="img/svg/tg-black.svg" alt="TgBlack"></a>
+                        <a class="soz-item"><img src="img/svg/yad-black.svg" alt="YadBlack"></a>
+                    </div>
+                </div>
             </ul>
+            <button class="header__button"><img src="img/svg/menu.svg" alt="Menu"></button>
         </div>
     </header>
     <main>
@@ -37,5 +48,50 @@
             
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__info">
+                    <div class="info__mail">
+                        <div class="mail__img"><img src="img/svg/mail.svg" alt="Mail"></div>
+                        dmitriy.babkin@dezorientaciya.ru
+                    </div>
+                    <div class="info__soz">
+                        <a class="soz__item"><img src="img/svg/tg.svg" alt="TG"></a>
+                        <a class="soz__item"><img src="img/svg/yand.svg" alt="TG"></a>
+                    </div>
+                </div>
+                <div class="footer__menu">
+                    <nav>
+                        <ul class="footer__menu-item">
+                            <li><a href="#">Что такое профориентация</a></li>
+                            <li><a href="#">Для кого</a></li>
+                            <li><a href="#">Как это работает</a></li>
+                            <li><a href="#">Стоимость</a></li>
+                            <li><a href="#">Специалисты</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="footer__menu-item">
+                            <li><a href="#">Учащимся до 14</a></li>
+                            <li><a href="#">Взрослым</a></li>
+                            <li><a href="#">Карьерная консультация</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="footer__menu-item">
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Партнеры</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <a href="#" class="polit">Политика конфиденциальности</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>

@@ -159,7 +159,7 @@ header .container {
 }
 
 .header__logo {
-  max-width: 270px;
+  max-width: 55px;
   width: 100%;
 }
 
@@ -618,13 +618,13 @@ footer {
 }
 .main__cons {
   position: absolute;
-  top: -20px;
-  right: -240px;
+  top: -10px;
   padding: 10px;
   background: #E4FF95;
   border-radius: 10px;
-  -webkit-transform: rotate(-4deg);
-          transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg) translateX(100%);
+          transform: rotate(-4deg) translateX(100%);
+  right: 0px;
 }
 .main__descript {
   max-width: 511px;
@@ -763,17 +763,6 @@ footer {
 }
 .we__img img {
   border-radius: 20px;
-}
-
-.spec .slick-list.draggable {
-  max-width: 90%;
-  margin: 0 auto;
-}
-.spec .slick-next {
-  right: 34px;
-}
-.spec .slick-prev {
-  left: 34px;
 }
 
 .cost .container {

@@ -159,7 +159,7 @@ header .container {
 }
 
 .header__logo {
-  max-width: 270px;
+  max-width: 55px;
   width: 100%;
 }
 
@@ -367,6 +367,9 @@ footer {
   .info__soz {
     margin-top: 17px;
   }
+}
+.main__block {
+  margin-top: 90px;
 }
 .main__block .container {
   display: -webkit-box;
