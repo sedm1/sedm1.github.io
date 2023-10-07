@@ -159,8 +159,19 @@ header .container {
 }
 
 .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.header__logo-img {
   max-width: 55px;
   width: 100%;
+  margin-right: 15px;
 }
 
 .header__button {
@@ -571,7 +582,7 @@ footer {
   display: flex;
 }
 .tabs__item {
-  padding: 20px 30px;
+  padding: 20px 22px;
   border-radius: 46px;
   font-weight: 400;
   margin-right: 15px;
@@ -903,8 +914,8 @@ footer {
     padding: 10px 0px;
   }
   .tabs .container {
-    min-width: 960px;
-    width: 960px;
+    min-width: 1150px;
+    width: 1150px;
   }
 }
 @media screen and (max-width: 768px) {
