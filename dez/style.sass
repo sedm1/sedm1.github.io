@@ -20,8 +20,16 @@
     &__title
         margin-bottom: 15px
         text-transform: uppercase
-    .mainButton
+    &__button-block
         margin-top: 30px
+        +flexa
+    .mainButton
+        margin-right: 20px
+    .linkbuisnes
+        padding: 20px 30px 
+        border-radius: 46px
+        border: 1px solid $black
+        font-weight: 500
     .container
         display: flex
         justify-content: space-between
@@ -424,3 +432,12 @@
     .quest 
         .accordion__title
             font-size: 18px
+@media screen and (max-width: 500px)
+    .main__button-block
+        flex-direction: column
+        align-items: flex-start
+        button
+            margin-right: 0px
+            margin-bottom: 10px
+        a
+            padding: 15px 25px 
