@@ -1,0 +1,38 @@
+//EurostileRoundExtended
+@font-face {
+    font-family: 'EurostileRound';
+    src: local('Eurostile Round Extended Regular'), local('Eurostile-Round-Extended-Regular'),
+        url('../fonts/EurostileRoundExtended-Regular.woff2') format('woff2'),
+        url('../fonts/EurostileRoundExtended-Regular.woff') format('woff'),
+        url('../fonts/EurostileRoundExtended-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EurostileRound';
+    src: local('Eurostile Round Extended Medium'), local('Eurostile-Round-Extended-Medium'),
+        url('../fonts/EurostileRoundExtended-Medium.woff2') format('woff2'),
+        url('../fonts/EurostileRoundExtended-Medium.woff') format('woff'),
+        url('../fonts/EurostileRoundExtended-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EurostileRound';
+    src: local('Eurostile Round Extended Black'), local('Eurostile-Round-Extended-Black'),
+        url('../fonts/EurostileRoundExtended-Black.woff2') format('woff2'),
+        url('../fonts/EurostileRoundExtended-Black.woff') format('woff'),
+        url('../fonts/EurostileRoundExtended-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+//HalvarBreit
+@font-face {
+    font-family: 'HalvarBreitschrift';
+    src: local('Halvar Breitschrift Lt'), local('Halvar-Breitschrift-Lt'),
+        url('../fonts/HalvarBreit-Lt.woff2') format('woff2'),
+        url('../fonts/HalvarBreit-Lt.woff') format('woff'),
+        url('../fonts/HalvarBreit-Lt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

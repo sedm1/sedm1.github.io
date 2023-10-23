@@ -1,0 +1,83 @@
+@import 'colors';
+@import 'vars';
+@import 'fonts';
+@import 'slider';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'EurostileRound';
+    font-size: 16px;
+    color: $white
+}
+//Для плавной прокрутки
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: $black;
+}
+img{
+    width: 100%;
+    height: auto
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+button{
+    border: 0 none;
+    outline: 0 none;
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+.container{
+    max-width: $mainContainer;
+    width: 100%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 54px;
+    font-weight: 500;
+}
+h2{
+    max-width: 1080px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto
+}
+section{
+    margin-bottom: 145px;
+}
+@media screen and (max-width: $mainContainer){
+    .container{
+        max-width: 96%;
+    }
+    h2{
+        font-size: 26px
+    }
+}
+@media screen and (max-width: $mobileContainer){
+    h1{
+        font-size: 8vw
+    }
+    h2{
+        font-size: 3.5vw
+    }
+}
+@media screen and (max-width: $miniMobileContainer){
+    h2{
+        font-size: 4.5vw
+    }
+}

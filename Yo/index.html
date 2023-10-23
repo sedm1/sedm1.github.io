@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo</title>
+    <!--Мета тэги-->
+    <meta name="description" content="Сайт о клубе YO"> 
+    <meta name="Keywords" content="Yo, клуб"> 
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Styles - Slick Slider-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--Styles - Aos Animate-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="header__logo" href="/"><img src="img/svg/Logo.svg" alt="Logo" title="Logo"></a>
+            <nav>
+                <ul class="header__menu">
+                    <li><a href="#">Автомобили</a></li>
+                    <li><a href="#">Покупка авто</a></li>
+                    <li><a href="#">Личная охрана</a></li>
+                    <li><a href="#">Клубные карты</a></li>
+                </ul>
+            </nav>
+            <div class="header__soz">
+                <a class="header__soz-item"><img src="img/svg/tg.svg" alt="Telegram" title="Telegram"></a>
+                <a class="header__soz-item"><img src="img/svg/inst.svg" alt="Instagram" title="Instagram"></a>
+            </div>
+            <!--Перекинет на форму в  футере-->
+            <a href="#form" class="header__call">Связаться с нами</a>
+            <button class="burger" onclick="toggleMenu()"><img src="img/svg/burger.svg" alt="Burger" title="Menu"></button>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="main__info">
+                    <h1 class="main__info-title" data-aos="fade-right">Стань частью клуба Logo yo</h1>
+                    <p class="main__info-descript" data-aos="fade-right">Узнайте о преимуществах наших Клубных карт для аренды авто. Эксклюзивные предложения, бесплатные дни и многое другое ждут вас. Присоединяйтесь к клубу уже сегодня!</p>
+                    <div class="button__block" data-aos="fade-up">
+                        <!--Перекинет на блок со слайдером-->
+                        <a href="#form" class="main__info-button">Выбрать Карту</a>
+                    </div>
+                </div>
+                <div class="main__img">
+                    <div class="main__img-item" id="cart-1"  data-aos="fade-down"><img src="img/cart-1.png" alt="Cart-1" title="Premium"></div>
+                    <div class="main__img-item" id="cart-2"  data-aos="fade-left"><img src="img/cart-2.png" alt="Cart-2" title="Gold"></div>
+                    <div class="main__img-item" id="cart-3"  data-aos="fade-right"><img src="img/cart-3.png" alt="Cart-3" title="Silver"></div>
+                    <div class="main__img-item" id="cart-4"  data-aos="fade-up"><img src="img/cart-4.png" alt="Cart-4" title="Standart"></div>
+                </div>
+            </div>
+        </section>
+        <section class="conditions">
+            <h2 class="conditions__title" data-aos="fade-down" data-aos-offset="300">Персональные условия по тарифам только для владельцев клубной карты</h2>
+            <div class="conditions__block">
+                <!--Линия на заднем фоне-->
+                <div class="line"></div>
+                <div class="container">
+                    <div class="conditions__item" data-aos="fade-down" data-aos-offset="300" data-aos-delay="100">
+                        <h3 class="conditions__item-title">Rolls-Royce Wraith</h3>
+                        <div class="conditions__item-img"><img src="img/c-1.png" alt="conditionsItemImg" title="Rolls-Royce Wraith"></div>
+                        <div class="conditions__item-oldPrice">79.000 руб/сутки</div>
+                        <div class="conditions__item-newPrice">49.000 руб/сутки</div>
+                    </div>
+                    <div class="conditions__item" data-aos="fade-down" data-aos-offset="300" data-aos-delay="150">
+                        <h3 class="conditions__item-title">Mercedes - Benz G</h3>
+                        <div class="conditions__item-img"><img src="img/c-2.png" alt="conditionsItemImg" title="Mercedes - Benz G"></div>
+                        <div class="conditions__item-oldPrice">54.000 руб/сутки</div>
+                        <div class="conditions__item-newPrice">29.000 руб/сутки</div>
+                    </div>
+                    <div class="conditions__item" data-aos="fade-down" data-aos-offset="300" data-aos-delay="200">
+                        <h3 class="conditions__item-title">Dodge Challenger SRT</h3>
+                        <div class="conditions__item-img"><img src="img/c-3.png" alt="conditionsItemImg" title="Dodge Challenger SRT"></div>
+                        <div class="conditions__item-oldPrice">20.000 руб/сутки</div>
+                        <div class="conditions__item-newPrice">11.900 руб/сутки</div>
+                    </div>
+                    <div class="conditions__round" data-aos="fade-down" data-aos-offset="300" data-aos-delay="250">
+                        <div class="conditions__round-count">20+</div>
+                        <div class="conditions__round-text">автомобилей в аренду со скидкой до 40%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="container">
+                <h2 class="card__title" data-aos="fade-down" data-aos-offset="300">Выберите подходящую карту</h2>
+                <p class="card__descript" data-aos="fade-down" data-aos-offset="300">Выберите идеальную карту, соответствующую вашим потребностям. Получите эксклюзивные привилегии и выгоды при аренде автомобиля. Наслаждайтесь комфортом и удобством с нашими клубными картами.</p>
+                <div class="card__slider">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__front-header">
+                                <div class="card__front-logo"><img src="img/svg/Logo.svg" alt="Logo" title="Logo"></div>
+                                <div class="card__front-type">Premium</div>
+                            </div>
+                            <div class="card__front-name">Efrosin Tarasov</div>
+                            
+                        </div>
+                        <div class="card__back">
+                            <div class="card__back-info">
+                                <div class="info__item">
+                                    <div class="info__item-title">Размер депозита</div>
+                                    <div class="info__item-count">2 000 000 руб.</div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-title">Скидка на аренду</div>
+                                    <div class="info__item-count">40%</div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-title">Срок действия</div>
+                                    <div class="info__item-count">Без срока</div>
+                                </div>
+                            </div>
+                            <div class="card__back-img">
+                                <img src="img/svg/Logo.svg" alt="Logo" title="Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card-standart">
+                        <div class="card__front">
+                            <div class="card__front-header">
+                                <div class="card__front-logo"><img src="img/svg/Logo.svg" alt="Logo" title="Logo"></div>
+                                <div class="card__front-type">Standart</div>
+                            </div>
+                            <div class="card__front-name">Pyotr Kuznetsov</div>
+                            
+                        </div>
+                        <div class="card__back">
+                            <div class="card__back-info">
+                                <div class="info__item">
+                                    <div class="info__item-title">Размер депозита</div>
+                                    <div class="info__item-count">300 000 руб.</div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-title">Скидка на аренду</div>
+                                    <div class="info__item-count">10%</div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-title">Срок действия</div>
+                                    <div class="info__item-count">1 год</div>
+                                </div>
+                            </div>
+                            <div class="card__back-img">
+                                <img src="img/svg/Logo.svg" alt="Logo" title="Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card-silver">
+                        <div class="card__front">
+                            <div class="card__front-header">
+                                <div class="card__front-logo"><img src="img/svg/Logo.svg" alt="Logo" title="Logo"></div>
+                                <div class="card__front-type">Silver</div>
+                            </div>
+                            <div class="card__front-name">Sveta Kovaleva</div>
+                            
+                        </div>
+                        <div class="card__back">
+                            <div class="card__back-info">
+                                <div class="info__item">
+                                    <div class="info__item-title">Размер депозита</div>
+                                    <div class="info__item-count">1 000 000 руб.</div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-title">Скидка на аренду</div>
+                                    <div class="info__item-count">20%</div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-title">Срок действия</div>
+                                    <div class="info__item-count">1 год</div>
+                                </div>
+                            </div>
+                            <div class="card__back-img">
+                                <img src="img/svg/Logo-black.svg" alt="Logo" title="Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card-gold">
+                        <div class="card__front">
+                            <div class="card__front-header">
+                                <div class="card__front-logo"><img src="img/svg/Logo.svg" alt="Logo" title="Logo"></div>
+                                <div class="card__front-type">Gold</div>
+                            </div>
+                            <div class="card__front-name">Anastasiya Zaytseva</div>
+                            
+                        </div>
+                        <div class="card__back">
+                            <div class="card__back-info">
+                                <div class="info__item">
+                                    <div class="info__item-title">Размер депозита</div>
+                                    <div class="info__item-count">1 500 000 руб.</div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-title">Скидка на аренду</div>
+                                    <div class="info__item-count">30%</div>
+                                </div>
+                                <div class="info__item">
+                                    <div class="info__item-title">Срок действия</div>
+                                    <div class="info__item-count">Без срока</div>
+                                </div>
+                            </div>
+                            <div class="card__back-img">
+                                <img src="img/svg/Logo-black.svg" alt="Logo" title="Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="happen">
+            <div class="container">
+                <div class="happen__row">
+                    <div class="happen__text" data-aos="fade-down" data-aos-offset="-800">Элегантный подарок на любой случай.</div>
+                    <!--Бг через html, так как при посадке сайта юудет меньше работы-->
+                    <div class="happen__img happen-small" style="background-image: url('img/h-1.png');" data-aos="fade-right" data-aos-offset="-800">
+                        <h4 class="happen__img-title">На новый год</h4>
+                        <p class="happen__img-descript">Дарите незабываемые впечатления перед Новым годом.</p>
+                    </div>
+                </div>
+                <div class="happen__row">
+                    <div class="happen__img happen-small" style="background-image: url('img/h-2.png');" data-aos="fade-down" data-aos-offset="-800">
+                        <h4 class="happen__img-title">На Выходные</h4>
+                        <p class="happen__img-descript">Отличное дополнение для тех, кто ищет отдых.</p>
+                    </div>
+                    <div class="happen__text" data-aos="fade-up" data-aos-offset="-800">Автомобили всегда чистые и заправленные.</div>
+                </div>
+                <div class="happen__row">
+                    <div class="happen__img happen-big" style="background-image: url('img/h-3.png');" data-aos="fade-left"data-aos-offset="-800">
+                        <h4 class="happen__img-title">На день рождения</h4>
+                        <p class="happen__img-descript">Эксклюзивное сюрпризное предложение для юбиляра.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__info">
+            <div class="container">
+                <div class="footer__info-text">
+                    <a class="footer__logo" data-aos="fade-right" data-aos-offset="-800"><img src="img/svg/Logo.svg" alt="Logo" title="Logo"></a>
+                    <p class="company__desciprt" data-aos="fade-right" data-aos-offset="-800">Аренда премиальных автомобилей в Москве</p>
+                    <nav>
+                        <ul class="footer__menu" data-aos="fade-up" data-aos-offset="-800">
+                            <li><a href="#">Автомобили</a></li>
+                            <li><a href="#">Покупка авто</a></li>
+                            <li><a href="#">Личная охрана</a></li>
+                            <li><a href="#">Клубные карты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__info-phone">
+                    <p class="phone__label" data-aos="fade-down" data-aos-offset="-800">Телефон</p>
+                    <div class="phone__block">
+                        <a href="tel:+70000000000" class="phone__number" data-aos="fade-down" data-aos-offset="-800">+7 (000) 000-00-00</a>
+                        <div class="footer__soz" data-aos="fade-down" data-aos-offset="-800">
+                            <a href="#" class="footer__soz-item"><img src="img/svg/tg.svg" alt="FooterSozItem" title="Telegram"></a>
+                            <a href="#" class="footer__soz-item"><img src="img/svg/inst.svg" alt="FooterSozItem" title="Instagram"></a>
+                        </div>
+                    </div>
+                    <div class="work__time" data-aos="fade-down" data-aos-offset="-800">Работаем круглосуточно</div>
+                    <p class="phone__label" data-aos="fade-down" data-aos-offset="-800">Адрес</p>
+                    <div class="footer__info-adres" data-aos="fade-down" data-aos-offset="-800">Москва, Проспект Вернадского 12д</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__med">
+            <div class="container">
+                <div class="med__block">
+                    <p class="phone__label">Следите за нами</p>
+                    <div class="med__soz">
+                        <!--Взависимости от id будем выставлять цвет-->
+                        <a href="#" class="med__soz-item" id="footer__tg">
+                            <div class="item-img"><img src="img/svg/tg.svg" alt="TelegramIcon" title="Telegram"></div>
+                            <div class="item-title">Telegram</div>
+                        </a>
+                        <a href="#" class="med__soz-item" id="footer__inst">
+                            <div class="item-img"><img src="img/svg/inst.svg" alt="InstIcon" title="Instagram"></div>
+                            <div class="item-title">Instagram</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="med__block">
+                    <form action="" id="form">
+                        <div class="form__info">
+                            <h3 class="form__title">остались вопросы ?</h3>
+                            <p class="form__descript">Отправьте заявку и наш эксперт свяжется с Вами в ближайшее время</p>
+                            <input type="text" name="Name" id="" placeholder="Ваше имя">
+                            <input type="text" name="Phone" id="" placeholder="Ваш телефон">
+                        </div>
+                        <button class="form__button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__last">
+            <div class="container">
+                <div class="footer__last-text">LOGO YO all Rights</div>
+                <a class="footer__last-text" href="#">Политика конфиденциальности</a>
+                <a class="footer__last-text" href="#">Дизайн и разработка - AA</a>
+            </div>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <!--Script - Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Scripts - Slick Slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--Scripts - Aos Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Scripts - Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>
