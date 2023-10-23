@@ -64,6 +64,8 @@ html {
 
 body {
   background: #101010;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {

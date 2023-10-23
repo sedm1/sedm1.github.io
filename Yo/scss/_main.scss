@@ -11,6 +11,7 @@
     color: $white
 }
 //Для плавной прокрутки
+//Из-за анимации нужно выставить такие праметры, иначе будет эффект того, что какие-то элементы вылазят за эркна
 html{
     scroll-behavior: smooth;
     max-width: 100%;
@@ -19,6 +20,8 @@ html{
 }
 body{
     background: $black;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 img{
     width: 100%;
