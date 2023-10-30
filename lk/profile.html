@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- META  -->
+    <title>Кабинет</title>
+    <meta name="description" content="Описание сайта">
+    <meta name="keywords" content="Ключевые слова">
+    <!--  CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg">
+        <!--  MODAL WINDOW  -->
+        <div class="modal__window IntegrationWithPotok mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Интеграция CRM Bitrix24</h2>
+            <a href="https://help.jobers.ru/settings/integraczii/integracziya-s-potok/" class="rules__int">Описание и инструкция по интеграции</a>
+            <form action="" class="IntegrationWithPotok__form mainModalWindow__form">
+                <div class="form__item">
+                    <div class="form__item-title">Токен доступа <span>*</span></div>
+                    <input 
+                    required 
+                    class="IntegrationWithPotok__token" 
+                    type="text" 
+                    name="token" 
+                    placeholder="">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Вакансия Jobers</div>
+                    <select name="categ">
+                        <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                        <option value="value1">Вакансия 1</option>
+                        <option value="value2">Вакансия 2</option>
+                        <option value="value3">Вакансия 3</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Вакансия Potok</div>
+                    <select name="categ">
+                        <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                        <option value="value1">Вакансия 1</option>
+                        <option value="value2">Вакансия 2</option>
+                        <option value="value3">Вакансия 3</option>
+                    </select>
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__window IntegrationWithBitrix mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Интеграция CRM Bitrix24</h2>
+            <a href="https://help.jobers.ru/settings/integraczii/integracziya-s-bitrix24/" class="rules__int">Описание и инструкция по интеграции</a>
+            <form action="" class="IntegrationWithBitrix__form mainModalWindow__form">
+                <div class="form__item">
+                    <div class="form__item-title">Webhook URL <span>*</span></div>
+                    <input 
+                    required 
+                    class="IntegrationWithBitrix__name" 
+                    type="text" 
+                    name="url" 
+                    placeholder="https://">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Категория</div>
+                    <select name="categ">
+                        <option value="value1" selected disabled hidden>Выберите категорию</option>
+                        <option value="value1">Категория 1</option>
+                        <option value="value2">Категория 2</option>
+                        <option value="value3">Категория 3</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Ответственный</div>
+                    <select name="otvet" required>
+                        <option value="value1" selected disabled hidden>Выберите Ответственного</option>
+                        <option value="value1">Ответственный 1</option>
+                        <option value="value2">Ответственный 2</option>
+                        <option value="value3">Ответственный 3</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Тип экспорта <span>*</span></div>
+                    <select name="eks" required>
+                        <option value="value1" selected disabled hidden>Выберите тип экспорта</option>
+                        <option value="value1">тип экспорта 1</option>
+                        <option value="value2">тип экспорта 2</option>
+                        <option value="value3">тип экспорта 3</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Права</div>
+                    <label class="checkbox" for="lid-1">
+                        <input type="checkbox"  id="lid-1">
+                        <span class="checkmark"></span>
+                        Создавать повторный лид
+                    </label>
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="modal__window IntegrationWithAmo mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Интеграция CRM Amo</h2>
+            <a href="https://help.jobers.ru/settings/integraczii/integracziya-s-amocrm/" class="rules__int">Описание и инструкция по интеграции</a>
+            <form action="" class="IntegrationWithAmo__form mainModalWindow__form">
+                <div class="form__item">
+                    <div class="form__item-title">Поддомен</div>
+                    <input 
+                    required 
+                    class="IntegrationWithAmo__name" 
+                    type="text" 
+                    name="url" 
+                    placeholder="https://">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Секретный ключ <span>*</span></div>
+                    <input 
+                    required 
+                    class="IntegrationWithAmo__secretKey" 
+                    type="text" 
+                    name="SecretKey" 
+                    placeholder="">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">ID интеграции <span>*</span></div>
+                    <input 
+                    required 
+                    class="IntegrationWithAmo__id" 
+                    type="text" 
+                    name="Id" 
+                    placeholder="">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Код авторизации <span>*</span></div>
+                    <input 
+                    required 
+                    class="IntegrationWithAmo__code" 
+                    type="text" 
+                    name="Code" 
+                    placeholder="">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Идентификатор воронки <span>*</span></div>
+                    <input 
+                    required 
+                    class="IntegrationWithAmo__vor" 
+                    type="text" 
+                    name="vor" 
+                    placeholder="">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Идентификатор статуса <span>*</span></div>
+                    <input 
+                    required 
+                    class="IntegrationWithAmo__status" 
+                    type="text" 
+                    name="status" 
+                    placeholder="">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Вакансия Jobers <span>* </span></div>
+                    <select name="categ">
+                        <option value="value1" selected disabled hidden>Выберите воронку и статус</option>
+                        <option value="value1">воронка 1</option>
+                        <option value="value2">воронка 2</option>
+                        <option value="value3">воронка 3</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Права</div>
+                    <label class="checkbox" for="lid-2">
+                        <input type="checkbox"  id="lid-2">
+                        <span class="checkmark"></span>
+                        Создавать повторный лид
+                    </label>
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="modal__window DeleteIntegration mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Отключение интеграции</h2>
+            <div class="modal__text">
+                <span>Вы уверены, что хотите удалить компанию?</span>
+            </div>
+            <div class="form__buttons-block">
+                <button class="form__submit">Удалить</button>
+                <button class="form__dis">Отменить</button>
+            </div>
+        </div>
+
+        <div class="modal__window AddNewManagerWindow mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Новый менеджер</h2>
+            <form action="" class="AddNewManagerWindow__form mainModalWindow__form">
+                <div class="form__item">
+                    <div class="form__item-title">Фамилия Имя Отчество <span>*</span></div>
+                    <input required class="AddNewManagerWindow__name" type="text" name="name" placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Телефон</div>
+                    <input class="AddNewManagerWindow__phone" type="number" name="phone" placeholder="+7(999)-999-20-20">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Email <span>*</span></div>
+                    <input required class="AddNewManagerWindow__email" type="text" name="email" placeholder="">
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Права</div>
+                    <label class="checkbox" for="pav-1">
+                        <input type="checkbox"  id="pav-1">
+                        <span class="checkmark"></span>
+                        Доступ к бухгалтерским документам
+                    </label>
+                    <label class="checkbox" for="pav-2">
+                        <input type="checkbox"  id="pav-2">
+                        <span class="checkmark"></span>
+                        Создание и редактирование объявлений
+                    </label>
+                    <label class="checkbox" for="pav-3">
+                        <input type="checkbox"  id="pav-3">
+                        <span class="checkmark"></span>
+                        Добавление и смена ответственного по вакансии
+                    </label>
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__window EditNewManagerWindow mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Редактирование  менеджера</h2>
+            <form action="" class="EditNewManagerWindow__form mainModalWindow__form">
+                <div class="form__item">
+                    <div class="form__item-title">Фамилия Имя Отчество <span>*</span></div>
+                    <input 
+                    class="EditNewManagerWindow__name" 
+                    type="text" 
+                    name="name" 
+                    placeholder="Иванов Иван Иванович"
+                    value="Иванов А.А."
+                    required 
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Телефон</div>
+                    <input 
+                    class="EditNewManagerWindow__phone" 
+                    type="text" 
+                    name="phone" 
+                    placeholder="+7(999)-999-20-20"
+                    value="+7(999)-999-20-20"
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Email <span>*</span></div>
+                    <input 
+                    class="EditNewManagerWindow__email" 
+                    type="email" 
+                    name="email" 
+                    placeholder=""
+                    value="aaaaa@gmail.com"
+                    required 
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Права</div>
+                    <label class="checkbox" for="pav-1">
+                        <input type="checkbox" checked id="pav-1">
+                        <span class="checkmark"></span>
+                        Доступ к бухгалтерским документам
+                    </label>
+                    <label class="checkbox" for="pav-2">
+                        <input type="checkbox"  id="pav-2">
+                        <span class="checkmark"></span>
+                        Создание и редактирование объявлений
+                    </label>
+                    <label class="checkbox" for="pav-3">
+                        <input type="checkbox" checked id="pav-3">
+                        <span class="checkmark"></span>
+                        Добавление и смена ответственного по вакансии
+                    </label>
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__window EditNewCompanyWindow mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Редактирование  менеджера</h2>
+            <form action="" class="EditNewCompanyWindow__form mainModalWindow__form">
+                <div class="form__item">
+                    <div class="form__item-title">ИНН <span>*</span></div>
+                    <input 
+                    class="EditNewCompany__inn" 
+                    type="text" 
+                    name="inn" 
+                    placeholder="Введите ИНН"
+                    value="1234567891011"
+                    required 
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Юридическое название компании или ИП <span>*</span></div>
+                    <input 
+                    class="EditNewCompany__ip" 
+                    type="text" 
+                    name="ip" 
+                    placeholder=""
+                    value="ИП"
+                    required 
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Название компании для публикации на сайтах <span>*</span></div>
+                    <input 
+                    class="EditNewCompany__nameSite" 
+                    type="text" 
+                    name="nameSite" 
+                    placeholder=""
+                    required 
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Юридический адрес</div>
+                    <input 
+                    class="EditNewCompany__urAdress" 
+                    type="text" 
+                    name="urAdress" 
+                    placeholder="г Челябинск, ул Соловьиная, д 55, помещ 1"
+                    value="г Челябинск, ул Соловьиная, д 55, помещ 1"
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">ОГРН</div>
+                    <input 
+                    class="EditNewCompany__ogrn" 
+                    type="text" 
+                    name="ogrn" 
+                    placeholder="12585775839"
+                    >
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__window DeleteManager mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Удаление менеджера</h2>
+            <div class="modal__text">
+                <span>Вы уверены, что хотите этого менеджера?</span>
+            </div>
+            <div class="form__buttons-block">
+                <button class="form__submit">Удалить</button>
+                <button class="form__dis">Отменить</button>
+            </div>
+        </div>
+        <div class="modal__window DeleteCompany mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Удаление Компании</h2>
+            <div class="modal__text">
+                <span>Вы уверены, что хотите удалить компанию?</span>
+            </div>
+            <div class="form__buttons-block">
+                <button class="form__submit">Удалить</button>
+                <button class="form__dis">Отменить</button>
+            </div>
+        </div>
+        <div class="modal__window AddNewCompany mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Новая компания</h2>
+            <form action="" class="AddNewCompany__form mainModalWindow__form">
+                <div class="form__item">
+                    <div class="form__item-title">ИНН <span>*</span></div>
+                    <input 
+                    class="AddNewCompany__inn" 
+                    type="text" 
+                    name="inn" 
+                    placeholder="Введите ИНН"
+                    required 
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Юридическое название компании или ИП <span>*</span></div>
+                    <input 
+                    class="AddNewCompany__ip" 
+                    type="text" 
+                    name="ip" 
+                    placeholder=""
+                    required 
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Название компании для публикации на сайтах <span>*</span></div>
+                    <input 
+                    class="AddNewCompany__nameSite" 
+                    type="text" 
+                    name="nameSite" 
+                    placeholder=""
+                    required 
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">Юридический адрес</div>
+                    <input 
+                    class="AddNewCompany__urAdress" 
+                    type="text" 
+                    name="urAdress" 
+                    placeholder="г Челябинск, ул Соловьиная, д 55, помещ 1"
+                    >
+                </div>
+                <div class="form__item">
+                    <div class="form__item-title">ОГРН</div>
+                    <input 
+                    class="AddNewCompany__ogrn" 
+                    type="text" 
+                    name="ogrn" 
+                    placeholder="12585775839"
+                    >
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <aside>
+        <a  href="/profile.html" class="logo"><img src="img/logo.svg" alt="Logo"></a>
+        <nav>
+            <ul class="menu">
+                <button class="menu__item menu__item-active" data-maintab="profile">
+                    <div class="menu__item-img"><img src="img/icons/User.svg" alt="MenuItemImg"></div>
+                    Профиль
+                </button>
+                <button class="menu__item " data-maintab="manager">
+                    <div class="menu__item-img"><img src="img/icons/Users.svg" alt="MenuItemImg"></div>
+                    Менеджеры
+                </button>
+                <button class="menu__item " data-maintab="company">
+                    <div class="menu__item-img"><img src="img/icons/Buildings.svg" alt="MenuItemImg"></div>
+                    Компании
+                </button>
+                <button class="menu__item " data-maintab="personal">
+                    <div class="menu__item-img"><img src="img/icons/CreditCard.svg" alt="MenuItemImg"></div>
+                    Лицевой счет
+                </button>
+                <button class="menu__item" data-maintab="documents">
+                    <div class="menu__item-img"><img src="img/icons/File.svg" alt="MenuItemImg"></div>
+                    Документы
+                </button>
+                <button class="menu__item" data-maintab="notifications">
+                    <div class="menu__item-img"><img src="img/icons/BellRinging.svg" alt="MenuItemImg"></div>
+                    Уведомления
+                </button>
+                <button class="menu__item " data-maintab="integration">
+                    <div class="menu__item-img"><img src="img/icons/GearSix.svg" alt="MenuItemImg"></div>
+                    Интеграции
+                </button>
+                <button class="menu__item ">
+                    <div class="menu__item-img"><img src="img/icons/ChatDots.svg" alt="MenuItemImg"></div>
+                    Шаблоны писем
+                </button>
+                <button class="menu__item ">
+                    <div class="menu__item-img"><img src="img/icons/CalendarCheck.svg" alt="MenuItemImg"></div>
+                    Календарь событий
+                </button>
+            </ul>
+        </nav>
+    </aside>
+    <div class="mainInfo">
+        <header>
+            <div class="header__left">
+                <a href="#" class="addNewVacanci">Добавить вакансию</a>
+                <nav>
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">
+                                <img src="img/icons/document.svg" alt="HeaderMenuIcon" class="header__menu-icon">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">
+                                <img src="img/icons/groups-blue.svg" alt="HeaderMenuIcon" class="header__menu-icon">
+                                Кандидаты
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">
+                                <img src="img/icons/bd.svg" alt="HeaderMenuIcon" class="header__menu-icon">
+                                Тарифы
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">
+                                <img src="img/icons/lighting.svg" alt="HeaderMenuIcon" class="header__menu-icon">
+                                База резюме
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">
+                                <img src="img/icons/settings.svg" alt="HeaderMenuIcon" class="header__menu-icon">
+                                Настройки
+                            </a>
+                        </li>
+                        <li class="header__menu-item dropdown">
+                            <a href="#" class="header__menu-link">
+                                <img src="img/icons/arrow.svg" alt="HeaderMenuIcon" class="header__menu-icon">
+                                Еще
+                            </a>
+                            <ul class="header__submenu">
+                                <li><a href="#" class="header__submenu-link header__submenu-link-active">Профиль</a></li>
+                                <li><a href="#" class="header__submenu-link">Компании</a></li>
+                                <li><a href="#" class="header__submenu-link">Менеджеры</a></li>
+                                <li><a href="#" class="header__submenu-link">Лицевой счет</a></li>
+                                <li><a href="#" class="header__submenu-link">Документы</a></li>
+                                <li><a href="#" class="header__submenu-link">Уведомления</a></li>
+                                <li><a href="#" class="header__submenu-link">Интеграции</a></li>
+                                <li><a href="#" class="header__submenu-link">Шаблоны писем</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <button class="header__right-item asideButton" onclick="OpenAside()"><img src="img/icons/aside.svg" alt="aside"></button>
+                <a href="#" class="header__right-item"><img src="img/icons/round.svg" alt="HeaderItemIcon"></a>
+                <a href="#" class="header__right-item"><img src="img/icons/profile.svg" alt="HeaderItemIcon"></a>
+            </div>
+        </header>
+        <main>
+            <!--Даем каждой секции уникальный класс. И секция, имеющая active будет показываться-->
+            <!-- ПРОФИЛЬ  -->
+            <section class="profile section-active">
+                <div class="main__item">
+                    <ul class="profile__tab">
+                        <!--profileTab отвечает за то, какой блок в профиле сейчас открыт-->
+                        <button class="profile__tab-item profile__tab-item-active" data-profiletab="1">Личные данные</button>
+                        <button class="profile__tab-item" data-profiletab="2">Изменение пароля</button>
+                    </ul>
+                    <div class="profile__main profile__main-active" id="profile__main-1">
+                        <div class="profile__logo">
+                            <div class="profile__logo-img">
+                                <img src="img/sam.png" alt="ProfileIcon">
+                                <button class="profile__deleteLogo"><img src="img/icons/delete.svg" alt=""></button>
+                            </div>
+                            <button class="profile__logo-add">Загрузить логотип</button>
+                        </div>
+                        <form action="" class="profile__logo-form">
+                            <div class="form__item">
+                                <div class="form__item-title">Имя и фамилия <span>*</span></div>
+                                <input type="text" name="name" placeholder="Введите ваше имя" required >
+                            </div>
+                            <div class="form__item">
+                                <div class="form__item-title">Телефон </div>
+                                <input type="text" name="name" placeholder="+7-000-000-000">
+                            </div>
+                            <div class="form__item">
+                                <div class="form__item-title">Электронная почта и логин <span>*</span></div>
+                                <input type="text" name="name" placeholder="Ваш e-mail" required>
+                            </div>
+                            <div class="button__block">
+                                <button class="form__save">Сохранить</button>
+                                <button class="form__delete">Отменить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="profile__main" id="profile__main-2">
+                        <form action="" class="pass">
+                            <div class="pass__item">
+                                <div class="pass__item-title">Текущий пароль <span>*</span></div>
+                                <input required type="password" class="pass__item-input" placeholder="******">
+                            </div>
+                            <div class="pass__item">
+                                <div class="pass__item-title">Новый пароль <span>*</span></div>
+                                <input required id="new__pass" type="password" class="pass__item-input" placeholder="******">
+                            </div>
+                            <div class="pass__item">
+                                <div class="pass__item-title">Повторите новый пароль <span>*</span></div>
+                                <div class="pass__new">
+                                    <input required id="new__pass-2" type="password" class="pass__item-input" placeholder="******">
+                                    <p class="pass__treb">Пароль должен состоять минимум из 8 символов, содержать минимум одну строчную, одну прописную букву и одну цифру</p>
+                                    <button class="pass__confirm">Сохранить пароль</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--  МЕНЕДЖЕРЫ  -->
+            <section class="manager">
+                <div class="main__item">
+                    <div class="manager__header">
+                        <h2 class="manager__title">Менеджеры</h2>
+                        <button class="manager__link" onclick="AddNewManager()">Добавить менеджера</button>
+                    </div>
+                    <div class="manager__main">
+                        <div class="manager__item">
+                            <div class="manager__item-info">
+                                <p class="info__who">Пользователь</p>
+                                <h2 class="info__title">Тульцев Алексей Михайлович</h2>
+                                <div class="info__information">
+                                    <div class="info__information-item">
+                                        <div class="item-title">Роль</div>
+                                        <div class="item-count">Менеджер</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Email</div>
+                                        <div class="item-count">tulcev@yndex.ru</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Телефон</div>
+                                        <div class="item-count">+7(913)333-00-00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="manager__item-links">
+                                <button class="links-item removeManager" onclick="DeleteManager()">Удалить</button>
+                                <button class="links-item editManager" onclick="EditManager()">Редактировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  Компании  -->
+            <section class="company">
+                <div class="main__item">
+                    <div class="company__header">
+                        <h2 class="company__title">Компании</h2>
+                        <button class="company__link" onclick="AddNewCompany()">Добавить компанию</button>
+                    </div>
+                    <div class="company__main">
+                        <div class="company__item">
+                            <div class="company__item-info">
+                                <div class="info__header">
+                                    <div class="titles">
+                                        <p class="info__who">Название компании</p>
+                                        <h2 class="info__title">ЧДОУ "ДЕТСКИЙ САД МАЛЕНЬКИЙ ЛИДЕР"</h2>
+                                    </div>
+                                    <div class="company__item-links">
+                                        <button class="links-item removeCompany" onclick="DeleteCompany()">Удалить</button>
+                                        <button class="links-item editCompany" onclick="EditNewCompanyWindow()">Редактировать</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="info__information">
+                                    <div class="info__information-item">
+                                        <div class="item-title">ИНН</div>
+                                        <div class="item-count">7453322707</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">ОГРН</div>
+                                        <div class="item-count">12083718592</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Город</div>
+                                        <div class="item-count">г. Томск, Томская область</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Юр. адрес</div>
+                                        <div class="item-count">г Челябинск, ул Соловьиная, д 55, помещ 1</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Название компании для публикации</div>
+                                        <div class="item-count">ДЕТСКИЙ САД МАЛЕНЬКИЙ ЛИДЕР</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  Лицевой Счет  -->
+            <section class="personal">
+                <div class="main__item">
+                    <div class="personal__header">
+                        <h2 class="personal__title">Лицевой счет</h2>
+                        <a href="#" class="personal__link">Сформировать счет на услугу</a>
+                    </div>
+                    <div class="personal__main">
+                        <div class="personal__item">
+                            <div class="personal__item-info">
+                                <p class="info__who">Тарифный план</p>
+                                <h2 class="info__title">Максимальный с автообновлением</h2>
+                                <div class="info__information">
+                                    <div class="info__information-item">
+                                        <div class="item-title">Дата начала действия</div>
+                                        <div class="item-count">01.09.2023</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Дата окончания действия </div>
+                                        <div class="item-count">01.09.2024 </div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Количество услуг, шт</div>
+                                        <div class="item-count">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personal__item-links">
+                                <a class="links-item" href="#">Опубликовать вакансию</a>
+                            </div>
+                        </div>
+                        <div class="personal__item">
+                            <div class="personal__item-info">
+                                <p class="info__who">Тарифный план</p>
+                                <h2 class="info__title">Максимальный с автообновлением</h2>
+                                <div class="info__information">
+                                    <div class="info__information-item">
+                                        <div class="item-title">Дата начала действия</div>
+                                        <div class="item-count">01.09.2023</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Дата окончания действия </div>
+                                        <div class="item-count">01.09.2024 </div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Количество услуг, шт</div>
+                                        <div class="item-count">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personal__item-links">
+                                <a class="links-item" href="#">Опубликовать вакансию</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  ДОКУМЕНТЫ  -->
+            <section class="documents">
+                <div class="main__item">
+                    <ul class="document__tab">
+                        <!--documentTab отвечает за то, какой блок в профиле сейчас открыт-->
+                        <button class="document__tab-item document__tab-item-active" data-documenttab="1">Счета и акты</button>
+                        <button class="document__tab-item" data-documenttab="2">Учредительные документы</button>
+                    </ul>
+                    <div class="document__main document__main-active" id="document__main-1">
+                        <div class="document__item">
+                            <div class="document__item-info">
+                                <p class="info__who">Плательщик</p>
+                                <!--Передавать можно, и строчные, и прописные-->
+                                <h2 class="info__title">ооо "карьера"</h2>
+                                <div class="info__information">
+                                    <div class="info__information-item">
+                                        <div class="item-title">Номер</div>
+                                        <div class="item-count">21557</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Дата </div>
+                                        <div class="item-count">24.08.2023 </div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Сумма</div>
+                                        <div class="item-count">8 612.00 руб.</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Статус</div>
+                                        <div class="item-count">Оплачено</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="document__item-links">
+                                <a class="links-item" href="#">Загрузить акт</a>
+                                <a class="links-item" href="#">Загрузить счет</a>
+                            </div>
+                        </div>
+                        <div class="document__item">
+                            <div class="document__item-info">
+                                <p class="info__who">Плательщик</p>
+                                <!--Передавать можно, и строчные, и прописные-->
+                                <h2 class="info__title">пао сбербанк</h2>
+                                <div class="info__information">
+                                    <div class="info__information-item">
+                                        <div class="item-title">Номер</div>
+                                        <div class="item-count">21557</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Дата </div>
+                                        <div class="item-count">24.08.2023 </div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Сумма</div>
+                                        <div class="item-count">8 612.00 руб.</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Статус</div>
+                                        <div class="item-count">Оплачено</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="document__item-links">
+                                <a class="links-item" href="#">Загрузить акт</a>
+                                <a class="links-item" href="#">Загрузить счет</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="document__main" id="document__main-2">
+                        <div class="document__links">
+                            <a href="https://jobers.ru/offer/" class="document__links-item">Договор оферты</a>
+                            <a href="https://jobers.ru/resource-usage/" class="document__links-item">Правила использования сайта</a>
+                            <a href="https://jobers.ru/vacancy_posting_rules/" class="document__links-item">Правила размещения</a>
+                            <a href="https://jobers.ru/privacy/" class="document__links-item">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  УВЕДОМЛЕНИЯ  -->
+            <section class="notifications">
+                <div class="main__item">
+                    <h2 class="notifications__title">Уведомления</h2>
+                    <div class="notifications__main">
+                        <form action="" class="notifications__item">
+                            <h3 class="notifications__item-title">Email уведомления</h3>
+                            <label class="checkbox" for="1">
+                                <input type="checkbox"  checked id="1">
+                                <span class="checkmark"></span>
+                                Резюме каждого кандидата
+                            </label>
+                            <label class="checkbox" for="2">
+                                <input type="checkbox"  id="2">
+                                <span class="checkmark"></span>
+                                Напоминание о неоплаченном объявлении
+                            </label>
+                            <label class="checkbox" for="3">
+                                <input type="checkbox"  id="3">
+                                <span class="checkmark"></span>
+                                Оповещение о новой подборке резюме на вакансию
+                            </label>
+                            <label class="checkbox" for="4">
+                                <input type="checkbox"  id="4">
+                                <span class="checkmark"></span>
+                                Окончание срока публикации объявлений
+                            </label>
+                            <label class="checkbox" for="5">
+                                <input type="checkbox"  id="5">
+                                <span class="checkmark"></span>
+                                Отчет по размещению вакансии
+                            </label>
+                            <label class="checkbox" for="6">
+                                <input type="checkbox"  checked id="6">
+                                <span class="checkmark"></span>
+                                Поступление оплаты
+                            </label>
+                            <label class="checkbox" for="7">
+                                <input type="checkbox"  id="7">
+                                <span class="checkmark"></span>
+                                Перенос в архив объявлений
+                            </label>
+                            <label class="checkbox" for="8">
+                                <input type="checkbox"  id="8">
+                                <span class="checkmark"></span>
+                                Новости сервиса
+                            </label>
+                            <button class="notifications__save">Сохранить</button>
+                        </form>
+                        <form action="" class="notifications__item">
+                            <h3 class="notifications__item-title">СМС уведомления</h3>
+                            <label class="checkbox" for="9">
+                                <input type="checkbox"  checked id="9">
+                                <span class="checkmark"></span>
+                                Оповещения о новых откликах на вакансии
+                            </label>
+                            <label class="checkbox" for="10">
+                                <input type="checkbox"  id="10">
+                                <span class="checkmark"></span>
+                                Оповещение о новой подборке резюме на вакансию
+                            </label>
+                            <label class="checkbox" for="11">
+                                <input type="checkbox"  id="11">
+                                <span class="checkmark"></span>
+                                Отчет по размещению вакансии
+                            </label>
+                            <label class="checkbox" for="12">
+                                <input type="checkbox" checked id="12">
+                                <span class="checkmark"></span>
+                                Перенос объявлений в архив
+                            </label>
+                            <button class="notifications__save">Сохранить</button>
+                        </form>
+                        <form action="" class="notifications__item">
+                            <h3 class="notifications__item-title">Телеграм уведомления</h3>
+                            <label class="checkbox" for="13">
+                                <input type="checkbox" id="13">
+                                <span class="checkmark"></span>
+                                Резюме каждого кандидата
+                            </label>
+                            <h3 class="notifications__item-title">Подключенных чатов нет</h3>
+                            <div class="notifications__item-soob">
+                                <div class="soob-icon"><img src="img/icons/ssob.svg" alt="SoobIcon"></div>
+                                <p class="soob-text">Если @Jobers_employes_bot уже был подключен ранее к чату, попробуйте удалить его и подключиться заново, используя опции ниже.</p>
+                            </div>
+                            <label class="checkbox" for="Desktop">
+                                <input type="radio" name="tg" id="Desktop">
+                                <span class="checkmark"></span>
+                                Telegram Desktop
+                            </label>
+                    
+                            <label class="checkbox" for="Web">
+                                <input type="radio" name="tg" id="Web">
+                                <span class="checkmark"></span>
+                                Telegram Web
+                            </label>
+                            <button class="notifications__save">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="integration">
+                <div class="main__item">
+                    <div class="integration__header">
+                        <h2 class="integration__title">Интеграции</h2>
+                        <button class="integration__link">Отключить все</button>
+                    </div>
+                    <div class="integration__main">
+                        <div class="integration__item integration__item-active">
+                            <div class="item__ok"><img src="img/icons/gal.svg" alt="Gal"></div>
+                            <div class="item__img"><img src="img/amo.png" alt="IntegrationImg"></div>
+                            <button class="item__button" onclick="IntegrationWithAmo()">Подключить</button>
+                            <button class="item__button item__button-active" onclick="DeleteInteGration()">Отключить</button>
+                        </div>
+                        <div class="integration__item">
+                            <div class="item__ok"><img src="img/icons/gal.svg" alt="Gal"></div>
+                            <div class="item__img"><img src="img/bit.png" alt="IntegrationImg"></div>
+                            <button class="item__button" onclick="IntegrationWithBitrix()">Подключить</button>
+                            <button class="item__button item__button-active" onclick="DeleteInteGration()">Отключить</button>
+                        </div>
+                        <div class="integration__item">
+                            <div class="item__ok"><img src="img/icons/gal.svg" alt="Gal"></div>
+                            <div class="item__img"><img src="img/potok.png" alt="IntegrationImg"></div>
+                            <button class="item__button" onclick="IntegrationWithPotok()">Подключить</button>
+                            <button class="item__button item__button-active " onclick="DeleteInteGration()">Отключить</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!--  SCRIPTS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/manager.js"></script>
+    <script src="js/company.js"></script>
+    <script src="js/integration.js"></script>
+</body>
+</html>

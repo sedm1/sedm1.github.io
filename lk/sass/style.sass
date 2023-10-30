@@ -1,0 +1,876 @@
+@import 'main'
+body
+    display: flex
+    max-height: 100vh
+    height: 100vh
+    overflow-y: hidden
+    position: relative
+aside
+    background: $gray
+    height: 100%
+    padding: 15px 25px
+    width: 300px
+.mainInfo
+    background: $whiteGray
+    height: 100%
+    width: 100%
+.logo
+    width: 188px
+.menu
+    margin-top: 50px
+    &__item
+        display: flex
+        align-items: center
+        width: 100%
+        font-size: 16px
+        font-weight: 600
+        color: $whiteGray
+        opacity: 0.4
+        transition: .3s
+        padding: 12px 0px
+        border-top: 1px solid #3E3E3E
+        border-bottom: 1px solid #3E3E3E
+        &-img
+            width: 30px
+            height: 30px
+            margin-right: 15px
+        &-active
+            opacity: 1
+        &:hover
+            opacity: 1
+header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background: $white
+    padding: 12px 25px
+.header__left, .header__right
+    display: flex
+    align-items: center
+    justify-content: space-between
+.addNewVacanci
+    background: $blue
+    color: $white
+    padding: 10px
+    border-radius: 5px
+    font-size: 18px
+    font-weight: 400
+    transition: .3s
+    &:hover
+        transform: scale(1.05)
+.header__menu
+    display: flex
+    align-items: center
+    margin-left: 100px
+    &-item
+        margin-right: 40px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 0%
+            height: 2px 
+            background: $blue
+            bottom: -10px
+            left: 0px
+            transition: .4s
+        &:last-child
+            margin-right: 0px
+        &:hover
+            &::before
+                width: 100%
+    &-link
+        display: flex
+        align-items: center
+        font-size: 16px
+        font-weight: 600
+    &-icon
+        max-width: 20px
+        width: auto
+        margin-right: 10px
+    .dropdown
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            top: -20px
+            bottom: -20px
+            height: 68px
+        &:hover
+            > .header__submenu
+                display: block
+.header__submenu
+    position: absolute
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.14)
+    top: 46px
+    left: 0
+    background: $white
+    padding: 0px 10px
+    width: 200px
+    display: none
+    z-index: 2
+    li
+        border-bottom: 1px solid #e8eaeb
+        font-size: 14px
+        font-weight: 600
+        color: $gray
+    &-link
+        padding: 20px 38px 19px 13px
+    &-link-active
+        color: $blue
+    &:hover
+        display: block
+.header__right-item
+    width: 40px
+    height: 40px
+    margin-right: 33px
+    transition: .3s
+    &:hover
+        transform: scale(1.05)
+    &:last-child
+        margin-right: 0px
+section
+    display: none
+    max-height: calc(100vh - 90px)
+    overflow-y: auto
+//Активная секция
+.section-active
+    display: block
+main
+    padding: 15px
+.main__item
+    background: $white
+    margin-bottom: 15px
+//Profile
+.profile
+    &__tab
+        display: flex
+        align-items: center
+        padding: 25px 20px
+        border-bottom: 1px solid $whiteGray
+        &-item
+            margin-right: 20px
+            padding: 5px 0px
+            font-size: 16px
+            font-weight: 400
+            border-bottom: 2px solid transparent
+            &:last-child
+                margin-right: 0px
+            &-active
+                border-bottom: 2px solid $blue
+    &__main
+        display: none
+        padding: 40px
+        padding-bottom: 25px
+        &-active
+            display: flex
+    &__logo
+        margin-right: 95px
+        &-img
+            width: 245px
+            height: 245px
+            padding: 10px
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10)
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            img
+                width: 100%
+                height: auto
+        &-add
+            width: 100%
+            margin: 0 auto
+            margin-top: 15px
+            color: $blue
+            font-size: 16px
+        &-form
+            max-width: 250px
+            width: 100%
+    &__deleteLogo
+        position: absolute
+        width: 11px
+        bottom: 12px
+        right: 12px
+    .form
+        &__item
+            margin-bottom: 25px
+            &-title
+                margin-bottom: 5px
+                font-size: 16px
+                font-weight: 400
+                color: $gray
+                span
+                    color: $blue
+            input
+                padding: 13px 15px
+                border-radius: 5px
+                background: #F7F7F7
+                font-size: 14px
+                font-weight: 600
+                width: 100%
+                border: 2px solid transparent
+                &:focus
+                    border: 2px solid $blue
+                &::placeholder
+                    font-size: 14px
+                    font-weight: 300
+        &__save
+            padding: 10px 25px
+            color: $white
+            border-radius: 5px
+            background: $blue
+            font-size: 16px
+            font-weight: 600
+            transition: .3s
+            margin-right: 30px
+            &:hover
+                transform: scale(1.05)
+        &__delete
+            font-size: 18px
+            font-weight: 400
+    .button__block
+        display: flex
+        align-items: center
+    .pass
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 15px
+            &:last-child
+                align-items: flex-start
+                .pass__item-title
+                    padding-top: 10px
+            &-title
+                max-width: 214px
+                width: 100%
+                margin-right: 160px
+                font-size: 16px
+                font-weight: 400
+                span
+                    color: $blue
+            &-input
+                padding: 13px 15px
+                border-radius: 5px
+                background: #F7F7F7
+                font-size: 14px
+                font-weight: 600
+                max-width: 465px
+                width: 100%
+                border: 2px solid transparent
+                &:focus
+                    border: 2px solid $blue
+                &::placeholder
+                    font-size: 14px
+                    font-weight: 300
+        &__new
+            display: flex
+            flex-direction: column
+            max-width: 465px
+        &__treb
+            font-size: 13px
+            font-weight: 400
+            width: 465px
+            color: #959799
+        &__confirm
+            padding: 10px 25px
+            color: $white
+            border-radius: 5px
+            background: $blue
+            font-size: 16px
+            font-weight: 600
+            transition: .3s
+            max-width: 200px
+            margin-top: 40px
+            &:hover
+                transform: scale(1.05)
+//MANAGER
+.manager
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 25px
+        border-bottom: 2px solid $whiteGray
+    .manager__link
+        padding: 10px 25px
+        border-radius: 5px
+        background: #EFF5FF
+        color: $blue
+        font-size: 16px
+        font-weight: 400
+        transition: .3s
+        &:hover
+            background: $blue
+            color: $white
+    &__item
+        display: flex
+        justify-content: space-between
+        padding: 35px 25px
+        border-bottom: 2px solid $whiteGray
+        transition: .3s
+        align-items: flex-start
+        &:hover
+            background: #F7F7F7
+            .manager__item-links
+                display: flex
+        &-links
+            display: none
+            .links-item
+                color: $blue
+                margin-right: 25px
+                font-size: 16px
+                font-weight: 400
+                &:last-child
+                    margin-right: 0px
+            
+        .info__who
+            font-size: 14px
+            font-weight: 400
+            color: #959799
+        .info__title
+            margin-top: 10px
+            font-size: 22px 
+            font-weight: 600
+            color: $gray
+        .info__information
+            display: flex
+            margin-top: 35px
+            &-item
+                margin-right: 75px
+            .item-title
+                font-size: 14px
+                font-weight: 400
+                color: #959799
+                margin-bottom: 10px
+            .item-count
+                font-size: 16px
+                font-weight: 400
+                color: $gray
+//COMPANY
+.company
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 25px
+        border-bottom: 2px solid $whiteGray
+    &__link
+        padding: 10px 25px
+        border-radius: 5px
+        background: #EFF5FF
+        color: $blue
+        font-size: 16px
+        font-weight: 400
+        transition: .3s
+        &:hover
+            background: $blue
+            color: $white
+    &__item
+        padding: 35px 25px
+        border-bottom: 2px solid $whiteGray
+        transition: .3s
+        .info__header
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+        &:hover
+            background: #F7F7F7
+            .company__item-links
+                display: flex
+        &-links
+            display: none
+            .links-item
+                color: $blue
+                margin-right: 25px
+                font-size: 16px
+                font-weight: 400
+                &:last-child
+                    margin-right: 0px
+            
+        .info__who
+            font-size: 14px
+            font-weight: 400
+            color: #959799
+        .info__title
+            margin-top: 10px
+            font-size: 22px 
+            font-weight: 600
+            color: $gray
+        .info__information
+            display: flex
+            margin-top: 35px
+            &-item
+                margin-right: 75px
+            .item-title
+                font-size: 14px
+                font-weight: 400
+                color: #959799
+                margin-bottom: 10px
+            .item-count
+                font-size: 16px
+                font-weight: 400
+                color: $gray
+//PERSONAL
+.personal
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 25px
+        border-bottom: 2px solid $whiteGray
+    .personal__link
+        padding: 10px 25px
+        border-radius: 5px
+        background: #EFF5FF
+        color: $blue
+        font-size: 16px
+        font-weight: 400
+        transition: .3s
+        &:hover
+            background: $blue
+            color: $white
+    &__item
+        display: flex
+        justify-content: space-between
+        padding: 35px 25px
+        border-bottom: 2px solid $whiteGray
+        transition: .3s
+        align-items: flex-start
+        &:hover
+            background: #F7F7F7
+        &-links
+            display: flex
+            .links-item
+                color: $blue
+                margin-right: 25px
+                font-size: 16px
+                font-weight: 400
+                &:last-child
+                    margin-right: 0px
+            
+        .info__who
+            font-size: 14px
+            font-weight: 400
+            color: #959799
+        .info__title
+            margin-top: 10px
+            font-size: 22px 
+            font-weight: 600
+            color: $gray
+        .info__information
+            display: flex
+            margin-top: 35px
+            &-item
+                margin-right: 75px
+            .item-title
+                font-size: 14px
+                font-weight: 400
+                color: #959799
+                margin-bottom: 10px
+            .item-count
+                font-size: 16px
+                font-weight: 400
+                color: $gray
+
+//DOCUMENTS
+.document
+    &__tab
+        display: flex
+        align-items: center
+        padding: 25px 20px
+        border-bottom: 1px solid $whiteGray
+        &-item
+            margin-right: 20px
+            padding: 5px 0px
+            font-size: 16px
+            font-weight: 400
+            border-bottom: 2px solid transparent
+            &:last-child
+                margin-right: 0px
+            &-active
+                border-bottom: 2px solid $blue
+    &__main
+        display: none
+        &-active
+            display: flex
+            flex-direction: column
+    &__item
+        display: flex
+        justify-content: space-between
+        padding: 35px 25px
+        border-bottom: 2px solid $whiteGray
+        transition: .3s
+        align-items: flex-start
+        &:hover
+            background: #F7F7F7
+        &-links
+            display: flex
+            .links-item
+                color: $blue
+                margin-right: 25px
+                font-size: 16px
+                font-weight: 400
+                &:last-child
+                    margin-right: 0px
+            
+        .info__who
+            font-size: 14px
+            font-weight: 400
+            color: #959799
+        .info__title
+            margin-top: 10px
+            font-size: 22px 
+            font-weight: 600
+            text-transform: uppercase
+            color: $gray
+        .info__information
+            display: flex
+            margin-top: 35px
+            &-item
+                margin-right: 75px
+            .item-title
+                font-size: 14px
+                font-weight: 400
+                color: #959799
+                margin-bottom: 10px
+            .item-count
+                font-size: 16px
+                font-weight: 400
+                color: $gray
+    &__links
+        padding: 25px
+        &-item
+            margin-bottom: 15px
+            font-size: 18px
+            font-weight: 400
+            color: $blue
+            text-decoration-line: underline
+            &:last-child
+                margin-bottom: 0px
+                
+
+
+
+//NOTIFICATIONS
+
+.notifications
+    &__title
+        padding: 25px
+        font-size: 22px
+        font-weight: 600
+        border-bottom: 2px solid $whiteGray
+    &__item
+        border-bottom: 2px solid $whiteGray
+        padding: 25px
+        display: flex
+        flex-direction: column
+        &-title
+            font-size: 16px
+            font-weight: 600
+            margin-bottom: 10px
+            margin-top: 20px
+            &:first-child
+                margin-top: 0px
+        label
+            margin-top: 15px
+        &-soob 
+            display: flex
+            align-items: center
+            margin-top: 10px
+            margin-bottom: 30px
+            padding: 17px 13px
+            max-width: 541px
+            width: 100%
+            background: #F7F7F7
+            .soob-icon
+                min-width: 32px
+                height: 32px
+                margin-right: 10px
+            .soob-text
+                font-size: 13px
+                font-weight: 400
+    .checkmark
+        margin-right: 10px
+    &__save
+        margin-top: 40px
+        padding: 10px 25px
+        color: $white
+        font-weight: 600
+        font-size: 16px
+        border-radius: 5px
+        background: $blue
+        max-width: 140px
+        transition: .3s
+        &:hover
+            transform: scale(1.05)
+//integration
+.integration
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 25px
+        border-bottom: 2px solid $whiteGray
+    &__link
+        padding: 10px 25px
+        border-radius: 5px
+        background: #EFF5FF
+        color: $blue
+        font-size: 16px
+        font-weight: 400
+        transition: .3s
+        &:hover
+            background: $blue
+            color: $white
+    &__main
+        display: flex
+        flex-wrap: wrap
+        padding: 50px 25px
+    &__item
+        position: relative
+        padding: 25px
+        border-radius: 5px
+        border: 1px solid #DDD
+        max-width: 250px
+        width: 100%
+        margin-right: 25px
+        margin-bottom: 25px
+        .item__ok
+            display: none
+        .item__button
+            padding: 10px 25px
+            border-radius: 5px
+            color: $white
+            background: $blue
+            transition: .3s
+            display: flex
+            margin: 0 auto
+            &:hover
+                transform: scale(1.05)
+        .item__button-active
+            display: none
+            background: #EFF5FF
+            color: $blue
+        &-active
+            .item__ok
+                display: block
+                position: absolute
+                top: 25px
+                right: 25px
+                width: 19px
+                height: 19px
+            .item__button
+                display: none
+            .item__button-active
+                display: flex
+            
+        .item__img
+            width: 100%
+            height: 123px
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 10px
+            img
+                width: 100%
+                height: auto
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "modal"
+@import "adapt"

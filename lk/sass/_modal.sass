@@ -1,0 +1,95 @@
+.modal
+    &__window
+        display: none
+        background: $white
+        border-radius: 5px
+        position: relative
+        padding: 25px
+        max-height: 100vh
+        overflow-y: auto
+        .rules__int
+            color: $blue
+            text-decoration: underline
+            font-size: 14px
+            font-weight: 400
+            margin-top: 10px
+        &-active
+            display: block
+        .form__buttons-block
+            display: flex
+            .form__submit
+                padding: 10px 25px
+                background: $blue
+                color: $white
+                font-size: 16px
+                font-weight: 600
+                border-radius: 5px
+                transition: .3s
+                margin-right: 18px
+                &:hover
+                    transform: scale(1.05)
+            .form__dis
+                padding: 10px 25px
+                border-radius: 5px
+                background: #EFF5FF
+                font-sizer: 16px
+                font-weight: 400
+                transition: .3s
+                &:hover
+                    transform: scale(1.05)
+    &__title
+        font-size: 20px
+        font-weight: 600
+    &__text
+        font-size: 16px
+        font-weight: 400
+        margin-top: 15px
+        margin-bottom: 40px
+        color: $gray
+        span
+            color: $blue
+    
+.closeWindow
+  position: absolute
+  top: 25px
+  right: 25px
+  width: 15px
+  height: 15px
+.mainModalWindow
+  max-width: 410px
+  width: 100%
+
+.mainModalWindow__form
+    margin-top: 40px
+    .checkbox
+        font-size: 13px
+        font-weight: 400
+        margin-top: 10px
+    .checkmark
+        margin-right: 5px
+    .form
+        &__item
+            margin-bottom: 20px
+            &-title
+                margin-bottom: 5px
+                font-size: 13px
+                font-weight: 600
+                color: $gray
+                span
+                    color: $blue
+            input
+                padding: 13px 15px
+                border-radius: 5px
+                background: #F7F7F7
+                font-size: 14px
+                font-weight: 600
+                width: 100%
+                border: 2px solid transparent
+                &:focus
+                    border: 2px solid $blue
+                &::placeholder
+                    font-size: 14px
+                    font-weight: 300
+.IntegrationWithAmo
+    max-height: 558px
+    overflow-y: scroll
