@@ -13,3 +13,14 @@ function OpenAside(){
         $("aside").removeClass("aside-active")
     })
 }
+function OpenMenu(){
+    $(".bg").toggleClass("bg-active")
+    $(".header__menu").toggleClass("header__menu-active")
+    $(document).click(function(e) {
+        if ($(e.target).hasClass("bg-active")){
+            OpenMenu()
+            //Убираем прослушку, чтобы избежать утечки памяти
+            $(document).off()
+        }
+    });
+}

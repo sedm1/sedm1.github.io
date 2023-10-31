@@ -1181,13 +1181,129 @@ main {
   height: auto;
 }
 
+.pis .main__item {
+  padding: 25px;
+}
+.pis__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+.pis__descript {
+  fpnt-size: 16px;
+  font-weight: 400;
+  color: #959799;
+  max-width: 763px;
+}
+.pis__settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5898FF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.pis__settings-img {
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+.pis__block {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pis__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 10px;
+  border: 2px solid #EAEAEA;
+  border-radius: 5px;
+  margin-right: 25px;
+  text-align: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+.pis__item:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.pis__item:last-child {
+  margin-right: 0px;
+}
+.pis__item-ok .pis__item-status {
+  color: #43D854;
+}
+.pis__item-set .pis__item-status {
+  color: #FFA800;
+}
+.pis__item-icon {
+  width: 61px;
+  height: 61px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.pis__item-icon img {
+  border-radius: 5px;
+}
+.pis__item-name {
+  margin-bottom: 5px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+}
+.pis__item-status {
+  font-size: 15px;
+  font-weight: 600;
+}
+.pis .shab__block {
+  margin-top: 50px;
+}
+.pis .shab__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0px;
+  border-top: 2px solid #EAEAEA;
+  border-bottom: 2px solid #EAEAEA;
+}
+.pis .shab__item-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+.pis .shab__item-button {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5898FF;
+}
+
 .modal__window {
   display: none;
   background: #FFFFFF;
   border-radius: 5px;
   position: relative;
   padding: 25px;
-  max-height: 100vh;
+  max-height: 90vh;
   overflow-y: auto;
 }
 .modal__window .rules__int {
@@ -1224,7 +1340,6 @@ main {
   padding: 10px 25px;
   border-radius: 5px;
   background: #EFF5FF;
-  font-sizer: 16px;
   font-weight: 400;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1322,6 +1437,159 @@ main {
   overflow-y: scroll;
 }
 
+.MakeNewMail__form .form__item, .EditMail .form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.MakeNewMail__form .form__item-icon, .EditMail .form__item-icon {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+}
+.MakeNewMail__form .form__item input, .EditMail .form__item input {
+  height: 40px;
+}
+
+.EditMail .form__dis {
+  color: #F00;
+  background: #FFE1E1 !important;
+}
+
+.MakeNewShablon, .EditShablon {
+  max-width: 980px;
+  width: 100%;
+}
+.MakeNewShablon .form__main, .EditShablon .form__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 40px;
+}
+.MakeNewShablon .form__item-main, .EditShablon .form__item-main {
+  max-width: 592px;
+  width: 100%;
+}
+.MakeNewShablon form, .EditShablon form {
+  margin-top: 0px;
+}
+.MakeNewShablon textarea, .EditShablon textarea {
+  padding: 13px 15px;
+  border-radius: 5px;
+  background: #F7F7F7;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0 none;
+  width: 100%;
+  border: 2px solid transparent;
+  resize: vertical;
+  outline: 0 none;
+  height: 288px;
+}
+.MakeNewShablon textarea:focus, .EditShablon textarea:focus {
+  border: 2px solid #5898FF;
+}
+.MakeNewShablon textarea::-webkit-input-placeholder, .EditShablon textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+.MakeNewShablon textarea::-moz-placeholder, .EditShablon textarea::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+.MakeNewShablon textarea:-ms-input-placeholder, .EditShablon textarea:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+.MakeNewShablon textarea::-ms-input-placeholder, .EditShablon textarea::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+.MakeNewShablon textarea::placeholder, .EditShablon textarea::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+.MakeNewShablon__aside, .EditShablon__aside {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.MakeNewShablon__aside h3, .EditShablon__aside h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.MakeNewShablon__button, .EditShablon__button {
+  color: #5898FF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.MakeNewShablon__button:last-child, .EditShablon__button:last-child {
+  margin-bottom: 0px;
+}
+
+.EditShablon .form__buttons-block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.EditShablon .form__delete {
+  padding: 10px 25px;
+  color: red;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  background: #FFE1E1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.EditShablon .form__delete:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px) {
+  .MakeNewShablon .form__main, .EditShablon .form__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .MakeNewShablon__aside, .EditShablon__aside {
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .EditShablon .form__buttons-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .EditShablon .form__delete {
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 1600px) {
   aside {
     position: absolute;
@@ -1336,7 +1604,38 @@ main {
     left: 0;
   }
   .header__menu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -110%;
+    width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #fff;
+    z-index: 2;
+    height: 100vh;
+    padding: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header__menu-item {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .header__menu-active {
+    right: 0;
+  }
+  .header__submenu {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .company__item {
     -webkit-box-orient: vertical;

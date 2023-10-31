@@ -18,6 +18,130 @@
 <body>
     <div class="bg">
         <!--  MODAL WINDOW  -->
+        <div class="EditShablon modal__window">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Редактировать шаблон</h2>
+            <div class="EditShablon__main">
+                <form action="" class="mainModalWindow__form">
+                    <div class="form__main">
+                        <div class="form__item-main">
+                            <div class="form__item">
+                                <input 
+                                required 
+                                class="EditShablon__title" 
+                                type="text" 
+                                name="Shablontitle" 
+                                value="Отказ"
+                                placeholder="Введите название шаблона">
+                            </div>
+                            <div class="form__item">
+                                <textarea 
+                                class="EditShablon__shablon" 
+                                name="Shablontitle" 
+                                placeholder="Шаблон письма"
+                                >Здравствуйте, "{Имя соискателя}"! Благодарим Вас за отклик на вакансию "{Название вакансии}". Ваше резюме показалось нам очень интересным. Мы хотели ..</textarea>
+                            </div>
+                        </div>
+                        <div class="EditShablon__aside">
+                            <h3 class="modal__subtitle">Вставить переменную</h3>
+                            <button class="EditShablon__button" type="button">Имя соискателя</button>
+                            <button class="EditShablon__button" type="button">Название вакансии</button>
+                            <button class="EditShablon__button" type="button">Мое имя</button>
+                            <button class="EditShablon__button" type="button">Телефон вакансии</button>
+                            <button class="EditShablon__button" type="button">Почта вакансии</button>
+                            <button class="EditShablon__button" type="button">Компания</button>
+                        </div>
+                    </div>
+                    <div class="form__buttons-block">
+                        <div class="form__items">
+                            <button class="form__submit">Сохранить</button>
+                            <button class="form__dis" type="button">Отменить</button>
+                        </div>
+                        <div class="form__items">
+                            <button class="form__delete">Удалить шаблон</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="MakeNewShablon modal__window">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Новый шаблон</h2>
+            <div class="MakeNewShablon__main">
+                <form action="" class="mainModalWindow__form">
+                    <div class="form__main">
+                        <div class="form__item-main">
+                            <div class="form__item">
+                                <input 
+                                required 
+                                class="MakeNewShablon__title" 
+                                type="text" 
+                                name="Shablontitle" 
+                                placeholder="Введите название шаблона">
+                            </div>
+                            <div class="form__item">
+                                <textarea class="MakeNewShablon__shablon" name="Shablontitle" placeholder="Шаблон письма"></textarea>
+                            </div>
+                        </div>
+                        <div class="MakeNewShablon__aside">
+                            <h3 class="modal__subtitle">Вставить переменную</h3>
+                            <button class="MakeNewShablon__button" type="button">Имя соискателя</button>
+                            <button class="MakeNewShablon__button" type="button">Название вакансии</button>
+                            <button class="MakeNewShablon__button" type="button">Мое имя</button>
+                            <button class="MakeNewShablon__button" type="button">Телефон вакансии</button>
+                            <button class="MakeNewShablon__button" type="button">Почта вакансии</button>
+                            <button class="MakeNewShablon__button" type="button">Компания</button>
+                        </div>
+                    </div>
+                    <div class="form__buttons-block">
+                        <button class="form__submit">Сохранить</button>
+                        <button class="form__dis" type="button">Отменить</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="modal__window mainModalWindow MakeNewMail">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Добавление новой почты</h2>
+            <p class="modal__text">Пожалуйста, укажите данные для входа</p>
+            <form action="" class="mainModalWindow__form MakeNewMail__form">
+                <div class="form__item">
+                    <input type="email" name="email" id="MakeNewMail-email">
+                    <div class="form__item-icon"><img class="MailChange" src="img/mail-static.png" alt="Mail"></div>
+                </div>
+                <div class="form__item">
+                    <input type="password" name="pass" id="MakeNewMail-pass">
+                    <div class="form__item-icon"><img src="img/lock.png" alt="Mail"></div>
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__window mainModalWindow EditMail">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Настройка почты</h2>
+            <p class="modal__text">Пожалуйста, проверьте данные для входа</p>
+            <form action="" class="mainModalWindow__form EditMail__form">
+                <div class="form__item">
+                    <input type="email" name="email" id="EditMail-email" value="aaa@gmail.com">
+                    <div class="form__item-icon"><img class="MailChange" src="img/mail-static.png" alt="Mail"></div>
+                </div>
+                <div class="form__item">
+                    <input type="password" name="pass" id="EditMail-pass" value="asdasdasdasdasd">
+                    <div class="form__item-icon"><img src="img/lock.png" alt="Mail"></div>
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis">Удалить почту</button>
+                </div>
+            </form>
+        </div>
         <div class="modal__window IntegrationWithPotok mainModalWindow">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
             <h2 class="modal__title">Интеграция CRM Bitrix24</h2>
@@ -490,7 +614,7 @@
                     <div class="menu__item-img"><img src="img/icons/GearSix.svg" alt="MenuItemImg"></div>
                     Интеграции
                 </button>
-                <button class="menu__item ">
+                <button class="menu__item " data-maintab="pis">
                     <div class="menu__item-img"><img src="img/icons/ChatDots.svg" alt="MenuItemImg"></div>
                     Шаблоны писем
                 </button>
@@ -560,6 +684,7 @@
                 <button class="header__right-item asideButton" onclick="OpenAside()"><img src="img/icons/aside.svg" alt="aside"></button>
                 <a href="#" class="header__right-item"><img src="img/icons/round.svg" alt="HeaderItemIcon"></a>
                 <a href="#" class="header__right-item"><img src="img/icons/profile.svg" alt="HeaderItemIcon"></a>
+                <button class="header__right-item asideButton" onclick="OpenMenu()"><img src="img/icons/menu-mobile__icon.svg" alt="MenuBurger"></button>
             </div>
         </header>
         <main>
@@ -969,6 +1094,46 @@
                     </div>
                 </div>
             </section>
+            <section class="pis">
+                <div class="main__item">
+                    <h2 class="pis__title">Почтовые ящики</h2>
+                    <p class="pis__descript">Подключите почтовый ящик, с которого будут уходить письма кандидатам</p>
+                    <button onclick="MakeNewMail()" class="pis__settings" id="pis__settings-1">
+                        <div class="pis__settings-img"><img src="img/icons/settings.svg" alt="settings"></div>
+                        Добавить почту
+                    </button>
+                    <div class="pis__block">
+                        <button class="pis__item pis__item-ok" id="pis__item-1" onclick="EditMail()">
+                            <div class="pis__item-icon"><img src="img/mail.png" alt="Mail"></div>
+                            <div class="pis__item-info">
+                                <div class="pis__item-name">salammalekum@gmail.com</div>
+                                <div class="pis__item-status">Работает</div>
+                            </div>
+                        </button>
+                        <button class="pis__item pis__item-set" id="pis__item-2" onclick="EditMail()">
+                            <div class="pis__item-icon"><img src="img/yandex.png" alt="Mail"></div>
+                            <div class="pis__item-info">
+                                <div class="pis__item-name">hrclub@gmail.com</div>
+                                <div class="pis__item-status">Требует настройки</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="main__item">
+                    <h2 class="pis__title">Шаблоны писем</h2>
+                    <p class="pis__descript">Вы можете заранее создавать шаблоны писем и использовать их при отправке соискателю. После добавления шаблоны станут доступны при отправке письма</p>
+                    <button onclick="MakeNewShablon()" class="pis__settings" id="shab__settings-1">
+                        <div class="pis__settings-img"><img src="img/icons/PlusCircle.svg" alt="settings"></div>
+                        Добавить шаблон
+                    </button>
+                    <div class="shab__block">
+                        <div class="shab__item">
+                            <div class="shab__item-title">Отказ</div>
+                            <button class="shab__item-button" onclick="EditShablon()">редактировать</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     
@@ -979,5 +1144,6 @@
     <script src="js/manager.js"></script>
     <script src="js/company.js"></script>
     <script src="js/integration.js"></script>
+    <script src="js/pis.js"></script>
 </body>
 </html>

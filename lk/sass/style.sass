@@ -676,9 +676,86 @@ main
             img
                 width: 100%
                 height: auto
-        
-
-
+.pis
+    .main__item
+        padding: 25px
+    &__title
+        font-size: 22px
+        font-weight: 600
+        color: $gray
+        margin-bottom: 10px
+    &__descript
+        fpnt-size: 16px
+        font-weight: 400
+        color: #959799
+        max-width: 763px
+    &__settings
+        display: flex
+        align-items: center
+        color: $blue
+        font-size: 16px
+        font-weight: 400
+        margin-top: 25px
+        &-img
+            width: 23px
+            height: 23px
+            margin-right: 10px
+    &__block
+        margin-top: 35px
+        display: flex
+        flex-wrap: wrap
+    &__item
+        display: flex
+        align-items: center
+        padding: 15px 10px
+        border: 2px solid $whiteGray
+        border-radius: 5px
+        margin-right: 25px
+        text-align: left
+        transition: .3s
+        margin-bottom: 10px
+        &:hover
+            transform: scale(1.04)
+        &:last-child
+            margin-right: 0px
+        &-ok
+            .pis__item-status
+                color: $green
+        &-set
+            .pis__item-status
+                color: $orange
+        &-icon
+            width: 61px
+            height: 61px
+            margin-right: 15px
+            border-radius: 5px
+            img
+                border-radius: 5px
+        &-name
+            margin-bottom: 5px
+            color: #333333
+            font-size: 16px
+            font-weight: 600
+        &-status
+            font-size: 15px
+            font-weight: 600
+    .shab__block
+        margin-top: 50px
+    .shab__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 25px 0px
+        border-top: 2px solid $whiteGray
+        border-bottom: 2px solid $whiteGray
+        &-title
+            font-size: 16px
+            font-weight: 400
+            color: #000000
+        &-button
+            font-size: 16px
+            font-weight: 400
+            color: $blue
 
 
 

@@ -5,7 +5,7 @@
         border-radius: 5px
         position: relative
         padding: 25px
-        max-height: 100vh
+        max-height: 90vh
         overflow-y: auto
         .rules__int
             color: $blue
@@ -32,7 +32,6 @@
                 padding: 10px 25px
                 border-radius: 5px
                 background: #EFF5FF
-                font-sizer: 16px
                 font-weight: 400
                 transition: .3s
                 &:hover
@@ -93,3 +92,90 @@
 .IntegrationWithAmo
     max-height: 558px
     overflow-y: scroll
+.MakeNewMail__form, .EditMail
+    .form__item
+        display: flex
+        &-icon
+            min-width: 40px
+            width: 40px
+            height: 40px
+        input
+            height: 40px
+.EditMail
+    .form__dis
+        color: #F00
+        background: #FFE1E1 !important
+.MakeNewShablon, .EditShablon
+    max-width: 980px
+    width: 100%
+    .form__main
+        display: flex
+        align-items: flex-start
+        margin-top: 40px
+    .form__item-main
+        max-width: 592px
+        width: 100%
+    form
+        margin-top: 0px
+    textarea
+        padding: 13px 15px
+        border-radius: 5px
+        background: #F7F7F7
+        font-size: 14px
+        font-weight: 600
+        border: 0 none
+        width: 100%
+        border: 2px solid transparent
+        resize: vertical
+        outline: 0 none
+        height: 288px
+        &:focus
+            border: 2px solid $blue
+        &::placeholder
+            font-size: 14px
+            font-weight: 300
+    &__aside
+        margin-left: 50px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        h3
+            font-size: 18px
+            font-weight: 400
+            color: #000000
+            margin-bottom: 25px
+    &__button
+        color: $blue
+        font-size: 16px
+        font-weight: 400
+        margin-bottom: 10px   
+        &:last-child
+            margin-bottom: 0px     
+.EditShablon
+    .form__buttons-block
+        justify-content: space-between
+        align-items: center
+    .form__delete
+        padding: 10px 25px
+        color: red
+        font-size: 16px
+        font-weight: 400
+        border-radius: 5px
+        background: #FFE1E1
+        transition: .3s
+        &:hover
+            transform: scale(1.05)
+@media screen and (max-width: $NoteContainer)
+    .MakeNewShablon, .EditShablon
+        .form__main
+            flex-direction: column
+        &__aside
+            margin-left: 0px
+            margin-bottom: 40px
+@media screen and (max-width: $MobileContainer)
+    .EditShablon 
+        .form__buttons-block
+            flex-direction: column
+            align-items: flex-start
+        .form__delete
+            margin-top: 20px
