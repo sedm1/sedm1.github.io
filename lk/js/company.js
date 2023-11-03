@@ -4,13 +4,12 @@ function AddNewCompany(){
         var inn = $(".AddNewCompany__inn").val()
         var ip = $(".AddNewCompany__ip").val()
         var nameSite = $(".AddNewCompany__nameSite").val()
-        var adress = $(".AddNewCompany__urAdress").val()
-        var ogrn = $(".AddNewCompany__ogrn").val()
         LenPassword(inn, 10, "error__mesage", event, "ИНН")
         LenPassword(ip, 1, "error__mesage", event, "ИП")
         LenPassword(nameSite, 1, "error__mesage", event, "Название для сайта")
-        LenPassword(adress, 1, "error__mesage", event, "Адресс")
-        LenPassword(ogrn, 1, "error__mesage", event, "ОГРН")
+        BorderRed("AddNewCompany__inn", event)
+        BorderRed("AddNewCompany__ip", event)
+        BorderRed("AddNewCompany__nameSite", event)
     })
 }
 function DeleteCompany(){
@@ -22,4 +21,9 @@ function DeleteCompany(){
 }
 function EditNewCompanyWindow(){
     openWindow("EditNewCompanyWindow")
+    $(".EditNewCompanyWindow__form").submit((event) => {
+        BorderRed("EditNewCompany__inn", event)
+        BorderRed("EditNewCompany__ip", event)
+        BorderRed("EditNewCompany__nameSite", event)
+    })
 }

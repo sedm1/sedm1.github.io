@@ -7,6 +7,8 @@ function AddNewManager(){
         LenPassword(name, 1, "error__mesage", event, "Имя")
         LenPassword(phone, 11, "error__mesage", event, "Телефон")
         LenPassword(email, 1, "error__mesage", event, "Почта")
+        BorderRed("AddNewManagerWindow__email", event)
+        BorderRed("AddNewManagerWindow__name", event)
     })
 }
 function EditManager(){
@@ -18,11 +20,15 @@ function EditManager(){
         LenPassword(name, 1, "error__mesage", event, "Имя")
         LenPassword(phone, 11, "error__mesage", event, "Телефон")
         LenPassword(email, 1, "error__mesage", event, "Почта")
+        BorderRed("EditNewManagerWindow__email", event)
+        BorderRed("EditNewManagerWindow__name", event)
     })
     
 }
 function DeleteManager(){
     openWindow("DeleteManager")
+    var name = $(".ManagerName").data("name")
+    $(".DeleteManager .modal__title").html('Удаление менеджера ' + name)
     $(".form__submit").click(() => {
         //Сюда прописать функцию удаления пользователя, перед закрытием формы
         CloseModalWindow()

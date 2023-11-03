@@ -1,0 +1,80 @@
+.jq-selectbox
+  vertical-align: middle
+  cursor: pointer
+  width: 100%
+  position: relative
+
+  select
+    display: none
+
+.jq-selectbox__select
+  padding: 10px 15px
+  border-radius: 5px
+  background: #f7f7f7
+  font-size: 13px
+  font-weight: 400
+  width: 100%
+  border: 1px solid transparent
+  &:focus
+    border: 1px solid $blue
+.jq-selectbox
+    &.focused
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+        background: #FFF
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10)
+        .jq-selectbox__select
+            border-top-left-radius: 5px
+            border-top-right-radius: 5px
+            background: #FFF
+    &.changed
+        .jq-selectbox__select
+            color: $blue
+            background: #EFF5FF
+        .jq-selectbox__trigger-arrow
+            border-top-color: $blue
+    
+
+.jq-selectbox__select-text
+  display: block
+  width: 100%
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.jq-selectbox .placeholder
+  color: $whiteGray
+
+.jq-selectbox__trigger
+  position: absolute
+  top: 0
+  right: 0
+  width: 34px
+
+.jq-selectbox__trigger-arrow
+  position: absolute
+  top: 18px
+  right: 12px
+  width: 0
+  height: 0
+  overflow: hidden
+  border-top: 8px solid #AEAEAE
+  border-right: 8px solid transparent
+  border-left: 8px solid transparent
+
+.jq-selectbox__dropdown
+    top: 33px
+    width: 100%
+    .selected
+        display: none !important
+    ul
+        padding: 10px 15px
+    li
+        font-size: 13px
+        font-weight: 400
+        color: #424242
+        margin-bottom: 10px
+        &.disabled, &.sel
+            display: none !important
+        &:last-child
+            margin-bottom: 0px

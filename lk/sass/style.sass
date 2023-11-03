@@ -3,8 +3,14 @@ body
     display: flex
     max-height: 100vh
     height: 100vh
-    overflow-y: hidden
+    max-width: 100%
+    overflow: hidden
     position: relative
+html
+    max-height: 100vh
+    height: 100vh
+    max-width: 100%
+    overflow: hidden
 aside
     background: $gray
     height: 100%
@@ -34,6 +40,8 @@ aside
             width: 30px
             height: 30px
             margin-right: 15px
+        &:first-child
+            border-top: 0px
         &-active
             opacity: 1
         &:hover
@@ -147,7 +155,7 @@ main
     &__tab
         display: flex
         align-items: center
-        padding: 25px 20px
+        padding: 27px 20px
         border-bottom: 1px solid $whiteGray
         &-item
             margin-right: 20px
@@ -165,6 +173,17 @@ main
         padding-bottom: 25px
         &-active
             display: flex
+        .flag
+            position: relative
+            input
+                padding-left: 51px !important
+            &__item
+                position: absolute
+                width: 22px
+                height: 22px
+                top: 50%
+                left: 15px
+                transform: translateY(-50%)
     &__logo
         margin-right: 95px
         &-img
@@ -185,6 +204,11 @@ main
             margin-top: 15px
             color: $blue
             font-size: 16px
+            display: block
+            text-align: center
+            cursor: pointer
+        input
+            display: none
         &-form
             max-width: 250px
             width: 100%
@@ -291,7 +315,7 @@ main
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 25px
+        padding: 37px 25px
         border-bottom: 2px solid $whiteGray
     .manager__link
         padding: 10px 25px
@@ -324,7 +348,9 @@ main
                 font-weight: 400
                 &:last-child
                     margin-right: 0px
-            
+        &-your
+            .manager__item-links-normal
+                display: none  !important
         .info__who
             font-size: 14px
             font-weight: 400
@@ -354,7 +380,7 @@ main
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 25px
+        padding: 37px 25px
         border-bottom: 2px solid $whiteGray
     &__link
         padding: 10px 25px
@@ -418,7 +444,7 @@ main
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 25px
+        padding: 37px 25px
         border-bottom: 2px solid $whiteGray
     .personal__link
         padding: 10px 25px
@@ -479,7 +505,7 @@ main
     &__tab
         display: flex
         align-items: center
-        padding: 25px 20px
+        padding: 27px 20px
         border-bottom: 1px solid $whiteGray
         &-item
             margin-right: 20px
@@ -546,7 +572,16 @@ main
             font-size: 18px
             font-weight: 400
             color: $blue
-            text-decoration-line: underline
+            position: relative
+            width: fit-content
+            &::before
+                position: absolute
+                bottom: 0px
+                left: 0
+                width: 100%
+                content: ""
+                height: 1px
+                background: $blue
             &:last-child
                 margin-bottom: 0px
                 
@@ -557,10 +592,10 @@ main
 
 .notifications
     &__title
-        padding: 25px
+        padding: 40px 25px
         font-size: 22px
         font-weight: 600
-        border-bottom: 2px solid $whiteGray
+        border-bottom: 1px solid $whiteGray
     &__item
         border-bottom: 2px solid $whiteGray
         padding: 25px
@@ -611,7 +646,7 @@ main
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 25px
+        padding: 37px 25px
         border-bottom: 2px solid $whiteGray
     &__link
         padding: 10px 25px
@@ -948,6 +983,6 @@ main
 
 
 
-
+@import 'select'
 @import "modal"
 @import "adapt"

@@ -10,9 +10,27 @@ function EditMail(){
     $('#EditMail-email').on('keyup',function(){
         CheckMail($('#EditMail-email').val())
     })
+    $(".EditMail__form .form__dis").click(()=>{
+        CloseModalWindow()
+        openWindow("RealDeleteMail")
+    })
+}
+function RedachMail(){
+    openWindow("RedachMail")
+    CheckMail($('#RedachMail-email').val())
+    $('#RedachMail-email').on('keyup',function(){
+        CheckMail($('#RedachMail-email').val())
+    })
+    $(".RedachMail__form .form__dis").click(()=>{
+        CloseModalWindow()
+        openWindow("RealDeleteMail")
+    })
 }
 function MakeNewShablon(){
     openWindow("MakeNewShablon")
+    $(".MakeNewShablon__form").submit((e)=>{
+        BorderRed("MakeNewShablon__title", e)
+    })
     $(".MakeNewShablon__button").click((e)=> {
         var item = $(e.target).text()
         $('.MakeNewShablon__shablon').val($.trim($('.MakeNewShablon__shablon').val() + " {"+item+"} "));
@@ -20,6 +38,9 @@ function MakeNewShablon(){
 }
 function EditShablon(){
     openWindow("EditShablon")
+    $(".EditShablon__form").submit((e)=>{
+        BorderRed("EditShablon__title", e)
+    })
     $(".EditShablon__button").click((e)=> {
         var item = $(e.target).text()
         $('.EditShablon__shablon').val($.trim($('.EditShablon__shablon').val() + " {"+item+"} "));

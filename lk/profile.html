@@ -18,16 +18,26 @@
 <body>
     <div class="bg">
         <!--  MODAL WINDOW  -->
+        <div class="modal__window RealDeleteMail">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Удаление почты</h2>
+            <p class="modal__text"><span>Вы действительно хотите отвязать почту salam@gmail.com ?</span></p>
+            <form action="" class="mainModalWindow__form">
+                <div class="form__buttons-block">
+                    <button class="form__submit">Удалить почту</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+        </div>
         <div class="EditShablon modal__window">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
-            <h2 class="modal__title">Редактировать шаблон</h2>
+            <h2 class="modal__title">Редактирование шаблона</h2>
             <div class="EditShablon__main">
-                <form action="" class="mainModalWindow__form">
+                <form action="" class="mainModalWindow__form EditShablon__form">
                     <div class="form__main">
                         <div class="form__item-main">
                             <div class="form__item">
                                 <input 
-                                required 
                                 class="EditShablon__title" 
                                 type="text" 
                                 name="Shablontitle" 
@@ -38,7 +48,7 @@
                                 <textarea 
                                 class="EditShablon__shablon" 
                                 name="Shablontitle" 
-                                placeholder="Шаблон письма"
+                                placeholder="Структура письма"
                                 >Здравствуйте, "{Имя соискателя}"! Благодарим Вас за отклик на вакансию "{Название вакансии}". Ваше резюме показалось нам очень интересным. Мы хотели ..</textarea>
                             </div>
                         </div>
@@ -69,19 +79,18 @@
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
             <h2 class="modal__title">Новый шаблон</h2>
             <div class="MakeNewShablon__main">
-                <form action="" class="mainModalWindow__form">
+                <form action="" class="mainModalWindow__form MakeNewShablon__form">
                     <div class="form__main">
                         <div class="form__item-main">
                             <div class="form__item">
                                 <input 
-                                required 
                                 class="MakeNewShablon__title" 
                                 type="text" 
                                 name="Shablontitle" 
                                 placeholder="Введите название шаблона">
                             </div>
                             <div class="form__item">
-                                <textarea class="MakeNewShablon__shablon" name="Shablontitle" placeholder="Шаблон письма"></textarea>
+                                <textarea class="MakeNewShablon__shablon" name="Shablontitle" placeholder="Структура письма"></textarea>
                             </div>
                         </div>
                         <div class="MakeNewShablon__aside">
@@ -122,6 +131,26 @@
                 </div>
             </form>
         </div>
+        <div class="modal__window mainModalWindow RedachMail">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Редактирование почты</h2>
+            <p class="modal__text"><span>Ящик работает корректно</span></p>
+            <form action="" class="mainModalWindow__form RedachMail__form">
+                <div class="form__item">
+                    <input type="email" name="email" id="RedachMail-email" value="aaa@gmail.com">
+                    <div class="form__item-icon"><img class="MailChange" src="img/mail-static.png" alt="Mail"></div>
+                </div>
+                <div class="form__item">
+                    <input type="password" name="pass" id="RedachMail-pass" value="asdasdasdasdasd">
+                    <div class="form__item-icon"><img src="img/lock-green.png" alt="Mail"></div>
+                </div>
+                <div class="error__mesage"></div>
+                <div class="form__buttons-block">
+                    <button class="form__submit">Сохранить</button>
+                    <button class="form__dis" type="button">Удалить почту</button>
+                </div>
+            </form>
+        </div>
         <div class="modal__window mainModalWindow EditMail">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
             <h2 class="modal__title">Настройка почты</h2>
@@ -133,12 +162,12 @@
                 </div>
                 <div class="form__item">
                     <input type="password" name="pass" id="EditMail-pass" value="asdasdasdasdasd">
-                    <div class="form__item-icon"><img src="img/lock.png" alt="Mail"></div>
+                    <div class="form__item-icon"><img src="img/lock-red.png" alt="Mail"></div>
                 </div>
                 <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
-                    <button class="form__dis">Удалить почту</button>
+                    <button class="form__dis" type="button">Удалить почту</button>
                 </div>
             </form>
         </div>
@@ -147,33 +176,35 @@
             <h2 class="modal__title">Интеграция CRM Bitrix24</h2>
             <a href="https://help.jobers.ru/settings/integraczii/integracziya-s-potok/" class="rules__int">Описание и инструкция по интеграции</a>
             <form action="" class="IntegrationWithPotok__form mainModalWindow__form">
-                <div class="form__item">
+                <div class="form__item form__item-big">
                     <div class="form__item-title">Токен доступа <span>*</span></div>
                     <input 
-                    required 
                     class="IntegrationWithPotok__token" 
                     type="text" 
                     name="token" 
                     placeholder="">
                 </div>
-                <div class="form__item">
-                    <div class="form__item-title">Вакансия Jobers</div>
-                    <select name="categ">
-                        <option value="value1" selected disabled hidden>Выберите вакансию</option>
-                        <option value="value1">Вакансия 1</option>
-                        <option value="value2">Вакансия 2</option>
-                        <option value="value3">Вакансия 3</option>
-                    </select>
+                <div class="form__item-small">
+                    <div class="form__item">
+                        <div class="form__item-title">Вакансия Jobers</div>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__item-title">Вакансия Potok</div>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form__item">
-                    <div class="form__item-title">Вакансия Potok</div>
-                    <select name="categ">
-                        <option value="value1" selected disabled hidden>Выберите вакансию</option>
-                        <option value="value1">Вакансия 1</option>
-                        <option value="value2">Вакансия 2</option>
-                        <option value="value3">Вакансия 3</option>
-                    </select>
-                </div>
+                <button class="AddNewVacancy" type="button">Добавить поля с  вакансиями</button>
                 <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
@@ -189,7 +220,7 @@
                 <div class="form__item">
                     <div class="form__item-title">Webhook URL <span>*</span></div>
                     <input 
-                    required 
+                    
                     class="IntegrationWithBitrix__name" 
                     type="text" 
                     name="url" 
@@ -206,7 +237,7 @@
                 </div>
                 <div class="form__item">
                     <div class="form__item-title">Ответственный</div>
-                    <select name="otvet" required>
+                    <select name="otvet">
                         <option value="value1" selected disabled hidden>Выберите Ответственного</option>
                         <option value="value1">Ответственный 1</option>
                         <option value="value2">Ответственный 2</option>
@@ -215,7 +246,7 @@
                 </div>
                 <div class="form__item">
                     <div class="form__item-title">Тип экспорта <span>*</span></div>
-                    <select name="eks" required>
+                    <select name="eks" class="IntegrationWithBitrix__typeEks">
                         <option value="value1" selected disabled hidden>Выберите тип экспорта</option>
                         <option value="value1">тип экспорта 1</option>
                         <option value="value2">тип экспорта 2</option>
@@ -223,7 +254,6 @@
                     </select>
                 </div>
                 <div class="form__item">
-                    <div class="form__item-title">Права</div>
                     <label class="checkbox" for="lid-1">
                         <input type="checkbox"  id="lid-1">
                         <span class="checkmark"></span>
@@ -247,7 +277,6 @@
                 <div class="form__item">
                     <div class="form__item-title">Поддомен</div>
                     <input 
-                    required 
                     class="IntegrationWithAmo__name" 
                     type="text" 
                     name="url" 
@@ -256,7 +285,6 @@
                 <div class="form__item">
                     <div class="form__item-title">Секретный ключ <span>*</span></div>
                     <input 
-                    required 
                     class="IntegrationWithAmo__secretKey" 
                     type="text" 
                     name="SecretKey" 
@@ -265,7 +293,6 @@
                 <div class="form__item">
                     <div class="form__item-title">ID интеграции <span>*</span></div>
                     <input 
-                    required 
                     class="IntegrationWithAmo__id" 
                     type="text" 
                     name="Id" 
@@ -274,7 +301,6 @@
                 <div class="form__item">
                     <div class="form__item-title">Код авторизации <span>*</span></div>
                     <input 
-                    required 
                     class="IntegrationWithAmo__code" 
                     type="text" 
                     name="Code" 
@@ -283,7 +309,6 @@
                 <div class="form__item">
                     <div class="form__item-title">Идентификатор воронки <span>*</span></div>
                     <input 
-                    required 
                     class="IntegrationWithAmo__vor" 
                     type="text" 
                     name="vor" 
@@ -292,7 +317,6 @@
                 <div class="form__item">
                     <div class="form__item-title">Идентификатор статуса <span>*</span></div>
                     <input 
-                    required 
                     class="IntegrationWithAmo__status" 
                     type="text" 
                     name="status" 
@@ -300,7 +324,7 @@
                 </div>
                 <div class="form__item">
                     <div class="form__item-title">Вакансия Jobers <span>* </span></div>
-                    <select name="categ">
+                    <select name="categ" class="IntegrationWithAmo__voronka">
                         <option value="value1" selected disabled hidden>Выберите воронку и статус</option>
                         <option value="value1">воронка 1</option>
                         <option value="value2">воронка 2</option>
@@ -326,9 +350,9 @@
 
         <div class="modal__window DeleteIntegration mainModalWindow">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
-            <h2 class="modal__title">Отключение интеграции</h2>
+            <h2 class="modal__title">ч</h2>
             <div class="modal__text">
-                <span>Вы уверены, что хотите удалить компанию?</span>
+                <span>Вы уверены, что отключить интеграцию с этой системой?</span>
             </div>
             <div class="form__buttons-block">
                 <button class="form__submit">Удалить</button>
@@ -342,15 +366,15 @@
             <form action="" class="AddNewManagerWindow__form mainModalWindow__form">
                 <div class="form__item">
                     <div class="form__item-title">Фамилия Имя Отчество <span>*</span></div>
-                    <input required class="AddNewManagerWindow__name" type="text" name="name" placeholder="Иванов Иван Иванович">
+                    <input class="AddNewManagerWindow__name" type="text" name="name" placeholder="Иванов Иван Иванович">
                 </div>
                 <div class="form__item">
                     <div class="form__item-title">Телефон</div>
-                    <input class="AddNewManagerWindow__phone" type="number" name="phone" placeholder="+7(999)-999-20-20">
+                    <input class="AddNewManagerWindow__phone" type="text" name="phone" placeholder="+7(999)-999-20-20">
                 </div>
                 <div class="form__item">
                     <div class="form__item-title">Email <span>*</span></div>
-                    <input required class="AddNewManagerWindow__email" type="text" name="email" placeholder="">
+                    <input class="AddNewManagerWindow__email" type="text" name="email" placeholder="">
                 </div>
                 <div class="form__item">
                     <div class="form__item-title">Права</div>
@@ -389,7 +413,6 @@
                     name="name" 
                     placeholder="Иванов Иван Иванович"
                     value="Иванов А.А."
-                    required 
                     >
                 </div>
                 <div class="form__item">
@@ -397,7 +420,7 @@
                     <input 
                     class="EditNewManagerWindow__phone" 
                     type="text" 
-                    name="phone" 
+                    name="text" 
                     placeholder="+7(999)-999-20-20"
                     value="+7(999)-999-20-20"
                     >
@@ -410,23 +433,22 @@
                     name="email" 
                     placeholder=""
                     value="aaaaa@gmail.com"
-                    required 
                     >
                 </div>
                 <div class="form__item">
                     <div class="form__item-title">Права</div>
-                    <label class="checkbox" for="pav-1">
-                        <input type="checkbox" checked id="pav-1">
+                    <label class="checkbox" for="pav-11">
+                        <input type="checkbox" checked id="pav-11">
                         <span class="checkmark"></span>
                         Доступ к бухгалтерским документам
                     </label>
-                    <label class="checkbox" for="pav-2">
-                        <input type="checkbox"  id="pav-2">
+                    <label class="checkbox" for="pav-12">
+                        <input type="checkbox"  id="pav-12">
                         <span class="checkmark"></span>
                         Создание и редактирование объявлений
                     </label>
-                    <label class="checkbox" for="pav-3">
-                        <input type="checkbox" checked id="pav-3">
+                    <label class="checkbox" for="pav-13">
+                        <input type="checkbox" checked id="pav-13">
                         <span class="checkmark"></span>
                         Добавление и смена ответственного по вакансии
                     </label>
@@ -440,7 +462,7 @@
         </div>
         <div class="modal__window EditNewCompanyWindow mainModalWindow">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
-            <h2 class="modal__title">Редактирование  менеджера</h2>
+            <h2 class="modal__title">Редактирование  компании</h2>
             <form action="" class="EditNewCompanyWindow__form mainModalWindow__form">
                 <div class="form__item">
                     <div class="form__item-title">ИНН <span>*</span></div>
@@ -450,7 +472,6 @@
                     name="inn" 
                     placeholder="Введите ИНН"
                     value="1234567891011"
-                    required 
                     >
                 </div>
                 <div class="form__item">
@@ -461,7 +482,6 @@
                     name="ip" 
                     placeholder=""
                     value="ИП"
-                    required 
                     >
                 </div>
                 <div class="form__item">
@@ -471,7 +491,6 @@
                     type="text" 
                     name="nameSite" 
                     placeholder=""
-                    required 
                     >
                 </div>
                 <div class="form__item">
@@ -500,11 +519,11 @@
                 </div>
             </form>
         </div>
-        <div class="modal__window DeleteManager mainModalWindow">
+        <div class="modal__window DeleteManager">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
-            <h2 class="modal__title">Удаление менеджера</h2>
+            <h2 class="modal__title"></h2>
             <div class="modal__text">
-                <span>Вы уверены, что хотите этого менеджера?</span>
+                <span>Вы уверены, что хотите удалить этого менеджера?</span>
             </div>
             <div class="form__buttons-block">
                 <button class="form__submit">Удалить</button>
@@ -527,13 +546,15 @@
             <h2 class="modal__title">Новая компания</h2>
             <form action="" class="AddNewCompany__form mainModalWindow__form">
                 <div class="form__item">
-                    <div class="form__item-title">ИНН <span>*</span></div>
+                    <div class="form__item-title form__item-spec">
+                        <div class="title__item">ИНН <span>*</span></div>
+                        <button class="title__item loadData" type="button">Загрузить данные по ИНН</button>
+                    </div>
                     <input 
                     class="AddNewCompany__inn" 
                     type="text" 
                     name="inn" 
                     placeholder="Введите ИНН"
-                    required 
                     >
                 </div>
                 <div class="form__item">
@@ -543,7 +564,6 @@
                     type="text" 
                     name="ip" 
                     placeholder=""
-                    required 
                     >
                 </div>
                 <div class="form__item">
@@ -553,7 +573,6 @@
                     type="text" 
                     name="nameSite" 
                     placeholder=""
-                    required 
                     >
                 </div>
                 <div class="form__item">
@@ -703,20 +722,25 @@
                                 <img src="img/sam.png" alt="ProfileIcon">
                                 <button class="profile__deleteLogo"><img src="img/icons/delete.svg" alt=""></button>
                             </div>
-                            <button class="profile__logo-add">Загрузить логотип</button>
+                            <input type="file" accept=".jpg, .png, .svg" name="file" id="file" class="inputfile" />
+                            <label for="file" class="profile__logo-add">Загрузить логотип</label>
                         </div>
                         <form action="" class="profile__logo-form">
                             <div class="form__item">
                                 <div class="form__item-title">Имя и фамилия <span>*</span></div>
-                                <input type="text" name="name" placeholder="Введите ваше имя" required >
+                                <input type="text" name="name" placeholder="Введите ваше имя" class="main__form-name">
                             </div>
                             <div class="form__item">
                                 <div class="form__item-title">Телефон </div>
-                                <input type="text" name="name" placeholder="+7-000-000-000">
+                                <div class="flag">
+                                    <input type="text" name="name" placeholder="+7-000-000-000">
+                                    <div class="flag__item"><img src="img/flag.png" alt="Flag"></div>
+                                </div>
+                                
                             </div>
                             <div class="form__item">
                                 <div class="form__item-title">Электронная почта и логин <span>*</span></div>
-                                <input type="text" name="name" placeholder="Ваш e-mail" required>
+                                <input type="text" name="name" placeholder="Ваш e-mail" class="main__form-email">
                             </div>
                             <div class="button__block">
                                 <button class="form__save">Сохранить</button>
@@ -728,16 +752,16 @@
                         <form action="" class="pass">
                             <div class="pass__item">
                                 <div class="pass__item-title">Текущий пароль <span>*</span></div>
-                                <input required type="password" class="pass__item-input" placeholder="******">
+                                <input type="password" class="pass__item-input pass__item-inputOldPass" placeholder="******">
                             </div>
                             <div class="pass__item">
                                 <div class="pass__item-title">Новый пароль <span>*</span></div>
-                                <input required id="new__pass" type="password" class="pass__item-input" placeholder="******">
+                                <input type="password" class="pass__item-input new__pass" placeholder="******">
                             </div>
                             <div class="pass__item">
                                 <div class="pass__item-title">Повторите новый пароль <span>*</span></div>
                                 <div class="pass__new">
-                                    <input required id="new__pass-2" type="password" class="pass__item-input" placeholder="******">
+                                    <input  type="password" class="pass__item-input new__pass-2" placeholder="******">
                                     <p class="pass__treb">Пароль должен состоять минимум из 8 символов, содержать минимум одну строчную, одну прописную букву и одну цифру</p>
                                     <button class="pass__confirm">Сохранить пароль</button>
                                 </div>
@@ -755,6 +779,33 @@
                         <button class="manager__link" onclick="AddNewManager()">Добавить менеджера</button>
                     </div>
                     <div class="manager__main">
+                        <div class="manager__item manager__item-your">
+                            <div class="manager__item-info">
+                                <p class="info__who">Пользователь</p>
+                                <h2 class="info__title">Тульцев Алексей Михайлович</h2>
+                                <div class="info__information">
+                                    <div class="info__information-item">
+                                        <div class="item-title">Роль</div>
+                                        <div class="item-count">Менеджер</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Email</div>
+                                        <div class="item-count">tulcev@yndex.ru</div>
+                                    </div>
+                                    <div class="info__information-item">
+                                        <div class="item-title">Телефон</div>
+                                        <div class="item-count">+7(913)333-00-00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="manager__item-links">
+                                <div class="manager__item-links manager__item-links-normal">
+                                    <button class="links-item removeManager ManagerName" data-name="Нищенко Александр" onclick="DeleteManager()">Удалить</button>
+                                    <button class="links-item editManager" onclick="EditManager()">Редактировать</button>
+                                </div>
+                                <div class="links-item manager__item-links manager__item-links-yours">Это ваш профиль</div>
+                            </div>
+                        </div>
                         <div class="manager__item">
                             <div class="manager__item-info">
                                 <p class="info__who">Пользователь</p>
@@ -775,8 +826,10 @@
                                 </div>
                             </div>
                             <div class="manager__item-links">
-                                <button class="links-item removeManager" onclick="DeleteManager()">Удалить</button>
-                                <button class="links-item editManager" onclick="EditManager()">Редактировать</button>
+                                <div class="manager__item-links manager__item-links-normal">
+                                    <button class="links-item removeManager" onclick="DeleteManager()">Удалить</button>
+                                    <button class="links-item editManager" onclick="EditManager()">Редактировать</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1077,19 +1130,19 @@
                             <div class="item__ok"><img src="img/icons/gal.svg" alt="Gal"></div>
                             <div class="item__img"><img src="img/amo.png" alt="IntegrationImg"></div>
                             <button class="item__button" onclick="IntegrationWithAmo()">Подключить</button>
-                            <button class="item__button item__button-active" onclick="DeleteInteGration()">Отключить</button>
+                            <button class="item__button DeleteIntButton item__button-active" data-removeCompanyName="AMO CRM">Отключить</button>
                         </div>
                         <div class="integration__item">
                             <div class="item__ok"><img src="img/icons/gal.svg" alt="Gal"></div>
                             <div class="item__img"><img src="img/bit.png" alt="IntegrationImg"></div>
                             <button class="item__button" onclick="IntegrationWithBitrix()">Подключить</button>
-                            <button class="item__button item__button-active" onclick="DeleteInteGration()">Отключить</button>
+                            <button class="item__button DeleteIntButton item__button-active" data-removeCompanyName="Bitrix 24">Отключить</button>
                         </div>
                         <div class="integration__item">
                             <div class="item__ok"><img src="img/icons/gal.svg" alt="Gal"></div>
                             <div class="item__img"><img src="img/potok.png" alt="IntegrationImg"></div>
                             <button class="item__button" onclick="IntegrationWithPotok()">Подключить</button>
-                            <button class="item__button item__button-active " onclick="DeleteInteGration()">Отключить</button>
+                            <button class="item__button DeleteIntButton item__button-active" data-removeCompanyName="CRM POTOK">Отключить</button>
                         </div>
                     </div>
                 </div>
@@ -1103,7 +1156,7 @@
                         Добавить почту
                     </button>
                     <div class="pis__block">
-                        <button class="pis__item pis__item-ok" id="pis__item-1" onclick="EditMail()">
+                        <button class="pis__item pis__item-ok" id="pis__item-1" onclick="RedachMail()">
                             <div class="pis__item-icon"><img src="img/mail.png" alt="Mail"></div>
                             <div class="pis__item-info">
                                 <div class="pis__item-name">salammalekum@gmail.com</div>
@@ -1139,6 +1192,7 @@
     
     <!--  SCRIPTS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js" integrity="sha512-NQWLm7ozXeOcDB639QSEzUWiNDEKD/mPKDIH256UYr9V7dwqF6OW4+1AEAVSaY6iaCaJzjjAR2GV6bPBYEzHig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>
     <script src="js/manager.js"></script>

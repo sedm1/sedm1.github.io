@@ -34,6 +34,7 @@
                 background: #EFF5FF
                 font-weight: 400
                 transition: .3s
+                font-size: 16px
                 &:hover
                     transform: scale(1.05)
     &__title
@@ -57,7 +58,12 @@
 .mainModalWindow
   max-width: 410px
   width: 100%
-
+.DeleteManager
+    max-width: 600px
+    width: 100%
+.DeleteIntegration
+    max-width: 550px
+    width: 100%
 .mainModalWindow__form
     margin-top: 40px
     .checkbox
@@ -76,6 +82,16 @@
                 color: $gray
                 span
                     color: $blue
+                div
+                    font-size: inherit
+                    font-weight: inherit
+            &-spec
+                display: flex
+                align-items: center
+                justify-content: space-between
+                
+            .loadData
+                color: $blue
             input
                 padding: 13px 15px
                 border-radius: 5px
@@ -92,7 +108,16 @@
 .IntegrationWithAmo
     max-height: 558px
     overflow-y: scroll
-.MakeNewMail__form, .EditMail
+    .rules__int
+        width: 100%
+        border-bottom: 2px solid $whiteGray
+        padding-bottom: 20px
+    &__form
+        margin-top: 25px
+.IntegrationWithBitrix
+    &__form
+        margin-top: 15px
+.MakeNewMail__form, .EditMail, .RedachMail
     .form__item
         display: flex
         &-icon
@@ -101,7 +126,7 @@
             height: 40px
         input
             height: 40px
-.EditMail
+.EditMail, .RedachMail
     .form__dis
         color: #F00
         background: #FFE1E1 !important
@@ -122,7 +147,7 @@
         border-radius: 5px
         background: #F7F7F7
         font-size: 14px
-        font-weight: 600
+        font-weight: 400
         border: 0 none
         width: 100%
         border: 2px solid transparent
@@ -165,7 +190,36 @@
         transition: .3s
         &:hover
             transform: scale(1.05)
+.IntegrationWithPotok
+    max-width: 788px
+    width: 100%
+    .AddNewVacancy
+        margin-bottom: 20px
+        color: $blue
+        font-size: 14px
+        font-weight: 400
+    &__form
+        margin-top: 15px
+        .form__item-big
+            width: 100%
+        .form__item-small
+            display: flex
+            justify-content: space-between
+            .form__item
+                max-width: 359px
+                width: 100%
+.RealDeleteMail
+    max-width: 490px
+    width: 100%
+    .form__buttons-block
+        justify-content: space-between
 @media screen and (max-width: $NoteContainer)
+    .IntegrationWithPotok
+        &__form
+            .form__item-small
+                flex-direction: column
+                .form__item
+                    max-width: 100%
     .MakeNewShablon, .EditShablon
         .form__main
             flex-direction: column
@@ -179,3 +233,9 @@
             align-items: flex-start
         .form__delete
             margin-top: 20px
+    .RedachMail__form, .EditMail__form
+        .form__buttons-block
+            flex-direction: column
+            .form__submit
+                margin-right: 0px
+                margin-bottom: 15px

@@ -18,13 +18,12 @@ $(() => {
     })
 
     $(".pass").submit(function( event ) {
-        var PassNew1 = $("#new__pass").val()
-        var PassNew2 = $("#new__pass-2").val()
+        var PassNew1 = $(".new__pass").val()
+        var PassNew2 = $(".new__pass-2").val()
         EqPassword(PassNew1, PassNew2, "pass__treb", event)
-        LenPassword(PassNew1, 8, "pass__treb", event)
-        SpecSymbol(PassNew1,/[A-Z]/,"pass__treb", event)
-        SpecSymbol(PassNew1,/[a-z]/,"pass__treb", event)
-        HasNumber(PassNew1, "pass__treb", event)
+        BorderRed("pass__item-inputOldPass", event)
+        BorderRed("new__pass", event)
+        BorderRed("new__pass-2", event)
     });
 })
 
@@ -84,6 +83,7 @@ function SpecSymbol(Pass, regular, ErrorMeassage, event){
 }
 
 function openWindow(windowClass){
+    CloseModalWindow()
     $(".bg").addClass("bg-active")
     $("."+windowClass).addClass("modal__window-active")
     $(".form__dis").click(() => {
@@ -92,5 +92,22 @@ function openWindow(windowClass){
 }
 function CloseModalWindow(){
     $(".bg").removeClass("bg-active")
+    $(".error__mesage").html(" ")
     $(".modal__window").removeClass("modal__window-active")
 }
+function BorderRed(ClassOfInput, e){
+    var vall = $("." + ClassOfInput).val()
+    if (vall.length == 0){
+        $("." + ClassOfInput).css({"border": "1px solid red"})
+        e.preventDefault();
+    }
+    
+}
+$(".profile__logo-form").submit((e) => {
+    BorderRed("main__form-name", e)
+    BorderRed("main__form-email", e)
+})
+
+$('select').styler({
+	selectSearch: true
+});
