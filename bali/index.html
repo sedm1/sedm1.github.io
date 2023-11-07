@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <style>
+        .poster__info{
+            background-image: url("img/main.jpg");
+        }
+        .immovables-bg{
+            background-image: url("img/subposter.jpg");
+        }
+        .trips-bg{
+            background-image: url("img/trips.jpg");
+        }
+        .bali-bg{
+            background-image: url("img/bali.jpg");
+        }
+        .works-bg{
+            background-image: url("img/works.jpg");
+        }
+        .trans-bg{
+            background-image: url("img/trans.jpg");
+        }
+        .sport-bg{
+            background-image: url("img/sport.jpg");
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header__menu">
+            <div class="container">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Недвижимость</a></li>
+                        <li><a href="#">Путешествия</a></li>
+                        <li><a href="#">Отдых и спорт</a></li>
+                        <li><a href="#">Жизнь на Бали</a></li>
+                        <li><a href="#">Работа и бизнес</a></li>
+                        <li><a href="#">Транспорт</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__profile">Профиль</a>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="headaer__logo"><img src="img/logo.png" alt="HeaderLogo"></div>
+                <form action="/" class="header__form">
+                    <input type="text" class="header__form-input" placeholder="Например, где провести вечер">
+                    <button class="header__form-button"><img src="img/search.svg" alt="HeaderFormButton"></button>
+                </form>
+                <button class="header__addNews">
+                    <div class="header__addNews-img"><img src="img/plus-icon.svg" alt="HeaderAddNews"></div>
+                    <div class="header__addNews-text">Добавить статью</div>
+                </button>
+                <div class="header__soz">
+                    <a href="#" class="header__soz-item"><img src="img/tg.svg" alt="HeaderSoz"></a>
+                    <a href="#" class="header__soz-item"><img src="img/inst.png" alt="HeaderSoz"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="poster">
+            <div class="container">
+                <div class="poster__info">
+                    <div class="poster__bg"></div>
+                    <div class="poster__info-pretitle">bali</div>
+                    <h1 class="poster__info-title">Ваш Гид по бали</h1>
+                    <p class="poster__info-description">E-BALI — это информационный и сервисный сайт о Бали. E-BALI это Полный Туристический Путиводитель по жизни на Острове.</p>
+                    <a href="#" class="poster__info-link">Профиль</a>
+                </div>
+            </div>
+        </section>
+        <div class="aside">
+            <div class="container">
+                <!--Класс для инфы все aside-->
+                <div class="subcontainer ">
+                    <section class="immovables">
+                        <div class="subposter immovables-bg">
+                            <h2 class="subposter__title">Недвижимость</h2>
+                            <p class="subposter__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"</p>
+                            <a href="#" class="subposter__link">Подробнее</a>
+                        </div>
+                        <ul class="lents">
+                            <li class="lents__item lents__item-active" data-immovables="">Все статьи</li>
+                            <li class="lents__item" data-immovables="">Мужчина ищет</li>
+                            <li class="lents__item" data-immovables="">Девушка ищет</li>
+                            <li class="lents__item" data-immovables="">Пара ищет</li>
+                            <li class="lents__item" data-immovables="">Места для свиданий</li>
+                            <li class="lents__item" data-immovables="">Онлайн-знакомства</li>
+                            <li class="lents__item" data-immovables="">Офлайн-знакомства</li>
+                            <li class="lents__item" data-immovables="">Содержанки</li>
+                        </ul>
+                        <div class="stat__big-block">
+                            <div class="stat__big-Item-block">
+                                <a class="stat__big-item" href="#">
+                                    <img src="img/stat-big.jpg" alt="StatBigImg">
+                                    <div class="itemBg"></div>
+                                    <div class="stat__big-item-content">
+                                        <div class="stat__big-item-info">
+                                            <div class="stat__big-item-categ">Девушка ищет</div>
+                                            <div class="stat__big-item-date">20.09.2021</div>
+                                        </div>
+                                        <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                    </div>
+                                </a>
+                                <a class="stat__big-item" href="#">
+                                    <img src="img/stat-big.jpg" alt="StatBigImg">
+                                    <div class="itemBg"></div>
+                                    <div class="stat__big-item-content">
+                                        <div class="stat__big-item-info">
+                                            <div class="stat__big-item-categ">Девушка ищет</div>
+                                            <div class="stat__big-item-date">20.09.2021</div>
+                                        </div>
+                                        <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                    </div>
+                                </a>
+                                <a class="stat__big-item" href="#">
+                                    <img src="img/stat-big.jpg" alt="StatBigImg">
+                                    <div class="itemBg"></div>
+                                    <div class="stat__big-item-content">
+                                        <div class="stat__big-item-info">
+                                            <div class="stat__big-item-categ">Девушка ищет</div>
+                                            <div class="stat__big-item-date">20.09.2021</div>
+                                        </div>
+                                        <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                    </div>
+                                </a>
+                                <a class="stat__big-item" href="#">
+                                    <img src="img/stat-big.jpg" alt="StatBigImg">
+                                    <div class="itemBg"></div>
+                                    <div class="stat__big-item-content">
+                                        <div class="stat__big-item-info">
+                                            <div class="stat__big-item-categ">Девушка ищет</div>
+                                            <div class="stat__big-item-date">20.09.2021</div>
+                                        </div>
+                                        <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="popular__statya">
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="trips">
+                        <div class="subposter trips-bg">
+                            <h2 class="subposter__title">Путешествия</h2>
+                            <p class="subposter__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"</p>
+                            <a href="#" class="subposter__link">Подробнее</a>
+                        </div>
+                        <ul class="lents">
+                            <li class="lents__item lents__item-active" data-trips="1">Все статьи</li>
+                            <li class="lents__item" data-trips="2">Swing</li>
+                            <li class="lents__item" data-trips="3">SexWife</li>
+                            <li class="lents__item" data-trips="4">Free Love</li>
+                            <li class="lents__item" data-trips="5">Ролевые игры</li>
+                            <li class="lents__item" data-trips="6">Измены</li>
+                            <li class="lents__item" data-trips="7">LGBT+</li>
+                        </ul>
+                        <div class="stat__small-Item-block">
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="bali">
+                        <div class="subposter bali-bg">
+                            <h2 class="subposter__title">Жизнь на Бали</h2>
+                            <p class="subposter__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"</p>
+                            <a href="#" class="subposter__link">Подробнее</a>
+                        </div>
+                        <ul class="lents">
+                            <li class="lents__item lents__item-active" data-bali="">Все статьи</li>
+                            <li class="lents__item" data-bali="">Для новичков</li>
+                            <li class="lents__item" data-bali="">Господин</li>
+                            <li class="lents__item" data-bali="">Госпожа</li>
+                            <li class="lents__item" data-bali="">Нижние</li>
+                            <li class="lents__item" data-bali="">Свитчи</li>
+                            <li class="lents__item" data-bali="">Фетиши</li>
+                            <li class="lents__item" data-bali="">Foot Fetish</li>
+                        </ul>
+                        <div class="stat__big-block">
+                            <div class="stat__big-Item-block">
+                                <a class="stat__big-item" href="#">
+                                    <img src="img/stat-big.jpg" alt="StatBigImg">
+                                    <div class="itemBg"></div>
+                                    <div class="stat__big-item-content">
+                                        <div class="stat__big-item-info">
+                                            <div class="stat__big-item-categ">Девушка ищет</div>
+                                            <div class="stat__big-item-date">20.09.2021</div>
+                                        </div>
+                                        <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                    </div>
+                                </a>
+                                <a class="stat__big-item" href="#">
+                                    <img src="img/stat-big.jpg" alt="StatBigImg">
+                                    <div class="itemBg"></div>
+                                    <div class="stat__big-item-content">
+                                        <div class="stat__big-item-info">
+                                            <div class="stat__big-item-categ">Девушка ищет</div>
+                                            <div class="stat__big-item-date">20.09.2021</div>
+                                        </div>
+                                        <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                    </div>
+                                </a>
+                                <a class="stat__big-item" href="#">
+                                    <img src="img/stat-big.jpg" alt="StatBigImg">
+                                    <div class="itemBg"></div>
+                                    <div class="stat__big-item-content">
+                                        <div class="stat__big-item-info">
+                                            <div class="stat__big-item-categ">Девушка ищет</div>
+                                            <div class="stat__big-item-date">20.09.2021</div>
+                                        </div>
+                                        <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                    </div>
+                                </a>
+                                <a class="stat__big-item" href="#">
+                                    <img src="img/stat-big.jpg" alt="StatBigImg">
+                                    <div class="itemBg"></div>
+                                    <div class="stat__big-item-content">
+                                        <div class="stat__big-item-info">
+                                            <div class="stat__big-item-categ">Девушка ищет</div>
+                                            <div class="stat__big-item-date">20.09.2021</div>
+                                        </div>
+                                        <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="popular__statya">
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="popular__statya-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                        <div class="item__date">27.12.2021</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="works">
+                        <div class="subposter works-bg">
+                            <h2 class="subposter__title">Работа и бизнес</h2>
+                            <p class="subposter__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"</p>
+                            <a href="#" class="subposter__link">Подробнее</a>
+                        </div>
+                        <ul class="lents">
+                            <li class="lents__item lents__item-active" data-works="1">Все статьи</li>
+                            <li class="lents__item" data-works="2">Игрушки для пар</li>
+                            <li class="lents__item" data-works="3">Для мужчин</li>
+                            <li class="lents__item" data-works="4">Для женщин</li>
+                            <li class="lents__item" data-works="5">BDSM и фетиш</li>
+                            <li class="lents__item" data-works="6">Белье и аксессуары</li>
+                            <li class="lents__item" data-works="7">Подарочные комплекты</li>
+                        </ul>
+                        <div class="stat__small-Item-block">
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="trans">
+                        <div class="subposter trans-bg">
+                            <h2 class="subposter__title">Транспорт</h2>
+                            <p class="subposter__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"</p>
+                            <a href="#" class="subposter__link">Подробнее</a>
+                        </div>
+                        <ul class="lents">
+                            <li class="lents__item lents__item-active" data-trans="1">Все статьи</li>
+                            <li class="lents__item" data-trans="2">Отели и гостиницы</li>
+                            <li class="lents__item" data-trans="3">Тематические вечеринки</li>
+                            <li class="lents__item" data-trans="4">Свинг-клубы</li>
+                            <li class="lents__item" data-trans="5">Kinky Party</li>
+                        </ul>
+                        <div class="stat__small-Item-block">
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="stat__small-item">
+                                <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                <div class="item__info">
+                                    <div class="item__info-header">
+                                        <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                        <div class="item__info-date">25 июня 2021</div>
+                                    </div>
+                                    <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                    <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    <div class="item__info-footer">
+                                        <div class="item__info-stat">
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/heart.svg" alt="heart"></div>
+                                                <div class="stat__item-count">289</div>
+                                            </div>
+                                            <div class="stat__item">
+                                                <div class="stat__item-icon"><img src="img/chat.svg" alt="chat"></div>
+                                                <div class="stat__item-count">16</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info-autor">Автор: <span>Ksenia69</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="sport">
+                        <div class="subposter sport-bg">
+                            <h2 class="subposter__title">Отдых и спорт</h2>
+                            <p class="subposter__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"</p>
+                            <a href="#" class="subposter__link">Подробнее</a>
+                        </div>
+                        <ul class="lents">
+                            <li class="lents__item lents__item-active" data-sport="1">Все статьи</li>
+                            <li class="lents__item" data-sport="2">Отели и гостиницы</li>
+                            <li class="lents__item" data-sport="3">Тематические вечеринки</li>
+                            <li class="lents__item" data-sport="4">Свинг-клубы</li>
+                            <li class="lents__item" data-sport="5">Kinky Party</li>
+                        </ul>
+                        <div class="stat-last-block">
+                            <a class="stat__big-item" href="#">
+                                <img src="img/stat-big.jpg" alt="StatBigImg">
+                                <div class="itemBg"></div>
+                                <div class="stat__big-item-content">
+                                    <div class="stat__big-item-info">
+                                        <div class="stat__big-item-categ">Девушка ищет</div>
+                                        <div class="stat__big-item-date">20.09.2021</div>
+                                    </div>
+                                    <h2 class="stat__big-item-title">Нужны ли права на бали?</h2>
+                                </div>
+                            </a>
+                            <div class="stat__last-small-block">
+                                <a href="#" class="stat__small-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__info-header">
+                                            <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                            <div class="item__info-date">25 июня 2021</div>
+                                        </div>
+                                        <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                        <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="stat__small-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__info-header">
+                                            <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                            <div class="item__info-date">25 июня 2021</div>
+                                        </div>
+                                        <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                        <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="stat__small-item">
+                                    <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                                    <div class="item__info">
+                                        <div class="item__info-header">
+                                            <div class="item__info-categ"><div class="round"></div> Мужчина ищет</div>
+                                            <div class="item__info-date">25 июня 2021</div>
+                                        </div>
+                                        <h4 class="item__info-title">История о том, как я впервые зашел на этот сайт</h4>
+                                        <p class="item__info-descript">На нашем ресурсе вы можете поделиться тем, о чем не принято говорить в обществе:</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+
+                <aside>
+                    <div class="popular__categ">
+                        <h3 class="aside__title">Популярные категории:</h3>
+                        <a href="#" class="popular__categ-item">
+                            <div class="item-title">Недвижимость</div>
+                            <div class="item-count">+120</div>
+                        </a>
+                        <a href="#" class="popular__categ-item">
+                            <div class="item-title">Путешествия</div>
+                            <div class="item-count">+10</div>
+                        </a>
+                        <a href="#" class="popular__categ-item">
+                            <div class="item-title">Жизнь на Бали</div>
+                            <div class="item-count">+10</div>
+                        </a>
+                        <a href="#" class="popular__categ-item">
+                            <div class="item-title">Работа и бизнес</div>
+                            <div class="item-count">+10</div>
+                        </a>
+                    </div>
+                    <div class="popular__statya">
+                        <h3 class="aside__title">Популярные статьи:</h3>
+                        <a href="#" class="popular__statya-item">
+                            <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                            <div class="item__info">
+                                <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                <div class="item__date">27.12.2021</div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular__statya-item">
+                            <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                            <div class="item__info">
+                                <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                <div class="item__date">27.12.2021</div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular__statya-item">
+                            <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                            <div class="item__info">
+                                <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                <div class="item__date">27.12.2021</div>
+                            </div>
+                        </a>
+                        <a href="#" class="popular__statya-item">
+                            <div class="item__img"><img src="img/stat.jpg" alt="StatImg"></div>
+                            <div class="item__info">
+                                <div class="item__title">Как предложить партнеру попробовать БДСМ</div>
+                                <div class="item__date">27.12.2021</div>
+                            </div>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__logo"><img src="img/Logo__footer.png" alt="FooterLogo"></div>
+                <div class="footer__soz">
+                    <a href="#" class="footer__soz-item"><img src="img/tg.svg" alt="FooterSoz"></a>
+                    <a href="#" class="footer__soz-item"><img src="img/inst.png" alt="FooterSoz"></a>
+                    <a href="#" class="footer__soz-item"><img src="img/VK.png" alt="FooterSoz"></a>
+                    <a href="#" class="footer__soz-item"><img src="img/Twitter.png" alt="FooterSoz"></a>
+                    <a href="#" class="footer__soz-item"><img src="img/Facebook.png" alt="FooterSoz"></a>
+                </div>
+                <p class="footer__info-descript">Мы позиционируем себя как новую социальную сеть, где любой желающий может анонимно говорить и задать вопросы, писать свое мнение</p>
+                <a href="#" class="footer__info-more">Читать подробнее о проекте</a>
+                <div class="footer__info-error">
+                    <div class="error-round">18+</div>
+                    <div class="error-text">Материалы сайта предназначены для возрасной категории 18+</div>
+                </div>
+            </div>
+            <nav>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="#">Недвижимость</a></li>
+                    <li class="footer__menu-item"><a href="#">Путешествия</a></li>
+                    <li class="footer__menu-item"><a href="#">Отдых и спорт</a></li>
+                    <li class="footer__menu-item"><a href="#">Жизнь на Бали</a></li>
+                    <li class="footer__menu-item"><a href="#">Работа и бизнес</a></li>
+                    <li class="footer__menu-item"><a href="#">Транспорт</a></li>
+                </ul>
+            </nav>
+            <form action="" class="footer__form">
+                <h2 class="footer__form-title">Подпишитесь на уведомления</h2>
+                <p class="footer__form-descript">Статьи, новости ресурса и уведомления</p>
+                <input type="text" placeholder="Введите E-mail">
+                <button class="footer__form-button">Подписаться</button>
+            </form>
+            <div class="footer__dop">
+                <a href="#" class="footer__dop-link"><img src="img/strawberry.svg" alt="footerDopIcon"> Мой профиль</a>
+                <ul class="footer__dop-menu">
+                    <li class="footer__dop-item"><a href="#">Политика конфиденциальности</a></li>
+                    <li class="footer__dop-item"><a href="#">О проекте</a></li>
+                    <li class="footer__dop-item"><a href="#">Правила</a></li>
+                </ul>
+                <div class="footer__dop-prava">2020 © Все права защищены</div>
+                <div class="footer__dop-prog">
+                    <div class="prog-text">Разработка и продвижение сайта</div>
+                    <div class="prog-img"><img src="img/maks.png" alt="ProgIcon"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
