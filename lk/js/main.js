@@ -61,15 +61,8 @@ function EqPassword(Pass1, Pass2, ErrorMeassage, event){
     }
 }
 //Необходимая длина пароля - LenPass
-function LenPassword(Pass, LenPass, ErrorMeassage, event, ErrorField){
+function LenPassword(Pass, LenPass, event){
     if (Pass.length < LenPass) {
-        if (ErrorField){
-            $("."+ErrorMeassage).text(`Длина поля ${ErrorField} меньше ${LenPass}` )
-        } else{
-            $("."+ErrorMeassage).text("Длина меньше " + LenPass)
-        }
-        
-        $("."+ErrorMeassage).css({"color": "red"})
         event.preventDefault();
     }
 }
@@ -98,6 +91,7 @@ function CloseModalWindow(){
 function BorderRed(ClassOfInput, e){
     var vall = $("." + ClassOfInput).val()
     if (vall.length == 0){
+        $("." + ClassOfInput).attr("placeholder", "Заполните это поле");
         $("." + ClassOfInput).css({"border": "1px solid red"})
         e.preventDefault();
     }

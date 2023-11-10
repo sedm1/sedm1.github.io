@@ -127,7 +127,7 @@ select:focus {
   z-index: 1;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4980392157);
   position: absolute;
   display: none;
 }
@@ -145,6 +145,15 @@ select:focus {
 
 .asideButton {
   display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: 2px solid #5898FF;
+  -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 @media screen and (max-width: 1600px) {
@@ -492,7 +501,7 @@ main {
   color: #5898FF;
 }
 .profile .form__item input {
-  padding: 13px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
   background: #F7F7F7;
   font-size: 14px;
@@ -578,7 +587,7 @@ main {
   color: #5898FF;
 }
 .profile .pass__item-input {
-  padding: 13px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
   background: #F7F7F7;
   font-size: 14px;
@@ -1123,6 +1132,26 @@ main {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+.notifications .mess__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.notifications .mess__button-item {
+  padding: 15px 25px;
+  color: #5898FF;
+  font-size: 16px;
+  font-weight: 400;
+  background: #EFF5FF;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+.notifications .mess__button-item:last-child {
+  margin-right: 0px;
+}
 
 .integration__header {
   display: -webkit-box;
@@ -1367,24 +1396,50 @@ main {
   border: 1px solid #5898FF;
 }
 
-.jq-selectbox.focused {
+.jq-selectbox.opened {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background: #FFF;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
-.jq-selectbox.focused .jq-selectbox__select {
+.jq-selectbox.opened .jq-selectbox__select {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background: #FFF;
+}
+.jq-selectbox.opened .jq-selectbox__trigger-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-top-color: #5898FF;
 }
 .jq-selectbox.changed .jq-selectbox__select {
   color: #5898FF;
   background: #EFF5FF;
 }
+.jq-selectbox.changed .jq-selectbox__select-text {
+  font-weight: 600;
+}
 .jq-selectbox.changed .jq-selectbox__trigger-arrow {
-  border-top-color: #5898FF;
+  top: 19px;
+  right: 25px;
+  border: 0 none;
+  overflow: visible;
+}
+.jq-selectbox.changed .jq-selectbox__trigger-arrow::before, .jq-selectbox.changed .jq-selectbox__trigger-arrow::after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  position: absolute;
+  background: #5898FF;
+}
+.jq-selectbox.changed .jq-selectbox__trigger-arrow::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.jq-selectbox.changed .jq-selectbox__trigger-arrow::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .jq-selectbox__select-text {
@@ -1573,7 +1628,7 @@ main {
   color: #5898FF;
 }
 .mainModalWindow__form .form__item input {
-  padding: 13px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
   background: #F7F7F7;
   font-size: 14px;
@@ -1636,9 +1691,37 @@ main {
   height: 40px;
 }
 
+.EditMail .modal__text, .RedachMail .modal__text {
+  color: #959799;
+  font-size: 16px;
+  font-weight: 400;
+}
 .EditMail .form__dis, .RedachMail .form__dis {
   color: #F00;
   background: #FFE1E1 !important;
+}
+.EditMail .form__buttons-block, .RedachMail .form__buttons-block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.EditMail .form__buttons-block .form__submit {
+  background: #F7F7F7;
+  color: #333333;
+}
+.EditMail .CheckAuth {
+  margin-top: 15px;
+  color: #5898FF;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.EditMail__form .form__item {
+  margin-bottom: 0px;
+}
+.EditMail__form .form__item:first-child {
+  margin-bottom: 20px;
 }
 
 .MakeNewShablon, .EditShablon {
@@ -1662,7 +1745,7 @@ main {
   margin-top: 0px;
 }
 .MakeNewShablon textarea, .EditShablon textarea {
-  padding: 13px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
   background: #F7F7F7;
   font-size: 14px;
@@ -1777,6 +1860,10 @@ main {
   max-width: 359px;
   width: 100%;
 }
+.IntegrationWithPotok__form .form__item-small .jq-selectbox__select {
+  margin-bottom: 5px;
+  display: none;
+}
 
 .RealDeleteMail {
   max-width: 490px;
@@ -1810,6 +1897,9 @@ main {
   }
 }
 @media screen and (max-width: 500px) {
+  .mainModalWindow {
+    padding-top: 40px;
+  }
   .EditShablon .form__buttons-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -103,7 +103,7 @@ select
   z-index: 1
   width: 100%
   height: 100vh
-  background: rgba(0, 0, 0, 0.4)
+  background: rgba(0, 0, 0, 0.4980392156862745)
   position: absolute
   display: none
   &-active
@@ -112,6 +112,12 @@ select
     align-items: center
 .asideButton
   display: none
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus 
+  border: 2px solid $blue
+  -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset
+  transition: background-color 5000s ease-in-out 0s
 @media screen and (max-width: $MainContainer)
   .asideButton
     display: block

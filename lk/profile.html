@@ -124,7 +124,6 @@
                     <input type="password" name="pass" id="MakeNewMail-pass">
                     <div class="form__item-icon"><img src="img/lock.png" alt="Mail"></div>
                 </div>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -144,7 +143,6 @@
                     <input type="password" name="pass" id="RedachMail-pass" value="asdasdasdasdasd">
                     <div class="form__item-icon"><img src="img/lock-green.png" alt="Mail"></div>
                 </div>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Удалить почту</button>
@@ -164,16 +162,16 @@
                     <input type="password" name="pass" id="EditMail-pass" value="asdasdasdasdasd">
                     <div class="form__item-icon"><img src="img/lock-red.png" alt="Mail"></div>
                 </div>
-                <div class="error__mesage"></div>
+                <button type="button" class="CheckAuth">Проверить авторизацию</button>
                 <div class="form__buttons-block">
-                    <button class="form__submit">Сохранить</button>
+                    <button class="form__submit" disabled>Сохранить</button>
                     <button class="form__dis" type="button">Удалить почту</button>
                 </div>
             </form>
         </div>
         <div class="modal__window IntegrationWithPotok mainModalWindow">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
-            <h2 class="modal__title">Интеграция CRM Bitrix24</h2>
+            <h2 class="modal__title">Интеграция CRM Potok</h2>
             <a href="https://help.jobers.ru/settings/integraczii/integracziya-s-potok/" class="rules__int">Описание и инструкция по интеграции</a>
             <form action="" class="IntegrationWithPotok__form mainModalWindow__form">
                 <div class="form__item form__item-big">
@@ -185,7 +183,7 @@
                     placeholder="">
                 </div>
                 <div class="form__item-small">
-                    <div class="form__item">
+                    <div class="form__item" id="form__item-1">
                         <div class="form__item-title">Вакансия Jobers</div>
                         <select name="categ">
                             <option value="value1" selected disabled hidden>Выберите вакансию</option>
@@ -193,9 +191,57 @@
                             <option value="value2">Вакансия 2</option>
                             <option value="value3">Вакансия 3</option>
                         </select>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
                     </div>
-                    <div class="form__item">
+                    <div class="form__item" id="form__item-2">
                         <div class="form__item-title">Вакансия Potok</div>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
+                        <select name="categ">
+                            <option value="value1" selected disabled hidden>Выберите вакансию</option>
+                            <option value="value1">Вакансия 1</option>
+                            <option value="value2">Вакансия 2</option>
+                            <option value="value3">Вакансия 3</option>
+                        </select>
                         <select name="categ">
                             <option value="value1" selected disabled hidden>Выберите вакансию</option>
                             <option value="value1">Вакансия 1</option>
@@ -205,7 +251,6 @@
                     </div>
                 </div>
                 <button class="AddNewVacancy" type="button">Добавить поля с  вакансиями</button>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -260,7 +305,6 @@
                         Создавать повторный лид
                     </label>
                 </div>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -339,7 +383,6 @@
                         Создавать повторный лид
                     </label>
                 </div>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -347,7 +390,21 @@
             </form>
         </div>
 
-
+        <div class="modal__window DeleteAllIntegration mainModalWindow">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Отключение всех интеграций</h2>
+            <div class="modal__text">
+                <span>Вы уверены, что хотите отключить все интеграции</span>
+            </div>
+            <form action="">
+                <div class="form__buttons-block">
+                    <button class="form__submit" type="submit">Удалить</button>
+                    <button class="form__dis" type="button">Отменить</button>
+                </div>
+            </form>
+            
+            
+        </div>
         <div class="modal__window DeleteIntegration mainModalWindow">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
             <h2 class="modal__title">ч</h2>
@@ -394,7 +451,6 @@
                         Добавление и смена ответственного по вакансии
                     </label>
                 </div>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -453,7 +509,6 @@
                         Добавление и смена ответственного по вакансии
                     </label>
                 </div>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -512,7 +567,6 @@
                     placeholder="12585775839"
                     >
                 </div>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -593,7 +647,6 @@
                     placeholder="12585775839"
                     >
                 </div>
-                <div class="error__mesage"></div>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -851,7 +904,7 @@
                                         <h2 class="info__title">ЧДОУ "ДЕТСКИЙ САД МАЛЕНЬКИЙ ЛИДЕР"</h2>
                                     </div>
                                     <div class="company__item-links">
-                                        <button class="links-item removeCompany" onclick="DeleteCompany()">Удалить</button>
+                                        <button class="links-item removeCompany" data-namecompany="ЧДОУ ДЕТСКИЙ САД МАЛЕНЬКИЙ ЛИДЕР">Удалить</button>
                                         <button class="links-item editCompany" onclick="EditNewCompanyWindow()">Редактировать</button>
                                     </div>
                                 </div>
@@ -1114,6 +1167,10 @@
                                 <span class="checkmark"></span>
                                 Telegram Web
                             </label>
+                            <div class="mess__button">
+                                <button class="mess__button-item" type="button">Уведомления в чат</button>
+                                <button class="mess__button-item" type="button">Уведомления в группу</button>
+                            </div>
                             <button class="notifications__save">Сохранить</button>
                         </form>
                     </div>
@@ -1123,7 +1180,7 @@
                 <div class="main__item">
                     <div class="integration__header">
                         <h2 class="integration__title">Интеграции</h2>
-                        <button class="integration__link">Отключить все</button>
+                        <button class="integration__link" onclick="DeleteAllIntegration()">Отключить все</button>
                     </div>
                     <div class="integration__main">
                         <div class="integration__item integration__item-active">

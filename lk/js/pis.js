@@ -49,8 +49,8 @@ function EditShablon(){
 $(".MakeNewMail__form").submit((e) => {
     var email = $("#MakeNewMail-email").val()
     var pass = $("#MakeNewMail-pass").val()
-    LenPassword(email, 1, "error__mesage", e, "Почта")
-    LenPassword(pass, 1, "error__mesage", e, "Пароль")
+    LenPassword(email, 1, e)
+    LenPassword(pass, 1, e)
 })
 function CheckMail(mail){
     if (mail.includes("@gmail")){

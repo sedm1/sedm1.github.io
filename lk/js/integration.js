@@ -18,6 +18,9 @@ function IntegrationWithBitrix(){
     })
 
 }
+function DeleteAllIntegration(){
+    openWindow("DeleteAllIntegration")
+}
 function IntegrationWithAmo(){
     openWindow("IntegrationWithAmo")
     $(".IntegrationWithAmo__form").submit((e) => {
@@ -42,4 +45,15 @@ function IntegrationWithPotok(){
 $(".integration__item .DeleteIntButton").click((e) => {
     var name = $(e.target).data("removecompanyname")
     DeleteInteGration(name)
+})
+$(()=>{
+    setTimeout(()=>{
+        $(".IntegrationWithPotok #form__item-1 .jq-selectbox__select").slice(0, 1).show();
+        $(".IntegrationWithPotok #form__item-2 .jq-selectbox__select").slice(0, 1).show();
+        $(".AddNewVacancy").on("click", function(e){
+          e.preventDefault();
+          $(".IntegrationWithPotok #form__item-1 .jq-selectbox__select:hidden").slice(0, 1).slideDown();
+          $(".IntegrationWithPotok #form__item-2 .jq-selectbox__select:hidden").slice(0, 1).slideDown();
+        });
+    }, 100)
 })
