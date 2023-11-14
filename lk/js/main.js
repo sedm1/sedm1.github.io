@@ -88,18 +88,21 @@ function CloseModalWindow(){
     $(".error__mesage").html(" ")
     $(".modal__window").removeClass("modal__window-active")
 }
-function BorderRed(ClassOfInput, e){
+function BorderRed(ClassOfInput, e, textPlace){
     var vall = $("." + ClassOfInput).val()
     if (vall.length == 0){
-        $("." + ClassOfInput).attr("placeholder", "Заполните это поле");
+        $("." + ClassOfInput).attr("placeholder", ""+textPlace);
         $("." + ClassOfInput).css({"border": "1px solid red"})
         e.preventDefault();
+    } else{
+        $("." + ClassOfInput).attr("placeholder", "");
+        $("." + ClassOfInput).css({"border": "0 none"})
     }
     
 }
 $(".profile__logo-form").submit((e) => {
-    BorderRed("main__form-name", e)
-    BorderRed("main__form-email", e)
+    BorderRed("main__form-name", e, "Заполните это поле")
+    BorderRed("main__form-email", e, "Заполните это поле")
 })
 
 $('select').styler({

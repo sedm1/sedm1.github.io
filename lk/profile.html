@@ -124,6 +124,7 @@
                     <input type="password" name="pass" id="MakeNewMail-pass">
                     <div class="form__item-icon"><img src="img/lock.png" alt="Mail"></div>
                 </div>
+                <button type="button" class="CheckAuth">Проверить авторизацию</button>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Отменить</button>
@@ -143,6 +144,7 @@
                     <input type="password" name="pass" id="RedachMail-pass" value="asdasdasdasdasd">
                     <div class="form__item-icon"><img src="img/lock-green.png" alt="Mail"></div>
                 </div>
+                <button type="button" class="CheckAuth">Проверить авторизацию</button>
                 <div class="form__buttons-block">
                     <button class="form__submit">Сохранить</button>
                     <button class="form__dis" type="button">Удалить почту</button>
@@ -274,7 +276,7 @@
                 <div class="form__item">
                     <div class="form__item-title">Категория</div>
                     <select name="categ">
-                        <option value="value1" selected disabled hidden>Выберите категорию</option>
+                        <option value="value0" selected disabled hidden>Выберите категорию</option>
                         <option value="value1">Категория 1</option>
                         <option value="value2">Категория 2</option>
                         <option value="value3">Категория 3</option>
@@ -283,7 +285,7 @@
                 <div class="form__item">
                     <div class="form__item-title">Ответственный</div>
                     <select name="otvet">
-                        <option value="value1" selected disabled hidden>Выберите Ответственного</option>
+                        <option value="value0" selected disabled hidden>Выберите Ответственного</option>
                         <option value="value1">Ответственный 1</option>
                         <option value="value2">Ответственный 2</option>
                         <option value="value3">Ответственный 3</option>
@@ -292,7 +294,7 @@
                 <div class="form__item">
                     <div class="form__item-title">Тип экспорта <span>*</span></div>
                     <select name="eks" class="IntegrationWithBitrix__typeEks">
-                        <option value="value1" selected disabled hidden>Выберите тип экспорта</option>
+                        <option value="value0" selected disabled hidden>Выберите тип экспорта</option>
                         <option value="value1">тип экспорта 1</option>
                         <option value="value2">тип экспорта 2</option>
                         <option value="value3">тип экспорта 3</option>
@@ -369,7 +371,7 @@
                 <div class="form__item">
                     <div class="form__item-title">Вакансия Jobers <span>* </span></div>
                     <select name="categ" class="IntegrationWithAmo__voronka">
-                        <option value="value1" selected disabled hidden>Выберите воронку и статус</option>
+                        <option value="value0" selected disabled hidden>Выберите воронку и статус</option>
                         <option value="value1">воронка 1</option>
                         <option value="value2">воронка 2</option>
                         <option value="value3">воронка 3</option>
@@ -583,6 +585,19 @@
                 <button class="form__submit">Удалить</button>
                 <button class="form__dis">Отменить</button>
             </div>
+        </div>
+        <div class="modal__window RegManager">
+            <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
+            <h2 class="modal__title">Регистрация менеджера</h2>
+            <div class="modal__text">
+                <div class="modal__text-bold"></div>
+                Логин и пароль отправлен на почту: <span></span>
+            </div>
+            <form action="
+            "><div class="form__buttons-block">
+                <button class="form__submit">Хорошо</button>
+            </div></form>
+            
         </div>
         <div class="modal__window DeleteCompany mainModalWindow">
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
@@ -1183,7 +1198,7 @@
                         <button class="integration__link" onclick="DeleteAllIntegration()">Отключить все</button>
                     </div>
                     <div class="integration__main">
-                        <div class="integration__item integration__item-active">
+                        <div class="integration__item "><!--integration__item-active-->
                             <div class="item__ok"><img src="img/icons/gal.svg" alt="Gal"></div>
                             <div class="item__img"><img src="img/amo.png" alt="IntegrationImg"></div>
                             <button class="item__button" onclick="IntegrationWithAmo()">Подключить</button>

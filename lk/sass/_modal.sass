@@ -126,6 +126,30 @@
             height: 40px
         input
             height: 40px
+    .form__buttons-block
+        justify-content: space-between
+    .modal__text
+        color: #959799
+    .CheckAuth
+        margin-top: 15px
+        color: $blue
+        font-size: 13px
+        font-weight: 400
+        margin-bottom: 50px
+    &__form
+        .form__item
+            margin-bottom: 0px
+            &:first-child
+                margin-bottom: 20px 
+.RedachMail
+    .CheckAuth
+        color: #959799
+.MakeNewMail
+    &__form
+        .form__item
+            margin-bottom: 0px
+            &:first-child
+                margin-bottom: 20px 
 .EditMail, .RedachMail
     .modal__text
         color: #959799
@@ -141,17 +165,6 @@
         .form__submit
             background: #F7F7F7
             color: #333333
-    .CheckAuth
-        margin-top: 15px
-        color: $blue
-        font-size: 13px
-        font-weight: 400
-        margin-bottom: 50px
-    &__form
-        .form__item
-            margin-bottom: 0px
-            &:first-child
-                margin-bottom: 20px
 .MakeNewShablon, .EditShablon
     max-width: 980px
     width: 100%
@@ -252,8 +265,8 @@
             margin-left: 0px
             margin-bottom: 40px
 @media screen and (max-width: $MobileContainer)
-    .mainModalWindow
-        padding-top: 40px
+    .modal__title
+        max-width: 80%
     .EditShablon 
         .form__buttons-block
             flex-direction: column

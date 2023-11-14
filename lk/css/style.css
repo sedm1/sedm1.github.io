@@ -1056,6 +1056,8 @@ main {
   content: "";
   height: 1px;
   background: #5898FF;
+  min-height: 1px;
+  max-height: 1px;
 }
 .document__links-item:last-child {
   margin-bottom: 0px;
@@ -1487,7 +1489,7 @@ main {
   font-size: 13px;
   font-weight: 400;
   color: #424242;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 .jq-selectbox__dropdown li.disabled, .jq-selectbox__dropdown li.sel {
   display: none !important;
@@ -1690,6 +1692,38 @@ main {
 .MakeNewMail__form .form__item input, .EditMail .form__item input, .RedachMail .form__item input {
   height: 40px;
 }
+.MakeNewMail__form .form__buttons-block, .EditMail .form__buttons-block, .RedachMail .form__buttons-block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.MakeNewMail__form .modal__text, .EditMail .modal__text, .RedachMail .modal__text {
+  color: #959799;
+}
+.MakeNewMail__form .CheckAuth, .EditMail .CheckAuth, .RedachMail .CheckAuth {
+  margin-top: 15px;
+  color: #5898FF;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.MakeNewMail__form__form .form__item, .EditMail__form .form__item, .RedachMail__form .form__item {
+  margin-bottom: 0px;
+}
+.MakeNewMail__form__form .form__item:first-child, .EditMail__form .form__item:first-child, .RedachMail__form .form__item:first-child {
+  margin-bottom: 20px;
+}
+
+.RedachMail .CheckAuth {
+  color: #959799;
+}
+
+.MakeNewMail__form .form__item {
+  margin-bottom: 0px;
+}
+.MakeNewMail__form .form__item:first-child {
+  margin-bottom: 20px;
+}
 
 .EditMail .modal__text, .RedachMail .modal__text {
   color: #959799;
@@ -1709,19 +1743,6 @@ main {
 .EditMail .form__buttons-block .form__submit {
   background: #F7F7F7;
   color: #333333;
-}
-.EditMail .CheckAuth {
-  margin-top: 15px;
-  color: #5898FF;
-  font-size: 13px;
-  font-weight: 400;
-  margin-bottom: 50px;
-}
-.EditMail__form .form__item {
-  margin-bottom: 0px;
-}
-.EditMail__form .form__item:first-child {
-  margin-bottom: 20px;
 }
 
 .MakeNewShablon, .EditShablon {
@@ -1897,8 +1918,8 @@ main {
   }
 }
 @media screen and (max-width: 500px) {
-  .mainModalWindow {
-    padding-top: 40px;
+  .modal__title {
+    max-width: 80%;
   }
   .EditShablon .form__buttons-block {
     -webkit-box-orient: vertical;

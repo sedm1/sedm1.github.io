@@ -10,11 +10,13 @@ function DeleteInteGration(name){
 function IntegrationWithBitrix(){
     openWindow("IntegrationWithBitrix")
     $(".IntegrationWithBitrix__form").submit((e) => {
-        if ($(".IntegrationWithBitrix__typeEks").val() == null){
-            $('.IntegrationWithBitrix__typeEks').css({"border": "1px solid red"})
+        if ($("select.IntegrationWithBitrix__typeEks").val() == null){
+            $('.IntegrationWithBitrix__typeEks .jq-selectbox__select').css({"border": "1px solid red"})
             e.preventDefault();
+        } else{
+            $('.IntegrationWithBitrix__typeEks .jq-selectbox__select').css({"border": "0 none"})
         }
-        BorderRed("IntegrationWithBitrix__name", e)
+        BorderRed("IntegrationWithBitrix__name", e, "Заполните это поле")
     })
 
 }
@@ -24,21 +26,23 @@ function DeleteAllIntegration(){
 function IntegrationWithAmo(){
     openWindow("IntegrationWithAmo")
     $(".IntegrationWithAmo__form").submit((e) => {
-        BorderRed("IntegrationWithAmo__secretKey", e)
-        BorderRed("IntegrationWithAmo__id", e)
-        BorderRed("IntegrationWithAmo__code", e)
-        BorderRed("IntegrationWithAmo__vor", e)
-        BorderRed("IntegrationWithAmo__status", e)
-        if ($(".IntegrationWithAmo__voronka").val() == null){
-            $('.IntegrationWithAmo__voronka').css({"border": "1px solid red"})
+        BorderRed("IntegrationWithAmo__secretKey", e, "Заполните это поле")
+        BorderRed("IntegrationWithAmo__id", e, "Заполните это поле")
+        BorderRed("IntegrationWithAmo__code", e, "Заполните это поле")
+        BorderRed("IntegrationWithAmo__vor", e, "Заполните это поле")
+        BorderRed("IntegrationWithAmo__status", e, "Заполните это поле")
+        if ($("select.IntegrationWithAmo__voronka").val() == null){
+            $('.IntegrationWithAmo__voronka .jq-selectbox__select').css({"border": "1px solid red"})
             e.preventDefault();
+        } else{
+            $('.IntegrationWithAmo__voronka .jq-selectbox__select').css({"border": "0 none"})
         }
     })
 }
 function IntegrationWithPotok(){
     openWindow("IntegrationWithPotok")
     $(".IntegrationWithPotok__form").submit((e) => {
-        BorderRed("IntegrationWithPotok__token", e)
+        BorderRed("IntegrationWithPotok__token", e, "Заполните это поле")
     })
 }
 

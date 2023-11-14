@@ -7,9 +7,9 @@ function AddNewCompany(){
         LenPassword(inn, 10, event)
         LenPassword(ip, 1, event,)
         LenPassword(nameSite, 1, event)
-        BorderRed("AddNewCompany__inn", event)
-        BorderRed("AddNewCompany__ip", event)
-        BorderRed("AddNewCompany__nameSite", event)
+        BorderRed("AddNewCompany__inn", event, "Заполните это поле")
+        BorderRed("AddNewCompany__ip", event, "Заполните это поле")
+        BorderRed("AddNewCompany__nameSite", event, "Заполните это поле")
     })
 }
 $(".removeCompany").click((e)=>{
@@ -24,8 +24,8 @@ $(".removeCompany").click((e)=>{
 function EditNewCompanyWindow(){
     openWindow("EditNewCompanyWindow")
     $(".EditNewCompanyWindow__form").submit((event) => {
-        BorderRed("EditNewCompany__inn", event)
-        BorderRed("EditNewCompany__ip", event)
-        BorderRed("EditNewCompany__nameSite", event)
+        BorderRed("EditNewCompany__inn", event, "Заполните это поле")
+        BorderRed("EditNewCompany__ip", event, "Заполните это поле")
+        BorderRed("EditNewCompany__nameSite", event, "Заполните это поле")
     })
 }
