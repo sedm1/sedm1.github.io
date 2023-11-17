@@ -21,9 +21,9 @@ $(() => {
         var PassNew1 = $(".new__pass").val()
         var PassNew2 = $(".new__pass-2").val()
         EqPassword(PassNew1, PassNew2, "pass__treb", event)
-        BorderRed("pass__item-inputOldPass", event)
-        BorderRed("new__pass", event)
-        BorderRed("new__pass-2", event)
+        BorderRed("pass__item-inputOldPass", event, "******")
+        BorderRed("new__pass", event, "******")
+        BorderRed("new__pass-2", event, "******")
     });
 })
 

@@ -7,14 +7,12 @@ function AddNewManager(){
         LenPassword(email, 1, event)
         BorderRed("AddNewManagerWindow__email", event, "Заполните это поле")
         BorderRed("AddNewManagerWindow__name", event, "Заполните это поле")
-        $(".RegManager .modal__text-bold").html("Пользователь " + name + " успешно создан!")
-        $(".RegManager .modal__text span").html(email)
-        openWindow("RegManager")
         event.preventDefault();
-        $(".RegManager .form__submit").click(()=>{
-            $(".AddNewManagerWindow__form").submit()
-        })
-        
+        if (($(".AddNewManagerWindow__name").css("border") == '0px none rgb(0, 0, 0)') && ($(".AddNewManagerWindow__email").css("border") == '0px none rgb(0, 0, 0)')){
+            openWindow("RegManager")
+            $(".RegManager .modal__text-bold").html("Пользователь " + name + " успешно создан!")
+            $(".RegManager .modal__text span").html(email)
+        } 
     })
 }
 function EditManager(){
@@ -32,7 +30,7 @@ function EditManager(){
 function DeleteManager(){
     openWindow("DeleteManager")
     var name = $(".ManagerName").data("name")
-    $(".DeleteManager .modal__title").html('Удаление менеджера ' + name)
+    $(".DeleteManager .modal__title").html('Удаление менеджера ' + "'" + name+ "'")
     $(".form__submit").click(() => {
         //Сюда прописать функцию удаления пользователя, перед закрытием формы
         CloseModalWindow()

@@ -117,11 +117,11 @@
             <p class="modal__text">Пожалуйста, укажите данные для входа</p>
             <form action="" class="mainModalWindow__form MakeNewMail__form">
                 <div class="form__item">
-                    <input type="email" name="email" id="MakeNewMail-email">
+                    <input type="email" name="email" class="MakeNewMail-email">
                     <div class="form__item-icon"><img class="MailChange" src="img/mail-static.png" alt="Mail"></div>
                 </div>
                 <div class="form__item">
-                    <input type="password" name="pass" id="MakeNewMail-pass">
+                    <input type="password" name="pass" class="MakeNewMail-pass">
                     <div class="form__item-icon"><img src="img/lock.png" alt="Mail"></div>
                 </div>
                 <button type="button" class="CheckAuth">Проверить авторизацию</button>
@@ -137,11 +137,11 @@
             <p class="modal__text"><span>Ящик работает корректно</span></p>
             <form action="" class="mainModalWindow__form RedachMail__form">
                 <div class="form__item">
-                    <input type="email" name="email" id="RedachMail-email" value="aaa@gmail.com">
+                    <input type="email" name="email" class="RedachMail-email" value="aaa@gmail.com">
                     <div class="form__item-icon"><img class="MailChange" src="img/mail-static.png" alt="Mail"></div>
                 </div>
                 <div class="form__item">
-                    <input type="password" name="pass" id="RedachMail-pass" value="asdasdasdasdasd">
+                    <input type="password" name="pass" class="RedachMail-pass" value="asdasdasdasdasd">
                     <div class="form__item-icon"><img src="img/lock-green.png" alt="Mail"></div>
                 </div>
                 <button type="button" class="CheckAuth">Проверить авторизацию</button>
@@ -157,11 +157,11 @@
             <p class="modal__text">Пожалуйста, проверьте данные для входа</p>
             <form action="" class="mainModalWindow__form EditMail__form">
                 <div class="form__item">
-                    <input type="email" name="email" id="EditMail-email" value="aaa@gmail.com">
+                    <input type="email" name="email" class="EditMail-email" value="aaa@gmail.com">
                     <div class="form__item-icon"><img class="MailChange" src="img/mail-static.png" alt="Mail"></div>
                 </div>
                 <div class="form__item">
-                    <input type="password" name="pass" id="EditMail-pass" value="asdasdasdasdasd">
+                    <input type="password" name="pass" class="EditMail-pass" value="asdasdasdasdasd">
                     <div class="form__item-icon"><img src="img/lock-red.png" alt="Mail"></div>
                 </div>
                 <button type="button" class="CheckAuth">Проверить авторизацию</button>
@@ -396,7 +396,7 @@
             <button class="closeWindow" onclick="CloseModalWindow()"><img src="img/icons/close.svg" alt="CloseModalWindow"></button>
             <h2 class="modal__title">Отключение всех интеграций</h2>
             <div class="modal__text">
-                <span>Вы уверены, что хотите отключить все интеграции</span>
+                <span>Вы уверены, что хотите отключить все интеграции?</span>
             </div>
             <form action="">
                 <div class="form__buttons-block">
@@ -593,10 +593,11 @@
                 <div class="modal__text-bold"></div>
                 Логин и пароль отправлен на почту: <span></span>
             </div>
-            <form action="
-            "><div class="form__buttons-block">
-                <button class="form__submit">Хорошо</button>
-            </div></form>
+            <form action="">
+                <div class="form__buttons-block">
+                    <button class="form__submit" type="submit">Хорошо</button>
+                </div>
+            </form>
             
         </div>
         <div class="modal__window DeleteCompany mainModalWindow">

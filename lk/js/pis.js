@@ -1,8 +1,9 @@
 function MakeNewMail(){
     openWindow("MakeNewMail")
-    $('#MakeNewMail-email').on('keyup',function(){
+    $('.MakeNewMail-email').on('keyup',function(){
         CheckMail($(this).val())
     })
+    
 }
 function EditMail(){
     openWindow("EditMail")
@@ -29,7 +30,8 @@ function RedachMail(){
 function MakeNewShablon(){
     openWindow("MakeNewShablon")
     $(".MakeNewShablon__form").submit((e)=>{
-        BorderRed("MakeNewShablon__title", e)
+        BorderRed("MakeNewShablon__title", e, "Введите название шаблона")
+        BorderRed("MakeNewShablon__shablon", e, "Пожалуйста, напишите структуру письма")
     })
     $(".MakeNewShablon__button").click((e)=> {
         var item = $(e.target).text()
@@ -39,7 +41,8 @@ function MakeNewShablon(){
 function EditShablon(){
     openWindow("EditShablon")
     $(".EditShablon__form").submit((e)=>{
-        BorderRed("EditShablon__title", e)
+        BorderRed("EditShablon__title", e, "Введите название шаблона")
+        BorderRed("EditShablon__shablon", e, "Пожалуйста, напишите структуру письма")
     })
     $(".EditShablon__button").click((e)=> {
         var item = $(e.target).text()
@@ -47,10 +50,8 @@ function EditShablon(){
     })
 }
 $(".MakeNewMail__form").submit((e) => {
-    var email = $("#MakeNewMail-email").val()
-    var pass = $("#MakeNewMail-pass").val()
-    LenPassword(email, 1, e)
-    LenPassword(pass, 1, e)
+    BorderRed("MakeNewMail-email", e, "Пожалуйста, введите адрес электронной почты")
+    BorderRed("MakeNewMail-pass", e, "Пожалуйста, введите пароль")
 })
 function CheckMail(mail){
     if (mail.includes("@gmail")){

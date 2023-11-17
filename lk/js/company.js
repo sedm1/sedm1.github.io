@@ -14,7 +14,7 @@ function AddNewCompany(){
 }
 $(".removeCompany").click((e)=>{
     var name = $(e.target).data("namecompany")
-    $(".DeleteCompany .modal__title").html('Удаление компании ' + name)
+    $(".DeleteCompany .modal__title").html('Удаление компании ' +  "'" + name +  "'")
     openWindow("DeleteCompany")
     $(".form__submit").click(() => {
         CloseModalWindow()

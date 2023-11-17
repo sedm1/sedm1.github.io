@@ -1414,6 +1414,7 @@ main {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   border-top-color: #5898FF;
+  right: 10px !important;
 }
 .jq-selectbox.changed .jq-selectbox__select {
   color: #5898FF;
@@ -1479,9 +1480,6 @@ main {
   top: 33px;
   width: 100%;
 }
-.jq-selectbox__dropdown .selected {
-  display: none !important;
-}
 .jq-selectbox__dropdown ul {
   padding: 10px 15px;
 }
@@ -1491,11 +1489,14 @@ main {
   color: #424242;
   margin-bottom: 7px;
 }
-.jq-selectbox__dropdown li.disabled, .jq-selectbox__dropdown li.sel {
+.jq-selectbox__dropdown li.disabled {
   display: none !important;
 }
 .jq-selectbox__dropdown li:last-child {
   margin-bottom: 0px;
+}
+.jq-selectbox__dropdown li.sel {
+  color: #5898FF;
 }
 
 .modal__window {
@@ -1579,12 +1580,22 @@ main {
 }
 
 .DeleteManager {
-  max-width: 600px;
+  max-width: 581px;
   width: 100%;
 }
 
-.DeleteIntegration {
-  max-width: 550px;
+.DeleteCompany {
+  max-width: 484px;
+  width: 100%;
+}
+
+.RegManager {
+  max-width: 560px;
+  width: 100%;
+}
+
+.DeleteIntegration, .DeleteAllIntegration {
+  max-width: 493px;
   width: 100%;
 }
 
@@ -1718,6 +1729,13 @@ main {
   color: #959799;
 }
 
+.MakeNewMail {
+  max-width: 490px;
+  width: 100%;
+}
+.MakeNewMail .modal__text {
+  color: #959799;
+}
 .MakeNewMail__form .form__item {
   margin-bottom: 0px;
 }
@@ -1725,6 +1743,10 @@ main {
   margin-bottom: 20px;
 }
 
+.EditMail, .RedachMail {
+  max-width: 490px;
+  width: 100%;
+}
 .EditMail .modal__text, .RedachMail .modal__text {
   color: #959799;
   font-size: 16px;
