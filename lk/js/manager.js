@@ -30,7 +30,7 @@ function EditManager(){
 function DeleteManager(){
     openWindow("DeleteManager")
     var name = $(".ManagerName").data("name")
-    $(".DeleteManager .modal__title").html('Удаление менеджера ' + "'" + name+ "'")
+    $(".DeleteManager .modal__title").html('Удаление менеджера ' + "&quot" + name+ "&quot")
     $(".form__submit").click(() => {
         //Сюда прописать функцию удаления пользователя, перед закрытием формы
         CloseModalWindow()
