@@ -1,0 +1,76 @@
+@import 'vars'
+@import 'colors'
+*
+    margin: 0 
+    padding: 0 
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+    scroll-behavior: smooth
+a
+    color: inherit
+    font-family: inherit
+    display: block
+    text-decoration: none
+    cursor: pointer
+button
+    border: 0 none
+    outline: 0 none
+    font-family: inherit
+    color: inherit
+    cursor: pointer
+img
+    width: 100%
+    height: auto
+li
+    list-style: none
+.container
+    max-width: $MainContainer
+    width: 100%
+    margin: 0 auto
+span
+    color: $yellow
+    font-size: inherit
+    font-weight: inherit
+input, textarea
+    border: 0 none
+    outline: 0 none
+.mainButton
+    padding: 16px 50px
+    background: $yellow
+    font-size: 18px
+    font-weight: 600
+    font-family: 'Inter', sans-serif
+    border-radius: 8px
+    transition: .3s
+    color: $white
+    &:hover
+        background: $orange
+    &:active
+        background: $ButtonActive
+.mainButtonSecond
+    padding: 12px 32px
+    background: transparent
+    font-size: 12px
+    font-weight: 600
+    font-family: 'Inter', sans-serif
+    border-radius: 8px
+    transition: .3s
+    border: 1px solid $yellow
+    color: $white
+    &:hover
+        background: $yellow
+    &:active
+        background: rgba(243, 193, 126, 0.50)
+h1, h2, h3
+    font-family: 'Inter', sans-serif
+.section__title
+    font-size: 28px
+    font-weight: 600
+@media screen and (max-width: $MainContainer)
+    .container
+        max-width: 98%
+@media screen and (max-width: $TabletContainer)
+    .mainButton
+        font-size: 14px
+    .section__title
+        font-size: 20px

@@ -1,0 +1,442 @@
+@import 'main'
+header
+    background: $black
+    padding: 8px 0px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__left
+        display: flex
+        align-items: center
+    &__logo
+        display: flex
+        align-items: center
+        margin-right: 31px
+        color: $white
+        &-img
+            width: 40px
+            margin-right: 10px
+        &-text
+            font-size: 14px
+            font-weight: 700
+    &__menu
+        display: flex
+        align-items: center
+        li
+            font-size: 12px
+            font-weight: 400
+            margin-right: 37px
+            color: $white
+            &:last-child
+                margin-right: 0px
+.main
+    background-image: url("../img/mainBg.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    padding-top: 96px
+    padding-bottom: 159px
+    &__title
+        max-width: 519px
+        font-size: 44px
+        font-weight: 700
+        margin-bottom: 16px
+        color: $white
+    &__descript
+        font-size: 16px
+        font-weight: 400
+        color: $white
+        max-width: 410px
+    &__info
+        background: $white
+        padding: 8px
+        border-radius: 14px
+        max-width: fit-content
+        margin-top: 25px
+        &-item
+            display: flex
+            align-items: center
+            margin-bottom: 11px
+            .item-round
+                min-width: 40px
+                max-width: 40px
+                height: 40px
+                margin-right: 10px
+            .item-text
+                max-width: 280px
+                color: #000
+                font-family: 'Inter', sans-serif
+                font-size: 16px
+                font-weight: 40
+        &-button
+            width: 100%
+.about
+    margin-top: 80px
+    &__pre-title
+        text-align: center
+        max-width: 627px
+        margin: 0 auto
+    &__block
+        margin-top: 72px
+    &__item
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__item-1
+        margin-bottom: 38px
+        .about__item-info
+            max-width: 519px
+            width: 100%
+        .about__item-img
+            max-width: 549px
+            width: 100%
+            margin-left: 24px
+    &__item-list
+        max-width: 370px
+        width: 100%
+        margin-top: 32px
+
+        li
+            position: relative
+            margin-left: 40px
+            margin-bottom: 12px
+            font-size: 16px
+            font-weight: 400
+            color: $black
+            &:last-child
+                margin-bottom: 0px
+            &::before
+                content: ""
+                position: absolute
+                top: 5px
+                left: -40px
+                width: 8px
+                height: 8px
+                background: $yellow
+    .line
+        border-top: 1px dashed $black
+        height: 1px
+        width: 100%
+        margin-top: 48px
+    .about__item-2
+        align-items: center
+        .about__item-img
+            max-width: 491px
+            width: 100%
+        .about__item-info
+            padding: 24px 40px
+            border-radius: 8px
+            background: $whiteYellow
+            font-size: 16px
+            font-weight: 400
+            color: $black
+            max-width: 519px
+            width: 100%
+            position: relative
+            .info-icon
+                position: absolute
+                width: 46px
+                height: 46px
+                left: 0
+                top: -54px
+    &__services
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+        &-item
+            display: flex
+            align-items: flex-start
+            padding: 24px 40px
+            border-radius: 8px
+            background: $black
+            max-width: 519px
+            width: 100%
+            .item-img
+                min-width: 64px
+                width: 64px
+                height: 64px
+                margin-right: 24px
+            .item-text
+                font-size: 16px
+                font-weight: 400
+                color: $white
+                line-height: 22.4px
+.help
+    margin-top: 120px
+    .section__title
+        max-width: 519px
+        margin-bottom: 32px
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 24px
+        &-item
+            display: flex
+            align-items: flex-start
+            padding: 24px
+            border: 1px solid $yellow
+            border-radius: 8px
+            max-width: 519px
+            width: 100%
+            &:nth-child(2n + 1):last-child 
+                grid-column: span 2
+                margin: auto
+            .item-list
+                margin-top: 10px
+                li
+                    position: relative
+                    margin-left: 20px
+                    &::before
+                        content: ""
+                        top: 8px
+                        left: -15px
+                        width: 3px
+                        height: 3px
+                        border-radius: 100%
+                        background: #000
+                        position: absolute
+    .item-img
+        min-width: 64px
+        width: 64px
+        height: 64px
+        margin-right: 24px
+    .item-text
+        font-size: 16px
+        font-weight: 400
+        color: $white
+        line-height: 22.4px
+        color: $black
+.how
+    margin-top: 123px
+    .section__title
+        margin-bottom: 32px
+    &__block
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        grid-gap: 24px
+        &-item
+            max-width: 338px
+            width: 100%
+            padding: 24px
+            border: 1px solid $yellow
+            border-radius: 8px
+            .item-img
+                width: 64px
+                height: 64px
+                margin-bottom: 16px
+            .item-title
+                font-size: 20px
+                font-weight: 700
+                color: $black
+                margin-bottom: 6px
+            .item-descript
+                font-size: 16px
+                font-weight: 400
+                color: $gray
+                font-family: 'Inter', sans-serif
+footer
+    margin-top: 80px
+    background: $black
+    .container
+        display: flex
+        justify-content: space-between
+    .section__title
+        color: $white
+        margin-bottom: 10px
+        max-width: 410px
+    .footer__bg
+        background-image: url("../img/footer__bg.png")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        padding-top: 40px
+        padding-bottom: 64px
+.footer
+    &__logo
+        display: flex
+        align-items: center
+        margin-bottom: 22px
+        color: $white
+        &-img
+            width: 40px
+            margin-right: 16px
+        &-text
+            font-size: 20px
+            font-weight: 700
+    &__descript
+        max-width: 410px
+        color: $white
+    &__menu
+        margin-top: 16px
+        li
+            color: $yellow
+            text-decoration: underline
+            margin-bottom: 16px
+            transition: .3s
+            &:hover
+                color: $orange
+            &:last-child
+                margin-bottom: 0px
+    &__button
+        margin-top: 32px
+    &__polit
+        margin-top: 81px
+        font-size: 12px
+        font-weight: 400
+        color: $yellow
+        transition: .3s
+        margin-bottom: 9px
+        text-decoration: underline
+        &:hover
+            color: $orange
+    &__prava
+        font-size: 12px
+        font-weight: 400
+        color: $white
+    &__form
+        max-width: 519px
+        width: 100%
+
+        .form__title
+            font-size: 30px
+            font-weight: 600
+            color: $white
+            margin-bottom: 24px
+        .form__item
+            color: $white
+            margin-bottom: 8px
+            .item-name
+                font-size: 14px
+                font-weight: 400
+                margin-bottom: 4px
+            input, textarea
+                width: 100%
+                padding: 8px 24px
+                background: $white
+                border-radius: 8px
+                font-size: 16px
+                font-weight: 400
+                color: $black
+                &::placeholder
+                    font-size: 16px
+                    font-weight: 400
+                    color: #D9D9D9
+            textarea
+                height: 64px
+                resize: vertical
+        .form__block
+            display: flex
+            justify-content: space-between
+            .form__item
+                max-width: 49%
+                width: 100%
+        .form__submit
+            width: 100%
+            margin-top: 16px
+        .form__neo
+            font-size: 12px
+            font-weight: 400
+            color: #919196
+            margin-top: 24px
+@media screen and (max-width: $MainContainer)
+    .about
+        margin-top: 32px
+        &__item-1
+            flex-direction: column-reverse
+            align-items: center
+        &__item-2
+            flex-direction: column
+            .about__item-info
+                margin-top: 85px
+        &__services
+            flex-direction: column
+            align-items: center
+            &-item
+                margin-bottom: 16px
+                &:last-child
+                    margin-bottom: 0px
+    .help
+        margin-top: 64px
+        &__block
+            display: flex
+            flex-direction: column
+            &-item
+                max-width: 100%
+    .how
+        margin-top: 64px
+        &__block
+            flex-direction: column
+            align-items: center
+            &-item
+                max-width: 100%
+    footer 
+        .container
+            flex-direction: column-reverse
+            align-items: center
+    .footer
+        &__right
+            margin-bottom: 42px
+        &__left
+            text-align: center
+        &__logo
+            justify-content: center
+        &__form 
+            .form__block
+                flex-direction: column
+                .form__item
+                    max-width: 100%
+@media screen and (max-width: $TabletContainer)
+    .header__menu
+        display: none
+    .about__item-1 .about__item-img, .about__item-2 .about__item-img
+        max-width: 85%
+    .main__title
+        font-size: 37px
+    .main__descript
+        font-size: 14px
+    .header__logo
+        margin-right: 0px
+    .about__pre-title
+        font-size: 16px
+    .about__block
+        margin-top: 40px
+    .about__item-list li
+        font-size: 14px
+    .about .about__item-2 .about__item-info
+        font-size: 14px
+        padding: 16px
+    .about__services-item
+        padding: 16px
+        .item-img
+            width: 40px
+            height: 40px
+            margin-right: 12px
+            min-width: 40px
+        .item-text
+            font-size: 14px
+            line-height: normal
+    .help__block-item
+        padding: 16px
+        .item-img
+            margin-right: 12px
+            width: 40px
+            height: 40px
+            min-width: 40px
+        .item-text
+            font-size: 14px
+    .how__block-item
+        padding: 16px
+        .item-img
+            width: 50px
+            height: 50px
+        .item-title
+            font-size: 16px
+        .item-descript
+            font-size: 14px
+@media screen and (max-width: 500px)
+    .main__info
+        max-width: 100%
+@import 'modal'

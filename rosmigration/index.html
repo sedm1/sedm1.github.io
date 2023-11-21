@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <!--  STYLES  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg" id="bg">
+        <div class="modal__window" id="modal__window">
+            <button class="clodeModal" onclick="CloseModalWindow()"><img src="img/close.svg" alt="Close"></button>
+            <div class="modal__left">
+                <h2 class="form__title">Получите <span>бесплатную консультацию </span>сегодня</h2>
+                <p class="form__descript">Заполните форму и наш эксперт свяжется с вами, чтобы обсудить ваши иммиграционные вопросы и предложить профессиональные решения</p>
+                <div class="form__prava">Нажимая кнопку, вы соглашаетесь с <a href="#">Политикой обработки персональных данных</a></div>
+            </div>
+            <div class="modal__right">
+                <form action="" class="footer__form" method="post">
+                    <div class="form__item">
+                        <div class="item-name">Имя и фамилия*:</div>
+                        <input type="text" required placeholder="Иван Иванов">
+                    </div>
+                    <div class="form__block">
+                        <div class="form__item">
+                            <div class="item-name">Номер телефона*:</div>
+                            <input type="text" required placeholder="+7 999 999 99 99">
+                        </div>
+                        <div class="form__item">
+                            <div class="item-name">Имя и фамилия*:</div>
+                            <input type="email" required placeholder="mail@mail.ru">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="item-name">Ваше сообщение:</div>
+                        <textarea placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" class="form__submit mainButton">Задать вопрос</button>
+                    <div class="form__neo">* необходимо указать</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header__left">
+                <div class="header__logo">
+                    <div class="header__logo-img"><img src="img/logo.svg" alt="HeaderLogo"></div>
+                    <div class="header__logo-text"><span>Рос</span>Миграция</div>
+                </div>
+                <nav>
+                    <ul class="header__menu">
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Ситуации при обращения</a></li>
+                        <li><a href="#">Как мы работаем</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <button class="quest mainButtonSecond" onclick="OpenModalWindow()">Задать вопрос</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <h1 class="main__title"><span>Более 20 лет</span> экспертизы в решении <span>иммиграционных</span> вопросов</h1>
+                <p class="main__descript">Профессиональная помощь с документами, видом на жительство и гражданством России</p>
+                <div class="main__info">
+                    <div class="main__info-item">
+                        <div class="item-round"><img src="img/roundwidtharrow.svg" alt="InfoRound"></div>
+                        <div class="item-text">Зарегистрируйтесь на бесплатную консультацию прямо сейчас</div>
+                    </div>
+                    <button class="main__info-button mainButton">Получить консультацию</button>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h3 class="about__pre-title">Профессиональные консультации и разработка юридических стратегий для <span>успешного решения ваших иммиграционных задач</span></h3>
+                <div class="about__block">
+                    <div class="about__item about__item-1">
+                        <div class="about__item-info">
+                            <h2 class="section__title"><span>Оказание помощи</span> в подготовке документов для предоставления в Миграционную службу в целях получения разрешения:</h2>
+                            <ul class="about__item-list">
+                                <li>На временное проживание на территории Российской Федерации (РВП)</li>
+                                <li>Вида на жительство на территории Российской Федерации (ВЖ)</li>
+                                <li>Гражданства Российской Федерации. Консультирование по вопросам получения РВП, ВЖ, гражданства Российской Федерации</li>
+                            </ul>
+                            <div class="line"></div>
+                        </div>
+                        <div class="about__item-img"><img src="img/about-1.png" alt="AboutItem"></div>
+                    </div>
+                    <div class="about__item about__item-2">
+                        <div class="about__item-img"><img src="img/about-2.png" alt="AboutItem"></div>
+                        <div class="about__item-info">
+                            <div class="info-icon"><img src="img/voskl.svg" alt="voskl"></div>
+                            Если папы, мамы, бабушки, дедушки, а может прарадеды и прабабушки проживали на территории России (до 1917 года и после 1917 года) - в оперативном порядке осуществим поиск архивных документов любой сложности, окажем помощь в подтверждении их проживание на территории России, поможем установить прямую восходящую линию для дальнейшего обращения в Миграционную службу в целях получения гражданства Российской Федерации
+                        </div>
+                    </div>
+                </div>
+                <div class="about__services">
+                    <div class="about__services-item">
+                        <div class="item-img"><img src="img/ser-1.svg" alt="ServicesImg"></div>
+                        <div class="item-text">Окажем помощь по снятию с регистрационного учета по месту жительства (выписка) бывшего члена семьи и иных лиц, проживающих в жилом помещении, в судебном порядке</div>
+                    </div>
+                    <div class="about__services-item">
+                        <div class="item-img"><img src="img/ser-2.svg" alt="ServicesImg"></div>
+                        <div class="item-text">При постановке запрета на выезд ребенка одним из родителей окажем помощь в решении вопроса о снятии такового запрета или наоборот помощь в правильном оформлении запрета на выезд ребенка из России</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help">
+            <div class="container">
+                <h2 class="section__title">Оказываем помощь в решении <span>сложных и нестандартных ситуаций</span></h2>
+                <div class="help__block">
+                    <div class="help__block-item">
+                        <div class="item-img"><img src="img/help-1.svg" alt="HelpIcon"></div>
+                        <div class="item-text">При отказе Миграционной службой в выдаче патента на работу установление причин отказа, помощь в составлении заявлений в Миграционную службу с целью выяснения причин отказа и обжалование действий сотрудников Миграционной службы, в том числе в судебном порядке по вопросу выдачи патента</div>
+                    </div>
+                    <div class="help__block-item">
+                        <div class="item-img"><img src="img/help-2.svg" alt="HelpIcon"></div>
+                        <div class="item-text">При отказе в получении, выдаче разрешения на временное проживание (РВП) установление причин отказа, помощь в составлении заявлений в Миграционную службу с целью выяснения причин отказа и обжалование действий сотрудников Миграционной службы, в том числе в судебном порядке по вопросу выдачи РВП</div>
+                    </div>
+                    <div class="help__block-item">
+                        <div class="item-img"><img src="img/help-3.svg" alt="HelpIcon"></div>
+                        <div class="item-text">При отказе в получении, выдаче вида на жительство (ВЖ) установление причин отказа, помощь в составлении заявлений в Миграционную службу с целью выяснения причин отказа и обжалование действий сотрудников Миграционной службы, в том числе в судебном порядке по вопросу выдачи ВЖ</div>
+                    </div>
+                    <div class="help__block-item">
+                        <div class="item-img"><img src="img/help-4.svg" alt="HelpIcon"></div>
+                        <div class="item-text">При отказе в получении гражданства Российской Федерации установление причин отказа, помощь в составлении заявлений в Миграционную службу с целью выяснения причин отказа и обжалование действий сотрудников Миграционной службы, в том числе в судебном порядке по вопросу выдачи гражданства Российской Федерации</div>
+                    </div>
+                    <div class="help__block-item">
+                        <div class="item-img"><img src="img/help-5.svg" alt="HelpIcon"></div>
+                        <div class="item-text">Установление в судебном порядке факта, имеющего юридическое значение, постоянного проживания на территории Российской Федерации с целью получения паспорта гражданина Российской Федерации при наличии оснований</div>
+                    </div>
+                    <div class="help__block-item">
+                        <div class="item-img"><img src="img/help-6.svg" alt="HelpIcon"></div>
+                        <div class="item-text">Обжалование в органах власти постановлений о привлечении к административной ответственности <br/> Обжалование, вынесенных судом, постановлений о выдворении с территории Российской Федерации</div>
+                    </div>
+                    <div class="help__block-item">
+                        <div class="item-img"><img src="img/help-7.svg" alt="HelpIcon"></div>
+                        <div class="item-text">При наличии в базе данных Миграционной службы выставленного запрета на въезд на территорию Российской Федерации поиск путей (оснований) снятия данного запрета:
+                            <ul class="item-list">
+                                <li>Обжалование выставленного запрета в Миграционной службе</li>
+                                <li>Сопровождение в суде искового заявления по вопросу снятия запрета на въезд на территорию Российской Федерации</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how">
+            <div class="container">
+                <h2 class="section__title">Как мы работаем</h2>
+                <div class="how__block">
+                    <div class="how__block-item">
+                        <div class="item-img"><img src="img/how-1.svg" alt="HowIcon"></div>
+                        <h3 class="item-title">1. Подача заявки</h3>
+                        <p class="item-descript">Оставьте заявку прямо на сайте или свяжитесь с нами по телефону горячей линии — начните свой путь к решению миграционных вопросов с нами</p>
+                    </div>
+                    <div class="how__block-item">
+                        <div class="item-img"><img src="img/how-2.svg" alt="HowIcon"></div>
+                        <h3 class="item-title">2. Консультация</h3>
+                        <p class="item-descript">В ходе индивидуальной консультации мы изучим особенности вашего случая, ответим на все вопросы и предложим оптимальные рекомендации</p>
+                    </div>
+                    <div class="how__block-item">
+                        <div class="item-img"><img src="img/how-3.svg" alt="HowIcon"></div>
+                        <h3 class="item-title">3. Тщательный анализ</h3>
+                        <p class="item-descript">Наши эксперты анализируют вашу ситуацию, используя актуальные положения законодательства РФ, чтобы разработать стратегию действий, наиболее эффективную для вашего случая</p>
+                    </div>
+                    <div class="how__block-item">
+                        <div class="item-img"><img src="img/how-4.svg" alt="HowIcon"></div>
+                        <h3 class="item-title">4. Подготовка документов</h3>
+                        <p class="item-descript">Тщательно подготовим и оформим все необходимые документы, что позволит ускорить процесс получения желаемого результата</p>
+                    </div>
+                    <div class="how__block-item">
+                        <div class="item-img"><img src="img/how-5.svg" alt="HowIcon"></div>
+                        <h3 class="item-title">5. Результат</h3>
+                        <p class="item-descript">Получение РВП, ВНЖ или гражданства РФ становится реальностью благодаря нашей квалифицированной поддержке на каждом этапе вашего пути</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__bg">
+            <div class="container">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <div class="footer__logo-img"><img src="img/logo.svg" alt="footerLogo"></div>
+                        <div class="footer__logo-text"><span>Рос</span>Миграция</div>
+                    </div>
+                    <h2 class="section__title">Экспертное Сопровождение <span>Миграционных Процессов</span></h2>
+                    <p class="footer__descript">Мы быстро разберемся в вашем вопросе и предложим эффективные решения!</p>
+                    <nav>
+                        <ul class="footer__menu">
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Ситуации при обращения</a></li>
+                            <li><a href="#">Как мы работаем</a></li>
+                        </ul>
+                    </nav>
+                    <button class="mainButtonSecond footer__button" onclick="OpenModalWindow()">Получить бесплатную консультацию</button>
+                    <a class="footer__polit" href="#">Политика конфиденциальности</a>
+                    <div class="footer__prava">2023, Все права защищены</div>
+                </div>
+                <div class="footer__right">
+                    <form action="" class="footer__form" method="post">
+                        <h1 class="form__title"><span>Оставьте свой запрос</span> и мы свяжемся с Вами в ближайшее время</h1>
+                        <div class="form__item">
+                            <div class="item-name">Имя и фамилия*:</div>
+                            <input type="text" required placeholder="Иван Иванов">
+                        </div>
+                        <div class="form__block">
+                            <div class="form__item">
+                                <div class="item-name">Номер телефона*:</div>
+                                <input type="text" required placeholder="+7 999 999 99 99">
+                            </div>
+                            <div class="form__item">
+                                <div class="item-name">Имя и фамилия*:</div>
+                                <input type="email" required placeholder="mail@mail.ru">
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="item-name">Ваше сообщение:</div>
+                            <textarea placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="form__submit mainButton">Задать вопрос</button>
+                        <div class="form__neo">* необходимо указать</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
