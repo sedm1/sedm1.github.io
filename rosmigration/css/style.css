@@ -829,11 +829,15 @@ footer .footer__bg {
   width: 100%;
   border-radius: 8px;
   position: relative;
+  display: none;
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .modal__window-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 1;
 }
 .modal__window .form__title {
@@ -873,6 +877,44 @@ footer .footer__bg {
   background: #FFFFFF;
   top: -48px;
   right: 0;
+}
+
+#modal__window-2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  max-width: 632px;
+}
+#modal__window-2 .modal__ok {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -50%;
+  -webkit-transform: translate(-50%, 78%);
+          transform: translate(-50%, 78%);
+  left: 50%;
+}
+#modal__window-2 .ok__title {
+  margin-top: 16px;
+  max-width: 360px;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+#modal__window-2 .ok__descript {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 360px;
+  color: #FFFFFF;
+}
+#modal__window-2 .mainButton {
+  margin-top: 24px;
 }
 
 @media screen and (max-width: 1062px) {

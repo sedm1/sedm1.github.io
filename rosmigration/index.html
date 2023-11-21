@@ -14,7 +14,13 @@
 </head>
 <body>
     <div class="bg" id="bg">
-        <div class="modal__window" id="modal__window">
+        <div class="modal__window" id="modal__window-2">
+            <div class="modal__ok"><img src="img/ok.png" alt="Ok"></div>
+            <h2 class="ok__title">Заявка успешно отправлена!</h2>
+            <p class="ok__descript">Благодарим за обращение! Наш менеджер свяжется с вами в ближайшее время.</p>
+            <button class="mainButton" id="OkButton">Вернуться на главную</button>
+        </div>
+        <div class="modal__window" id="modal__window-1">
             <button class="clodeModal" onclick="CloseModalWindow()"><img src="img/close.svg" alt="Close"></button>
             <div class="modal__left">
                 <h2 class="form__title">Получите <span>бесплатную консультацию </span>сегодня</h2>
@@ -22,24 +28,29 @@
                 <div class="form__prava">Нажимая кнопку, вы соглашаетесь с <a href="#">Политикой обработки персональных данных</a></div>
             </div>
             <div class="modal__right">
-                <form action="" class="footer__form" method="post">
+                <form 
+                action="mail.php" 
+                class="footer__form" 
+                method="post" 
+                id="modal__form"
+                >
                     <div class="form__item">
                         <div class="item-name">Имя и фамилия*:</div>
-                        <input type="text" required placeholder="Иван Иванов">
+                        <input name="name" type="text" required placeholder="Иван Иванов">
                     </div>
                     <div class="form__block">
                         <div class="form__item">
                             <div class="item-name">Номер телефона*:</div>
-                            <input type="text" required placeholder="+7 999 999 99 99">
+                            <input name="phone" type="text" required placeholder="+7 999 999 99 99">
                         </div>
                         <div class="form__item">
                             <div class="item-name">Имя и фамилия*:</div>
-                            <input type="email" required placeholder="mail@mail.ru">
+                            <input name="mail" type="email" required placeholder="mail@mail.ru">
                         </div>
                     </div>
                     <div class="form__item">
                         <div class="item-name">Ваше сообщение:</div>
-                        <textarea placeholder="Ваше сообщение"></textarea>
+                        <textarea name="mess" placeholder="Ваше сообщение"></textarea>
                     </div>
                     <button type="submit" class="form__submit mainButton">Задать вопрос</button>
                     <div class="form__neo">* необходимо указать</div>
@@ -212,25 +223,25 @@
                     <div class="footer__prava">2023, Все права защищены</div>
                 </div>
                 <div class="footer__right">
-                    <form action="" class="footer__form" method="post">
+                    <form action="mail.php" class="footer__form" method="post">
                         <h1 class="form__title"><span>Оставьте свой запрос</span> и мы свяжемся с Вами в ближайшее время</h1>
                         <div class="form__item">
                             <div class="item-name">Имя и фамилия*:</div>
-                            <input type="text" required placeholder="Иван Иванов">
+                            <input name="name" type="text" required placeholder="Иван Иванов">
                         </div>
                         <div class="form__block">
                             <div class="form__item">
                                 <div class="item-name">Номер телефона*:</div>
-                                <input type="text" required placeholder="+7 999 999 99 99">
+                                <input name="phone" type="text" required placeholder="+7 999 999 99 99">
                             </div>
                             <div class="form__item">
-                                <div class="item-name">Имя и фамилия*:</div>
-                                <input type="email" required placeholder="mail@mail.ru">
+                                <div class="item-name">E-mail:</div>
+                                <input name="mail" type="email" required placeholder="mail@mail.ru">
                             </div>
                         </div>
                         <div class="form__item">
                             <div class="item-name">Ваше сообщение:</div>
-                            <textarea placeholder="Ваше сообщение"></textarea>
+                            <textarea name="mess" placeholder="Ваше сообщение"></textarea>
                         </div>
                         <button type="submit" class="form__submit mainButton">Задать вопрос</button>
                         <div class="form__neo">* необходимо указать</div>
