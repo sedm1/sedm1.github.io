@@ -27,3 +27,7 @@ function CloseModalWindow(){
         bg.classList.remove('bg-active');
     }, 100)
 }
+
+setTimeout(() => {
+    OpenModalWindow()
+}, 120000)

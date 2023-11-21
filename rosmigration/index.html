@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    
+    <!--  SEO  -->
+    <title>РосМиграция</title>
+    <meta name="description" content="Описание сайта">
+    <meta name="keywords" content="ключевые фразы или слова через запятую" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/png">
     <!--  STYLES  -->
     <link rel="stylesheet" href="css/style.css">
     <!--  FONTS  -->
@@ -67,9 +72,9 @@
                 </div>
                 <nav>
                     <ul class="header__menu">
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Ситуации при обращения</a></li>
-                        <li><a href="#">Как мы работаем</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#help">Ситуации</a></li>
+                        <li><a href="#how">Как мы работаем</a></li>
                     </ul>
                 </nav>
             </div>
@@ -88,14 +93,14 @@
                         <div class="item-round"><img src="img/roundwidtharrow.svg" alt="InfoRound"></div>
                         <div class="item-text">Зарегистрируйтесь на бесплатную консультацию прямо сейчас</div>
                     </div>
-                    <button class="main__info-button mainButton">Получить консультацию</button>
+                    <button class="main__info-button mainButton" onclick="OpenModalWindow()">Получить консультацию</button>
                 </div>
             </div>
         </section>
         <section class="about">
             <div class="container">
                 <h3 class="about__pre-title">Профессиональные консультации и разработка юридических стратегий для <span>успешного решения ваших иммиграционных задач</span></h3>
-                <div class="about__block">
+                <div class="about__block" id="services">
                     <div class="about__item about__item-1">
                         <div class="about__item-info">
                             <h2 class="section__title"><span>Оказание помощи</span> в подготовке документов для предоставления в Миграционную службу в целях получения разрешения:</h2>
@@ -128,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section class="help">
+        <section class="help" id="help">
             <div class="container">
                 <h2 class="section__title">Оказываем помощь в решении <span>сложных и нестандартных ситуаций</span></h2>
                 <div class="help__block">
@@ -168,7 +173,7 @@
                 </div>
             </div>
         </section>
-        <section class="how">
+        <section class="how" id="how">
             <div class="container">
                 <h2 class="section__title">Как мы работаем</h2>
                 <div class="how__block">
@@ -214,7 +219,7 @@
                     <nav>
                         <ul class="footer__menu">
                             <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Ситуации при обращения</a></li>
+                            <li><a href="#">Ситуации</a></li>
                             <li><a href="#">Как мы работаем</a></li>
                         </ul>
                     </nav>
