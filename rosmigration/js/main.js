@@ -35,12 +35,12 @@ setTimeout(() => {
 IMask(
   document.getElementById('phone-mask'),
   {
-    mask: '+{7}(000)000-00-00'
+    mask: '+0(000)000-00-00'
   }
 )
 IMask(
   document.getElementById('phone-mask-modal'),
   {
-    mask: '+{7}(000)000-00-00'
+    mask: '+0(000)000-00-00'
   }
 )
