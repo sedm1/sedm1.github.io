@@ -80,3 +80,23 @@ function RemoveMailIcon(mail){
     }
     
 }
+
+
+$(".MakeNewMail-pass").on( "focusout", function() {
+    BorderRedOnKeyIp("MakeNewMail-pass", "Пожалуйста, введите пароль")
+})
+$(".MakeNewMail-email").on( "focusout", function() {
+    BorderRedOnKeyIp("MakeNewMail-email", "Пожалуйста, введите адрес электронной почты")
+})
+$(".EditShablon__title").on( "focusout", function() {
+    BorderRedOnKeyIp("EditShablon__title", "Введите название шаблона")
+})
+$(".EditShablon__shablon").on( "focusout", function() {
+    BorderRedOnKeyIp("EditShablon__shablon", "Пожалуйста, напишите структуру письма")
+})
+$(".MakeNewShablon__title").on( "focusout", function() {
+    BorderRedOnKeyIp("MakeNewShablon__title", "Введите название шаблона")
+})
+$(".MakeNewShablon__shablon").on( "focusout", function() {
+    BorderRedOnKeyIp("MakeNewShablon__shablon", "Пожалуйста, напишите структуру письма")
+})

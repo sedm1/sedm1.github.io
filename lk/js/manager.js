@@ -38,3 +38,16 @@ function DeleteManager(){
     })
     
 }
+
+$(".AddNewManagerWindow__email").on( "focusout", function() {
+    BorderRedOnKeyIp("AddNewManagerWindow__email", "Заполните это поле")
+})
+$(".AddNewManagerWindow__name").on( "focusout", function() {
+    BorderRedOnKeyIp("AddNewManagerWindow__name", "Заполните это поле")
+})
+$(".EditNewManagerWindow__name").on( "focusout", function() {
+    BorderRedOnKeyIp("EditNewManagerWindow__name", "Заполните это поле")
+})
+$(".EditNewManagerWindow__email").on( "focusout", function() {
+    BorderRedOnKeyIp("EditNewManagerWindow__email", "Заполните это поле")
+})

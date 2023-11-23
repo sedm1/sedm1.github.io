@@ -61,3 +61,22 @@ $(()=>{
         });
     }, 100)
 })
+
+$(".IntegrationWithBitrix__name").on( "focusout", function() {
+    BorderRedOnKeyIp("IntegrationWithBitrix__name", "Заполните это поле")
+})
+$(".IntegrationWithPotok__token").on( "focusout", function() {
+    BorderRedOnKeyIp("IntegrationWithPotok__token", "Заполните это поле")
+})
+$(".IntegrationWithAmo__secretKey").on( "focusout", function() {
+    BorderRedOnKeyIp("IntegrationWithAmo__secretKey", "Заполните это поле")
+})
+$(".IntegrationWithAmo__id").on( "focusout", function() {
+    BorderRedOnKeyIp("IntegrationWithAmo__id", "Заполните это поле")
+})
+$(".IntegrationWithAmo__code").on( "focusout", function() {
+    BorderRedOnKeyIp("IntegrationWithAmo__code", "Заполните это поле")
+})
+$(".IntegrationWithAmo__status").on( "focusout", function() {
+    BorderRedOnKeyIp("IntegrationWithAmo__status", "Заполните это поле")
+})

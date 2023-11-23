@@ -98,13 +98,28 @@ function BorderRed(ClassOfInput, e, textPlace){
         $("." + ClassOfInput).attr("placeholder", "");
         $("." + ClassOfInput).css({"border": "0 none"})
     }
-    
 }
+function BorderRedOnKeyIp(ClassOfInput, textPlace){
+    var vall = $("." + ClassOfInput).val()
+    if (vall.length == 0){
+        $("." + ClassOfInput).attr("placeholder", ""+textPlace);
+        $("." + ClassOfInput).css({"border": "1px solid red"})
+    } else{
+        $("." + ClassOfInput).attr("placeholder", "");
+        $("." + ClassOfInput).css({"border": "0 none"})
+    }
+}
+$(".main__form-name").on( "focusout", function() {
+    BorderRedOnKeyIp("main__form-name", "Заполните это поле")
+})
+$(".main__form-email").on( "focusout", function() {
+    BorderRedOnKeyIp("main__form-name", "Заполните это поле")
+})
 $(".profile__logo-form").submit((e) => {
     BorderRed("main__form-name", e, "Заполните это поле")
     BorderRed("main__form-email", e, "Заполните это поле")
-})
 
+})
 $('select').styler({
 	selectSearch: true
 });

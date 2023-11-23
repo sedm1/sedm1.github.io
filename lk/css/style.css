@@ -507,10 +507,10 @@ main {
   font-size: 14px;
   font-weight: 600;
   width: 100%;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 .profile .form__item input:focus {
-  border: 2px solid #5898FF;
+  border: 1px solid #5898FF !important;
 }
 .profile .form__item input::-webkit-input-placeholder {
   font-size: 14px;
@@ -594,10 +594,10 @@ main {
   font-weight: 600;
   max-width: 465px;
   width: 100%;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 .profile .pass__item-input:focus {
-  border: 2px solid #5898FF;
+  border: 1px solid #5898FF !important;
 }
 .profile .pass__item-input::-webkit-input-placeholder {
   font-size: 14px;
@@ -1414,7 +1414,8 @@ main {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   border-top-color: #5898FF;
-  right: 10px !important;
+  right: 13px !important;
+  top: 16px;
 }
 .jq-selectbox.opened .jq-selectbox__dropdown {
   -webkit-box-shadow: 0px 6px 10px 0px rgba(34, 60, 80, 0.1);
@@ -1429,25 +1430,7 @@ main {
   font-weight: 600;
 }
 .jq-selectbox.changed .jq-selectbox__trigger-arrow {
-  top: 19px;
-  right: 25px;
-  border: 0 none;
-  overflow: visible;
-}
-.jq-selectbox.changed .jq-selectbox__trigger-arrow::before, .jq-selectbox.changed .jq-selectbox__trigger-arrow::after {
-  content: "";
-  width: 14px;
-  height: 2px;
-  position: absolute;
-  background: #5898FF;
-}
-.jq-selectbox.changed .jq-selectbox__trigger-arrow::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.jq-selectbox.changed .jq-selectbox__trigger-arrow::after {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  border-top-color: #5898FF;
 }
 
 .jq-selectbox__select-text {
@@ -1479,6 +1462,7 @@ main {
   border-top: 8px solid #AEAEAE;
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
+  border-radius: 4px;
 }
 
 .jq-selectbox__dropdown {

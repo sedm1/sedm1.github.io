@@ -29,3 +29,21 @@ function EditNewCompanyWindow(){
         BorderRed("EditNewCompany__nameSite", event, "Заполните это поле")
     })
 }
+$(".AddNewCompany__inn").on( "focusout", function() {
+    BorderRedOnKeyIp("AddNewCompany__inn", "Заполните это поле")
+})
+$(".AddNewCompany__ip").on( "focusout", function() {
+    BorderRedOnKeyIp("AddNewCompany__ip", "Заполните это поле")
+})
+$(".AddNewCompany__nameSite").on( "focusout", function() {
+    BorderRedOnKeyIp("AddNewCompany__nameSite", "Заполните это поле")
+})
+$(".EditNewCompany__inn").on( "focusout", function() {
+    BorderRedOnKeyIp("EditNewCompany__inn", "Заполните это поле")
+})
+$(".EditNewCompany__nameSite").on( "focusout", function() {
+    BorderRedOnKeyIp("EditNewCompany__nameSite", "Заполните это поле")
+})
+$(".EditNewCompany__ip").on( "focusout", function() {
+    BorderRedOnKeyIp("EditNewCompany__ip", "Заполните это поле")
+})
