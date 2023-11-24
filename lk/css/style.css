@@ -1640,10 +1640,10 @@ main {
   font-size: 14px;
   font-weight: 600;
   width: 100%;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 .mainModalWindow__form .form__item input:focus {
-  border: 2px solid #5898FF;
+  border: 1px solid #5898FF !important;
 }
 .mainModalWindow__form .form__item input::-webkit-input-placeholder {
   font-size: 14px;
@@ -1788,13 +1788,13 @@ main {
   font-weight: 400;
   border: 0 none;
   width: 100%;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   resize: vertical;
   outline: 0 none;
   height: 288px;
 }
 .MakeNewShablon textarea:focus, .EditShablon textarea:focus {
-  border: 2px solid #5898FF;
+  border: 1px solid #5898FF !important;
 }
 .MakeNewShablon textarea::-webkit-input-placeholder, .EditShablon textarea::-webkit-input-placeholder {
   font-size: 14px;
