@@ -113,7 +113,8 @@ $(".main__form-name").on( "focusout", function() {
     BorderRedOnKeyIp("main__form-name", "Заполните это поле")
 })
 $(".main__form-email").on( "focusout", function() {
-    BorderRedOnKeyIp("main__form-name", "Заполните это поле")
+    console.log("aaa")
+    BorderRedOnKeyIp("main__form-email", "Заполните это поле")
 })
 $(".profile__logo-form").submit((e) => {
     BorderRed("main__form-name", e, "Заполните это поле")
