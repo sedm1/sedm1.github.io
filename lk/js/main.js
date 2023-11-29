@@ -109,14 +109,14 @@ function BorderRedOnKeyIp(ClassOfInput, textPlace){
         $("." + ClassOfInput).css({"border": "0 none"})
     }
 }
-$(".main__form-name").on( "focusout", function() {
-    BorderRedOnKeyIp("main__form-name", "Заполните это поле")
-})
-$(".main__form-email").on( "focusout", function() {
-    console.log("aaa")
-    BorderRedOnKeyIp("main__form-email", "Заполните это поле")
-})
+
 $(".profile__logo-form").submit((e) => {
+    $(".main__form-name").on( "focusout", function() {
+        BorderRedOnKeyIp("main__form-name", "Заполните это поле")
+    })
+    $(".main__form-email").on( "focusout", function() {
+        BorderRedOnKeyIp("main__form-email", "Заполните это поле")
+    })
     BorderRed("main__form-name", e, "Заполните это поле")
     BorderRed("main__form-email", e, "Заполните это поле")
 
