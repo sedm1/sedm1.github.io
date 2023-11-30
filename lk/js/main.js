@@ -96,7 +96,7 @@ function BorderRed(ClassOfInput, e, textPlace){
         e.preventDefault();
     } else{
         $("." + ClassOfInput).attr("placeholder", "");
-        $("." + ClassOfInput).css({"border": "0 none"})
+        $("." + ClassOfInput).css({"border": "1px solid transparent"})
     }
 }
 function BorderRedOnKeyIp(ClassOfInput, textPlace){
@@ -106,7 +106,7 @@ function BorderRedOnKeyIp(ClassOfInput, textPlace){
         $("." + ClassOfInput).css({"border": "1px solid red"})
     } else{
         $("." + ClassOfInput).attr("placeholder", "");
-        $("." + ClassOfInput).css({"border": "0 none"})
+        $("." + ClassOfInput).css({"border": "1px solid transparent"})
     }
 }
 

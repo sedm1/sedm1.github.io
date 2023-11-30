@@ -30,6 +30,12 @@ function RedachMail(){
 function MakeNewShablon(){
     openWindow("MakeNewShablon")
     $(".MakeNewShablon__form").submit((e)=>{
+        $(".MakeNewShablon__title").on( "focusout", function() {
+            BorderRedOnKeyIp("MakeNewShablon__title", "Введите название шаблона")
+        })
+        $(".MakeNewShablon__shablon").on( "focusout", function() {
+            BorderRedOnKeyIp("MakeNewShablon__shablon", "Пожалуйста, напишите структуру письма")
+        })
         BorderRed("MakeNewShablon__title", e, "Введите название шаблона")
         BorderRed("MakeNewShablon__shablon", e, "Пожалуйста, напишите структуру письма")
     })
@@ -41,6 +47,12 @@ function MakeNewShablon(){
 function EditShablon(){
     openWindow("EditShablon")
     $(".EditShablon__form").submit((e)=>{
+        $(".EditShablon__title").on( "focusout", function() {
+            BorderRedOnKeyIp("EditShablon__title", "Введите название шаблона")
+        })
+        $(".EditShablon__shablon").on( "focusout", function() {
+            BorderRedOnKeyIp("EditShablon__shablon", "Пожалуйста, напишите структуру письма")
+        })
         BorderRed("EditShablon__title", e, "Введите название шаблона")
         BorderRed("EditShablon__shablon", e, "Пожалуйста, напишите структуру письма")
     })
@@ -50,6 +62,12 @@ function EditShablon(){
     })
 }
 $(".MakeNewMail__form").submit((e) => {
+    $(".MakeNewMail-pass").on( "focusout", function() {
+        BorderRedOnKeyIp("MakeNewMail-pass", "Пожалуйста, введите пароль")
+    })
+    $(".MakeNewMail-email").on( "focusout", function() {
+        BorderRedOnKeyIp("MakeNewMail-email", "Пожалуйста, введите адрес электронной почты")
+    })
     BorderRed("MakeNewMail-email", e, "Пожалуйста, введите адрес электронной почты")
     BorderRed("MakeNewMail-pass", e, "Пожалуйста, введите пароль")
 })
@@ -82,21 +100,5 @@ function RemoveMailIcon(mail){
 }
 
 
-$(".MakeNewMail-pass").on( "focusout", function() {
-    BorderRedOnKeyIp("MakeNewMail-pass", "Пожалуйста, введите пароль")
-})
-$(".MakeNewMail-email").on( "focusout", function() {
-    BorderRedOnKeyIp("MakeNewMail-email", "Пожалуйста, введите адрес электронной почты")
-})
-$(".EditShablon__title").on( "focusout", function() {
-    BorderRedOnKeyIp("EditShablon__title", "Введите название шаблона")
-})
-$(".EditShablon__shablon").on( "focusout", function() {
-    BorderRedOnKeyIp("EditShablon__shablon", "Пожалуйста, напишите структуру письма")
-})
-$(".MakeNewShablon__title").on( "focusout", function() {
-    BorderRedOnKeyIp("MakeNewShablon__title", "Введите название шаблона")
-})
-$(".MakeNewShablon__shablon").on( "focusout", function() {
-    BorderRedOnKeyIp("MakeNewShablon__shablon", "Пожалуйста, напишите структуру письма")
-})
+
+

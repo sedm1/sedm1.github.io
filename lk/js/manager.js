@@ -1,6 +1,12 @@
 function AddNewManager(){
     openWindow("AddNewManagerWindow")
     $(".AddNewManagerWindow__form").submit((event) => {
+        $(".AddNewManagerWindow__email").on( "focusout", function() {
+            BorderRedOnKeyIp("AddNewManagerWindow__email", "Заполните это поле")
+        })
+        $(".AddNewManagerWindow__name").on( "focusout", function() {
+            BorderRedOnKeyIp("AddNewManagerWindow__name", "Заполните это поле")
+        })
         var name = $(".AddNewManagerWindow__name").val()
         var email = $(".AddNewManagerWindow__email").val()
         LenPassword(name, 1, event)
@@ -22,6 +28,12 @@ function EditManager(){
         var email = $(".EditNewManagerWindow__email").val()
         LenPassword(name, 1, event)
         LenPassword(email, 1, event)
+        $(".EditNewManagerWindow__name").on( "focusout", function() {
+            BorderRedOnKeyIp("EditNewManagerWindow__name", "Заполните это поле")
+        })
+        $(".EditNewManagerWindow__email").on( "focusout", function() {
+            BorderRedOnKeyIp("EditNewManagerWindow__email", "Заполните это поле")
+        })
         BorderRed("EditNewManagerWindow__email", event, "Заполните это поле")
         BorderRed("EditNewManagerWindow__name", event, "Заполните это поле")
     })
@@ -39,15 +51,4 @@ function DeleteManager(){
     
 }
 
-$(".AddNewManagerWindow__email").on( "focusout", function() {
-    BorderRedOnKeyIp("AddNewManagerWindow__email", "Заполните это поле")
-})
-$(".AddNewManagerWindow__name").on( "focusout", function() {
-    BorderRedOnKeyIp("AddNewManagerWindow__name", "Заполните это поле")
-})
-$(".EditNewManagerWindow__name").on( "focusout", function() {
-    BorderRedOnKeyIp("EditNewManagerWindow__name", "Заполните это поле")
-})
-$(".EditNewManagerWindow__email").on( "focusout", function() {
-    BorderRedOnKeyIp("EditNewManagerWindow__email", "Заполните это поле")
-})
+
