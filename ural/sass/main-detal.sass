@@ -1,0 +1,108 @@
+@import "main"
+@import "TheHeader"
+
+.main
+    background-image: url("../img/fon.jpg")
+    background-size: cover
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: auto 900px
+    padding-top: 40px
+    &__block
+        background: $white
+        width: 100%
+        padding: 35px 40px
+        border-radius: 10px
+        margin-top: 10px
+    &__info
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__img
+        min-width: 530px
+        width: 530px
+        height: 530px
+        margin-right: 40px
+        img
+            border-radius: 5px
+    &__title
+        font-size: 22px
+        font-weight: 600
+    &__sub-title
+        margin-top: 20px
+        color: $blue
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 10px
+    &__table
+        display: flex
+        flex-direction: column
+        max-width: 550px
+        width: 100%
+        .table__row
+            display: flex
+            padding: 5px 10px
+            padding-right: 40px
+            justify-content: space-between
+            align-items: center
+            background: $tableFirst
+            &:nth-child(2n)
+                background: $tableSecond
+    &__price-descript
+        max-width: 280px
+        font-size: 14px
+        opacity: 0.8
+        margin-top: 5px
+    &__buy
+        padding: 10px 30px
+        margin-top: 15px
+        border-radius: 30px
+    &__ras
+        margin-top: 10px
+        font-size: 16px
+        color: $blue
+        text-decoration: underline
+@import 'table'
+.zap
+    margin-top: 50px
+    &__title
+        margin-top: 10px
+        font-weight: 400
+        font-size: 20px
+.zap__block
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 30px
+    margin-top: 30px
+@media screen and (max-width: 1400px)
+    .zap__block
+        grid-template-columns: repeat(3, 1fr)
+@media screen and (max-width: 800px)
+    .zap__block
+        grid-template-columns: repeat(2, 1fr)
+@media screen and (max-width: 500px)
+    .zap__block
+        grid-template-columns: repeat(1, 1fr)
+    .zap
+        &__title
+            font-size: 18px
+@import "quest"
+@import "TheFooter"
+@media screen and (max-width: 1000px)
+    .main__info
+        flex-direction: column
+        margin-bottom: 40px
+    .main__img
+        min-width: auto
+        width: 100%
+        height: auto
+        max-width: 75%
+        margin-bottom: 20px
+@media screen and (max-width: 650px)
+    .main__img
+        max-width: 100%
+    .main__table
+        max-width: 100%
+@media screen and (max-width: 400px)
+    .main__block
+        padding: 15px 10px

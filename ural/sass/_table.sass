@@ -1,0 +1,29 @@
+.table
+    margin-top: 50px
+    font-size: 14px
+    &__title
+        font-size: 22px
+    &__header
+        display: grid
+        grid-template-columns: 220px 180px 205px 135px 250px 200px 105px
+        background: #d0d2e0
+        padding: 5px 10px
+        font-weight: 600
+        margin-top: 15px
+    &__row
+        display: grid
+        grid-template-columns: 220px 180px 205px 135px 250px 200px 105px
+        padding: 5px 10px
+        font-weight: 400
+        background: $tableFirst
+        &:nth-child(2n)
+            background: $tableSecond
+@media screen and (max-width: 1400px)
+    .table
+        max-width: 100%
+        overflow: auto
+        &__block
+            min-width: 1306px
+            overflow-x: auto
+            width: 1306px
+        

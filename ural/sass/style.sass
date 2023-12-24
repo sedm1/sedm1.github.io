@@ -1,0 +1,45 @@
+@import 'main'
+@import 'TheHeader'
+.main
+    background-image: url("../img/fon.jpg")
+    background-size: cover
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: auto 900px
+    padding-top: 40px
+    &__block
+        background: $white
+        width: 100%
+        padding: 35px 40px
+        border-radius: 10px
+        margin-top: 10px
+    &__title
+        font-size: 22px
+        margin-bottom: 25px
+    &__descript
+        font-size: 16px
+.details
+    display: flex
+    align-items: center
+    justify-content: center
+    &__item
+        margin-right: 15px
+        font-size: 14px
+        border-radius: 45px
+        a
+            padding: 10px 20px
+@import "items"
+.item__descript
+    margin-top: 60px
+    .main__descript
+        margin-bottom: 5px
+        text-indent: 15px
+@import 'table'
+@import 'TheFooter'
+@media screen and (max-width: 800px)
+    .details
+        display: none
+@media screen and (max-width: 600px)
+    .main
+        &__block
+            padding: 10px

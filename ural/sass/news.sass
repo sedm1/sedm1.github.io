@@ -1,0 +1,43 @@
+@import 'main'
+@import 'TheHeader'
+.main
+    background-image: url("../img/fon.jpg")
+    background-size: cover
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: auto 900px
+    padding-top: 40px
+    &__block
+        background: $white
+        width: 100%
+        padding: 35px 40px
+        border-radius: 10px
+        margin-top: 10px
+    &__title
+        font-size: 22px
+        margin-bottom: 25px
+    &__descript
+        font-size: 16px
+.news
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 30px
+    &__title
+        margin-top: 10px
+        font-weight: 400
+        font-size: 20px
+@media screen and (max-width: 1400px)
+    .news
+        grid-template-columns: repeat(3, 1fr)
+@media screen and (max-width: 800px)
+    .news
+        grid-template-columns: repeat(2, 1fr)
+@media screen and (max-width: 500px)
+    .news
+        grid-template-columns: repeat(1, 1fr)
+        &__title
+            font-size: 18px
+    .main__block
+        padding: 30px 15px
+@import 'quest'
+@import 'TheFooter'

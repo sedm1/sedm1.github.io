@@ -1,0 +1,26 @@
+.items
+    margin-top: 65px
+    &__title
+        font-size: 22px 
+        margin-bottom: 20px
+    &__block
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 30px
+    .item
+        &__title
+            font-size: 20px
+            font-weight: 400
+            margin-top: 10px
+@media screen and (max-width: 1000px)
+    .items
+        &__block
+            grid-template-columns: repeat(3, 1fr)
+@media screen and (max-width: 800px)
+    .items
+        &__block
+            grid-template-columns: repeat(2, 1fr)
+@media screen and (max-width: 600px)
+    .items
+        &__block
+            grid-template-columns: repeat(1, 1fr)

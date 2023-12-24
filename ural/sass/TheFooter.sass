@@ -1,0 +1,109 @@
+footer
+    background: url("../img/footer-fon.webp")
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    margin-top: 90px
+.main__footer
+    .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        padding-top: 80px
+        padding-bottom: 65px
+.footer
+    &__soz
+        margin-top: 10px
+        &-header
+            display: flex
+            align-items: center
+            justify-content: center
+        &-item
+            margin-right: 10px
+            width: 24px
+            &:last-child
+                margin-right: 0px
+        &-footer
+            font-size: 12px
+            text-align: center
+    &__info
+        display: flex
+        align-items: center
+        &-item
+            display: flex
+            align-items: flex-start
+            margin-bottom: 20px
+            .item-icon
+                width: 18px
+                margin-right: 10px
+        .text__header
+            font-size: 16px
+        .text__footer
+            font-size: 14px
+            text-align: right
+    &__title
+        color: #3b5275
+        font-size: 20px
+        margin-bottom: 25px
+    &__item
+        display: flex
+        flex-direction: column
+    &__button
+        padding: 13px 60px
+        border-radius: 40px
+        margin-bottom: 10px
+    &__menu
+        &-item
+            margin-bottom: 10px
+            .item-icon
+                width: 13px
+                margin-right: 10px
+            a
+                display: flex
+                align-items: center
+    &__links
+        display: flex
+        align-items: center
+        max-width: 480px
+        width: 100%
+        justify-content: space-between
+        margin-top: 6px
+        .line
+            width: 1px
+            height: 10px
+            background: $white
+.under__footer
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 20px 0px
+        
+        .prava, .polit, .sogl, .ogrn, .inn
+            color: $white
+            font-size: 14px
+        .inn
+            margin-top: 6px
+@media screen and (max-width: 1000px)
+    .main__footer 
+        .container
+            flex-direction: column
+            align-items: center
+            text-align: center
+        .footer__item
+            align-items: center
+            justify-content: center
+            text-align: center
+    .under__footer .container
+        flex-direction: column
+        align-items: flex-start
+    .footer__menu-item a
+        justify-content: center
+@media screen and (max-width: 600px)
+    .footer__links
+        flex-direction: column
+        align-items: flex-start
+        .line
+            display: none
+    .prava, .polit, .sogl, .ogrn, .inn
+        margin: 8px 0px
