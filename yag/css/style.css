@@ -239,6 +239,9 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .tabs__item-form {
   border-radius: 20px;
@@ -323,7 +326,7 @@ li {
           align-items: center;
   font-size: 32px;
 }
-.tabs__item-check input[type=checkbox] {
+.tabs__item-check .type__checkbox {
   position: relative;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -337,7 +340,7 @@ li {
   transition: 0.4s;
   margin-right: 20px;
 }
-.tabs__item-check input[type=checkbox]::after {
+.tabs__item-check .type__checkbox::after {
   position: absolute;
   content: "";
   width: 30px;
@@ -349,10 +352,10 @@ li {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.tabs__item-check input:checked[type=checkbox] {
+.tabs__item-check .type__checkbox-checked {
   background: #3284FF;
 }
-.tabs__item-check input:checked[type=checkbox]::after {
+.tabs__item-check .type__checkbox-checked::after {
   left: 30px;
 }
 .tabs__item-header {
@@ -498,6 +501,17 @@ li {
   border-radius: 32px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+#tabs__item-black {
+  background: #04121B;
+}
+#tabs__item-black .item-count {
+  min-width: 34px;
+  width: 34px;
+}
+#tabs__item-black .tabs__item-form form button {
+  background: #3284FF;
 }
 
 @media screen and (max-width: 1640px) {
