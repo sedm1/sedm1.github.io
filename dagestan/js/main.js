@@ -1,6 +1,3 @@
-new WOW({
-    offset: 200
-}).init();
 $(() => {
     $(".what__slider").slick({
         centerMode: true,
