@@ -1,0 +1,218 @@
+@import 'main'
+@import 'TheHeader'
+
+main
+    margin-top: 240px
+
+.pols
+    &__block
+        margin-top: 88px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__row
+        max-width: 591px
+        width: 100%
+    &__item
+        padding: 25px 36px
+        width: 100%
+        border-radius: 10px
+        background: $white
+        box-shadow: 0px 1px 3px 0px rgba(194, 194, 194, 0.10), 0px 6px 6px 0px rgba(194, 194, 194, 0.09), 0px 13px 8px 0px rgba(194, 194, 194, 0.05), 0px 23px 9px 0px rgba(194, 194, 194, 0.01), 0px 35px 10px 0px rgba(194, 194, 194, 0.00)
+        margin-bottom: 20px
+        cursor: pointer
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__title
+        font-size: 18px
+        font-family: 'Gilroy-Black'
+        text-transform: none
+    &__button
+        width: 10px
+        background: none
+        transition: .3s
+        &-active
+            transform: rotate(90deg)
+    &__info
+        max-width: 366px
+        color: rgba(69, 68, 68, 0.70)
+        font-size: 16px
+        line-height: 23px
+        padding-left: 14px
+        margin-top: 18px
+.form
+    margin-top: 77px
+    &__block
+        margin-top: 58px
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        padding-top: 66px
+        border-radius: 30px
+        border: 1px solid rgba(0, 0, 0, 0.03)
+        background: $white
+        box-shadow: 0px 1px 3px 0px rgba(194, 194, 194, 0.10), 0px 6px 6px 0px rgba(194, 194, 194, 0.09), 0px 13px 8px 0px rgba(194, 194, 194, 0.05), 0px 23px 9px 0px rgba(194, 194, 194, 0.01), 0px 35px 10px 0px rgba(194, 194, 194, 0.00)
+    &__img
+        max-width: 760px
+        width: 100%
+    &__info
+        max-width: 440px
+        width: 100%
+        margin-left: 86px
+        margin-bottom: 60px
+        input, textarea
+            padding: 25px 40px
+            resize: vertical
+            font-size: 16px
+            color: $black
+            border-radius: 10px
+            border: 1px solid rgba(0, 0, 0, 0.07)
+            background: #FEFEFE
+            margin-bottom: 22px
+            width: 100%
+            &::placeholder
+                color: rgba(0, 0, 0, 0.30)
+        textarea
+            height: 144px
+    &__submit
+        background: $green
+        color: $white
+        width: 100%
+        border-radius: 10px
+        font-size: 18px
+        font-family: 'Gilroy-SemiBold'
+        margin-bottom: 20px
+        padding: 24px 0px
+    &__polit
+        font-size: 15px
+        text-align: center
+        max-width: 350px
+        margin: 0 auto
+        a
+            color: $green
+.otz
+    margin-top: 150px
+    &__block
+        margin-top: 73px
+    &__slider
+        &-item
+            margin: 0px 12px
+            border-radius: 20px
+            img
+                border-radius: 20px
+        &:first-child
+            margin-bottom: 12px
+    &__video
+        margin-top: 107px
+        .slick-track
+            display: flex
+            align-items: center
+        &-item
+            margin: 0px 24px
+            height: 357px !important
+            transition: .3s
+            border-radius: 20px
+            background:#454444
+            box-shadow: 0px 1px 3px 0px rgba(194, 194, 194, 0.10), 0px 6px 6px 0px rgba(194, 194, 194, 0.09), 0px 13px 8px 0px rgba(194, 194, 194, 0.05), 0px 23px 9px 0px rgba(194, 194, 194, 0.01), 0px 35px 10px 0px rgba(194, 194, 194, 0.00)
+            iframe
+                margin: 0 auto
+                display: flex
+                align-content: center
+        .slick-active
+            height: 486px !important
+        .slick-arrow
+            position: absolute
+            bottom: -94px
+            transform: translateY(-50%)
+            width: 48px
+            height: 48px
+            border-radius: 100%
+            background: $green
+            z-index: 1
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                width: 7px
+        .slick-prev
+            left: 46%
+        .slick-next
+            right: 46%
+.blog
+    margin-top: 298px
+    &__block
+        margin-top: 78px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 20px 24px
+    &__item
+        border-radius: 15px
+        background: $white
+        box-shadow: 0px 1px 3px 0px rgba(194, 194, 194, 0.10), 0px 6px 6px 0px rgba(194, 194, 194, 0.09), 0px 13px 8px 0px rgba(194, 194, 194, 0.05), 0px 23px 9px 0px rgba(194, 194, 194, 0.01), 0px 35px 10px 0px rgba(194, 194, 194, 0.00)
+        transition: .3s
+        &:hover
+            transform: scale(1.05)
+    &__img
+        max-height: 257px
+        overflow: hidden
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
+    &__content
+        padding: 20px 26px
+        padding-bottom: 49px
+    &__title
+        font-size: 18px
+        margin-bottom: 11px
+    &__descript
+        font-size: 16px
+        line-height: 23px
+        color: rgba(69, 68, 68, 0.80)
+        span
+            color: $green
+@import 'TheFooter'
+@media screen and (max-width: 1000px)
+    .pols
+        &__block
+            flex-direction: column
+            align-items: center
+        &__row
+            max-width: 100%
+        &__info
+            max-width: 80%
+    .blog
+        margin-top: 150px
+        &__block
+            grid-template-columns: repeat(2, 1fr)
+    .otz__video
+        .slick-prev
+            left: 41vw
+        .slick-next
+            right: 41vw
+    .form
+        &__block
+            flex-direction: column
+        &__info
+            margin-left: 0px
+            margin-bottom: 20px
+            max-width: 100%
+@media screen and (max-width: 750px)
+    
+    .otz__video
+        .slick-prev
+            left: 35vw
+        .slick-next
+            right: 35vw
+@media screen and (max-width: 600px)
+    .otz__video-item
+        margin: 0px 10px
+    .blog
+        &__block
+            grid-template-columns: repeat(1, 1fr)
+@media screen and (max-width: 400px)
+    .otz__video
+        .slick-prev
+            left: 40px
+        .slick-next
+            right: 40px

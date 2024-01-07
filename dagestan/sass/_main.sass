@@ -1,0 +1,63 @@
+@import 'fonts'
+@import 'vars'
+@import 'colors'
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Gilroy-Medium'
+    color: $black
+h1, h2, h3, h4
+    font-family: 'Ferry-Black'
+    text-transform: uppercase
+img
+    width: 100%
+    height: auto
+a
+    cursor: pointer
+    text-decoration: none
+    color: inherit
+    font-family: inherit
+    display: block
+button
+    cursor: pointer
+    border: 0 none
+    outline: 0 none
+    font-family: inherit
+    color: inherit
+li
+    list-style: none
+span
+    font-size: inherit
+    font-family: inherit
+.container
+    max-width: $MainContainer
+    width: 100%
+    margin: 0 auto
+.section
+    &__title
+        max-width: 730px
+        font-size: 30px
+        &-block
+            display: flex
+            align-items: center
+        &-line
+            width: 7px
+            background: $green
+            height: 45px
+            margin-right: 14px
+    &__descript
+        max-width: 616px
+        margin-top: 19px
+        display: block
+        line-height: 27px
+@media screen and (max-width: $MainContainer)
+    .container
+        max-width: 96%
+@media screen and (max-width: 400px)
+    .section__title
+        font-size: 5vw
+    .section__descript
+        font-size: 13px
+        line-height: 20px
+    
