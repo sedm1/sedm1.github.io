@@ -245,6 +245,11 @@ header
     margin-top: 80px
     max-height: 1080px
     overflow: hidden
+    height: 1080px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    background-attachment: fixed
 .map
     margin-top: 81px
     &-block
@@ -636,6 +641,7 @@ header
         a
             color: $green
 @import 'TheFooter'
+@import 'modal'
 @media screen and (max-width: 1440px)
     .main
         &__title
@@ -804,6 +810,10 @@ header
         padding: 12px 5px
         font-size: 14px
 @media screen and (max-width: 400px)
+    .main
+        padding-top: 100px
+    .bg .banner
+        margin-top: 150px
     .marsh, .comand__block, .otz__video, .prem
         .slick-prev
             left: 40px
@@ -847,4 +857,3 @@ header
             padding: 14px 19px
         .slick-dots button
             width: 30px
-        

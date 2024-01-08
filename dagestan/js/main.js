@@ -156,6 +156,48 @@ $(() => {
             ]
         })
     }
+    $(".napr__block").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        arrows: true,
+        prevArrow: "<button class='slick-prev'><img src='../img/arrow-left.png' alt='Arrow'></button>",
+        nextArrow: "<button class='slick-next'><img src='../img/arrow-right.png' alt='Arrow'></button>",
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    })
+    $(".you__slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '60px',
+        responsive: [
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    centerPadding: '0px',
+                }
+            },
+        ]
+    })
 })
 $(".item__modal-open").click(() => {
     $(".date__tabs-modal").toggleClass("date__tabs-modal-active")
@@ -185,4 +227,24 @@ $(".header__burger").click(() => {
 $(".pols__item").click((e) => {
     $($(e.currentTarget).children()[1]).slideToggle()
     $(e.currentTarget).find(".pols__button").toggleClass("pols__button-active")
+})
+$(".napr__item-button").click((e) => {
+    $(e.currentTarget).toggleClass("napr__item-button-active")
+    $(e.currentTarget).siblings('.napr__item-modal').toggleClass('napr__item-modal-active')
+})
+$(".banner__button, .cost__button, .you__button").click(() => {
+    $(".modal__bg").addClass("modal__bg-preactive")
+    setTimeout(() => {
+        $(".modal__bg").addClass("modal__bg-active")
+    }, 150)
+    $(".modal__window").addClass("modal__window-active")
+})
+$(".modal__close").click(() => {
+    $(".modal__window").removeClass("modal__window-active")
+    $(".modal__bg").removeClass("modal__bg-active")
+    setTimeout(() => {
+        
+        $(".modal__bg").removeClass("modal__bg-preactive")
+    }, 150)
+    
 })

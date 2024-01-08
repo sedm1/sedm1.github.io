@@ -42,6 +42,10 @@
   color: #454444;
 }
 
+body {
+  position: relative;
+}
+
 h1, h2, h3, h4 {
   font-family: "Ferry-Black";
   text-transform: uppercase;

@@ -20,7 +20,7 @@
 <body>
     <div class="bg">
         <header>
-            <a href="/" class="header__logo"><img src="img/logo.png" alt="HeaderLogo"></a>
+            <a href="/" class="header__logo"><img src="img/logo.svg" alt="HeaderLogo"></a>
             <nav>
                 <ul class="header__menu">
                     <li><a href="#">Презентация</a></li>
@@ -39,7 +39,7 @@
         </header>
         <div class="container">
             <div class="mobile__header">
-                <div class="header__logo"><img src="img/logo-white.png" alt="HeaderLogo"></div>
+                <div class="header__logo"><img src="img/logo-white.svg" alt="HeaderLogo"></div>
                 <button class="header__burger"><img src="img/burger.svg" alt="Burger"></button>
             </div>
             <ul class="mobile__menu">
@@ -211,9 +211,7 @@
                 </div>
             </div>
         </section>
-        <section class="picture">
-            <img src="img/second-bg.jpg" alt="Bg">
-        </section>
+        <section class="picture" style="background-image: url('img/second-bg.jpg');"></section>
         <section class="map">
             <div class="container">
                 <div class="section__title-block wow fadeInLeft">
@@ -435,9 +433,7 @@
                 </div>
             </div>
         </section>
-        <section class="picture">
-            <img src="img/third-bg.jpg" alt="Bg">
-        </section>
+        <section class="picture" style="background-image: url('img/third-bg.jpg');"></section>
         <section class="comand">
             <div class="container">
                 <div class="section__title-block wow fadeInLeft">
@@ -633,7 +629,7 @@
         <div class="container">
             <div class="footer__header">
                 <div class="footer__logo">
-                    <a class="footer__logo-img" href="/"><img src="img/logo.png" alt="FooterLogo"></a>
+                    <a class="footer__logo-img" href="/"><img src="img/logo.svg" alt="FooterLogo"></a>
                     <div class="footer__logo-text">YouCanTravel Company</div>
                 </div>
                 <div class="footer__menu-block">
@@ -666,6 +662,25 @@
             <div class="footer__under"><img src="img/cart.png" alt="cart"></div>
         </div>
     </footer>
+    <div class="modal__bg">
+        <div class="modal__window">
+            <button class="modal__close"><img src="img/close.svg" alt="CloseModal"></button>
+            <h2 class="modal__title">получить презентацию</h2>
+            <p class="modal__descript">Оставьте заявку и получите подарок - <span>конную прогулку</span></p>
+            <form action="" class="modal__form">
+                <div class="modal__input">
+                    <p class="modal__input-title">Ваше имя</p>
+                    <input type="text" placeholder="Иван иванов">
+                </div>
+                <div class="modal__input">
+                    <p class="modal__input-title">Ваш номер</p>
+                    <input type="text" placeholder="+7 (999) 999-99-99">
+                </div>
+                <button type="submit" class="modal__button">Оставить заявку</button>
+                <div class="modal__polit">Нажимая на кнопку, вы соглашаетесьс <a href="https://youcantravel.club/dagestan#popup:mygallery1">политикой конфиденциальности</a></div>
+            </form>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
