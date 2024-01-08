@@ -189,7 +189,7 @@ $(() => {
         centerPadding: '60px',
         responsive: [
             {
-                breakpoint: 450,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                     centerMode: false,
