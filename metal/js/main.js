@@ -51,4 +51,7 @@ $(() => {
         $(".modal__bg").removeClass('modal__bg-active')
       }, 200)
     })
+    $('.header__button').click(() => {
+      $('.header__menu').toggleClass('header__menu-active')
+    })
 })

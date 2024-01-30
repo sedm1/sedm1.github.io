@@ -278,6 +278,10 @@ footer
         max-width: 285px
         font-size: 13px
         color: #CDCDCD
+.header__button
+    width: 47px
+    height: 47px
+    display: none
 @media screen and (max-width: $mainContainer)
     .container
         max-width: 98%
@@ -285,9 +289,32 @@ footer
         padding-top: 55px
     .header
         &__menu
-            display: none
+            position: fixed
+            left: -110%
+            top: 0px
+            z-index: 4
+            height: 100vh
+            width: 250px
+            flex-direction: column
+            background: #1A1A1B
+            align-items: flex-start
+            padding: 60px 40px
+            padding-right: 0px
+            transition: .5s
+            &-active
+                left: 0px
+            li
+                font-size: 16px
+                margin-bottom: 20px
+            &-submenu
+                top: 25px
+                left: -10%
+                &-item
+                    margin-bottom: 0px !important
         &__info
             display: none
+        &__button
+            display: block
 @media screen and (max-width: 1000px)
     .slick-prev
         right: 0px
