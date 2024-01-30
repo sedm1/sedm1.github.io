@@ -1,0 +1,120 @@
+.met__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+.met__bg {
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 0px;
+}
+.met__bg::after {
+  width: 100%;
+  height: 150px;
+  background: rgba(25, 25, 25, 0.95);
+  bottom: -75px;
+  left: 0;
+  position: absolute;
+  content: "";
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  z-index: 2;
+}
+.met__bg:last-child {
+  padding-bottom: 200px;
+}
+.met__bg:last-child::after {
+  display: none;
+}
+.met__info {
+  max-width: 624px;
+}
+.met__slider {
+  max-width: 550px;
+}
+.met__descript {
+  font-size: 16px;
+  line-height: 24px;
+}
+.met__descript span {
+  font-family: "Gilroy-Bold";
+}
+.met__slider-item {
+  margin: 0px 12px;
+  border-radius: 5px;
+  position: relative;
+  height: 434px;
+  overflow: hidden;
+}
+.met__slider-item-bg {
+  border-radius: 5px;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.met__slider-item-info {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 24px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.met__slider-item-title {
+  border-left: 9px solid #F3BD41;
+  padding: 15px 0px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+  .met__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .met__item .slick-next {
+    right: 60px;
+  }
+  .met__item .slick-prev {
+    left: 60px;
+  }
+  .met__info {
+    margin-bottom: 30px;
+  }
+  .met__bg::after {
+    -webkit-filter: blur(25px);
+            filter: blur(25px);
+    height: 80px;
+  }
+  .met__slider {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .met__slider-item {
+    height: 350px;
+  }
+}

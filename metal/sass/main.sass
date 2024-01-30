@@ -1,0 +1,359 @@
+@import 'vars'
+@import 'fonts'
+*
+    padding: 0
+    margin: 0
+    font-family: 'Gilroy-Medium'
+    box-sizing: border-box
+    color: $white
+    
+body
+    position: relative
+    background: $black
+img
+    width: 100%
+    height: auto
+a
+    cursor: pointer
+    display: block
+    color: inherit
+    text-decoration: none
+button
+    border: 0 none
+    outline: 0 none
+    cursor: pointer
+    background: none
+    font-family: inherit
+li
+    list-style: none
+span
+    font-size: inherit
+    font-family: inherit
+input
+    border: 0 none
+    outline: 0 none
+.section__title
+    margin-bottom: 50px
+    text-transform: uppercase
+    font-size: 30px
+    font-family: 'Gilroy-Black'
+.container
+    max-width: $mainContainer
+    width: 100%
+    margin: 0 auto
+header
+    padding-top: 18px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__logo
+        width: 118px
+    &__menu
+        display: flex
+        align-items: center
+        li
+            margin-right: 40px
+            font-size: 16px
+            font-family: 'Gilroy-SemiBold'
+            position: relative
+            &:last-child
+                margin-right: 0px
+            &:hover > .header__menu-submenu
+                display: block
+        &-main
+            display: flex
+            align-items: center
+            img
+                width: 11px
+                margin-left: 5px
+        &-submenu
+            position: absolute
+            top: 18px
+            z-index: 1
+            background: $white
+            display: none
+            width: 217px
+            left: -40%
+            &-item
+                margin-right: 0px !important
+                color: $gray
+                font-size: 15px
+                border-bottom: 1px solid #E8E8E8
+                position: static
+                a
+                    padding: 15px 26px
+                &:last-child
+                    border-bottom: 0px
+    &__info
+        display: flex
+        align-items: center
+        &-text
+            margin-right: 19px
+        &-phone 
+            font-size: 19px
+            font-family: 'Gilroy-Bold'
+        &-mail
+            font-size: 15px
+        &-button
+            padding: 15px 37px
+            font-size: 14px
+            font-family: 'Gilroy-SemiBold'
+            color: $yellow
+            border: 1px solid $yellow
+            transition: .3s
+            &:hover
+                transform: scale(1.05)
+.form
+    text-align: center
+    &__bg
+        background-image: url('../img/bg.png')
+        background-size: cover
+        background-position: center top
+        background-repeat: no-repeat
+        position: relative
+        padding: 140px 0px
+    .section__title
+        margin-bottom: 20px
+    &__descript
+        max-width: 539px
+        margin: 0 auto
+        color: #CDCDCD
+        font-size: 16px
+        font-family: 'Gilroy-SemiBold'
+    form
+        margin-top: 30px
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        input
+            padding: 26px 40px
+            max-width: 315px
+            width: 100%
+            border: 1px solid rgba(0, 0, 0, 0.07)
+            background: #202020
+            color: $white
+            font-size: 16px
+            margin-right: 28px
+            &::placeholder
+                color: #726D6D
+    &__submit
+        padding: 26px 99px
+        background: $yellow
+        font-size: 15px
+        font-family: 'Gilroy-SemiBold'
+        color: $white
+        margin-right: 0px
+        transition: .3s
+        &:hover
+            transform: scale(1.05)
+    &__sogl
+        margin-top: 15px
+        max-width: 285px
+        text-align: left
+        color: #CDCDCD
+        font-size: 14px
+.map
+    margin-top: 140px
+footer
+    padding-top: 64px
+    padding-bottom: 100px
+    .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+.footer
+    &__logo
+        width: 118px
+    &__item
+        display: flex
+        flex-direction: column
+        &-title
+            font-size: 18px
+            font-family: 'Gilroy-SemiBold'
+            margin-bottom: 21px
+        &-descript
+            display: flex
+            align-items: center
+            max-width: 220px
+            color: #CDCDCD
+            font-size: 16px
+            margin-bottom: 10px
+            img
+                width: 21px
+                margin-right: 15px
+.slick-prev, .slick-next
+    font-size: 0px
+    position: absolute
+    width: 60px
+    height: 60px
+    border-radius: 100%
+    background: #525252
+    z-index: 3
+    background-size: 40%
+    background-position: center center
+    background-repeat: no-repeat
+    bottom: -80px
+.slick-prev
+    background-image: url('../img/arrow-left.svg')
+    right: 90px
+.slick-next
+    background-image: url('../img/arrow-right.svg')
+    right: 0px
+.modal
+    &__close
+        width: 22px
+        height: 22px
+        top: 30px
+        right: 40px
+        position: absolute
+    &__bg
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100vh
+        background: rgba(0, 0, 0, 0.4)
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 4
+        display: none
+        &-active
+            display: flex
+    &__window
+        position: relative
+        max-width: 856px
+        border-radius: 17px
+        background: #1A1A1B
+        display: flex
+        justify-content: center
+        width: 100%
+        padding: 50px 0px
+        opacity: 0
+        transition: .3s
+        &-active
+            opacity: 1
+    &__content
+        max-width: 539px
+        text-align: center
+    &__title
+        margin-bottom: 17px
+    &__descript
+        color: #CDCDCD
+    &__form
+        margin: 0 auto
+        margin-top: 29px
+        display: flex
+        flex-direction: column
+        max-width: 403px
+        align-items: center
+        input
+            padding: 23px 35px
+            width: 100%
+            border: 1px solid rgba(0, 0, 0, 0.07)
+            background: #202020
+            color: $white
+            font-size: 16px
+            margin-bottom: 17px
+            &::placeholder
+                color: #726D6D
+            &:last-child
+                margin-bottom: 0px
+    &__submit
+        padding: 21px 0px
+        width: 100%
+        background: $yellow
+        font-size: 15px
+        font-family: 'Gilroy-SemiBold'
+        color: $white
+        margin-right: 0px
+        transition: .3s
+        &:hover
+            transform: scale(1.05)
+    &__polit
+        margin: 0 auto
+        margin-top: 21px
+        max-width: 285px
+        font-size: 13px
+        color: #CDCDCD
+@media screen and (max-width: $mainContainer)
+    .container
+        max-width: 98%
+    header
+        padding-top: 55px
+    .header
+        &__menu
+            display: none
+        &__info
+            display: none
+@media screen and (max-width: 1000px)
+    .slick-prev
+        right: 0px
+        left: 40%
+    .slick-next
+        right: 40%
+    .form
+        form
+            flex-direction: column
+            align-items: center
+            input
+                margin-right: 0px
+                margin-bottom: 15px
+                max-width: 100%
+                &:last-child
+                    margin-bottom: 0px
+        &__mobile
+            width: fit-content
+            background: #141414
+            border-radius: 5px
+            margin: 0 auto
+            padding: 60px 28px
+        &__sogl
+            text-align: center
+            margin: 0 auto
+            margin-top: 15px
+        &__submit
+            width: 100%
+        &__button-block
+            width: 100%
+@media screen and (max-width: 800px)
+    footer
+        .container
+            flex-direction: column
+            align-items: center
+            text-align: center
+        .footer__item
+            margin-top: 20px
+    .form__bg
+        background-position: center 320px
+@media screen and (max-width: 620px)
+    .modal__content
+        max-width: 92%
+    .modal__descript
+        font-size: 3.4vw
+    .modal__form input
+        padding: 16px 35px
+    .slick-prev
+        left: 30%
+    .slick-next
+        right: 30%
+    .form
+        &__descript
+            font-size: 2.8vw
+        form
+            input
+                padding: 21px 26px
+        &__submit
+            padding: 21px 0px
+
+@media screen and (max-width: 400px)
+    .modal__close
+        top: 15px
+        right: 15px
+    .form
+        &__descript
+            font-size: 3.5vw
+    .section__title
+        font-size: 8vw
