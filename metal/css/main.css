@@ -625,7 +625,8 @@ footer .container {
     margin-top: 20px;
   }
   .form__bg {
-    background-position: center 320px;
+    background-position: center -247px;
+    background-size: 429%;
   }
 }
 @media screen and (max-width: 620px) {
@@ -665,4 +666,8 @@ footer .container {
   .section__title {
     font-size: 8vw;
   }
+}
+.ymaps-layers-pane {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }

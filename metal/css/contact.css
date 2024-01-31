@@ -57,13 +57,21 @@
 
 @media screen and (max-width: 1000px) {
   .main {
-    padding-bottom: 120px;
+    padding-bottom: 98px;
+    background-size: 248%;
+    background-position: center top;
   }
   .main::after {
     height: 100px;
   }
+  .main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .contact__img {
-    display: none;
+    margin-top: 40px;
   }
   .contact__info {
     max-width: 600px;

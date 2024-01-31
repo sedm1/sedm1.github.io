@@ -128,20 +128,20 @@
             transform: scale(1.05)
 .o__bg
     background-image: url('../img/bg.png')
-    background-size: cover
-    background-position: center bottom
+    background-size: 130%
+    background-position: center center
     background-repeat: no-repeat
     position: relative
-    padding: 160px 0px
+    padding: 110px 0px
     &::after
         width: 100%
-        height: 150px
+        height: 100px
         background: rgba(25, 25, 25, 0.95)
         bottom: -75px
         left: 0
         position: absolute
         content: ""
-        filter: blur(25px)
+        filter: blur(20px)
         z-index: 2
 .prod
     &__block
@@ -242,9 +242,16 @@
         text-align: center   
 @media screen and (max-width: 620px)
     .o__bg, .about
-        padding: 120px 0px
+        padding: 110px 0px
         &::after
             height: 120px
+    .o__bg
+        background: none
+    .aks__block, .prod__block
+        background-image: url('../img/bg.png')
+        background-position: center center
+        background-repeat: no-repeat
+        position: relative
     .main
         &__title
             font-size: 5.9vw
