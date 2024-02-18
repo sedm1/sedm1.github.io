@@ -1,0 +1,319 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Montserrat", sans-serif
+    color: #fff
+body
+    background: #0b0b0b
+    max-width: 100%
+    overflow-x: hidden
+    position: relative
+img
+    width: 100%
+    height: auto
+    display: block
+a
+    text-decoration: none
+    color: inherit
+    display: block
+    cursor: pointer
+button
+    border: 0 none
+    outline: 0 none
+    font-family: inherit
+    color: inherit
+    cursor: pointer
+    background: none
+li
+    list-style: none
+input, textarea
+    background: none
+    outline: 0 none
+    border: 0 none
+textarea
+    resize: vertical
+.container
+    max-width: 1160px
+    width: 100%
+    margin: 0 auto
+span
+    color: inherit
+    font-weight: inherit
+.section__title
+    font-size: 34px
+    font-weight: 500
+    span
+        color: #cea058
+.main__button
+    color: #fff
+    border-radius: 50px
+    font-size: 16px
+    transition: .3s
+    border: 1px solid #cea058
+    padding: 13px 60px
+    &:hover
+        background: #cea058
+header
+    position: fixed
+    width: 100%
+    z-index: 3
+    top: 0px
+    backdrop-filter: blur(5px)
+    left: 0
+    padding: 8px 0px
+    background: rgba(0, 0, 0, 0.4)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__logo
+        width: 95px
+        margin-right: 45px
+    &__left, &__right
+        display: flex
+        align-items: center
+    &__menu
+        display: flex
+        align-items: center
+        &:hover
+            li
+                opacity: 0.4
+        li
+            margin-right: 20px
+            font-size: 14px
+            transition: .3s
+            &:hover
+                opacity: 1 !important
+    &__right
+        padding-left: 20px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            height: 30px
+            width: 1px
+            background: rgba(255, 255, 255, 0.4)
+            left: 0
+    &__phone
+        font-size: 14px
+        margin-right: 20px
+    &__soz
+        display: flex
+        align-items: center
+        &-item
+            margin-right: 15px
+            width: 30px
+            &:last-child
+                margin-right: 0px
+footer
+    margin-top: 150px
+    .container
+        padding: 80px 0px
+        border-top: 1px solid rgba(255, 255, 255, 0.4)
+.footer
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__left
+        display: flex
+        align-items: center
+    &__menu
+        display: flex
+        align-items: center
+        &:hover
+            li
+                opacity: 0.4
+        li
+            margin-left: 30px
+            font-size: 14px
+            transition: .3s
+            &:hover
+                opacity: 1
+    &__logo
+        width: 90px
+    &__phone
+        font-size: 14px
+    &__contacts
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        margin-top: 10px
+    &__mail
+        font-size: 14px
+        transition: .3s
+        margin-right: 60px
+        &:hover
+            color: #cea058
+    &__soz
+        display: flex
+        align-items: center
+        &-item 
+            width: 30px
+            margin-right: 20px
+            &:last-child
+                margin-right: 0px
+    &__info
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 50px
+    &__liz
+        font-size: 14px
+        color: #bababa
+    &__polit
+        color: #bababa
+        font-size: 14px
+        transition: .3s
+        &:hover
+            color: #fff
+.modal
+    &__bg
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100dvh
+        background: rgba(0, 0, 0, 0.6)
+        display: flex
+        align-items: center
+        justify-content: center
+        display: none
+        opacity: 0
+        transition: .3s
+        z-index: 3
+        &-active
+            opacity: 1
+    &__form
+        padding: 40px 45px
+        border-radius: 16px
+        background: #0b0b0b
+        max-width: 550px
+        position: relative
+        display: none
+        opacity: 0
+        transition: .3s
+        &-active
+            opacity: 1
+        .form__block-title
+            font-size: 20px
+            text-align: center
+            font-weight: 600
+        label
+            background: #cea058
+            border-radius: 50px
+            padding: 5px 20px
+            width: fit-content
+    &__close
+        position: absolute
+        top: -20px
+        right: -20px
+        width: 43px
+        height: 43px
+    &__video
+        position: relative
+        max-width: 960px
+        width: 100%
+        display: none
+        opacity: 0
+        transition: .3s
+        &-active
+            opacity: 1
+.mobile__logo,.burger, .header__menu-close
+    display: none
+@media screen and (max-width: 1050px)
+    .burger
+        display: block
+        width: 30px
+        height: 30px
+        border-radius: 100%
+        background: #cea058
+        margin-left: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            width: 20px
+
+    .mobile__logo
+        display: block
+        margin-bottom: 40px
+        width: 120px
+    .header__nav
+        position: fixed
+        height: 100dvh
+        width: 100%
+        top: 0px
+        left: 0px
+        transition: .5s
+        background: rgba(0, 0, 0, 0.6)
+        z-index: 3
+        display: none
+        opacity: 0
+        transition: .3s
+        justify-content: flex-end
+        &-active
+            opacity: 1
+    .header__menu
+        max-width: 420px
+        background: #0b0b0b
+        height: 100%
+        flex-direction: column
+        padding: 48px 40px 38px
+        align-items: flex-start
+        position: relative
+        display: none
+        opacity: 0
+        transition: .3s
+        &-active
+            opacity: 1
+        &:hover
+            li
+                opacity: 1
+        li
+            margin-right: 0px
+            margin-bottom: 15px
+            font-weight: 600
+            font-size: 16px
+        &-close
+            display: block
+            top: 10px
+            right: 10px
+@media screen and (max-width: 1160px)
+    .container
+        max-width: 98%
+    footer
+        margin-top: 50px
+    .footer
+        &__header, &__left, &__menu
+            flex-direction: column
+            align-items: center
+        &__menu
+            li
+                margin-left: 0px
+                margin-bottom: 20px
+        &__logo
+            margin-bottom: 20px
+        &__contacts
+            flex-direction: column
+            align-items: center
+            text-align: center
+        &__mail
+            margin-right: 0px
+        &__soz
+            margin-top: 20px
+        &__info
+            flex-direction: column
+            align-items: center
+        &__polit
+            margin-top: 10px
+@media screen and (max-width:650px)
+    .header__phone
+        display: none
+    .section__title
+        font-size: 5.5vw
