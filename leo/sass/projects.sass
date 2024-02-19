@@ -1,0 +1,74 @@
+.main
+    padding-top: 150px
+    .container
+        position: relative
+    &__bg
+        position: absolute
+        top: 40px
+        width: 100%
+        opacity: 0.08
+        z-index: -1
+    &__title
+        margin-bottom: 40px
+    &__descript
+        max-width: 540px
+        font-size: 16px
+        line-height: 25px
+        font-weight: 300
+    &__links
+        max-width: 525px
+        color: #cea058
+        font-size: 12px
+        margin-top: 40px
+        line-height: 19px
+.tabs
+    margin-top: 70px
+    &__header
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        gap: 15px 15px
+        &-item
+            border-radius: 40px
+            padding: 6px 18px 6px
+            border: 1px solid #cea058
+            font-size: 14px
+        &-active
+            color: #000
+            background: #cea058
+    &__main
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 70px 40px
+        margin-top: 40px
+    &__item
+        position: relative
+        &-categ
+            position: absolute
+            padding: 7px 8px 7px
+            background-color: rgba(0,0,0,.5)
+            top: 15px
+            left: 10px
+            font-size: 10px
+            font-weight: 600
+        &-img
+            width: 100%
+            height: 276px
+            img
+                object-fit: cover
+                height: 100%
+        &-title
+            font-size: 18px
+            font-weight: 500
+            margin-top: 20px
+@media screen and (max-width: 1000px)
+    .tabs__main
+        grid-template-columns: 1fr 1fr
+@media screen and (max-width: 1000px)
+    .tabs__main
+        grid-template-columns: 1fr
+@media screen and (max-width: 650px)
+    .tabs__header
+        flex-direction: column
+        align-items: flex-start

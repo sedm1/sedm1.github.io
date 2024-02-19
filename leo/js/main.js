@@ -85,4 +85,21 @@ $(document).ready(function(){
     $('.header__menu-close').click(()=> {
       CloseWindow('header__nav', 'header__menu')
     })
+
+    //Табуляция
+    $('.tabs__header-item').click((e) => {
+      let CurrentItem = $(e.currentTarget).data('tab')
+      $('.tabs__header-item').removeClass('tabs__header-active')
+      $(e.currentTarget).addClass('tabs__header-active')
+      $('.tabs__item').show()
+      if(CurrentItem != 0){
+        $('.tabs__item').each(function(){
+          if ($(this).data('item') != CurrentItem){
+            $(this).hide()
+          }
+        })
+      }
+      
+      
+    })
 })
