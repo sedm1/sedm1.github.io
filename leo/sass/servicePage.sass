@@ -1,0 +1,628 @@
+.main
+    padding-top: 200px
+    &__button
+        margin-top: 35px
+    .container
+        position: relative
+    &__bg
+        position: absolute
+        top: 10px
+        width: 100%
+        z-index: -1
+        opacity: 0.08
+        left: 0px
+    &__title
+        max-width: 494px
+        font-size: 34px
+        font-weight: 500
+        margin-bottom: 15px
+    &__descript
+        max-width: 600px
+        font-size: 16px
+        line-height: 25px
+        font-weight: 300
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        margin-top: 50px
+    &__item
+        &-icon 
+            width: 50px
+        &-text 
+            margin-top: 10px
+            max-width: 307px
+            line-height: 25px
+.client
+    margin-top: 100px
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        margin-top: 50px
+        gap: 70px 40px
+    &__item
+        &-icon 
+            width: 60px
+            margin-bottom: 20px
+.what
+    margin-top: 100px
+    .container
+        position: relative
+    &__bg
+        position: absolute
+        top: 10px
+        width: 100%
+        position: absolute
+        z-index: -1
+        opacity: 0.08
+    &__item
+        margin-top: 80px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        &:nth-child(2n)
+            flex-direction: row-reverse
+        &-info 
+            max-width: 560px
+        &-slider
+            max-width: 550px
+            position: relative
+            .slick-prev, .slick-next
+                position: absolute
+                top: 150px
+                z-index: 1
+                width: 40px
+                height: 40px
+                background: #cea058
+                border-radius: 100%
+                font-size: 0px
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center center
+            .slick-prev
+                left: 20px
+                background-image: url('../img/slider-arrow-right.png')
+                transform: rotate(180deg)
+            .slick-next
+                right: 20px
+                background-image: url('../img/slider-arrow-right.png')
+        &-slide 
+            img
+                border-radius: 16px
+                border: 1px solid #cea058
+            p
+                font-size: 14px
+                color: #c7c7c7
+                margin-top: 10px
+        &-title 
+            color: #cea058
+            font-size: 26px
+            font-weight: 600
+            line-height: 40px
+        &-line
+            width: 60px
+            height: 1px
+            background: #fff
+            opacity: 0.4
+            margin: 20px 0px
+        &-descript
+            line-height: 25px
+            font-size: 16px
+            font-weight: 300
+
+            
+    
+.prem
+    margin-top: 150px
+    &__subtitle
+        color: #cea058
+        font-weight: 500
+        font-size: 20px
+        margin-top: 20px
+        max-width: 699px
+        line-height: 31px
+    &__block
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 70px 40px
+        margin-top: 60px
+    &__item
+        &-img img
+            border-radius: 16px
+            margin-bottom: 20px
+        &-title
+            color: #cea058
+            font-size: 16px
+            font-weight: 600
+        &-line
+            width: 60px
+            height: 1px
+            background: #fff
+            opacity: 0.4
+            margin: 20px 0px
+        &-descript
+            font-size: 16px
+            font-weight: 300
+            line-height: 25px
+.kluch
+    margin-top: 80px
+    .container
+        position: relative
+    &__bg
+        position: absolute
+        width: 100%
+        top: 10px
+        left: 0px
+        opacity: 0.08
+        z-index: -1
+    &__descript
+        margin-top: 20px
+        color: #cea058
+        max-width: 700px
+        font-size: 20px
+        font-weight: 500
+        line-height: 31px
+    &__block
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 80px 30px
+        margin-top: 60px
+    &__item
+        img
+            border-radius: 16px
+        &-img
+            border: 1px solid rgb(220, 150, 41)
+            border-radius: 16px
+        &-header
+            display: flex
+            align-items: center
+            margin-top: 15px
+            position: relative
+        &-title
+            color: #cea058
+        &-icon
+            width: 27px
+            height: 27px
+            border-radius: 100%
+            border: 1px solid #cea058
+            margin-left: 10px
+        &-descript
+            font-size: 14px
+            font-weight: 300
+            opacity: 0.7
+            margin-top: 10px
+            line-height: 22px
+        &-d
+            background-color: #ffffff
+            border-radius: 10px
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3)
+            max-width: 280px
+            min-width: 280px
+            color: #000000
+            position: absolute
+            bottom: 34px
+            right: 20px
+            padding: 15px
+            display: none
+            &-active
+                display: block
+.map
+    margin-top: 150px
+    padding: 80px 0px
+    .container
+        display: flex
+        justify-content: flex-end
+        position: relative
+        &::before
+            content: ""
+            width: 760px
+            height: 618px
+            background-size: cover
+            background-repeat: no-repeat
+            position: absolute
+            left: -150px
+    &__info
+        max-width: 573px
+    &__descript
+        margin-top: 20px
+        font-size: 16px
+        font-weight: 300
+        line-height: 25px
+    &__subtitle
+        margin-top: 60px
+        font-size: 16px
+        font-weight: 600
+        color: #cea058
+        max-width: 500px
+        line-height: 25px
+.company
+    margin-top: 100px
+    .section__title
+        max-width: 534px
+    &__block
+        margin-top: 60px
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 60px 100px
+    &__item
+        display: flex
+        justify-content: center
+.blag
+    margin-top: 200px
+    .container
+        position: relative
+    &__ie
+        position: absolute
+        z-index: -1
+        top: -30px
+        left: 0px
+        width: 100%
+        opacity: 0.08
+    &__block
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 80px 40px
+        margin-top: 200px
+        img
+            border-radius: 16px
+    &__item
+        display: none
+        &-title
+            font-size: 14px
+            color: #dc9629
+            font-weight: 400
+            max-width: 206px
+            margin-top: 15px
+    &__button
+        padding: 18px 60px
+        font-size: 16px
+        margin: 0 auto
+        margin-top: 100px
+        border-radius: 30px
+        border: 2px solid rgb(220, 150, 41)
+        display: block
+.ur
+    margin-top: 150px
+    .container
+        position: relative
+    &__bg
+        position: absolute
+        z-index: -1
+        top: 50%
+        left: 0px
+        width: 100%
+        opacity: 0.08
+    &__block
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 80px
+        &-first
+            .ur__info
+                max-width: 539px
+                &-title
+                    max-width: 404px
+                &-subtitle
+                    max-width: 451px
+            .ur__img-block
+                max-width: 500px
+                position: relative
+                .ur__img-row
+                    display: flex
+                    gap: 0px 60px
+                    width: 100%
+                    &:nth-child(1)
+                        position: absolute
+                        z-index: 1
+                        left: 30px
+                        top: 35px
+        &-second
+            .ur__info
+                max-width: 543px
+            .ur__img-block
+                max-width: 550px
+                position: relative
+                .ur__img-item
+                    &:nth-child(2)
+                        position: absolute
+                        bottom: -100px
+                        right: -140px
+    &__img
+        transition: .3s
+        &-item
+            box-shadow: 0px 0px 10px 0px rgba(11,11,11,0.4)
+            border-radius: 16px
+            transition: .3s
+            img
+                border-radius: 16px
+        &-filter
+            opacity: 0.4
+        &-active
+            opacity: 1
+    &__info
+        &-title
+            font-size: 28px
+            font-weight: 500
+            line-height: 36px
+            margin-bottom: 15px
+        &-subtitle
+            font-size: 20px
+            font-weight: 400
+            line-height: 31px
+            margin-bottom: 20px
+        &-descript
+            font-size: 16px
+            line-height: 25px
+            font-weight: 300
+            margin-top: 20px
+.quest
+    margin-top: 150px
+    .container
+        position: relative
+    &__bg
+        position: absolute
+        top: 200px
+        width: 100%
+        opacity: 0.08
+        left: 0
+        z-index: -1
+    &__block
+        margin-top: 60px
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__icon
+        font-size: 50px
+        font-weight: 100
+        color: #cea058
+        cursor: pointer
+        transition: .3s
+        min-width: 40px
+        width: 40px
+        height: 40px
+        border-radius: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+    &__item
+        border-bottom: 1px solid #cea058
+        padding: 20px 0px
+        padding-bottom: 0px
+        cursor: pointer
+        &:first-child
+            border-top: 1px solid #cea058
+        &:hover
+            .quest__icon
+                background: #cea058
+                color: #0b0b0b
+        &-active
+            padding-bottom: 20px
+            .quest__icon
+                transform: rotate(45deg)
+                background: #cea058
+                color: #0b0b0b
+            .quest__body
+                max-height: 1000px
+    &__title
+        font-size: 18px
+        font-weight: 600
+    &__body
+        height: auto
+        overflow: hidden
+        margin-top: 20px
+        transition: all 0.02s ease-out
+        max-height: 0
+.raz
+    margin-top: 150px
+    .container
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__text
+        max-width: 584px
+        position: sticky
+        top: 150px
+        &-descript
+            font-size: 16px
+            line-height: 25px
+            font-weight: 300
+            margin-top: 30px
+            max-width: 539px
+    &__info
+        max-width: 558px
+        .img-filter
+            border-radius: 16px
+            background-color: rgba(11, 11, 11, 0.65)
+            width: 100%
+            height: 100%
+            border-radius: 16px
+        &-img
+            border: 1px solid #cea058
+            border-radius: 16px
+            background-image: linear-gradient(315deg, rgba(207,163,87,0.27) 0%, rgba(207,165,87,0.6) 97%)
+.office
+    margin-top: 150px
+    .container
+        position: relative
+    &__bg
+        position: absolute
+        top: 250px
+        z-index: -1
+        width: 79px
+        &-first
+            left: -40px
+        &-second
+            right: -40px
+    &__block
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 80px 40px
+        margin-top: 80px
+    &__item
+        &-header
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+        &-from
+            font-size: 16px
+            color: #cea058
+        &-arrow
+            min-width: 15px
+            width: 15px
+            margin: 0px 15px
+        &-to
+            font-size: 16px
+        &-loc
+            display: flex
+            align-items: center
+            font-size: 14px
+            margin-bottom: 20px
+            max-width: 320px
+        &-icon
+            min-width: 30px
+            width: 30px
+            margin-right: 10px
+@media screen and (max-width: 1160px)
+    .main
+        padding-top: 150px
+    .prem
+        &__block
+            grid-template-columns: 1fr 1fr
+    .kluch
+        &__container
+            max-width: 100%
+            overflow-x: scroll
+        &__item
+            width: 267px
+        &__block
+            display: flex
+            width: fit-content
+    .map
+        margin-top: 100px
+        padding-top: 0px
+    .company
+        &__block
+            grid-template-columns: repeat(3, 1fr)
+    .blag
+        &__block
+            margin-top: 100px
+            grid-template-columns: repeat(3, 1fr)
+    .ur
+        &__block
+            &-first
+                flex-direction: column
+                align-items: center
+                .ur__img-block 
+                    margin-top: 40px
+                    .ur__img-row:nth-child(1)
+                        position: static
+                        margin-bottom: 20px
+            &-second
+                flex-direction: column-reverse
+                .ur__img-block 
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    margin-top: 40px
+                    .ur__img-item:nth-child(2)
+                        position: static
+                        margin-top: 20px
+    .raz
+        .container
+            flex-direction: column
+            align-items: center
+        &__text
+            position: static
+            margin-bottom: 40px
+    .office
+        &__block
+            grid-template-columns: 1fr
+        &__bg
+            display: none
+    .what
+        &__item
+            flex-direction: column
+            &:nth-child(2n)
+                flex-direction: column
+            &-slider
+                margin-top: 20px
+@media screen and (max-width: 650px)
+    .prem
+        margin-top: 50px
+        &__subtitle
+            font-size: 3.5vw
+            line-height: normal
+        &__block
+            grid-template-columns: 1fr
+    .map
+        .container
+            justify-content: flex-start
+            &::before
+                width: 600px
+                height: 511px
+                top: -40px
+                left: auto
+                right: 10px
+                z-index: -1
+        &__descript
+            font-size: 2.9vw
+            line-height: normal
+        &__subtitle
+            margin-top: 30px
+    .kluch
+        &__descript
+            font-size: 3.2vw
+            line-height: normal
+    .company
+        &__block
+            grid-template-columns: repeat(2, 1fr)
+            gap: 40px 60px
+    
+    .blag
+        &__block
+            grid-template-columns: repeat(2, 1fr)
+            gap: 20px
+    .ur
+        margin-top: 50px
+        &__block
+            &-first
+                .ur__img-block 
+                    .ur__img-row
+                        gap: 0px 10px
+    .quest
+        margin-top: 50px
+        &__item
+            padding-right: 10px
+    .raz
+        margin-top: 50px
+        &__text
+            &-descript
+                font-size: 3.3vw
+                line-height: normal
+            &__info
+                &-descript
+                    font-size: 14px
+    .office
+        margin-top: 50px
+        &__block
+            margin-top: 20px
+    .client
+        &__block
+            grid-template-columns: 1fr 1fr
+            gap: 40px
+        &__item
+            &-title
+                font-size: 4vw
+    .main
+        padding-top: 100px
+        &__block
+            grid-template-columns: 1fr
+            gap: 30px
+    .what
+        &__item
+            &-slider
+                max-width: 100%
+                width: 100%
+                .slick-prev, .slick-next
+                    top: 36%

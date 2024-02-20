@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -484,19 +485,19 @@
                     </div>
                     <div class="ur__img-block">
                         <div class="ur__img-row">
-                            <button class="ur__img-item"><img src="img/lic.jpg" alt="License"></button>
-                            <button class="ur__img-item"><img src="img/lic.jpg" alt="License"></button>
+                            <button class="ur__img-item" data-modal="1"><img src="img/lic.jpg" alt="License" ></button>
+                            <button class="ur__img-item" data-modal="2"><img src="img/lic.jpg" alt="License" ></button>
                         </div>
                         <div class="ur__img-row">
-                            <button class="ur__img-item"><img src="img/lic.jpg" alt="License"></button>
-                            <button class="ur__img-item"><img src="img/lic.jpg" alt="License"></button>
+                            <button class="ur__img-item" data-modal="3"><img src="img/lic.jpg" alt="License" ></button>
+                            <button class="ur__img-item" data-modal="4"><img src="img/lic.jpg" alt="License" ></button>
                         </div>
                     </div>
                 </div>
                 <div class="ur__block ur__block-second">
                     <div class="ur__img-block">
-                        <button class="ur__img-item"><img src="img/lic-big.jpeg" alt="License"></button>
-                        <button class="ur__img-item"><img src="img/lic-big.jpeg" alt="License"></button>
+                        <button class="ur__img-item" data-modal="5"><img src="img/lic-big.jpeg" alt="License" ></button>
+                        <button class="ur__img-item" data-modal="6"><img src="img/lic-big.jpeg" alt="License" ></button>
                     </div>
                     <div class="ur__info">
                         <h3 class="ur__info-title"> Торгово-технологическая компания с уставным капиталом 800 000 $</h3>
@@ -717,8 +718,20 @@
             <button class="modal__video-close modal__close"><svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#cea058" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg></button>
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/npc8GQE5NuU?si=GNYqtsPFYj4AEhSS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+        <div class="modal__slider">
+            <button class="modal__slider-close"><svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.41421 -0.000151038L0 1.41406L21.2132 22.6273L22.6274 21.2131L1.41421 -0.000151038Z" fill="#000000"></path><path d="M22.6291 1.41421L21.2148 0L0.00164068 21.2132L1.41585 22.6274L22.6291 1.41421Z" fill="#000000"></path></svg></button>
+            <div class="modal__slider-block">
+                <div class="modal__slider-item"><img src="img/lic.jpg" alt="lic"></div>
+                <div class="modal__slider-item"><img src="img/lic.jpg" alt="lic"></div>
+                <div class="modal__slider-item"><img src="img/lic.jpg" alt="lic"></div>
+                <div class="modal__slider-item"><img src="img/lic.jpg" alt="lic"></div>
+                <div class="modal__slider-item"><img src="img/lic-big.jpeg" alt="lic"></div>
+                <div class="modal__slider-item"><img src="img/lic-big.jpeg" alt="lic"></div>
+            </div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -99,7 +99,23 @@ $(document).ready(function(){
           }
         })
       }
+    })
+
+    //Блок с наградами
+    
+    $('.ur__img-item').click((e)=> {
+      $('.modal__slider-block').slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+      })
       
-      
+      var ItemIndex = $(e.currentTarget).data('modal')
+      OpenWindow('modal__bg', 'modal__slider')
+      $('.modal__slider-block').slick('slickGoTo', ItemIndex, true)
+    })
+    $('.modal__slider-close').click(()=> {
+      CloseWindow('modal__bg', 'modal__slider')
+      $('.modal__slider-block').slick('unslick')
     })
 })

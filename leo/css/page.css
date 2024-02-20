@@ -1,0 +1,136 @@
+body {
+  background: #fff;
+}
+
+footer {
+  background: #0b0b0b;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #0b0b0b;
+  padding: 18px 20px;
+}
+
+main {
+  padding-top: 90px;
+}
+main * {
+  color: #000;
+}
+main .container {
+  max-width: 760px;
+}
+
+.main h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.main img {
+  margin-bottom: 30px;
+}
+.main p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 1.55;
+}
+.main h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.header__link {
+  width: 30px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  top: 24%;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.header__title {
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.feedback .container {
+  padding: 50px 0px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+.feedback__title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.feedback__link {
+  border-radius: 50px;
+  border: 2px solid #cea058;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 50px;
+  margin-top: 30px;
+}
+
+.info {
+  margin-top: 50px;
+}
+.info__autor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info__autor-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.info__autor-icon img {
+  border-radius: 100%;
+}
+.info__autor-text {
+  font-size: 12px;
+  font-weight: 400;
+}
+.info__text {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+.info__text-date {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  .main h1 {
+    font-size: 8vw;
+  }
+  .main p {
+    font-size: 3.4vw;
+  }
+  .header__link {
+    left: 0px;
+  }
+}

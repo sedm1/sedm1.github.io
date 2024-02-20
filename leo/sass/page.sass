@@ -1,0 +1,97 @@
+body
+    background: #fff
+footer
+    background: #0b0b0b
+header
+    background: #fff
+    border-bottom: 1px solid #0b0b0b
+    padding: 18px 20px
+main
+    padding-top: 90px
+    *
+        color: #000
+    .container
+        max-width: 760px
+.main
+    h1
+        font-size: 36px
+        font-weight: 600
+        margin-bottom: 30px
+    img
+        margin-bottom: 30px
+    p
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 30px
+        line-height: 1.55
+    h2
+        font-size: 26px
+        font-weight: 600
+        margin-bottom: 30px
+
+.header
+    &__link
+        width: 30px
+        transform: rotate(180deg)
+        position: absolute
+        top: 24%
+        left: 20px
+        cursor: pointer
+        z-index: 1
+    &__title
+        text-align: center
+        font-size: 12px
+        color: #000000
+        opacity: 0.8
+        font-weight: 400
+.feedback
+    .container
+        padding: 50px 0px
+        border-top: 1px solid #000000
+        border-bottom: 1px solid #000000
+    &__title
+        font-size: 28px
+        margin-bottom: 20px
+    &__link
+        border-radius: 50px
+        border: 2px solid #cea058
+        margin: 0 auto
+        font-weight: 800
+        font-size: 18px
+        width: fit-content
+        padding: 15px 50px
+        margin-top: 30px
+.info
+    margin-top: 50px
+    &__autor
+        display: flex
+        align-items: center
+        &-icon 
+            width: 30px
+            height: 30px
+            border-radius: 100%
+            margin-right: 20px
+            img
+                border-radius: 100%
+        &-text
+            font-size: 12px
+            font-weight: 400
+    &__text
+        color: rgba(0,0,0,.5)
+        font-size: 10px
+        font-weight: 400
+        display: flex
+        align-items: center
+        margin-top: 70px
+        text-transform: uppercase
+        &-date
+            margin-right: 30px
+@media screen and (max-width: 550px)
+
+    .main
+        h1
+            font-size: 8vw
+        p
+            font-size: 3.4vw
+    .header__link
+        left: 0px
