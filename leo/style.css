@@ -551,7 +551,7 @@ footer .container {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
 }
 .form__info-item .info__item-icon {
   min-width: 30px;
@@ -747,6 +747,9 @@ footer .container {
   }
 }
 @media screen and (max-width: 650px) {
+  .container {
+    max-width: 96%;
+  }
   .header__phone {
     display: none;
   }

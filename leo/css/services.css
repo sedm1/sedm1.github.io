@@ -90,7 +90,7 @@
 }
 .services__item-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 .services__item-link {
@@ -266,7 +266,7 @@
 }
 .et__item-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
   max-width: 488px;
 }
@@ -294,7 +294,7 @@
 }
 .et__subitem-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 
@@ -325,7 +325,7 @@
 }
 .prinz__info-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 .prinz__img {
@@ -351,7 +351,7 @@
 }
 .prinz__item-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 
@@ -410,7 +410,7 @@
   margin-top: 30px;
   font-size: 16px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .kluch {
@@ -453,7 +453,7 @@
 }
 .kluch__item-descript {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   opacity: 0.7;
   margin-top: 10px;
   line-height: 22px;
@@ -575,7 +575,7 @@
 .ur__info-descript {
   font-size: 16px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 20px;
 }
 

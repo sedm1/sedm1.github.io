@@ -29,7 +29,7 @@
 .main__descript {
   font-size: 16px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
 }
 .main__descript-second {
   color: #cea058;
@@ -84,7 +84,7 @@
 .ziel__item-descript {
   font-size: 16px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .history {
@@ -139,7 +139,7 @@
 .history__item-descript {
   font-size: 16px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
 }
 .history__item-subtitle {
   color: #cea058;
@@ -151,7 +151,7 @@
   list-style: inside;
   margin-bottom: 5px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .prinz {
@@ -181,7 +181,7 @@
 }
 .prinz__info-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 .prinz__img {
@@ -207,7 +207,7 @@
 }
 .prinz__item-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 
@@ -251,7 +251,7 @@
 }
 .kluch__item-descript {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   opacity: 0.7;
   margin-top: 10px;
   line-height: 22px;

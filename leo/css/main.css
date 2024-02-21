@@ -50,7 +50,7 @@
 .main__descript {
   max-width: 568px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
   opacity: 0.9;
 }
@@ -107,7 +107,7 @@
 .how__descript {
   max-width: 560px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
   margin-top: 15px;
 }
@@ -188,7 +188,7 @@
   margin: 0 auto;
   margin-top: 70px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 
@@ -229,7 +229,7 @@
 }
 .with__item-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 
@@ -261,7 +261,7 @@
 .map__descript {
   margin-top: 20px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 .map__subtitle {
@@ -296,7 +296,7 @@
 .raz__text-descript {
   font-size: 16px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 30px;
   max-width: 539px;
 }
@@ -323,7 +323,7 @@
 }
 .raz__info-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 .raz__info-block {
@@ -382,7 +382,7 @@
 .raz__info .item__descript {
   font-size: 14px;
   line-height: 22px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .services {
@@ -437,7 +437,7 @@
 }
 .services__item-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 .services__item-link {
@@ -586,7 +586,7 @@
 }
 .prem__item-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 
@@ -640,7 +640,7 @@
 }
 .help__descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 
@@ -665,6 +665,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-height: 50px;
 }
 
 .blag {
@@ -767,7 +768,7 @@
   margin-top: 30px;
   font-size: 16px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .kluch {
@@ -810,7 +811,7 @@
 }
 .kluch__item-descript {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   opacity: 0.7;
   margin-top: 10px;
   line-height: 22px;
@@ -932,7 +933,7 @@
 .ur__info-descript {
   font-size: 16px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 20px;
 }
 
@@ -1025,7 +1026,7 @@
 }
 .et__item-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
   max-width: 488px;
 }
@@ -1053,7 +1054,7 @@
 }
 .et__subitem-descript {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 25px;
 }
 

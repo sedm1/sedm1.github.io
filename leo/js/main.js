@@ -118,4 +118,14 @@ $(document).ready(function(){
       CloseWindow('modal__bg', 'modal__slider')
       $('.modal__slider-block').slick('unslick')
     })
+
+    $('.header__soz-item').mouseenter((e) => {
+      let item = $(e.currentTarget).children().children()
+      item.children().children('path').attr('fill', '#DC9629')
+    })
+    $('.header__soz-item').mouseleave((e) => {
+      let item = $(e.currentTarget).children().children()
+      item.children().children('path').attr('fill', '#CEA058')
+    })
+    
 })
