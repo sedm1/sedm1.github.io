@@ -9,6 +9,11 @@
 body
     position: relative
     background: $bg
+    max-width: 100%
+    overflow-x: hidden
+html
+    max-width: 100%
+    overflow-x: hidden
 a
     text-decoration: none
     color: inherit
@@ -338,7 +343,26 @@ footer
         display: none
 .modal__bg
     display: none
+.bg
+    &__img
+        position: absolute
+        z-index: -1
+    &-1
+        width: 1062px
+        transform: rotate(-3deg)
+        top: -100px
+        right: -620px
+    &-2
+        width: 778px
+        top: 950px
+        left: -440px
+    &-3
+        bottom: 400px
+        width: 1540px
+        left: -900px
 @media screen and (max-width: 1200px)
+    .bg__img
+        display: none
     .modal__bg
         position: fixed
         height: 100dvh

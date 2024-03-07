@@ -11,6 +11,13 @@
 body {
   position: relative;
   background: #F7F5ED;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -506,7 +513,32 @@ footer .container {
   display: none;
 }
 
+.bg__img {
+  position: absolute;
+  z-index: -1;
+}
+.bg-1 {
+  width: 1062px;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  top: -100px;
+  right: -620px;
+}
+.bg-2 {
+  width: 778px;
+  top: 950px;
+  left: -440px;
+}
+.bg-3 {
+  bottom: 400px;
+  width: 1540px;
+  left: -900px;
+}
+
 @media screen and (max-width: 1200px) {
+  .bg__img {
+    display: none;
+  }
   .modal__bg {
     position: fixed;
     height: 100dvh;
