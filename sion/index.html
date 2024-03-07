@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .main .container{
+            background-image: url('img/main__bg.png');
+        }
+        .slick-next{
+            background-image: url('img/arrow__right.png');
+        }
+        .slick-prev{
+            background-image: url('img/arrow__left.png');
+        }
+        footer .container{
+            background-image: url('img/footer__bg.jpeg');
+        }
+    </style>
+</head>
+<body>
+    <div class="modal__bg"></div>
+    <header>
+        <div class="container">
+            <div class="header__logo">
+                <div class="header__logo-img"><img src="img/logo.png" alt="HeaderLogo"></div>
+                <p class="header__logo-text">Клуб йоги <br/>в Санкт-Петербурге</p>
+            </div>
+            <div class="header__right">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#heart">О нас</a></li>
+                    <li class="header__menu-item"><a href="#price">Прайс-лист</a></li>
+                    <li class="header__menu-item"><a href="#rent">Аренда зала</a></li>
+                    <li class="header__menu-item"><a href="#how">Контакты</a></li>
+                </ul>
+                <button class="header__button">Записаться на занятие</button>
+            </div>
+            <button class="menu__button"><img src="img/menu.png" alt="MenuButton"></button>
+            <button class="menu__button-close"><img src="img/close.png" alt="MenuButton"></button>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="main__info">
+                    <h1 class="main__title">Сохраняем мир в сердце</h1>
+                    <p class="main__descript">Делимся сутью и глубиной йоги, которая начинается с зала и мягко интегрируется в ежедневность, повышая качество жизни.</p>
+                </div>
+                <button class="main__button">Онлайн-запись</button>
+            </div>
+        </section>
+        <section class="heart" id="heart">
+            <div class="container">
+                <h2 class="section__title">Сердце Сеон</h2>
+                <div class="heart__block">
+                    <div class="heart__img"><img src="img/heart.jpeg" alt="heart"></div>
+                    <div class="heart__info">
+                        <p class="heart__info-item">Занимаясь в Сеоне, вы сможете изменить свою жизнь к лучшему, "вытащив" себя из состояния слабости и болезни, жить здоровой, полноценной жизнью и быть в ресурсном состоянии.</p>
+                        <p class="heart__info-item">Подлинная практика йоги не заканчивается на коврике с последним звуком гонга и выходом из Шавасаны. Практика – лишь инструмент, который помогает воссоздать определенные поведенческие паттерны и шаблоны для отработки их в жизни.</p>
+                        <p class="heart__info-item">Практикующий учится быть в состоянии наблюдателя, безоценочно наблюдать за ситуацией со стороны и видеть в ней повод для изменения себя в лучшую сторону.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price" id="price">
+            <div class="container">
+                <h2 class="section__title">Прайс-лист</h2>
+                <div class="price__block">
+                    <div class="price__item" style="background-image: url('img/p-1.png');">
+                        <div class="price__item-info">
+                            <h3 class="price__item-title">Пробное занятие</h3>
+                            <p class="price__item-descript">500₽</p>
+                        </div>
+                        <button class="price__item-button">Выбрать</button>
+                    </div>
+                    <div class="price__item" style="background-image: url('img/p-2.png');">
+                        <div class="price__item-info">
+                            <h3 class="price__item-title">Разовое занятие</h3>
+                            <p class="price__item-descript">850₽</p>
+                        </div>
+                        <button class="price__item-button">Выбрать</button>
+                    </div>
+                    <div class="price__item" style="background-image: url('img/p-3.png');">
+                        <div class="price__item-info">
+                            <h3 class="price__item-title">Абонемент на месяц: 4 занятия</h3>
+                            <p class="price__item-descript">3200₽</p>
+                        </div>
+                        <button class="price__item-button">Выбрать</button>
+                    </div>
+                    <div class="price__item" style="background-image: url('img/p-4.png');">
+                        <div class="price__item-info">
+                            <h3 class="price__item-title">Абонемент на месяц: 8 занятий</h3>
+                            <p class="price__item-descript">5600₽</p>
+                        </div>
+                        <button class="price__item-button">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rent" id="rent">
+            <div class="container">
+                <h2 class="section__title">Аренда зала</h2>
+                <div class="rent__block">
+                    <div class="rent__item"><img src="img/slider.jpeg" alt="SliderImg"></div>
+                    <div class="rent__item"><img src="img/slider.jpeg" alt="SliderImg"></div>
+                    <div class="rent__item"><img src="img/slider.jpeg" alt="SliderImg"></div>
+                    <div class="rent__item"><img src="img/slider.jpeg" alt="SliderImg"></div>
+                    <div class="rent__item"><img src="img/slider.jpeg" alt="SliderImg"></div>
+                    <div class="rent__item"><img src="img/slider.jpeg" alt="SliderImg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="what">
+            <div class="container">
+                <div class="what__item">
+                    <div class="what__item-main">
+                        <h3 class="what__item-title">Что мы предлагаем</h3>
+                        <ul class="what__item-list">
+                            <li><img src="img/lotus.png" alt="lotus"> 90 кв.м рабочего пространства</li>
+                            <li><img src="img/lotus.png" alt="lotus"> Мужская и женская раздевалки</li>
+                            <li><img src="img/lotus.png" alt="lotus"> Пространство для отдыха и ожидания</li>
+                            <li><img src="img/lotus.png" alt="lotus"> 10 мин. пешком от м.Пл.Мужества</li>
+                            <li><img src="img/lotus.png" alt="lotus"> Музыкальное оборудование</li>
+                            <li><img src="img/lotus.png" alt="lotus"> Бесплатная парковка</li>
+                            <li><img src="img/lotus.png" alt="lotus"> Кулер с холодной водой</li>
+                            <li><img src="img/lotus.png" alt="lotus"> Просторный туалет с душевой</li>
+                            <li><img src="img/lotus.png" alt="lotus"> Традиционная китайская чайная церемония</li>
+                        </ul>
+                    </div>
+                    <div class="what__item-subblock subblock-first">
+                        <h4 class="what__item-subtitle">При аренде на длительный срок или разовой брони от 2х часов делаем скидку</h4>
+                        <div class="what__item-img"><img src="img/h-1.png" alt="h"></div>
+                    </div>
+                </div>
+                <div class="what__item">
+                    <div class="what__item-main">
+                        <h3 class="what__item-title">Что мы предлагаем</h3>
+                        <ul class="what__item-list">
+                            <li><img src="img/lotus.png" alt="lotus"> 12 удобных складных стульев</li>
+                            <li><img src="img/lotus.png" alt="lotus"> 25 ковров</li>
+                            <li><img src="img/lotus.png" alt="lotus"> 25 пледов</li>
+                            <li><img src="img/lotus.png" alt="lotus"> 8 кубиков</li>
+                            <li><img src="img/lotus.png" alt="lotus"> 10 болстеров</li>
+                            <li><img src="img/lotus.png" alt="lotus"> Звуковое оборудование</li>
+                            <li><img src="img/lotus.png" alt="lotus"> 3 гонга</li>
+                        </ul>
+                    </div>
+                    <div class="what__item-subblock subblock-second">
+                        <h4 class="what__item-subtitle">Для аренды зала обращайтесь по телефону</h4>
+                        <a class="what__item-descript" href="tel: +79291076969">+7 (929) 107-69-69</a>
+                        <div class="what__item-img"><img src="img/h-2.png" alt="h"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how" id="how">
+            <div class="container">
+                <div class="how__header">
+                    <div class="how__info">
+                        <h2 class="section__title">Как наст найти</h2>
+                        <p class="how__descript">2-й Муринский проспект, 34к1, Санкт-Петербург</p>
+                        <p class="how__descript">+7 (929) 107-69-69, по предварительной записи</p>
+                    </div>
+                    <div class="main__button">Онлайн-запись</div>
+                </div>
+                <div class="how__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3071becacad6edbc0daad14193988864f8ea0cdde7b22a56b16ef99ececec4b3&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__up">
+                <div class="footer__logo"><img src="img/footer__logo.png" alt="FooterLogo"></div>
+                <div class="footer__right">
+                    <ul class="footer__menu">
+                        <li><a href="#heart">О нас</a></li>
+                        <li><a href="#price">Прайс-лист</a></li>
+                        <li><a href="#rent">Аренда зала</a></li>
+                        <li><a href="#how">Контакты</a></li>
+                    </ul>
+                    <button class="footer__button">Записаться на занятие</button>
+                </div>
+            </div>
+            <a href="#" class="footer__polit">Политика конфиденциальности</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
