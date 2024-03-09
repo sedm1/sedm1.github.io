@@ -33,3 +33,14 @@ $('.menu__button-close').click(() => {
         $('.menu__button-close').css({'display': ''})
     }, 500)
 })
+$('.header__menu-item').click(() => {
+  if ($('.modal__bg').hasClass('modal__bg-active')){
+    $('.header__right').removeClass('header__right-active')
+    $('.modal__bg').removeClass('modal__bg-active')
+    setTimeout(() => {
+        $('.modal__bg').css({'display': ''})
+        $('.menu__button').css({'display': ''})
+        $('.menu__button-close').css({'display': ''})
+    }, 500)
+  }
+})
