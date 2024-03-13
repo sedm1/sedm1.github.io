@@ -540,6 +540,189 @@ footer .container {
   left: -900px;
 }
 
+.modal_bg {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.modal_bg-active {
+  opacity: 1;
+}
+.modal__window {
+  max-width: 550px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 30px;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+.modal__window-active {
+  opacity: 1;
+}
+.modal__window-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.modal__window-close {
+  width: 48px;
+  height: 48px;
+}
+.modal__window-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.modal__window form {
+  margin-top: 20px;
+}
+.modal__window input[type=text] {
+  padding: 15px 30px;
+  width: 100%;
+  background: #ECEDF2;
+  border-radius: 103px;
+  margin-bottom: 10px;
+  outline: 0 none;
+  border: 0 none;
+  font-size: 16px;
+  color: #33322E;
+  font-weight: 600;
+}
+.modal__window input[type=text]::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #33322E;
+}
+.modal__window input[type=text]::-moz-placeholder {
+  font-weight: 400;
+  color: #33322E;
+}
+.modal__window input[type=text]:-ms-input-placeholder {
+  font-weight: 400;
+  color: #33322E;
+}
+.modal__window input[type=text]::-ms-input-placeholder {
+  font-weight: 400;
+  color: #33322E;
+}
+.modal__window input[type=text]::placeholder {
+  font-weight: 400;
+  color: #33322E;
+}
+.modal__window input:checked ~ .checkbox-item {
+  background: #7A8459;
+}
+.modal__window-button {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 103px;
+  padding: 15px 0px;
+  background: #7A8459;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal__window input[type=checkbox] {
+  display: none;
+}
+.modal__window-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.modal__window-footer p {
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 243px;
+}
+.modal__window .checkbox-item {
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid #7A8459;
+  display: block;
+  margin-right: 10px;
+  position: relative;
+}
+.modal__window .checkbox-item::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  content: "";
+  background-image: url("img/gal.png");
+  background-size: 10px 8px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.recall {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.recall__links {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.recall__links-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.recall__links-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #7A8459;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 1200px) {
   .bg__img {
     display: none;

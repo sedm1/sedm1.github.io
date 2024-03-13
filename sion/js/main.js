@@ -44,3 +44,23 @@ $('.header__menu-item').click(() => {
     }, 500)
   }
 })
+
+$('.main__button, .header__button, .price__item-button, .footer__button').click(() => {
+  $('.modal_bg').css({'display': 'flex'})
+  $('.modal_bg').addClass('modal_bg-active')
+  $('.modal__window').css({'display': 'block'})
+  setTimeout(() => {
+    $('.modal__window').addClass('modal__window-active')
+  }, 200)
+})
+$('.modal__window-close').click(() => {
+  $('.modal__window').removeClass('modal__window-active')
+  $('.modal__window').css({'display': ''})
+  $('.modal_bg').removeClass('modal_bg-active')
+  setTimeout(() => {
+    $('.modal_bg').css({'display': ''})
+  }, 200)
+})
+$('.recall__button').click(() => {
+  $('.recall__links').toggleClass('recall__links-active')
+})

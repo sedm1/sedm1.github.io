@@ -49,7 +49,7 @@
                 <button class="header__button">Записаться на занятие</button>
             </div>
             <button class="menu__button"><img src="img/menu.png" alt="MenuButton"></button>
-            <button class="menu__button-close"><img src="img/close.png" alt="MenuButton"></button>
+            <button class="menu__button-close"><img src="img/close.svg" alt="MenuButton"></button>
         </div>
     </header>
     <main>
@@ -79,21 +79,21 @@
             <div class="container">
                 <h2 class="section__title">Прайс-лист</h2>
                 <div class="price__block">
-                    <div class="price__item" style="background-image: url('img/p-1.png');">
+                    <div class="price__item" style="background-image: url('img/p-1.jpeg');">
                         <div class="price__item-info">
                             <h3 class="price__item-title">Пробное занятие</h3>
                             <p class="price__item-descript">500₽</p>
                         </div>
                         <button class="price__item-button">Выбрать</button>
                     </div>
-                    <div class="price__item" style="background-image: url('img/p-2.png');">
+                    <div class="price__item" style="background-image: url('img/p-2.jpeg');">
                         <div class="price__item-info">
                             <h3 class="price__item-title">Разовое занятие</h3>
                             <p class="price__item-descript">850₽</p>
                         </div>
                         <button class="price__item-button">Выбрать</button>
                     </div>
-                    <div class="price__item" style="background-image: url('img/p-3.png');">
+                    <div class="price__item" style="background-image: url('img/p-3.jpeg');">
                         <div class="price__item-info">
                             <h3 class="price__item-title">Абонемент на месяц: 4 занятия</h3>
                             <p class="price__item-descript">3200₽</p>
@@ -199,6 +199,37 @@
             <a href="#" class="footer__polit">Политика конфиденциальности</a>
         </div>
     </footer>
+    <div class="modal_bg">
+        <div class="modal__window">
+            <div class="modal__window-header">
+                <h2 class="modal__window-title">Заполните форму, и мы перезвоним</h2>
+                <button class="modal__window-close"><img src="img/close.svg" alt="close"></button>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Номер телефона">
+                <button class="modal__window-button">Оставить заявку</button>
+            </form>
+            <div class="modal__window-footer">
+                <div class="modal__window-checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-item"></label>
+                    
+                </div>
+                <p>Ознакомлен и согласен с условиями Политики конфиденциальности</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="recall">
+        <div class="recall__links">
+            <a href="#" class="recall__links-item" target="_blank"><img src="img/vk-icon.png" alt="recallIcons"></a>
+            <a href="#" class="recall__links-item" target="_blank"><img src="img/tg-icon.png" alt="recallIcons"></a>
+            <a href="#" class="recall__links-item" target="_blank"><img src="img/wt-icon.png" alt="recallIcons"></a>
+            <a href="#" class="recall__links-item" target="_blank"><img src="img/phone-icon.png" alt="recallIcons"></a>
+        </div>
+        <button class="recall__button"><img src="img/phone.png" alt="recall"></button>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
