@@ -1,0 +1,232 @@
+@import 'vars'
+.header__menu-item
+    color: $black
+main
+    padding-top: 150px
+.main
+    &__title
+        margin-top: 20px
+        font-size: 48px
+        font-weight: 400
+.descript
+    .container
+        border: 1px solid rgba(0, 0, 0, 0.4)
+        padding: 19px 39px
+        display: flex
+        align-items: center
+    &__info
+        max-width: 493px
+        width: 100%
+        font-size: 18px
+        font-weight: 500
+    &__img
+        max-width: 708px
+        width: 100%
+        transform: translateY(125px) translateX(40px)
+        img
+            border-radius: 30px
+.zar
+    margin-top: 170px
+    .container
+        padding: 0px 50px
+        border: 1px solid rgba(0, 0, 0, 0.4)
+        display: flex
+        align-items: center
+    &__img
+        max-width: 600px
+        width: 100%
+        transform: translateY(80px)
+        margin-right: 59px
+        img
+            border-radius: 30px
+    &__title
+        font-size: 36px
+        font-weight: 400
+        margin-bottom: 64px
+    &__descript
+        font-size: 18px
+        font-weight: 500
+    &__button
+        padding: 17px 69px
+        font-size: 26px
+        font-weight: 600
+        color: $white
+        background: $red
+        border-radius: 10px
+        margin-top: 72px
+        transition: .3s
+        &:hover
+            transform: scale(1.05)
+    &__content
+        margin-top: 150px
+        .container
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &-title
+            font-size: 28px
+            font-weight: 600
+            color: rgba(0, 0, 0, 0.6)
+            margin-bottom: 49px
+        &-subtitle
+            max-width: 364px
+            font-size: 28px
+            font-weight: 500
+        &-descript
+            max-width: 490px
+            width: 100%
+            font-size: 18px
+            font-weight: 500
+.state
+    .container
+        padding: 89px 39px
+        border: 1px solid $red
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__info
+        max-width: 359px
+    &__title
+        font-size: 28px
+        font-weight: 600
+        margin-bottom: 42px
+    &__descript
+        font-size: 24px
+        font-weight: 400
+    &__list
+        padding-left: 55px
+        border-left: 1px solid rgba(0, 0, 0, 0.4)
+        max-width: 670px
+    &__item
+        display: flex
+        align-items: center
+        margin-bottom: 50px
+        &:last-child
+            margin-bottom: 0px
+        &-icon
+            min-width: 130px
+            width: 130px
+            display: flex
+            justify-content: center
+            img
+                width: auto
+                margin-right: 15px
+        &-title
+            font-size: 20px
+            font-weight: 600
+            margin-bottom: 6px
+        &-descript
+            font-size: 20px
+            font-weight: 400
+.open
+    &__block
+        margin-top: 44px
+    &__item
+        margin-bottom: 32px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 47px 39px
+        border: 1px solid $red
+        &:last-child
+            margin-bottom: 0px
+        &-title
+            font-size: 24px
+            font-weight: 600
+            margin-bottom: 12px
+        &-descript
+            font-size: 22px
+            font-weight: 400
+        &-button
+            padding: 17px 69px
+            background: $red
+            color: $white
+            font-weight: 600
+            font-size: 24px
+            background: $red
+            border-radius: 10px
+            transition: .3s
+            &:hover 
+                transform: scale(1.05)
+@media screen and (max-width: 1216px)
+    .descript 
+        .container
+            flex-direction: column
+            padding-top: 40px
+        &__info
+            max-width: none
+    .zar 
+        .container
+            padding-top: 40px
+            flex-direction: column-reverse
+        &__title
+            margin-bottom: 20px
+        &__button
+            margin-top: 20px
+    .state 
+        .container
+            flex-direction: column
+        &__list
+            margin-top: 40px
+            padding-left: 0px
+            border-left: 0px
+            border-top: 1px solid rgba(0, 0, 0, 0.4)
+            padding-top: 50px
+            max-width: none
+        &__info
+            max-width: none
+        &__title
+            margin-bottom: 20px
+@media screen and (max-width: 800px)
+    .zar__content 
+        .container
+            flex-direction: column
+            align-items: flex-start
+        &-title
+            margin-bottom: 20px
+        &-subtitle
+            margin-bottom: 10px
+            max-width: none
+        &-descript
+            max-width: none
+    .descript
+        &__img
+            transform: translateY(65px) translateX(0px)
+    .open__item
+        flex-direction: column
+        align-items: flex-start
+        &-button
+            margin-top: 20px
+@media screen and (max-width: 550px)
+    .descript 
+        .container
+            padding: 15px 10px
+        &__info
+            font-size: 16px
+    .zar 
+        .container
+            padding: 40px 10px
+        &__img
+            transform: translateY(0px)
+            margin-right: 0px
+            margin-top: 50px
+        &__content
+            margin-top: 0px
+        &__button
+            font-size: 5vw
+    .state
+        .container
+            padding: 20px 10px
+        &__descript
+            font-size: 20px
+        &__item
+            flex-direction: column
+            align-items: flex-start
+            &-icon
+                justify-content: flex-start
+                margin-bottom: 20px
+    .open__item
+        padding: 35px 10px
+        &-button
+            padding: 17px 50px
+            font-size: 16px

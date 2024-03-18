@@ -1,0 +1,53 @@
+@import 'vars'
+.header__menu-item
+    color: $black
+main
+    padding-top: 150px
+.main
+    &__title
+        margin-top: 20px
+        font-size: 28px
+        font-weight: 600
+.news
+    .container
+        border: 1px solid $red
+        padding: 60px 40px
+    img
+        position: relative
+        max-width: 757px
+        margin-bottom: 50px
+    p
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 20px
+        max-width: 897px
+.materials
+    &__block
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 60px 40px
+        margin-top: 50px
+    &__item
+        &-img
+            margin-bottom: 15px
+        &-title
+            font-size: 24px
+            font-weight: 600
+@media screen and (max-width: 850px)
+    .news 
+        .container
+            padding: 35px 20px
+    .materials
+        &__block
+            grid-template-columns: repeat(2, 1fr)
+@media screen and (max-width: 550px)
+    .materials
+        &__block
+            grid-template-columns: repeat(1, 1fr)
+        &__item
+            display: flex
+            align-items: center
+            &-img
+                margin-right: 10px
+            &-title
+                font-size: 4vw

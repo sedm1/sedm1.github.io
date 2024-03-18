@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--Главная-->
+    <style>
+        .main{
+            background-image: url('img/main__bg.jpeg');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="header__logo"><img src="img/logo.png" alt="HeaderLogo"></a>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-mobile"><button class="menu__close"><img src="img/close.png" alt="close"></button></li>
+                    <li class="header__menu-item"><a href="/index.html">Главная</a></li>
+                    <li class="header__menu-item"><a href="news.html">Новости</a></li>
+                    <li class="header__menu-item"><a href="/#services">Услуги</a></li>
+                    <li class="header__menu-item"><a href="/error.html">Перевозчикам</a></li>
+                    <li class="header__menu-item"><a href="/contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="burger"><img src="img/menu.png" alt="Menu"></button>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <h1 class="main__title">Автомобильные FTL грузоперевозки</h1>
+                <div class="main__form">
+                    <h3 class="main__form-title">Рассчитайте доставку груза</h3>
+                    <form action="">
+                        <input type="text" placeholder="Откуда" class="main__form-input">
+                        <input type="text" placeholder="Куда" class="main__form-input">
+                        <input type="submit" value="Рассчитать" class="main__form-button">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section__title">Услуги</h2>
+                <div class="services__block">
+                    <div class="services__item">
+                        <h3 class="services__item-title">Тентовые перевозки 92 м<sup>3</sup></h3>
+                        <div class="services__item-img"><img src="img/ser-1.png" alt="SerImg"></div>
+                        <a href="#" class="services__item-link">Подробнее</a>
+                    </div>
+                    <div class="services__item">
+                        <h3 class="services__item-title">Тентовые перевозки 110 м<sup>3</sup></h3>
+                        <div class="services__item-img"><img src="img/ser-2.png" alt="SerImg"></div>
+                        <a href="#" class="services__item-link">Подробнее</a>
+                    </div>
+                    <div class="services__item">
+                        <h3 class="services__item-title">Рефрижераторные перевозки</h3>
+                        <div class="services__item-img"><img src="img/ser-3.png" alt="SerImg"></div>
+                        <a href="#" class="services__item-link">Подробнее</a>
+                    </div>
+                    <div class="services__item">
+                        <h3 class="services__item-title">Сервис</h3>
+                        <div class="services__item-img"><img src="img/ser-4.png" alt="SerImg"></div>
+                        <a href="#" class="services__item-link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prem">
+            <div class="container">
+                <h2 class="section__title">Преимущества</h2>
+                <div class="prem__block">
+                    <div class="prem__item">
+                        <h3 class="prem__item-title">Гибкие условия оплаты</h3>
+                        <div class="prem__item-img"><img src="img/prem-1.png" alt="PremIng"></div>
+                    </div>
+                    <div class="prem__item">
+                        <h3 class="prem__item-title">Страхование груза</h3>
+                        <div class="prem__item-img"><img src="img/prem-2.png" alt="PremIng"></div>
+                    </div>
+                    <div class="prem__item">
+                        <h3 class="prem__item-title">Прозрачность и законность</h3>
+                        <div class="prem__item-img"><img src="img/prem-3.png" alt="PremIng"></div>
+                    </div>
+                    <div class="prem__item">
+                        <h3 class="prem__item-title">Для всех форм собственности</h3>
+                        <div class="prem__item-img"><img src="img/prem-4.png" alt="PremIng"></div>
+                    </div>
+                </div>
+                <div class="prem__img"><img src="img/prem__img.png" alt="premImg"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__left-item">
+                    <h4 class="footer__left-title">О компании</h4>
+                    <ul class="footer__left-menu">
+                        <li><a href="#">Автопарк</a></li>
+                        <li><a href="#">Работа в компаннии</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Документы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__left-item">
+                    <h4 class="footer__left-title">Услуги</h4>
+                    <ul class="footer__left-menu">
+                        <li><a href="#">Тентовые перевозкм 90 м</a></li>
+                        <li><a href="#">Тентовые перевозкм 110 м</a></li>
+                        <li><a href="#">Рефрижероторные перевозки</a></li>
+                        <li><a href="#">Сервис</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                <h4 class="footer__left-title">Контакты</h4>
+                <ul class="footer__left-menu">
+                    <li><a href="#">+ 7 962 01 111 88</a></li>
+                    <li><a href="#">logistics@opttim.com</a></li>
+                    <li><a href="#">Политика конфидециальности</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <p class="footer__prava">Транспортная компания Опттим Логистик 2024 </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+@import 'vars'
+.main
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    height: 100dvh
+    padding-top: 255px
+    padding-bottom: 72px
+    .container
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+    &__title
+        font-size: 108px
+        font-family: "BuyanBold"
+        color: $white
+        max-width: 767px
+        align-self: flex-end
+    &__form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background: rgba(119, 119, 119, 0.6)
+        padding: 30px 28px
+        border-radius: 10px
+        form
+            display: flex
+            align-items: center
+        &-title
+            color: $white
+            font-size: 24px
+            font-weight: 600
+        &-input
+            background: rgba(103, 101, 101, 0.8)
+            padding: 17px 11px
+            font-size: 18px
+            font-weight: 600
+            margin-right: 40px
+            border-radius: 10px
+            max-width: 200px
+            color: $white
+            &::placeholder
+                color: rgba(255, 255, 255, 0.65)
+        &-button
+            padding: 14px 40px
+            background: $red
+            color: $white
+            border-radius: 10px
+            font-size: 24px
+            font-weight: 600
+.services
+    &__block
+        margin-top: 60px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 40px
+    &__item
+        border: 1px solid rgba(0, 0, 0, 0.15)
+        padding-top: 63px
+        padding-left: 60px
+        padding-right: 26px
+        padding-bottom: 43px
+        box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.25)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &-img
+            max-width: 242px
+            align-self: flex-end
+            margin: 20px 0px
+        &-title
+            font-size: 36px
+            font-weight: 400
+            max-width: 429px
+        &-link
+            padding: 18px 40px
+            border: 2px solid $red
+            width: fit-content
+            font-size: 20px
+            font-weight: 500
+            color: $red
+            transition: .3s
+            &:hover
+                background: $red
+                color: $white
+.prem
+    &__block
+        margin-top: 60px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 40px
+    &__item
+        border: 1px solid rgba(0, 0, 0, 0.15)
+        box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.25)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 40px 70px
+        &-title
+            margin-right: 20px
+            font-size: 28px
+            font-weight: 400
+    &__img
+        max-width: 675px
+        margin-top: 40px
+@media screen and (max-width: 1216px)
+    header
+        background: rgba(132, 132, 132, 0.72)
+@media screen and (max-width: 1000px)
+    .main
+        padding-top: 0px
+        padding-bottom: 40px
+        .container
+            justify-content: flex-end
+        &__title
+            align-self: flex-start
+        &__form
+            flex-direction: column
+            margin-top: 50px
+            &-title
+                margin-bottom: 20px
+            &-input
+                margin-right: 0px
+                width: 100%
+                max-width: 100%
+                margin-bottom: 10px
+            &-button
+                width: 100%
+        form
+            flex-direction: column
+            width: 100%
+    .services
+        &__block
+            grid-template-columns: 1fr
+        &__item
+            &-img
+                width: 100%
+                max-width: 300px
+    .prem
+        &__block
+            grid-template-columns: 1fr
+@media screen and (max-width: 750px)
+    .main
+        &__title
+            font-size: 14vw
+    .prem__item
+        padding: 40px 20px
+        &-title
+            font-size: 6vw
+    .services__item-title
+        font-size: 6vw
+@media screen and (max-width: 550px)
+    .services__item-title
+        font-size: 8vw
+    .services__item-link
+        width: 100%
+        text-align: center
+    .services__item-img
+        align-self: center
+    .services__item
+        padding-left: 10px
+        padding-right: 10px
+        padding-top: 43px
+    .main__form
+        padding: 30px 8px

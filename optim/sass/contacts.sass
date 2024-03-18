@@ -1,0 +1,163 @@
+@import 'vars'
+.header__menu-item
+    color: $black
+main
+    padding-top: 150px
+.main
+    &__title
+        margin-top: 20px
+        font-size: 48px
+        font-weight: 400
+.office
+    &__block
+        border: 1px solid $red
+        padding: 55px 20px
+    &__block
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-top: 20px
+    &__left
+        &-item
+            display: flex
+            align-items: flex-start
+            margin-bottom: 20px
+        &-title
+            font-size: 17px
+            font-weight: 600
+            margin-right: 10px
+            max-width: 107px
+            min-width: 107px
+            width: 100%
+        &-text
+            padding: 10px 20px
+            border-radius: 5px
+            background: rgb(249, 234, 234)
+            max-width: 358px
+            font-size: 20px
+            font-weight: 300
+    &__right
+        padding-left: 80px
+        border-left: 1px solid rgba(0, 0, 0, 0.4)
+        form
+            display: flex
+            flex-direction: column
+        &-input 
+            padding: 20px 40px
+            font-size: 20px
+            background: rgb(249, 234, 234)
+            margin-bottom: 20px
+            border-radius: 5px
+        &-textarea
+            padding: 20px 40px
+            font-size: 20px
+            background: rgb(249, 234, 234)
+            margin-bottom: 20px
+            height: 166px
+            border-radius: 5px
+        &-button
+            padding: 22px 0px
+            width: 100%
+            background: $red
+            color: $white
+            font-size: 20px
+            font-weight: 600
+            border-radius: 5px
+    &__check
+        display: flex
+        margin-top: 11px
+        label
+            min-width: 20px
+            width: 20px
+            height: 20px
+            border-radius: 5px
+            border: 1px solid rgba(0, 0, 0, 0.4)
+            display: block
+        #checkbox:checked ~ label
+            background: $red
+            border: 1px solid $red
+                    
+        &-text
+            font-size: 18px
+            font-weight: 300
+            max-width: 438px
+            margin-left: 10px
+.mest
+    &__block
+        border: 1px solid $red
+        margin-top: 20px
+        height: 670px
+.gal
+    height: 950px
+    .container
+        position: relative
+    &__item
+        position: absolute
+        transition: .3s
+        cursor: pointer
+        &:hover
+            transform: scale(1.1)
+            z-index: 8 !important
+#gal__item
+    &-1
+        left: 6%
+        z-index: 4
+        width: 363px
+    &-2
+        top: 43px
+        z-index: 4
+        left: 40.5%
+        width: 270px
+    &-3
+        top: 76px
+        left: 69%
+        z-index: 4
+        width: 360px
+    &-4
+        z-index: 2
+        top: 162px
+        left: 0px
+        width: 605px
+    &-5
+        z-index: 3
+        top: 235px
+        left: 57%
+        width: 536px
+    &-6
+        z-index: 3
+        left: 24%
+        top: 440px
+        width: 426px
+    &-7
+        top: 487px
+        left: 73%
+        z-index: 4
+        width: 309px
+    &-8
+        top: 681px
+        left: 8%
+        z-index: 5
+        width: 305px
+    &-9
+        top: 651px
+        left: 48%
+        z-index: 5
+        width: 342px
+@media screen and (max-width: 1216px)
+    .office__block
+        flex-direction: column
+    .office__right
+        padding-left: 0px
+        border-left: 0px
+    .gal
+        display: none
+@media screen and (max-width: 450px)
+    .office__left-item
+        flex-direction: column
+        align-items: flex-start
+    .office__left-title
+        max-width: none
+        width: auto
+        margin-bottom: 5px
+    .office__right
+        width: 100%

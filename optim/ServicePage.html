@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница новости</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/servicePage.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="header__logo"><img src="img/logo-black.png" alt="HeaderLogo"></a>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="/index.html">Главная</a></li>
+                    <li class="header__menu-item"><a href="news.html">Новости</a></li>
+                    <li class="header__menu-item"><a href="/#services">Услуги</a></li>
+                    <li class="header__menu-item"><a href="/error.html">Перевозчикам</a></li>
+                    <li class="header__menu-item"><a href="/contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="burger"><img src="img/menu.png" alt="Menu"></button>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumbs-item"><a href="#">Услуги</a></li>
+                </ul>
+                <h1 class="main__title">Тентовые перевозки 92 м</h1>
+            </div>
+        </section>
+        <section class="ser">
+            <div class="container">
+                <div class="ser__header">
+                    <div class="ser__img-block">
+                        <div class="ser__img-item" id="ser__img-1"><img src="img/ser-1.jpeg" alt="SerImgItem"></div>
+                        <div class="ser__img-item" id="ser__img-2"><img src="img/ser-2.jpeg" alt="SerImgItem"></div>
+                        <div class="ser__img-item" id="ser__img-3"><img src="img/ser-3.jpeg" alt="SerImgItem"></div>
+                    </div>
+                    <div class="ser__form">
+                        <h3 class="ser__form-title">Расчет стоимости доставки</h3>
+                        <form action="">
+                            <div class="ser__form-item">
+                                <p class="ser__item-title">Откуда</p>
+                                <input type="text" class="ser__item-input">
+                            </div>
+                            <div class="ser__form-item">
+                                <p class="ser__item-title">Куда</p>
+                                <input type="text" class="ser__item-input">
+                            </div>
+                            <div class="ser__form-item">
+                                <p class="ser__item-title">Вес</p>
+                                <input type="text" class="ser__item-input">
+                            </div>
+                            <div class="ser__form-item">
+                                <p class="ser__item-title">Объем</p>
+                                <input type="text" class="ser__item-input">
+                            </div>
+                            <div class="ser__form-item">
+                                <p class="ser__item-title">E-mail</p>
+                                <input type="text" class="ser__item-input">
+                            </div>
+                            <input type="submit" value="Рассчитать">
+                            <div class="ser__item-post">* Ориентировочные стоимость и срок перевозки</div>
+                        </form>
+                    </div>
+                </div>
+                <div class="ser__info">
+                    <div class="ser__info-count">
+                        <div class="count__block">
+                            <div class="count__item">
+                                <div class="count__item-img">33</div>
+                                <div class="count__item-text">европалет</div>
+                            </div>
+                            <div class="count__item">
+                                <div class="count__item-img"><img src="img/v.png" alt="v"></div>
+                                <div class="count__item-text">V = 92м <sup>3</sup></div>
+                            </div>
+                            <div class="count__item">
+                                <div class="count__item-img">20</div>
+                                <div class="count__item-text">тонн (FTL)</div>
+                            </div>
+                        </div>
+                        <div class="count__img"><img src="img/ser-1.png" alt="SerImg"></div>
+                    </div>
+                    <div class="ser__info-descriptBlock">
+                        <div class="ser__info-item">
+                            <h4 class="ser__info-title">Современная европейская техника</h4>
+                            <p class="ser__info-descript">Дополнительная защита груза, отсутствие запахов</p>
+                        </div>
+                        <div class="ser__info-item">
+                            <h4 class="ser__info-title">Металлическая обрешетка</h4>
+                            <p class="ser__info-descript">Минимизация риска выхода из строя</p>
+                        </div>
+                        <div class="ser__info-item">
+                            <h4 class="ser__info-title">Оснащение полуприцепа кониками</h4>
+                            <p class="ser__info-descript">Безопасность перевозки длинномерных и объемных грузов</p>
+                        </div>
+                        <div class="ser__info-item">
+                            <h4 class="ser__info-title">Дополнительные запорные устройства</h4>
+                            <p class="ser__info-descript">Усиленная защита от кражи груза</p>
+                        </div>
+                        <div class="ser__info-item">
+                            <h4 class="ser__info-title">Все варианты растентовки полуприцепа</h4>
+                            <p class="ser__info-descript">Возможность выбора наиболее удобного способа погрузки/разгрузки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prem">
+            <div class="container">
+                <h2 class="section__title">Наши преимущества</h2>
+                <div class="prem__block">
+                    <div class="prem__item">
+                        <div class="prem__item-info">
+                            <h3 class="prem__item-title">Собственный автопарк</h3>
+                            <p class="prem__item-descript">постоянное наличие транспорта</p>
+                        </div>
+                        <div class="prem__item-img"><img src="img/sp-1.png" alt="sp"></div>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-info">
+                            <h3 class="prem__item-title">Современная новая техника</h3>
+                            <p class="prem__item-descript">надёжность и бесперебойность работы</p>
+                        </div>
+                        <div class="prem__item-img"><img src="img/sp-2.png" alt="sp"></div>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-info">
+                            <h3 class="prem__item-title">Работа в формате 24/7</h3>
+                            <p class="prem__item-descript">оперативность организации перевозки</p>
+                        </div>
+                        <div class="prem__item-img"><img src="img/sp-3.png" alt="sp"></div>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-info">
+                            <h3 class="prem__item-title">Сотрудничество в Хартии участников рынка перевозок</h3>
+                            <p class="prem__item-descript">готовность вести бизнес честно и открыто</p>
+                        </div>
+                        <div class="prem__item-img"><img src="img/sp-4.png" alt="sp"></div>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-info">
+                            <h3 class="prem__item-title">Профессиональная мотивированная команда</h3>
+                            <p class="prem__item-descript">готовность приступить к работе в любую секунду</p>
+                        </div>
+                        <div class="prem__item-img"><img src="img/sp-5.png" alt="sp"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ano">
+            <div class="container">
+                <h2 class="section__title">Другие услуги</h2>
+                <div class="ano__block">
+                    <a class="ano__item" href="#">
+                        <div class="ano__item-img"><img src="img/ser-2.png" alt="ser2"></div>
+                        <h3 class="ano__item-title">Тентовые перевозки 110 м<sup>3</sup></h3>
+                    </a>
+                    <a class="ano__item" href="#">
+                        <div class="ano__item-img"><img src="img/ser-2.png" alt="ser2"></div>
+                        <h3 class="ano__item-title">Тентовые перевозки 110 м<sup>3</sup></h3>
+                    </a>
+                    <a class="ano__item" href="#">
+                        <div class="ano__item-img"><img src="img/ser-2.png" alt="ser2"></div>
+                        <h3 class="ano__item-title">Тентовые перевозки 110 м<sup>3</sup></h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <p>Тентованные машины 110 м3 очень востребованы для перевозки длинномерных и нестандартных грузов, в том числе:</p>
+                <ul>
+                    <li>Элементы и разборные узлы вышек, мостов, опор.</li>
+                    <li>Элементы и разборные узлы вышек, мостов, опор.</li>
+                    <li>Элементы и разборные узлы вышек, мостов, опор.</li>
+                </ul>
+                <p>Прочный антивандальный тент защищает груз от влаги, ультрафиолетового излучения и попыток незаконного доступа. Погрузка и разгрузка выполняется с использованием специализированной техники. Возможны все виды погрузки-разгрузки: верхняя, боковая, задняя. Крепление груза исключает его смещения и деформации.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__left-item">
+                    <h4 class="footer__left-title">О компании</h4>
+                    <ul class="footer__left-menu">
+                        <li><a href="#">Автопарк</a></li>
+                        <li><a href="#">Работа в компаннии</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Документы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__left-item">
+                    <h4 class="footer__left-title">Услуги</h4>
+                    <ul class="footer__left-menu">
+                        <li><a href="#">Тентовые перевозкм 90 м</a></li>
+                        <li><a href="#">Тентовые перевозкм 110 м</a></li>
+                        <li><a href="#">Рефрижероторные перевозки</a></li>
+                        <li><a href="#">Сервис</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                <h4 class="footer__left-title">Контакты</h4>
+                <ul class="footer__left-menu">
+                    <li><a href="#">+ 7 962 01 111 88</a></li>
+                    <li><a href="#">logistics@opttim.com</a></li>
+                    <li><a href="#">Политика конфидециальности</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <p class="footer__prava">Транспортная компания Опттим Логистик 2024 </p>
+    </footer>
+</body>
+</html>

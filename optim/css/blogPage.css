@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "BuyanBold";
+  src: url("../fonts/BuyanBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.header__menu-item {
+  color: #000000;
+}
+
+main {
+  padding-top: 150px;
+}
+
+.main__title {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.news .container {
+  border: 1px solid #C74545;
+  padding: 60px 40px;
+}
+.news img {
+  position: relative;
+  max-width: 757px;
+  margin-bottom: 50px;
+}
+.news p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  max-width: 897px;
+}
+
+.materials__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 40px;
+  margin-top: 50px;
+}
+.materials__item-img {
+  margin-bottom: 15px;
+}
+.materials__item-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 850px) {
+  .news .container {
+    padding: 35px 20px;
+  }
+  .materials__block {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 550px) {
+  .materials__block {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .materials__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .materials__item-img {
+    margin-right: 10px;
+  }
+  .materials__item-title {
+    font-size: 4vw;
+  }
+}

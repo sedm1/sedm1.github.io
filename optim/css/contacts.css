@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "BuyanBold";
+  src: url("../fonts/BuyanBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.header__menu-item {
+  color: #000000;
+}
+
+main {
+  padding-top: 150px;
+}
+
+.main__title {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.office__block {
+  border: 1px solid #C74545;
+  padding: 55px 20px;
+}
+.office__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+.office__left-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+.office__left-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-right: 10px;
+  max-width: 107px;
+  min-width: 107px;
+  width: 100%;
+}
+.office__left-text {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: rgb(249, 234, 234);
+  max-width: 358px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.office__right {
+  padding-left: 80px;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+.office__right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.office__right-input {
+  padding: 20px 40px;
+  font-size: 20px;
+  background: rgb(249, 234, 234);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.office__right-textarea {
+  padding: 20px 40px;
+  font-size: 20px;
+  background: rgb(249, 234, 234);
+  margin-bottom: 20px;
+  height: 166px;
+  border-radius: 5px;
+}
+.office__right-button {
+  padding: 22px 0px;
+  width: 100%;
+  background: #C74545;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.office__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px;
+}
+.office__check label {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  display: block;
+}
+.office__check #checkbox:checked ~ label {
+  background: #C74545;
+  border: 1px solid #C74545;
+}
+.office__check-text {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 438px;
+  margin-left: 10px;
+}
+
+.mest__block {
+  border: 1px solid #C74545;
+  margin-top: 20px;
+  height: 670px;
+}
+
+.gal {
+  height: 950px;
+}
+.gal .container {
+  position: relative;
+}
+.gal__item {
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.gal__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 8 !important;
+}
+
+#gal__item-1 {
+  left: 6%;
+  z-index: 4;
+  width: 363px;
+}
+#gal__item-2 {
+  top: 43px;
+  z-index: 4;
+  left: 40.5%;
+  width: 270px;
+}
+#gal__item-3 {
+  top: 76px;
+  left: 69%;
+  z-index: 4;
+  width: 360px;
+}
+#gal__item-4 {
+  z-index: 2;
+  top: 162px;
+  left: 0px;
+  width: 605px;
+}
+#gal__item-5 {
+  z-index: 3;
+  top: 235px;
+  left: 57%;
+  width: 536px;
+}
+#gal__item-6 {
+  z-index: 3;
+  left: 24%;
+  top: 440px;
+  width: 426px;
+}
+#gal__item-7 {
+  top: 487px;
+  left: 73%;
+  z-index: 4;
+  width: 309px;
+}
+#gal__item-8 {
+  top: 681px;
+  left: 8%;
+  z-index: 5;
+  width: 305px;
+}
+#gal__item-9 {
+  top: 651px;
+  left: 48%;
+  z-index: 5;
+  width: 342px;
+}
+
+@media screen and (max-width: 1216px) {
+  .office__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .office__right {
+    padding-left: 0px;
+    border-left: 0px;
+  }
+  .gal {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .office__left-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .office__left-title {
+    max-width: none;
+    width: auto;
+    margin-bottom: 5px;
+  }
+  .office__right {
+    width: 100%;
+  }
+}

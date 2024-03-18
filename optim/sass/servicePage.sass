@@ -1,0 +1,287 @@
+@import 'vars'
+.header__menu-item
+    color: $black
+main
+    padding-top: 150px
+.main
+    &__title
+        margin-top: 20px
+        font-size: 48px
+        font-weight: 400
+.ser
+    &__header
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        margin-top: 120px
+    &__img
+        &-block
+            max-width: 629px
+            width: 100%
+            position: relative
+        &-item 
+            img
+                border-radius: 30px
+    &__form
+        border-radius: 30px
+        background: rgba(0, 0, 0, 0.5)
+        padding: 25px 40px
+        &-title
+            text-align: center
+            color: $white
+            font-size: 28px
+            font-weight: 600
+        &-item
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+        form
+            margin-top: 40px
+            p
+                color: $white
+                font-size: 16px
+                font-weight: 600
+                width: 112px
+                margin-right: 10px
+            .ser__item-input
+                background: none
+                border-bottom: 1px solid $white
+                color: $white
+                font-size: 16px
+                padding: 5px 0px
+            input[type="submit"]
+                background: $red
+                color: $white
+                width: 100%
+                padding: 10px 0px
+                font-size: 20px
+                font-weight: 600
+                border-radius: 10px
+                margin-top: 20px
+            .ser__item-post
+                font-size: 12px
+                font-weight: 600
+                text-align: center
+                margin-top: 10px
+                color: $white
+    &__info
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-top: 40px
+        &-count
+            max-width: 584px
+            width: 100%
+        &-item
+            padding: 10px 0px
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4)
+        &-descript
+            font-size: 14px
+            font-weight: 400
+        &-title
+            font-size: 14px
+            font-weight: 600
+        &-descriptBlock
+            max-width: 500px
+            width: 100%
+        .count
+            &__block
+                display: flex
+                align-items: flex-start
+                justify-content: space-between
+            &__item
+                &-img 
+                    font-size: 48px
+                    font-weight: 700
+                    color: $red
+                    text-align: center
+                    margin-bottom: 10px
+                    max-height: 50px
+                    img
+                        height: 50px
+                        width: auto
+                &-text
+                    font-size: 24px
+                    font-weight: 600
+    .count__img
+        width: 315px
+        margin: 0 auto
+        margin-top: 20px       
+#ser__img
+    &-2
+        position: absolute
+        top: -104px
+        right: 99px
+        width: 257px
+        z-index: 2
+        
+    &-3
+        position: absolute
+        top: -178px
+        left: 100px
+        width: 189px
+.prem
+    &__block
+        margin-top: 30px
+        background: #F6F1F1
+        display: flex
+        gap: 40px 32px
+        flex-wrap: wrap
+        padding: 35px 23px
+        padding-right: 0px
+        position: relative
+        z-index: 2
+        &::before
+            width: 100%
+            height: 165px
+            position: absolute
+            bottom: 0px
+            left: 0px
+            background: $red
+            content: ""
+            z-index: -1
+    &__item
+        max-width: 350px
+        width: 100%
+        background: $white
+        padding: 26px 24px
+        display: flex
+        flex-direction: column
+        &:nth-child(4), &:nth-child(5)
+            max-width: 540px
+        &-title
+            font-size: 20px
+            font-weight: 600
+        &-descript
+            font-size: 20px
+            font-weight: 400
+        &-img
+            align-self: flex-end
+            margin-top: 10px
+            img
+                max-width: 100px
+                width: auto
+.ano
+    &__block
+        margin-top: 40px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 60px 42px
+    &__item
+        border: 2px solid $red
+        border-radius: 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-top: 30px
+        padding-bottom: 42px
+        &-img
+            height: 228px
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                width: 100%
+                height: auto
+        &-title
+            font-size: 28px
+            font-weight: 400
+            max-width: 313px
+            margin: 0 auto
+            margin-top: 40px
+.content
+    font-size: 24px
+    font-weight: 400
+    p
+        margin-bottom: 20px
+    ul
+        padding-left: 25px
+    li
+        list-style: outside
+        margin-bottom: 10px
+@media screen and (max-width: 1216px)
+    .ser
+        &__form
+            display: none
+        &__info
+            flex-direction: column-reverse
+            &-count
+                margin-top: 50px
+                display: flex
+                align-items: center
+                max-width: none
+                justify-content: space-between
+            &-descriptBlock
+                max-width: none
+        &__header
+            margin-top: 200px
+        .count__img
+            margin: 0px
+            width: 142px
+        .count__item
+            margin-right: 30px
+    .prem
+        &__block
+            flex-direction: column
+            padding: 20px 10px
+        &__item
+            max-width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-direction: row
+            &:nth-child(4), &:nth-child(5)
+                max-width: 100%
+    .ano
+        &__block
+            grid-template-columns: 1fr 1fr
+@media screen and (max-width: 650px)
+    .main__title
+        font-size: 7vw
+    .ano
+        &__block
+            grid-template-columns: 1fr
+        &__item
+            &-title
+                font-size: 20px
+    .content
+        font-size: 16px
+    .prem
+        &__block
+            gap: 15px 0px
+        &__item
+            &-title
+                font-size: 16px
+            &-descript
+                font-size: 16px
+    .ser__info
+        .count
+            &__item
+                &-img
+                    font-size: 30px
+                    margin-bottom: 0px
+                    img
+                        height: 30px
+                &-text
+                    font-size: 12px
+    #ser__img-2
+        top: -46px
+        right: auto
+        width: 150px
+        left: 41%
+    #ser__img-3
+        top: -111px
+        left: 25%
+        width: 110px
+    .ser__header
+        margin-top: 130px
+    .ser__info-count
+        margin-top: 20px
+    .ser .count__img
+        display: none
+@media screen and (max-width: 400px)
+    .prem__item-img img
+        max-width: 70px
+    .prem__item
+        padding: 20px 15px    

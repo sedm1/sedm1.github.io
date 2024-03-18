@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница контактов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="header__logo"><img src="img/logo-black.png" alt="HeaderLogo"></a>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="/index.html">Главная</a></li>
+                    <li class="header__menu-item"><a href="news.html">Новости</a></li>
+                    <li class="header__menu-item"><a href="/#services">Услуги</a></li>
+                    <li class="header__menu-item"><a href="/error.html">Перевозчикам</a></li>
+                    <li class="header__menu-item"><a href="/contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="burger"><img src="img/menu.png" alt="Menu"></button>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumbs-item"><a href="#">Контакты</a></li>
+                </ul>
+                <h1 class="main__title">Контакты</h1>
+            </div>
+        </section>
+        <section class="office">
+            <div class="container">
+                <h2 class="section__title">Офис в Пятигорске</h2>
+                <div class="office__block">
+                    <div class="office__left">
+                        <div class="office__left-item">
+                            <h4 class="office__left-title">Телефон: </h4>
+                            <div class="office__left-text">+7 962 01 111 88</div>
+                        </div>
+                        <div class="office__left-item">
+                            <h4 class="office__left-title">E-mail: </h4>
+                            <div class="office__left-text">logistics@opttim.com</div>
+                        </div>
+                        <div class="office__left-item">
+                            <h4 class="office__left-title">График работы: </h4>
+                            <div class="office__left-text">Круглосуточно</div>
+                        </div>
+                        <div class="office__left-item">
+                            <h4 class="office__left-title">Почтовый адрес: </h4>
+                            <div class="office__left-text">Ставропольский край, Предгорный муниципальный округ, автодорога Пятигорск - Георгиевск, 3-й километр, 11</div>
+                        </div>
+                    </div>
+                    <div class="office__right">
+                        <form action="">
+                            <input type="text" placeholder="Имя" class="office__right-input">
+                            <input type="text" placeholder="Телефон" class="office__right-input">
+                            <textarea placeholder="Сообщение" class="office__right-textarea"></textarea>
+                            <input type="submit" value="Отправить" class="office__right-button">
+                            <div class="office__check">
+                                <div class="office__check-item">
+                                    <input type="checkbox" id="checkbox">
+                                    <label for="checkbox"></label>
+                                </div>
+                                <p class="office__check-text">Я ознакомлен(-а) и согласен(-на) с Политикой конфидециальности</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mest">
+            <div class="container">
+                <h2 class="section__title">Местоположение</h2>
+                <div class="mest__block">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A073321c12d2e47f5861c8e88ac3523f4c9e91004ab628c0a11d8ccebbbd74946&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="gal">
+            <div class="container">
+                <div class="gal__item" id="gal__item-1"><img src="img/g-1.png" alt="GalItem"></div>
+                <div class="gal__item" id="gal__item-2"><img src="img/g-2.png" alt="GalItem"></div>
+                <div class="gal__item" id="gal__item-3"><img src="img/g-3.png" alt="GalItem"></div>
+                <div class="gal__item" id="gal__item-4"><img src="img/g-4.png" alt="GalItem"></div>
+                <div class="gal__item" id="gal__item-5"><img src="img/g-5.png" alt="GalItem"></div>
+                <div class="gal__item" id="gal__item-6"><img src="img/g-6.png" alt="GalItem"></div>
+                <div class="gal__item" id="gal__item-7"><img src="img/g-7.png" alt="GalItem"></div>
+                <div class="gal__item" id="gal__item-8"><img src="img/g-8.png" alt="GalItem"></div>
+                <div class="gal__item" id="gal__item-9"><img src="img/g-9.png" alt="GalItem"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__left-item">
+                    <h4 class="footer__left-title">О компании</h4>
+                    <ul class="footer__left-menu">
+                        <li><a href="#">Автопарк</a></li>
+                        <li><a href="#">Работа в компаннии</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Документы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__left-item">
+                    <h4 class="footer__left-title">Услуги</h4>
+                    <ul class="footer__left-menu">
+                        <li><a href="#">Тентовые перевозкм 90 м</a></li>
+                        <li><a href="#">Тентовые перевозкм 110 м</a></li>
+                        <li><a href="#">Рефрижероторные перевозки</a></li>
+                        <li><a href="#">Сервис</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                <h4 class="footer__left-title">Контакты</h4>
+                <ul class="footer__left-menu">
+                    <li><a href="#">+ 7 962 01 111 88</a></li>
+                    <li><a href="#">logistics@opttim.com</a></li>
+                    <li><a href="#">Политика конфидециальности</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <p class="footer__prava">Транспортная компания Опттим Логистик 2024 </p>
+    </footer>
+    
+</body>
+</html>

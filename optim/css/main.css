@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "BuyanBold";
+  src: url("../fonts/BuyanBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.main {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  padding-top: 255px;
+  padding-bottom: 72px;
+}
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+.main__title {
+  font-size: 108px;
+  font-family: "BuyanBold";
+  color: #FFFFFF;
+  max-width: 767px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.main__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(119, 119, 119, 0.6);
+  padding: 30px 28px;
+  border-radius: 10px;
+}
+.main__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__form-title {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+}
+.main__form-input {
+  background: rgba(103, 101, 101, 0.8);
+  padding: 17px 11px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 40px;
+  border-radius: 10px;
+  max-width: 200px;
+  color: #FFFFFF;
+}
+.main__form-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.main__form-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.main__form-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.main__form-input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.main__form-input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.main__form-button {
+  padding: 14px 40px;
+  background: #C74545;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.services__block {
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.services__item {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 63px;
+  padding-left: 60px;
+  padding-right: 26px;
+  padding-bottom: 43px;
+  -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.services__item-img {
+  max-width: 242px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 20px 0px;
+}
+.services__item-title {
+  font-size: 36px;
+  font-weight: 400;
+  max-width: 429px;
+}
+.services__item-link {
+  padding: 18px 40px;
+  border: 2px solid #C74545;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 500;
+  color: #C74545;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.services__item-link:hover {
+  background: #C74545;
+  color: #FFFFFF;
+}
+
+.prem__block {
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.prem__item {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 70px;
+}
+.prem__item-title {
+  margin-right: 20px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.prem__img {
+  max-width: 675px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1216px) {
+  header {
+    background: rgba(132, 132, 132, 0.72);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  .main .container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main__title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .main__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .main__form-title {
+    margin-bottom: 20px;
+  }
+  .main__form-input {
+    margin-right: 0px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .main__form-button {
+    width: 100%;
+  }
+  .main form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .services__block {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .services__item-img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .prem__block {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main__title {
+    font-size: 14vw;
+  }
+  .prem__item {
+    padding: 40px 20px;
+  }
+  .prem__item-title {
+    font-size: 6vw;
+  }
+  .services__item-title {
+    font-size: 6vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .services__item-title {
+    font-size: 8vw;
+  }
+  .services__item-link {
+    width: 100%;
+    text-align: center;
+  }
+  .services__item-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .services__item {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 43px;
+  }
+  .main__form {
+    padding: 30px 8px;
+  }
+}

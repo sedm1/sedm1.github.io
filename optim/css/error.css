@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "BuyanBold";
+  src: url("../fonts/BuyanBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.header__menu-item {
+  color: #000000;
+}
+
+main {
+  padding-top: 150px;
+}
+
+.main__title {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.error .container {
+  padding: 24px 40px;
+  border: 1px solid #C74545;
+}
+.error__img {
+  max-width: 563px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .main__title {
+    font-size: 8vw;
+  }
+}

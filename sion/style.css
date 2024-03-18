@@ -377,6 +377,7 @@ header .container {
   position: relative;
   min-height: 239px;
   overflow: hidden;
+  z-index: 1;
 }
 .what__item-subblock::before {
   width: 100%;
@@ -386,6 +387,22 @@ header .container {
   left: 0;
   position: absolute;
   opacity: 0.1;
+  z-index: -1;
+}
+.what__item-soz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+.what__item-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
 }
 .what__item-img {
   position: absolute;
