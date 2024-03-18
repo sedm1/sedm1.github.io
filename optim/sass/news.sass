@@ -24,8 +24,14 @@ main
             height: 380px
             width: 100%
             margin-right: 40px
+            overflow: hidden
+            border-radius: 30px
             img
                 border-radius: 30px
+                transition: .3s
+        &:hover
+            img
+                transform: scale(1.1)
         &-title
             font-size: 26px
             font-weight: 600
@@ -44,6 +50,9 @@ main
             color: $white
             background: $red
             border-radius: 10px
+            transition: .3s
+            &:hover
+                transform: scale(1.05)
 @media screen and (max-width: 1000px)
     .news
         &__item

@@ -30,9 +30,18 @@ main
     &__item
         &-img
             margin-bottom: 15px
+            overflow: hidden
+            border-radius: 30px
+            img
+                transition: .3s
+                border-radius: 30px
+                height: 100%
         &-title
             font-size: 24px
             font-weight: 600
+        &:hover
+            img
+                transform: scale(1.1)
 @media screen and (max-width: 850px)
     .news 
         .container

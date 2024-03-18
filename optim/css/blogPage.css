@@ -44,10 +44,22 @@ main {
 }
 .materials__item-img {
   margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.materials__item-img img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 30px;
+  height: 100%;
 }
 .materials__item-title {
   font-size: 24px;
   font-weight: 600;
+}
+.materials__item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media screen and (max-width: 850px) {

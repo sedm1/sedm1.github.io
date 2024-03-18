@@ -8,6 +8,10 @@
     scroll-behavior: smooth
 body
     position: relative
+    max-width: 100%
+    overflow-x: hidden
+html
+    overflow-x: hidden
 img
     width: 100%
     height: auto
@@ -68,6 +72,20 @@ header
             font-size: 22px
             font-weight: 600
             color: $white
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                bottom: -2px
+                left: 0px
+                background: $black
+                width: 0px
+                transition: .4s
+                height: 2px
+            &:hover
+                &::before
+                    width: 100%
+
             &:last-child
                 margin-right: 0px
         &-mobile 
@@ -97,6 +115,10 @@ footer
                 font-weight: 600
                 margin-top: 13px
                 max-width: 299px
+                position: relative
+                transition: .5s
+                &:hover
+                    color: $white
     &__right
         padding-left: 37px
         border-left: 1px solid rgba(255, 255, 255, 0.4)
@@ -138,7 +160,7 @@ footer
                 margin-right: 0px
                 margin-bottom: 10px
             &-active
-                left: 0px
+                left: -10px
             &-mobile
                 display: block
                 width: 20px
@@ -164,3 +186,5 @@ footer
 @media screen and (max-width: 550px)
     .section__title
         font-size: 9vw
+    header
+        padding: 10px 0px

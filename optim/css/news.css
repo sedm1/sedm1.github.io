@@ -41,9 +41,17 @@ main {
   height: 380px;
   width: 100%;
   margin-right: 40px;
+  overflow: hidden;
+  border-radius: 30px;
 }
 .news__item-img img {
   border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.news__item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .news__item-title {
   font-size: 26px;
@@ -66,6 +74,12 @@ main {
   color: #FFFFFF;
   background: #C74545;
   border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.news__item-link:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media screen and (max-width: 1000px) {

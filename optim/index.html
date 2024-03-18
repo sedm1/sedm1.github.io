@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <!--Главная-->
     <style>
         .main{
-            background-image: url('img/main__bg.jpeg');
+            background-image: url('img/main__bg.webp');
         }
     </style>
 </head>
@@ -36,38 +37,41 @@
     </header>
     <main>
         <section class="main">
-            <div class="container">
-                <h1 class="main__title">Автомобильные FTL грузоперевозки</h1>
-                <div class="main__form">
-                    <h3 class="main__form-title">Рассчитайте доставку груза</h3>
-                    <form action="">
-                        <input type="text" placeholder="Откуда" class="main__form-input">
-                        <input type="text" placeholder="Куда" class="main__form-input">
-                        <input type="submit" value="Рассчитать" class="main__form-button">
-                    </form>
+            <div class="main__bg">
+                <div class="container">
+                    <h1 class="main__title" data-aos="fade-left">Автомобильные FTL грузоперевозки</h1>
+                    <div class="main__form">
+                        <h3 class="main__form-title" data-aos="fade-right">Рассчитайте доставку груза</h3>
+                        <form action="" data-aos="fade-left">
+                            <input type="text" placeholder="Откуда" class="main__form-input">
+                            <input type="text" placeholder="Куда" class="main__form-input">
+                            <input type="submit" value="Рассчитать" class="main__form-button">
+                        </form>
+                    </div>
                 </div>
             </div>
+            
         </section>
         <section class="services" id="services">
             <div class="container">
-                <h2 class="section__title">Услуги</h2>
+                <h2 class="section__title" data-aos="fade-right">Услуги</h2>
                 <div class="services__block">
-                    <div class="services__item">
+                    <div class="services__item" data-aos="fade-down">
                         <h3 class="services__item-title">Тентовые перевозки 92 м<sup>3</sup></h3>
                         <div class="services__item-img"><img src="img/ser-1.png" alt="SerImg"></div>
                         <a href="#" class="services__item-link">Подробнее</a>
                     </div>
-                    <div class="services__item">
+                    <div class="services__item" data-aos="fade-down">
                         <h3 class="services__item-title">Тентовые перевозки 110 м<sup>3</sup></h3>
                         <div class="services__item-img"><img src="img/ser-2.png" alt="SerImg"></div>
                         <a href="#" class="services__item-link">Подробнее</a>
                     </div>
-                    <div class="services__item">
+                    <div class="services__item" data-aos="fade-down">
                         <h3 class="services__item-title">Рефрижераторные перевозки</h3>
                         <div class="services__item-img"><img src="img/ser-3.png" alt="SerImg"></div>
                         <a href="#" class="services__item-link">Подробнее</a>
                     </div>
-                    <div class="services__item">
+                    <div class="services__item" data-aos="fade-down">
                         <h3 class="services__item-title">Сервис</h3>
                         <div class="services__item-img"><img src="img/ser-4.png" alt="SerImg"></div>
                         <a href="#" class="services__item-link">Подробнее</a>
@@ -77,26 +81,26 @@
         </section>
         <section class="prem">
             <div class="container">
-                <h2 class="section__title">Преимущества</h2>
+                <h2 class="section__title" data-aos="fade-right">Преимущества</h2>
                 <div class="prem__block">
-                    <div class="prem__item">
+                    <div class="prem__item" data-aos="fade-right">
                         <h3 class="prem__item-title">Гибкие условия оплаты</h3>
                         <div class="prem__item-img"><img src="img/prem-1.png" alt="PremIng"></div>
                     </div>
-                    <div class="prem__item">
-                        <h3 class="prem__item-title">Страхование груза</h3>
+                    <div class="prem__item" data-aos="fade-left">
+                        <h3 class="prem__item-title" >Страхование груза</h3>
                         <div class="prem__item-img"><img src="img/prem-2.png" alt="PremIng"></div>
                     </div>
-                    <div class="prem__item">
-                        <h3 class="prem__item-title">Прозрачность и законность</h3>
+                    <div class="prem__item" data-aos="fade-right">
+                        <h3 class="prem__item-title" >Прозрачность и законность</h3>
                         <div class="prem__item-img"><img src="img/prem-3.png" alt="PremIng"></div>
                     </div>
-                    <div class="prem__item">
-                        <h3 class="prem__item-title">Для всех форм собственности</h3>
+                    <div class="prem__item" data-aos="fade-left">
+                        <h3 class="prem__item-title" >Для всех форм собственности</h3>
                         <div class="prem__item-img"><img src="img/prem-4.png" alt="PremIng"></div>
                     </div>
                 </div>
-                <div class="prem__img"><img src="img/prem__img.png" alt="premImg"></div>
+                <div class="prem__img" data-aos="fade-left"><img src="img/prem__img.png" alt="premImg"></div>
             </div>
         </section>
     </main>
@@ -135,6 +139,7 @@
         <p class="footer__prava">Транспортная компания Опттим Логистик 2024 </p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

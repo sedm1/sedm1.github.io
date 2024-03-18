@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/contacts.css">
 </head>
 <body>
@@ -39,38 +40,38 @@
         </section>
         <section class="office">
             <div class="container">
-                <h2 class="section__title">Офис в Пятигорске</h2>
+                <h2 class="section__title" data-aos="fade-right">Офис в Пятигорске</h2>
                 <div class="office__block">
                     <div class="office__left">
-                        <div class="office__left-item">
+                        <div class="office__left-item" data-aos="fade-right" data-aos-delay="100">
                             <h4 class="office__left-title">Телефон: </h4>
                             <div class="office__left-text">+7 962 01 111 88</div>
                         </div>
-                        <div class="office__left-item">
+                        <div class="office__left-item" data-aos="fade-right" data-aos-delay="150">
                             <h4 class="office__left-title">E-mail: </h4>
                             <div class="office__left-text">logistics@opttim.com</div>
                         </div>
-                        <div class="office__left-item">
+                        <div class="office__left-item" data-aos="fade-right" data-aos-delay="200">
                             <h4 class="office__left-title">График работы: </h4>
                             <div class="office__left-text">Круглосуточно</div>
                         </div>
-                        <div class="office__left-item">
+                        <div class="office__left-item" data-aos="fade-right" data-aos-delay="250">
                             <h4 class="office__left-title">Почтовый адрес: </h4>
                             <div class="office__left-text">Ставропольский край, Предгорный муниципальный округ, автодорога Пятигорск - Георгиевск, 3-й километр, 11</div>
                         </div>
                     </div>
                     <div class="office__right">
                         <form action="">
-                            <input type="text" placeholder="Имя" class="office__right-input">
-                            <input type="text" placeholder="Телефон" class="office__right-input">
-                            <textarea placeholder="Сообщение" class="office__right-textarea"></textarea>
+                            <input type="text" placeholder="Имя" class="office__right-input" data-aos="fade-left" data-aos-delay="100">
+                            <input type="text" placeholder="Телефон" class="office__right-input" data-aos="fade-left" data-aos-delay="150">
+                            <textarea placeholder="Сообщение" class="office__right-textarea" data-aos="fade-left" data-aos-delay="200"></textarea>
                             <input type="submit" value="Отправить" class="office__right-button">
                             <div class="office__check">
                                 <div class="office__check-item">
                                     <input type="checkbox" id="checkbox">
                                     <label for="checkbox"></label>
                                 </div>
-                                <p class="office__check-text">Я ознакомлен(-а) и согласен(-на) с Политикой конфидециальности</p>
+                                <p class="office__check-text" data-aos="fade-up" data-aos-delay="0">Я ознакомлен(-а) и согласен(-на) с Политикой конфидециальности</p>
                             </div>
                         </form>
                     </div>
@@ -79,8 +80,8 @@
         </section>
         <section class="mest">
             <div class="container">
-                <h2 class="section__title">Местоположение</h2>
-                <div class="mest__block">
+                <h2 class="section__title" data-aos="fade-right">Местоположение</h2>
+                <div class="mest__block" data-aos="zoom-in">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A073321c12d2e47f5861c8e88ac3523f4c9e91004ab628c0a11d8ccebbbd74946&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                 </div>
             </div>
@@ -133,6 +134,8 @@
         <div class="footer__line"></div>
         <p class="footer__prava">Транспортная компания Опттим Логистик 2024 </p>
     </footer>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
