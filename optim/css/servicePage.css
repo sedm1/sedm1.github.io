@@ -296,6 +296,7 @@ main {
           justify-content: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  max-width: 75%;
 }
 .ano__item-img img {
   width: 100%;
