@@ -204,6 +204,10 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.prem__item-img img {
+  height: 100px;
+  width: auto;
+}
 .prem__item:hover .prem__item-img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
