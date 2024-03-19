@@ -176,27 +176,40 @@
     .main
         &__title
             font-size: 14vw
+    .prem__block
+        gap: 20px 0px
     .prem__item
-        padding: 40px 20px
+        padding: 26px 19px
         &-title
-            font-size: 6vw
-    .services__item-title
-        font-size: 6vw
+            font-size: 20px
 @media screen and (max-width: 550px)
+    .services
+        &__block
+            grid-template-columns: 1fr
+            gap: 20px 0px
+        &__item
+            display: grid
+            grid-template-columns: repeat(auto-fill, 1fr)
+            grid-template-rows: repeat(auto-fill, 1fr)
+            align-items: center
+            gap: 17px 0px
+            padding: 12px 17px
+            &-img
+                width: 100%
+                max-width: 130px
+                grid-area: 2 / 1 / 3 / 2
+                margin: 0px
+            &-title
+                grid-area: 1 / 1 / 2 / 3
+                font-size: 20px
+            &-link
+                grid-area: 2 / 2 / 3 / 3
+                font-size: 16px
+                max-width: 177px
+                padding: 10px 40px
     .main__bg
         padding-top: 0px
         padding-bottom: 10px
-    .services__item-title
-        font-size: 8vw
-    .services__item-link
-        width: 100%
-        text-align: center
-    .services__item-img
-        align-self: center
-    .services__item
-        padding-left: 10px
-        padding-right: 10px
-        padding-top: 43px
     .main__form
         padding: 30px 8px
         margin-top: 30px
