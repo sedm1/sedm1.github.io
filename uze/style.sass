@@ -1,0 +1,285 @@
+@import 'sass/fonts'
+$black: #343434
+$gray: #505050
+$yellow: #F4DCA5
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Circe'
+    color: $gray
+html
+    scroll-behavior: smooth
+    max-width: 100%
+    overflow-x: hidden
+body
+    background: linear-gradient(216.17deg, rgb(244, 243, 242) -18.713%,rgb(205, 193, 179) 81.978%)
+    max-width: 100%
+    overflow-x: hidden
+section
+    margin-bottom: 180px
+img
+    width: 100%
+    height: auto
+li
+    list-style: none
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    font-family: inherit
+input
+    border: 0 none
+    outline: 0 none
+button
+    border: 0 none
+    outline: 0 none
+    cursor: pointer
+    font-family: inherit
+    background: 0 none
+h1, h2, h3, h4
+    font-family: 'Prata-Regular'
+.section__title
+    font-size: 35px
+    font-weight: 400
+    position: relative
+    width: fit-content
+    &::before
+        content: ""
+        position: absolute
+        top: -41px
+        right: 10px
+        width: 25px
+        height: 46px
+        background-image: url('img/title.png')
+        background-position: center center
+        background-repeat: no-repeat
+.container
+    max-width: 1296px
+    width: 100%
+    margin: 0 auto
+header
+    padding: 14px 0px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__open
+        display: none
+    &__logo
+        width: 169px
+    &__menu
+        display: flex
+        align-items: center
+        margin-right: 90px
+        &-item
+            margin-right: 95px
+            font-size: 16px
+            font-weight: 500
+            color: #5A5A5A
+            position: relative
+            &::before
+                width: 0%
+                height: 1px
+                content: ""
+                background: #5A5A5A
+                transition: .3s
+                bottom: -2px
+                left: 0px
+                position: absolute
+            &:hover
+                &::before
+                    width: 100%
+            &:last-child
+                margin-right: 0px
+        &-close
+            display: none
+    &__soz
+        display: flex
+        align-items: center
+        margin-right: 36px
+        &-item
+            width: 31px
+            margin-right: 20px
+            &:last-child
+                margin-right: 0px
+    &__right
+        display: flex
+        align-items: center
+    &__info
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        &-phone
+            font-size: 16px
+            font-family: 'Circle Medium'
+            color: #5A5A5A
+        &-button
+            font-size: 14px
+            font-weight: 400
+            color: #898989
+footer
+    .container
+        padding: 36px 0px
+        border-top: 1px solid rgb(137, 137, 137)
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+.footer
+    &__logo
+        width: 179px
+    &__item
+        &-title
+            font-size: 18px
+            color: #343434
+            margin-bottom: 15px
+            text-transform: uppercase
+        &-contact
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+        &-icon
+            min-width: 18px
+            width: 18px
+            margin-right: 15px
+        &-soz
+            display: flex
+            align-items: center
+        &-sozItem
+            width: 27px
+            margin-right: 18px
+            &:last-child
+                margin-right: 0px
+    &__menu-item
+        margin-bottom: 8px
+        color: rgb(137, 137, 137)
+        font-weight: 500
+        font-size: 16px
+.modal
+    &__bg
+        width: 100%
+        height: 100dvh
+        z-index: 4
+        position: fixed
+        top: 0
+        left: 0
+        background: rgba(0, 0, 0, 0.4)
+        display: none
+        align-items: center
+        justify-content: center
+        opacity: 0
+        transition: all .3s
+        &-active
+            opacity: 1
+    &__window
+        background: #fff
+        border-radius: 45px
+        box-shadow: 0px 1px 3px 0px rgba(194, 194, 194, 0.1),0px 6px 6px 0px rgba(194, 194, 194, 0.09),0px 13px 8px 0px rgba(194, 194, 194, 0.05),0px 23px 9px 0px rgba(194, 194, 194, 0.01),0px 35px 10px 0px rgba(194, 194, 194, 0)
+        max-width: 855px
+        width: 100%
+        position: relative
+        padding: 80px 0px
+        display: none
+        opacity: 0
+        transition: all .3s
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        &-active
+            opacity: 1
+        &-close
+            position: absolute
+            top: 35px
+            right: 35px
+            width: 24px
+        &-title
+            text-align: center
+            text-transform: uppercase
+            font-size: 30px
+            margin-bottom: 36px
+        form
+            display: flex
+            flex-direction: column
+            max-width: 342px
+            width: 100%
+        &-input
+            width: 100%
+            margin-bottom: 21px
+            padding: 21px 30px
+            font-size: 14px
+            font-weight: 500
+            border: 1px solid rgb(237, 237, 237)
+            color: #000
+            &::placeholder
+                color: #898989
+        input[type="submit"]
+            clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0% 50%)
+            padding: 23px 0px
+            background: linear-gradient(180.00deg, rgb(244, 220, 165) 46.501%,rgb(220, 179, 122) 106.85%)
+            font-size: 16px
+            color: #fff
+            cursor: pointer
+            transition: .3s
+            &:hover
+                transform: scale(1.05)
+        &-polit
+            text-align: center
+            margin: 0 auto
+            margin-top: 14px
+            font-size: 14px
+            max-width: 287px
+            a
+                background: -webkit-linear-gradient(180.00deg, rgb(244, 220, 165),rgb(220, 179, 122))
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+
+@media screen and (max-width: 1296px)
+    .container
+        max-width: 98%
+    .header__menu
+        position: fixed
+        top: 0
+        left: -110%
+        max-width: 320px
+        width: 100%
+        height: 100dvh
+        background: #fff
+        flex-direction: column
+        z-index: 3
+        align-items: flex-start
+        padding: 20px 30px
+        transition: .5s
+        &-active
+            left: 0px
+        &-item
+            margin-right: 0px
+            margin-bottom: 20px
+        &-close
+            display: block
+            align-self: flex-end
+            margin-bottom: 10px
+            width: 20px
+
+    .header__open
+        display: block
+@media screen and (max-width: 1000px)
+    footer
+        .container
+            flex-direction: column
+            text-align: center
+            align-items: center
+    .footer
+        &__item
+            margin-top: 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+@media screen and (max-width: 650px)
+    section
+        margin-bottom: 100px
+    .header__soz, .header__info
+        display: none
+    .section__title
+        font-size: 7.5vw
