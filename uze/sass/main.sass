@@ -11,7 +11,6 @@
         margin-bottom: 11px
         color: #343434
     &__descript
-        max-width: 349px
         color: #505050
         font-size: 18px
         font-family: 'Circe Light'
@@ -41,7 +40,7 @@
                 height: 66px
     &__img
         max-width: 418px
-        border: 3px solid #fff
+        
         box-shadow: 5.66px 5.66px 16.98px 0px rgba(92, 92, 92, 0.34),20.75px 22.64px 31.13px 0px rgba(92, 92, 92, 0.3),47.16px 50.94px 41.51px 0px rgba(92, 92, 92, 0.18),83.95px 90.56px 49.05px 0px rgba(92, 92, 92, 0.05),131.12px 140.55px 53.77px 0px rgba(92, 92, 92, 0.01)
         border-radius: 192px
         display: flex
@@ -76,6 +75,7 @@
         img
             border-radius: 192px
             height: 100%
+            border: 3px solid #fff
         &-descript
             font-family: 'Better Land RUS'
             font-size: 35px
@@ -156,7 +156,7 @@
     &__img
         position: relative
         width: 389px
-        border: 3px solid #fff
+        
         box-shadow: 5.66px 5.66px 16.98px 0px rgba(92, 92, 92, 0.34),20.75px 22.64px 31.13px 0px rgba(92, 92, 92, 0.3),47.16px 50.94px 41.51px 0px rgba(92, 92, 92, 0.18),83.95px 90.56px 49.05px 0px rgba(92, 92, 92, 0.05),131.12px 140.55px 53.77px 0px rgba(92, 92, 92, 0.01)
         border-radius: 192px
         display: flex
@@ -166,6 +166,7 @@
         z-index: 1
         img
             border-radius: 192px
+            border: 3px solid #fff
         &::before
             content: ""
             border-radius: 192.7px
@@ -201,7 +202,7 @@
         border-radius: 46px
         &-img
             border-radius: 46px
-            height: 301px
+            height: 260px
             background: rgb(217, 217, 217)
             img
                 border-radius: 46px
@@ -350,7 +351,8 @@
 .rec
     &__block
         margin-top: 50px
-
+        max-width: 525px
+        width: 100%
     &__item
         background: #fff
         display: flex !important
@@ -374,6 +376,8 @@
         border-radius: 45px
     .form__items
         margin-top: 30px
+        display: flex
+        flex-wrap: nowrap
     .form__items-input
         padding: 21px 31px
         font-size: 12px
@@ -452,7 +456,7 @@
         &-bg
             position: relative
             width: 389px
-            border: 3px solid #fff
+            
             box-shadow: 5.66px 5.66px 16.98px 0px rgba(92, 92, 92, 0.34),20.75px 22.64px 31.13px 0px rgba(92, 92, 92, 0.3),47.16px 50.94px 41.51px 0px rgba(92, 92, 92, 0.18),83.95px 90.56px 49.05px 0px rgba(92, 92, 92, 0.05),131.12px 140.55px 53.77px 0px rgba(92, 92, 92, 0.01)
             border-radius: 192px
             display: flex
@@ -462,6 +466,7 @@
             z-index: 1
             img
                 border-radius: 192px
+                border: 3px solid #fff
             &::before
                 content: ""
                 border-radius: 192.7px
@@ -491,6 +496,7 @@
             font-size: 35px
             color: #898989
             margin-top: 20px
+    
 @media screen and (max-width: 1296px)
     .main
         .container

@@ -71,38 +71,6 @@ $('#photo__block-2').slick({
         }
     ]
 })
-$('.rec__block').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: false,
-    responsive: [
-        {
-          breakpoint: 1000,
-          settings: {
-            slidesToShow: 3,
-            centerMode: true,
-            centerPadding: '20px'
-          }
-        },
-        {
-            breakpoint: 750,
-            settings: {
-              slidesToShow: 2,
-              centerMode: true,
-            centerPadding: '20px'
-            }
-          },
-          {
-            breakpoint: 500,
-            settings: {
-              slidesToShow: 1,
-              centerMode: true,
-            centerPadding: '20px'
-            }
-          },
-    ]
-})
 AOS.init();
 $('.header__open').click(() => {
   $('.header__menu').addClass('header__menu-active')
@@ -133,3 +101,38 @@ $('.modal__window-close').click(() => {
     $('.modal__bg').removeClass('modal__bg-active')
   }, 200)
 })
+
+$('.about__button').click(() => {
+  $('.modal__bg').css({'display': 'flex'})
+  $('.modal__bg').addClass('modal__bg-active')
+  setTimeout(() => {
+    $('.modal__video').css({'display': 'flex'})
+    $('.modal__video').addClass('modal__video-active')
+  }, 200)
+})
+
+$('.modal__video-close').click(() => {
+  $('.modal__video').removeClass('modal__video-active')
+  setTimeout(() => {
+    $('.modal__video').css({'display': ''})
+    $('.modal__bg').css({'display': ''})
+    $('.modal__bg').removeClass('modal__bg-active')
+  }, 200)
+})
+$('.social__btn').click(() => {
+  $('.social__link').toggleClass('social__link-preactive')
+  setTimeout(() => {
+    $('.social__link').toggleClass('social__link-active')
+  }, 100)
+  
+})
+const maskOptions = {
+  mask: '+{7} (000) 000-00-00'
+};
+if (document.getElementById('input__phone')){
+  IMask(document.getElementById('input__phone'), maskOptions);
+}
+if (document.getElementById('call__info-phone')){
+  IMask(document.getElementById('call__info-phone'), maskOptions);
+}
+

@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  background: linear-gradient(216.17deg, rgb(244, 243, 242) -18.713%, rgb(205, 193, 179) 81.978%);
+  background: linear-gradient(261deg, rgb(244, 243, 242) -18.713%, rgb(205, 193, 179) 81.978%);
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -406,6 +406,84 @@ footer .container {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.modal__video {
+  display: none;
+  opacity: 0;
+  max-width: 500px;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #fff;
+  padding: 40px 20px;
+  position: relative;
+  max-height: 80%;
+}
+.modal__video video {
+  width: 100%;
+}
+.modal__video-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+}
+.modal__video-active {
+  opacity: 1;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social__bg {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+}
+.social__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2rem;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(244, 220, 165)), to(rgb(220, 179, 122)));
+  background: linear-gradient(180deg, rgb(244, 220, 165), rgb(220, 179, 122));
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.social__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: block;
+  margin-bottom: 10px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.social__link-preactive {
+  display: block;
+}
+.social__link-active {
+  opacity: 1;
+}
 
 @media screen and (max-width: 1296px) {
   .container {
@@ -483,5 +561,22 @@ footer .container {
   }
   .section__title {
     font-size: 7.5vw;
+  }
+  .container {
+    max-width: 92%;
+  }
+  header {
+    padding-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+    background: linear-gradient(261deg, rgb(244, 243, 242) -18.713%, rgb(205, 193, 179) 81.978%);
+  }
+  .header__logo {
+    width: 130px;
+  }
+  main {
+    padding-top: 110px;
   }
 }
