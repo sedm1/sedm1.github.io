@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__logo">
+                <div class="header__logo-img"><img src="img/logo.svg" alt="Logo"></div>
+                <p class="header__logo-text">Санкт Петербург, ул. Чайковского 38\9</p>
+            </div>
+            <div class="header__right">
+                <nav class="header__menu-block">
+                    <ul class="header__menu">
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#ser">Услуги</a></li>
+                        <li><a href="#port">Наши работы</a></li>
+                        <li><a href="#cont">Контакты</a></li>
+                    </ul>
+                    <div class="header__menu-mobile">
+                        <a href="tel: +79006595424" class="mobile-phone">+7 (900) 659-54-24</a>
+                        <p class="mobile-time">Ежедневно с 10:00 до 21:00</p>
+                        <p class="mobile-descript">Санкт Петербург, <br/>ул. Чайковского 38\9</p>
+                    </div>
+                </nav>
+                <div class="header__right-info">
+                    <a href="tel: +79006595424" class="header__right-phone" target="_blank">+7 (900) 659-54-24</a>
+                    <p class="header__right-descript">Ежедневно с 10:00 до 21:00</p>
+                </div>
+                <button class="header__mobile-button"><img src="img/menu.png" alt="menu"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="banner__info">
+                    <h1 class="banner__title">Ремонт телефонов <br/><span>в Санкт-Петербурге</span></h1>
+                    <ul class="banner__list">
+                        <li class="banner__list-item">Заводское оборудование</li>
+                        <li class="banner__list-item">Гарантия от 6 месяцев</li>
+                        <li class="banner__list-item">Ремонт от 30 минут</li>
+                    </ul>
+                </div>
+                <button class="banner__button">Расчитать стоимость</button>
+                
+            </div>
+        </section>
+        <section class="brands">
+            <div class="container">
+                <h2 class="section__title">Бренды, с которыми мы работаем</h2>
+                <div class="brands__tabs">
+                    <button class="brands__tabs-item brands__tabs-active" data-brand="1">Телефоны</button>
+                    <button class="brands__tabs-item" data-brand="2">Планшеты</button>
+                </div>
+                <div class="brands__block">
+                    <div class="brands__block-item brands__block-active" id="brands__block-1">
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/iphone.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">iPhone</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/samsung.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">Samsung</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/xiaomi.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">Xiaomi</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/honor.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">HONOR</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/oppo.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">OPPO</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/realme.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">Realme</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/vivo.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">Vivo</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/huawei.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">HUAWEI</h4>
+                        </div>
+                    </div>
+                    <div class="brands__block-item" id="brands__block-2">
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/ipad-p.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">iPad</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/samsung-p.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">Samsung</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/xiaomi-p.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">Xiaomi</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/honor-p.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">HONOR</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/oppo-p.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">OPPO</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/lenovo-p.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">Lenovo</h4>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__item-img"><img src="img/huawei-p.png" alt="BrandsItemImg"></div>
+                            <h4 class="brands__item-title">HUAWEI</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prem">
+            <div class="container">
+                <h2 class="section__title">Наши преимущества</h2>
+                <div class="prem__block">
+                    <div class="prem__item">
+                        <div class="prem__item-img"><img src="img/prem-1.png" alt="PremItemImg"></div>
+                        <h4 class="prem__item-title">Бесплатная диагностика</h4>
+                        <p class="prem__item-descript">Не возьмём ни рубля, <br/>даже при отказе от ремонта</p>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-img"><img src="img/prem-2.png" alt="PremItemImg"></div>
+                        <h4 class="prem__item-title">Подменный телефон на время ремонта</h4>
+                        <p class="prem__item-descript">Заботимся о том, чтобы вы оставались <br/>на связи, пока ваш телефон ремонтируется</p>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-img"><img src="img/prem-3.png" alt="PremItemImg"></div>
+                        <h4 class="prem__item-title">Фотоотчет ремонта</h4>
+                        <p class="prem__item-descript">Фиксируем все этапы <br/>от начала работ до завершения</p>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-img"><img src="img/prem-4.png" alt="PremItemImg"></div>
+                        <h4 class="prem__item-title">Профессиональный подход</h4>
+                        <p class="prem__item-descript">Наши мастера — настоящие профессионалы <br/>с большим стажем работы</p>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-img"><img src="img/prem-5.png" alt="PremItemImg"></div>
+                        <h4 class="prem__item-title">Гарантия до 1  года</h4>
+                        <p class="prem__item-descript">Вы получите гарантию на все установленные запчасти и выполненные работы</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="photo">
+            <div class="container">
+                <div class="photo__img"><img src="img/photo.jpeg" alt="photo"></div>
+            </div>
+        </section>
+        <section class="services" id="ser">
+            <div class="container">
+                <h2 class="section__title">Услуги нашего сервиса</h2>
+                <div class="services__block">
+                    <div class="services__item">
+                        <div class="services__item-img"><img src="img/ser-1.jpeg" alt="ServicesItemImg"></div>
+                        <div class="services__item-info">
+                            <h4 class="services__item-title">Замена разбитого стекла телефона</h4>
+                            <button class="services__item-button">Выбрать услугу</button>
+                        </div>
+                        
+                    </div>
+                    <div class="services__item">
+                        <div class="services__item-img"><img src="img/ser-2.jpeg" alt="ServicesItemImg"></div>
+                        <div class="services__item-info">
+                            <h4 class="services__item-title">Восстановка дисплея  и заднего стекла</h4>
+                            <button class="services__item-button">Выбрать услугу</button>
+                        </div>
+                        
+                    </div>
+                    <div class="services__item">
+                        <div class="services__item-img"><img src="img/ser-3.jpeg" alt="ServicesItemImg"></div>
+                        <div class="services__item-info">
+                            <h4 class="services__item-title">Замена изношенного аккумулятора</h4>
+                            <button class="services__item-button">Выбрать услугу</button>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__item-img"><img src="img/ser-4.jpeg" alt="ServicesItemImg"></div>
+                        <div class="services__item-info">
+                            <h4 class="services__item-title">Замена разбитого стекла камеры</h4>
+                            <button class="services__item-button">Выбрать услугу</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="port" id="port">
+            <section class="port__photo">
+                <div class="container">
+                    <h2 class="section__title">Фото наших работ</h2>
+                    <div class="port__photo-block">
+                        <div class="port__photo-item"><img src="img/p-1.jpeg" alt="PortPhoto"></div>
+                        <div class="port__photo-item"><img src="img/p-2.jpeg" alt="PortPhoto"></div>
+                        <div class="port__photo-item"><img src="img/p-3.jpeg" alt="PortPhoto"></div>
+                        <div class="port__photo-item"><img src="img/p-4.jpeg" alt="PortPhoto"></div>
+                        <div class="port__photo-item"><img src="img/p-5.jpeg" alt="PortPhoto"></div>
+                        <div class="port__photo-item"><img src="img/p-6.jpeg" alt="PortPhoto"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="port__video">
+                <div class="container">
+                    <h2 class="section__title">Наши видео</h2>
+                    <div class="port__video-block">
+                        <div class="port__video-item">
+                            <video src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+                            <button class="port__video-button"><img src="img/play.png" alt="PlayButton"></button>
+                        </div>
+                        <div class="port__video-item">
+                            <video src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+                            <button class="port__video-button"><img src="img/play.png" alt="PlayButton"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="review">
+            <div class="container">
+                <h2 class="section__title">Отзывы о нас</h2>
+                <div class="review__map">
+                    <div style="width:100%;height:725px;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/37660609136?comments"></iframe><a href="https://yandex.ru/maps/org/fixhub/37660609136/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Fixhub на карте Омска — Яндекс Карты</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="cont" id="cont">
+            <div class="container">
+                <h3 class="cont__title">Нужен ремонт? Свяжитесь с нами</h3>
+                <div class="cont__info">
+                    <a href="tel: +79006595424" class="cont__info-phone">+7 (900) 659-54-24</a>
+                    <div class="cont__info-sozBlock">
+                        <div class="cont__info-item">
+                            <h4 class="item-title">Мессенджеры:</h4>
+                            <div class="cont__info-soz">
+                                <a href="#" class="soz__item"><img src="img/tg.png" alt="ContItemSoz"></a>
+                                <a href="#" class="soz__item"><img src="img/wt.png" alt="ContItemSoz"></a>
+                            </div>
+                        </div>
+                        <div class="cont__info-item">
+                            <h4 class="item-title">Социальные сети:</h4>
+                            <div class="cont__info-soz">
+                                <a href="#" class="soz__item"><img src="img/vk.png" alt="ContItemSoz"></a>
+                                <a href="#" class="soz__item"><img src="img/inst.png" alt="ContItemSoz"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cont__button">Расчитать стоимость</button>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3e046b17e3fa79e88d6d52957e8bb7ba3e350670e3768d0b4adbbba05a61006e&amp;source=constructor" width="100%" height="540" frameborder="0"></iframe>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <div class="footer__logo-img"><img src="img/logo.svg" alt="FooterLogo"></div>
+                <p class="footer__logo-text">Санкт Петербург, <br/>ул. Чайковского 38\9</p>
+            </div>
+            <div class="footer__right">
+                <nav>
+                    <ul class="footer__menu">
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#ser">Услуги</a></li>
+                        <li><a href="#port">Наши работы</a></li>
+                        <li><a href="#cont">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__right-info">
+                    <a href="tel: +79006595424" class="footer__right-phone" target="_blank">+7 (900) 659-54-24</a>
+                    <p class="footer__right-descript">Ежедневно с 10:00 до 21:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="container footer__under">
+            <a href="#" class="footer__polit">Политика конфиденциальности</a>
+            <button class="footer__button">Заказать звонок</button>
+        </div>
+    </footer>
+    <div class="modal__bg">
+        <div class="modal__window">
+            <div class="modal__window-header">
+                <h3 class="modal__window-title">Заполните форму, и мы перезвоним</h3>
+                <button class="modal__window-close"><img src="img/close.png" alt="close"></button>
+            </div>
+            <form action="">
+                <input type="text" class="modal__window-input" placeholder="Ваше имя">
+                <input type="text" class="modal__window-input" placeholder="Номер телефона">
+                <select class="modal__window-input">
+                    <option value="0" selected hidden>Выберите услугу</option>
+                    <option value="value1">Услуга 1</option>
+                    <option value="value2">Услуга 2</option>
+                    <option value="value3">Услуга 3</option>
+                  </select>
+                  <input type="submit" value="Рассчитать стоимость" class="modal__window-submit">
+                  <div class="modal__window-footer">
+                    <div class="footer-sogl">
+                        <input type="checkbox" id="modal-window-check">
+                        <label for="modal-window-check"></label>
+                    </div>
+                    <div class="footer-text">Ознакомлен и согласен с условиями <a href="#">Политики конфиденциальности</a></div>
+                  </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
