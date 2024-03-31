@@ -59,3 +59,6 @@ $('.modal__window-close').click(() => {
         }, 150)
     }, 150)
 })
+AOS.init({
+    offset: 230
+});
