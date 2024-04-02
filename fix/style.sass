@@ -13,6 +13,7 @@ $gray: #959595
     font-family: "Inter Tight", sans-serif
 html
     scroll-behavior: smooth
+    overflow-x: hidden
 body
     position: relative
     max-width: 100%
@@ -40,6 +41,7 @@ input, select
     outline: 0 none
 section
     margin-bottom: 80px
+    scroll-margin: 100px
 span
     font-weight: inherit
     font-size: inherit
@@ -119,7 +121,7 @@ header
             position: absolute
             width: 364px
             height: 630px
-            background-image: url('img/main__phone.png')
+            background-image: url('img/main__phone.webp')
             background-size: cover
             background-position: center center
             background-repeat: no-repeat
@@ -175,6 +177,17 @@ header
         line-height: 150%
         &:hover
             background: #F34903
+#banner__star
+    &-1
+        position: absolute
+        width: 50px
+        top: 120px
+        right: 419px
+    &-2
+        position: absolute
+        width: 30px
+        top: 130px
+        right: 53px
 .brands
     &__tabs
         display: flex
@@ -212,6 +225,32 @@ header
             font-size: 18px
             font-weight: 600
 .prem
+    position: relative
+    &::before
+        content: ""
+        width: 807px
+        position: absolute
+        top: 473px
+        left: -390px
+        background-image: url('img/ph-l.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        height: 647px
+        z-index: -1
+    &::after
+        content: ""
+        width: 776px
+        position: absolute
+        top: -100px
+        right: -350px
+        background-image: url('img/ph-r.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        height: 869px
+        z-index: -1
+
     &__block
         margin-top: 40px
         display: flex
@@ -230,6 +269,8 @@ header
             border-radius: 100%
             margin: 0 auto
             margin-bottom: 15px
+            padding: 15px
+            background: #FAFAFA
         &-title
             text-align: center
             font-size: 18px
@@ -240,6 +281,132 @@ header
             font-size: 16px
             font-weight: 400
             line-height: 150%
+.cost
+    .container
+        background: $black
+        padding-top: 50px
+        padding-bottom: 100px
+        border-radius: 6px
+        position: relative
+        z-index: 1
+        overflow: hidden
+        &::before
+            z-index: -1
+            content: ""
+            position: absolute
+            width: 1371px
+            height: 1404px
+            right: -17px
+            top: 199px
+            opacity: 0.8
+            background-image: url('img/main__bg.png')
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+    &__star
+        z-index: -1
+        position: absolute
+    .section__title
+        color: #fff
+        text-align: center
+    &__button
+        position: absolute
+        width: 40px
+        height: 40px
+        border-radius: 100%
+        border: 1px solid #fff
+        display: flex
+        align-items: center
+        justify-content: center
+        top: 0
+        left: 50px
+        top: 58px
+        img
+            width: 6px
+    &__tabs
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        gap: 10px
+        margin: 30px 0px
+        &-item
+            background: #fff
+            border-radius: 6px
+            padding: 10px 20px
+            color: $black
+            font-size: 16px
+            font-weight: 600
+            transition: .3s
+        &-active
+            background: $orange
+            color: #fff
+    &__main
+        &-item
+            display: none
+            .custom-select
+                max-width: 189px
+                width: 100%
+                &__option--value
+                    border-radius: 0px
+                    padding: 13px 20px
+                    font-size: 16px
+                    font-weight: 500
+        &-active
+            display: block
+        &-block
+            display: flex
+            justify-content: center
+        &-button 
+            background: $orange
+            color: #fff
+            border-top-right-radius: 6px
+            border-bottom-right-radius: 6px
+            padding: 10px 20px
+            font-size: 16px
+            font-weight: 600
+            transition: .3s
+            &:hover
+                background: #F34903
+    &__res
+        color: #fff
+        margin-top: 30px
+        &-main 
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 60px
+            text-align: center
+        &-title
+            font-size: 24px
+            font-weight: 600
+            margin-bottom: 5px
+        &-value 
+            font-size: 18px
+            font-weight: 400
+        &-button
+            background: $orange
+            color: #fff
+            border-radius: 6px
+            font-size: 18px
+            font-weight: 600
+            padding: 20px 30px
+            margin: 0 auto
+            margin-top: 30px
+            display: flex
+            justify-content: center
+            transition: .3s
+            &:hover
+                background: #F34903
+#cost__star
+    &-1
+        width: 50px
+        left: 192px
+        bottom: 64px
+    &-2
+        width: 32px
+        right: 171px
+        bottom: 26px
 .services
     background: #EEEEEE
     margin-bottom: 0px
@@ -286,6 +453,7 @@ header
             margin-top: 40px
             display: grid
             grid-template-columns: repeat(3, 1fr)
+            grid-template-rows: 1fr
             gap: 30px
             img
                 border-radius: 6px
@@ -298,8 +466,11 @@ header
             gap: 20px
         video
             width: 100%
+            transform: translateY(-25%)
         &-item
             position: relative
+            max-height: 385px
+            overflow: hidden
         &-button
             width: 120px
             height: 120px
@@ -397,6 +568,18 @@ header
         transition: .3s
         &:hover
             background: #F34903
+#cont__star
+    &-1
+        position: absolute
+        width: 50px
+        top: 107px
+        right: 122px
+    &-2
+        width: 32px
+        top: 50px
+        right: 75px
+        position: absolute
+
 .map
     margin-bottom: 0px
 footer
@@ -626,7 +809,7 @@ footer
     .banner
         .container
             flex-direction: column
-            height: calc(100dvh - 99px)
+            height: calc(100dvh - 109px)
             align-items: center
             justify-content: space-between
             padding: 50px 0px
@@ -644,6 +827,15 @@ footer
             text-align: center
         &__button
             margin: 0px
+    #banner__star
+        &-1
+            top: auto
+            bottom: 250px
+            left: 25%
+        &-2
+            bottom: 310px
+            left: 65%
+            top: auto
     .cont
         .container
             flex-direction: column
@@ -718,7 +910,7 @@ footer
     .prem
         margin-bottom: 40px
         &__item
-            max-width: 500px
+            max-width: 90%
     .photo
         margin-bottom: 40px
     .services
@@ -768,6 +960,40 @@ footer
         .container
             &::before
                 right: 13%
+    #cont__star
+        &-1
+            display: none
+        &-2
+            display: none
+    .cost
+        .container
+            padding: 30px 20px
+            padding-bottom: 80px
+        &__main
+            &-block
+                flex-direction: column
+            &-item
+                .custom-select
+                    max-width: 100%
+                    margin-bottom: 10px
+            &-button
+                padding: 17px 20px
+        &__button
+            top: auto
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 20px
+        &__res
+            &-main
+                flex-direction: column
+                gap: 30px
+@media screen and (max-width: 550px)
+    #banner__star
+        &-1
+            left: 20px
+        &-2
+            left: auto
+            right: 32px
 @media screen and (max-width: 380px)
     .header__logo-text
         display: none
