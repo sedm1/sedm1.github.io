@@ -99,3 +99,8 @@ $('.modal__window-close').click(() => {
     }, 100)
   }, 200)
 })
+if (width <= 800){
+  $('.header__menu-item').click(() => {
+    $('.header__menu-block ').removeClass('header__menu-block-active')
+  })
+}
