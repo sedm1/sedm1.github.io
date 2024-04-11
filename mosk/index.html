@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .main{
+            background-image: url('./img/main__bg.jpeg');
+        }
+        .descript__img{
+            background-image: url('./img/grass.png');
+        }
+        .prem::before{
+            background-image: url('./img/grass.png');
+        }
+        .prem::after{
+            background-image: url('./img/grass.png');
+        }
+        .form::before{
+            background-image: url('./img/grass.png');
+        }
+        .form::after{
+            background-image: url('./img/grass.png');
+        }
+        .contact__info::before{
+            background-image: url('./img/list.png');
+        }
+        .contact__info::after{
+            background-image: url('./img/list.png');
+        }
+        .slick-next{
+            background-image: url('./img/arrow__left.svg');
+        }
+        .slick-prev{
+            background-image: url('./img/arrow__left.svg');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__logo"><img src="img/logo.svg" alt="Logo"></div>
+            <nav class="header__menu-block ">
+                <ul class="header__menu">
+                    <div class="header__mobile-header">
+                        
+                        <div class="header__mobile-logo"><img src="img/logo.svg" alt="LogoImg"></div>
+                        <button class="header__mobile-krest"><img src="img/krest.svg" alt="Krest"></button>
+                    </div>
+                    <li class="header__menu-item"><a href="#main">Главная</a></li>
+                    <li class="header__menu-item"><a href="#about">О нас</a></li>
+                    <li class="header__menu-item"><a href="#services">Услуги</a></li>
+                    <li class="header__menu-item"><a href="#personal">Персонал</a></li>
+                    <li class="header__menu-item"><a href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="header__mobile-soz">
+                        <h4 class="contact__soz-title">Мы в соц-сетях</h4>
+                        <div class="contact__soz-block">
+                            <a class="contact__soz-item" rel="nofollow" target="_blank"><img src="img/wt.svg" alt="SozItem"></a>
+                            <a class="contact__soz-item" rel="nofollow" target="_blank"><img src="img/vk.svg" alt="SozItem"></a>
+                            <a class="contact__soz-item" rel="nofollow" target="_blank"><img src="img/tg.svg" alt="SozItem"></a>
+                        </div>
+                </div>
+            </nav>
+            <button class="header__mobile-button"><img src="img/menu.svg" alt="menu"></button>
+        </div>
+    </header>
+    <main>
+        <section class="main" id="main">
+            <div class="main__wave">
+                
+                <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ff0000">
+                    <defs>
+                     <path id="wavepath" d="M 0 2000 0 500 Q 98 340 196 500 t 196 0 196 0 196 0 196 0 196 0 196 0 196 0  v1000 z" /> 
+                    </defs>
+                    <g >
+                     <use xlink:href="#wavepath" y="264" fill="#ffffff">
+                     </use>
+                    </g>
+                  </svg>
+            </div>
+            <div class="main__arrow-block">
+                <div class="main__arrow"><img src="img/arrow__down.svg" alt="arrow"></div>
+            </div>
+            
+        </section>
+        <section class="descript" id="about">
+            <div class="container">
+                <div class="descript__img"><img src="img/f.png" alt="f"></div>
+                <div class="descript__info">
+                    <h2 class="section__title">Студия красоты в Москве</h2>
+                    <div class="dots">
+                        <div class="dots__item"></div>
+                        <div class="dots__item"></div>
+                        <div class="dots__item"></div>
+                    </div>
+                    <p class="descript__descript">Наша студия - это место, где каждая женщина может почувствовать себя прекрасной и ухоженной. Мы стремимся создать атмосферу комфорта и уюта, чтобы наши клиенты могли расслабиться и получить удовольствие от процедур, которые мы предлагаем.</p>
+                    <p class="descript__descript">У нас работают опытные специалисты, которые постоянно совершенствуют свои навыки и следят за последними тенденциями в мире красоты. Мы используем только качественные и проверенные профессиональные средства и инструменты, чтобы обеспечить нашим клиентам безупречный результат.</p>
+                    <p class="descript__descript">Мы ценим каждого клиента и стремимся к тому, чтобы после визита в нашу студию вы чувствовали себя как королевы. Доверьте нам свою красоту, и мы сделаем все возможное, чтобы воплотить ваши мечты в реальность. Будем Рады видеть вас у нас в студии !</p>
+                    <a class="descript__button" href="#form">Оставить заявку</a>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section__title">Наши услуи</h2>
+                <div class="dots">
+                    <div class="dots__item"></div>
+                    <div class="dots__item"></div>
+                    <div class="dots__item"></div>
+                </div>
+                <div class="services__block">
+                    <div class="services__item">
+                        <img src="img/ser-1.jpeg" alt="ServicesImg">
+                        <h3 class="services__item-title">Парикмахерский зал</h3>
+                    </div>
+                    <div class="services__item">
+                        <img src="img/ser-2.jpeg" alt="ServicesImg">
+                        <h3 class="services__item-title">Ногтевой сервис</h3>
+                    </div>
+                    <div class="services__item">
+                        <img src="img/ser-3.jpeg" alt="ServicesImg">
+                        <h3 class="services__item-title">Косметология</h3>
+                    </div>
+                    <div class="services__item">
+                        <img src="img/ser-4.jpeg" alt="ServicesImg">
+                        <h3 class="services__item-title">Лазерная эпиляция</h3>
+                    </div>
+                    <div class="services__item">
+                        <img src="img/ser-5.jpeg" alt="ServicesImg">
+                        <h3 class="services__item-title">Омоложение</h3>
+                    </div>
+                    <div class="services__item">
+                        <img src="img/ser-6.jpeg" alt="ServicesImg">
+                        <h3 class="services__item-title">Биоэпиляция</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="volos">
+            <div class="container">
+                <h2 class="section__title">Все для волос/парикмахерские услуги</h2>
+                <div class="dots">
+                    <div class="dots__item"></div>
+                    <div class="dots__item"></div>
+                    <div class="dots__item"></div>
+                </div>
+                <div class="volos__block">
+                    <div class="volos__item">
+                        <div class="volos__item-img"><img src="img/p-1.jpeg" alt="VolosImg"></div>
+                        <h3 class="volos__item-title">Корни</h3>
+                        <p class="volos__item-descript">3 600₽</p>
+                    </div>
+                    <div class="volos__item">
+                        <div class="volos__item-img"><img src="img/p-2.jpeg" alt="VolosImg"></div>
+                        <h3 class="volos__item-title">Мелирование волос/короткие</h3>
+                        <p class="volos__item-descript">2 100₽</p>
+                    </div>
+                    <div class="volos__item">
+                        <div class="volos__item-img"><img src="img/p-3.jpeg" alt="VolosImg"></div>
+                        <h3 class="volos__item-title">Тонирование волос/короткие</h3>
+                        <p class="volos__item-descript">3 600₽</p>
+                    </div>
+                    <div class="volos__item">
+                        <div class="volos__item-img"><img src="img/p-4.jpeg" alt="VolosImg"></div>
+                        <h3 class="volos__item-title">Стрижки ножницами/длинная</h3>
+                        <p class="volos__item-descript">2 900₽</p>
+                    </div>
+                    <div class="volos__item">
+                        <div class="volos__item-img"><img src="img/p-2.jpeg" alt="VolosImg"></div>
+                        <h3 class="volos__item-title">Мелирование волос/короткие</h3>
+                        <p class="volos__item-descript">2 100₽</p>
+                    </div>
+                    <div class="volos__item">
+                        <div class="volos__item-img"><img src="img/p-3.jpeg" alt="VolosImg"></div>
+                        <h3 class="volos__item-title">Тонирование волос/короткие</h3>
+                        <p class="volos__item-descript">3 600₽</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prem">
+            <div class="container">
+                <div class="prem__block">
+                    <div class="prem__item">
+                        <div class="prem__item-icon"><img src="img/prem-1.svg" alt="PremIcon"></div>
+                        <h3 class="prem__item-title">Профессиональные мастера</h3>
+                        <p class="prem__item-descript">наши сотрудники имеют большой опыт работы и постоянно повышают свою квалификацию</p>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-icon"><img src="img/prem-2.svg" alt="PremIcon"></div>
+                        <h3 class="prem__item-title">Качественные материалы</h3>
+                        <p class="prem__item-descript">мы используем только проверенные профессиональные средства и оборудование</p>
+                    </div>
+                    <div class="prem__item">
+                        <div class="prem__item-icon"><img src="img/prem-3.svg" alt="PremIcon"></div>
+                        <h3 class="prem__item-title">Уютная атмосфера</h3>
+                        <p class="prem__item-descript">наш салон красоты создан для полного расслабления и удовольствия. предлагаем комфортабельные условия и дружелюбный персонал</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cosm">
+            <div class="container">
+                <h2 class="section__title">Все для тела/косметологические услуги </h2>
+                <div class="dots">
+                    <div class="dots__item"></div>
+                    <div class="dots__item"></div>
+                    <div class="dots__item"></div>
+                </div>
+                <div class="cosm__block">
+                    <div class="cosm__item">
+                        <div class="cosm__item-img"><img src="img/cosm-1.jpeg" alt="CosmImg"></div>
+                        <h3 class="cosm__item-title">Оформление бровей</h3>
+                        <p class="cosm__item-descript">800₽</p>
+                    </div>
+                    <div class="cosm__item">
+                        <div class="cosm__item-img"><img src="img/cosm-2.jpeg" alt="CosmImg"></div>
+                        <h3 class="cosm__item-title">Лазерная эпиляция лица/полностью</h3>
+                        <p class="cosm__item-descript">1 620₽</p>
+                    </div>
+                    <div class="cosm__item">
+                        <div class="cosm__item-img"><img src="img/cosm-3.jpeg" alt="CosmImg"></div>
+                        <h3 class="cosm__item-title">Омоложение лица</h3>
+                        <p class="cosm__item-descript">3 600₽</p>
+                    </div>
+                    <div class="cosm__item">
+                        <div class="cosm__item-img"><img src="img/cosm-4.jpeg" alt="CosmImg"></div>
+                        <h3 class="cosm__item-title">Биоэпиляция </h3>
+                        <p class="cosm__item-descript">3 600₽</p>
+                    </div>
+                    <div class="cosm__item">
+                        <div class="cosm__item-img"><img src="img/cosm-2.jpeg" alt="CosmImg"></div>
+                        <h3 class="cosm__item-title">Лазерная эпиляция лица/полностью</h3>
+                        <p class="cosm__item-descript">1 620₽</p>
+                    </div>
+                    <div class="cosm__item">
+                        <div class="cosm__item-img"><img src="img/cosm-3.jpeg" alt="CosmImg"></div>
+                        <h3 class="cosm__item-title">Омоложение лица</h3>
+                        <p class="cosm__item-descript">3 600₽</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vid">
+            <div class="container">
+                <h2 class="section__title">Познакомьтесь с нашим салоном красоты</h2>
+            </div>
+            <div class="vid__block">
+                <div class="vid__block-block">
+                    <button class="vid__block-button"><img src="img/play.svg" alt="play"></button>
+                </div>
+                <div class="vid__block-wave" id="vid__wave-1">
+                    <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ff0000">
+                    <defs>
+                     <path id="wavepath" d="M 0 2000 0 500 Q 98 340 196 500 t 196 0 196 0 196 0 196 0 196 0 196 0 196 0  v1000 z" /> 
+                    </defs>
+                    <g >
+                     <use xlink:href="#wavepath" y="264" fill="#ffffff">
+                     </use>
+                    </g>
+                  </svg></div>
+                <img src="img/vid.jpeg" alt="vid" class="vid__block-img">
+                <div class="vid__block-wave" id="vid__wave-2">
+                    <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ff0000">
+                    <defs>
+                     <path id="wavepath" d="M 0 2000 0 500 Q 98 340 196 500 t 196 0 196 0 196 0 196 0 196 0 196 0 196 0  v1000 z" /> 
+                    </defs>
+                    <g >
+                     <use xlink:href="#wavepath" y="264" fill="#ffffff">
+                     </use>
+                    </g>
+                  </svg></div>
+            </div>
+        </section>
+        <section class="spec" id="personal">
+            <div class="container">
+                <h2 class="section__title">Наши специалисты</h2>
+                <div class="dots">
+                    <div class="dots__item"></div>
+                    <div class="dots__item"></div>
+                    <div class="dots__item"></div>
+                </div>
+                <div class="spec__block">
+                    <div class="spec__item">
+                        <img src="img/spec.jpeg" alt="SpecImg" class="spec__item-img">
+                        <h3 class="spec__item-title">Елена Иванова</h3>
+                        <p class="spec__item-prof">Топ барбер</p>
+                        <p class="spec__item-descript">Стаж 6 лет, знает все тонкости в сфере барберинга</p>
+                    </div>
+                    <div class="spec__item">
+                        <img src="img/spec.jpeg" alt="SpecImg" class="spec__item-img">
+                        <h3 class="spec__item-title">Елена Иванова</h3>
+                        <p class="spec__item-prof">Топ барбер</p>
+                        <p class="spec__item-descript">Стаж 6 лет, знает все тонкости в сфере барберинга</p>
+                    </div>
+                    <div class="spec__item">
+                        <img src="img/spec.jpeg" alt="SpecImg" class="spec__item-img">
+                        <h3 class="spec__item-title">Елена Иванова</h3>
+                        <p class="spec__item-prof">Топ барбер</p>
+                        <p class="spec__item-descript">Стаж 6 лет, знает все тонкости в сфере барберинга</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form" id="form">
+            <div class="form__wave" id="form__wave-1">
+                <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ff0000">
+                    <defs>
+                     <path id="wavepath" d="M 0 2000 0 500 Q 98 340 196 500 t 196 0 196 0 196 0 196 0 196 0 196 0 196 0  v1000 z" /> 
+                    </defs>
+                    <g >
+                     <use xlink:href="#wavepath" y="264" fill="#ffffff">
+                     </use>
+                    </g>
+                  </svg>
+            </div>
+            <div class="container">
+                <div class="form__logo"><img src="img/f.png" alt="f"></div>
+                <h2 class="form__title">Оставьте заявку</h2>
+                <form action="">
+                    <input type="text" class="form__input" placeholder="Введите имя">
+                    <input type="text" class="form__input" placeholder="Номер телефона">
+                    <input type="submit" value="Оставьте заявку" class="form__submit">
+                </form>
+                <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+            </div>
+            <div class="form__wave" id="form__wave-2">
+                <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ff0000">
+                    <defs>
+                     <path id="wavepath" d="M 0 2000 0 500 Q 98 340 196 500 t 196 0 196 0 196 0 196 0 196 0 196 0 196 0  v1000 z" /> 
+                    </defs>
+                    <g >
+                     <use xlink:href="#wavepath" y="264" fill="#ffffff">
+                     </use>
+                    </g>
+                  </svg>
+            </div>
+        </section>
+        <section class="contact" id="contacts">
+            <div class="container">
+                <div class="contact__info">
+                    <h2 class="contact__title">Контакты</h2>
+                    <div class="contact__item" id="contact__item-1">
+                        <div class="contact__item-icon"><img src="img/phone.svg" alt="SozItemIcon"></div>
+                        <p class="contact__item-text">+7(999) 999-99-99</p>
+                    </div>
+                    <div class="contact__item" id="contact__item-2">
+                        <div class="contact__item-icon"><img src="img/mail.svg" alt="SozItemIcon"></div>
+                        <p class="contact__item-text">Yourmail@.ru</p>
+                    </div>
+                    <div class="contact__item" id="contact__item-3">
+                        <div class="contact__item-icon"><img src="img/loc.svg" alt="SozItemIcon"></div>
+                        <p class="contact__item-text">Москва, метро пушкина, ул Велова</p>
+                    </div>
+                    <div class="contact__soz">
+                        <h4 class="contact__soz-title">Мы в соц-сетях</h4>
+                        <div class="contact__soz-block">
+                            <a class="contact__soz-item" rel="nofollow" target="_blank"><img src="img/wt.svg" alt="SozItem"></a>
+                            <a class="contact__soz-item" rel="nofollow" target="_blank"><img src="img/vk.svg" alt="SozItem"></a>
+                            <a class="contact__soz-item" rel="nofollow" target="_blank"><img src="img/tg.svg" alt="SozItem"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="contact__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaaa023119a4536980cf8c04bfb684979eb61b89105eddede916113c4f12cbd85&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__header">
+                <div class="footer__logo"><img src="img/logo.svg" alt="FooterLogo"></div>
+                <nav>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><a href="#main">Главная</a></li>
+                        <li class="footer__menu-item"><a href="#about">Услуги</a></li>
+                        <li class="footer__menu-item"><a href="#services">Специалисты</a></li>
+                        <li class="footer__menu-item"><a href="#personal">Видео-обзор салона</a></li>
+                        <li class="footer__menu-item"><a href="#contacts">Наши преимушества</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__footer">
+                @Copyright 2024
+            </div>
+        </div>
+    </footer>
+    <div class="modal__bg">
+        <div class="modal__window">
+            <button class="modal__window-close"><img src="img/krest.svg" alt="ModalClose"></button>
+            <video src="https://vjs.zencdn.net/v/oceans.mp4" controls></video>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
