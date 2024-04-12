@@ -117,14 +117,19 @@ header
             display: none
         &-soz 
             display: none
+        &-phone 
+            display: none
 .main
     height: 100vh
     width: 100%
-    background-size: cover
-    background-position: center center
-    background-repeat: no-repeat
     position: relative
     overflow: hidden
+    &__vid
+        height: 100%
+        video
+            width: 100%
+            height: 100%
+            object-fit: cover
     &__wave
         position: absolute
         bottom: -10px
@@ -711,7 +716,7 @@ footer
             flex-direction: column
             align-items: flex-start
         &__img
-            margin-left: -20px
+            margin-bottom: 20px
         &__count
             align-items: flex-start
             max-width: 96%
@@ -816,9 +821,19 @@ footer
                 background: none
             &-soz 
                 display: block
+            &-phone
+                font-size: 7vw
+                display: block
+                color: #646464
+                font-family: 'Circle-Bold'
+                margin-bottom: 10px
     .main
         height: auto
         min-height: 80vh
+        &__vid
+            height: 80vh
+            video
+                height: 80vh
         &__wave
             transform: translateX(-24%)
             width: 200%
@@ -845,7 +860,15 @@ footer
             margin-bottom: 40px
 @media screen and (max-width: 500px)
     .main
-        min-height: 57vh
+        min-height: 60vh
+        &__vid
+            height: 60vh
+            video
+                height: 60vh
+        &__arrow
+            width: 200px
+            height: 200px
+            bottom: -20px
     .section__title
         font-size: 6vw
     .dots
@@ -854,13 +877,11 @@ footer
             height: 2px
             margin-right: 11px
     .descript
-        &__img
-            min-height: 400px
-            margin-left: 0px
-            img
-                width: 56%
         &__descript
             font-size: 4vw
+        &__button
+            width: 100%
+            text-align: center
     .services
         &__block
             grid-template-columns: 1fr
