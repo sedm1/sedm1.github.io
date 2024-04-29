@@ -920,6 +920,13 @@ footer {
   width: 30px;
 }
 
+.modal__button {
+  width: 64px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5;
+}
 .modal__bg {
   position: fixed;
   top: 0;
