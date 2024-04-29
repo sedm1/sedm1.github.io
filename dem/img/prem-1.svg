@@ -1,0 +1,21 @@
+<svg width="115.000000" height="115.000000" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip52_10">
+			<rect id="construction-machine-crane-svgrepo-com 1" width="115.000000" height="115.000000" transform="translate(-0.500000 0.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="construction-machine-crane-svgrepo-com 1" width="115.000000" height="115.000000" transform="translate(-0.500000 0.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip52_10)">
+		<path id="Vector" d="M21.06 104.21C15.31 104.21 10.28 99.54 10.28 93.43C10.28 87.68 14.95 82.65 21.06 82.65L92.93 82.65C98.68 82.65 103.71 87.32 103.71 93.43C103.71 99.54 99.04 104.21 92.93 104.21L21.06 104.21Z" stroke="#0D68E0" stroke-opacity="1.000000" stroke-width="4.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M64.18 32.34L64.18 57.5L35.43 57.5C27.53 57.5 21.06 63.96 21.06 71.87L64.18 71.87L92.93 71.87L92.93 57.5L92.93 50.31L78.56 32.34L64.18 32.34Z" stroke="#0D68E0" stroke-opacity="1.000000" stroke-width="4.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M64.18 57.5L13.87 10.78L28.96 38.45L39.03 57.5L42.62 39.53" stroke="#0D68E0" stroke-opacity="1.000000" stroke-width="4.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M13.87 46.71L13.87 10.78" stroke="#0D68E0" stroke-opacity="1.000000" stroke-width="4.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<circle id="Ellipse" cx="24.656250" cy="93.437500" r="3.593750" fill="#0D68E0" fill-opacity="1.000000"/>
+		<circle id="Ellipse" cx="89.343750" cy="93.437500" r="3.593750" fill="#0D68E0" fill-opacity="1.000000"/>
+		<circle id="Ellipse" cx="57.000000" cy="93.437500" r="3.593750" fill="#0D68E0" fill-opacity="1.000000"/>
+		<path id="Vector" d="M64.18 46.71L73.89 46.71C75.68 51.03 80 53.9 84.31 53.9L92.93 53.9" stroke="#0D68E0" stroke-opacity="1.000000" stroke-width="4.000000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>

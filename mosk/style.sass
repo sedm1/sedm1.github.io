@@ -212,6 +212,7 @@ header
         background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 40.534%,rgba(0, 0, 0, 0.9) 92.76%)
         display: flex
         align-items: flex-end
+        cursor: pointer
         img
             position: absolute
             width: 100%
@@ -223,49 +224,7 @@ header
             font-family: 'Circle-Bold'
             font-weight: 700
             font-size: 17px
-.volos
-    .dots
-        margin: 30px 0px
-    &__block
-        margin: 0px -12px
-    &__item
-        margin: 0px 12px
-        &-img
-            height: 279px
-            margin-bottom: 11px
-            img
-                height: 100%
-        &-title
-            font-size: 16px
-            font-weight: 500
-            margin-bottom: 2px
-        &-descript
-            font-size: 16px
-            font-weight: 500
-    .slick-dots
-        position: absolute
-        left: 50%
-        transform: translateX(-50%)
-        display: flex
-        align-items: center
-        bottom: -50px
-        li
-            margin-right: 9px
-            width: 9px
-            height: 9px
-            background: #D9D9D9
-            border-radius: 100%
-            transition: .3s
-            cursor: pointer
-            &:last-child
-                margin-right: 0px
-        button
-            font-size: 0px
-        .slick-active
-            width: 59px
-            height: 3px
-            background: #283F34
-            border-radius: 11px
+
 .prem
     background: #283F34
     padding: 60px 0px
@@ -323,51 +282,48 @@ header
         &-descript
             font-size: 15px
             color: #fff
-.cosm
+.price
+    .container
+        background: #fff
+        border-radius: 12px
+        box-shadow: 0px 4px 9px 0px rgba(173, 173, 173, 0.1),0px 16px 16px 0px rgba(173, 173, 173, 0.09),0px 36px 22px 0px rgba(173, 173, 173, 0.05),0px 65px 26px 0px rgba(173, 173, 173, 0.01),0px 101px 28px 0px rgba(173, 173, 173, 0)
+        padding: 40px
     .dots
         margin: 30px 0px
-    &__block
-        margin: 0px -12px
     &__item
-        margin: 0px 12px
-        &-img
-            height: 279px
-            margin-bottom: 11px
-            img
-                height: 100%
-        &-title
-            font-size: 16px
+        &-header 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 25px
+        &-title 
+            font-size: 17px
             font-weight: 500
-            margin-bottom: 2px
-        &-descript
-            font-size: 16px
+            color: rgb(100, 100, 100)
+        &-count
+            color: rgb(100, 100, 100)
+            font-size: 17px
             font-weight: 500
-    .slick-dots
-        position: absolute
-        left: 50%
-        transform: translateX(-50%)
-        display: flex
-        align-items: center
-        bottom: -50px
-        li
-            margin-right: 9px
-            width: 9px
-            height: 9px
-            background: #D9D9D9
-            border-radius: 100%
+        &-button 
+            background: none
+            width: 5px
             transition: .3s
-            cursor: pointer
-            &:last-child
-                margin-right: 0px
-        button
-            font-size: 0px
-        .slick-active
-            width: 59px
-            height: 3px
-            background: #283F34
-            border-radius: 11px
+            &-active 
+                transform: rotate(90deg)
+        &-main 
+            max-height: 0px
+            overflow: hidden
+            transition: .3s
+            padding-left: 10px
+            &-active 
+                max-height: 1000px
+    &__main
+        &-item 
+            margin-bottom: 20px
+            display: flex
+            align-items: center
+            justify-content: space-between
 .vid
-    margin-top: 200px
     .section__title
         margin-bottom: 50px
     &__block
@@ -695,6 +651,7 @@ footer
         position: relative
         opacity: 0
         transition: .3s
+        display: none
         video
             width: 100%
         &-close 
@@ -706,6 +663,58 @@ footer
             background: none
         &-active 
             opacity: 1
+    &__price
+        max-width: 1291px
+        width: 100%
+        display: none
+        &-item
+            display: none 
+            padding: 40px
+            box-shadow: 0px 4px 9px 0px rgba(173, 173, 173, 0.1),0px 16px 16px 0px rgba(173, 173, 173, 0.09),0px 36px 22px 0px rgba(173, 173, 173, 0.05),0px 65px 26px 0px rgba(173, 173, 173, 0.01),0px 101px 28px 0px rgba(173, 173, 173, 0)
+            background: rgb(255, 255, 255)
+            border-radius: 12px
+            max-height: 90vh
+            overflow: auto
+        &-active 
+            display: block
+        &-header 
+            display: flex
+            align-items: center
+            justify-content: space-between
+        .dots
+            margin: 30px 0px
+        &-button 
+            width: 20px
+            background: none
+    &__main
+        &-title 
+            font-size: 17px
+            font-weight: 500
+            color: rgb(100, 100, 100)
+        &-item 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 20px
+        &-block 
+            max-height: 0px
+            transition: .3s
+            overflow: hidden
+            padding-left: 30px
+            &-active 
+                max-height: 1000px
+        &-header 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 25px
+        &-button 
+            background: none
+            transition: .3s
+            &-active 
+                transform: rotate(90deg)
+
+            
 @media screen and (max-width: 1296px)
     section
         margin-bottom: 50px

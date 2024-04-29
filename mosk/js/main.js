@@ -1,63 +1,4 @@
-$('.volos__block').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-            breakpoint: 650,
-            settings: {
-              slidesToShow: 2,
-              dots: false
-            }
-          },
-          {
-            breakpoint: 450,
-            settings: {
-              slidesToShow: 1,
-              dots: false,
-              arrows: true
-            }
-          },
-    ]
-})
-$('.cosm__block').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-          breakpoint: 650,
-          settings: {
-            slidesToShow: 2,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 450,
-          settings: {
-            slidesToShow: 1,
-            dots: false,
-            arrows: true
-          }
-        },
-  ]
-})
+
 let width = $(window).width()
 if (width <= 900){
   $('.spec__block').slick({
@@ -85,6 +26,7 @@ $('.vid__block-button').click(() => {
   $('.modal__bg').css({'display': 'flex'})
   setTimeout(() => {
     $('.modal__bg').addClass('modal__bg-active')
+    $('.modal__window').css({'display': 'block'})
     setTimeout(() => {
       $('.modal__window').addClass('modal__window-active')
     }, 200)
@@ -93,6 +35,7 @@ $('.vid__block-button').click(() => {
 $('.modal__window-close').click(() => {
   $('.modal__window').removeClass('modal__window-active')
   setTimeout(() => {
+    $('.modal__window').css({'display': ''})
     $('.modal__bg').removeClass('modal__bg-active')
     setTimeout(() => {
       $('.modal__bg').css({'display': ''})
@@ -104,3 +47,42 @@ if (width <= 800){
     $('.header__menu-block ').removeClass('header__menu-block-active')
   })
 }
+
+
+$('.services__item').click((e) => {
+  let Item = $(e.currentTarget).data('window')
+  console.log(Item)
+  $('.modal__bg').css({'display': 'flex'})
+  setTimeout(() => {
+    $('.modal__bg').addClass('modal__bg-active')
+    $('.modal__price').addClass('modal__price-active')
+    setTimeout(() => {
+      $('#modal__price-'+Item).addClass('modal__price-active')
+    }, 200)
+  }, 100)
+})
+
+
+
+
+$('.modal__main-button').click((e) => {
+  $(e.currentTarget).toggleClass('modal__main-button-active')
+  $(e.currentTarget).parent().siblings('.modal__main-block').toggleClass('modal__main-block-active')
+})
+
+$('.modal__price-button').click(() => {
+  
+  $('.modal__price, .modal__price-item').removeClass('modal__price-active')
+  setTimeout(() => {
+    $('.modal__bg').removeClass('modal__bg-active')
+    setTimeout(() => {
+      $('.modal__bg').css({'display': ''})
+    }, 100)
+  }, 200)
+})
+
+
+$('.price__item-button').click((e) => {
+  $(e.currentTarget).toggleClass('price__item-button-active')
+  $(e.currentTarget).parent('.price__item-header').siblings('.price__item-main').toggleClass('price__item-main-active')
+})
