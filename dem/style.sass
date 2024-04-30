@@ -363,18 +363,16 @@ header
         display: flex
         align-items: center
         gap: 20px
-        justify-content: space-between
+        flex-direction: column
         margin-top: 40px
     &__img
-        max-width: 1140px
         width: 100%
         img
             border-radius: 20px
     &__info
-        max-width: 560px
         width: 100%
         display: flex
-        flex-direction: column
+        justify-content: space-between
         gap: 20px
         &-item 
             padding: 40px
@@ -382,6 +380,7 @@ header
             background: rgb(236, 236, 236)
             min-height: 220px
             cursor: pointer
+            max-width: 33.33%
             &-active 
                 background: $blue
                 .dem__info-title, .dem__info-descript
@@ -568,10 +567,21 @@ footer
     background: $black
     padding: 80px 0px
 .footer
+    &__prava
+        margin-top: 40px
+        font-size: 16px
+        font-weight: 500
+        color: #8A8A8A
+
     &__main
         display: flex
         align-items: flex-start
         justify-content: space-between
+        &-left
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            width: 70%
         &-item 
             margin-bottom: 15px
         &-button 
@@ -682,6 +692,8 @@ footer
                 color: $blue 
                 background: $white
 @media screen and (max-width: 1550px)
+    .container
+        padding: 0px 30px
     .main
         &__item
             height: calc(100dvh - 150px)
@@ -803,6 +815,9 @@ footer
             flex-direction: column
         &__info
             max-width: 100%
+            flex-direction: column
+            &-item 
+                max-width: 100%
     .mus
         &__block
             &-tabs
@@ -839,11 +854,25 @@ footer
             align-items: center
             gap: 20px
             text-align: center
+            &-left
+                width: 90%
             &-contacts
                 display: flex
                 flex-direction: column
                 align-items: center
+                max-width: 500px
+                width: 100%
+            &-info
+                text-align: left
+                .footer__main-item
+                    &:nth-child(3), &:nth-child(4)
+                        display: none
+                        
+        &__menu
+            display: none
 @media screen and (max-width: 600px)
+    .container
+        padding: 0px 10px
     .main
         &__item
             &-filter
@@ -971,6 +1000,8 @@ footer
                 font-size: 14px
                 max-width: 140px
     .primer
+        &__title
+            font-size: 20px
         .slick-prev, .slick-next
             display: none !important
         &__item.slick-center 
@@ -984,3 +1015,51 @@ footer
             margin: 0px 4px
     .header__button
         display: none
+    footer
+        padding: 40px 0px
+    .footer
+        &__prava
+            font-size: 14px
+            text-align: center
+            margin-top: 10px
+        &__logo
+            max-width: 90px
+        &__item
+            &-title 
+                font-size: 10px
+            &-descript
+                font-size: 12px
+        &__main
+            &-left 
+                width: 100%
+            &-contacts 
+                max-width: 100%
+                flex-direction: row
+                flex-wrap: wrap
+                align-items: center
+                justify-content: center
+                gap: 20px
+                .footer__main-item
+                    &:nth-child(1)
+                        order: 2  
+                        .footer__item-title
+                            display: none
+                    &:nth-child(2)
+                        order: 0
+                        text-align: left
+                        .footer__item-title
+                            font-size: 12px
+                        .footer__item-descript
+                            font-size: 14px
+                .footer__main-button
+                    order: 1
+                    max-width: 100%
+                    width: 100%
+                    
+                .footer__main-soz
+                    order: 0
+                    margin-top: 0px
+        &__soz
+            &-item 
+                width: 24px
+                                    
