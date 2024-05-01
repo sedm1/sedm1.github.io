@@ -374,6 +374,18 @@ header
         display: flex
         justify-content: space-between
         gap: 20px
+        
+        &-count 
+            color: transparent
+            text-stroke: 1px rgba(219, 219, 219, 0.6)
+            -webkit-text-stroke: 1px rgba(219, 219, 219, 0.6)
+            -webkit-background-clip: text
+            background-clip: text
+            z-index: -1
+            font-size: 220px
+            position: absolute
+            bottom: -50px
+            right: -10px
         &-item 
             padding: 40px
             border-radius: 20px
@@ -381,10 +393,16 @@ header
             min-height: 220px
             cursor: pointer
             max-width: 33.33%
+            position: relative
+            z-index: 1
+            overflow: hidden
             &-active 
                 background: $blue
                 .dem__info-title, .dem__info-descript
                     color: $white
+                .dem__info-count
+                    text-stroke: 1px #005EDA
+                    -webkit-text-stroke: 1px #005EDA
         &-title 
             font-size: 36px
             font-weight: 700
@@ -420,6 +438,20 @@ header
         padding: 40px
         border-radius: 20px
         background: #ECECEC
+        position: relative
+        z-index: 1
+        overflow: hidden
+        &-count 
+            color: transparent
+            text-stroke: 1px rgba(219, 219, 219, 0.6)
+            -webkit-text-stroke: 1px rgba(219, 219, 219, 0.6)
+            -webkit-background-clip: text
+            background-clip: text
+            z-index: -1
+            font-size: 220px
+            position: absolute
+            bottom: -50px
+            right: -10px
         &-title 
             font-size: 36px
             font-weight: 700
@@ -435,6 +467,10 @@ header
                     color: $white
                 &-descript
                     color: $white
+                &-count 
+                    text-stroke: 1px #005EDA
+                    -webkit-text-stroke: 1px #005EDA
+                    
 .dopser
     &__title
         margin-bottom: 40px
@@ -956,6 +992,8 @@ footer
                 margin-bottom: 10px
             &-descript
                 font-size: 14px
+            &-count 
+                display: none
     .mus
         &__title
             font-size: 20px
@@ -969,6 +1007,8 @@ footer
         &__item
             min-height: auto
             padding: 20px
+            &-count 
+                display: none
             &-title
                 font-size: 20px
                 margin-bottom: 10px
