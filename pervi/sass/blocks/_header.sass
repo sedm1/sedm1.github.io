@@ -1,0 +1,80 @@
+.header
+    &__top
+        padding: 11px 0px
+        border-bottom: 1px solid #F5F5F5
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        width: 141px
+    &__item
+        display: flex
+        flex-direction: column
+        &-title 
+            font-size: 16px
+            font-family: "VelaSans-Bold"
+        &-descript
+            font-size: 14px
+            color: #9E9E9E
+    &__soz
+        display: flex
+        align-items: center
+        gap: 10px
+    &__recall
+        padding: 10px 32px
+        font-size: 16px
+        font-weight: 500
+        font-family: "VelaSans-Medium"
+        border-radius: 40px
+        background: $blue
+        transition: .3s
+        color: $white
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-block 
+            padding: 6px 0px
+        &-item 
+            font-size: 16px
+            color: #9E9E9E
+            position: relative
+            &:hover 
+                > .header__bottom-submenu
+                    opacity: 1
+                .ic__arrow-menu
+                    transform: rotate(180deg)
+                    background: $black
+            a
+                padding: 10px
+                display: flex
+                align-items: center
+                gap: 8px
+                transition: .3s
+                font-family: "VelaSans-Medium"
+                &:hover 
+                    border-radius: 10px
+                    background: rgba(231, 231, 231, 0.4)
+                    color: $black
+            &-active 
+                color: $black
+                border-radius: 10px
+                background: rgba(231, 231, 231, 0.4)
+        &-submenu
+            border-radius: 10px
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4)
+            background: $white
+            padding: 20px
+            position: absolute
+            top: 50px
+            left: 0px
+            z-index: 2
+            width: max-content
+            transition: .3s
+            opacity: 0
+            li
+                font-size: 16px
+                font-weight: 700
+                font-family: "VelaSans-Bold"
+                    
+                    
