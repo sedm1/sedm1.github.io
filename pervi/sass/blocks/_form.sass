@@ -1,0 +1,63 @@
+.form
+    .container
+        border-radius: 20px
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        overflow: hidden
+    &__info
+        padding: 30px 40px
+        max-width: 640px
+    &__title 
+        margin-bottom: 30px
+        color: $blue
+        font-size: 35px
+        font-weight: 700
+        font-family: "VelaSans-Bold"
+    &__descript
+        font-size: 26px
+    form
+        display: flex
+        flex-direction: column
+        margin-top: 40px
+    &__input
+        width: 100%
+        margin-bottom: 20px
+        padding: 15px 20px
+        border-radius: 40px
+        background: #F5F5F5
+        font-size: 16px
+        font-weight: 500
+        font-family: "VelaSans-Medium"
+        &::placeholder
+            color: #9E9E9E
+    &__img
+        max-width: 361px
+        position: relative
+        z-index: 1
+        img
+            margin-bottom: -10px
+        &::before
+            content: ""
+            position: absolute
+            width: 666px
+            height: 666px
+            border-radius: 100%
+            z-index: -1
+            background: $blue
+            top: -82px
+            right: -179px
+    &__button
+        padding: 16px 0px
+        width: 100%
+        border-radius: 40px
+        background: $blue
+        color: $white
+        font-size: 16px
+        font-weight: 500
+        font-family: "VelaSans-Medium"
+        cursor: pointer
+        transition: .3s
+        &:hover 
+            box-shadow: 0px 0px 8.4px 0px rgb(36, 99, 202)

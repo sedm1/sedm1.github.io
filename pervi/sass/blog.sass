@@ -1,0 +1,79 @@
+@import 'style'
+@import 'blocks/header'
+.blog
+    margin-top: 30px
+    &__title
+        text-align: center
+        font-size: 70px
+        font-weight: 700
+        font-family: "VelaSans-Bold"
+        color: $blue
+    &__search
+        width: 100%
+        position: relative
+        &-input 
+            width: 100%
+            border-radius: 40px
+            background: #F5F5F5
+            padding: 15px 20px
+            font-size: 16px
+            font-weight: 500
+            font-family: "VelaSans-Medium"
+            &::placeholder
+                color: #9E9E9E
+        &-button 
+            position: absolute
+            width: 30px
+            right: 42px
+            top: 50%
+            transform: translateY(-50%)
+    &__block
+        display: grid 
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 20px
+        margin-top: 40px
+    &__item
+        border-radius: 20px
+        padding: 12px 20px
+        background: #F5F5F5
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &:hover
+            .blog__item-link 
+                span
+                    background: $blue
+                    color: $white
+        &-title 
+            font-size: 20px
+            font-weight: 700
+            font-family: "VelaSans-Bold"
+            margin-bottom: 8px
+        &-descript
+            font-size: 16px
+        &-link
+            margin-top: 14px
+            display: flex
+            align-items: center
+            gap: 10px
+            font-size: 16px
+            font-family: "VelaSans-Medium"
+            font-weight: 500
+            color: $blue
+            span
+                width: 30px
+                height: 30px
+                border-radius: 100%
+                border: 1px solid $blue
+                display: flex
+                align-items: center
+                justify-content: center
+                font-size: 28px
+                font-family: "VelaSans-Medium"
+                font-weight: 500
+                color: $blue
+                transition: .3s
+                padding-left: 1px
+                padding-bottom: 2px
+                border: 1px solid $blue 
+@import 'blocks/footer'

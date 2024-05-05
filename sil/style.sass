@@ -1,0 +1,846 @@
+$red: #F08B71
+$black: #414141
+$white: #FEFEFE
+$gray: #E6E6E6
+@import 'fonts'
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    color: $black
+    font-family: 'Gilroy-Medium'
+    font-weight: 500
+    scroll-margin: 150px
+html
+    scroll-behavior: smooth
+body 
+    position: relative
+    background: $white
+img
+    width: 100%
+    height: auto
+a
+    text-decoration: none
+    color: inherit
+    font-family: inherit
+    display: block
+    cursor: pointer
+button 
+    border: 0 none
+    outline: 0 none
+    font-family: inherit 
+    cursor: pointer
+    background: 0 none
+    font-family: 'Gilroy-Bold'
+input
+    border: 0 none
+    outline: 0 none
+    cursor: text
+li
+    list-style: none
+.container
+    max-width: 1336px
+    padding: 0px 20px
+    width: 100%
+    margin: 0 auto
+.section__title
+    font-size: 30px
+    font-family: "Jost", sans-serif
+    font-weight: 700
+    color: $black
+    text-transform: uppercase
+    line-height: 36px
+section
+    margin-bottom: 150px
+header
+    position: sticky
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 3
+    padding: 10px 0px
+    background: $white
+    box-shadow: 0px 3px 7px 0px rgba(209, 209, 209, 0.1),0px 12px 12px 0px rgba(209, 209, 209, 0.09),0px 27px 16px 0px rgba(209, 209, 209, 0.05),0px 48px 19px 0px rgba(209, 209, 209, 0.01),0px 75px 21px 0px rgba(209, 209, 209, 0)
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__logo
+        width: 232px
+    &__menu
+        display: flex
+        align-items: center
+        gap: 60px
+        &-item 
+            font-size: 15px
+            position: relative
+            &::before
+                content: ""
+                width: 0px
+                height: 2px
+                background: $red
+                position: absolute
+                bottom: -4px
+                left: 50%
+                transform: translateX(-50%)
+                transition: .3s
+            &:hover
+                &::before
+                    width: 80%
+    &__info
+        display: flex
+        align-items: center
+        &-loc 
+            display: flex
+            align-items: center
+            gap: 30px
+        &-button 
+            margin-left: 30px
+            padding: 14px 42px
+            background: $red
+            color: $white
+            border-radius: 5px
+            border: 1px solid $red
+            transition: .3s
+            &:hover 
+                color: $red
+                background: $white
+
+    &__loc
+        &-item 
+            display: flex
+            align-items: center
+            gap: 15px
+        &-icon 
+            width: 18px
+        &-text
+            font-size: 15px
+            font-family: 'Mont-Bold'
+            font-weight: 800
+.main
+    height: calc(100dvh - 109px)
+    width: 100%
+    .slick-dots
+        position: absolute
+        bottom: 29px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        align-items: center
+        gap: 14px
+        button
+            font-size: 0px
+        li
+            width: 94px
+            height: 3px
+            border-radius: 5px
+            background: $gray
+            cursor: pointer
+        .slick-active 
+            background: $red
+
+    &__item, &__slider
+        height: 100% 
+    &__item 
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        &-filter
+            width: 100%
+            height: 100%
+            background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 22.786%,rgba(0, 0, 0, 0.6) 72.72%)
+        .container
+            display: flex
+            padding: 98px 70px
+            justify-content: flex-end
+            flex-direction: column
+            height: 100%
+        &-title 
+            color: $white
+            max-width: 666px
+            font-size: 35px
+            font-weight: 700
+            font-family: 'Mont-Bold'
+            margin-bottom: 13px
+            text-transform: uppercase
+        &-descript
+            max-width: 500px
+            font-size: 16px
+            font-family: 'Gilroy-SemiBold'
+            font-weight: 600
+            color: $white
+            line-height: 24px
+        &-button
+            margin-top: 40px
+            padding: 25px 57px
+            background: $red
+            color: $white
+            border-radius: 5px
+            border: 1px solid $red
+            transition: .3s
+            width: fit-content
+            &:hover 
+                color: $red
+                background: transparent
+
+    .slick-list, .slick-track
+        height: 100%
+.services
+    &__block
+        margin-top: 40px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 30px 24px
+    &__item
+        border-radius: 10px
+        box-shadow: 0px 3px 7px 0px rgba(209, 209, 209, 0.1),0px 12px 12px 0px rgba(209, 209, 209, 0.09),0px 27px 16px 0px rgba(209, 209, 209, 0.05),0px 48px 19px 0px rgba(209, 209, 209, 0.01),0px 75px 21px 0px rgba(209, 209, 209, 0)
+        &-info
+            background: $white 
+            padding-top: 18px
+            padding-bottom: 28px
+            text-align: center
+            border-radius: 10px
+        &-title 
+            text-align: center
+            font-size: 20px
+            font-weight: 700
+            font-family: "Jost", sans-serif
+            text-transform: uppercase
+            margin-bottom: 18px
+        &-button
+            padding: 18px 57px
+            background: $red
+            color: $white
+            border-radius: 5px
+            border: 1px solid $red
+            transition: .3s
+            width: fit-content
+            font-size: 13px
+            font-family: 'Gilroy-SemiBold'
+            font-weight: 600
+            &:hover 
+                color: $red
+                background: transparent
+        &-last 
+            display: flex
+            justify-content: center
+            align-items: center
+            background-size: 260px 274px
+            background-position: right top
+            background-repeat: no-repeat
+            .services__item-info
+                max-width: 279px
+                display: flex
+                flex-direction: column
+                gap: 76px
+                padding: 0px
+            .services__item-title
+                margin-bottom: 0px
+            .services__item-button
+                padding: 18px 42px
+                margin: 0 auto
+.about
+    margin-bottom: 200px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 20px
+        background-position: 60% 120%
+        background-size: 328px 328px
+        background-repeat: no-repeat
+    &__info
+        max-width: 619px
+        .section__title
+            margin-bottom: 30px
+        &-descript
+            margin-bottom: 10px
+            font-size: 16px
+            color: #8C8C8C
+            line-height: 24px
+        &-button 
+            padding: 25px 32px
+            background: $red
+            color: $white
+            border-radius: 5px
+            border: 1px solid $red
+            transition: .3s
+            width: fit-content
+            font-size: 14px
+            font-family: 'Gilroy-Bold'
+            font-weight: 700
+            margin-top: 40px
+            &:hover 
+                color: $red
+                background: transparent
+    &__img
+        max-width: 437px
+        width: 100%
+        position: relative
+        z-index: 1
+        &::before
+            content: ""
+            z-index: -1
+            position: absolute
+            right: 0px
+            top: -34px
+            width: 196px
+            height: 570px
+            border-radius: 20px
+            background: $red
+        img
+            border-radius: 10px
+.form
+ 
+    &__block
+        position: relative
+        border-radius: 10px
+        box-shadow: 0px 3px 7px 0px rgba(209, 209, 209, 0.1),0px 12px 12px 0px rgba(209, 209, 209, 0.09),0px 27px 16px 0px rgba(209, 209, 209, 0.05),0px 48px 19px 0px rgba(209, 209, 209, 0.01),0px 75px 21px 0px rgba(209, 209, 209, 0)
+        background: rgb(255, 255, 255)
+        display: flex
+        justify-content: space-between
+        max-height: 368px
+        padding-right: 42px
+        &::before
+            content: ""
+            position: absolute
+            left: 11px
+            bottom: 9px
+            width: 161px
+            height: 93px
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+        &::after
+            content: ""
+            position: absolute
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            width: 140px
+            height: 119px
+            top: -19px
+            left: 50%
+
+    &__info
+        max-width: 883px
+        padding: 44px 50px
+        width: 100%
+        &-title 
+            max-width: 477px
+            font-size: 32px
+            font-weight: 700
+            font-family: "Jost", sans-serif
+            line-height: 34px
+        form
+            display: flex
+            align-items: center
+            gap: 15px
+            margin-top: 27px
+        &-item 
+            position: relative
+            max-width: 251px
+            width: 100%
+            img
+                width: 16px
+                position: absolute
+                left: 18px
+                top: 50%
+                transform: translateY(-50%)
+            input 
+                padding: 27px 0px
+                padding-left: 51px
+                font-size: 12px
+                border-radius: 5px
+                background: #FCFCFC
+                width: 100%
+                &::placeholder
+                    color: #8C8C8C
+        &-button 
+            padding: 22px 0px
+            max-width: 251px
+            width: 100%
+            background: $red
+            color: $white
+            border-radius: 5px
+            border: 1px solid $red
+            transition: .3s
+            font-size: 14px
+            font-family: 'Gilroy-Bold'
+            font-weight: 700
+            cursor: pointer
+            &:hover 
+                color: $red
+                background: transparent
+        &-descript
+            margin-top: 14px
+            color: #9B9B9B
+            font-size: 13px
+            display: flex
+            align-items: center
+            gap: 3px
+            a
+                color: $red
+                text-decoration: underline
+    &__img
+        max-width: 324px
+        width: 100%
+        align-self: flex-end
+.rem
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__info
+        max-width: 702px
+        .section__title
+            margin-bottom: 30px
+        &-descript
+            margin-bottom: 10px
+            font-size: 16px
+            color: #8C8C8C
+            line-height: 24px
+        &-button 
+            padding: 25px 70px
+            background: $red
+            color: $white
+            border-radius: 5px
+            border: 1px solid $red
+            transition: .3s
+            width: fit-content
+            font-size: 14px
+            font-family: 'Gilroy-Bold'
+            font-weight: 700
+            margin-top: 40px
+            &:hover 
+                color: $red
+                background: transparent
+    &__img
+        max-width: 437px
+        width: 100%
+        position: relative
+        z-index: 1
+        &::before
+            content: ""
+            z-index: -1
+            position: absolute
+            right: 0px
+            top: -34px
+            width: 196px
+            height: 570px
+            border-radius: 20px
+            background: $red
+        img
+            border-radius: 10px
+.why
+    &__block
+        margin-top: 40px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 24px   
+    &__item
+        padding: 28px
+        border-radius: 10px
+        box-shadow: 0px 3px 7px 0px rgba(209, 209, 209, 0.1),0px 12px 12px 0px rgba(209, 209, 209, 0.09),0px 27px 16px 0px rgba(209, 209, 209, 0.05),0px 48px 19px 0px rgba(209, 209, 209, 0.01),0px 75px 21px 0px rgba(209, 209, 209, 0)
+        background: rgb(255, 255, 255)
+        &-icon 
+            width: 71px
+            margin-bottom: 13px
+        &-title 
+            font-size: 20px
+            font-family: 'Gilroy-Black'
+            font-weight: 900
+            margin-bottom: 10px
+        &-descript
+            font-size: 15px
+            color: #8C8C8C
+            line-height: 24px   
+.price
+    &__block
+        border-radius: 15px
+        box-shadow: 0px 3px 7px 0px rgba(209, 209, 209, 0.1),0px 12px 12px 0px rgba(209, 209, 209, 0.09),0px 27px 16px 0px rgba(209, 209, 209, 0.05),0px 48px 19px 0px rgba(209, 209, 209, 0.01),0px 75px 21px 0px rgba(209, 209, 209, 0)
+        background: rgb(255, 255, 255)
+        padding: 44px 46px
+        margin-top: 40px
+    &__item
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0px
+        &-header 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            cursor: pointer
+        &-title 
+            font-size: 17px
+            font-weight: 600
+            font-family: "Jost", sans-serif
+            text-transform: uppercase
+        &-button 
+            width: 18px
+            transition: .3s
+            transform: rotate(180deg)
+        &-active 
+            .price__item-button
+                transform: rotate(0deg)
+            .price__item-main
+                visibility: visible
+                height: auto
+                overflow: none
+                opacity: 1
+                margin-top: 22px
+        &-list 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 17px
+            &:last-child
+                margin-bottom: 0px
+        &-main
+            margin-top: 0px
+            padding-left: 18px
+            height: 0
+            overflow:hidden
+            opacity: 0
+            transition: all 0.3s linear
+            overflow: hidden
+            visibility: hidden
+        &-subtitle 
+            color: #8C8C8C
+            font-size: 16px
+            font-weight: 500
+        &-cost 
+            color: #8C8C8C
+            font-size: 17px
+            font-weight: 600
+            font-family: 'Gilroy-SemiBold'
+.works
+    &__block
+        margin-top: 40px
+    &__item
+        margin: 0px 12px
+    .slick-dots
+        position: absolute
+        bottom: -45px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        align-items: center
+        gap: 14px
+        button
+            font-size: 0px
+        li
+            width: 94px
+            height: 3px
+            border-radius: 5px
+            background: $gray
+            cursor: pointer
+        .slick-active 
+            background: $red
+    .slick-prev, .slick-next
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        font-size: 0px
+        width: 9px
+        height: 18px
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 1
+    .slick-prev
+        left: -27px
+    .slick-next
+        right: -27px
+        transform: rotate(180deg)
+.video
+    &__block
+        margin-top: 40px
+    &__item
+        margin: 0px 12px
+    .slick-dots
+        position: absolute
+        bottom: -45px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        align-items: center
+        gap: 14px
+        button
+            font-size: 0px
+        li
+            width: 94px
+            height: 3px
+            border-radius: 5px
+            background: $gray
+            cursor: pointer
+        .slick-active 
+            background: $red
+    .slick-prev, .slick-next
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        font-size: 0px
+        width: 9px
+        height: 18px
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 1
+    .slick-prev
+        left: -27px
+    .slick-next
+        right: -27px
+        transform: rotate(180deg)
+.under
+    .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__info
+        max-width: 469px
+        width: 100%
+        &-descript
+            color: #8C8C8C
+            font-size: 16px
+            font-weight: 500
+            margin-bottom: 7px
+        &-last 
+            margin-top: 17px
+                
+        &-link 
+            margin-top: 12px
+            font-size: 21px
+            font-weight: 800
+            font-family: 'Mont-Bold'
+        &-soz
+            display: flex
+            gap: 13px
+            margin-top: 12px
+        &-nail 
+            width: 127px
+            margin-top: 39px
+            margin-left: -60px
+    &__soz
+        &-item 
+            width: 27px
+            border-radius: 4px
+    .section__title
+        margin-bottom: 10px
+    &__form
+        padding: 47px 59px
+        border-radius: 15px
+        box-shadow: 0px 3px 7px 0px rgba(209, 209, 209, 0.1),0px 12px 12px 0px rgba(209, 209, 209, 0.09),0px 27px 16px 0px rgba(209, 209, 209, 0.05),0px 48px 19px 0px rgba(209, 209, 209, 0.01),0px 75px 21px 0px rgba(209, 209, 209, 0)
+        background: rgb(255, 255, 255)
+        max-width: 635px
+        width: 100%
+        &-title 
+            font-size: 32px
+            font-weight: 700
+            font-family: "Jost", sans-serif
+        form
+            margin-top: 25px
+        &-block 
+            display: flex
+            align-items: center
+            gap: 15px
+            input
+                padding: 26px 0px
+                padding-left: 51px
+                border-radius: 5px
+                background: rgb(252, 252, 252)
+                font-size: 12px
+                font-weight: 500
+                width: 100%
+                &::placeholder
+                   color: #8C8C8C 
+        &-item 
+            position: relative
+            width: 100%
+            img
+                position: absolute
+                width: 16px
+                left: 18px
+                top: 50%
+                transform: translateY(-50%)
+        textarea
+            border-radius: 5px
+            background: rgb(252, 252, 252)
+            padding: 26px 22px
+            resize: vertical
+            height: 133px
+            width: 100%
+            border: 0 none
+            outline: 0 none
+            font-size: 12px
+            font-weight: 500
+            &::placeholder
+                   color: #8C8C8C 
+        &-button 
+            cursor: pointer
+            padding: 27px 0px
+            width: 100%
+            background: $red
+            color: $white
+            border-radius: 5px
+            border: 1px solid $red
+            transition: .3s
+            font-size: 14px
+            font-family: 'Gilroy-Bold'
+            font-weight: 700
+            margin-top: 15px
+            &:hover 
+                color: $red
+                background: transparent
+        &-descript
+            margin-top: 24px
+            display: flex
+            align-items: center
+            gap: 3px
+            font-size: 13px
+            font-weight: 500
+            color: #9B9B9B
+            a
+                color: $red
+                text-decoration: underline
+
+.map
+    iframe
+        border-radius: 15px
+footer
+    background: #F9F9F9
+    padding-top: 30px
+    padding-bottom: 21px
+    .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        gap: 10%
+.footer
+    &__logo
+        max-width: 232px
+        width: 100%
+    &__menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        padding-top: 17px
+        &-item 
+            font-size: 16px
+            font-weight: 500
+            position: relative
+            &::before
+                content: ""
+                width: 0px
+                height: 2px
+                background: $red
+                position: absolute
+                bottom: -4px
+                left: 50%
+                transform: translateX(-50%)
+                transition: .3s
+            &:hover
+                &::before
+                    width: 80%
+    &__copy
+        font-size: 13px
+        font-weight: 400
+        color: #504F4F
+        font-family: "Jost", sans-serif
+        text-align: center
+        margin-top: 30px
+.modal
+    &__bg
+        position: fixed
+        z-index: 4
+        top: 0
+        left: 0
+        width: 100%
+        height: 100dvh
+        background: rgba(0, 0, 0, 0.4)
+        justify-content: center
+        align-items: center
+        opacity: 0
+        display: none
+        transition: .3s
+        &-active 
+            opacity: 1
+    &__window
+        max-width: 1092px
+        width: 100%
+        border-radius: 20px
+        background: rgb(255, 255, 255)
+        padding: 34px 0px
+        padding-bottom: 8px
+        position: relative
+        align-items: center
+        justify-content: space-between
+        gap: 20px
+        padding-right: 51px
+        opacity: 0
+        display: none
+        transition: .3s
+        &-active 
+            opacity: 1
+        &-close 
+            width: 23px
+            position: absolute
+            top: 33px
+            right: 40px
+        &-img 
+            max-width: 496px
+            width: 100%
+        &-info 
+            max-width: 514px
+            width: 100%
+        &-item 
+            margin-bottom: 15px
+            width: 100%
+            position: relative
+            img
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                width: 16px
+                left: 18px
+            input
+                border-radius: 5px
+                background: rgb(252, 252, 252)
+                padding: 23px 51px
+                padding-right: 0px
+                width: 100%
+                font-size: 12px
+                font-weight: 500
+                &::placeholder
+                    color: #8C8C8C
+        &-button
+            cursor: pointer
+            padding: 27px 0px
+            width: 100%
+            background: $red
+            color: $white
+            border-radius: 5px
+            border: 1px solid $red
+            transition: .3s
+            font-size: 14px
+            font-family: 'Gilroy-Bold'
+            font-weight: 700
+            margin-top: 15px
+            &:hover 
+                color: $red
+                background: transparent
+        &-descript
+            font-size: 13px
+            font-weight: 500
+            margin-top: 22px
+            color: #9B9B9B
+            display: flex
+            align-items: center
+            gap: 3px
+            a
+                color: $red
+                text-decoration: underline
+        form
+            margin-top: 22px

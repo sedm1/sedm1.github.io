@@ -1,0 +1,49 @@
+.otz
+    .slick-track
+        display: flex !important
+        gap: 20px
+    .slick-dots
+        position: absolute
+        bottom: -40px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        align-items: center
+        button
+            font-size: 0px
+            width: 40px
+            background: #9E9E9E
+            height: 1px
+        .slick-active
+            button
+                height: 2px
+                background: $white
+    .section__title
+        text-align: center
+    &__block
+        margin-top: 30px
+        padding: 40px
+        padding-bottom: 80px
+        border-radius: 20px
+        background: linear-gradient(225.00deg, rgb(18, 49, 100) 0%,rgb(36, 99, 202) 100%)
+    &__item
+        background: $white
+        border-radius: 20px
+        padding: 20px
+        padding-bottom: 14px
+        height: inherit !important
+        &-header 
+            display: flex
+            align-items: center
+            gap: 10px
+        &-icon 
+            min-width: 60px
+            width: 60px
+            border-radius: 10px
+            background: rgb(245, 245, 245)
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 13px 0px
+            img
+                width: 30px

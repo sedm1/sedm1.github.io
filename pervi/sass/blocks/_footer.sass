@@ -1,0 +1,67 @@
+footer
+    padding-top: 40px
+    padding-bottom: 10px
+    border-top: 1px solid rgb(245, 245, 245)
+    .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        gap: 90px
+.footer
+    &__logo
+        width: 206px
+    &__info
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        width: 100%
+        &-soz 
+            display: flex
+            align-items: center
+            gap: 10px
+            margin-top: 10px
+            justify-content: flex-end
+        &-title 
+            font-size: 16px
+            font-weight: 700
+            font-family: "VelaSans-Bold"
+        &-list 
+            margin: 20px 0px
+            display: flex
+            flex-direction: column
+            gap: 15px
+            li
+                font-size: 16px
+                transition: .3s
+                &:hover 
+                    color: $blue
+        &-contacts 
+            text-align: right
+    &__contacts
+        &-title 
+            font-size: 16px
+            font-weight: 700
+            font-family: "VelaSans-Bold"
+            margin-top: 10px
+            &:first-child
+                margin-top: 0px
+        &-descript
+            font-size: 14px
+            color: #9E9E9E
+    &__soz
+        &-item 
+            width: 28px
+            .ic
+                background: $black
+                &:hover
+                    background: $blue
+    &__main
+        &-text 
+            margin-top: 50px
+        &-descript
+            color: #9E9E9E
+            font-size: 14px
+            margin-bottom: 10px
+            width: 212px
+            &:last-child
+                margin-bottom: 0px

@@ -1,3 +1,10 @@
+header
+    position: sticky
+    top: 0
+    left: 0
+    z-index: 3
+    width: 100%
+    background: $white
 .header
     &__top
         padding: 11px 0px
@@ -39,7 +46,9 @@
             font-size: 16px
             color: #9E9E9E
             position: relative
+            overflow: hidden
             &:hover 
+                overflow: visible
                 > .header__bottom-submenu
                     opacity: 1
                 .ic__arrow-menu
@@ -66,7 +75,7 @@
             background: $white
             padding: 20px
             position: absolute
-            top: 50px
+            top: 40px
             left: 0px
             z-index: 2
             width: max-content

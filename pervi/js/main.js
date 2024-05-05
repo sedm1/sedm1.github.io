@@ -5,3 +5,10 @@ $('.products__tabs-item').click((e) => {
     $('.products__main').removeClass('products__main-active')
     $('#products__main-'+CurrentItem).addClass('products__main-active')
 })
+$('.otz__block-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false
+})
