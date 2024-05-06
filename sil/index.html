@@ -39,22 +39,34 @@
                 <ul class="header__menu">
                     <li class="header__menu-item"><a href="#about">О компании</a></li>
                     <li class="header__menu-item"><a href="#ser">Услуги</a></li>
-                    <li class="header__menu-item"><a href="#meh">Мех</a></li>
+                    <li class="header__menu-item"><a href="#works">Наши работы</a></li>
                     <li class="header__menu-item"><a href="#contact">Контакты</a></li>
                 </ul>
+                <div class="header__menu-mobile">
+                    <a href="tel: +7(968) 750-44-45" class="header__mobile-phone">+7(968) 750-44-45</a>
+                    <h3 class="header__mobile-subtitle">Мы в соц. сетях</h3>
+                    <div class="header__mobile-soz">
+                        <a class="header__mobile-sozItem" href="#" rel="nofollow"><img src="img/vk.png" alt="Vk"></a>
+                        <a class="header__mobile-sozItem" href="#" rel="nofollow"><img src="img/tg.png" alt="Vk"></a>
+                    </div>
+                </div>
             </nav>
             <div class="header__info">
                 <div class="header__info-loc">
                     <div class="header__loc-item">
                         <div class="header__loc-icon"><img src="img/header__loc.svg" alt="HeaderLocIcon"></div>
-                        <div class="header__loc-text">Москва</div>
+                        <div class="header__loc-text">СПБ</div>
                     </div>
                     <div class="header__loc-item">
                         <div class="header__loc-icon"><img src="img/header__phone.svg" alt="HeaderLocIcon"></div>
-                        <div class="header__loc-text">+7(999) 999-99-99</div>
+                        <div class="header__loc-text">+7(968) 750-44-45</div>
                     </div>
                 </div>
-                <button class="header__info-button">Перезвоните мне</button>
+                <div class="header__buttons">
+                    <button class="header__info-button">Перезвоните мне</button>
+                    <button class="header__burger"><img src="img/burger.svg" alt="HeaderBurger"></button>
+                </div>
+                
             </div>
         </div>
     </header>
@@ -172,7 +184,7 @@
                 </div>
             </div>
         </section>
-        <section class="rem" id="meh">
+        <section class="rem">
             <div class="container">
                 <div class="rem__info">
                     <h2 class="section__title">ремонт шуб!</h2>
@@ -217,7 +229,7 @@
                     <div class="why__item">
                         <div class="why__item-icon"><img src="img/why-6.svg" alt="WhyIcon"></div>
                         <h3 class="why__item-title">Скидки</h3>
-                        <p class="why__item-descript">до 25% на первый заказ, от 10% до 25% на второй и последующий</p>
+                        <p class="why__item-descript">До 25% на первый заказ, от 10% до 25% на второй и последующий</p>
                     </div>
                 </div>
             </div>
@@ -228,7 +240,7 @@
                 <div class="price__block">
                     <div class="price__item price__item-active">
                         <div class="price__item-header">
-                            <h3 class="price__item-title">Замена молнии (без стоимости молнии)</h3>
+                            <h3 class="price__item-title">Замена молнии (без молнии)</h3>
                             <button class="price__item-button"><img src="img/arrow__top.svg" alt="ArrowTop"></button>
                         </div>
                         <div class="price__item-main">
@@ -369,7 +381,7 @@
                 </div>
             </div>
         </section>
-        <section class="works">
+        <section class="works" id='works'>
             <div class="container">
                 <h2 class="section__title">Наши работы</h2>
                 <div class="works__block">
@@ -401,9 +413,9 @@
                     <div class="under__info-block">
                         <h2 class="section__title">Качество не выходит из моды</h2>
                         <p class="under__info-descript">Вдохни в старую вещь новую жизнь!</p>
-                        <a href="tel: +79999999999" class="under__info-link">+7(999) 999-99-99</a>
+                        <a href="tel: +7(968) 750-44-45" class="under__info-link">+7(968) 750-44-45</a>
                         <a href="mailto: Pochta@mail.ru" class="under__info-link">Pochta@mail.ru</a>
-                        <p class="under__info-descript under__info-last">г. Москва, Пушкина ул, 2</p>
+                        <p class="under__info-descript under__info-last">Малый Левшинский переулок 3</p>
                         <div class="under__info-soz">
                             <a href="#" class="under__soz-item" rel="nofollow" target="_blank"><img src="img/vk.png" alt="UnderSozIcon"></a>
                             <a href="#" class="under__soz-item" rel="nofollow" target="_blank"><img src="img/tg.png" alt="UnderSozIcon"></a>
@@ -424,7 +436,11 @@
                                 <input type="text" placeholder="Введите ваш номер телефона">
                             </div>
                         </div>
-                        <textarea placeholder="Задайте ваш вопрос"></textarea>
+                        <div class="under__form-textarea">
+                            <img src="img/mes.svg" alt="MesIcon">
+                            <textarea placeholder="Задайте ваш вопрос"></textarea>
+                        </div>
+                        
                         <input type="submit" value="Оставить заявку" class="under__form-button">
                     </form>
                     <div class="under__form-descript">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></div>
@@ -441,10 +457,10 @@
         <div class="container">
             <div class="footer__logo"><img src="img/header__logo.svg" alt="FooterLogo"></div>
             <ul class="footer__menu">
-                <li class="footer__menu-item"><a href="#">О компании</a></li>
-                <li class="footer__menu-item"><a href="#">Услуги</a></li>
-                <li class="footer__menu-item"><a href="#">Наши работы</a></li>
-                <li class="footer__menu-item"><a href="#">Контакты</a></li>
+                <li class="footer__menu-item"><a href="#about">О компании</a></li>
+                <li class="footer__menu-item"><a href="#ser">Услуги</a></li>
+                <li class="footer__menu-item"><a href="#works">Наши работы</a></li>
+                <li class="footer__menu-item"><a href="#contact">Контакты</a></li>
             </ul>
         </div>
         <div class="footer__copy">@Copyright 2024</div>
