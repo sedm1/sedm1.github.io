@@ -1,0 +1,149 @@
+@import 'style'
+@import 'blocks/header'
+.main
+    margin-top: 20px
+    .container
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-radius: 20px
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4)
+        background: $white
+    &__img
+        position: relative
+        max-width: 540px
+        z-index: 1
+        margin-bottom: -10px
+        &::before
+            content: ""
+            position: absolute
+            top: -111px
+            right: -258px
+            width: 846px
+            height: 846px
+            border-radius: 100%
+            background: linear-gradient(217.28deg, rgb(231, 231, 231) 15.711%,rgb(255, 255, 255) 86.8%)
+            z-index: -1
+    &__info
+        padding-left: 40px
+        &-title
+            font-size: 50px
+            font-weight: 700
+            font-family: "VelaSans-Bold"
+            color: $blue
+            margin-bottom: 10px
+        &-descript
+            font-size: 16px
+            font-weight: 400
+            span
+                font-size: 60px
+                font-weight: 700
+                font-family: "VelaSans-Bold"
+                background: linear-gradient(221.02deg, rgb(232, 11, 11),rgb(220, 79, 0))
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                background-clip: text
+                text-fill-color: transparent
+        &-subtitle 
+            margin-top: 10px
+            font-size: 20px
+            font-weight: 400
+        &-button 
+            margin-top: 33px
+            background: $blue
+            color: $white 
+            padding: 16px 77px
+            border-radius: 40px
+            font-size: 16px
+            font-weight: 500
+            font-family: "VelaSans-Medium"
+            transition: .3s
+            &:hover 
+                box-shadow: 0px 0px 25.2px 0px $blue
+    
+@import 'blocks/prem'
+@import 'blocks/products'
+.info
+    .section__title
+        text-align: center
+    &__block
+        border-radius: 20px
+        background: linear-gradient(225.00deg, rgb(18, 49, 100) 0%,rgb(36, 99, 202) 100%)
+        padding: 40px
+        margin-top: 30px
+        &-descript
+            margin-top: 10px
+            font-size: 20px
+            font-weight: 500
+            color: $white 
+            font-family: "VelaSans-Medium"
+    &__item
+        background: $white 
+        padding: 31px 40px
+        border-radius: 20px
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0px
+        &-main
+            opacity: 0
+            visibility: hidden
+            height: 0
+            transition: .4s
+        &-header 
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &-title 
+            font-size: 26px
+            font-weight: 700
+            font-family: "VelaSans-Bold"
+        &-button 
+            font-size: 16px
+            font-weight: 500
+            color: $blue
+            font-family: "VelaSans-Medium"
+            display: flex
+            align-items: center
+            gap: 10px
+            span
+                display: block
+                min-width: 30px
+                width: 30px
+                height: 30px
+                border-radius: 100%
+                border: 1px solid $blue
+                display: flex
+                align-items: center
+                justify-content: center
+                color: $blue
+                font-weight: 700
+                font-family: "VelaSans-Bold"
+        &-active 
+            .info__item-main
+                opacity: 1
+                visibility: visible
+                height: auto
+                margin-top: 28px
+        &-descript
+            font-size: 20px
+            font-weight: 400
+            margin-bottom: 5px
+        &-list 
+            display: flex
+            flex-direction: column
+            gap: 5px
+            margin-top: 10px
+            padding-left: 20px
+            li
+                font-size: 20px
+                font-weight: 400
+                list-style: outside
+                span
+                    font-weight: 600
+                    font-size: 20px
+                    font-family: "VelaSans-SemiBold"
+@import 'blocks/stages'
+@import 'blocks/otz'
+@import 'blocks/form'
+@import 'blocks/footer'

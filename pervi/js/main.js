@@ -12,3 +12,12 @@ $('.otz__block-slider').slick({
     dots: true,
     arrows: false
 })
+$('.info__item-button').click((e) => {
+    if ($(e.currentTarget).html() == '<span>-</span> Показать меньше'){
+        $(e.currentTarget).html('<span>+</span> Показать больше')
+    } else {
+        $(e.currentTarget).html('<span>-</span> Показать меньше')
+    }
+    
+    $(e.currentTarget).parent('.info__item-header').parent('.info__item').toggleClass('info__item-active')
+})

@@ -4,6 +4,8 @@
     &__main
         display: none
         gap: 20px
+        &-active 
+            display: flex
         &-modal 
             position: absolute
             z-index: 2
@@ -12,7 +14,7 @@
             top: -110%
             left: 0
             background: $white
-            transition: .3s
+            transition: .5s
             padding: 30px 20px
             display: flex
             flex-direction: column
@@ -88,6 +90,9 @@
             font-weight: 500
             font-family: "VelaSans-Medium"
             width: 100%
+            transition: .3s
+            &:hover
+                box-shadow: 0px 0px 8.4px 0px rgb(36, 99, 202)
         &-link 
             padding: 16px 0px
             border-radius: 40px
@@ -97,6 +102,11 @@
             border: 1px solid rgb(51, 52, 53)
             width: 100%
             text-align: center
+            transition: .3s
+            &:hover
+                color: $white
+                background: $blue
+                border-color: $blue
 
 #products__main
     &-1 

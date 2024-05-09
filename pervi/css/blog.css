@@ -115,6 +115,14 @@
   -webkit-mask: url(../img/stages-4.svg) no-repeat center center;
   mask: url(../img/stages-4.svg) no-repeat center center;
 }
+.ic__stages-5 {
+  -webkit-mask: url(../img/stages-5.svg) no-repeat center center;
+  mask: url(../img/stages-5.svg) no-repeat center center;
+}
+.ic__stages-6 {
+  -webkit-mask: url(../img/stages-6.svg) no-repeat center center;
+  mask: url(../img/stages-6.svg) no-repeat center center;
+}
 
 * {
   padding: 0;

@@ -124,3 +124,5 @@ if(width <= 1330){
 $('.header__burger').click(() => {
     $('.header__menu-block').toggleClass('header__menu-block-active')
 })
+$(".inputPhone").mask("+7(999) 999-9999");
+

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <title>Частным клиентам</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chast.css">
 </head>
 <body>
     <header>
@@ -29,10 +29,10 @@
             </div>
             <nav class="header__bottom-block">
                 <ul class="header__bottom">
-                    <li class="header__bottom-item header__bottom-item-active">
+                    <li class="header__bottom-item">
                         <a href="/">Главная</a>
                     </li>
-                    <li class="header__bottom-item">
+                    <li class="header__bottom-item header__bottom-item-active">
                         <a href="#">Частным клиентам <i class="ic ic__arrow-menu"></i></a>
                         <ul class="header__bottom-submenu">
                             <li><a href="#">Потребительский кредит</a></li>
@@ -68,14 +68,12 @@
         <section class="main">
             <div class="container">
                 <div class="main__info">
-                    <h1 class="main__title">Потребительский кредит на любые цели</h1>
-                    <p class="main__descript">от <span>10%</span> годовых</p>
-                    <h3 class="main__subtitle">Узнайте подробнее, оставив заявку</h3>
-                    <button class="main__button">Оставить заявку</button>
+                    <h1 class="main__info-title">Кредит для частных лиц</h1>
+                    <p class="main__info-descript">от <span>10%</span> годовых до <span>10</span> лет до <span>5</span> млн. ₽</p>
+                    <h3 class="main__info-subtitle">Оставьте заявку, <br/>и мы рассмотрим Ваш запрос за 1 день!</h3>
+                    <button class="main__info-button">Оставить заявку</button>
                 </div>
-                <div class="main__img">
-                    <img src="img/main__img.png" alt="MainImg">
-                </div>
+                <div class="main__img"><img src="img/chast.png" alt="ChastImg"></div>
             </div>
         </section>
         <section class="prem">
@@ -104,10 +102,6 @@
         <section class="products">
             <div class="container">
                 <h2 class="section__title">Продукты, которые мы предлагаем</h2>
-                <div class="products__tabs">
-                    <button class="products__tabs-item products__tabs-item-active" data-products="1">Частным клиентам</button>
-                    <button class="products__tabs-item" data-products="2">Бизнесу</button>
-                </div>
                 <div class="products__main-block">
                     <div class="products__main products__main-active" id="products__main-1">
                         <div class="products__main-item">
@@ -204,109 +198,51 @@
                             </div>
                         </div>
                     </div>
-
-                    
-                    <div class="products__main" id="products__main-2">
-                        <div class="products__main-item">
-                            <div class="products__main-modal">
-                                <h3 class="products__modal-title">Потребительский кредит</h3>
-                                <ul class="products__modal-list">
-                                    <li>Максимальная сумма: 20 000 000 ₽</li>
-                                    <li>Минимальная ставка: 4,5%</li>
-                                    <li>Максимальный срок: 20 лет</li>
-                                </ul>
-                                <div class="products__modal-buttons">
-                                    <button class="products__modal-button">Оставить заявку</button>
-                                    <a href="#" class="products__modal-link">Узнать больше о продукте</a>
-                                </div>
-                            </div>
-                            <div class="products__main-info">
-                                <h3 class="products__main-title">Кредит для бизнеса</h3>
-                                <p class="products__main-descript">Это вид кредита для финансирования бизнес-проектов, операций или других таких потребностей. Эти кредиты обычно предназначены для покрытия расходов на закупку оборудования, расширение бизнеса или других целей, которые могут помочь улучшить или увеличить доходы предприятия</p>
-                            </div>
-                            <div class="products__main-footer">
-                                <div class="products__main-count">
-                                    <div class="products__count-item">
-                                        <h4 class="products__count-title">4,5%</h4>
-                                        <p class="products__count-descript">Минимальная ставка</p>
-                                    </div>
-                                    <div class="products__count-item">
-                                        <h4 class="products__count-title">50 млн</h4>
-                                        <p class="products__count-descript">Максимальная сумма</p>
-                                    </div>
-                                </div>
-                                <div class="products__main-img"><img src="img/products-4.png" alt="ProductsImg"></div>
-                            </div>
-                        </div>
-                        <div class="products__main-item">
-                            <div class="products__main-modal">
-                                <h3 class="products__modal-title">Потребительский кредит</h3>
-                                <ul class="products__modal-list">
-                                    <li>Максимальная сумма: 20 000 000 ₽</li>
-                                    <li>Минимальная ставка: 4,5%</li>
-                                    <li>Максимальный срок: 20 лет</li>
-                                </ul>
-                                <div class="products__modal-buttons">
-                                    <button class="products__modal-button">Оставить заявку</button>
-                                    <a href="#" class="products__modal-link">Узнать больше о продукте</a>
-                                </div>
-                            </div>
-                            <div class="products__main-info">
-                                <h3 class="products__main-title">Лизинг</h3>
-                                <p class="products__main-descript">Это вид финансовой аренды, при котором одна сторона (лизингодатель) предоставляет другой стороне (лизингополучателю) право использования определенного имущества (например, оборудования, автомобиля, недвижимости) за определенную плату в течение определенного периода времени</p>
-                            </div>
-                            <div class="products__main-footer">
-                                <div class="products__main-count">
-                                    <div class="products__count-item">
-                                        <h4 class="products__count-title">4,5%</h4>
-                                        <p class="products__count-descript">Минимальная ставка</p>
-                                    </div>
-                                    <div class="products__count-item">
-                                        <h4 class="products__count-title">50 млн</h4>
-                                        <p class="products__count-descript">Максимальная сумма</p>
-                                    </div>
-                                </div>
-                                <div class="products__main-img"><img src="img/products-5.png" alt="ProductsImg"></div>
-                            </div>
-                        </div>
-                        <div class="products__main-item">
-                            <div class="products__main-modal">
-                                <h3 class="products__modal-title">Потребительский кредит</h3>
-                                <ul class="products__modal-list">
-                                    <li>Максимальная сумма: 20 000 000 ₽</li>
-                                    <li>Минимальная ставка: 4,5%</li>
-                                    <li>Максимальный срок: 20 лет</li>
-                                </ul>
-                                <div class="products__modal-buttons">
-                                    <button class="products__modal-button">Оставить заявку</button>
-                                    <a href="#" class="products__modal-link">Узнать больше о продукте</a>
-                                </div>
-                            </div>
-                            <div class="products__main-info">
-                                <h3 class="products__main-title">Банковская гарантия</h3>
-                                <p class="products__main-descript">Банковская гарантия обеспечивает надежную защиту для бизнеса, гарантируя компенсацию от банка-эмитента в случае нарушения условий договора сторонами</p>
-                            </div>
-                            <div class="products__main-footer">
-                                <div class="products__main-count">
-                                    <div class="products__count-item">
-                                        <h4 class="products__count-title">4,5%</h4>
-                                        <p class="products__count-descript">Минимальная ставка</p>
-                                    </div>
-                                    <div class="products__count-item">
-                                        <h4 class="products__count-title">50 млн</h4>
-                                        <p class="products__count-descript">Максимальная сумма</p>
-                                    </div>
-                                </div>
-                                <div class="products__main-img"><img src="img/products-6.png" alt="ProductsImg"></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <section class="credit">
+        <section class="info">
             <div class="container">
-                <h2 class="section__title">Рассчитайте ваш кредит</h2>
+                <h2 class="section__title">Полезная информация</h2>
+                <div class="info__block">
+                    <div class="info__item info__item-active">
+                        <div class="info__item-header">
+                            <h3 class="info__item-title">Кредит для частных лиц</h3>
+                            <button class="info__item-button"><span>+</span> Показать больше</button>
+                        </div>
+                        <div class="info__item-main">
+                            <p class="info__item-descript">Жизнь полна возможностей, и мы хотим помочь вам осуществить все ваши желания, будь то покупка нового жилья, автомобиля, образование или просто заслуженный отдых. </p>
+                            <p class="info__item-descript">Наши эксперты помогут получить кредит для частных лиц, чтобы сделать вашу жизнь проще и достичь ваших целей быстро и без лишних хлопот</p>
+                            <ul class="info__item-list">
+                                <li><span>Гибкие условия;</span></li>
+                                <li><span>Простой процесс;</span></li>
+                                <li><span>Низкие процентные ставки;</span></li>
+                                <li><span>Индивидуальный подход;</span></li>
+                                <li><span>Надежность и безопасность.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info__item">
+                        <div class="info__item-header">
+                            <h3 class="info__item-title">Условия получения</h3>
+                            <button class="info__item-button"><span>+</span> Показать больше</button>
+                        </div>
+                        <div class="info__item-main">
+                            <ul class="info__item-list">
+                                <li><span>Возраст:</span> Возраст заемщика должен быть от 18 до 65 лет (могут быть вариации в зависимости от правил банка).</li>
+                                <li><span>Доходы:</span> Заемщик должен иметь стабильные доходы, подтвержденные соответствующими документами (например, справкой о доходах с места работы, налоговой декларацией и т.д.).</li>
+                                <li><span>Кредитная история: </span>Банк будет оценивать кредитную историю заемщика, чтобы определить его платежеспособность. Хорошая кредитная история может помочь в получении более выгодных условий кредитования.</li>
+                                <li><span>Сумма кредита:</span> Минимальная и максимальная суммы кредита зависят от политики банка. Обычно это может быть от нескольких тысяч до нескольких миллионов.</li>
+                                <li><span>Срок кредита:</span> Зависит от типа кредита и суммы, обычно варьируется от нескольких месяцев до нескольких лет.</li>
+                                <li><span>Процентная ставка:</span> Процентная ставка также зависит от политики банка, кредитной истории заемщика, суммы и срока кредита.</li>
+                                <li><span>Обеспечение: </span>В зависимости от суммы и типа кредита банк может потребовать предоставления обеспечения (например, залога, поручительства и т.д.).</li>
+                                <li><span>Другие условия:</span> Возможно, банк устанавливает дополнительные условия, такие как страхование жизни и здоровья заемщика, комиссии и др.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="info__block-descript">Детально ознакомиться со всеми актуальными предложениями можно у наших сотрудников. Наши эксперты помогут получить кредит за 1 день на долгосрочное пользование.</p>
+                    <p class="info__block-descript">Не нужно идти в банк и тратить время на сбор документов. Необходимо только заполнить форму на нашем сайте «Первый кредит».</p>
+                </div>
             </div>
         </section>
         <section class="stages">
@@ -342,33 +278,6 @@
                             </div>
                             <input type="submit" value="Отправить данные">
                         </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="partner">
-            <div class="container">
-                <p class="partner__descript">Наши партнеры рассмотрят Вас в приоритетном порядке, <span>а большое количество банков обеспечит высокую вероятность получения кредита</span></p>
-                <div class="partner__block">
-                    <div class="partner__block-item">
-                        <div class="partner__item"><img src="img/p-1.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-2.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-3.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-4.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-5.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-6.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-1.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-2.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-3.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-4.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-5.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-6.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-1.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-2.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-3.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-4.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-5.svg" alt="PartnerImg"></div>
-                        <div class="partner__item"><img src="img/p-6.svg" alt="PartnerImg"></div>
                     </div>
                 </div>
             </div>
@@ -438,31 +347,6 @@
                             </div>
                             <p class="otz__item-descript">Я безмерно благодарен команде за помощь в получении кредита для моего бизнеса! Их профессионализм в каждом шаге процесса были невероятно ценны. Они не только помогли мне разобраться во всех нюансах, но и предоставили индивидуальный подход, учитывая специфику моего бизнеса. Благодаря их усилиям мой бизнес получил необходимый финансовый импульс для роста и развития.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="blog">
-            <div class="container">
-                <div class="blog__header">
-                    <h2 class="section__title">Блог</h2>
-                    <a href="#" class="section__link">Все статьи</a>
-                </div>
-                <div class="blog__block">
-                    <div class="blog__item">
-                        <h3 class="blog__item-title">Что такое лизинг?</h3>
-                        <p class="blog__item-descript">Лизинг - это эффективный инструмент финансирования, который позволяет предпринимателям и компаниям приобретать оборудование, автотранспорт и другие активы без необходимости полной оплаты их стоимости...</p>
-                        <a href="#" class="blog__item-link"><span>+</span> Читать далее</a>
-                    </div>
-                    <div class="blog__item">
-                        <h3 class="blog__item-title">Как взять кредит на оборудование?</h3>
-                        <p class="blog__item-descript">Лизинг - это эффективный инструмент финансирования, который позволяет предпринимателям и компаниям приобретать оборудование, автотранспорт и другие активы без необходимости полной оплаты их стоимости...</p>
-                        <a href="#" class="blog__item-link"><span>+</span> Читать далее</a>
-                    </div>
-                    <div class="blog__item">
-                        <h3 class="blog__item-title">Как получить кредит под залог автомобиля</h3>
-                        <p class="blog__item-descript">Лизинг - это эффективный инструмент финансирования, который позволяет предпринимателям и компаниям приобретать оборудование, автотранспорт и другие активы без необходимости полной оплаты их стоимости...</p>
-                        <a href="#" class="blog__item-link"><span>+</span> Читать далее</a>
                     </div>
                 </div>
             </div>
