@@ -117,3 +117,34 @@ aside
 
 
 @import 'blocks/footer'
+@import 'blocks/modal'
+@media screen and (max-width: 900px)
+    .main
+        &__block
+            flex-direction: column
+        &__info
+            max-width: 100%
+    aside
+        max-width: 100%
+@media screen and (max-width: 550px)
+    .main
+        &__title
+            font-size: 35px
+        &__info
+            padding: 15px 10px
+            &-title
+                font-size: 20px
+        &__block 
+            p
+                font-size: 14px
+            li
+                font-size: 14px
+        &__info
+            &-share 
+                justify-content: space-between
+        &__share
+            &-title
+                font-size: 16px
+    .aside
+        &__link
+            margin-top: 15px

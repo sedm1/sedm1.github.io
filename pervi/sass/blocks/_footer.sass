@@ -65,3 +65,24 @@ footer
             width: 212px
             &:last-child
                 margin-bottom: 0px
+@media screen and (max-width: 900px)
+    footer
+        .container
+            flex-direction: column
+            gap: 40px 0px
+    .footer
+        &__main
+            width: 100%
+            display: flex
+            justify-content: center
+            &-text 
+                display: none
+        &__info
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 40px 10px
+            &-item 
+                &:nth-child(2)
+                    text-align: right
+                    .footer__info-list
+                        align-items: flex-end

@@ -27,3 +27,17 @@
         transform: translateX(0px)
     100%
         transform: translateX(calc(-100% - 20px))
+@media screen and (max-width: 900px)
+    .partner
+        &__descript
+            font-size: clamp(16px, 3vw, 28px)
+            span
+                font-size: clamp(16px, 3vw, 28px)
+        &__item
+            height: auto
+            img
+                width: 81px
+        &__block
+            &-item 
+                gap: 10px
+                animation-duration: 20s

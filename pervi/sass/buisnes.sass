@@ -147,3 +147,46 @@
 @import 'blocks/otz'
 @import 'blocks/form'
 @import 'blocks/footer'
+@import 'blocks/modal'
+@media screen and (max-width: 1200px)
+    .main
+        padding: 0px 20px
+        &__info
+            padding-left: 0px
+        .container
+            padding: 10px 20px
+        &__img
+            display: none
+@media screen and (max-width: 650px)
+    .main
+        &__info
+            &-title
+                font-size: 24px
+            &-descript
+                font-size: 14px
+                span 
+                    font-size: 40px
+            &-subtitle 
+                font-size: 16px
+            &-button 
+                padding: 16px 0px
+                width: 100%
+    .info
+        &__block
+            padding: 10px
+            &-descript
+                font-size: 16px
+        &__item
+            padding: 13px 10px
+            &-descript
+                font-size: 14px
+            &-list 
+                li
+                    font-size: 14px
+                    span
+                        font-size: 14px
+            &-button 
+                p
+                    display: none
+            &-title 
+                font-size: 16px

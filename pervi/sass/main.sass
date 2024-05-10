@@ -6,15 +6,13 @@
     background: linear-gradient(210.47deg, rgb(36, 99, 202) 39.142%,rgb(18, 49, 100) 100%)
     height: calc(100dvh - 127px)
     overflow: hidden
-    display: flex
-    align-items: center
     .container
         display: flex
-        align-items: flex-start
+        align-items: center
         justify-content: space-between
+        height: 100%
     &__info 
         max-width: 674px
-        padding-top: 100px
     &__title
         color: $white
         font-size: 60px
@@ -54,13 +52,15 @@
         max-width: 439px
         width: 100%
         z-index: 1
+        align-self: flex-end
+        margin-bottom: -10px
         &::before
-            top: -30%
+            top: -50%
             content: ""
             position: absolute
             z-index: -1
-            width: 1000px
-            height: 1000px
+            width: 1400px
+            height: 1400px
             background: linear-gradient(217.28deg, rgb(231, 231, 231) 5.001%,rgb(255, 255, 255) 83.887%)
             border-radius: 100%
 @import 'blocks/prem'
@@ -88,8 +88,74 @@
                 font-family: "VelaSans-Regular"
 @import 'blocks/products'
 .credit
+    .custom-select__option--value
+        padding: 10px 20px
+        border-radius: 40px
+        background: #F5F5F5 !important
+        font-size: 16px
+        font-weight: 500
+        font-family: "VelaSans-Medium"
+        width: 100%
+    .custom-select--active
+        .custom-select__option--value
+            border-radius: 20px
+            border-bottom-left-radius: 0px
+            border-bottom-right-radius: 0px
+    .custom-select__dropdown
+        background: #F5F5F5
     .section__title
         text-align: center
+    &__block
+        border-radius: 20px
+        background: linear-gradient(225.00deg, rgb(18, 49, 100),rgb(36, 99, 202) 100%)
+        padding: 40px 0px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 30px
+    &__main
+        background: $white
+        max-width: 780px
+        width: 100%
+        border-radius: 20px
+        padding: 40px
+        &-button 
+            color: $white
+            border-radius: 40px
+            padding: 16px 0px
+            font-size: 16px
+            font-weight: 500
+            font-family: "VelaSans-Medium"
+            width: 100%
+            margin-top: 20px
+            background: $blue 
+            transition: .3s
+            cursor: pointer
+            &:hover 
+                box-shadow: 0px 0px 25.2px 0px $blue
+    &__input
+        &-block 
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 20px
+            margin-top: 20px
+        &-input 
+            padding: 10px 20px
+            border-radius: 40px
+            background: #F5F5F5
+            font-size: 16px
+            font-weight: 500
+            font-family: "VelaSans-Medium"
+            width: 100%
+            &::placeholder
+                color: #9E9E9E
+        &-descript
+            margin-top: 5px
+            font-size: 14px
+            opacity: 0.3
+            font-weight: 500
+            font-family: "VelaSans-Medium"
+        
 @import 'blocks/stages'
 @import 'blocks/partner'
 @import 'blocks/otz'
@@ -157,3 +223,52 @@
                 border: 1px solid $blue 
 @import 'blocks/form'
 @import 'blocks/footer'
+@import 'blocks/modal'
+@media screen and (max-width: 1200px)
+    .main
+        &__img
+            display: none
+@media screen and (max-width: 900px)
+    .main
+        height: calc(100dvh - 73px)
+    .blog
+        &__block
+            flex-direction: column
+            gap: 10px
+        &__item
+            max-width: 100%
+    .credit
+        &__block
+            padding: 10px
+        &__input
+            &-block 
+                grid-template-columns: 1fr
+@media screen and (max-width: 550px)
+    .main
+        border-radius: 0px 0px 20px 20px
+        &__title
+            font-size: 26px
+            margin-bottom: 15px
+        &__descript
+            font-size: 14px
+            span
+                font-size: 40px
+        &__subtitle
+            font-size: 16px
+            font-weight: 400
+        &__button
+            width: 100%
+            padding: 16px 0px
+    .blog
+        &__item
+            padding: 15px 10px
+            &-title
+                font-size: 16px
+            &-descript
+                font-size: 14px
+    .credit
+        &__main
+            padding: 10px
+        &__input
+            &-block 
+                gap: 10px

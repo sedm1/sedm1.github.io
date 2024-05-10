@@ -69,4 +69,25 @@
         &-descript 
             font-size: 14px
             color: $white
-            opacity: 0.8T
+            opacity: 0.8
+@media screen and (max-width: 900px)
+    .prem
+        &__block
+            flex-direction: column
+            gap: 10px
+        &__item
+            max-width: 100%
+            padding: 25px 10px
+            &-icon 
+                padding: 10px
+                border-radius: 5px
+                img
+                    width: 20px
+            &-title 
+                font-size: 16px
+            &-descript
+                font-size: 14px
+        &__descript
+            font-size: clamp(16px, 3vw, 28px)
+            span
+                font-size: clamp(16px, 3vw, 28px)

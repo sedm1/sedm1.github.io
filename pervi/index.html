@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/jquery.custom-select.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link type="image/x-icon" href="img/fav.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="img/fav.png" rel="icon">
 </head>
 <body>
     <header>
@@ -25,15 +28,21 @@
                     <a href="#" class="header__soz-item"><i class="ic ic__tg-header"></i></a>
                     <a href="#" class="header__soz-item"><i class="ic ic__wt-header"></i></a>
                 </div>
-                <button class="header__recall">Обратный звонок</button>
+                <div class="header__buttons">
+                    <a href="#" class="header__recall-mobile"><img src="img/header__phone.svg" alt="HeaderPhone"></a>
+                    <button class="header__recall">Обратный звонок</button>
+                    <button class="header__burger"><img src="img//burger.svg" alt="Burger"></button>
+                </div>
+                
             </div>
             <nav class="header__bottom-block">
+                <button class="header__bottom-close"><img src="img/close.svg" alt="HeaderClose"></button>
                 <ul class="header__bottom">
                     <li class="header__bottom-item header__bottom-item-active">
                         <a href="/">Главная</a>
                     </li>
                     <li class="header__bottom-item">
-                        <a href="#">Частным клиентам <i class="ic ic__arrow-menu"></i></a>
+                        <a href="chast.html">Частным клиентам <i class="ic ic__arrow-menu"></i></a>
                         <ul class="header__bottom-submenu">
                             <li><a href="#">Потребительский кредит</a></li>
                             <li><a href="#">Ипотека</a></li>
@@ -41,7 +50,7 @@
                         </ul>
                     </li>
                     <li class="header__bottom-item">
-                        <a href="#">Бизнесу <i class="ic ic__arrow-menu"></i></a>
+                        <a href="buisnes.html">Бизнесу <i class="ic ic__arrow-menu"></i></a>
                         <ul class="header__bottom-submenu">
                             <li><a href="#">Кредит для бизнеса</a></li>
                             <li><a href="#">Лизинг </a></li>
@@ -61,6 +70,21 @@
                         <a href="about.html">О нас</a>
                     </li>
                 </ul>
+                <div class="header__bottom-mobile">
+                    <div class="header__mobile-item">
+                        <h3 class="header__mobile-title">г. Москва</h3>
+                        <p class="header__mobile-descript">ул. Улица, д. Дом, офис 1</p>
+                    </div>
+                    <div class="header__mobile-item">
+                        <h3 class="header__mobile-title">8 800 555 35 35</h3>
+                        <p class="header__mobile-descript">Бесплатный звонок по РФ</p>
+                    </div>
+                    <div class="header__mobile-soz">
+                        <a href="#" class="header__mobile-sozItem" rel="nofollow" target="_blank"><img src="img/wt.svg" alt="Vk"></a>
+                        <a href="#" class="header__mobile-sozItem" rel="nofollow" target="_blank"><img src="img/tg-header.svg" alt="Tg"></a>
+                    </div>
+                    <button class="header__mobile-button">Обратный звонок</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -113,11 +137,22 @@
                         <div class="products__main-item">
                             <div class="products__main-modal">
                                 <h3 class="products__modal-title">Потребительский кредит</h3>
+                                <p class="products__modal-descript">Потребительский кредит – это сумма, которую клиент может получить от банка или финансовой организации для решения своих финансовых задач. Кредитор не вмешивается в использование средств и не требует отчетности по их использованию. Обычно эти средства направляются на приобретение товаров, ремонтные работы, оплату обучения</p>
                                 <ul class="products__modal-list">
                                     <li>Максимальная сумма: 20 000 000 ₽</li>
                                     <li>Минимальная ставка: 4,5%</li>
                                     <li>Максимальный срок: 20 лет</li>
                                 </ul>
+                                <div class="products__modal-prem">
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">4,5%</h3>
+                                        <p class="products__prem-descript">Минимальная ставка</p>
+                                    </div>
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">20 млн</h3>
+                                        <p class="products__prem-descript">Максимальная сумма</p>
+                                    </div>
+                                </div>
                                 <div class="products__modal-buttons">
                                     <button class="products__modal-button">Оставить заявку</button>
                                     <a href="#" class="products__modal-link">Узнать больше о продукте</a>
@@ -143,12 +178,23 @@
                         </div>
                         <div class="products__main-item">
                             <div class="products__main-modal">
-                                <h3 class="products__modal-title">Потребительский кредит</h3>
+                                <h3 class="products__modal-title">Ипотека</h3>
+                                <p class="products__modal-descript">Ипотека – это вид кредита, предоставляемого под залог недвижимости для приобретения жилья. Заемщик выплачивает сумму кредита банку в течение определенного срока с процентами. Этот способ финансирования делает покупку недвижимости доступной на длительный период времени</p>
                                 <ul class="products__modal-list">
                                     <li>Максимальная сумма: 20 000 000 ₽</li>
                                     <li>Минимальная ставка: 4,5%</li>
                                     <li>Максимальный срок: 20 лет</li>
                                 </ul>
+                                <div class="products__modal-prem">
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">4,5%</h3>
+                                        <p class="products__prem-descript">Минимальная ставка</p>
+                                    </div>
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">20 млн</h3>
+                                        <p class="products__prem-descript">Максимальная сумма</p>
+                                    </div>
+                                </div>
                                 <div class="products__modal-buttons">
                                     <button class="products__modal-button">Оставить заявку</button>
                                     <a href="#" class="products__modal-link">Узнать больше о продукте</a>
@@ -174,12 +220,23 @@
                         </div>
                         <div class="products__main-item">
                             <div class="products__main-modal">
-                                <h3 class="products__modal-title">Потребительский кредит</h3>
+                                <h3 class="products__modal-title">Автокредит</h3>
+                                <p class="products__modal-descript">Автокредит – это целевой потребительский кредит, выдаваемый для приобретения автомобиля. Он обеспечен залогом автомобиля, который может быть изъят банком в случае невыплаты заемщиком кредита</p>
                                 <ul class="products__modal-list">
                                     <li>Максимальная сумма: 20 000 000 ₽</li>
                                     <li>Минимальная ставка: 4,5%</li>
                                     <li>Максимальный срок: 20 лет</li>
                                 </ul>
+                                <div class="products__modal-prem">
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">4,5%</h3>
+                                        <p class="products__prem-descript">Минимальная ставка</p>
+                                    </div>
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">20 млн</h3>
+                                        <p class="products__prem-descript">Максимальная сумма</p>
+                                    </div>
+                                </div>
                                 <div class="products__modal-buttons">
                                     <button class="products__modal-button">Оставить заявку</button>
                                     <a href="#" class="products__modal-link">Узнать больше о продукте</a>
@@ -210,11 +267,22 @@
                         <div class="products__main-item">
                             <div class="products__main-modal">
                                 <h3 class="products__modal-title">Потребительский кредит</h3>
+                                <p class="products__modal-descript">Потребительский кредит – это сумма, которую клиент может получить от банка или финансовой организации для решения своих финансовых задач. Кредитор не вмешивается в использование средств и не требует отчетности по их использованию. Обычно эти средства направляются на приобретение товаров, ремонтные работы, оплату обучения</p>
                                 <ul class="products__modal-list">
                                     <li>Максимальная сумма: 20 000 000 ₽</li>
                                     <li>Минимальная ставка: 4,5%</li>
                                     <li>Максимальный срок: 20 лет</li>
                                 </ul>
+                                <div class="products__modal-prem">
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">4,5%</h3>
+                                        <p class="products__prem-descript">Минимальная ставка</p>
+                                    </div>
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">20 млн</h3>
+                                        <p class="products__prem-descript">Максимальная сумма</p>
+                                    </div>
+                                </div>
                                 <div class="products__modal-buttons">
                                     <button class="products__modal-button">Оставить заявку</button>
                                     <a href="#" class="products__modal-link">Узнать больше о продукте</a>
@@ -241,11 +309,22 @@
                         <div class="products__main-item">
                             <div class="products__main-modal">
                                 <h3 class="products__modal-title">Потребительский кредит</h3>
+                                <p class="products__modal-descript">Потребительский кредит – это сумма, которую клиент может получить от банка или финансовой организации для решения своих финансовых задач. Кредитор не вмешивается в использование средств и не требует отчетности по их использованию. Обычно эти средства направляются на приобретение товаров, ремонтные работы, оплату обучения</p>
                                 <ul class="products__modal-list">
                                     <li>Максимальная сумма: 20 000 000 ₽</li>
                                     <li>Минимальная ставка: 4,5%</li>
                                     <li>Максимальный срок: 20 лет</li>
                                 </ul>
+                                <div class="products__modal-prem">
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">4,5%</h3>
+                                        <p class="products__prem-descript">Минимальная ставка</p>
+                                    </div>
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">20 млн</h3>
+                                        <p class="products__prem-descript">Максимальная сумма</p>
+                                    </div>
+                                </div>
                                 <div class="products__modal-buttons">
                                     <button class="products__modal-button">Оставить заявку</button>
                                     <a href="#" class="products__modal-link">Узнать больше о продукте</a>
@@ -272,11 +351,22 @@
                         <div class="products__main-item">
                             <div class="products__main-modal">
                                 <h3 class="products__modal-title">Потребительский кредит</h3>
+                                <p class="products__modal-descript">Потребительский кредит – это сумма, которую клиент может получить от банка или финансовой организации для решения своих финансовых задач. Кредитор не вмешивается в использование средств и не требует отчетности по их использованию. Обычно эти средства направляются на приобретение товаров, ремонтные работы, оплату обучения</p>
                                 <ul class="products__modal-list">
                                     <li>Максимальная сумма: 20 000 000 ₽</li>
                                     <li>Минимальная ставка: 4,5%</li>
                                     <li>Максимальный срок: 20 лет</li>
                                 </ul>
+                                <div class="products__modal-prem">
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">4,5%</h3>
+                                        <p class="products__prem-descript">Минимальная ставка</p>
+                                    </div>
+                                    <div class="products__prem-item">
+                                        <h3 class="products__prem-title">20 млн</h3>
+                                        <p class="products__prem-descript">Максимальная сумма</p>
+                                    </div>
+                                </div>
                                 <div class="products__modal-buttons">
                                     <button class="products__modal-button">Оставить заявку</button>
                                     <a href="#" class="products__modal-link">Узнать больше о продукте</a>
@@ -307,6 +397,34 @@
         <section class="credit">
             <div class="container">
                 <h2 class="section__title">Рассчитайте ваш кредит</h2>
+                <div class="credit__block">
+                    <div class="credit__main">
+                        <form action="">
+                            <select class="credit__select">
+                                <option value="0" selected hidden>Выберите вид кредита</option>
+                                <option value="1">Чатным клиентам</option>
+                                <option value="2">Для бизнеса</option>
+                            </select>
+                            <div class="credit__input-block">
+                                <div class="credit__input-item">
+                                    <input type="text" class="credit__input-input" placeholder="Введите сумму">
+                                    <p class="credit__input-descript">Максимальная сумма: 15 млн. руб.</p>
+                                </div>
+                                <div class="credit__input-item">
+                                    <input type="text" class="credit__input-input" placeholder="Введите срок в месяцах">
+                                    <p class="credit__input-descript">Максимальный срок: 120 месяцев</p>
+                                </div>
+                                <div class="credit__input-item">
+                                    <input type="text" class="credit__input-input" placeholder="Ваше имя">
+                                </div>
+                                <div class="credit__input-item">
+                                    <input type="text" class="credit__input-input" placeholder="Ваш номер телефона">
+                                </div>
+                            </div>
+                            <input type="submit" value="Оставить заявку" class="credit__main-button">
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="stages">
@@ -338,7 +456,7 @@
                         <form action="">
                             <div class="stages__item-input">
                                 <input type="text" placeholder="Ваше имя">
-                                <input type="text" placeholder="Ваш номер телефона">
+                                <input type="text" placeholder="Ваш номер телефона" class="mask-phone">
                             </div>
                             <input type="submit" value="Отправить данные">
                         </form>
@@ -533,8 +651,31 @@
             </div>
         </div>
     </footer>
+    <div class="modal__bg">
+        <div class="modal__window">
+            <button class="modal__window-close"><img src="img/close.svg" alt="Close"></button>
+                <div class="modal__window-info">
+                    <h2 class="form__title">Оставьте заявку на бесплатную консультацию с экспертом</h2>
+                    <p class="modal__window-descript">Заполните все поля в форме ниже, и мы свяжемся с Вами в ближайшее время!</p>
+                    <form action="">
+                        <input type="text" placeholder="Ваше имя" class="modal__window-input">
+                        <input type="text" placeholder="Ваше номер телефона" class="modal__window-input mask-phone">
+                        <input type="submit" value="Оставить заявку" class="modal__window-button">
+
+                    </form>
+                </div>
+                <div class="modal__window-img"><img src="img/form__img.png" alt="FormImg"></div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.custom-select.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $('.credit__select').customSelect({
+            transition: 300
+        })
+    </script>
 </body>
 </html>

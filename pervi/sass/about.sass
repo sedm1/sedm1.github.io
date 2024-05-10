@@ -22,3 +22,26 @@
 @import 'blocks/otz'
 @import 'blocks/form'
 @import 'blocks/footer'
+@import 'blocks/modal'
+@media screen and (max-width: 1200px)
+    .main
+        .container
+            flex-direction: column
+            overflow: hidden
+            padding-top: 40px
+            padding-left: 0px
+        &__img
+            margin-top: 35px
+            margin-bottom: -200px
+@media screen and (max-width: 550px)
+    .main
+        &__img
+            border-top-right-radius: 20px
+            border-bottom-right-radius: 20px
+            width: calc(100% + 40px)
+            transform: translateX(-20px)
+            img
+                height: auto
+                width: 110%
+        &__logo
+            padding: 0px 20px

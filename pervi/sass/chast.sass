@@ -91,6 +91,7 @@
             visibility: hidden
             height: 0
             transition: .4s
+            overflow: hidden
         &-header 
             display: flex
             align-items: center
@@ -100,13 +101,15 @@
             font-weight: 700
             font-family: "VelaSans-Bold"
         &-button 
-            font-size: 16px
-            font-weight: 500
-            color: $blue
-            font-family: "VelaSans-Medium"
             display: flex
             align-items: center
             gap: 10px
+            p
+                font-size: 16px
+                font-weight: 500
+                color: $blue
+                font-family: "VelaSans-Medium"
+                white-space: nowrap
             span
                 display: block
                 min-width: 30px
@@ -122,6 +125,7 @@
                 font-family: "VelaSans-Bold"
         &-active 
             .info__item-main
+                overflow: visible
                 opacity: 1
                 visibility: visible
                 height: auto
@@ -148,3 +152,46 @@
 @import 'blocks/otz'
 @import 'blocks/form'
 @import 'blocks/footer'
+@import 'blocks/modal'
+@media screen and (max-width: 1000px)
+    .main
+        padding: 0px 20px
+        &__info
+            padding-left: 0px
+        .container
+            padding: 10px 20px
+        &__img
+            display: none
+@media screen and (max-width: 650px)
+    .main
+        &__info
+            &-title
+                font-size: 24px
+            &-descript
+                font-size: 14px
+                span 
+                    font-size: 40px
+            &-subtitle 
+                font-size: 16px
+            &-button 
+                padding: 16px 0px
+                width: 100%
+    .info
+        &__block
+            padding: 10px
+            &-descript
+                font-size: 16px
+        &__item
+            padding: 13px 10px
+            &-descript
+                font-size: 14px
+            &-list 
+                li
+                    font-size: 14px
+                    span
+                        font-size: 14px
+            &-button 
+                p
+                    display: none
+            &-title 
+                font-size: 16px

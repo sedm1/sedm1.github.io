@@ -1,0 +1,14 @@
+<svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip85_31">
+			<rect id="iconamoon:menu-burger-horizontal" width="30.000000" height="30.000000" transform="translate(0.000000 -0.214844)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="iconamoon:menu-burger-horizontal" width="30.000000" height="30.000000" transform="translate(0.000000 -0.214844)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip85_31)">
+		<path id="Vector" d="M3.75 7.28L26.25 7.28M3.75 14.78L26.25 14.78M3.75 22.28L26.25 22.28" stroke="#2463CA" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+	</g>
+</svg>

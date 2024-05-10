@@ -74,12 +74,16 @@
             font-size: 26px
             font-weight: 700
             font-family: "VelaSans-Bold"
+        &-descript
+            display: none
         &-list
             padding-left: 20px
             li
                 list-style: outside
                 font-size: 18px
                 margin-bottom: 2px
+        &-prem
+            display: none
         &-button 
             padding: 16px 0px
             background: $blue 
@@ -140,4 +144,53 @@
                     right: -21px
                     bottom: -9px
                     width: 180px
+@media screen and (max-width: 900px)
+    .products
+        &__tabs
+            margin-top: 15px
+        &__main
+            gap: 10px
+            &-active 
+                flex-direction: column
+            &-item 
+                max-width: 100%
+                padding: 0px
+            &-modal 
+                top: 0px
+                position: static
+                background: rgb(245, 245, 245)
+                border: 0px
+                padding: 14px 20px
+            &-info
+                display: none
+            &-footer 
+                display: none
+        &__modal
+            &-title 
+                font-size: 18px
+                margin-bottom: 8px
+            &-descript
+                display: block
+                font-size: 14px
+                font-weight: 400
+            &-list 
+                display: none
+            &-buttons
+                margin-top: 15px
+            &-prem 
+                display: flex
+                align-items: flex-start
+                justify-content: space-between
+                margin-top: 15px
+            &-button, &-link 
+                padding: 13px 0px
 
+        &__prem
+            &-title 
+                font-size: 30px
+                color: $blue
+                font-family: "VelaSans-Bold"
+                font-weight: 700
+            &-descript
+                font-size: 12px
+                color: #9E9E9E
