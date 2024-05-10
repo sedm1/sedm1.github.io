@@ -36,7 +36,7 @@ $('.info__item-button').click((e) => {
     $(e.currentTarget).parent('.info__item-header').parent('.info__item').toggleClass('info__item-active')
 })
 
-$('.main__button, .products__modal-button, .header__recall, .main__info-button').click(() => {
+$('.main__button, .products__modal-button, .header__recall, .main__info-button, .work__item-button').click(() => {
     $('.modal__bg').css({'display': 'flex'})
     setTimeout(() => {
         $('.modal__bg').addClass('modal__bg-active')

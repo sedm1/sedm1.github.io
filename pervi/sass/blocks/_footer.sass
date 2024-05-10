@@ -43,6 +43,7 @@ footer
             font-weight: 700
             font-family: "VelaSans-Bold"
             margin-top: 10px
+            text-align: right
             &:first-child
                 margin-top: 0px
         &-descript
@@ -65,6 +66,8 @@ footer
             width: 212px
             &:last-child
                 margin-bottom: 0px
+    &__under
+        display: none
 @media screen and (max-width: 900px)
     footer
         .container
@@ -86,3 +89,10 @@ footer
                     text-align: right
                     .footer__info-list
                         align-items: flex-end
+        &__under
+            display: block
+            text-align: center
+            margin: 0 auto
+            .footer__main-text
+                display: block
+                margin-top: 30px

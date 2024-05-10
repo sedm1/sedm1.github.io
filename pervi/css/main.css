@@ -190,6 +190,8 @@ section {
   }
   .section__title {
     font-size: clamp(26px, 6vw, 40px);
+    font-weight: 600;
+    font-family: "VelaSans-SemiBold";
   }
 }
 header {
@@ -686,6 +688,8 @@ header {
   }
   .prem__descript span {
     font-size: clamp(16px, 3vw, 28px);
+    font-family: "VelaSans-Medium";
+    font-weight: 500;
   }
 }
 .products__tabs {
@@ -964,8 +968,8 @@ header {
   .products__prem-title {
     font-size: 30px;
     color: #2463CA;
-    font-family: "VelaSans-Bold";
-    font-weight: 700;
+    font-family: "VelaSans-SemiBold";
+    font-weight: 600;
   }
   .products__prem-descript {
     font-size: 12px;
@@ -1071,7 +1075,107 @@ header {
   font-weight: 500;
   font-family: "VelaSans-Medium";
 }
+.credit__sogl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.credit__sogl-descript {
+  color: #9E9E9E;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "VelaSans-SemiBold";
+  text-align: left;
+}
+.credit__sogl label {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #9E9E9E;
+  position: relative;
+  cursor: pointer;
+}
+.credit__sogl label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 12px;
+  height: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../img/check.svg");
+  display: none;
+  z-index: 1;
+}
+.credit__sogl input {
+  display: none;
+}
+.credit__sogl input:checked + label {
+  background: #2463CA;
+  border-color: #2463CA;
+}
+.credit__sogl input:checked + label::before {
+  display: block;
+}
 
+.stages__sogl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.stages__sogl-descript {
+  color: #9E9E9E;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "VelaSans-SemiBold";
+  text-align: left;
+}
+.stages__sogl label {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #9E9E9E;
+  position: relative;
+  cursor: pointer;
+}
+.stages__sogl label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 12px;
+  height: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../img/check.svg");
+  display: none;
+  z-index: 1;
+}
+.stages__sogl input {
+  display: none;
+}
+.stages__sogl input:checked + label {
+  background: #2463CA;
+  border-color: #2463CA;
+}
+.stages__sogl input:checked + label::before {
+  display: block;
+}
 .stages .section__title {
   text-align: center;
 }
@@ -1114,6 +1218,15 @@ header {
   border-radius: 20px;
   background: rgb(245, 245, 245);
   padding-bottom: 30px;
+}
+.stages__item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .stages__item:hover .stages__item-icon {
   background: #2463CA;
@@ -1240,6 +1353,16 @@ header {
   .stages__item {
     padding: 10px;
   }
+  .stages__item-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 550px) {
   .stages__item-title {
@@ -1333,9 +1456,13 @@ header {
 @media screen and (max-width: 900px) {
   .partner__descript {
     font-size: clamp(16px, 3vw, 28px);
+    font-weight: 500;
+    font-family: "VelaSans-Medium";
   }
   .partner__descript span {
     font-size: clamp(16px, 3vw, 28px);
+    font-weight: 500;
+    font-family: "VelaSans-Medium";
   }
   .partner__item {
     height: auto;
@@ -1443,7 +1570,7 @@ header {
 }
 @media screen and (max-width: 550px) {
   .otz .slick-track {
-    gap: 10px;
+    gap: 0px;
   }
   .otz .slick-dots button {
     width: 30px;
@@ -1667,6 +1794,56 @@ header {
   -webkit-box-shadow: 0px 0px 8.4px 0px rgb(36, 99, 202);
           box-shadow: 0px 0px 8.4px 0px rgb(36, 99, 202);
 }
+.form__sogl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.form__sogl-descript {
+  color: #9E9E9E;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "VelaSans-SemiBold";
+  text-align: left;
+}
+.form__sogl label {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #9E9E9E;
+  position: relative;
+  cursor: pointer;
+}
+.form__sogl label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 12px;
+  height: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../img/check.svg");
+  display: none;
+  z-index: 1;
+}
+.form__sogl input {
+  display: none;
+}
+.form__sogl input:checked + label {
+  background: #2463CA;
+  border-color: #2463CA;
+}
+.form__sogl input:checked + label::before {
+  display: block;
+}
 
 @media screen and (max-width: 1200px) {
   .form {
@@ -1796,6 +1973,7 @@ footer .container {
   font-weight: 700;
   font-family: "VelaSans-Bold";
   margin-top: 10px;
+  text-align: right;
 }
 .footer__contacts-title:first-child {
   margin-top: 0px;
@@ -1824,6 +2002,9 @@ footer .container {
 }
 .footer__main-descript:last-child {
   margin-bottom: 0px;
+}
+.footer__under {
+  display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -1860,6 +2041,15 @@ footer .container {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .footer__under {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer__under .footer__main-text {
+    display: block;
+    margin-top: 30px;
   }
 }
 .modal__bg {
@@ -1905,6 +2095,56 @@ footer .container {
   transition: 0.3s;
   opacity: 0;
   position: relative;
+}
+.modal__window-sogl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.modal__window-sogl-descript {
+  color: #9E9E9E;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "VelaSans-SemiBold";
+  text-align: left;
+}
+.modal__window-sogl label {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #9E9E9E;
+  position: relative;
+  cursor: pointer;
+}
+.modal__window-sogl label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 12px;
+  height: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../img/check.svg");
+  display: none;
+  z-index: 1;
+}
+.modal__window-sogl input {
+  display: none;
+}
+.modal__window-sogl input:checked + label {
+  background: #2463CA;
+  border-color: #2463CA;
+}
+.modal__window-sogl input:checked + label::before {
+  display: block;
 }
 .modal__window-active {
   opacity: 1;
@@ -2073,7 +2313,8 @@ footer .container {
 }
 @media screen and (max-width: 900px) {
   .main {
-    height: calc(100dvh - 73px);
+    height: auto;
+    padding: 80px 0px;
   }
   .blog__block {
     -webkit-box-orient: vertical;
@@ -2100,6 +2341,8 @@ footer .container {
   .main__title {
     font-size: 26px;
     margin-bottom: 15px;
+    font-weight: 500;
+    font-family: "VelaSans-Medium";
   }
   .main__descript {
     font-size: 14px;
@@ -2114,6 +2357,8 @@ footer .container {
   .main__button {
     width: 100%;
     padding: 16px 0px;
+    -webkit-box-shadow: 0px 0px 25.2px 0px rgb(36, 99, 202);
+            box-shadow: 0px 0px 25.2px 0px rgb(36, 99, 202);
   }
   .blog__item {
     padding: 15px 10px;

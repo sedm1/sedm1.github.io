@@ -190,6 +190,8 @@ section {
   }
   .section__title {
     font-size: clamp(26px, 6vw, 40px);
+    font-weight: 600;
+    font-family: "VelaSans-SemiBold";
   }
 }
 header {
@@ -713,6 +715,7 @@ footer .container {
   font-weight: 700;
   font-family: "VelaSans-Bold";
   margin-top: 10px;
+  text-align: right;
 }
 .footer__contacts-title:first-child {
   margin-top: 0px;
@@ -741,6 +744,9 @@ footer .container {
 }
 .footer__main-descript:last-child {
   margin-bottom: 0px;
+}
+.footer__under {
+  display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -777,6 +783,15 @@ footer .container {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .footer__under {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer__under .footer__main-text {
+    display: block;
+    margin-top: 30px;
   }
 }
 .modal__bg {
@@ -822,6 +837,56 @@ footer .container {
   transition: 0.3s;
   opacity: 0;
   position: relative;
+}
+.modal__window-sogl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.modal__window-sogl-descript {
+  color: #9E9E9E;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "VelaSans-SemiBold";
+  text-align: left;
+}
+.modal__window-sogl label {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #9E9E9E;
+  position: relative;
+  cursor: pointer;
+}
+.modal__window-sogl label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 12px;
+  height: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../img/check.svg");
+  display: none;
+  z-index: 1;
+}
+.modal__window-sogl input {
+  display: none;
+}
+.modal__window-sogl input:checked + label {
+  background: #2463CA;
+  border-color: #2463CA;
+}
+.modal__window-sogl input:checked + label::before {
+  display: block;
 }
 .modal__window-active {
   opacity: 1;

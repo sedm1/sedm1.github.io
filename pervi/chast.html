@@ -306,23 +306,35 @@
                 <h2 class="section__title">Этапы оформления кредита</h2>
                 <div class="stages__block">
                     <div class="stages__item" id="stages__item-1">
-                        <div class="stages__item-icon"><i class="ic ic__stages ic__stages-1"></i></div>
-                        <h3 class="stages__item-title">1. Оставить заявку</h3>
+                        <div class="stages__item-header">
+                            <div class="stages__item-icon"><i class="ic ic__stages ic__stages-1"></i></div>
+                            <h3 class="stages__item-title">1. Оставить заявку</h3>
+                        </div>
+                        
                         <p class="stages__item-descript">Вы оставляете заявку онлайн, мы перезваниваем и консультируем вас по вашей ситуации</p>
                     </div>
                     <div class="stages__item" id="stages__item-2">
-                        <div class="stages__item-icon"><i class="ic ic__stages ic__stages-2"></i></div>
-                        <h3 class="stages__item-title">2. Поиск решений</h3>
+                        <div class="stages__item-header">
+                            <div class="stages__item-icon"><i class="ic ic__stages ic__stages-2"></i></div>
+                            <h3 class="stages__item-title">2. Поиск решений</h3>
+                        </div>
+                        
                         <p class="stages__item-descript">Мы оцениваем ваши шансы  и разрабатываем стратегию получения одобрения по кредиту</p>
                     </div>
                     <div class="stages__item" id="stages__item-3">
-                        <div class="stages__item-icon"><i class="ic ic__stages ic__stages-3"></i></div>
-                        <h3 class="stages__item-title">3. Подача заявки</h3>
+                        <div class="stages__item-header">
+                            <div class="stages__item-icon"><i class="ic ic__stages ic__stages-3"></i></div>
+                            <h3 class="stages__item-title">3. Подача заявки</h3>
+                        </div>
+                        
                         <p class="stages__item-descript">Мы подаем за вас заявки  в кредитные компании без вашего персонального присутствия</p>
                     </div>
                     <div class="stages__item" id="stages__item-4">
-                        <div class="stages__item-icon"><i class="ic ic__stages ic__stages-4"></i></div>
-                        <h3 class="stages__item-title">4. Получение кредита</h3>
+                        <div class="stages__item-header">
+                            <div class="stages__item-icon"><i class="ic ic__stages ic__stages-4"></i></div>
+                            <h3 class="stages__item-title">4. Получение кредита</h3>
+                        </div>
+                        
                         <p class="stages__item-descript">Вы подписываете документы  и получаете одобренный кредит там, где условия и размер кредита вас устраивают</p>
                     </div>
                     <div class="stages__item" id="stages__item-5">
@@ -333,6 +345,11 @@
                                 <input type="text" placeholder="Ваш номер телефона" class="mask-phone">
                             </div>
                             <input type="submit" value="Отправить данные">
+                            <div class="stages__sogl">
+                                <input type="checkbox" id="stages__check">
+                                <label for="stages__check"></label>
+                                <p class="stages__sogl-descript">Даю согласие на обработку персональных данных</p>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -414,9 +431,13 @@
                     <p class="form__descript">Заполните все поля в форме ниже, и мы свяжемся с Вами в ближайшее время!</p>
                     <form action="">
                         <input type="text" placeholder="Ваше имя" class="form__input">
-                        <input type="text" placeholder="Ваше номер телефона" class="form__input">
+                        <input type="text" placeholder="Ваше номер телефона" class="form__input mask-phone">
                         <input type="submit" value="Оставить заявку" class="form__button">
-
+                        <div class="form__sogl">
+                            <input type="checkbox" id="form__check">
+                            <label for="form__check"></label>
+                            <p class="form__sogl-descript">Даю согласие на обработку персональных данных</p>
+                        </div>
                     </form>
                 </div>
                 <div class="form__img"><img src="img/form__img.png" alt="FormImg"></div>
@@ -450,14 +471,14 @@
                         <li><a href="#">Лизинг</a></li>
                         <li><a href="#">Банковская гарантия</a></li>
                     </ul>
-                    <h3 class="footer__info-title">Партнерам</h3>
+                    <a class="footer__info-title" href="partners.html">Партнерам</a>
                 </div>
                 <div class="footer__info-item">
                     <h3 class="footer__info-title">Информация</h3>
                     <ul class="footer__info-list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Блог</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="footer__info-contacts">
@@ -469,6 +490,12 @@
                         <a href="#" class="footer__soz-item" target="_blank" rel="nofollow"><i class="ic ic__tg-footer"></i></a>
                         <a href="#" class="footer__soz-item" target="_blank" rel="nofollow"><i class="ic ic__wt-footer"></i></a>
                     </div>
+                </div>
+            </div>
+            <div class="footer__under">
+                <div class="footer__main-text">
+                    <p class="footer__main-descript">ООО «Первый кредит» © 2024</p>
+                    <a href="#" class="footer__main-descript">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
@@ -483,7 +510,11 @@
                         <input type="text" placeholder="Ваше имя" class="modal__window-input">
                         <input type="text" placeholder="Ваше номер телефона" class="modal__window-input mask-phone">
                         <input type="submit" value="Оставить заявку" class="modal__window-button">
-
+                        <div class="modal__window-sogl">
+                            <input type="checkbox" id="modal__window-check">
+                            <label for="modal__window-check"></label>
+                            <p class="modal__window-sogl-descript">Даю согласие на обработку персональных данных</p>
+                        </div>
                     </form>
                 </div>
                 <div class="modal__window-img"><img src="img/form__img.png" alt="FormImg"></div>

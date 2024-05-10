@@ -155,7 +155,45 @@
             opacity: 0.3
             font-weight: 500
             font-family: "VelaSans-Medium"
-        
+    &__sogl
+        display: flex
+        align-items: center
+        margin-top: 10px
+        gap: 10px
+        &-descript
+            color: #9E9E9E
+            font-size: 14px
+            font-weight: 500
+            font-family: "VelaSans-SemiBold"
+            text-align: left
+        label
+            width: 20px
+            height: 20px
+            border-radius: 5px
+            border: 1px solid #9E9E9E
+            position: relative
+            cursor: pointer
+            &::before
+                content: ""
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translateX(-50%) translateY(-50%)
+                width: 12px
+                height: 10px
+                background-size: cover
+                background-position: center center
+                background-image: url('../../img/check.svg')
+                display: none
+                z-index: 1
+                
+        input
+            display: none
+            &:checked + label 
+                background: $blue
+                border-color: $blue
+                &::before 
+                    display: block
 @import 'blocks/stages'
 @import 'blocks/partner'
 @import 'blocks/otz'
@@ -230,7 +268,8 @@
             display: none
 @media screen and (max-width: 900px)
     .main
-        height: calc(100dvh - 73px)
+        height: auto
+        padding: 80px 0px
     .blog
         &__block
             flex-direction: column
@@ -249,6 +288,8 @@
         &__title
             font-size: 26px
             margin-bottom: 15px
+            font-weight: 500
+            font-family: "VelaSans-Medium"
         &__descript
             font-size: 14px
             span
@@ -259,6 +300,7 @@
         &__button
             width: 100%
             padding: 16px 0px
+            box-shadow: 0px 0px 25.2px 0px rgb(36, 99, 202)
     .blog
         &__item
             padding: 15px 10px

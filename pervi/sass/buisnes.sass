@@ -15,6 +15,8 @@
         max-width: 540px
         z-index: 1
         margin-bottom: -10px
+        img
+            z-index: 1
         &::before
             content: ""
             position: absolute
@@ -90,6 +92,7 @@
             visibility: hidden
             height: 0
             transition: .4s
+            overflow: hidden
         &-header 
             display: flex
             align-items: center
@@ -99,13 +102,15 @@
             font-weight: 700
             font-family: "VelaSans-Bold"
         &-button 
-            font-size: 16px
-            font-weight: 500
-            color: $blue
-            font-family: "VelaSans-Medium"
             display: flex
             align-items: center
             gap: 10px
+            p
+                font-size: 16px
+                font-weight: 500
+                color: $blue
+                font-family: "VelaSans-Medium"
+                white-space: nowrap
             span
                 display: block
                 min-width: 30px
@@ -121,6 +126,7 @@
                 font-family: "VelaSans-Bold"
         &-active 
             .info__item-main
+                overflow: visible
                 opacity: 1
                 visibility: visible
                 height: auto

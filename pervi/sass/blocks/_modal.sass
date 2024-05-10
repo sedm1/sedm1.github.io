@@ -28,6 +28,47 @@
         transition: .3s
         opacity: 0
         position: relative
+        &-sogl
+            display: flex
+            align-items: center
+            margin-top: 10px
+            gap: 10px
+            &-descript
+                color: #9E9E9E
+                font-size: 14px
+                font-weight: 500
+                font-family: "VelaSans-SemiBold"
+                text-align: left
+            label
+                width: 20px
+                height: 20px
+                border-radius: 5px
+                border: 1px solid #9E9E9E
+                position: relative
+                cursor: pointer
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translateX(-50%) translateY(-50%)
+                    width: 12px
+                    height: 10px
+                    background-size: cover
+                    background-position: center center
+                    background-image: url('../../img/check.svg')
+                    display: none
+                    z-index: 1
+                    
+            input
+                display: none
+                &:checked + label 
+                    background: $blue
+                    border-color: $blue
+                    &::before 
+                        display: block
+
+
         &-active 
             opacity: 1
         &-close 
