@@ -1,6 +1,7 @@
 @import 'style'
 @import 'blocks/header'
 .main
+    padding: 0px 20px
     margin-top: 50px
     .container
         display: flex
@@ -17,6 +18,36 @@
             height: 100%
             border-top-right-radius: 20px
             border-bottom-right-radius: 20px
+.desc
+    .container
+        display: flex
+        justify-content: space-between
+        gap: 20px
+    &__item
+        max-width: 580px
+        border-radius: 20px
+        padding: 32px 40px
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4)
+        &-descript
+            font-size: 20px
+            font-weight: 500
+            font-family: "VelaSans-Medium"
+            span
+                font-family: "VelaSans-Medium"
+                color: $blue
+        &-list 
+            display: flex
+            gap: 10px
+            flex-direction: column
+            padding-left: 20px
+            li
+                list-style: outside
+                font-size: 26px
+                color: $blue
+                font-weight: 600
+                font-family: "VelaSans-SemiBold"
+        &-last 
+            background: #F5F5F5
 @import 'blocks/prem'
 @import 'blocks/partner'
 @import 'blocks/otz'
@@ -33,6 +64,11 @@
         &__img
             margin-top: 35px
             margin-bottom: -200px
+    .desc
+        .container
+            flex-direction: column
+        &__item
+            max-width: 100%
 @media screen and (max-width: 550px)
     .main
         &__img
@@ -45,3 +81,11 @@
                 width: 110%
         &__logo
             padding: 0px 20px
+    .desc
+        &__item
+            padding: 10px
+            &-descript
+                font-size: 16px
+            &-list 
+                li
+                    font-size: 16px
