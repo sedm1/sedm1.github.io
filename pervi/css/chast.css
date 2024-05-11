@@ -1082,6 +1082,7 @@ header {
   text-align: left;
 }
 .stages__sogl label {
+  min-width: 20px;
   width: 20px;
   height: 20px;
   border-radius: 5px;
@@ -1570,6 +1571,7 @@ header {
   text-align: left;
 }
 .form__sogl label {
+  min-width: 20px;
   width: 20px;
   height: 20px;
   border-radius: 5px;
@@ -1794,6 +1796,16 @@ footer .container {
   }
   .footer__info-item:nth-child(2) {
     text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .footer__info-item:nth-child(2) .footer__info-list {
     -webkit-box-align: end;
@@ -2086,7 +2098,7 @@ footer .container {
     font-size: 14px;
   }
   .main__info-descript span {
-    font-size: 40px;
+    font-size: 35px;
   }
   .main__info-subtitle {
     font-size: 16px;
