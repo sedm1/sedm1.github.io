@@ -1,0 +1,68 @@
+@import 'vars'
+@import 'fonts'
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'TT Firs Neue Regular'
+    color: $white
+body
+    position: relative
+    max-width: 100%
+    overflow-x: hidden
+    background: #0F1116
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+button 
+    background: 0 none
+    border: 0 none
+    outline: 0 none
+    font-family: inherit
+    cursor: pointer
+li
+    list-style: none 
+img
+    width: 100%
+    height: auto
+.container
+    max-width: 1658px
+    padding: 0px 20px
+    margin: 0 auto
+    width: 100%
+
+header
+    position: absolute
+    top: 0px
+    width: 100%
+    left: 0px
+    padding: 32px 0px
+    z-index: 1
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__logo
+        width: 78px
+    &__menu
+        &-block 
+            display: flex
+            align-items: center
+            gap: 96px
+        li
+            font-size: 20px
+            position: relative 
+            &::before
+                width: 0px
+                height: 1px
+                position: absolute
+                left: 0px
+                bottom: -2px
+                background: $white
+                content: ""
+                transition: .3s
+            &:hover
+                &::before
+                    width: 100%
