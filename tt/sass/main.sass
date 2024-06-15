@@ -11,10 +11,16 @@ body
     max-width: 100%
     overflow-x: hidden
     background: #0F1116
+html
+    max-width: 100%
+    overflow-x: hidden
+    overflow-y: visible
 a
     text-decoration: none
     color: inherit
     cursor: pointer
+    display: block
+    width: fit-content
 button 
     background: 0 none
     border: 0 none
@@ -31,7 +37,13 @@ img
     padding: 0px 20px
     margin: 0 auto
     width: 100%
-
+section
+    margin-bottom: 150px
+.section__title
+    font-size: 120px
+    color: $yellow
+    font-family: 'TT Firs Neue Light'
+    font-weight: 300
 header
     position: absolute
     top: 0px
@@ -66,3 +78,15 @@ header
             &:hover
                 &::before
                     width: 100%
+    &__button
+        color: $red
+        border: 1px solid $red
+        padding: 23px 51px
+        font-size: 17px
+        font-weight: 500
+        font-family: 'TT Firs Neue Medium'
+        border-radius: 48px
+        transition: .3s
+        &:hover 
+            color: $black
+            background: $red
