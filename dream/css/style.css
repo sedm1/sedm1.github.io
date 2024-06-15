@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/gilroy-medium.eot");
+  src: url("../fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-medium.woff2") format("woff2"), url("../fonts/gilroy-medium.woff") format("woff"), url("../fonts/gilroy-medium.ttf") format("truetype"), url("../fonts/gilroy-medium.svg#gilroy-medium") format("svg");
+}
+@font-face {
+  font-family: "Mont-Bold";
+  src: url("../fonts/Mont-Bold.eot");
+  src: local("Mont Bold"), local("Mont-Bold"), url("../fonts/Mont-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-Bold.woff2") format("woff2"), url("../fonts/Mont-Bold.woff") format("woff"), url("../fonts/Mont-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont-SemiBold";
+  src: url("../fonts/Mont-SemiBold.eot");
+  src: local("Mont SemiBold"), local("Mont-SemiBold"), url("../fonts/Mont-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-SemiBold.woff2") format("woff2"), url("../fonts/Mont-SemiBold.woff") format("woff"), url("../fonts/Mont-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/Mont-Regular.eot");
+  src: local("Mont Regular"), local("Mont-Regular"), url("../fonts/Mont-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff"), url("../fonts/Mont-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont-Light";
+  src: url("../fonts/Mont-Light.eot");
+  src: local("Mont Light"), local("Mont-Light"), url("../fonts/Mont-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont-Light.woff2") format("woff2"), url("../fonts/Mont-Light.woff") format("woff"), url("../fonts/Mont-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Gilroy-Medium";
+}
+
+body {
+  position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button {
+  background: 0 none;
+  border: 0 none;
+  outline: 0 none;
+  font-family: inherit;
+}
+
+li {
+  list-style: none;
+}
