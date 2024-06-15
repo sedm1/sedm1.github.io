@@ -622,13 +622,13 @@ footer {
 .about__spec {
   position: absolute;
   z-index: -1;
-  bottom: -160px;
+  bottom: -210px;
   left: -150px;
 }
 .about__list {
   position: absolute;
   z-index: -1;
-  bottom: -160px;
+  bottom: -290px;
   right: -250px;
 }
 .about__title {
@@ -677,6 +677,15 @@ footer {
   height: 57px;
   border-radius: 100%;
   border: 1px solid #848484;
+  background-size: 6px 11px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.about .slick-arrow:hover {
+  background: #C72120;
+  border: 1px solid #C72120;
   background-size: 6px 11px;
   background-position: center center;
   background-repeat: no-repeat;

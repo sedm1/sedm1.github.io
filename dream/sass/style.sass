@@ -80,12 +80,12 @@
     &__spec
         position: absolute
         z-index: -1
-        bottom: -160px
+        bottom: -210px
         left: -150px
     &__list
         position: absolute
         z-index: -1
-        bottom: -160px
+        bottom: -290px
         right: -250px
     &__title
         text-align: center
@@ -123,6 +123,13 @@
         background-size: 6px 11px
         background-position: center center
         background-repeat: no-repeat
+        transition: .3s
+        &:hover 
+            background: $red
+            border: 1px solid $red
+            background-size: 6px 11px
+            background-position: center center
+            background-repeat: no-repeat
     .slick-prev
         left: 44%
     .slick-next

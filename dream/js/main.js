@@ -23,7 +23,7 @@ $('.about__slider').slick({
     dots: false,
     arrows: true,
     autoplay: true,
-     autoplaySpeed: 2000,
+     autoplaySpeed: 4000,
      pauseOnHover: false,
      pauseOnFocus: false,
      responsive: [
