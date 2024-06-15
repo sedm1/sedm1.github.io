@@ -1,1 +1,456 @@
 @import 'main'
+.main
+    height: calc(100dvh - 157px)
+    &__slider
+        height: 100%
+        &-item 
+            background-position: center center
+            background-size: cover 
+            background-repeat: no-repeat
+    .slick-track, .slick-list
+        height: 100%
+    .slick-dots
+        display: flex
+        align-items: center
+        gap: 8px
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -40px
+        li
+            display: flex
+            align-items: center
+        button 
+            font-size: 0px
+            width: 9px
+            height: 9px
+            background: #E1E1E1
+            border-radius: 100%
+            transition: .3s
+        .slick-active
+            button
+                width: 21px
+                height: 21px
+                background: rgba(199, 33, 32, 0.5)
+                position: relative
+                &::before 
+                    content: ""
+                    width: 9px
+                    height: 9px
+                    border-radius: 100%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translateX(-46%) translateY(-54%)
+                    background: #b65a59
+
+    &__item 
+        &-bg 
+            width: 100%
+            height: 100%
+            background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 29.746%,rgba(0, 0, 0, 0.6) 68.698%)
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-items: center
+            padding-bottom: 52px
+            text-align: center
+        &-descript
+            color: $white
+            font-family: 'AlegreyaSC-Regular'
+            font-size: 40px
+        &-title 
+            color: $white 
+            text-transform: uppercase
+            font-size: 60px
+            font-family: 'Mont-Light'
+.about
+    position: relative
+    &__bg
+        &-1 
+            position: absolute
+            z-index: -1
+            top: -60px
+            left: -50px
+        &-2
+            position: absolute
+            z-index: -1
+            top: -60px
+            right: -50px
+    &__spec
+        position: absolute
+        z-index: -1
+        bottom: -160px
+        left: -150px
+    &__list
+        position: absolute
+        z-index: -1
+        bottom: -160px
+        right: -250px
+    &__title
+        text-align: center
+        margin-bottom: 7px
+    &__descript
+        max-width: 790px
+        margin: 0 auto
+        text-align: center
+        font-size: 15px
+        font-family: 'Mont-SemiBold'
+        color: $dark
+    &__slider
+        margin-top: 40px
+    &__item
+        height: 268px !important
+        transition: .3s
+        img
+            height: 100%
+    .slick-active 
+        height: 410px !important
+    .slick-track
+        display: flex
+        align-items: center
+        gap: 24px
+        height: 410px
+    .slick-arrow
+        position: absolute
+        bottom: -59px
+        transform: translateY(50%)
+        font-size: 0px
+        width: 57px
+        height: 57px
+        border-radius: 100%
+        border: 1px solid #848484
+        background-size: 6px 11px
+        background-position: center center
+        background-repeat: no-repeat
+    .slick-prev
+        left: 44%
+    .slick-next
+        right: 44%
+        transform: translateY(50%) rotate(180deg)
+.menu
+    margin-top: 200px
+    &__title
+        text-align: center
+    &__tabs
+        margin-top: 40px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-item
+            width: 100%
+            border-bottom: 1px solid #E1E1E1
+            padding: 8px 0px
+            font-size: 15px
+            font-family: 'Mont-SemiBold'
+            transition: .3s
+            &-active
+                color: $red
+                border-bottom: 1px solid $red
+    &__main
+        margin-top: 60px
+    &__block
+        display: none
+        &-active 
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+            gap: 49px 24px
+    &__item 
+        &-img 
+            height: 326px
+            overflow: hidden
+            max-width: 100%
+            img
+                height: 326px
+        &-info 
+            padding: 15px 13px
+            box-shadow: 0px 6px 13px 0px rgba(207, 207, 207, 0.1),0px 23px 23px 0px rgba(207, 207, 207, 0.09),0px 51px 31px 0px rgba(207, 207, 207, 0.05),0px 91px 36px 0px rgba(207, 207, 207, 0.01),0px 143px 40px 0px rgba(207, 207, 207, 0)
+            background: rgb(255, 255, 255)
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &-title 
+            font-size: 17px
+            font-family: 'Mont-Bold'
+            color: $black
+            margin-bottom: 7px
+        &-descript
+            font-size: 14px
+            font-family: 'Mont-Regular'
+
+            margin-bottom: 11px
+        &-price 
+            font-size: 20px
+            color: $black
+            font-family: 'Mont-Bold'
+.why
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    &__bg
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.8)
+        padding-top: 56px
+        padding-bottom: 116px 
+    .container
+        display: flex
+        justify-content: space-between
+    &__title
+        text-align: center
+        color: $white
+        margin-bottom: 80px
+    &__item
+        max-width: 273px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        &-icon 
+            max-height: 179px
+            height: 119px
+            display: flex
+            align-items: center
+        &:nth-child(1)
+            .why__item-icon
+                max-width: 179px
+        &:nth-child(2)
+            .why__item-icon
+                max-width: 128px
+        &:nth-child(3)
+            .why__item-icon
+                max-width: 120px
+        &-title 
+            margin-top: 21px
+            margin-bottom: 8px
+            color: $white
+            font-size: 17px
+            font-family: 'Mont-Bold'
+        &-descript
+            color: $white
+            font-size: 14px
+            font-family: 'Mont-Regular'
+.events
+    &__title
+        text-align: center
+    &__block
+        margin-top: 64px
+        overflow-x: auto
+        scrollbar-color: $black $white
+        scrollbar-width: thin
+        padding: 10px 0px
+    &__list 
+        display: flex
+        gap: 24px
+    &__item
+        max-width: 526px
+        width: 100%
+        min-width: 526px
+        &-img
+            height: 326px
+            overflow: hidden
+            img
+                height: 326px
+        &-info 
+            padding: 15px 13px
+            border-radius: 0px 0px 5px 5px
+            box-shadow: 0px 6px 13px 0px rgba(207, 207, 207, 0.1),0px 23px 23px 0px rgba(207, 207, 207, 0.09),0px 51px 31px 0px rgba(207, 207, 207, 0.05),0px 91px 36px 0px rgba(207, 207, 207, 0.01),0px 143px 40px 0px rgba(207, 207, 207, 0)
+            background: rgb(255, 255, 255)
+        &-title 
+            font-size: 17px
+            font-family: 'Mont-Bold'
+            color: $black
+.contacts
+    position: relative
+    &__tomato
+        position: absolute
+        z-index: -1
+        left: -150px
+        top: -95px
+        width: 398px
+    &__title
+        text-align: center
+    &__block
+        box-shadow: 0px 6px 13px 0px rgba(207, 207, 207, 0.1),0px 23px 23px 0px rgba(207, 207, 207, 0.09),0px 51px 31px 0px rgba(207, 207, 207, 0.05),0px 91px 36px 0px rgba(207, 207, 207, 0.01),0px 143px 40px 0px rgba(207, 207, 207, 0)
+        background: rgb(252, 252, 252)
+        width: 100%
+        padding: 90px 0px
+        margin-top: 94px
+        .container
+            position: relative
+    &__info
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(2, 70px)
+        max-width: 563px
+        &-item 
+            &:nth-child(1)
+                grid-area: 1 / 1 / 2 / 2
+            &:nth-child(2)
+                grid-area: 1 / 2 / 2 / 4
+            &:nth-child(3)
+                grid-area: 2 / 1 / 3 / 2
+            &:nth-child(4)
+                grid-area: 2 / 2 / 3 / 4
+        &-title 
+            font-size: 16px
+            color: $black
+            font-family: 'Mont-Bold'
+            margin-bottom: 5px
+        &-descript
+            font-size: 15px
+            font-family: 'Mont-SemiBold'
+            color: #A2A2A2
+        &-soz 
+            display: flex
+            gap: 10px
+    &__form
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 0px
+        background: $white
+        padding: 45px 55px
+        max-width: 455px
+        width: 100%
+        box-shadow: 0px 6px 13px 0px rgba(207, 207, 207, 0.1),0px 23px 23px 0px rgba(207, 207, 207, 0.09),0px 51px 31px 0px rgba(207, 207, 207, 0.05),0px 91px 36px 0px rgba(207, 207, 207, 0.01),0px 143px 40px 0px rgba(207, 207, 207, 0)
+        &-title 
+            text-transform: uppercase
+            font-size: 25px
+            color: $dark
+            text-align: center
+            font-family: 'Mont-SemiBold'
+        form
+            margin-top: 36px
+        &-descript
+            font-size: 13px
+            color: #909090
+            margin-bottom: 5px
+        &-item 
+            margin-bottom: 24px
+        &-input
+            width: 100%
+            border: 0 
+            outline: 0
+            cursor: text
+            background: #F7F7F7
+            padding: 27px 32px
+            font-size: 13px
+            color: $black
+        &-submit 
+            padding: 27px 0px
+            width: 100%
+            background: $red
+            color: $white 
+            border: 0 
+            outline: 0
+            cursor: pointer
+            border: 1px solid $red
+            transition: .3s
+            font-size: 12px
+            font-family: 'Mont-Bold'
+            &:hover 
+                background: $white
+                color: $red
+        &-prava
+            margin-top: 15px
+            text-align: center
+            color: $black
+            font-size: 12px
+            font-family: 'Mont-SemiBold'
+@media screen and (max-width: 1050px)
+    .about
+        .slick-next
+            right: 30%
+        .slick-prev
+            left: 30%
+        &__spec
+            display: none
+        &__list
+           display: none
+        &__bg
+            &-1, &-2
+                display: none
+            
+    .menu
+        margin-top: 150px
+        &__tabs
+            overflow-x: auto
+            &-item 
+                min-width: 150px
+    .contacts
+        &__tomato
+            display: none
+        &__form
+            position: static
+            transform: translateY(0)
+        &__block
+            margin-top: 20px
+            .container
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 30px
+        &__info
+            display: flex
+            flex-direction: column
+            text-align: center
+            align-items: center
+            gap: 20px
+@media screen and (max-width: 900px)
+    .why
+        .container
+            flex-direction: column
+            align-items: center
+            gap: 40px
+        &__title
+            margin-bottom: 30px
+        &__item
+            max-width: none
+@media screen and (max-width: 550px)
+    .main
+        &__item
+            &-descript
+                font-size: 8vw
+            &-title 
+                font-size: 11vw
+    .about
+        &__item
+            height: auto !important
+        .slick-active 
+            height: auto !important
+        .slick-track
+            height: auto
+            gap: 10px
+        &__descript
+            font-size: 3.5vw
+        .slick-next
+            right: 70px
+        .slick-prev
+            left: 70px
+    .menu
+        &__item
+            &-img
+                height: auto
+                img
+                    height: auto
+        &__block
+            &-active 
+                grid-template-columns: 1fr
+        &__main
+            margin-top: 20px
+    .events
+        &__block
+            margin-top: 20px
+        &__item
+            min-width: 80%
+            &-img 
+                height: auto
+                img
+                    height: auto
+    .contacts
+        &__form
+            padding: 25px 15px
+        &__block
+            padding: 20px 0px

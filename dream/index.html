@@ -4,9 +4,473 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about .slick-arrow{
+            background-image: url('img/arrow-left.svg');
+        }
+    </style>
 </head>
 <body>
-    Привет мир
+    <header>
+        <div class="container">
+            <a href="/" class="header__logo"><img src="img/logo.svg" alt="HeaderLogo"></a>
+            <nav class="header__menu-block">
+                <div class="header__mobile-header">
+                    <a class="header__mobile-logo" href="/"><img src="img/logo.svg" alt="HeaderMobileLogo"></a>
+                    <button class="header__mobile-close"><img src="img/close.png" alt="HeaderMobileClose"></button>
+                </div>
+                <ul class="header__menu">
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="tel: +7(999) 999-99-99" class="header__mobile-phone">+7(999) 999-99-99</a>
+                <div class="header__info-soz header__mobile-soz">
+                    <a href="#" class="header__soz-item"><img src="img/vk.svg" alt="HeaderSozItem"></a>
+                    <a href="#" class="header__soz-item"><img src="img/tg.svg" alt="HeaderSozItem"></a>
+                    <a href="#" class="header__soz-item"><img src="img/wt.svg" alt="HeaderSozItem"></a>
+                </div>
+            </nav>
+            <div class="header__info">
+                <div class="header__info-soz">
+                    <a href="#" class="header__soz-item"><img src="img/vk.svg" alt="HeaderSozItem"></a>
+                    <a href="#" class="header__soz-item"><img src="img/tg.svg" alt="HeaderSozItem"></a>
+                    <a href="#" class="header__soz-item"><img src="img/wt.svg" alt="HeaderSozItem"></a>
+                </div>
+                <button class="header__info-button modal__button">Оставить заявку</button>
+            </div>
+            <button class="header__mobile-burger"><img src="img/burger.png" alt="HeaderBurger"></button>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="main__slider">
+                <div class="main__slider-item" style="background-image: url('img/main__bg.jpeg');">
+                    <div class="main__item-bg">
+                        <p class="main__item-descript" data-aos="fade-down">Семейный ресторан </p>
+                        <h1 class="main__item-title" data-aos="fade-down">Sajeewa dream</h1>
+                    </div>
+                </div>
+                <div class="main__slider-item" style="background-image: url('img/main__bg.jpeg');">
+                    <div class="main__item-bg">
+                        <p class="main__item-descript" data-aos="fade-down">Семейный ресторан </p>
+                        <h1 class="main__item-title" data-aos="fade-down">Sajeewa dream</h1>
+                    </div>
+                </div>
+                <div class="main__slider-item" style="background-image: url('img/main__bg.jpeg');">
+                    <div class="main__item-bg">
+                        <p class="main__item-descript" data-aos="fade-down">Семейный ресторан </p>
+                        <h1 class="main__item-title" data-aos="fade-down">Sajeewa dream</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__bg-1" data-aos="fade-in"><img src="img/bg-1.png" alt="AboutBg"></div>
+            <div class="about__bg-2" data-aos="fade-in"><img src="img/bg-2.png" alt="AboutBg"></div>
+            <div class="about__spec" data-aos="fade-in"><img src="img/spec.png" alt="AboutSpec"></div>
+            <div class="about__list" data-aos="fade-in"><img src="img/list.png" alt="AboutList"></div>
+            <div class="container">
+                <h2 class="section__title about__title" data-aos="fade-down">Добро пожаловать!</h2>
+                <p class="about__descript" data-aos="fade-down">Ресторан Sajeewa Dream - это уютное заведение, где каждый гость может насладиться изысканной кухней и приятной атмосферой. Мы гордимся тем, что предлагаем своим клиентам только лучшие блюда из различных кухонь мира.</p>
+                <div class="about__slider">
+                    <div class="about__item"><img src="img/about-1.jpeg" alt="AboutImg"></div>
+                    <div class="about__item"><img src="img/about-2.jpeg" alt="AboutImg"></div>
+                    <div class="about__item"><img src="img/about-3.jpeg" alt="AboutImg"></div>
+                    <div class="about__item"><img src="img/about-1.jpeg" alt="AboutImg"></div>
+                    <div class="about__item"><img src="img/about-2.jpeg" alt="AboutImg"></div>
+                    <div class="about__item"><img src="img/about-3.jpeg" alt="AboutImg"></div>
+                    <div class="about__item"><img src="img/about-1.jpeg" alt="AboutImg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="container">
+                <h2 class="section__title menu__title" data-aos="fade-down">Меню нашего ресторана</h2>
+                <div class="menu__tabs">
+                    <button class="menu__tabs-item menu__tabs-item-active" data-menu="1" data-aos="fade-up" data-aos-delay="50">Горячее</button>
+                    <button class="menu__tabs-item" data-menu="2" data-aos="fade-up" data-aos-delay="100">Закуски</button>
+                    <button class="menu__tabs-item" data-menu="3" data-aos="fade-up" data-aos-delay="150">Супы</button>
+                    <button class="menu__tabs-item" data-menu="4" data-aos="fade-up" data-aos-delay="200">Салаты</button>
+                    <button class="menu__tabs-item" data-menu="5" data-aos="fade-up" data-aos-delay="250">Напитки</button>
+                </div>
+                <div class="menu__main">
+                    <div class="menu__block menu__block-active" id="menu__block-1">
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__block" id="menu__block-2">
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__block" id="menu__block-3">
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__block" id="menu__block-4">
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__block" id="menu__block-5">
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="menu__item" data-aos="fade-in">
+                            <div class="menu__item-img"><img src="img/menu-item.jpeg" alt="MenuItem"></div>
+                            <div class="menu__item-info">
+                                <h3 class="menu__item-title">Куриная грудка на гриле с картофелем</h3>
+                                <p class="menu__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                                <h4 class="menu__item-price">990 руб.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why" style="background-image: url('img/why__bg.jpeg');">
+            <div class="why__bg" >
+                <h2 class="section__title why__title" data-aos="fade-down">Почему именно мы?</h2>
+                <div class="container">
+                    <div class="why__item" data-aos="fade-down" data-aos-delay="50">
+                        <div class="why__item-icon"><img src="img/why-1.svg" alt="WhyItemIcon"></div>
+                        <h3 class="why__item-title">Уникальные блюда</h3>
+                        <p class="why__item-descript">Нежнейшее мясо курицы, и хрустящий картофель с соусом</p>
+                    </div>
+                    <div class="why__item" data-aos="fade-down" data-aos-delay="100">
+                        <div class="why__item-icon"><img src="img/why-2.svg" alt="WhyItemIcon"></div>
+                        <h3 class="why__item-title">Большой опыт</h3>
+                        <p class="why__item-descript">Наши повара имеют большой опыт в профессиональной кухне</p>
+                    </div>
+                    <div class="why__item" data-aos="fade-down" data-aos-delay="150">
+                        <div class="why__item-icon"><img src="img/why-3.svg" alt="WhyItemIcon"></div>
+                        <h3 class="why__item-title">Довольные клиенты</h3>
+                        <p class="why__item-descript">Более 1 000+ довольных клиентов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="container">
+                <h2 class="section__title events__title" data-aos="fade-down">Мероприятия</h2>
+                <div class="events__block">
+                    <div class="events__list">
+                        <div class="events__item" data-aos="fade-in">
+                            <div class="events__item-img"><img src="img/ev-1.jpeg" alt="EventsImg"></div>
+                            <div class="events__item-info">
+                                <h3 class="events__item-title">Мультиинструменталист - Вадосий Ключевой!</h3>
+                            </div>
+                        </div>
+                        <div class="events__item" data-aos="fade-in">
+                            <div class="events__item-img"><img src="img/ev-1.jpeg" alt="EventsImg"></div>
+                            <div class="events__item-info">
+                                <h3 class="events__item-title">Немафия, лига бэнегров</h3>
+                            </div>
+                        </div>
+                        <div class="events__item" data-aos="fade-in">
+                            <div class="events__item-img"><img src="img/ev-1.jpeg" alt="EventsImg"></div>
+                            <div class="events__item-info">
+                                <h3 class="events__item-title">Музыкальный вечер</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="contacts__tomato"><img src="img/tomato.png" alt="Tomato"></div>
+            <h2 class="section__title contacts__title" data-aos="fade-down">Наши контакты</h2>
+            <div class="contacts__block">
+                <div class="container">
+                    <div class="contacts__info">
+                        <div class="contacts__info-item" data-aos="fade-right" data-aos-delay="50">
+                            <h3 class="contacts__info-title">Телефон</h3>
+                            <p class="contacts__info-descript">+7(999) 999-99-99</p>
+                        </div>
+                        <div class="contacts__info-item" data-aos="fade-right" data-aos-delay="100">
+                            <h3 class="contacts__info-title">Адрес</h3>
+                            <p class="contacts__info-descript">Лермонтовский проспект, 30, Санкт-Петербург</p>
+                        </div>
+                        <div class="contacts__info-item" data-aos="fade-right" data-aos-delay="150">
+                            <h3 class="contacts__info-title">E-mail</h3>
+                            <p class="contacts__info-descript">info@mail.ru</p>
+                        </div>
+                        <div class="contacts__info-item" data-aos="fade-right" data-aos-delay="200">
+                            <h3 class="contacts__info-title">Соц сети</h3>
+                            <div class="contacts__info-soz">
+                                <a class="contacts__soz-item" href="#"><img src="img/vk-gray.svg" alt="ContactsSozIcon"></a>
+                                <a class="contacts__soz-item" href="#"><img src="img/tg-gray.svg" alt="ContactsSozIcon"></a>
+                                <a class="contacts__soz-item" href="#"><img src="img/2gis.svg" alt="ContactsSozIcon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__form">
+                        <h3 class="contacts__form-title">Забронировать столик</h3>
+                        <form action="">
+                            <div class="contacts__form-item">
+                                <p class="contacts__form-descript">Ваше имя</p>
+                                <input type="text" class="contacts__form-input" placeholder="Александр">
+                            </div>
+                            <div class="contacts__form-item">
+                                <p class="contacts__form-descript">Ваш номер телефона</p>
+                                <input type="text" class="contacts__form-input" placeholder="+7(999) 999-99-99">
+                            </div>
+                            <input type="submit" value="Отправить" class="contacts__form-submit">
+                        </form>
+                        <p class="contacts__form-prava">Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+                    </div>
+                </div>
+            </div>
+           
+
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__item">
+                    <a href="/" class="footer__logo"><img src="img/logo.svg" alt="FooterLogo"></a>
+                    <p class="footer__logo-descript">Ресторан и культурный центр "Саджива дрим"</p>
+                    <div class="footer__soz">
+                        <a href="#" class="footer__soz-item"><img src="img/vk-footer.svg" alt="FooterSozIcon"></a>
+                        <a href="#" class="footer__soz-item"><img src="img/tg-footer.svg" alt="FooterSozIcon"></a>
+                        <a href="#" class="footer__soz-item"><img src="img/2gis-footer.svg" alt="FooterSozIcon"></a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__item-title">Сайт</h3>
+                    <ul class="footer__menu">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Преимущества</a></li>
+                        <li><a href="#">Меню</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__item-title">Контакты</h3>
+                    <div class="footer__contacts-item">
+                        <div class="footer__contacts-icon"><img src="img/loc.svg" alt="FooterContactsIcon"></div>
+                        <p class="footer__contacts-title">Лермонтовский проспект, 30, Санкт-Петербург</p>
+                    </div>
+                    <div class="footer__contacts-item">
+                        <div class="footer__contacts-icon"><img src="img/mail.svg" alt="FooterContactsIcon"></div>
+                        <p class="footer__contacts-title">info@mail.ru</p>
+                    </div>
+                    <div class="footer__contacts-item">
+                        <div class="footer__contacts-icon"><img src="img/phone.svg" alt="FooterContactsIcon"></div>
+                        <p class="footer__contacts-title">+7(999) 999-99-99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__prava">@Sajeewa dream 2024</div>
+        </div>
+    </footer>
+    <div class="modal__bg">
+        <div class="modal__window">
+            <button class="modal__window-close"><img src="img/close.png" alt="CloseButton"></button>
+            <h3 class="modal__window-title">Забронировать столик</h3>
+            <form action="">
+                <div class="modal__window-item">
+                    <p class="modal__window-descript">Ваше имя</p>
+                    <input type="text" class="modal__window-input" placeholder="Андрей">
+                </div>
+                <div class="modal__window-item">
+                    <p class="modal__window-descript">Ваш номер телефона</p>
+                    <input type="text" class="modal__window-input" placeholder="+7(999) 999-99-99">
+                </div>
+                <input type="submit" value="Оставить заявку" class="modal__window-submit">
+            </form>
+            <p class="modal__window-prava">Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

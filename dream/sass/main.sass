@@ -4,10 +4,15 @@
     padding: 0 
     margin: 0
     box-sizing: border-box
-    font-family: 'Gilroy-Medium'
+    font-family: 'Mont-Regular'
+    font-weight: 400
+    color: $dark
     
 body
     position: relative
+    max-width: 100%
+    overflow-x: hidden
+html
     max-width: 100%
     overflow-x: hidden
 img
@@ -18,10 +23,294 @@ a
     color: inherit
     display: block
     width: fit-content
+    cursor: pointer
 button
     background: 0 none
     border: 0 none
     outline: 0 none
     font-family: inherit
+    cursor: pointer
 li
     list-style: none
+section
+    margin-bottom: 100px
+.section__title
+    font-family: 'AlegreyaSC-Regular'
+    font-size: 40px
+    color: $black
+.container
+    max-width: $container
+    width: 100%
+    margin: 0 auto
+    padding: 0px 10px
+header
+    padding: 6px 0px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__logo
+        width: 147px
+    &__menu
+        display: flex
+        align-items: center
+        gap: 54px
+        li
+            font-size: 15px
+            font-weight: 600
+            font-family: 'Mont-SemiBold'
+            position: relative
+            &::before 
+                content: ""
+                position: absolute
+                bottom: -2px
+                width: 0px
+                height: 1px
+                background: $dark
+                transition: .3s
+            &:hover 
+                &::before 
+                    width: 100%
+    &__info
+        display: flex
+        align-items: center
+        gap: 20px
+        &-soz 
+            display: flex
+            align-items: center
+            gap: 15px
+        &-button 
+            padding: 20px 52px
+            background: $red
+            color: $white
+            font-size: 12px
+            font-family: 'Mont-Bold'
+            border-radius: 5px
+            transition: .3s
+            border: 1px solid $red
+            &:hover 
+                background: $white
+                color: $red
+    &__mobile 
+        &-header, &-phone, &-soz, &-burger
+            display: none
+footer
+    background: $black
+    padding: 20px 0px
+    margin-top: 176px
+.footer
+    &__block
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__logo
+        width: 196px
+        margin-bottom: 5px
+        &-descript
+            max-width: 222px
+            color: $white
+            font-size: 13px
+            font-family: 'Mont-SemiBold'
+    &__item
+        &:nth-child(2), &:nth-child(3)
+            padding-top: 30px
+        &:nth-child(2)
+            max-width: 336px
+            width: 100%
+        &:nth-child(3)
+            max-width: 251px
+            width: 100%
+        &-title 
+            text-transform: uppercase
+            color: $white
+            margin-bottom: 14px
+            font-size: 17px
+            font-family: 'Mont-Bold'
+    &__menu
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 6px 0px
+        li
+            font-size: 14px
+            color: $white
+            font-family: 'Mont-SemiBold'
+    &__contacts
+        &-item 
+            display: flex
+            align-items: center
+            gap: 14px
+            margin-bottom: 15px
+        &-icon 
+            width: 21px
+            min-width: 21px
+        &-title 
+            font-size: 14px
+            color: $white
+    &__prava
+        text-align: center
+        font-size: 14px
+        color: $white
+        margin-top: 20px
+    &__soz
+        display: flex
+        gap: 10px
+        margin-top: 13px
+        &-item
+            width: 40px
+
+.modal
+    &__bg
+        display: none
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100dvh
+        z-index: 3
+        background: rgba(0, 0, 0, 0.4)
+        align-items: center
+        justify-content: center
+        opacity: 0
+        transition: .3s
+        &-active 
+            opacity: 1
+    &__window
+        max-width: 550px
+        background: $white
+        padding: 45px 55px
+        width: 100%
+        box-shadow: 0px 6px 13px 0px rgba(207, 207, 207, 0.1),0px 23px 23px 0px rgba(207, 207, 207, 0.09),0px 51px 31px 0px rgba(207, 207, 207, 0.05),0px 91px 36px 0px rgba(207, 207, 207, 0.01),0px 143px 40px 0px rgba(207, 207, 207, 0)
+        display: none
+        opacity: 0
+        transition: .3s
+        position: relative
+        &-close 
+            position: absolute
+            top: -35px
+            right: -35px
+            width: 70px
+            height: 70px
+
+        &-active 
+            opacity: 1
+        &-title 
+            text-transform: uppercase
+            font-size: 25px
+            color: $dark
+            text-align: center
+            font-family: 'Mont-SemiBold'
+        form
+            margin-top: 36px
+        &-descript
+            font-size: 13px
+            color: #909090
+            margin-bottom: 5px
+        &-item 
+            margin-bottom: 24px
+        &-input
+            width: 100%
+            border: 0 
+            outline: 0
+            cursor: text
+            background: #F7F7F7
+            padding: 27px 32px
+            font-size: 13px
+            color: $black
+        &-submit 
+            padding: 27px 0px
+            width: 100%
+            background: $red
+            color: $white 
+            border: 0 
+            outline: 0
+            cursor: pointer
+            border: 1px solid $red
+            transition: .3s
+            font-size: 12px
+            font-family: 'Mont-Bold'
+            &:hover 
+                background: $white
+                color: $red
+        &-prava
+            margin-top: 15px
+            text-align: center
+            color: $black
+            font-size: 12px
+            font-family: 'Mont-SemiBold'
+
+@media screen and (max-width: 1050px)
+    .header__info
+        display: none
+    .header
+        &__menu
+            flex-direction: column
+            align-items: flex-start
+            gap: 20px
+            li
+                font-size: 20px
+            &-block 
+                position: fixed
+                z-index: 2
+                top: 0
+                left: -110%
+                max-width: 550px
+                width: 100%
+                height: 100dvh
+                background: $white
+                padding: 10px 30px
+                transition: .5s
+                &-active 
+                    left: 0px
+        &__mobile 
+            &-header 
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 40px
+            &-phone
+                display: block
+                margin-top: 40px
+                font-size: 30px
+            &-soz
+                display: flex
+                margin-top: 10px
+            &-close 
+                width: 70px
+            &-burger 
+                display: block
+                width: 30px
+@media screen and (max-width: 900px)
+    .footer
+        &__block
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 20px
+        &__logo
+            &-descript
+                text-align: center
+        &__item
+            display: flex
+            flex-direction: column
+            align-items: center
+            &-title 
+                text-align: center
+        &__menu
+            display: flex
+            flex-direction: column
+            gap: 10px
+            align-items: center
+    .modal
+        &__window
+            padding: 15px 25px
+            &-close 
+                right: -20px
+                top: -60px
+@media screen and (max-width: 550px)
+    footer
+        margin-top: 50px
+    .section__title
+        font-size: 8vw
+    section
+        margin-bottom: 50px
