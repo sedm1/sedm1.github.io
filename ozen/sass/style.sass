@@ -1,10 +1,37 @@
 @import 'main'
+.youtube
+  background-position: center
+  background-repeat: no-repeat
+  position: relative
+  display: inline-block
+  overflow: hidden
+  transition: all 200ms ease-out
+  cursor: pointer
+
+  .play
+    background: url('../img/youtube-play-btn.png') no-repeat
+    background-position: 0 -50px
+    -webkit-background-size: 100% auto
+    background-size: 100% auto
+    position: absolute
+    height: 50px
+    width: 69px
+    transition: none
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+  &:hover .play
+    background-position: 0 0
 .main
     margin-top: -90px
     .container
         transform: translateY(90px)
     &__content
         width: 100%
+        border-radius: 0px 10px 10px 0px
+        overflow: hidden
 .about
     background-size: cover
     background-position: center center
@@ -67,6 +94,7 @@
         display: grid
         grid-template-columns: repeat(4, 1fr)
         gap: 27px 36px
+        margin-top: 60px
     &__item 
         border-radius: 25px
         box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.06),0px 30px 14px -22px rgba(0, 0, 0, 0.07)
@@ -133,10 +161,10 @@
         grid-template-columns: repeat(3, 1fr)
         gap: 7px
     &__item
-        border-radius: 10px
-        overflow: hidden
+        img
+            border-radius: 15px
 .service
-    margin-top: 10px
+    margin-top: 70px
     .container
         display: flex
         align-items: center
@@ -166,9 +194,9 @@
                 height: 3px
                 content: ""
     &__img
-        border-radius: 10px
-        overflow: hidden
         margin-bottom: 15px
+        img
+            border-radius: 10px
         &-block 
             max-width: 463px
             width: 100%
@@ -294,8 +322,8 @@
     margin-top: 100px
     &__block
         margin-top: 57px
-        display: grid
-        grid-template-columns: repeat(4, 1fr)
+        display: flex
+        flex-wrap: wrap
         gap: 30px 28px
         justify-content: center
     &__item
@@ -304,6 +332,8 @@
         align-items: center
         justify-content: center
         min-height: 159px
+        max-width: 264px
+        width: 100%
         &-img 
             max-height: 100%
             max-width: 100%

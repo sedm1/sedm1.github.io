@@ -369,6 +369,35 @@ footer .container {
   font-weight: 400;
 }
 
+.youtube {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+}
+.youtube .play {
+  background: url("../img/youtube-play-btn.png") no-repeat;
+  background-position: 0 -50px;
+  background-size: 100% auto;
+  position: absolute;
+  height: 50px;
+  width: 69px;
+  -webkit-transition: none;
+  transition: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.youtube:hover .play {
+  background-position: 0 0;
+}
+
 .main {
   margin-top: -90px;
 }
@@ -378,6 +407,8 @@ footer .container {
 }
 .main__content {
   width: 100%;
+  border-radius: 0px 10px 10px 0px;
+  overflow: hidden;
 }
 
 .about {
@@ -470,6 +501,7 @@ footer .container {
   -ms-grid-columns: 1fr 36px 1fr 36px 1fr 36px 1fr;
   grid-template-columns: repeat(4, 1fr);
   gap: 27px 36px;
+  margin-top: 60px;
 }
 .equipment__item {
   border-radius: 25px;
@@ -571,13 +603,12 @@ footer .container {
   grid-template-columns: repeat(3, 1fr);
   gap: 7px;
 }
-.production__item {
-  border-radius: 10px;
-  overflow: hidden;
+.production__item img {
+  border-radius: 15px;
 }
 
 .service {
-  margin-top: 10px;
+  margin-top: 70px;
 }
 .service .container {
   display: -webkit-box;
@@ -619,9 +650,10 @@ footer .container {
   content: "";
 }
 .service__img {
-  border-radius: 10px;
-  overflow: hidden;
   margin-bottom: 15px;
+}
+.service__img img {
+  border-radius: 10px;
 }
 .service__img-block {
   max-width: 463px;
@@ -798,10 +830,11 @@ footer .container {
 }
 .quality__block {
   margin-top: 57px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 28px 1fr 28px 1fr 28px 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px 28px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -819,6 +852,8 @@ footer .container {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 159px;
+  max-width: 264px;
+  width: 100%;
 }
 .quality__item-img {
   max-height: 100%;
