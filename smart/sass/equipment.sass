@@ -1,0 +1,166 @@
+@import 'main'
+.main
+    .container
+        border-radius: 37px
+        background: $blue
+    &__bg
+        background-size: 1306px 1234px
+        background-position: calc(100% + 150px) -114px
+        background-repeat: no-repeat
+        padding: 60px
+        padding-bottom: 0px
+        display: flex
+        justify-content: space-between
+        gap: 20px
+    &__img
+        max-width:434px
+        width: 100%
+    &__info
+        max-width: 880px
+    &__title
+        font-size: 50px
+        font-weight: 600
+        color: $white
+        text-transform: uppercase
+        line-height: 100%
+        margin-bottom: 30px
+    &__descript
+        margin-bottom: 20px
+        font-size: 20px
+        font-weight: 400
+        color: $white
+.equipment
+    &__links
+        display: flex
+        flex-wrap: wrap
+        gap: 14px
+        &-item 
+            padding: 20px 25px
+            white-space: nowrap
+            background: $blue
+            border-radius: 100px
+            font-size: 18px
+            font-weight: 500
+            flex: 1 1 auto
+            text-align: center
+            color: $white
+    &__main
+        &-item 
+            display: flex
+            align-items: center
+            gap: 20px
+            justify-content: space-between
+            margin-top: 80px
+        &-img 
+            max-width: 583px
+            width: 100%
+            background: $blue
+            border-radius: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                max-height: 100%
+                width: auto
+        &-info 
+            max-width: 1189px
+            width: 100%
+            border-radius: 20px
+            background: $blue
+            padding: 60px
+        .section__title
+            font-size: 50px
+            font-weight: 600
+            color: $white
+            max-width: 903px
+        &-table 
+            margin-top: 35px
+            display: flex
+            flex-direction: column
+            border-radius: 20px
+            border: 1px solid rgb(185, 185, 185)
+    &__table
+        &-header 
+            display: flex
+            justify-content: space-between
+            border-bottom: 1px solid rgb(185, 185, 185)
+            background: rgba(255, 255, 255, 0.1)
+            border-top-right-radius: 20px
+            border-top-left-radius: 20px
+            .equipment__table-item
+                font-weight: 600
+        &-item 
+            min-width: 173px
+            width: 173px
+            color: $white
+            font-size: 14px
+            font-weight: 400
+            border-right: 1px solid rgb(185, 185, 185)
+            padding: 17px 12px
+            display: flex
+            justify-content: center
+            justify-self: center
+            align-items: center
+            text-align: center
+            &:nth-child(1)
+                width: 100%
+            &:last-child
+                border-right: 0px
+        &-row 
+            display: flex
+            justify-content: space-between
+            border-bottom: 1px solid rgb(185, 185, 185)
+            &:last-child
+                border: 0px
+@import 'review'
+@media screen and ( max-width:  1500px)
+    .equipment
+        &__main
+            &-item 
+                flex-direction: column
+            &-info
+                max-width: 100%
+            &-scroll 
+                
+                overflow-x: scroll
+            &-table 
+                min-width: 1300px
+@media screen and ( max-width:  1200px)
+    .main
+        &__bg
+            flex-direction: column
+            align-items: center
+        &__info
+            max-width: none
+@media screen and ( max-width:  800px)
+    .equipment
+        &__links
+            &-item
+                white-space: normal
+                border-radius: 15px
+                font-size: 14px
+        &__main
+            &-info 
+                padding: 30px 20px
+            .section__title
+                font-size: 7vw
+            &-img 
+                img
+                    width: 100%
+@media screen and ( max-width:  550px)
+    .main
+        &__bg
+            padding: 30px 10px
+            padding-bottom: 0px
+        &__img
+            max-width: 257px
+        &__title
+            font-size: 10vw
+        &__descript
+            font-size: 4vw
+    .equipment
+        &__table
+            &-item 
+                width: 100%
+            &-item:nth-child(1)
+                width: 173px

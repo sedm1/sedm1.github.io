@@ -1,1 +1,264 @@
 @import 'main'
+.main
+    .container
+        border-radius: 37px
+        background: $blue
+    &__bg
+        background-size: 1306px 1234px
+        background-position: calc(100% + 150px) -114px
+        background-repeat: no-repeat
+        padding-top: 53px
+        padding-left: 60px
+        padding-right: 197px
+        display: flex
+        justify-content: space-between
+    &__info
+        max-width: 970px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: auto
+        padding-top: 37px
+        padding-bottom: 90px
+    &__img
+        max-width: 480px
+        width: 100%
+    &__title
+        color: $white
+        font-weight: 600
+        font-size: 90px
+        text-transform: uppercase
+        line-height: 100%
+        margin-bottom: 25px
+    &__button
+        padding: 14px 38px
+        background: $orange
+        color: $white
+        font-size: 18px
+        font-weight: 500
+        border-radius: 100px
+        border: 1px solid $orange
+        transition: .3s
+        &:hover 
+            color: $orange
+            background: $blue
+    &__descript
+        max-width: 834px
+        color: $white
+        font-size: 20px
+        font-weight: 400
+.advantages
+    &__block
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(540px, 1fr))
+        gap: 18px
+    &__item
+        background: $blue
+        border-radius: 30px
+        display: flex
+        align-items: center
+        gap: 35px
+        padding: 62px 0px
+        padding-right: 67px
+        &-arrow
+            min-width: 93px
+            width: 93px
+        &-title 
+            font-size: 22px
+            font-weight: 500
+            color: $white
+            text-transform: uppercase
+.why
+    &__block
+        margin-top: 65px
+        display: flex
+        align-items: center
+        gap: 22px
+    &__img
+        max-width: 889px
+        img
+            border-radius: 50px
+    &__info
+        max-width: 890px
+        display: flex
+        flex-direction: column
+        gap: 20px
+        &-item 
+            background: $blue
+            color: $white
+            font-size: 20px
+            font-weight: 400
+            padding: 42px 35px
+            border-radius: 40px
+            min-height: 179px
+            display: flex
+            justify-content: center
+            align-items: center
+@import 'review'
+.news
+    &__block
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr))
+        gap: 21px
+        margin-top: 65px
+    &__item
+        &-img
+            margin-bottom: 10px
+            img
+                border-radius: 40px
+        &-title 
+            font-size: 20px
+            font-weight: 400
+            margin-bottom: 12px
+        &-link 
+            font-size: 18px
+            font-weight: 500
+            color: $orange
+            position: relative
+            width: fit-content
+            &:hover 
+                &::before
+                    transform: translateX(10px)
+            &::before 
+                content: ""
+                position: absolute
+                right: -20px
+                top: 9px
+                border: 5px solid transparent
+                border-left: 6px solid $orange
+                transition: .3s
+.company
+    &__title
+        max-width: 978px
+    &__block
+        margin-top: 65px
+        background: $blue
+        border-radius: 50px
+    &__bg
+        overflow: hidden
+        padding: 80px 0px
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &__row
+        display: flex
+        flex-wrap: nowrap
+        gap: 20px
+        &:nth-child(1)
+            animation: scroll1 80s linear infinite
+        &:nth-child(2)
+            animation: scroll2 80s linear infinite            
+            
+    &__item
+        width: 326px
+        min-width: 326px
+        max-width: 326px
+        background: $white
+        border-radius: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 165px
+        img
+            max-width: 203px
+@keyframes scroll1 
+  0% 
+    -webkit-transform: translateX(0px)
+            transform: translateX(0px)
+  
+  100% 
+    -webkit-transform: translateX(calc(-100% - 20px))
+            transform: translateX(calc(-100% - 20px))
+@keyframes scroll2
+  0% 
+        -webkit-transform: translateX(calc(-100% - 20px))
+        transform: calc(-100% - 20px)
+  
+  100% 
+        -webkit-transform: translateX(0px)
+        transform: translateX(0px)
+  
+@media screen and (max-width: 1500px)
+    .main
+        &__bg
+            flex-direction: column
+            align-items: center
+            text-align: center
+            padding: 50px 60px
+            background-position: center center
+            padding-bottom: 0px
+        &__info
+            align-items: center
+            gap: 20px
+    .why
+        &__block 
+            flex-direction: column
+@media screen and (max-width: 900px)
+    .main
+        &__title
+            font-size: 8.5vw
+        &__bg
+            background-size: 200%
+@media screen and (max-width: 550px)
+    .main
+        .container
+            border-radius: 25px
+            max-width: calc(100% - 20px)
+        &__bg
+            padding: 0px 10px
+            padding-top: 30px
+        &__img
+            max-width: 197px
+        &__descript
+            font-size: 14px
+        &__button
+            font-size: 12px
+    .advantages
+        &__block 
+            grid-template-columns: 1fr
+        &__item
+            flex-direction: column
+            padding: 0px 27px
+            padding-bottom: 35px
+            text-align: center
+            gap: 12px
+            &-arrow
+                transform: rotate(90deg)
+                margin-top: -3px
+            &-title 
+                font-size: 16px
+    .why
+        &__block
+            margin-top: 30px
+        &__info
+            gap: 15px
+            &-item 
+                text-align: center
+                font-size:16px
+                padding: 35px 20px
+                border-radius: 25px
+        &__img
+            img
+                border-radius: 25px
+    .news
+        &__block
+            grid-template-columns: 1fr
+        &__item
+            img
+                border-radius: 20px
+    .company
+        &__title
+            font-size: 7vw
+        &__item
+            min-width: 136px
+            width: 136px
+            max-width: 136px
+            height: 68px
+            border-radius: 10px
+            img
+                max-width: 110px
+        &__bg
+            padding: 30px 0px
+        &__block
+            border-radius: 20px
+            

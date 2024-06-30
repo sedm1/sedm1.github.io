@@ -1,0 +1,59 @@
+@import 'main'
+.main
+    margin-top: 100px
+    .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__title
+        font-size: 50px
+        font-weight: 600
+        text-transform: uppercase
+        line-height: 100%
+        margin-bottom: 27px
+    &__descript
+        font-size: 20px
+        font-weight: 400
+    &__date
+        margin-top: 20px
+        font-size: 16px
+        font-weight: 400
+        color: #605759
+    &__info
+        max-width: 780px
+    &__img
+        max-width: 889px
+    .slick-arrow
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 2
+        font-size: 0px
+        width: 40px
+        height: 40px
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+    .slick-prev
+        left: 18px
+    .slick-next
+        right: 18px
+        transform: translateY(-50%) rotate(180deg)
+@media screen and (max-width: 1500px)
+    .main
+        .container
+            display: flex
+            flex-direction: column
+            gap: 40px
+            align-items: center
+        &__info
+            max-width: 100%
+        &__img
+            max-width: 100%
+@media screen and (max-width: 550px)
+    .main
+        margin-top: 30px
+        &__title
+            font-size: 6vw
+        &__descript
+            font-size: 16px

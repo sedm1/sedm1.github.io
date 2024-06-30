@@ -1,0 +1,56 @@
+@import 'main'
+.main
+    .container
+        border-radius: 37px
+        background: $blue
+    &__bg
+        background-size: 1106px 816px
+        background-position: 10px -134px
+        background-repeat: no-repeat
+        padding: 60px
+        display: flex
+        justify-content: space-between
+    &__title 
+        font-size: 50px
+        font-weight: 600
+        color: $white
+        text-transform: uppercase
+        margin-bottom: 27px
+    &__descript
+        font-size: 20px
+        font-weight: 400
+        color: $white
+    &__soz
+        display: flex
+        align-items: center
+        gap: 2px
+        margin-top: 40px
+        &-item 
+            width: 36px
+    &__map
+        max-width: 828px
+        width: 100%
+        border-radius: 50px
+        overflow: hidden
+@import 'review'
+@media screen and (max-width: 1500px)
+    .main
+        &__bg
+            flex-direction: column
+            align-items: center
+            gap: 40px
+            background-size: 100%
+            background-position: center center
+        &__info
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+@media screen and (max-width: 550px)
+    .main
+        &__bg
+            background-size: 200%
+            background-position: top center
+            padding: 30px 10px
+        .container
+            border-radius: 20px

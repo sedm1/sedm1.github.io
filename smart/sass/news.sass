@@ -1,0 +1,45 @@
+@import 'main'
+.news
+    margin-top: 100px
+    &__block
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr))
+        gap: 80px 21px
+        margin-top: 65px
+    &__item
+        &-img
+            margin-bottom: 10px
+            img
+                border-radius: 40px
+        &-title 
+            font-size: 20px
+            font-weight: 400
+            margin-bottom: 12px
+        &-link 
+            font-size: 18px
+            font-weight: 500
+            color: $orange
+            position: relative
+            width: fit-content
+            &:hover 
+                &::before
+                    transform: translateX(10px)
+            &::before 
+                content: ""
+                position: absolute
+                right: -20px
+                top: 9px
+                border: 5px solid transparent
+                border-left: 6px solid $orange
+                transition: .3s
+@import 'review'
+@media screen and (max-width: 550px)
+    .news
+        margin-top: 30px
+        &__block
+            grid-template-columns: 1fr
+            gap: 20px
+            margin-top: 30px
+        &__item
+            img
+                border-radius: 20px

@@ -8,11 +8,15 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background: #F1F1F1;
   position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -408,6 +412,9 @@ footer .container {
 }
 
 @media screen and (max-width: 1200px) {
+  .container {
+    padding: 0px 20px;
+  }
   .header__img {
     display: none;
   }
@@ -432,6 +439,9 @@ footer .container {
     padding: 60px 0px;
   }
   .main__content-logo {
+    display: none;
+  }
+  .section__title-line {
     display: none;
   }
 }
