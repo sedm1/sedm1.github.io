@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   background: #FBFBFB;
@@ -58,6 +63,7 @@ span {
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
+  padding: 0px 10px;
 }
 
 section {
@@ -354,10 +360,13 @@ footer .container {
 @media screen and (max-width: 500px) {
   footer .container {
     max-width: calc(100% - 20px);
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
   .footer__logo {
-    max-width: 84px;
+    max-width: 90px;
+  }
+  .footer__info-phone {
+    font-size: 16px;
   }
 }
 .main .container {
@@ -386,7 +395,7 @@ footer .container {
   max-width: 880px;
 }
 .main__title {
-  font-size: 50px;
+  font-size: 90px;
   font-weight: 600;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -425,9 +434,6 @@ footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -494,8 +500,8 @@ footer .container {
   font-weight: 600;
 }
 .equipment__table-item {
-  min-width: 173px;
-  width: 173px;
+  min-width: 155px;
+  width: 100%;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
@@ -703,6 +709,9 @@ footer .container {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .equipment__main-info {
     max-width: 100%;
@@ -729,6 +738,9 @@ footer .container {
   }
 }
 @media screen and (max-width: 800px) {
+  .main__title {
+    font-size: 10vw;
+  }
   .equipment__links-item {
     white-space: normal;
     border-radius: 15px;
@@ -745,6 +757,9 @@ footer .container {
   }
 }
 @media screen and (max-width: 550px) {
+  .main {
+    padding: 0px 10px;
+  }
   .main__bg {
     padding: 30px 10px;
     padding-bottom: 0px;

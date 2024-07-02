@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   background: #FBFBFB;
@@ -58,6 +63,7 @@ span {
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
+  padding: 0px 10px;
 }
 
 section {
@@ -354,10 +360,13 @@ footer .container {
 @media screen and (max-width: 500px) {
   footer .container {
     max-width: calc(100% - 20px);
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
   .footer__logo {
-    max-width: 84px;
+    max-width: 90px;
+  }
+  .footer__info-phone {
+    font-size: 16px;
   }
 }
 .main .container {
@@ -431,7 +440,7 @@ footer .container {
 .advantages__block {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 18px;
 }
 .advantages__item {
@@ -671,7 +680,7 @@ footer .container {
 .news__block {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 21px;
   margin-top: 65px;
 }
@@ -685,6 +694,7 @@ footer .container {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 .news__item-link {
   font-size: 18px;

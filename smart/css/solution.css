@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   background: #FBFBFB;
@@ -58,6 +63,7 @@ span {
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
+  padding: 0px 10px;
 }
 
 section {
@@ -354,10 +360,13 @@ footer .container {
 @media screen and (max-width: 500px) {
   footer .container {
     max-width: calc(100% - 20px);
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
   .footer__logo {
-    max-width: 84px;
+    max-width: 90px;
+  }
+  .footer__info-phone {
+    font-size: 16px;
   }
 }
 .main .container {
@@ -401,7 +410,7 @@ footer .container {
 .ob__block {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   gap: 20px;
 }
 .ob__item {
@@ -649,6 +658,9 @@ footer .container {
   }
 }
 @media screen and (max-width: 550px) {
+  .main {
+    padding: 0px 10px;
+  }
   .main__bg {
     padding: 30px 10px;
   }
@@ -665,7 +677,7 @@ footer .container {
     grid-template-columns: 1fr;
   }
   .ob__item {
-    padding: 30px 10px;
+    padding: 30px 20px;
     border-radius: 20px;
   }
   .ob__item-img {

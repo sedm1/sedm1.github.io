@@ -18,7 +18,7 @@
     &__info
         max-width: 880px
     &__title
-        font-size: 50px
+        font-size: 90px
         font-weight: 600
         color: $white
         text-transform: uppercase
@@ -47,7 +47,6 @@
     &__main
         &-item 
             display: flex
-            align-items: center
             gap: 20px
             justify-content: space-between
             margin-top: 80px
@@ -90,8 +89,8 @@
             .equipment__table-item
                 font-weight: 600
         &-item 
-            min-width: 173px
-            width: 173px
+            min-width: 155px
+            width: 100%
             color: $white
             font-size: 14px
             font-weight: 400
@@ -118,6 +117,7 @@
         &__main
             &-item 
                 flex-direction: column
+                align-items: center
             &-info
                 max-width: 100%
             &-scroll 
@@ -133,6 +133,9 @@
         &__info
             max-width: none
 @media screen and ( max-width:  800px)
+    .main
+        &__title
+            font-size: 10vw
     .equipment
         &__links
             &-item
@@ -149,6 +152,7 @@
                     width: 100%
 @media screen and ( max-width:  550px)
     .main
+        padding: 0px 10px
         &__bg
             padding: 30px 10px
             padding-bottom: 0px

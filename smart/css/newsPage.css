@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   background: #FBFBFB;
@@ -58,6 +63,7 @@ span {
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
+  padding: 0px 10px;
 }
 
 section {
@@ -354,10 +360,13 @@ footer .container {
 @media screen and (max-width: 500px) {
   footer .container {
     max-width: calc(100% - 20px);
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
   .footer__logo {
-    max-width: 84px;
+    max-width: 90px;
+  }
+  .footer__info-phone {
+    font-size: 16px;
   }
 }
 .main {
@@ -445,7 +454,7 @@ footer .container {
     margin-top: 30px;
   }
   .main__title {
-    font-size: 6vw;
+    font-size: 6.8vw;
   }
   .main__descript {
     font-size: 16px;
