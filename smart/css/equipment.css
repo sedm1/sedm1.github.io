@@ -395,7 +395,7 @@ footer .container {
   max-width: 880px;
 }
 .main__title {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 600;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -739,7 +739,7 @@ footer .container {
 }
 @media screen and (max-width: 800px) {
   .main__title {
-    font-size: 10vw;
+    font-size: 5.5vw;
   }
   .equipment__links-item {
     white-space: normal;
@@ -768,7 +768,7 @@ footer .container {
     max-width: 257px;
   }
   .main__title {
-    font-size: 10vw;
+    font-size: 6.2vw;
   }
   .main__descript {
     font-size: 4vw;
