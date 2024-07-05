@@ -1,0 +1,150 @@
+@import 'vars'
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Montserrat", sans-serif
+    font-optical-sizing: auto
+    color: $black
+body
+    position: relative
+img
+    width: 100%
+    height: auto
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    display: block
+    width: fit-content
+button
+    background: none
+    border: 0 none
+    outline: 0 none
+    cursor: pointer
+li
+    list-style: none
+input
+    border: 0 none
+    outline: 0 none
+    cursor: text
+input[type='submit']
+    cursor: pointer
+section
+    margin-bottom: 70px
+.section__title
+    font-size: 30px
+    font-weight: 700
+    text-align: center
+.container
+    max-width: $container
+    width: 100%
+    margin: 0 auto
+    padding: 0px 20px
+.button-1
+    font-size: 18px
+    font-weight: 600
+    color: $white
+    border-radius: 49px
+    background: $pink
+    transition: .3s
+    &:hover 
+        background: #F15B95
+    &:focus
+        background: #B51F59
+.button-2
+    font-size: 24px
+    font-weight: 600
+    color: $white
+    border-radius: 49px
+    border: 2px solid $white
+    transition: .3s
+    &:hover
+        background: $white
+        color: $blue
+    &:focus 
+        background: $blue
+        border-color: $blue
+        color: $white
+header
+    z-index: 2
+    background: $white
+    padding: 10px 0px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__logo
+        max-width: 140px
+        width: 100%
+    &__menu
+        &-block 
+            display: flex
+            align-items: center
+            gap: 30px
+        &-item 
+            font-size: 16px
+            font-weight: 500
+            position: relative
+        &-sub 
+            &::after
+                content: ""
+                background-position: center center
+                background-repeat: no-repeat
+                background-size: cover 
+                width: 10px
+                height: 5px
+                position: absolute
+                right: -15px
+                top: 8px
+            &:hover > .header__menu-submenu
+                display: block
+        &-submenu 
+            position: absolute
+            z-index: 1
+            background: $white
+            top: 20px
+            left: 0px
+            width: 250px
+            display: none
+            transition: .3s
+    &__info
+        display: flex
+        flex-direction: column
+        gap: 10px
+        &-item 
+            font-size: 20px
+            font-weight: 600
+            color: $pink
+footer
+    background: $black
+    padding-bottom: 70px
+.footer
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__info
+        display: flex
+        flex-direction: column
+        gap: 10px
+        &-item 
+            font-size: 20px
+            font-weight: 600
+            color: $pink
+    &__line
+        margin: 50px 0px
+        width: 100%
+        height: 1px
+        background: $white
+    &__list
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-item 
+            font-size: 16px
+            font-weight: 400
+            color: #7D7D7D
+        a
+            text-decoration: underline
