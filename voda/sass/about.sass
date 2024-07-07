@@ -27,3 +27,17 @@
             font-size: 20px
             font-weight: 400
             margin-bottom: 20px
+@media screen and (max-width: 900px)
+    .main
+        margin-top: 20px
+        &__block
+            flex-direction: column-reverse
+            margin-top: 20px
+@media screen and (max-width: 550px)
+    .breadcrumbs
+        display: none
+    .main
+        &__title
+            font-size: 30px
+        &__img
+            max-width: none

@@ -18,9 +18,9 @@
         font-size: 50px
         font-weight: 800
         color: $darkblue
-        max-width: 770px
+        max-width: 620px
     &__descript
-        max-width: 354px
+        max-width: 325px
         font-size: 30px
         font-weight: 600
         line-height: 37px
@@ -31,7 +31,7 @@
     &__block
         margin-top: 70px
         display: grid
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
         gap: 15px
     &__item
         position: relative
@@ -95,12 +95,13 @@
 .prem
     &__block
         display: grid
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr))
         gap: 60px
         margin-top: 70px
     &__item
         &-icon
             max-height: 169px
+            height: 100%
             width: 100%
             display: flex
             align-items: center
@@ -279,3 +280,114 @@
         border: 2px solid rgb(94, 94, 94)
         font-size: 20px
         font-weight: 400
+@media screen and (max-width: 1200px)
+    .him
+        &__img
+            display: none
+        &__block
+            flex-direction: column
+            align-items: center
+        &__info
+            max-width: 100%
+            &-item
+                text-align: center
+                align-items: center
+                display: flex
+                flex-direction: column
+                align-items: center !important
+        &__bg
+            display: none
+    .prir
+        padding: 40px 0px
+        &__bg
+            display: none
+        &__block
+            flex-direction: column
+        &__img
+            order: 1
+            min-width: 285px
+            width: 285px
+            height: 285px
+            border-radius: 100%
+            background: $white
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 40px
+            img
+                width: auto
+                max-height: 207px
+        &__info
+            order: 2
+            align-items: center
+            text-align: center !important
+            &-item 
+                display: flex
+                flex-direction: column
+                align-items: center !important
+@media screen and (max-width: 550px)
+    section
+        margin-bottom: 40px
+    .main
+        height: calc(100dvh - 71px)
+        &__bg
+            padding: 80px 0px
+        &__info
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__title
+            text-align: center
+            font-size: 8.2vw
+        &__descript
+            font-size: 5.7vw
+            text-align: center
+            margin: 0 auto
+            line-height: normal
+        &__link
+            text-align: center
+            margin-top: 30px
+            width: 100%
+        .container
+            justify-content: space-between
+    .ass
+        &__block
+            margin-top: 40px
+    .where
+        &__bg
+            padding: 40px 0px
+        &__info
+            padding: 30px
+            &-title
+                font-size: 20px
+                text-align: center
+            &-descript
+                font-size: 16px
+    .him
+        &__item
+            &-descript
+                font-size: 16px
+                text-align: left !important
+        &__button
+            display: none
+    .prir
+        &__info
+            &-descript
+                font-size: 16px
+                text-align: left !important
+        &__button
+            margin-top: 20px
+            width: 100%
+            text-align: center
+            padding: 15px 0px
+            justify-content: center
+    .sert
+        padding: 30px 0px
+        padding-bottom: 70px
+        &__slider
+            margin-top: 30px
+    .form
+        padding: 30px 0px
+        &__button
+            width: 90%
