@@ -6,6 +6,11 @@
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   color: #232828;
+  scroll-margin: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
