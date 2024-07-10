@@ -15,12 +15,7 @@ $(function(){
             {
                 breakpoint: 550,
                 settings: {
-                  slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 400,
-                settings: {
+                  slidesToShow: 2,
                   infinite: false,
                   slidesToShow: 1,
                   centerMode: true,

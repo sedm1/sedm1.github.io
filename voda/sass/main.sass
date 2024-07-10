@@ -73,7 +73,7 @@ header
     width: 100%
     z-index: 2
     background: $white
-    padding: 10px 0px
+    padding: 0px 0px
     .container
         display: flex
         align-items: center
@@ -230,6 +230,8 @@ footer
             flex-direction: column
             gap: 20px
 @media screen and (max-width: 550px)
+    section
+        margin-bottom: 60px
     .section__title
         font-size: 20px
     .header
@@ -239,5 +241,6 @@ footer
             gap: 5px
             &-block 
                 gap: 30px
-            &-item
-                font-size: 16px
+        &__menu
+            &-item 
+                font-size: 18px

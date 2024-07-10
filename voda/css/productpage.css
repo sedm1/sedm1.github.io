@@ -107,7 +107,7 @@ header {
   width: 100%;
   z-index: 2;
   background: #FFFFFF;
-  padding: 10px 0px;
+  padding: 0px 0px;
 }
 header .container {
   display: -webkit-box;
@@ -371,6 +371,9 @@ footer {
   }
 }
 @media screen and (max-width: 550px) {
+  section {
+    margin-bottom: 60px;
+  }
   .section__title {
     font-size: 20px;
   }
@@ -383,7 +386,7 @@ footer {
   .header__info-block {
     gap: 30px;
   }
-  .header__info-item {
-    font-size: 16px;
+  .header__menu-item {
+    font-size: 18px;
   }
 }
