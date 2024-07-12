@@ -1,4 +1,5 @@
 $(function(){
+  let width = $(window).width()
     $('.sert__slider').slick({
         infinite: true,
         slidesToShow: 4,
@@ -24,6 +25,15 @@ $(function(){
             },
         ]
     })
+    if (width <= 700){
+      $('.e__block').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false
+      })
+    }
     $('.header__button').click(() => {
         $('.header__menu').addClass('header__menu-active')
     })
@@ -37,5 +47,27 @@ $(function(){
 
       $('.main__item-block').removeClass('main__item-block-active')
       $('#main__block-'+id).addClass('main__item-block-active')
+    })
+
+
+    $(".form__button-modal").click(() => {
+      $('.modal__bg').css({'display': 'flex'})
+      setTimeout(() => {
+        $('.modal__bg').addClass('modal__bg-active')
+        $('.modal__window').css({'display': 'block'})
+        setTimeout(() => {
+          $('.modal__window').addClass('modal__window-active')
+        }, 150)
+      }, 150)
+    })
+    $('.modal__window-close').click(() => {
+      $('.modal__window').removeClass('modal__window-active')
+      setTimeout(() => {
+        $('.modal__window').css({'display': ''})
+        $('.modal__bg').removeClass('modal__bg-active')
+        setTimeout(() => {
+          $('.modal__bg').css({'display': ''})
+        }, 150)
+      }, 150)
     })
 })

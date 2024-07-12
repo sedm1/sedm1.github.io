@@ -1,0 +1,123 @@
+@import 'main'
+.main
+    .container
+        border-radius: 37px
+        background: $blue
+    &__bg
+        background-size: 1306px 1234px
+        background-position: calc(100% + 150px) -114px
+        background-repeat: no-repeat
+        padding: 60px
+        
+        display: flex
+        justify-content: space-between
+    &__img
+        max-width:844px
+        width: 100%
+    &__info
+        max-width: 723px
+    &__title
+        font-size: 50px
+        font-weight: 600
+        color: $white
+        text-transform: uppercase
+        line-height: 100%
+        margin-bottom: 30px
+    &__descript
+        margin-bottom: 20px
+        font-size: 20px
+        font-weight: 400
+        color: $white
+.mis
+    &__block
+        border-radius: 37px
+        background: $blue
+        padding: 60px 30px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 20px
+    &__info
+        max-width: 1039px
+        width: 100%
+        &-descript
+            font-size: 20px
+            font-weight: 400
+            color: $white
+    &__title
+        font-size: 40px
+        font-weight: 600
+        color: $white
+        text-transform: uppercase
+        margin-bottom: 20px
+    &__img
+        max-width: 314px
+        width: 100%
+.sotr
+    &__block
+        border-radius: 37px
+        background: $blue
+        padding: 60px 30px
+    &__title
+        font-size: 40px
+        font-weight: 600
+        color: $white
+        text-transform: uppercase
+        margin-bottom: 20px
+    &__prem
+        display: flex
+        gap: 40px
+        &-icon 
+            height: 149px
+            max-width: 149px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 20px
+        &-title 
+            font-size: 14px
+            font-weight: 400
+            color: $white
+            text-align: center
+@import 'review'
+@media screen and (max-width: 1500px)
+    .main__title
+        font-size: 65px
+@media screen and (max-width: 1400px)
+    .main
+        &__bg
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 30px 60px
+            background-position: center center
+            padding-bottom: 0px
+@media screen and (max-width: 1000px)
+    .mis__img
+        display: none
+    .sotr__prem
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr))
+        &-item 
+            display: flex
+            flex-direction: column
+            align-items: center
+@media screen and (max-width: 550px)
+    .main
+        padding: 0px 10px
+        &__bg
+            padding: 30px 10px
+        &__title
+            font-size: 9vw
+        &__descript
+            font-size: 14px
+    .mis
+        &__title
+            font-size: 9vw
+        &__info
+            &-descript
+                font-size: 16px
+    .sotr
+        &__title
+            font-size: 9vw

@@ -169,6 +169,66 @@ footer
             color: #7D7D7D
         a
             text-decoration: underline
+.modal
+    &__bg
+        display: none
+        align-items: center
+        justify-content: center
+        background: rgba(0, 0, 0, 0.4)
+        opacity: 0
+        transition: .3s
+        position: fixed
+        top: 0
+        left: 0
+        height: 100dvh
+        width: 100%
+        z-index: 3
+        &-active 
+            opacity: 1
+    &__window
+        max-width: 1010px
+        width: 100%
+        background: $white
+        position: relative
+        display: none 
+        opacity: 0
+        transition: .3s
+        &-active 
+            opacity: 1
+        &-close 
+            position: absolute
+            top: 50px
+            right: 50px
+            width: 28px
+    &__form.modal__window-active
+        display: flex !important
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 80px 0px
+    &__form
+        background-size: 100%
+        background-position: center center
+        background-repeat: no-repeat
+        form
+            display: flex
+            flex-direction: column
+            gap: 20px
+            margin-top: 50px
+            max-width: 441px
+            width: 100%
+            
+        &-input 
+            width: 100%
+            padding: 23px 35px
+            border: 2px solid rgb(94, 94, 94)
+            border-radius: 5px
+            font-size: 20px
+            font-weight: 400
+        &-submit 
+            padding: 15px 49px
+            width: fit-content
+            margin: 0 auto
 @media screen and (max-width: 1200px)
     .header
         &__button
@@ -239,11 +299,26 @@ footer
         font-size: 20px
     .header
         &__logo
-            max-width: 83px
+            max-width: 100px
         &__info
             gap: 5px
             &-block 
                 gap: 30px
+            &-item 
+                font-size: 16px
         &__menu
             &-item 
                 font-size: 18px
+    .modal
+        &__form
+            background-size: 200%
+            &-submit 
+                width: 100%
+                
+        &__form.modal__window-active
+            padding: 30px 20px
+        &__window
+            max-width: 90%
+            &-close 
+                top: 15px
+                right: 15px
