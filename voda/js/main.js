@@ -1,4 +1,25 @@
 $(function(){
+  $('.slider__slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ]
+})
   let width = $(window).width()
     $('.sert__slider').slick({
         infinite: true,

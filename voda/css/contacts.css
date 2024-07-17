@@ -149,6 +149,11 @@ header .container {
   font-size: 16px;
   font-weight: 500;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__menu-item:hover {
+  color: #D33D77;
 }
 .header__menu-sub::after {
   content: "";
@@ -170,10 +175,24 @@ header .container {
   background: #FFFFFF;
   top: 20px;
   left: 0px;
-  width: 250px;
+  width: 279px;
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.header__menu-submenu li {
+  width: 100%;
+}
+.header__menu-submenu a {
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+}
+.header__menu-submenu a:hover {
+  background: #F0F3F3;
 }
 .header__info {
   display: -webkit-box;
@@ -197,6 +216,7 @@ header .container {
 footer {
   background: #232828;
   padding-bottom: 70px;
+  padding-top: 20px;
 }
 
 .footer__menu {
