@@ -92,9 +92,8 @@ header
     &__button
         display: none
     &__logo
-        font-size: 40px
-        font-weight: 700
-        color: $white
+        max-width: 160px
+        width: 100%
     &__menu
         max-width: 815px
         width: 100%
@@ -165,7 +164,7 @@ header
             color: $black
     &__line
         max-width: 82px
-        background: $yellow
+        background: #FFE602
         height: 2px
         margin-bottom: 4px
     &__descript
@@ -390,6 +389,526 @@ header
             margin-top: 12px
             font-size: 30px
             font-weight: 400
+.p
+    &__block
+        display: flex
+        justify-content: space-between
+        gap: 24px
+    &__info
+        max-width: 856px
+        width: 100%
+    &__cost
+        max-width: 416px
+        width: 100%
+    &__item
+        margin-top: 15px
+        padding: 20px 34px
+        background: $white
+        border-radius: 5px
+        box-shadow: 0px 120px 120px 0px rgba(22, 34, 51, 0.02), 0px 64px 64px 0px rgba(22, 34, 51, 0.02), 0px 32px 32px 0px rgba(22, 34, 51, 0.02), 0px 24px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 4px 0px rgba(22, 34, 51, 0.02)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-item 
+            select 
+                max-width: 132px
+                width: 132px
+                padding: 16px 20px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                padding-right: 0px
+            &-subtitle 
+                font-size: 14px
+                font-weight: 500
+                margin-bottom: 3px
+            input 
+                width: 54px
+                height: 54px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                text-align: center
+        &-subtitle 
+            font-size: 16px
+            font-weight: 500
+            color: #3C3C3C
+        &-right 
+            display: flex
+            align-items: flex-end
+            gap: 30px
+        &-cost 
+            input 
+                padding: 19px 9px
+                border-radius: 10px
+                background: #F8F8F8
+                font-size: 14px
+                font-weight: 500
+                color: #3C3C3C
+                max-width: 100px
+.m
+    &__block
+        display: flex
+        justify-content: space-between
+        gap: 24px
+    &__info
+        max-width: 856px
+        width: 100%
+    &__cost
+        max-width: 416px
+        width: 100%
+        .m__item
+            height: calc(100% - 62px)
+    &__item
+        margin-top: 15px
+        padding: 20px 34px
+        background: $white
+        border-radius: 5px
+        box-shadow: 0px 120px 120px 0px rgba(22, 34, 51, 0.02), 0px 64px 64px 0px rgba(22, 34, 51, 0.02), 0px 32px 32px 0px rgba(22, 34, 51, 0.02), 0px 24px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 4px 0px rgba(22, 34, 51, 0.02)
+        &-row 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-top: 15px
+        &-title 
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+            color: #3C3C3C
+        &-subtitle 
+            font-size: 16px
+            font-weight: 500
+            color: #3C3C3C
+        &-right 
+            max-width: 203px
+            width: 100%
+            select, input 
+                width: 100%
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                font-size: 14px
+                font-weight: 500
+                color: #3C3C3C
+            input 
+                text-align: center
+                padding: 15px 0px
+            select 
+                padding: 15px 20px
+        &-cost 
+            input 
+                width: 100%
+                padding: 15px 0px
+                font-size: 14px
+                font-weight: 500
+                color: #3C3C3C
+                border-radius: 10px
+                background: #F8F8F8
+                text-align: center
+    
+.d
+    &__block
+        display: flex
+        justify-content: space-between
+        gap: 24px
+    &__info
+        max-width: 856px
+        width: 100%
+    &__cost
+        max-width: 416px
+        width: 100%
+        .m__item
+            height: calc(100% - 62px)
+    &__item
+        margin-top: 15px
+        padding: 20px 34px
+        background: $white
+        border-radius: 5px
+        box-shadow: 0px 120px 120px 0px rgba(22, 34, 51, 0.02), 0px 64px 64px 0px rgba(22, 34, 51, 0.02), 0px 32px 32px 0px rgba(22, 34, 51, 0.02), 0px 24px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 4px 0px rgba(22, 34, 51, 0.02)
+        &-row 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-top: 15px
+            &:first-child
+                margin-top: 0px
+        &-right
+            max-width: 201px
+            width: 100%
+        &-input 
+            &-block 
+                display: flex
+                align-items: center
+                justify-content: space-between
+                gap: 30px
+            input 
+                width: 100%
+                text-align: center
+                padding: 12px 0px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                padding-right: 0px
+        &-select 
+            select 
+                width: 100%
+                padding: 15px 20px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                padding-right: 0px
+        &-title 
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+            color: #3C3C3C
+        &-subtitle 
+            font-size: 16px
+            font-weight: 500
+            color: #3C3C3C
+        &-cost 
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            input 
+                width: 100%
+                padding: 15px 0px
+                font-size: 14px
+                font-weight: 500
+                color: #3C3C3C
+                border-radius: 10px
+                background: #F8F8F8
+                text-align: center
+    &__cost
+        max-width: 416px
+        width: 100%
+        &-title 
+            font-size: 14px
+            font-weight: 500
+            color: #3C3C3C
+            margin-bottom: 3px
+        .d__item
+            height: calc(100% - 62px)
+.pr
+    &__block
+        display: flex
+        justify-content: space-between
+        gap: 24px
+    &__info
+        max-width: 856px
+        width: 100%
+    &__cost
+        max-width: 416px
+        width: 100%
+    &__item
+        margin-top: 15px
+        padding: 20px 34px
+        background: $white
+        border-radius: 5px
+        box-shadow: 0px 120px 120px 0px rgba(22, 34, 51, 0.02), 0px 64px 64px 0px rgba(22, 34, 51, 0.02), 0px 32px 32px 0px rgba(22, 34, 51, 0.02), 0px 24px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 4px 0px rgba(22, 34, 51, 0.02)
+        &-row 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-top: 15px
+            &:first-child
+                margin-top: 0px
+        &-right
+            max-width: 201px
+            width: 100%
+        &-input 
+            &-block 
+                display: flex
+                align-items: center
+                justify-content: space-between
+                gap: 30px
+            input 
+                width: 100%
+                text-align: center
+                padding: 12px 20px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                padding-right: 0px
+        &-select 
+            select 
+                width: 100%
+                padding: 15px 20px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                padding-right: 0px
+        &-title 
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+            color: #3C3C3C
+        &-subtitle 
+            font-size: 16px
+            font-weight: 500
+            color: #3C3C3C
+        &-cost 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            input 
+                width: 100%
+                padding: 13px 0px
+                font-size: 14px
+                font-weight: 500
+                color: #3C3C3C
+                border-radius: 10px
+                background: #F8F8F8
+                text-align: center
+    &__cost
+        max-width: 416px
+        width: 100%
+        &-title 
+            font-size: 14px
+            font-weight: 500
+            color: #3C3C3C
+            margin-bottom: 3px
+        .pr__item
+            &-first
+                height: 446px
+.mont
+    &__block
+        display: flex
+        justify-content: space-between
+        gap: 24px
+    &__info
+        max-width: 856px
+        width: 100%
+    &__cost
+        max-width: 416px
+        width: 100%
+        .mont__item
+            height: calc(100% - 74px)
+    &__item
+        margin-top: 15px
+        padding: 20px 34px
+        background: $white
+        border-radius: 5px
+        box-shadow: 0px 120px 120px 0px rgba(22, 34, 51, 0.02), 0px 64px 64px 0px rgba(22, 34, 51, 0.02), 0px 32px 32px 0px rgba(22, 34, 51, 0.02), 0px 24px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 4px 0px rgba(22, 34, 51, 0.02)
+        &-row 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-top: 15px
+            &:first-child
+                margin-top: 0px
+        &-s 
+            font-size: 14px
+            font-weight: 500
+            color: #3C3C3C
+        &-input 
+            max-width: 88px
+            input 
+                width: 100%
+                text-align: center
+                padding: 12px 0px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+
+        &-select 
+            max-width: 202px
+            select 
+                width: 100%
+                padding: 15px 20px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                padding-right: 0px
+        &-item 
+            display: flex
+            align-items: center
+            gap: 4px
+        &-subtitle 
+            font-size: 16px
+            font-weight: 500
+            color: #3C3C3C
+        &-cost 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            input 
+                width: 100%
+                padding: 13px 0px
+                font-size: 14px
+                font-weight: 500
+                color: #3C3C3C
+                border-radius: 10px
+                background: #F8F8F8
+                text-align: center
+        &-right 
+            display: flex
+            gap: 13px
+    &__cost
+        max-width: 416px
+        width: 100%
+        &-title 
+            font-size: 14px
+            font-weight: 500
+            color: #3C3C3C
+            margin-bottom: 3px
+
+.s
+    &__block
+        display: flex
+        justify-content: space-between
+        gap: 24px
+    &__info
+        max-width: 856px
+        width: 100%
+    &__cost
+        max-width: 416px
+        width: 100%
+        .s__item
+            height: calc(50% - 38px)
+        input 
+            width: 100%
+            border-radius: 10px
+            background: #F8F8F8
+            text-align: center
+            padding: 16px 0px
+            font-size: 14px
+            font-weight: 500
+            color: #3C3C3C
+    &__item
+        margin-top: 15px
+        padding: 20px 34px
+        background: $white
+        border-radius: 5px
+        box-shadow: 0px 120px 120px 0px rgba(22, 34, 51, 0.02), 0px 64px 64px 0px rgba(22, 34, 51, 0.02), 0px 32px 32px 0px rgba(22, 34, 51, 0.02), 0px 24px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 4px 0px rgba(22, 34, 51, 0.02)
+        &-row 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-top: 15px
+            &:first-child
+                margin-top: 0px
+        &-subtitle 
+            font-size: 16px
+            font-weight: 500
+            color: #3C3C3C
+        &-right 
+            max-width: 350px
+            width: 100%
+            display: flex
+            align-items: flex-end
+            justify-content: space-between
+        &-select 
+            max-width: 202px
+            select 
+                width: 100%
+                padding: 15px 20px
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                padding-right: 0px
+        &-comp 
+            display: flex
+            flex-direction: column
+            input 
+                border-radius: 10px
+                border: 1px solid #E1E1E1
+                font-size: 14px 
+                font-weight: 500
+                color: #3C3C3C
+                padding: 12px 0px
+                width: 54px
+                text-align: center
+        &-c
+            font-size: 14px
+            font-weight: 500
+            color: #3C3C3C
+            gap: 3px
+.itog
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 24px 43px
+    border-radius: 5px
+    background: #3C3C3C
+    margin-top: 50px
+    &__title
+        font-size: 25px
+        font-weight: 600
+        color: $white
+    &__info
+        display: flex
+        align-items: center
+        gap: 16px
+    &__price
+        font-size: 20px
+        font-weight: 600
+        color: $white
+    &__button
+        padding: 25px 84px
+        background: $white
+        border-radius: 10px
+        color: #3C3C3C
+        font-size: 15px
+        font-weight: 600
+.in
+    display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.position
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    gap: 24px
+    margin-top: 35px
+    &__item
+        padding: 23px 34px
+        border-radius: 15px
+        box-shadow: 0px 120px 120px 0px rgba(22, 34, 51, 0.02), 0px 64px 64px 0px rgba(22, 34, 51, 0.02), 0px 32px 32px 0px rgba(22, 34, 51, 0.02), 0px 24px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 4px 0px rgba(22, 34, 51, 0.02)
+        background: $white
+        &-title 
+            text-align: center
+            font-size: 16px
+            font-weight: 500 
+            color: #3C3C3C
+            font-family: Gilroy
+            margin-bottom: 16px
+        &-footer 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-top: 20px
+        &-subtitle 
+            font-size: 13px
+            font-weight: 700
+            font-family: Gilroy
+        input 
+            width: 70px
+            height: 43px
+            border-radius: 11px 
+            background: $white
+            border: 1px solid #E1E1E1
+            color: $black
+            font-size: 14px
+            font-weight: 400
+            margin-top: 3px
+            padding-left: 5px
 .slider
     &__slider
         margin-top: 35px
@@ -576,7 +1095,7 @@ footer
             top: 0
             left: -110%
             transition: .5s
-            background: $white
+            background: $black
             height: 100dvh
             z-index: 3
             max-width: 550px
@@ -587,7 +1106,7 @@ footer
             flex-direction: column
             justify-content: space-between
             li 
-                color: $black
+                color: $white
                 font-size: 24px
             &-block 
                 flex-direction: column
@@ -604,10 +1123,10 @@ footer
                 display: block 
                 font-size: 30px
                 font-weight: 700
+                color: $white
             &-logo 
-                font-weight: 700
-                color: $black
-                font-size: 50px
+                max-width: 160px
+                width: 100%
 
         &__right
             display: flex
