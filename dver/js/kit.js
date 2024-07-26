@@ -322,7 +322,6 @@ var furn = 22427;
 }
 
 var stfu = stek+furn;
-console.log(stek, furn)
 
 var stfu2 = stfu*kompl;
 

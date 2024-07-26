@@ -132,6 +132,21 @@ header
 .main
     height: 100vh
     width: 100%
+    .slick-arrow
+        position: absolute
+        right: 72px
+        z-index: 2
+        font-size: 0px
+        border-radius: 84px
+        width: 84px
+        height: 84px
+        background-size: 100%
+        background-position: center center
+        background-repeat: no-repeat
+    .slick-next
+        bottom: 35vh
+    .slick-prev
+        bottom: 50vh
     &__bg
         width: 100%
         height: 100%
@@ -264,6 +279,7 @@ header
             background-repeat: no-repeat
             width: 18px
             height: 10px
+            z-index: 1
         .slick-next
             right: 0px
         .slick-prev
@@ -326,26 +342,42 @@ header
         flex-wrap: wrap
         gap: 24px
     &__item
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
         max-width: 300px
         width: 100%
-        padding: 19px 16px
-        padding-bottom: 76px
-        border-radius: 5px
-        background: $white
         box-shadow: 0px 120px 120px 0px rgba(22, 34, 51, 0.02), 0px 64px 64px 0px rgba(22, 34, 51, 0.02), 0px 32px 32px 0px rgba(22, 34, 51, 0.02), 0px 24px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 24px 0px rgba(22, 34, 51, 0.02), 0px 4px 4px 0px rgba(22, 34, 51, 0.02)
+        &-bg
+            width: 100%
+            height: 100%
+            padding: 19px 16px
+            padding-bottom: 76px
+            border-radius: 5px
+            background: $white
+            transition: .5s
+            &:hover 
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%)
         &-count 
             font-size: 50px
             font-weight: 800
             color: $yellow
+            transition: .5s
         &-title 
             font-size: 28px
             font-weight: 600
             margin-bottom: 12px
+            transition: .5s
         &-descript
             font-size: 15px
             font-weight: 500
             color: $gray
             line-height: 21px
+            transition: .5s
+        &:hover 
+            .prem__item
+                &-count, &-title, &-descript
+                    color: $white
     &__form
         max-width: 630px
         width: 100%
@@ -925,6 +957,7 @@ header
         background-repeat: no-repeat
         width: 18px
         height: 10px
+        z-index: 1
     .slick-next
         right: 0px
     .slick-prev
@@ -1056,6 +1089,7 @@ footer
         text-align: center
         font-size: 40px
         font-weight: 400
+        padding-left: 0px
     &__input
         padding: 12px 0px
         width: 100%
@@ -1083,6 +1117,16 @@ footer
             margin-top: 15px
             padding: 20px 0px
 @media screen and (max-width: 1100px)
+    .main
+        .slick-arrow
+            width: 56px
+            height: 56px
+            border-radius: 100%
+            right: 20px
+        .slick-prev
+            bottom: 106px
+        .slick-next
+            bottom: 30px
     section
         margin-bottom: 60px
     .section__title-bg
@@ -1168,6 +1212,52 @@ footer
             max-width: 100%
         &__map
             max-width: 100%
+    .p, .s
+        &__block
+            flex-direction: column
+        &__info, &__cost
+            max-width: 100%
+            width: 100%
+        &__info
+            .p__item
+                flex-direction: column
+                align-items: flex-start
+                gap: 14px
+                &-item 
+                    &:nth-child(1)
+                        width: 100%
+                    select 
+                        width: 100%
+                        max-width: 100%
+                    &-subtitle 
+                        font-size: 12px
+                        font-weight: 500
+                &-right
+                    flex-direction: row-reverse
+                    width: 100%
+        &__item
+            &-cost 
+                max-width: 40%
+                width: 100%
+                input 
+                    width: 100%
+                    max-width: 100%
+                    text-align: center
+    .m
+        &__block
+            flex-direction: column
+        &__info, &__cost
+            max-width: 100%
+            width: 100%
+    .d, .pr, .mont
+        &__block
+            flex-direction: column
+        &__info, &__cost
+            max-width: 100%
+            width: 100%
+    .pr__cost 
+        .pr__item-first
+            height: auto
 @media screen and (max-width: 750px)
     .footer
         &__menu
@@ -1188,7 +1278,7 @@ footer
         &__descript
             &-item 
                 line-height: normal
-                font-size: 3.5vw
+                font-size: 4vw
     .section__title-title
         font-size: 28px
     .napr
@@ -1198,8 +1288,9 @@ footer
     .about
         &__descript
             &-item 
-                font-size: 14px
+                font-size: 15px
                 line-height: 21px
+                text-align: justify
     .type
         &__block
             flex-direction: column
@@ -1211,12 +1302,98 @@ footer
             max-width: 48%
             width: 100%
             &-title 
-                font-size: 13px
+                font-size: 15px
             &-descript
-                font-size: 12px
+                font-size: 14px
+    .s
+        &__item
+            &-row 
+                flex-direction: column
+                align-items: flex-start
+                gap: 14px
+            &-right
+                max-width:100%
+    .itog
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+        padding: 30px 15px
+        &__button
+            max-width: 100%
+            width: 100%
+    .prem
+        &__form 
+            padding-bottom: 113px
+            background-position: calc(100% + 60px) 110%
+            background-size: 264px 235px
 @media screen and (max-width: 550px)
     .slider
         &__item
             margin: 0px 
         .slick-track
             margin: 0px
+    .position
+        grid-template-columns: repeat(2, 1fr)
+        gap: 20px
+        &__item
+            padding: 10px
+            border-radius: 8px
+            input 
+                width: 60px
+                height: 31px
+            &-subtitle 
+                font-size: 11px
+                font-weight: 700
+            &-footer
+                margin-top: 10px
+    .p,.m, .d, .pr, .mont, .s
+        &__item
+            padding: 28px 22px
+    .m
+        &__item
+            &-row 
+                flex-direction: column
+                align-items: flex-start
+                gap: 8px
+            &-subtitle 
+                font-size: 12px
+                font-weight: 500
+            &-right 
+                max-width: 100%
+                width: 100%
+                select 
+                    max-width: 100%
+                    width: 100%
+                input 
+                    text-align: left
+                    padding-left: 20px
+    .d, .pr, .mont
+        &__item
+            &-row 
+                flex-direction: column
+                align-items: flex-start
+                gap: 8px
+            &-subtitle 
+                font-size: 12px
+                font-weight: 500
+            &-right 
+                max-width: 100%
+                width: 100%
+                select 
+                    max-width: 100%
+                    width: 100%
+        &__cost 
+            &-item
+                max-width: 45%
+                width: 100%
+                input 
+                    width: 100%
+                    max-width: 100%
+                    text-align: center
+    .mont
+        &__item
+            &-right
+                flex-direction: column
+                align-items: flex-start
+            &-select 
+                max-width: 100%
