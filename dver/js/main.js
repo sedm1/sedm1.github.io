@@ -87,3 +87,43 @@ $(function(){
         }, 150)
     })
 })
+
+
+
+
+
+
+$('.slider__item').click((e) => {
+    let item = $(e.currentTarget)
+    let itemImgSrc = item.children('img').attr('src')
+    $('.modal__bg').css({'display': 'flex'})
+    setTimeout(() => {
+        $('.modal__bg').addClass('modal__bg-active')
+        $('.modal__photo').css({'display': 'flex'})
+        $('.modal__photo-img').attr('src', itemImgSrc)
+        setTimeout(() => {
+            $('.modal__photo').addClass('modal__photo-active')
+        }, 150)
+    }, 150)
+})
+
+$('.modal__photo-close').click(() => {
+    $('.modal__photo').removeClass('modal__photo-active')
+    setTimeout(() => {
+        $('.modal__photo').css({'display': ''})
+        $('.modal__bg').removeClass('modal__bg-active')
+        setTimeout(() => {
+            $('.modal__bg').css({'display': ''})
+        }, 150)
+    }, 150)
+})
+
+
+let header = $('header');
+ $(window).scroll(function() {
+   if($(window).scrollTop() > 200) {
+    header.addClass('header_fixed');
+   } else {
+    header.removeClass('header_fixed');
+   }
+ });
