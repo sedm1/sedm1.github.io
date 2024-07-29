@@ -127,3 +127,10 @@ let header = $('header');
     header.removeClass('header_fixed');
    }
  });
+
+let width = $(window).width()
+if (width <= 1100){
+    $('.header__menu-block li').click(() => {
+        $('.header__menu').removeClass('header__menu-active')
+    })
+}
