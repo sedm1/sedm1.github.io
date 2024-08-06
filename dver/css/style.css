@@ -1401,6 +1401,9 @@ header .container {
   margin: 0px 12px;
   cursor: pointer;
 }
+.slider__item img {
+  cursor: pointer;
+}
 .slider .slick-arrow {
   font-size: 0px;
   position: absolute;
