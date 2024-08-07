@@ -28,6 +28,7 @@
 body {
   background: #F8F8F8;
   position: relative;
+  background-repeat: repeat;
 }
 
 img {
@@ -574,7 +575,7 @@ header .container {
 .projects__item-img {
   max-height: 460px;
   height: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .projects__item-img img {
   height: 100%;
@@ -595,26 +596,10 @@ header .container {
   font-size: 24px;
   font-weight: 400;
 }
-.projects__item-button {
-  padding: 20px 40px;
-  border: 1px solid rgb(19, 19, 19);
-  border-radius: 10px;
-  opacity: 0.6;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  font-size: 14px;
-}
-.projects__item-button:hover {
-  opacity: 1;
-  background: #3464A4;
-  color: #fff;
-  border-color: #3464A4;
-}
 .projects__item-descript {
   max-width: 450px;
   font-size: 16px;
   font-weight: 400;
-  margin-top: -15px;
 }
 .projects__button {
   padding: 30px 80px;
@@ -899,7 +884,11 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+  }
+  .header__menu li {
+    font-size: 24px;
+    font-weight: 500;
   }
   .header__mobile {
     display: -webkit-box;
@@ -916,6 +905,7 @@ footer {
   }
   .header__mobile-item {
     margin-bottom: 40px;
+    text-align: center;
   }
   .header__mobile-subtitle {
     margin-bottom: 5px;
@@ -998,6 +988,14 @@ footer {
   }
   .eqiupment__tab-item {
     font-size: 12px;
+  }
+  .eqiupment__tab-item:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .eqiupment__tab-item:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .eqiupment__main-active {
     display: -webkit-box;
@@ -1123,11 +1121,23 @@ footer {
   }
   .footer__info-subtitle {
     font-size: 14px;
+    margin-bottom: 5px;
   }
   .footer__info-descript {
     font-size: 14px;
   }
   .footer__logo-img {
     margin-bottom: 10px;
+  }
+  .footer__comp-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__mess {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
   }
 }
