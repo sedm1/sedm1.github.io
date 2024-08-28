@@ -1,0 +1,23 @@
+<svg width="45.000000" height="45.000000" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip3_371">
+			<rect id="touragency_globe.svg" rx="-0.225000" width="44.549999" height="44.549999" transform="translate(0.225000 0.225000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip3_370">
+			<rect id="touragency_globe.svg fill" rx="-0.500000" width="44.000000" height="44.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip3_369">
+			<rect id="touragency_globe.svg" rx="-0.500000" width="44.000000" height="44.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip3_369)">
+		<g clip-path="url(#clip3_370)">
+			<g clip-path="url(#clip3_371)">
+				<path id="Vector" d="M22.36 4.81C22.25 4.81 21.76 4.81 21.73 4.81C12.2 5 4.49 12.75 4.37 22.3C4.37 22.42 4.37 22.82 4.38 22.95C4.6 32.4 12.27 40.04 21.73 40.23C21.8 40.23 21.87 40.24 21.94 40.24C21.96 40.24 21.97 40.23 21.99 40.23C22.02 40.23 22.05 40.24 22.08 40.24C31.85 40.24 39.8 32.29 39.8 22.52C39.8 12.84 32 4.96 22.36 4.81ZM38.44 21.94L31.93 21.94C31.82 15.27 29.72 9.64 26.62 6.8C33.26 8.72 38.18 14.75 38.44 21.94ZM21.41 6.19L21.41 21.94L13.29 21.94C13.45 13.52 16.98 6.7 21.41 6.19ZM21.41 23.29L21.41 38.85C17.02 38.35 13.5 31.63 13.3 23.29L21.41 23.29ZM22.76 38.81L22.76 23.29L30.58 23.29C30.38 31.44 27.01 38.05 22.76 38.81ZM22.76 21.94L22.76 6.23C27.05 7 30.43 13.71 30.58 21.94L22.76 21.94ZM17.12 6.93C14.09 9.81 12.06 15.38 11.94 21.94L5.73 21.94C5.98 14.9 10.69 8.98 17.12 6.93ZM5.74 23.29L11.95 23.29C12.1 29.78 14.12 35.26 17.12 38.11C10.75 36.08 6.06 30.25 5.74 23.29ZM26.62 38.24C29.69 35.43 31.78 29.88 31.93 23.29L38.43 23.29C38.1 30.41 33.2 36.34 26.62 38.24Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+			</g>
+		</g>
+	</g>
+</svg>
