@@ -1,0 +1,43 @@
+@import 'main'
+.breadcrumbs
+    background: #F0F3F3
+    padding: 13px 0px
+    .container
+        display: flex
+        gap: 30px
+    &__item
+        font-size: 14px
+        font-weight: 600
+        &:last-child
+            color: $pink
+.main
+    margin-top: 70px
+    &__block
+        display: flex
+        justify-content: space-between
+        gap: 70px
+        margin-top: 70px
+    &__img
+        max-width: 518px
+        width: 100%
+    &__info
+        max-width: 620px
+        width: 100%
+        &-descript
+            font-size: 20px
+            font-weight: 400
+            margin-bottom: 20px
+@media screen and (max-width: 900px)
+    .main
+        margin-top: 20px
+        &__block
+            flex-direction: column-reverse
+            margin-top: 20px
+@media screen and (max-width: 550px)
+    .breadcrumbs
+        display: none
+    .main
+        &__title
+            font-size: 30px
+        &__img
+            max-width: none

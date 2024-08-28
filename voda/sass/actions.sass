@@ -1,0 +1,25 @@
+@import 'main'
+.breadcrumbs
+    background: #F0F3F3
+    padding: 13px 0px
+    .container
+        display: flex
+        gap: 30px
+    &__item
+        font-size: 14px
+        font-weight: 600
+        &:last-child
+            color: $pink
+.main
+    margin-top: 50px
+    &__block
+        margin-top: 40px
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr))
+        gap: 30px
+    &__item
+        img
+            border-radius: 10px
+@media screen and (max-width: 700px)
+    .breadcrumbs
+        display: none

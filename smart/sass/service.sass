@@ -1,0 +1,68 @@
+@import 'main'
+.main
+    .container
+        border-radius: 37px
+        background: $blue
+    &__bg
+        background-size: 1306px 1234px
+        background-position: calc(100% + 150px) -114px
+        background-repeat: no-repeat
+        padding: 60px
+        padding-bottom: 100px
+        display: flex
+        justify-content: space-between
+        gap: 20px
+    &__info
+        max-width: 950px
+    &__title
+        font-size: 80px
+        font-weight: 600
+        color: $white
+        text-transform: uppercase
+        line-height: 100%
+        margin-bottom: 30px
+    &__descript
+        margin-bottom: 20px
+        font-size: 20px
+        font-weight: 400
+        color: $white
+.info
+    &__block
+        border-radius: 30px
+        background: $blue
+        padding: 30px
+    &__descript
+        font-weight: 400
+        font-size: 18px
+        margin-bottom: 20px
+        color: $white
+@import 'review'
+@media screen and (max-width: 1500px)
+    .main__title
+        font-size: 65px
+@media screen and ( max-width:  1200px)
+    .main
+        &__bg
+            flex-direction: column
+            align-items: center
+        &__info
+            max-width: none
+@media screen and ( max-width:  800px)
+    .main
+        &__title
+            font-size: 5.5vw
+@media screen and ( max-width:  550px)
+    .main
+        padding: 0px 10px
+        &__bg
+            padding: 30px 10px
+            padding-bottom: 0px
+        &__img
+            max-width: 257px
+        &__title
+            font-size: 6.2vw
+        &__descript
+            font-size: 4vw
+    .info
+        &__item
+            font-size: 14px

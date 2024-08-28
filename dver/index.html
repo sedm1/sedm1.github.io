@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about__slider .slick-prev{
+            background-image: url('img/arrow-right-about.svg');
+            transform: rotate(180deg);
+        }
+        .about__slider .slick-next{
+            background-image: url('img/arrow-right-about.svg');
+        }
+        .project__slider .slick-prev{
+            background-image: url('img/arrow-right-about.svg');
+            transform: rotate(180deg);
+        }
+        .project__slider .slick-next{
+            background-image: url('img/arrow-right-about.svg');
+        }
+        .slider__slider .slick-prev{
+            background-image: url('img/arrow-right-about.svg');
+            transform: rotate(180deg);
+        }
+        .slider__slider .slick-next{
+            background-image: url('img/arrow-right-about.svg');
+        }
+        .main .slick-prev{
+            background-image: url('img/main__arrow.svg');
+            transform: rotate(180deg);
+        }
+        .main .slick-next{
+            background-image: url('img/main__arrow.svg');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__logo"><img src="img/logo.svg" alt="HeaderLogo"></div>
+            <nav class="header__menu">
+                <div class="header__mobile-header">
+                    <div class="header__mobile-logo"><img src="img/logo.svg" alt="HeaderLogo"></div>
+                    <button class="header__menu-close"><img src="img/close.svg" alt="HeaderClose"></button>
+                </div>
+                
+                <ul class="header__menu-block">
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#project">Наши проекты</a></li>
+                    <li><a href="#why">Почему мы?</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#calc">Калькулятор</a></li>
+                </ul>
+                <div class="header__mobile-phone">+7 (499) 888-08-41</div>
+            </nav>
+            <div class="header__right">
+                <div class="header__info">
+                    <p class="header__info-recall">Заказать звонок</p>
+                    <a href="tel: +7 (499) 888-08-41" class="header__info-phone">+7 (499) 888-08-41</a>
+                </div>
+                <button class="header__button"><img src="img/burger.svg" alt="HeaderBurger"></button>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="main__slider">
+                <div class="main__slider-item" style="background-image: url('img/main__bg.jpg');">
+                    <div class="main__bg">
+                        <div class="container">
+                            <h1 class="main__title">Стальные перегородки в Санкт-Петербурге премиального качества </h1>
+                            <div class="main__info">
+                                <button class="main__button modal-form">Подобрать проект</button>
+                                <div class="main__descript">
+                                    <div class="main__line"></div>
+                                    <p class="main__descript-item">Идеальное сочетание изысканного дизайна и надежной защиты - стальные перегородки от лучших производителей в Санкт-Петербурге</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__slider-item" style="background-image: url('img/main__bg-2.jpg');">
+                    <div class="main__bg">
+                        <div class="container">
+                            <h1 class="main__title">Надежные окна в <br/>стиле лофт </h1>
+                            <div class="main__info">
+                                <button class="main__button modal-form">Подобрать проект</button>
+                                <div class="main__descript">
+                                    <hr class="main__line"></hr>
+                                    <p class="main__descript-item">Идеальное сочетание изысканного дизайна и надежной защиты - Окна в стиле лофт от лучших производителей в Санкт-Петербурге</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="napr">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">Наши направления</h2>
+                    <div class="section__title-bg">Наши направления</div>
+                </div>
+                <div class="napr__block">
+                    <div class="napr__block-slider">
+                        <div class="napr__item" style="background-image: url('img/napr-1.jpg');">
+                            <div class="napr__item-bg">
+                                <h3 class="napr__item-title">Лофт контструкции</h3>
+                                <div class="napr__item-descript">
+                                    <p class="napr__descript-item">Лофт перегородки</p>
+                                    <p class="napr__descript-item">Декоративные перегородки</p>
+                                    <p class="napr__descript-item">Двери в стиле лофт</p>
+                                    <p class="napr__descript-item">Ограждение в стиле лофт</p>
+                                    <p class="napr__descript-item">Окна в стиле лофт</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="napr__item" style="background-image: url('img/napr-2.jpg');">
+                            <div class="napr__item-bg">
+                                <h3 class="napr__item-title">Экстерьерное остекление</h3>
+                                <div class="napr__item-descript">
+                                    <p class="napr__descript-item">Входные группы</p>
+                                    <p class="napr__descript-item">Раздвижные системы</p>
+                                    <p class="napr__descript-item">Дверные системы</p>
+                                    <p class="napr__descript-item">Оконные системы</p>
+                                    <p class="napr__descript-item">Системы решения Vitrocsa</p>
+                                    <p class="napr__descript-item">Балконные ограждения</p>
+                                    <p class="napr__descript-item">Стеклянные козырки</p>
+                                    <p class="napr__descript-item">Зимние сады</p>
+                                    <p class="napr__descript-item">Светопрозрачные фасады</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="napr__item" style="background-image: url('img/napr-3.jpg');">
+                            <div class="napr__item-bg">
+                                <h3 class="napr__item-title">Интерьерное остекление</h3>
+                                <div class="napr__item-descript">
+                                    <p class="napr__descript-item">Лестницы для библиотек</p>
+                                    <p class="napr__descript-item">Стеклянные двери</p>
+                                    <p class="napr__descript-item">Облицовка стен</p>
+                                    <p class="napr__descript-item">Стеклянные перегородки</p>
+                                    <p class="napr__descript-item">Интерьерные ограждения</p>
+                                    <p class="napr__descript-item">Стеклянные полы</p>
+                                    <p class="napr__descript-item">Душевые ограждения</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">О нашей компании</h2>
+                    <div class="section__title-bg">О нашей компании</div>
+                </div>
+                <div class="about__block">
+                    <div class="about__descript">
+                        <p class="about__descript-item">Компания ARbellos оказывает целый спектр профессиональных услуг по облицовке, интерьерному и экстерьерному остеклению помещений и фасадов зданий. Мы специализируемся на изготовлении и установке металлоконструкций, перегородок для зонирования разных типов и являемся лидером на рынке светопрозрачных конструкций. Продукция компании Arbellos реализуется на всей территории Российской Федерации и отвечает самым высоким стандартам с точки зрения дизайна, комфорта, безопасности и энергоэффективности.</p>
+                        <p class="about__descript-item">Мы рады предложить комплексное остекление «под ключ», осуществляя проектирование, производство, монтаж и обслуживание конструкций с помощью собственных мощностей компании. Перегородка в комнате может стать полноценным стильным дизайнерским решением, преобразив пространство, сделав его удобным для жизни или работы.</p>
+                    </div>
+                    <div class="about__slider-block">
+                        <div class="about__slider">
+                            <div class="about__slider-item"><img src="img/about__img.jpg" alt="AboutImg"></div>
+                            <div class="about__slider-item"><img src="img/about__img.jpg" alt="AboutImg"></div>
+                            <div class="about__slider-item"><img src="img/about__img.jpg" alt="AboutImg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project" id="project">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">Реализованные проекты</h2>
+                    <div class="section__title-bg">реализованные проекты</div>
+                </div>
+                <div class="project__block">
+                    <div class="project__slider">
+                        <div class="project__item">
+                            <div class="project__item-header">
+                                <div class="project__item-count">01</div>
+                                <h3 class="project__item-title">Частная квартира в Санкт-Петербурге</h3>
+                            </div>
+                            <div class="project__item-img"><img src="img/project-1.jpg" alt="ProjectItemImg"></div>
+                            <p class="project__item-descript">Две перегородки с распашными дверями, соединяющими гостиную, коридор и кухню. Стильное решение для интерьера квартиры</p>
+                            <button class="project__item-button modal-form"><p>Выбрать похожий проект</p> <img src="img/project-arrow.svg" alt="ProjectitemArrow"></button>
+                        </div>
+                        <div class="project__item">
+                            <div class="project__item-header">
+                                <div class="project__item-count">02</div>
+                                <h3 class="project__item-title">Частная квартира в Санкт-Петербурге</h3>
+                            </div>
+                            <div class="project__item-img"><img src="img/project-2.jpg" alt="ProjectItemImg"></div>
+                            <p class="project__item-descript">Стальная перегородка с распашным механизмом, которая разделяет кухонное пространство и зону отдыха.</p>
+                            <button class="project__item-button modal-form"><p>Выбрать похожий проект</p> <img src="img/project-arrow.svg" alt="ProjectitemArrow"></button>
+                        </div>
+                        <div class="project__item">
+                            <div class="project__item-header">
+                                <div class="project__item-count">03</div>
+                                <h3 class="project__item-title">Частный офис в Санкт-Петербурге </h3>
+                            </div>
+                            <div class="project__item-img"><img src="img/project-3.jpg" alt="ProjectItemImg"></div>
+                            <p class="project__item-descript">Деревянные реечные перегородки с оригинальным способом размещения в интерьере. Потолочная часть, плавно перетекающая в элемент декора на стене – отличное дополнение к нестрогому офисному стилю.</p>
+                            <button class="project__item-button modal-form"><p>Выбрать похожий проект</p> <img src="img/project-arrow.svg" alt="ProjectitemArrow"></button>
+                        </div>
+                        <div class="project__item">
+                            <div class="project__item-header">
+                                <div class="project__item-count">04</div>
+                                <h3 class="project__item-title"></h3>
+                            </div>
+                            <div class="project__item-img"><img src="img/project-4.jpg" alt="ProjectItemImg"></div>
+                            <p class="project__item-descript">Стальная перегородка с раздвижным механизмом и затемненным остеклением. Элегантное решение для разделения гардеробной и спальни.</p>
+                            <button class="project__item-button modal-form"><p>Выбрать похожий проект</p> <img src="img/project-arrow.svg" alt="ProjectitemArrow"></button>
+                        </div>
+                        <div class="project__item">
+                            <div class="project__item-header">
+                                <div class="project__item-count">05</div>
+                                <h3 class="project__item-title">Частная квартира в Санкт-Петербурге</h3>
+                            </div>
+                            <div class="project__item-img"><img src="img/project-5.jpg" alt="ProjectItemImg"></div>
+                            <p class="project__item-descript">Стальные реечные перегородки как элемент дизайна интерьера.</p>
+                            <button class="project__item-button modal-form"><p>Выбрать похожий проект</p> <img src="img/project-arrow.svg" alt="ProjectitemArrow"></button>
+                        </div>
+                        <div class="project__item">
+                            <div class="project__item-header">
+                                <div class="project__item-count">06</div>
+                                <h3 class="project__item-title">Частный офис в Санкт-Петербурге </h3>
+                            </div>
+                            <div class="project__item-img"><img src="img/project-6.jpg" alt="ProjectItemImg"></div>
+                            <p class="project__item-descript">Стальные перегородки с распашным механизмом для офиса.</p>
+                            <button class="project__item-button modal-form"><p>Выбрать похожий проект</p> <img src="img/project-arrow.svg" alt="ProjectitemArrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prem" id="why">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">Преимущества перегородок</h2>
+                    <div class="section__title-bg">Преимущества перегородок</div>
+                </div>
+                <div class="prem__block">
+                    <div class="prem__item" style="background-image: url('img/bg-1.jpg');">
+                        <div class="prem__item-bg">
+                            <div class="prem__item-count">01</div>
+                            <h3 class="prem__item-title">Простота монтажа</h3>
+                            <p class="prem__item-descript">Возможность принятия решения об установке перегородки даже на финальном этапе ремонта</p>
+                        </div>
+                    </div>
+                    <div class="prem__item" style="background-image: url('img/bg-2.jpg');">
+                        <div class="prem__item-bg">
+                            <div class="prem__item-count">02</div>
+                            <h3 class="prem__item-title">Светопропускаемость</h3>
+                            <p class="prem__item-descript">Дают возможность экономить полезную площадь, позволяют обойтись без дополнительных источников света</p>
+                        </div>
+                        
+                    </div>
+                    <div class="prem__item" style="background-image: url('img/bg-3.jpg');">
+                        <div class="prem__item-bg">
+                            <div class="prem__item-count">03</div>
+                            <h3 class="prem__item-title">Надежность и долговечность</h3>
+                            <p class="prem__item-descript">Стальной профиль образует жесткую конструкцию и является долговечным, по сравнению с перегородками из алюминия</p>
+                        </div>
+                        
+                    </div>
+                    <div class="prem__item" style="background-image: url('img/bg-4.jpg');">
+                        <div class="prem__item-bg">
+                            <div class="prem__item-count">04</div>
+                            <h3 class="prem__item-title">Доставка в регионы</h3>
+                            <p class="prem__item-descript">В Санкт-Петербурге и Москве работает монтажная бригада. В регионы доставляем надежной транспортной компанией</p>
+                        </div>
+                        
+                    </div>
+                    <div class="prem__item" style="background-image: url('img/bg-5.jpg');">
+                        <div class="prem__item-bg">
+                            <div class="prem__item-count">05</div>
+                            <h3 class="prem__item-title">Собственное производство</h3>
+                            <p class="prem__item-descript">Производство находится в Санкт-Петербурге, что позволяет самостоятельно контролировать качество каждого заказа</p>
+                        </div>
+                        
+                    </div>
+                    <div class="prem__item" style="background-image: url('img/bg-6.jpg');">
+                        <div class="prem__item-bg">
+                            <div class="prem__item-count">06</div>
+                            <h3 class="prem__item-title">Шоурум</h3>
+                            <p class="prem__item-descript">Вы всегда можете ознакомиться с изделиями вживую в шоуруме компании</p>
+                        </div>
+                    </div>
+                    <div class="prem__form" style="background-image: url('img/prem__form.png');">
+                        <h3 class="prem__form-title">Оставьте заявку!</h3>
+                        <p class="prem__form-descript">Оставьте заявку, и дайте нам возможность порадовать вас своим профессионализмом и вниманием к деталям. </p>
+                        <button class="prem__form-button modal-form">Обратная связь</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="type">
+            <div class="container">
+                <div class="type__block">
+                    <div class="type__item">
+                        <div class="type__item-img"><img src="img/type__img.jpg" alt="TypeItemImg"></div>
+                        <h3 class="type__item-title">Slim</h3>
+                    </div>
+                    <div class="type__item">
+                        <div class="type__item-img"><img src="img/type__img.jpg" alt="TypeItemImg"></div>
+                        <h3 class="type__item-title">Classic</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="calc" id="calc">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">Калькулятор расчета стоимости дверей</h2>
+                    <div class="section__title-bg">Калькулятор расчета стоимости дверей</div>
+                </div>
+                <div class="position">
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 1</h3>
+                        <div class="position__item-img"><img src="img/pos-1.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol1" min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol2"  min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 2</h3>
+                        <div class="position__item-img"><img src="img/pos-2.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol3"  min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol4"  min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 3</h3>
+                        <div class="position__item-img"><img src="img/pos-3.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol5" min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol6" min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 4</h3>
+                        <div class="position__item-img"><img src="img/pos-4.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol7" min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol8" min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 5</h3>
+                        <div class="position__item-img"><img src="img/pos-5.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol9" min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol10" min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 6</h3>
+                        <div class="position__item-img"><img src="img/pos-6.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol11"  min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol12"  min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 7</h3>
+                        <div class="position__item-img"><img src="img/pos-7.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol13"  min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol14"  min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 8</h3>
+                        <div class="position__item-img"><img src="img/pos-8.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol15"  min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input value='1' type="number" id="kol16"  min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 9</h3>
+                        <div class="position__item-img"><img src="img/pos-9.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol17" min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol18" min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 10</h3>
+                        <div class="position__item-img"><img src="img/pos-10.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol19" min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol20" min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position__item">
+                        <h3 class="position__item-title">Позиция 11</h3>
+                        <div class="position__item-img"><img src="img/pos-11.png" alt="PossitionImg"></div>
+                        <div class="position__item-footer">
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Slimline</h4>
+                                <input type="number" id="kol21" min="0" onchange="kalk()">
+                            </div>
+                            <div class="position__item-item">
+                                <h4 class="position__item-subtitle">Classic</h4>
+                                <input type="number" id="kol22" min="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p">
+            <div class="container">
+                <div class="p__block">
+                    <div class="p__info">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Проектные работы</h2>
+                            <div class="section__title-bg">Проектные работы</div>
+                        </div>
+                        <div class="p__item">
+                            <h4 class="p__item-subtitle">Подготовка рабочих чертежей</h4>
+                            <div class="p__item-right">
+                                <div class="p__item-item">
+                                    <select id="podg" onchange="kalk()">
+                                        <option value="0">Нет</option>
+                                        <option value="2500" selected="">До 10 кв.м.</option>
+                                        <option value="5000">До 25 кв.м.</option>
+                                    </select>
+                                </div>
+                                <div class="p__item-item">
+                                    <h5 class="p__item-item-subtitle">Количество</h5>
+                                    <input type="number" id="kolvo3" min="1" value="1" onchange="kalk()">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p__item">
+                            <h4 class="p__item-subtitle">Замеры</h4>
+                            <div class="p__item-right">
+                                <div class="p__item-item">
+                                    <select  id="zam" onchange="kalk()">
+                                        <option value="0">Нет</option>
+                                        <option value="2500" selected="">В черте СПб</option>
+                                        <option value="3500">Лен. обл. 0-25 км</option>
+                                        <option value="4500">Лен. обл. 25-50 км</option>
+                                        <option value="6000">Лен. обл. 50-75 км</option>
+                                    </select>
+                                </div>
+                                <div class="p__item-item">
+                                    <h5 class="p__item-item-subtitle">Количество</h5>
+                                    <input type="number" id="kolvo4" min="1" value="1" onchange="kalk()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p__cost">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Стоимость</h2>
+                            <div class="section__title-bg">Стоимость</div>
+                        </div>
+                        <div class="p__item">
+                            <div class="p__item-cost">
+                                <h5 class="p__item-item-subtitle">За еденицу</h5>
+                                <input type="text" id="sum1" readonly="">
+                            </div>
+                            <div class="p__item-cost">
+                                <h5 class="p__item-item-subtitle">Всего</h5>
+                                <input type="text"  id="sum2" readonly="">
+                            </div>
+                        </div>
+                        <div class="p__item">
+                            <div class="p__item-cost">
+                                <h5 class="p__item-item-subtitle">За еденицу</h5>
+                                <input type="text" id="sum3" readonly="">
+                            </div>
+                            <div class="p__item-cost">
+                                <h5 class="p__item-item-subtitle">Всего</h5>
+                                <input type="text"  id="sum4" readonly="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m">
+            <div class="container">
+                <div class="m__block">
+                    <div class="m__info">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Материал</h2>
+                            <div class="section__title-bg">Материал</div>
+                        </div>
+                        <div class="m__item">
+                            <h4 class="m__item-title">Изготовление</h4>
+                            <div class="m__item-row">
+                                <h5 class="m__item-subtitle">Профиль</h5>
+                                <div class="m__item-right">
+                                    <div class="m__item-select">
+                                        <select class="form-con" onchange="kalk()">
+                                            <option>Slimline</option>
+                                            <option>Classic</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m__item-row">
+                                <h5 class="m__item-subtitle">Труба 10*10*1,2 в п./м.</h5>
+                                <div class="m__item-right">
+                                    <div class="m__item-input">
+                                        <input type="text" id="tru2" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m__item-row">
+                                <h5 class="m__item-subtitle">Полоса 40*4 в п./м.</h5>
+                                <div class="m__item-right">
+                                    <div class="m__item-input">
+                                        <input type="text" id="pol" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m__item-row">
+                                <h5 class="m__item-subtitle">Цвет по каталогу RAL</h5>
+                                <div class="m__item-right">
+                                    <div class="m__item-select">
+                                        <select id="ral">
+                                            <option value="0">7021QZ</option>
+                                            <option value="1">7021DE</option>
+                                            <option value="2">9005QN</option>
+                                            <option value="3">9005DE</option>
+                                            <option value="4">7016DE</option>
+                                            <option value="5">7016QN</option>
+                                            <option value="6">1013QN</option>
+                                            <option value="7">1013DE</option>
+                                            <option value="8">9016QN</option>
+                                            <option value="9">9016DE</option>
+                                            <option value="10">7040DE</option>
+                                            <option value="11">7040QN</option>
+                                         </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m__cost">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Стоимость</h2>
+                            <div class="section__title-bg">Стоимость</div>
+                        </div>
+                        <div class="m__item">
+                            <div class="m__item-cost">
+                                <input type="text" id="sum5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d">
+            <div class="container">
+                <div class="d__block">
+                    <div class="d__info">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Перегородка</h2>
+                            <div class="section__title-bg">Перегородка</div>
+                        </div>
+                        <div class="d__item">
+                            <div class="d__item-row">
+                                <h4 class="d__item-subtitle">Комплектов</h4>
+                                <div class="d__item-right">
+                                    <div class="d__item-input">
+                                        <input type="number" id="kompl" min="1" value="1" onchange="kalk()">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d__item-row">
+                                <h4 class="d__item-subtitle">Длина, мм</h4>
+                                <div class="d__item-right">
+                                    <div class="d__item-input-block">
+                                        <div class="d__item-input">
+                                            <input type="number" id="dlin" min="1" value="3000" onchange="kalk()">
+                                        </div>
+                                        <div class="d__item-input">
+                                            <input type="number" id="sed" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d__item-row">
+                                <h4 class="d__item-subtitle">Высота, мм</h4>
+                                <div class="d__item-right">
+                                    <div class="d__item-input-block">
+                                        <div class="d__item-input">
+                                            <input type="number" id="vyso" min="1" value="2700" onchange="kalk()">
+                                        </div>
+                                        <div class="d__item-input">
+                                            <input type="number" id="sob" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d__item-row">
+                                <h4 class="d__item-subtitle">Стекло 5 мм., закаленное</h4>
+                                <div class="d__item-right">
+                                    <div class="d__item-select">
+                                        <select id="stek" onchange="kalk()">
+                                            <option value="0">Без стекла</option>
+                                            <option value="1" selected="">Прозрачное</option>
+                                            <option value="2">Матовое</option>
+                                            <option value="3">Осветлённое (кристалвижн) прозрачное</option>
+                                            <option value="4">Осветлённое (кристалвижн) матовое</option>
+                                            <option value="5">Тонированное в массе (графит/бронза) прозрачное</option>
+                                            <option value="6">Тонированное в массе (графит/бронза) матовое</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d__item-row">
+                                <h4 class="d__item-subtitle">Фурнитура</h4>
+                                <div class="d__item-right">
+                                    <div class="d__item-select">
+                                        <select class="form-con text-start" id="furn" onchange="kalk()">
+                                            <option value="0">Без фурнитуры</option>
+                                            <option value="1">Откатная одностворчатая</option>
+                                            <option value="2">Откатная двустворчатая</option>
+                                            <option value="3">Гармошка 2 полотна</option>
+                                            <option value="4">Гармошка 4 полотна</option>
+                                            <option value="5">Каскад 2 полотна</option>
+                                            <option value="6">Каскад 3 полотна</option>
+                                            <option value="7">Каскад 4 полотна</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d__cost">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Стоимость</h2>
+                            <div class="section__title-bg">Стоимость</div>
+                        </div>
+                        <div class="d__item">
+                            <div class="d__item-cost">
+                                <div class="d__cost-item">
+                                    <h5 class="d__cost-title">За еденицу</h5>
+                                    <input type="text" id="sum6" readonly="">
+                                </div>
+                                <div class="d__cost-item">
+                                    <h5 class="d__cost-title">Всего</h5>
+                                    <input type="text" id="sum7" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pr">
+            <div class="container">
+                <div class="pr__block">
+                    <div class="pr__info">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Дверь</h2>
+                            <div class="section__title-bg">Дверь</div>
+                        </div>
+                        <div class="pr__item">
+                            <div class="pr__item-row">
+                                <h5 class="pr__item-subtitle">Комплектов</h5>
+                                <div class="pr__item-right">
+                                    <div class="pr__item-input">
+                                        <input type="number" id="kompl2" min="0" value="0" onchange="kalk()">
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="pr__item-row">
+                                <h5 class="pr__item-subtitle">Длина, мм</h5>
+                                <div class="pr__item-right">
+                                    <div class="d__item-input-block">
+                                        <div class="d__item-input">
+                                            <input type="number"  id="dlin2" min="1" value="0"  onchange="kalk()">
+                                        </div>
+                                        <div class="d__item-input">
+                                            <input type="number" id="sed2" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pr__item-row">
+                                <h5 class="pr__item-subtitle">Высота, мм</h5>
+                                <div class="pr__item-right">
+                                    <div class="d__item-input-block">
+                                        <div class="d__item-input">
+                                            <input type="number" id="vyso2" min="1" value="0"  onchange="kalk()">
+                                        </div>
+                                        <div class="d__item-input">
+                                            <input type="number" id="sob2" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pr__item-row">
+                                <h5 class="pr__item-subtitle">Стекло 5 мм., закаленное</h5>
+                                <div class="pr__item-right">
+                                    <div class="pr__item-select">
+                                        <select class="form-con text-start" id="stek2" onchange="kalk()">
+                                            <option value="0">Без стекла</option>
+                                            <option value="1" selected="">Прозрачное</option>
+                                            <option value="2">Матовое</option>
+                                            <option value="3">Осветлённое (кристалвижн) прозрачное</option>
+                                            <option value="4">Осветлённое (кристалвижн) матовое</option>
+                                            <option value="5">Тонированное в массе (графит/бронза) прозрачное</option>
+                                            <option value="6">Тонированное в массе (графит/бронза) матовое</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pr__item-row">
+                                <h5 class="pr__item-subtitle">Ручка</h5>
+                                <div class="pr__item-right">
+                                    <div class="pr__item-select">
+                                        <select class="form-con text-start" id="ruch" onchange="kalk()">
+                                            <option value="0">Нажимной гарнитур</option>
+                                            <option value="1">Стационарный гарнитур</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pr__item-row">
+                                <h5 class="pr__item-subtitle">Фурнитура</h5>
+                                <div class="pr__item-right">
+                                    <div class="pr__item-select">
+                                        <select class="form-con text-start" id="furn2" onchange="kalk()">
+                                            <option value="0">Распашная</option>
+                                            <option value="1">Откатная одностворчатая</option>
+                                            <option value="2">Откатная двустворчатая</option>
+                                            <option value="3">Гармошка 2 полотна</option>
+                                            <option value="4">Гармошка 4 полотна</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pr__item-row">
+                                <h5 class="pr__item-subtitle">Коробка без наличников</h5>
+                                <div class="pr__item-right">
+                                    <div class="pr__item-select">
+                                        <select class="form-con text-start" id="koro" onchange="kalk()">
+                                            <option value="0">Без коробки</option>
+                                            <option value="1">Одностворчатая распашная дверь</option>
+                                            <option value="2" selected="">Двустворчатая распашная дверь</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pr__item">
+                            <div class="pr__item-row">
+                                <h5 class="pr__item-subtitle">Дополнение</h5>
+                                <div class="pr__item-right">
+                                    <div class="pr__item-input">
+                                        <input type="text" value="Стекло мору">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr__cost">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Стоимость</h2>
+                            <div class="section__title-bg">Стоимость</div>
+                        </div>
+                        <div class="pr__item pr__item-first">
+                            <div class="pr__item-cost">
+                                <div class="pr__cost-item">
+                                    <h5 class="pr__cost-title">За еденицу</h5>
+                                    <input type="text" id="sum8" readonly="">
+                                </div>
+                                <div class="pr__cost-item">
+                                    <h5 class="pr__cost-title">Всего</h5>
+                                    <input type="text" id="sum9" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pr__item">
+                            <div class="pr__item-cost">
+                                <input type="number"  id="sum10" min="0" value="0" onchange="kalk()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="mont">
+            <div class="container">
+                <div class="mont__block">
+                    <div class="mont__info">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Монтажные работы</h2>
+                            <div class="section__title-bg">Монтажные работы</div>
+                        </div>
+                        <div class="mont__item">
+                            <div class="mont__item-row">
+                                <h5 class="mont__item-subtitle">Монтаж</h5>
+                                <div class="mont__item-right">
+                                    <div class="mont__item-item">
+                                        <p class="mont__item-s">S об.</p>
+                                        <div class="mont__item-input">
+                                            <input type="number" id="sob3" readonly="">
+                                        </div>
+                                    </div>
+                                    <div class="mont__item-select">
+                                        <select class="form-con text-start" name="mont" id="mont" onchange="kalk()">
+                                            <option value="0">Без монтажа</option>
+                                            <option value="1" selected="">Профиль+фурнитура+стекло+расходные материалы</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mont__cost">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Стоимость</h2>
+                            <div class="section__title-bg">Стоимость</div>
+                        </div>
+                        <div class="mont__item">
+                            <div class="mont__item-cost">
+                                <div class="mont__cost-item">
+                                    <h5 class="mont__cost-title">За еденицу</h5>
+                                    <input type="text" id="sum11" readonly="">
+                                </div>
+                                <div class="mont__cost-item">
+                                    <h5 class="mont__cost-title">Всего</h5>
+                                    <input type="text" id="sum12" readonly="">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s">
+            <div class="container">
+                <div class="s__block">
+                    <div class="s__info">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Услуги</h2>
+                            <div class="section__title-bg">Услуги</div>
+                        </div>
+                        <div class="s__item">
+                            <div class="s__item-row">
+                                <h5 class="s__item-subtitle">Доставка</h5>
+                                <div class="s__item-right">
+                                    <div class="s__item-comp">
+                                        <p class="c__item-c">Комп.</p>
+                                        <input type="number" min="1" id="km" value="1" onchange="kalk()">
+                                    </div>
+                                    <div class="s__item-select">
+                                        <select class="form-con text-start" id="dost" onchange="kalk()">
+                                            <option value="0">Без доставки</option>
+                                            <option value="1" selected="">СПб до 10 кв.м.</option>
+                                            <option value="2">СПб до 25 кв.м.</option>
+                                            <option value="3">Ленинградская область до 10 кв.м.</option>
+                                            <option value="4">Ленинградская область до 25 кв.м.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s__item">
+                            <div class="s__item-row">
+                                <h5 class="s__item-subtitle">Разгрузка и/или подъём</h5>
+                                <div class="s__item-right">
+                                    <div class="s__item-comp">
+                                        <p class="c__item-c">Комп.</p>
+                                        <input type="number" min="1" class="form-con" id="et" value="1" onchange="kalk()">
+                                    </div>
+                                    <div class="s__item-select">
+                                        <select class="form-con text-start" id="razg" onchange="kalk()">
+                                            <option value="0">Нет</option>
+                                            <option value="1" selected="">На лифте до 10 кв.м.</option>
+                                            <option value="2">На лифте до 25 кв.м.</option>
+                                            <option value="3">Вручную до 5 кв.м. за этаж</option>
+                                            <option value="4">Вручную до 10 кв.м. за этаж</option>
+                                            <option value="5">Вручную до 25 кв.м. за этаж</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s__cost">
+                        <div class="section__title">
+                            <div class="section__title-line"></div>
+                            <h2 class="section__title-title">Стоимость</h2>
+                            <div class="section__title-bg">Стоимость</div>
+                        </div>
+                        <div class="s__item">
+                            <input type="text" class="form-con" id="sum13" readonly="">
+                        </div>
+                        <div class="s__item">
+                            <input type="text" class="form-con" id="sum14" readonly="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="itog">
+                    <div class="itog__info">
+                        <h4 class="itog__title">Итого:</h4>
+                        <p class="itog__price" id="ito"></p>
+                    </div>
+                    <button class="itog__button modal-form">Заказать</button>
+                </div>
+            </div>
+        </section>
+        <section class="in">
+            <div class="container">
+                <div class="d-none">
+                    <br>K40 <input type="text" class="form-con" id="stfu" readonly="">
+                    <br>K43 <input type="text" class="form-con" id="stfu3" readonly="">
+                    <br>K49 <input type="text" class="form-con" id="montt" readonly="">
+                    <br>L35 <input type="text" class="form-con" id="l35" readonly="">
+                    <br>L40 <input type="text" class="form-con" id="stfu2" readonly="">
+                    <br>L43 <input type="text" class="form-con" id="stfu4" readonly="">
+                    <br>L49 <input type="text" class="form-con" id="l49" readonly="">
+                    </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <p><strong>Коэф-т наценки</strong></p>
+                    </div>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-con" id="koef" value="1.8" style="width: 100%;" readonly="">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <p><strong>Оплата</strong></p>
+                    </div>
+                    <div class="col-sm-6">
+                    <select class="form-con text-start" id="opl" onchange="kalk()">
+                    <option value="0">Наличными</option>
+                    <option value="1">Без НДС</option>
+                    <option value="2">С НДС 20%</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <p><strong>Итого</strong></p>
+                    </div>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-con" id="itog" style="width: 100%;" readonly="">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <p><strong>Себестоимость</strong></p>
+                    </div>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-con" id="sebe" style="width: 100%;" value="" readonly="">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <p><strong>НДС</strong></p>
+                    </div>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-con" id="nds" style="width: 100%;" readonly="">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <p><strong>Маржа</strong></p>
+                    </div>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-con" id="mar" style="width: 100%;" readonly="">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <p><strong>Процент наценки</strong></p>
+                    </div>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-con" id="proc" style="width: 100%;" value="80%" readonly="">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <p><strong>Откат<br>0%</strong></p>
+                    </div>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-con" id="otk" value="0" style="width: 100%;" readonly="">
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+        <!--
+            Копировать в повторителе именно section
+        -->
+        <section class="slider">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">Стальные перегородки</h2>
+                    <div class="section__title-bg">Стальные перегородки</div>
+                </div>
+                <div class="slider__slider">
+                    <div class="slider__item"><img src="img/slider-1.jpg" alt="SliderImg"></div>
+                    <div class="slider__item"><img src="img/slider-2.jpg" alt="SliderImg"></div>
+                    <div class="slider__item"><img src="img/slider-3.jpg" alt="SliderImg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">Реечные перегородки</h2>
+                    <div class="section__title-bg">Реечные перегородки</div>
+                </div>
+                <div class="slider__slider">
+                    <div class="slider__item"><img src="img/slider-4.jpg" alt="SliderImg"></div>
+                    <div class="slider__item"><img src="img/slider-5.jpg" alt="SliderImg"></div>
+                    <div class="slider__item"><img src="img/slider-6.jpg" alt="SliderImg"></div>
+                    <div class="slider__item"><img src="img/slider-7.jpg" alt="SliderImg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="otz">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">Отзывы</h2>
+                    <div class="section__title-bg">Отзывы</div>
+                </div>
+                <div class="otz__block">
+
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="section__title">
+                    <div class="section__title-line"></div>
+                    <h2 class="section__title-title">Контакты</h2>
+                    <div class="section__title-bg">Контакты</div>
+                </div>
+                <div class="contacts__block">
+                    <div class="contacts__item">
+                        <h3 class="contacts__item-title">Телефон</h3>
+                        <p class="contacts__item-descript">Москва +7 (499) 888-08-41</p>
+                        <p class="contacts__item-descript">Санкт-Петербург +7 (921) 941-08-41</p>
+                    </div>
+                    <div class="contacts__item">
+                        <h3 class="contacts__item-title">Электронная почта</h3>
+                        <p class="contacts__item-descript">glass@arbellos.ru</p>
+                    </div>
+                    <div class="contacts__item">
+                        <h3 class="contacts__item-title">Адрес</h3>
+                        <p class="contacts__item-descript">Москва, ул. Нижняя Сыромятническая, 10, стр. 2 </p>
+                        <p class="contacts__item-descript">Санкт-Петербург, пр. Обуховской Обороны, 76к4, БЦ Нева, офис №316</p>
+                    </div>
+                    <div class="contacts__item">
+                        <h3 class="contacts__item-title">Социальные сети</h3>
+                        <div class="contacts__item-soz">
+                            <a href="https://t.me/loftarbellos" class="contacts__soz-item"><img src="img/tg.svg" alt="ContactsSoz"></a>
+                            <a href="https://vk.com/loft_arbellos" class="contacts__soz-item"><img src="img/vk.svg" alt="ContactsSoz"></a>
+                            <a href="https://wa.me/792194108141" class="contacts__soz-item"><img src="img/wt.svg" alt="ContactsSoz"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="container">
+                <div class="form__block">
+                    <div class="form__info">
+                        <h2 class="section__title-title">Оставьте заявку</h2>
+                        <form action="">
+                            <input type="text" class="form__input" placeholder="Ваше имя">
+                            <input type="text" class="form__input" placeholder="+7(___) ___-__-__">
+                            <input type="submit" value="Отправить" class="form__button">
+                        </form>
+                        <p class="form__info-pred">Оставьте заявку и мы свяжемся с Вами в  ближайшее время</p>
+                    </div>
+                    <div class="form__map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8bba4db6a1d6b0515071e80ff8bc2ea427f7d2a0c39a902dc11fc6aaed4d09fc&amp;width=100%25&amp;height=448&amp;lang=ru_RU&amp;scroll=true"></script>                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <nav class="footer__menu">
+                <ul class="footer__menu-block">
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#project">наши проекты</a></li>
+                    <li><a href="#why">Почему мы?</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#calc">Калькулятор</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <div class="modal__bg">
+        <div class="modal__window">
+            <button class="modal__window-close"><img src="img/close.svg" alt="ModalClose"></button>
+            <h2 class="section__title modal__title">Оставить заявку</h2>
+            <form action="">
+                <input type="text" class="modal__input" placeholder="Ваше имя">
+                <input type="text" class="modal__input" placeholder="+7(___) ___-__-__">
+                <input type="submit" value="Отправить" class="modal__button">
+            </form>
+        </div>
+        <div class="modal__photo">
+            <button class="modal__photo-close"><img src="img/close.svg" alt="ModalClose"></button>
+            <img src="" alt="ModalPhoto" class="modal__photo-img">
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/kit.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

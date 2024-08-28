@@ -1,0 +1,401 @@
+@import 'main'
+.main
+    height: calc(100dvh - 104px)
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    &__bg
+        background: linear-gradient(270.00deg, rgba(255, 255, 255, 0) 27.929%,rgb(255, 255, 255) 100%)
+        width: 100%
+        height: 100%
+    .container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 100%
+    &__title
+        margin-bottom: 40px
+        font-size: 50px
+        font-weight: 800
+        color: $darkblue
+        max-width: 620px
+    &__descript
+        max-width: 325px
+        font-size: 30px
+        font-weight: 600
+        line-height: 37px
+    &__link
+        padding: 15px 49px
+        margin-top: 60px
+.ass
+    &__block
+        margin-top: 70px
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+        gap: 15px
+    &__item
+        position: relative
+        border-radius: 10px
+        
+        &-bg 
+            width: 100%
+            height: 100%
+            background-size: auto 100%
+            background-position: right center
+            background-repeat: no-repeat
+            padding: 58px 33px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &:nth-child(1)
+            background: #91DEEF
+        &:nth-child(2)
+            background: linear-gradient(74.31deg, rgb(0, 99, 221) 11.072%,rgb(30, 168, 245) 86.035%)
+        &:nth-child(3)
+            background: rgb(211, 61, 119)
+        &:nth-child(4)
+            background: #91DEEF
+        &-title 
+            color: $white
+            margin-bottom: 112px
+            font-size: 20px
+            font-weight: 600
+            text-transform: uppercase
+        &-link
+            padding: 11px 26px
+            font-size: 20px
+.where
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    &__bg
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.2)
+        padding: 70px 0px
+    .container
+        display: flex 
+        justify-content: center
+    &__info
+        border-radius: 10px
+        backdrop-filter: blur(20px)
+        background: rgba(255, 255, 255, 0.8)
+        padding: 60px 50px
+        max-width: 608px
+        &-title 
+            font-size: 30px
+            font-weight: 700
+            margin-bottom: 20px
+        &-descript
+            margin-bottom: 20px
+            font-size: 20px
+            font-weight: 400
+            &:last-child
+                margin-bottom: 0px
+.prem
+    &__block
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr))
+        gap: 60px
+        margin-top: 70px
+    &__item
+        &-icon
+            max-height: 169px
+            height: 100%
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 40px
+            img
+                height: 100%
+                width: auto
+        &-descript 
+            text-align: center
+            font-size: 20px
+            font-weight: 400
+.him
+    &__block
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 40px
+        gap: 15px
+    &__info
+        max-width: 436px
+        &-item 
+            margin-bottom: 40px
+        &:last-child
+            text-align: right
+            .him__info-item 
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+    &__img
+        max-width: 344px
+    &__bg
+        position: absolute
+        width: 828px
+        height: 828px
+        border-radius: 100%
+        background: #F0F3F3
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+        z-index: -1
+    &__item
+        &-title 
+            text-align: center
+            margin-bottom: 30px
+            width: 98px
+            height: 98px
+            border-radius: 100%
+            background: $pink
+            color: $white
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 24px
+            font-weight: 700
+        &-descript
+            font-size: 20px
+            font-weight: 400
+    &__button
+        margin: 0 auto
+        margin-top: 100px
+        
+        display: flex
+        padding: 15px 49px
+.prir
+    background: radial-gradient(116.07% 72.44% at 50% 50%,rgba(0, 225, 239, 0.2),rgba(0, 195, 226, 0.2) 25.905%,rgba(0, 110, 189, 0.2) 100%)
+    padding: 100px 0px
+    margin-bottom: 0px
+    &__block
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 40px
+        gap: 15px
+        z-index: 1
+    &__info
+        max-width: 436px
+        &-title 
+            text-align: center
+            margin-bottom: 30px
+            width: 98px
+            height: 98px
+            border-radius: 100%
+            background: $pink
+            color: $white
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 24px
+            font-weight: 700
+        &-descript
+            font-size: 20px
+            font-weight: 400
+            span
+                color: $pink
+        &-item 
+            margin-bottom: 40px
+        &:last-child
+            text-align: right
+            .prir__info-item 
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+    &__img
+        max-width: 224px
+    &__bg
+        position: absolute
+        width: 598px
+        height: 598px
+        border-radius: 100%
+        background: $white
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+        z-index: -1
+    &__button
+        margin: 0 auto
+        margin-top: 100px
+        display: flex
+        padding: 15px 49px
+.sert
+    padding: 70px 0px
+    padding-bottom: 140px
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    margin-bottom: 0px
+    .slick-slide
+        margin: 0px 15px
+    &__slider
+        margin-top: 70px
+    .slick-dots
+        position: absolute
+        bottom: -50px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        align-items: center
+        gap: 15px
+        button
+            font-size: 0px
+        li
+            width: 15px
+            height: 15px
+            border-radius: 100%
+            background: $white
+        .slick-active
+            background: $pink
+.form
+    background-size: 1417px 756px
+    background-position: center center
+    background-repeat: no-repeat
+    padding: 100px 0px
+    form
+       
+        display: flex
+        flex-direction: column
+        margin: 0 auto
+        max-width: 441px
+        margin-top: 50px
+        width: 100%
+        gap: 20px
+    &__button
+        margin: 0 auto
+        margin-top: 40px
+        padding: 15px 49px
+        font-size: 18px 
+        font-weight: 600
+        width: fit-content
+        display: flex
+    &__input
+        padding: 23px 35px
+        border-radius: 5px
+        border: 2px solid rgb(94, 94, 94)
+        font-size: 20px
+        font-weight: 400
+@media screen and (max-width: 1200px)
+    .him
+        &__img
+            display: none
+        &__block
+            flex-direction: column
+            align-items: center
+        &__info
+            max-width: 100%
+            &-item
+                text-align: center
+                align-items: center
+                display: flex
+                flex-direction: column
+                align-items: center !important
+        &__bg
+            display: none
+    .prir
+        padding: 40px 0px
+        &__bg
+            display: none
+        &__block
+            flex-direction: column
+        &__img
+            order: 1
+            min-width: 285px
+            width: 285px
+            height: 285px
+            border-radius: 100%
+            background: $white
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 40px
+            img
+                width: auto
+                max-height: 207px
+        &__info
+            order: 2
+            align-items: center
+            text-align: center !important
+            &-item 
+                display: flex
+                flex-direction: column
+                align-items: center !important
+@media screen and (max-width: 550px)
+    .prem
+        &__block
+            display: flex
+            flex-direction: column
+        &__item
+            &-descript
+                max-width: 259px
+                margin: 0 auto
+    .main
+        height: calc(100vh - 76px)
+        background-position: 65% center
+        &__bg
+            padding: 80px 0px
+            background: rgba(255, 255, 255, 0.6)
+        &__info
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__title
+            text-align: center
+            font-size: 8.2vw
+        &__descript
+            font-size: 5.7vw
+            text-align: center
+            margin: 0 auto
+            line-height: normal
+        &__link
+            text-align: center
+            margin-top: 30px
+            width: 100%
+        .container
+            justify-content: space-between
+    .ass
+        &__block
+            margin-top: 40px
+    .where
+        &__bg
+            padding: 40px 0px
+        &__info
+            padding: 30px
+            &-title
+                font-size: 20px
+                text-align: center
+            &-descript
+                font-size: 16px
+    .him
+        &__item
+            &-descript
+                font-size: 16px
+                text-align: left !important
+        &__button
+            display: none
+    .prir
+        &__info
+            &-descript
+                font-size: 16px
+                text-align: left !important
+        &__button
+            margin-top: 20px
+            width: 100%
+            text-align: center
+            padding: 15px 0px
+            justify-content: center
+    .sert
+        padding: 30px 0px
+        padding-bottom: 70px
+        &__slider
+            margin-top: 30px
+    .form
+        padding: 30px 0px
+        &__button
+            width: 90%
