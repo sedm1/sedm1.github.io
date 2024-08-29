@@ -52,8 +52,13 @@
   scroll-margin: 100px;
 }
 
+#main {
+  scroll-margin: 0px !important;
+}
+
 body {
   position: relative;
+  background: #FBFBFB;
 }
 
 section {
@@ -237,6 +242,7 @@ header {
 .monit__info {
   max-width: 510px;
   width: 100%;
+  padding-left: 40px;
 }
 .monit__img {
   max-width: 560px;
@@ -264,7 +270,7 @@ header {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
-  border-bottom: 1px solid #04050E;
+  border-bottom: 2px solid #04050E;
   padding: 7px 0px;
   text-transform: uppercase;
 }
@@ -277,9 +283,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -393,6 +399,7 @@ header {
   width: 153px;
   font-size: 20px;
   font-weight: 600;
+  vertical-align: baseline;
 }
 .table__main th:first-child {
   text-align: left;
@@ -626,7 +633,7 @@ header {
 .question__descript-list li::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 10px;
   left: -10px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -736,7 +743,7 @@ header {
 }
 .recall__form-input, .recall__form-textarea {
   padding: 16px 21px;
-  border: 1px solid rgb(184, 184, 184);
+  border: 2px solid rgb(184, 184, 184);
   outline: 0 none;
   background: rgb(251, 251, 251);
   font-size: 16px;
@@ -893,6 +900,7 @@ footer {
   }
   .monit__info {
     max-width: none;
+    padding-left: 0px;
   }
   .about__block {
     -webkit-box-orient: vertical;
@@ -1000,6 +1008,7 @@ footer {
   }
   .monit__descript {
     margin-bottom: 20px;
+    text-align: justify;
   }
   .monit__img-mobile {
     margin-bottom: 20px;
@@ -1016,8 +1025,12 @@ footer {
   .monit__link img {
     margin-left: 0px;
   }
+  .about__descript {
+    text-align: justify;
+  }
   .us__descript {
     margin-bottom: 20px;
+    text-align: justify;
   }
   .how {
     margin-bottom: 70px;
@@ -1031,6 +1044,7 @@ footer {
   }
   .rez__descript {
     margin-top: 20px;
+    text-align: justify;
   }
   .level__title {
     font-size: 30px;
