@@ -27,3 +27,6 @@ if (width <= 1100){
         $('.header__menu').removeClass('header__menu-active')
     })
 }
+AOS.init({
+    once: true
+});

@@ -81,6 +81,8 @@ b
     font-weight: 700
     line-height: 85px
     text-transform: uppercase
+    &-block 
+        overflow: hidden
 .container
     max-width: 1172px
     width: 100%
@@ -127,6 +129,19 @@ header
             &:hover 
                 &::before 
                     width: 100%
+@keyframes t-arrow-bottom 
+    0% 
+        transform: translateY(0)
+    50% 
+        transform: translateY(-7px)
+
+    55% 
+        transform: translateY(-7px)
+
+    100% 
+        transform: translateY(0)
+
+
 .main
     background-size: cover 
     background-position: center center
@@ -150,6 +165,7 @@ header
         left: 50%
         transform: translateX(-50%)
         bottom: 33px
+        animation: t-arrow-bottom 1.7s infinite ease
     &__title 
         color: $white 
         max-width: 942px
