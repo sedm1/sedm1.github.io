@@ -244,9 +244,7 @@ header {
 .main__arrow {
   width: 38px;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: calc(50% - 19px);
   bottom: 33px;
   -webkit-animation: t-arrow-bottom 1.7s infinite ease;
           animation: t-arrow-bottom 1.7s infinite ease;
@@ -1067,6 +1065,9 @@ footer {
   .monit__link img {
     margin-left: 0px;
   }
+  .how__descript {
+    text-align: justify;
+  }
   .about__descript {
     text-align: justify;
   }
@@ -1101,6 +1102,7 @@ footer {
   }
   .ii__descript {
     margin-top: 20px;
+    text-align: justify;
   }
   .ii__block {
     margin-top: 70px;
@@ -1120,6 +1122,7 @@ footer {
   }
   .is__descript {
     margin-top: 20px;
+    text-align: justify;
   }
   .problems__subtitle {
     font-size: 30px;
@@ -1128,6 +1131,9 @@ footer {
   }
   .problems__item {
     margin-bottom: 20px;
+  }
+  .problems__item-descript {
+    text-align: justify;
   }
   .recall form {
     max-width: 100%;
