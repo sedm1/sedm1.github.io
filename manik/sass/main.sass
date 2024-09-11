@@ -1,0 +1,73 @@
+$black: #1D1D1B
+$white: #FFF
+$yellow: #F0AD0B
+$pink: #E9E4E3
+$gray: #616465
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Raleway", system-ui
+    font-size: 14px
+    font-weight: 400
+    color: $black
+img
+    width: 100%
+    height: auto
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+button
+    background: 0 none
+    border: 0 none
+    outline: 0 none
+    cursor: pointer
+    font-family: inherit
+li
+    list-style: none
+span 
+    font-size: inherit 
+    color: inherit
+    font-family: inherit
+.container
+    max-width: 1280px
+    width: 100%
+    margin: 0 auto
+section
+    margin-bottom: 100px
+.section__title
+    font-size: 45px
+    font-weight: 500
+    text-transform: uppercase
+header
+    padding: 26px 0px
+    margin-bottom: 38px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header
+    &__logo
+        max-width: 196px
+        width: 100%
+    &__menu
+        &-list 
+            display: flex
+            align-items: center
+            gap: 40px
+        &-item 
+            text-transform: uppercase
+    &__button
+        border: 1px solid $black
+        padding: 5px
+        padding-left: 23px
+        display: flex
+        align-items: center
+        border-radius: 60px
+        font-size: 16px
+        font-weight: 600
+        text-transform: uppercase
+        gap: 23px
+        &-icon
+            width: 40px

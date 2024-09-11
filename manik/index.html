@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="image/x-icon" href="./img/fav.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="./img/fav.png" rel="icon">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .about__item::after{
+            background-image: url('./img/sun-big.svg');
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="header__logo"><img src="img/header__logo.svg" alt="HeaderLogo"></a>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="#">филиалы</a></li>
+                    <li class="header__menu-item"><a href="#">О нас</a></li>
+                    <li class="header__menu-item"><a href="#">Услуги и цены</a></li>
+                    <li class="header__menu-item"><a href="#">сертификат</a></li>
+                    <li class="header__menu-item"><a href="#">контакты</a></li>
+                </ul>
+            </nav>
+            <button class="header__button">Записаться <img src="img/arrow-link.svg" alt="ArrowLink" class="header__button-icon"></button>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="main__bg">
+                <div class="container">
+                    <div class="main__info">
+                        <h1 class="main__title">Сеть студий <br/>маникюра <br/>и педикюра</h1>
+                        <p class="main__descript">Заботимся о красоте ваших рук и ног на высшем уровне!</p>
+                        <ul class="main__list">
+                            <li class="main__list-item">Маникюр и педикюр любой сложности</li>
+                            <li class="main__list-item">Стильные дизайны и тренды</li>
+                            <li class="main__list-item">Уютная атмосфера и забота о каждом клиенте</li>
+                        </ul>
+                        <button class="main__button">Выбрать услугу <img src="img/arrow-link-white.svg" alt="ArrowLink" class="main__button-icon"></button>
+                    </div>
+                    <div class="main__img"><img src="img/main__img.png" alt="MainImg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__slider-block">
+                    <div class="about__slider">
+                        <div class="about__slider-img"><img src="img/about.jpg" alt="AboutSlider"></div>
+                        <div class="about__slider-img"><img src="img/about.jpg" alt="AboutSlider"></div>
+                        <div class="about__slider-img"><img src="img/about.jpg" alt="AboutSlider"></div>
+                        <div class="about__slider-img"><img src="img/about.jpg" alt="AboutSlider"></div>
+                    </div>
+                </div>
+                <div class="about__info">
+                    <h2 class="section__title about__title">О нас</h2>
+                    <p class="about__descript">Добро пожаловать в "Маникюрку" — место, где ваши ногти становятся произведением искусства! Наш салон — это не просто услуги маникюра и педикюра, это настоящий ритуал красоты и заботы о вас.</p>
+                    <p class="about__descript">Красивые ногти — это не просто тренд, а важная часть вашего стиля и настроения. Поэтому мы создали пространство, где каждый клиент найдет то, что ищет: от классического маникюра до креативных дизайнов. Теплая атмосфера, актуальные техники и качественные материалы — наши главные принципы. </p>
+                    <p class="about__descript">Наша команда — это мастера, которые живут своей профессией. Они не только создадут идеальные ногти, но и сделают процесс расслабляющим и приятным. Ваша красота — наша страсть! Ждём вас в "Маникюрке", чтобы сделать каждый ваш день немного ярче.</p>
+                    <div class="about__block">
+                        <div class="about__item" id="about__item-1">
+                            <h3 class="about__item-title">Мы следим за всеми новинками ногтевой индустрии!</h3>
+                            <p class="about__item-descript">В наших палитрах более 600 цветов гель-лака, которые постоянно пополняются новыми модными цветами</p>
+                        </div>
+                        <div class="about__item" id="about__item-2">
+                            <h3 class="about__item-title">Безопасность и стерильность</h3>
+                            <p class="about__item-descript">Все наши инструменты обрабатываются по всем нормам СанПин. Для каждого клиента мы используем одноразовые наборы, после выполнения услуги вы можете забрать набор с собой</p>
+                        </div>
+                        <div class="about__item" id="about__item-3">
+                            <h3 class="about__item-title">Гарантия <br/>на все услуги</h3>
+                            <p class="about__item-descript">Остались недовольны качеством услуг, скололся гель-лак — переделаем услугу в течение <span>7 дней бесплатно</span></p>
+                        </div>
+                        <div class="about__item" id="about__item-4">
+                            <h3 class="about__item-title">мастера <br/>своего дела</h3>
+                            <p class="about__item-descript">Используем только современные техники и качественные материалы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bonus">
+            <div class="container">
+                <h2 class="section__title bonus__title">Электронная бонусная система лояльности</h2>
+                <div class="bonus__block">
+                    <div class="bonus__item">
+                        <div class="bonus__item-icon"><img src="img/sun-small.svg" alt="SunSmall"></div>
+                        <h3 class="bonus__item-title">на 5-ое посещение</h3>
+                        <p class="bonus__item-descript">SPA-уход для ручек в подарок</p>
+                    </div>
+                    <div class="bonus__item">
+                        <div class="bonus__item-icon"><img src="img/sun-small.svg" alt="SunSmall"></div>
+                        <h3 class="bonus__item-title">на 10-ое посещение</h3>
+                        <p class="bonus__item-descript">Скидка 5%- на маникюр</p>
+                    </div>
+                    <div class="bonus__item">
+                        <div class="bonus__item-icon"><img src="img/sun-small.svg" alt="SunSmall"></div>
+                        <h3 class="bonus__item-title">на 15-ое посещение</h3>
+                        <p class="bonus__item-descript">Скидка 10%- на все услуги</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="line">
+            <div class="line__block">
+                <div class="line__marquee">
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    <p class="marquee__text"><span>%</span>Для клиентов, посетивших наши студии впервые, у нас действуют скидки<span>%</span></p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h2 class="section__title services__title">Услуги и цены</h2>
+                <div class="services__tabs">
+                    <button class="services__tabs-item services__tabs-item-active" id="services__tabs-1" data-services="1">Маникюр</button>
+                    <button class="services__tabs-item" id="services__tabs-2" data-services="2">Педикюр</button>
+                    <button class="services__tabs-item" id="services__tabs-3" data-services="3">Для мужчин</button>
+                    <button class="services__tabs-item" id="services__tabs-4" data-services="4">Дизайн ногтей</button>
+                    <button class="services__tabs-item" id="services__tabs-5" data-services="5">Лучение и уход за ногтями</button>
+                    <button class="services__tabs-item" id="services__tabs-6" data-services="6">Дополнительно</button>
+                </div>
+                <div class="services__main">
+                    <div class="services__main-header">
+                        <div class="services__header-name services__header-item">Услуга</div>
+                        <div class="services__header-master services__header-item" >Мастер</div>
+                        <div class="services__header-topmaster services__header-item">Топ-мастер</div>
+                    </div>
+                    <div class="services__block services__block-active" id="services__block-1">
+                        <!--Колонки-->
+                        <div class="services__block-item">
+                            <div class="services__item-name">
+                                <h3 class="services__name-title">Маникюр без покрытия</h3>
+                            </div>
+                            <div class="services__item-master">
+                                <h3 class="services__master-price">800₽</h3>
+                            </div>
+                            <div class="services__item-topmaster">
+                                <h3 class="services__topmaster-price">900₽</h3>
+                            </div>
+                        </div>
+                        <div class="services__block-item">
+                            <div class="services__item-name">
+                                <h3 class="services__name-title">Маникюр с выравниванием и покрытием гель-лак</h3>
+                                <p class="services__name-descript">(снятие нашего покрытия входит в стоимость)</p>
+                            </div>
+                            <div class="services__item-master">
+                                <h3 class="services__master-price">2 000₽</h3>
+                            </div>
+                            <div class="services__item-topmaster">
+                                <h3 class="services__topmaster-price">2 500₽</h3>
+                            </div>
+                        </div>
+                        <div class="services__block-item">
+                            <div class="services__item-name">
+                                <h3 class="services__name-title">Наращивание ногтей + маникюр + покрытие гель-лак</h3>
+                                <p class="services__name-descript">(доплата за длину)</p>
+                            </div>
+                            <div class="services__item-master">
+                                <h3 class="services__master-price">2 000₽</h3>
+                                <p class="services__master-descript">500₽</p>
+                            </div>
+                            <div class="services__item-topmaster">
+                                <h3 class="services__topmaster-price">2 500₽</h3>
+                                <p class="services__topmaster-descript">500₽</p>
+                            </div>
+                        </div>
+                        <div class="services__block-item">
+                            <div class="services__item-name">
+                                <h3 class="services__name-title">Коррекция ногтей + маникюр + покрытие гель-лак</h3>
+                                <p class="services__name-descript">(снятие нашего покрытия входит в стоимость)</p>
+                            </div>
+                            <div class="services__item-master">
+                                <h3 class="services__master-price">2 600₽</h3>
+                            </div>
+                            <div class="services__item-topmaster">
+                                <h3 class="services__topmaster-price">3 000₽</h3>
+                            </div>
+                        </div>
+                        <div class="services__block-item">
+                            <div class="services__item-name">
+                                <h3 class="services__name-title">Детский маникюр</h3>
+                                <p class="services__name-descript">(придание формы, покрытие лаком)</p>
+                            </div>
+                            <div class="services__item-master">
+                                <h3 class="services__master-price">600₽</h3>
+                            </div>
+                            <div class="services__item-topmaster">
+                                <h3 class="services__topmaster-price">600₽</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

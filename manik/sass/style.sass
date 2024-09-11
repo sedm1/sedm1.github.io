@@ -1,0 +1,268 @@
+@import 'main'
+.main
+    &__bg
+        background: $pink
+        border-radius: 100px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 20px
+    &__img
+        max-width: 818px
+        width: 100%
+        height: 604px
+        img
+            height: 100%
+    &__info
+        max-width: 522px
+        width: 100%
+    &__title
+        font-size: 65px
+        font-weight: 500
+        line-height: 65px
+        text-transform: uppercase
+        margin-bottom: 35px
+    &__descript
+        font-size: 16px
+        font-weight: 400
+    &__list
+        margin-top: 10px
+        display: flex
+        flex-direction: column
+        padding-left: 20px
+        gap: 3px
+        &-item 
+            position: relative
+            font-size: 16px
+            font-weight: 400
+            &::before
+                content: ""
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -16px
+                background: $yellow
+                width: 7px
+                height: 7px
+                border-radius: 100%
+    &__button
+        display: flex
+        align-items: center
+        gap: 40px
+        border-radius: 60px
+        background: $black
+        border: 1px solid $black
+        color: $white
+        padding: 10px
+        padding-left: 60px
+        font-size: 16px
+        font-weight: 600
+        text-transform: uppercase
+        margin-top: 40px
+        &-icon 
+            width: 53px
+.about
+    .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        gap: 20px
+    &__slider
+        &-block 
+            max-width: 630px
+            width: 100%
+            border-radius: 60px
+            overflow: hidden
+        .slick-dots
+            position: absolute
+            left: 50%
+            bottom: 40px
+            transform: translateX(-50%)
+            display: flex
+            align-items: center
+            gap: 10px
+            z-index: 1
+            li 
+                width: 10px
+                height: 10px
+                border-radius: 100%
+                background: $white 
+                cursor: pointer
+                button 
+                    font-size: 0px
+                    
+            .slick-active 
+                background: $yellow
+    &__info
+        max-width: 630px
+        width: 100%
+    &__title 
+        margin-bottom: 15px
+    &__descript
+        margin-bottom: 7px
+        text-align: justify
+        font-size: 16px
+    &__block 
+        display: flex
+        gap: 26px 0px
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 17px
+    &__item
+        padding: 20px
+        border-radius: 20px
+        border: 1px solid $black
+        max-width: 197px
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            width: 40px
+            height: 40px
+            right: -15px
+            top: -15px
+            background-size: cover  
+            background-position: center center
+        &-title 
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            margin-bottom: 10px
+        &-descript
+            span 
+                font-weight: 700
+#about
+    &__item
+        &-1
+            max-width: 100%
+.bonus
+    &__title
+        text-align: center
+    &__block
+        margin-top: 30px
+        display: flex
+        justify-content: space-between
+        gap: 20px
+    &__item
+        padding: 40px
+        border-radius: 40px
+        border: 1px solid $black
+        width: 100%
+        &-icon 
+            width: 77px
+            margin-bottom: 20px
+        &-title
+            font-size: 26px
+            font-weight: 700
+            margin-bottom: 20px
+            text-transform: uppercase
+        &-descript
+            font-size: 16px
+            font-weight: 700
+            color: $gray 
+.line
+    max-width: 100%
+    overflow: hidden
+    transform: rotate(-1.494deg)
+    &__block
+        padding: 16px 0px
+        background: $black
+    &__marquee
+        display: flex
+        align-items: center
+        gap: 33px
+        animation: scroll-text 15s linear infinite
+        p
+            white-space: nowrap
+            color: $white
+            font-size: 16px
+            font-weight: 700
+            span
+                color: $yellow
+                font-size: 16px
+                font-weight: 700
+@keyframes scroll-text 
+  to 
+    transform: translateX(-100%)
+.services
+    &__title
+        text-align: center
+    &__tabs
+        display: flex
+        justify-content: center
+        gap: 10px
+        margin-top: 34px
+        &-item 
+            padding: 20px
+            border-radius: 40px
+            border: 1px solid $black
+            text-transform: uppercase
+            font-size: 16px
+            font-weight: 700
+            transition: .3s
+            &-active 
+                background: $black
+                color: $white
+    &__main
+        margin-top: 20px
+        &-header 
+            padding: 20px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            border-radius: 40px
+            border: 1px solid $black
+    &__header
+        &-item 
+            text-transform: uppercase
+            font-size: 16px
+        &-name 
+            max-width: 430px
+            width: 100%
+        &-master 
+            max-width: 70px
+            width: 100%
+        &-topmaster
+            max-width: 110px
+            width: 100%
+    &__block
+        margin-top: 10px
+        &-item 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 20px
+            border-radius: 40px
+            border: 1px solid $black
+            background: $pink
+    &__item
+        &-name 
+            display: flex
+            flex-direction: column
+            gap: 3px
+            max-width: 430px
+            width: 100%
+        &-topmaster
+            display: flex
+            flex-direction: column
+            gap: 3px
+            text-align: right
+            max-width: 110px
+            width: 100%
+        &-master
+            display: flex
+            flex-direction: column
+            gap: 3px
+            text-align: right
+            max-width: 70px
+            width: 100%
+    &__name, &__topmaster, &__master
+        &-title, &-price
+            font-size: 16px
+            font-weight: 700
+        &-descript
+            font-size: 16px
+    
+
+            
