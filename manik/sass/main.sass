@@ -11,6 +11,8 @@ $gray: #616465
     font-size: 14px
     font-weight: 400
     color: $black
+    scroll-behavior: smooth
+    scroll-margin: 110px
 body
     position: relative
     max-width: 100%
@@ -152,6 +154,8 @@ footer
         display: block
     &__sogl
         color: $gray
+        &-mobile 
+            display: none
     &__menu
         display: flex
         gap: 40px
@@ -164,6 +168,18 @@ footer
             text-transform: uppercase
             li
                 color: $white
+                position: relative
+                width: fit-content
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: -17px
+                    width: 12px 
+                    height: 12px
+                    border-radius: 100%
+                    background: $yellow
         &-menu 
             display: flex
             flex-wrap: wrap
@@ -243,6 +259,8 @@ footer
             &-list 
                 flex-direction: column
                 gap: 30px
+                li a 
+                    font-size: 16px
             &-item
                 &::before
                     display: none
@@ -264,7 +282,7 @@ footer
                         top: 2px
                     a
                         font-weight: 400
-                        font-size: 14px
+                        font-size: 16px
                         display: block !important
         &__button
             display: none
@@ -282,12 +300,20 @@ footer
             margin-bottom: 0px
         &__sogl
             display: none
+            &-mobile 
+                display: block
+                color: $gray 
+                margin-bottom: 10px
+                text-align: center
         &__menu
             flex-direction: column
             text-align: center
             align-items: center
             gap: 20px
         &__item
+            &-nav 
+                li 
+                    margin: 0 auto
             &-menu 
                 flex-direction: column
 @media screen and (max-width: 650px)

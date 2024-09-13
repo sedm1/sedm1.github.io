@@ -46,10 +46,10 @@
                             <li class="header__submenu-item"><a href="#">Северный Реутов, ул. Ленина д. 4</a></li>
                         </ul>
                     </li>
-                    <li class="header__menu-item"><a href="#">О нас</a></li>
-                    <li class="header__menu-item"><a href="#">Услуги и цены</a></li>
-                    <li class="header__menu-item"><a href="#">сертификат</a></li>
-                    <li class="header__menu-item"><a href="#">контакты</a></li>
+                    <li class="header__menu-item"><a href="#about">О нас</a></li>
+                    <li class="header__menu-item"><a href="#services">Услуги и цены</a></li>
+                    <li class="header__menu-item"><a href="#sertificates">сертификат</a></li>
+                    <li class="header__menu-item"><a href="#contacts">контакты</a></li>
                 </ul>
                 <button class="header__menu-button link-button">Записаться <img src="img/arrow-link.svg" alt="ArrowLink" class="header__button-icon"></button>
             </nav>
@@ -59,8 +59,8 @@
     </header>
     <main>
         <section class="main">
-            <div class="main__bg">
-                <div class="container">
+            <div class="container">
+                <div class="main__bg">
                     <div class="main__info">
                         <h1 class="main__title">Сеть студий <br/>маникюра <br/>и педикюра</h1>
                         <p class="main__descript">Заботимся о красоте ваших рук и ног на высшем уровне!</p>
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="section__title about__title-mobile">О нас</h2>
                 <div class="about__slider-block">
@@ -161,7 +161,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2 class="section__title services__title">Услуги и цены</h2>
                 <div class="services__tabs">
@@ -562,7 +562,33 @@
                             </div>
                         </div>
                         <p class="services__main-descript">Маникюр и педикюр в 4-руки без доплат — Для тех кто экономит своё время</p>
+                        
                     </div>
+                    <div class="p">
+                        <div class="p__block">
+                            <div class="p__bg">
+                                <h3 class="p__title">Для клиентов, посетивших наши студии впервые, у нас действуют скидки:</h3>
+                                <div class="p__item">
+                                    <div class="p__item-star"><img src="img/sun-small.svg" alt="Sun"></div>
+                                    <h4 class="p__item-title">к мастеру:</h4>
+                                    <p class="p__item-descript">Снятие + маникюр + покрытие = 2 000₽ <span>1 600₽</span></p>
+                                    <p class="p__item-descript">Снятие + педикюр + покрытие = 2 400₽ <span>2 000₽</span></p>
+                                    <div class="p__item-star"><img src="img/sun-small.svg" alt="Sun"></div>
+                                </div>
+                                <div class="p__item">
+                                    <div class="p__item-star"><img src="img/sun-small.svg" alt="Sun"></div>
+                                    <h4 class="p__item-title">к топ-мастеру:</h4>
+                                    <p class="p__item-descript">Снятие + маникюр + покрытие = 2 400₽ <span>2 100₽</span></p>
+                                    <p class="p__item-descript">Снятие + педикюр + покрытие = 2 100₽ <span> 2 400₽</span></p>
+                                    <div class="p__item-star"><img src="img/sun-small.svg" alt="Sun"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="p__button link-button">
+                        <p class="p__button-title">Записаться</p>
+                        <img src="img/arrow-link.svg" alt="ArrowLink" class="p__button-icon">
+                    </button>
                 </div>
             </div>
         </section>
@@ -581,9 +607,9 @@
                 </div>
             </div>
         </section>
-        <section class="sert">
-            <div class="sert__block">
-                <div class="container">
+        <section class="sert" id="sertificates">
+            <div class="container">
+                <div class="sert__block">
                     <div class="sert__info">
                         <h2 class="section__title sert__title">Приобретите <br/>подарочный сертификат на любую сумму</h2>
                         <p class="sert__descript">Подарите своим близким идеальный уход и незабываемые моменты расслабления в студиях Маникюрка</p>
@@ -644,9 +670,9 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
-            <div class="contact__block">
-                <div class="container">
+        <section class="contact" id="contacts">
+            <div class="container">
+                <div class="contact__block">
                     <div class="contact__info">
                         <h2 class="section__title contact__title">Контакты</h2>
                         <div class="contact__info-block">
@@ -696,6 +722,7 @@
             </div>
             <div class="footer__links">
                 <button class="footer__button">Записаться <img src="img/arrow-link.svg" alt="FooterButton"></button>
+                <div class="footer__sogl-mobile">2024 © «Маникюрка»</div>
                 <a href="#" class="footer__link">Политика конфиденциальности</a>
             </div>
         </div>
