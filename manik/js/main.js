@@ -52,6 +52,27 @@ $(() => {
           }
         ]
     })
+    $('.master__slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    })
     $('.header__menu-item-child').hover(
       function() {
         $(this).children('.header__menu-submenu').css({"display": 'flex'})

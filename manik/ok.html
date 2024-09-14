@@ -6,25 +6,25 @@
 
     <link type="image/x-icon" href="./img/fav.png" rel="shortcut icon">
     <link type="Image/x-icon" href="./img/fav.png" rel="icon">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Страница филиала</title>
+    <link rel="stylesheet" href="css/fil.css">
 
     <style>
         .about__item::after{
             background-image: url('./img/sun-big.svg');
         }
-        .works .slick-prev, .reviews .slick-prev{
+        .works .slick-prev, .master .slick-prev, .reviews .slick-prev, .master .slick-prev{
             background-image: url('./img/slider__arrow.svg');
         }
-        .works .slick-prev:hover, .reviews .slick-prev:hover{
+        .works .slick-prev:hover, .reviews .slick-prev:hover, .master .slick-prev:hover{
             background-image: url('./img/slider__arrow-active.svg');
         }
 
 
-        .works .slick-next, .reviews .slick-next{
+        .works .slick-next, .reviews .slick-next, .master .slick-next{
             background-image: url('./img/slider__arrow.svg');
         }
-        .works .slick-next:hover, .reviews .slick-next:hover{
+        .works .slick-next:hover, .reviews .slick-next:hover, .master .slick-next:hover{
             background-image: url('./img/slider__arrow-active.svg');
         }
     </style>
@@ -62,16 +62,15 @@
             <div class="container">
                 <div class="main__bg">
                     <div class="main__info">
-                        <h1 class="main__title">Сеть студий <br/>маникюра <br/>и педикюра</h1>
-                        <p class="main__descript">Заботимся о красоте ваших рук и ног на высшем уровне!</p>
+                        <h1 class="main__title">Филиал на Октября,44</h1>
                         <ul class="main__list">
-                            <li class="main__list-item">Маникюр и педикюр любой сложности</li>
-                            <li class="main__list-item">Стильные дизайны и тренды</li>
-                            <li class="main__list-item">Уютная атмосфера и забота о каждом клиенте</li>
+                            <li class="main__list-item">Южный Реутов</li>
+                            <li class="main__list-item">+7 (925) 604-34-28</li>
+                            <li class="main__list-item">м. Новокосино</li>
                         </ul>
                         <button class="main__button link-button">Выбрать услугу <img src="img/arrow-link-white.svg" alt="ArrowLink" class="main__button-icon"></button>
                     </div>
-                    <div class="main__img"><img src="img/main__img.png" alt="MainImg"></div>
+                    <div class="main__img"><img src="img/ok__img.png" alt="MainImg"></div>
                 </div>
             </div>
         </section>
@@ -607,6 +606,45 @@
                 </div>
             </div>
         </section>
+        <section class="master">
+            <div class="container">
+                <h2 class="section__title master__title">Наши мастера</h2>
+                <div class="master__slider">
+                    <div class="master__item">
+                        <div class="master__item-img"><img src="img/master.png" alt="MasterImg"></div>
+                        <div class="master__item-info">
+                            <h3 class="master__item-title">Анастасия</h3>
+                            <p class="master__item-descript">Мастер</p>
+                            <button class="master__item-button">Записаться <img src="img/arrow-link-gray.svg" alt="ArrowLink"></button>
+                        </div>
+                    </div>
+                    <div class="master__item">
+                        <div class="master__item-img"><img src="img/master.png" alt="MasterImg"></div>
+                        <div class="master__item-info">
+                            <h3 class="master__item-title">Анастасия</h3>
+                            <p class="master__item-descript">Мастер</p>
+                            <button class="master__item-button">Записаться <img src="img/arrow-link-gray.svg" alt="ArrowLink"></button>
+                        </div>
+                    </div>
+                    <div class="master__item">
+                        <div class="master__item-img"><img src="img/master.png" alt="MasterImg"></div>
+                        <div class="master__item-info">
+                            <h3 class="master__item-title">Анастасия</h3>
+                            <p class="master__item-descript">Мастер</p>
+                            <button class="master__item-button">Записаться <img src="img/arrow-link-gray.svg" alt="ArrowLink"></button>
+                        </div>
+                    </div>
+                    <div class="master__item">
+                        <div class="master__item-img"><img src="img/master.png" alt="MasterImg"></div>
+                        <div class="master__item-info">
+                            <h3 class="master__item-title">Анастасия</h3>
+                            <p class="master__item-descript">Мастер</p>
+                            <button class="master__item-button">Записаться <img src="img/arrow-link-gray.svg" alt="ArrowLink"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="sert" id="sertificates">
             <div class="container">
                 <div class="sert__block">
@@ -619,7 +657,7 @@
                 </div>
             </div>
         </section>
-        <section class="works" id="works">
+        <section class="works">
             <div class="container">
                 <h2 class="section__title works__title">работы наших мастеров</h2>
                 <div class="works__slider">
@@ -679,11 +717,6 @@
                             <div class="contact__item">
                                 <h3 class="contact__item-title">Южный Реутов, ул. Октября д. 44</h3>
                                 <h3 class="contact__item-title">+7 (925) 604-34-28</h3>
-                                <h3 class="contact__item-title">м. новокосино</h3>
-                            </div>
-                            <div class="contact__item">
-                                <h3 class="contact__item-title">Северный Реутов, ул. Ленина д. 4</h3>
-                                <h3 class="contact__item-title">+7 (985) 740-64-30</h3>
                                 <h3 class="contact__item-title">м. новокосино</h3>
                             </div>
                         </div>
