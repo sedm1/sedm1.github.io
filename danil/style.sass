@@ -1,0 +1,189 @@
+$black: #000
+$gray: #959595
+$orange: #FC530E
+$white: #FFF 
+$yellow: #FFE76A
+    
+*
+    padding: 0 
+    margin: 0
+    box-sizing: border-box
+    font-family: "Inter Tight", sans-serif
+body 
+    position: relative
+    background-color: #FAFAFA
+img 
+    width: 100%
+    height: auto
+a 
+    color: inherit 
+    text-decoration: none 
+    cursor: pointer
+span 
+    font-weight: inherit 
+    font-size: inherit
+li 
+    list-style: none 
+button 
+    border: 0 
+    outline: 0 
+    background: none 
+    cursor: pointer
+
+.container
+    max-width: 1200px
+    width: 100%
+    margin: 0 auto
+    padding: 0px 20px
+.video
+    .slick-list 
+        margin: 0px -10px
+    &__item
+        height: 200px
+        background: red
+        color: white 
+        display: flex !important
+        justify-content: center
+        align-items: center
+        border: 2px solid green
+        margin: 0px 10px
+    .slick-dots
+        position: absolute
+        bottom: -20px
+        left: 50%
+        display: flex
+        transform: translateX(-50%)
+        gap: 10px
+        li 
+            width: 8px
+            height: 8px
+            background: $black
+            border-radius: 100%
+            cursor: pointer
+            button
+                font-size: 0px
+        li.slick-active
+            background: $yellow
+    .slick-arrow
+        position: absolute
+        z-index: 2
+        top: 50%
+        font-size: 0px
+        width: 50px
+        height: 50px
+        background: blue
+        transform: translateY(-50%)
+        background-position: center center
+        background-size: cover
+    .slick-prev
+        left: 0px
+        background-image: url()
+    .slick-next
+        right: 0px
+        background-image: url()
+.price
+    &__item
+        border: 1px solid red 
+        &-button 
+            transition: .3s
+            &-active 
+                transform: rotate(72000deg)
+        &-header 
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &-content 
+            max-height: 0px 
+            overflow: hidden
+            opacity: 0
+            transition: .3s
+            &-active 
+                max-height: 5000px
+                overflow: visible
+                opacity: 1
+.modal
+    &__bg
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 5
+        width: 100%
+        height: 100dvh
+        background: rgba(0, 0, 0, 0.4)
+        display: none
+        align-items: center
+        justify-content: center
+        opacity: 0
+        transition: .3s
+        &-active 
+            opacity: 1
+    &__window
+        max-width: 650px
+        width: 100%
+        background: #fff
+        height: 650px
+        display: none 
+        opacity: 0
+        transition: .3s
+        &-active 
+            opacity: 1
+.t
+    &__header 
+        display: flex
+        justify-content: center
+        gap: 20px
+        &-button 
+            border: 1px solid black
+            transition: .3s
+            &-active 
+                background: red
+    &__main
+        &-item 
+            display: none 
+            &-active 
+                display: block
+.menu
+    &__list
+        &-block 
+            display: flex
+            justify-content: center
+            gap: 20px
+        &-submenu 
+            display: none
+            position: absolute
+            top: 20px
+            left: 0px
+        &-item 
+            position: relative
+            &-submenu 
+                &:hover > .menu__list-submenu
+                    display: block
+                    background: blue
+                &::after 
+                    content: ""
+                    position: absolute
+                    background: red
+                    width: 5px
+                    height: 5px
+                    top: 5px
+                    right: -10px
+@media screen and (max-width: 1050px)
+    .header
+        &__menu
+            display: none
+        &__right
+            gap: 20px
+            &-button
+                display: flex
+                background-color: $orange
+                width: 48px
+                height: 48px
+                border-radius: 100%
+                align-items: center
+                justify-content: center 
+                img
+                    width: 16px
+
+@media screen and (max-width: 650px)
+    .header__contacts, .header__info-text
+        display: none

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
+    <link rel="icon" href="img/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__block">
+                <div class="header__left">
+                    <a href="#"><div class="header__logo"><img src="img/logo.svg" alt="Logo"></div></a>
+                    <div class="header__info">
+                        <h4 class="header__info-title"><span>Бородина</span><br> Инна Юрьевна</h4>
+                        <p class="header__info-descript header__info-ort">Ортодонт<span>-терапевт</span></p>
+                        <p class="header__info-descript header__info-ter">Терапевт</p>
+                        <p class="header__info-descript">Детский стоматолог</p>
+                    </div>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="#">Главная</a></li>
+                        <li class="header__menu-item header__menu-item-submenu">
+                            Услуги и цены
+                            <ul class="header__submenu-list">
+                                <li class="header__submenu-item"><a href="index_ort.html">Страница 1</a></li>
+                                <li class="header__submenu-item"><a href="#">Страница 2</a></li>
+                                <li class="header__submenu-item"><a href="#">Страница 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item header__menu-about"><a href="#about">О враче</a></li>
+                        <li class="header__menu-item"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    <div class="header__menu-mobile">
+                        <h3 class="header__mobile-title">Телефон:</h3>
+                        <p class="header__mobile-descript">8-964-788-88-08</p>
+                        <div class="header__mobile-soz">
+                            <a href="#"><div class="header__soz-item"><img src="img/inst-icon.svg" alt="InstIcon"></div></a>
+                            <a href="#"><div class="header__soz-item"><img src="img/whatsapp-icon.svg" alt="WhatsAppIcon"></div></a>
+                            <a href="#"><div class="header__soz-item"><img src="img/tg-icon.svg" alt="TgIcon"></div></a>
+                        </div>
+                        <button class="header__mobile-button">Записаться на прием</button>
+                    </div>
+                </nav>
+                <div class="header__right">
+                    <div class="header__soz">
+                        <a href="#"><div class="header__soz-item"><img src="img/inst-icon.svg" alt="InstIcon"></div></a>
+                        <a href="#"><div class="header__soz-item"><img src="img/whatsapp-icon.svg" alt="WhatsAppIcon"></div></a>
+                        <a href="#"><div class="header__soz-item"><img src="img/tg-icon.svg" alt="TgIcon"></div></a>
+                    </div>
+                    <div class="header__call">
+                        <div class="header__call-info">
+                            <p class="header__call-title">Телефон</p>
+                            <a href="tel:+79647888808" class="header__call-tel">8-964-788-88-08</a>
+                        </div>
+                        <button class="header__call-button modal__open"><div class="header__call-link">Запись на прием</div></button>
+                    </div>
+                </div>
+                <button class="header__burg"><img src="img/burger-menu.svg" alt="BurgerImg"></button>    
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="main__slider">
+                    <div class="main__block">
+                        <div class="main__info">
+                            <h1 class="main__info-title">Сияющая улыбка — залог вашего здоровья!</h1>
+                            <p class="main__info-descript">Профессиональная стоматология для всей семьи: доверяйте опытным специалистам и наслаждайтесь безупречной улыбкой.</p>
+                            <button class="main__info-button modal__open">Оставить заявку</button>
+                        </div>
+                        <div class="main__img"><img src="img/main-vrach.png" alt="VrachImg"></div>
+                    </div>
+                    <div class="main__block">
+                        <div class="main__info">
+                            <h1 class="main__info-title">Сияющая улыбка — залог вашего здоровья!</h1>
+                            <p class="main__info-descript">Профессиональная стоматология для всей семьи: доверяйте опытным специалистам и наслаждайтесь безупречной улыбкой.</p>
+                            <button class="main__info-button modal__open">Оставить заявку</button>
+                        </div>
+                        <div class="main__img"><img src="img/main-vrach.png" alt="VrachImg"></div>
+                    </div>
+                    <div class="main__block">
+                        <div class="main__info">
+                            <h1 class="main__info-title">Сияющая улыбка — залог вашего здоровья!</h1>
+                            <p class="main__info-descript">Профессиональная стоматология для всей семьи: доверяйте опытным специалистам и наслаждайтесь безупречной улыбкой.</p>
+                            <button class="main__info-button modal__open">Оставить заявку</button>
+                        </div>
+                        <div class="main__img"><img src="img/main-vrach.png" alt="VrachImg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="services__title">Услуги</h2>
+                <div class="services__card">
+                    <div class="services__card-bg">
+                        <div class="services__card-item services__card-ordont"></div>
+                        <p class="services__card-descript">Брекеты &#8226; Элайнеры &#8226; Сопутствующие услуги &#8226; Устранение аномалий прикуса</p>
+                        <h3 class="services__card-title">Ортодонтия</h3>
+                    </div>
+                    <div class="services__card-bg">
+                        <div class="services__card-item services__card-child"></div>
+                        <p class="services__card-descript">Чистка зубов &#8226; Ремонт зубов &#8226; Герметизация &#8226; Седация и анестезия</p>
+                        <h3 class="services__card-title">Детская стоматология</h3>
+                    </div>
+                    <div class="services__card-bg">
+                        <div class="services__card-item services__card-therapy"></div>
+                        <p class="services__card-descript">Консультация ортодонта &#8226; Брекеты &#8226; <br>Лингвальные брекеты &#8226; Невидимые капы &#8226; Устранение аномалий прикуса</p>
+                        <h3 class="services__card-title">Терапия</h3>
+                    </div>
+                </div>
+                <div class="services__slider">
+                    <div class="services__slider-bg services__slider-bg-first">
+                        <div class="services__slider-info">
+                            <h3 class="services__slider-title">Профессиональная гигиена полости рта</h3>
+                            <p class="services__slider-descript">Профессиональная гигиена: забота о вашем здоровье и безупречной улыбке!</p>
+                            <p class="services__slider-price">Цена: <span>4 990₽</span></p>
+                        </div>
+                    </div>
+                    <div class="services__slider-bg services__slider-bg-second">
+                        <div class="services__slider-info">
+                            <h3 class="services__slider-title">Бесплатная консультация и составление плана лечения</h3>
+                            <p class="services__slider-descript">Ваш первый шаг к здоровью и красоте улыбки!</p>
+                            <p class="services__slider-price">Бесплатно!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="container">
+                <video src="img/video.mp4" preload="auto" class="video__item"></video>
+                <div class="video__button" style="opacity: 1;"><img src="img/play.svg" alt="PlayButton"></div>
+                <p class="video__descript">Видео-обзор нашей клиники</p>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__block">
+                    <div class="about__info">
+                        <h2 class="about__title">О враче</h2>
+                        <p class="about__descript">Давайте знакомиться! Меня зовут Бородина Инна Юрьевна. Я являюсь врачом ортодонтом, детским стоматологом и веду взрослый терапевтический прием. Рада приветствовать вас на своем сайте.</p>
+                        <p class="about__descript"><span>Немного о себе:</span></p>
+                        <p class="about__descript">В 2012 году окончила Российский Университет Дружбы Народов по специальности Стоматология с красным дипломом. В 2013 году завершила обучение в интернатуре по специальности Стоматология общей практики, а в 2015 году – в ординатуре по специальности Ортодонтия. В 2015 году прошла Профессиональную переподготовку по специальности Стоматология детская.</p>
+                        <p class="about__descript">На протяжении всех лет работы я постоянно совершенствую свои навыки и знания, посещая многочисленные конференции, семинары, лекции.</p>
+                        <p class="about__descript about__descript-last">Я работаю как с взрослыми, так и с детьми, и всегда стремлюсь к индивидуальному подходу, чтобы каждый мог получить максимально комфортное и эффективное лечение. Понимая значение профилактики, я также активно обучаю своих пациентов правильной гигиене полости рта и важности регулярных посещений стоматолога. Люблю свою профессию и стараюсь делать так, чтобы каждый выходил из моего кабинета с улыбкой!</p>
+                        <button class="about__button modal__open"><p class="about__link">Записаться на прием</p></button>
+                    </div>
+                    <div class="about__img"><img src="img/about-vrach.png" alt="VrachImg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="raboti">
+            <div class="container">
+                <h2 class="raboti__title">Мои работы</h2>
+                <div class="raboti__slider">
+                    <div class="raboti__images">
+                        <div class="raboti__images-item"><img src="img/zubi3 (2).jpeg" alt="ZubiImg"></div>
+                        <div class="raboti__images-item"><img src="img/zubi3 (1).jpeg" alt="ZubiImg"></div>
+                    </div>
+                    <div class="raboti__images">
+                        <div class="raboti__images-item"><img src="img/zubi2 (2).jpeg" alt="ZubiImg"></div>
+                        <div class="raboti__images-item"><img src="img/zubi2 (1).jpeg" alt="ZubiImg"></div>
+                    </div>
+                    <div class="raboti__images">
+                        <div class="raboti__images-item"><img src="img/zubi1 (1).jpg" alt="ZubiImg"></div>
+                        <div class="raboti__images-item"><img src="img/zubi1 (2).jpg" alt="ZubiImg"></div>
+                    </div>
+                    <div class="raboti__images">
+                        <div class="raboti__images-item"><img src="img/zubi4 (2).jpeg" alt="ZubiImg"></div>
+                        <div class="raboti__images-item"><img src="img/zubi4 (1).jpeg" alt="ZubiImg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="preim">
+            <div class="container">
+                <h2 class="preim__title">Мои преимущества</h2>
+                <div class="preim__card">
+                    <div class="preim__card-bg">
+                        <div class="preim__card-item preim__card-first"></div>
+                        <div class="preim__card-info">
+                            <h3 class="preim__card-title">Мне доверяют</h3>
+                            <p class="preim__card-descript">Более 100 довольных пациентов уже обрели свою долгожданную красивую и здоровую улыбку.</p>
+                        </div>
+                    </div>
+                    <div class="preim__card-bg">
+                        <div class="preim__card-item preim__card-second"></div>
+                        <div class="preim__card-info">
+                            <h3 class="preim__card-title">Гарантия качества</h3>
+                            <p class="preim__card-descript">Я использую только надежные и качественные материалы от качественных производителей.</p>
+                        </div>
+                    </div>
+                    <div class="preim__card-bg">
+                        <div class="preim__card-item preim__card-third"></div>
+                        <div class="preim__card-info">
+                            <h3 class="preim__card-title preim__title-last">Индивидуальный подход</h3>
+                            <p class="preim__card-descript preim__descript-last">Мой пациент получает всесторонний план лечения, учитывающий его персональные особенности и потребности.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="zapis" id="zapis">
+            <div class="container">
+                <div class="zapis__bg">
+                    <h2 class="zapis__title">Записаться на прием</h2>
+                    <p class="zapis__descript zapis__descript-top">Оставьте заявку! И я свяжусь с вами как можно скорее!</p>
+                    <form class="zapis__form">
+                        <input type="text" class="zapis__form-input" placeholder="Ваше имя">
+                        <input type="text" class="zapis__form-input" placeholder="+7(___) ___-__-__">
+                        <button class="zapis__form-button">Отправить</button>
+                    </form>
+                    <p class="zapis__descript">Оставляя заявку, вы соглашаетесь на обработку персональных данных</p>
+                </div>
+            </div>
+        </section>
+        <section class="sertif" id="sertificates">
+            <div class="container">
+                <h2 class="sertif__title">Сертификаты</h2>
+                <di class="sertif__slider">
+                    <div class="sertif__img"><img src="img/preim3.jpg" alt="img"></div>
+                    <div class="sertif__img"><img src="img/preim1.jpg" alt="img"></div>
+                    <div class="sertif__img"><img src="img/preim2.jpg" alt="img"></div>
+                    <div class="sertif__img"><img src="img/preim3.jpg" alt="img"></div>
+                    <div class="sertif__img"><img src="img/preim1.jpg" alt="img"></div>
+                    <div class="sertif__img"><img src="img/preim2.jpg" alt="img"></div>
+                    <div class="sertif__img"><img src="img/preim3.jpg" alt="img"></div>
+                    <div class="sertif__img"><img src="img/preim1.jpg" alt="img"></div>
+                </div>
+            </div>
+        </section>
+        <section class="otzivi" id="otzivi">
+            <div class="container">
+                <h2 class="otzivi__title">Отзывы</h2>
+                <div class="otzivi__slider">
+                    <div class="otzivi__item">
+                        <div class="otzivi__item-block">
+                            <div class="otzivi__block-up">
+                                <div class="otzivi__up-logo"><img src="img/yandex.png" alt="YandexImg"></div>
+                                <div class="otzivi__up-info">
+                                    <a href="#" class="otzivi__info-link">
+                                        Яндекс
+                                        <div class="otzivi__link-logo"><img src="img/logo-otziv.svg" alt="LogoOtziv"></div>
+                                    </a>
+                                    <h3 class="otzivi__info-name">Александр</h3>
+                                    <p class="otzivi__info-date">Апрель 2024</p>
+                                </div>
+                                <div class="otzivi__info-stars"><img src="img/stars.png" alt="StarsImg"></div>
+                            </div>
+                            <p class="otzivi__block-descript">Недавно посетил стоматолога, и хочу поделиться своим опытом. Врач оказался очень профессиональным и внимательным. На первом приеме провели тщательную диагностику, объяснили все шаги лечения и ответили на все мои вопросы.</p>
+                        </div>
+                    </div>
+                    <div class="otzivi__item">
+                        <div class="otzivi__item-block">
+                            <div class="otzivi__block-up">
+                                <div class="otzivi__up-logo"><img src="img/yandex.png" alt="YandexImg"></div>
+                                <div class="otzivi__up-info">
+                                    <a href="#" class="otzivi__info-link">
+                                        Яндекс
+                                        <div class="otzivi__link-logo"><img src="img/logo-otziv.svg" alt="LogoOtziv"></div>
+                                    </a>
+                                    <h3 class="otzivi__info-name">Александр</h3>
+                                    <p class="otzivi__info-date">Апрель 2024</p>
+                                </div>
+                                <div class="otzivi__info-stars"><img src="img/stars.png" alt="StarsImg"></div>
+                            </div>
+                            <p class="otzivi__block-descript">Недавно посетил стоматолога, и хочу поделиться своим опытом. Врач оказался очень профессиональным и внимательным. На первом приеме провели тщательную диагностику, объяснили все шаги лечения и ответили на все мои вопросы.</p>
+                        </div>
+                    </div>
+                    <div class="otzivi__item">
+                        <div class="otzivi__item-block">
+                            <div class="otzivi__block-up">
+                                <div class="otzivi__up-logo"><img src="img/yandex.png" alt="YandexImg"></div>
+                                <div class="otzivi__up-info">
+                                    <a href="#" class="otzivi__info-link">
+                                        Яндекс
+                                        <div class="otzivi__link-logo"><img src="img/logo-otziv.svg" alt="LogoOtziv"></div>
+                                    </a>
+                                    <h3 class="otzivi__info-name">Александр</h3>
+                                    <p class="otzivi__info-date">Апрель 2024</p>
+                                </div>
+                                <div class="otzivi__info-stars"><img src="img/stars.png" alt="StarsImg"></div>
+                            </div>
+                            <p class="otzivi__block-descript">Недавно посетил стоматолога, и хочу поделиться своим опытом. Врач оказался очень профессиональным и внимательным. На первом приеме провели тщательную диагностику, объяснили все шаги лечения и ответили на все мои вопросы.</p>
+                        </div>
+                    </div>
+                    <div class="otzivi__item">
+                        <div class="otzivi__item-block">
+                            <div class="otzivi__block-up">
+                                <div class="otzivi__up-logo"><img src="img/yandex.png" alt="YandexImg"></div>
+                                <div class="otzivi__up-info">
+                                    <a href="#" class="otzivi__info-link">
+                                        Яндекс
+                                        <div class="otzivi__link-logo"><img src="img/logo-otziv.svg" alt="LogoOtziv"></div>
+                                    </a>
+                                    <h3 class="otzivi__info-name">Александр</h3>
+                                    <p class="otzivi__info-date">Апрель 2024</p>
+                                </div>
+                                <div class="otzivi__info-stars"><img src="img/stars.png" alt="StarsImg"></div>
+                            </div>
+                            <p class="otzivi__block-descript">Недавно посетил стоматолога, и хочу поделиться своим опытом. Врач оказался очень профессиональным и внимательным. На первом приеме провели тщательную диагностику, объяснили все шаги лечения и ответили на все мои вопросы.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts__block">
+                    <h2 class="contacts__title">Контакты</h2>
+                    <div class="contacts__location contacts__location-up">
+                        <div class="contacts__location-logo"><img src="img/loc-logo.svg" alt="LocLogo"></div>
+                        <p class="contacts__location-info">г. Москва, Дмитровское шоссе, д. 96, корп. 5</p>
+                    </div>
+                    <div class="contacts__location">
+                        <div class="contacts__location-logo"><img src="img/tel-logo.svg" alt="TelLogo"></div>
+                        <a href="tel:+79647888808" class="contacts__location-info">8-964-788-88-08</a>
+                    </div>
+                    <div class="contacts__soz">
+                        <a href="#"><div class="contacts__soz-item"><img src="img/inst-icon.svg" alt="InstIcon"></div></a>
+                        <a href="#"><div class="contacts__soz-item"><img src="img/whatsapp-icon.svg" alt="WhatsAppIcon"></div></a>
+                        <a href="#"><div class="contacts__soz-item"><img src="img/tg-icon.svg" alt="TgIcon"></div></a>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1bbdc0bccc3ee2bd839f04e3b5ff0bf615f43e0000b6f302e10d38773aaa94cb&amp;width=100%25&amp;height=467&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__up">
+                    <div class="footer__left">
+                        <a href="#"><div class="footer__logo"><img src="img/logo.svg" alt="Logo"></div></a>
+                        <div class="footer__info">
+                            <h4 class="footer__info-title"><span>Бородина</span><br> Инна Юрьевна</h4>
+                            <p class="footer__info-descript">Ортодонт</p>
+                            <p class="footer__info-descript">Терапевт</p>
+                            <p class="footer__info-descript">Детский стоматолог</p>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__list">
+                            <h3 class="footer__list-title">Компания</h3>
+                            <ul class="footer__list-menu">
+                                <li class="footer__list-item"><a href="#services">Услуги</a></li>
+                                <li class="footer__list-item"><a href="#about">О враче</a></li>
+                                <li class="footer__list-item"><a href="#sertificates">Сертификаты</a></li>
+                                <li class="footer__list-item"><a href="#otzivi">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <h3 class="footer__list-title">Услуги и цены</h3>
+                            <ul class="footer__list-menu">
+                                <li class="footer__list-item"><a href="#">Ортодонтия</a></li>
+                                <li class="footer__list-item"><a href="#">Детская стоматология</a></li>
+                                <li class="footer__list-item"><a href="#">Терапия</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <h3 class="footer__contacts-title">Контакты</h3>
+                        <div class="footer__location-block">
+                            <div class="footer__location">
+                                <div class="footer__location-logo"><img src="img/loc-logo.svg" alt="LocLogo"></div>
+                                <p class="footer__location-info">г. Москва, Дмитровское шоссе, д. 96, корп. 5</p>
+                            </div>
+                            <div class="footer__location">
+                                <div class="footer__location-logo"><img src="img/tel-logo.svg" alt="TelLogo"></div>
+                                <a href="tel:+79647888808" class="footer__location-info">8-964-788-88-08</a>
+                            </div>  
+                        </div>
+                    </div>  
+                </div>
+                <div class="footer__soz">
+                    <a href="#"><div class="footer__soz-item"><img src="img/inst-icon-white.svg" alt="InstIcon"></div></a>
+                    <a href="#"><div class="footer__soz-item"><img src="img/whap-white.svg" alt="WhatsAppIcon"></div></a>
+                    <a href="#"><div class="footer__soz-item"><img src="img/inst-white.svg" alt="TgIcon"></div></a>
+                </div>
+                <div class="footer__prava">
+                    <p>@2024 Все права защищены</p>
+                </div>   
+            </div>
+        </div>
+    </footer>
+    <div class="modal__bg">
+        <div class="modal__window">
+            <div class="container">
+                <div class="modal__zapis-bg">
+                    <h2 class="modal__zapis-title">Записаться на прием</h2>
+                    <p class="zapis__descript zapis__descript-top modal__zapis-descript">Оставьте заявку! И я свяжусь с вами как можно скорее!</p>
+                    <form class="modal__zapis-form">
+                        <input type="text" class="zapis__form-input" placeholder="Ваше имя">
+                        <input type="text" class="zapis__form-input" placeholder="+7(___) ___-__-__">
+                        <button class="modal__zapis-button">Отправить</button>
+                    </form>
+                    <p class="zapis__descript modal__zapis-descript">Оставляя заявку, вы соглашаетесь на обработку персональных данных</p>
+                </div>
+            </div>
+            <button class="modal__close"><img src="img/close.svg" alt="CloseImg"></button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/beforeafter.jquery-1.0.0.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</script>
+
+</body>
+</html>

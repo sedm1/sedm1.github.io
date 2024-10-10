@@ -1,0 +1,1353 @@
+$white: #FFF
+$black: #040B1C
+$blue: #0091ff
+$gray: #687087
+$white-dark: #F3F5F8
+    
+*   
+    color: $black
+    padding: 0 
+    margin: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+    font-family: 'Gilroy'
+    scroll-margin: 140px
+body 
+    position: relative
+    background: $white
+img 
+    width: 100%
+    height: auto
+a 
+    color: inherit 
+    text-decoration: none 
+    cursor: pointer
+span 
+    font-weight: inherit 
+    font-size: inherit
+li 
+    list-style: none 
+    cursor: pointer
+    
+button 
+    color: inherit
+    border: 0 
+    outline: 0 
+    background: none 
+    cursor: pointer
+section
+    width: 100%
+    margin-bottom: 100px
+
+.container
+    margin: 0 auto
+    max-width: 1296px
+    width: 100%
+    padding: 0px 20px
+
+header
+    position: fixed
+    background: $white
+    width: 100%
+    box-shadow: 0px 150px 42px 0px rgba(199, 199, 199, 0.00), 0px 96px 38px 0px rgba(199, 199, 199, 0.01), 0px 54px 32px 0px rgba(199, 199, 199, 0.05), 0px 24px 24px 0px rgba(199, 199, 199, 0.09), 0px 6px 13px 0px rgba(199, 199, 199, 0.10)
+    padding: 17px 0px
+    top: 0
+    left: 0
+    z-index: 2
+
+.header
+    &__burg
+        width: 40px
+        display: none
+    &__block
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 34px
+    &__left
+        display: flex
+        align-items: flex-start
+        gap: 14px
+    &__logo
+        min-width: 65px
+        width: 65px
+    &__info
+        &-ter
+            display: block
+        &-ort
+            span
+                display: none
+        &-title
+            font-size: 18px
+            font-weight: 600
+            span
+                color: $blue
+        &-descript
+            color: $gray
+            font-weight: 600
+            font-size: 14px
+    &__menu
+        &-mobile 
+            display: none
+        &-list
+            display: flex
+            align-items: center
+            gap: 40px
+        &-item
+            font-size: 16px
+            font-weight: 500
+            position: relative
+            &-submenu
+                &:hover > .header__submenu-list
+                    display: block
+                    background: $white
+                    transition: .3s
+                &::after
+                    content: ""
+                    position: absolute
+                    background-image: url("img/header-arrow.svg")
+                    background-repeat: no-repeat
+                    top: 7px
+                    width: 10px
+                    height: 8px
+                    right: -15px
+                    
+    &__submenu
+        &-list
+            width: 100%
+            display: none
+            position: absolute
+            top: 20px
+            left: 0px
+        &-item
+            padding-top: 10px
+    &__right
+        display: flex
+        align-items: center
+        gap: 25px
+    &__soz
+        display: flex
+        align-items: center
+        gap: 9px
+        &-item
+            width: 40px
+            height: 40px
+            background: $white-dark
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                min-width: 21px
+                width: 21px
+    &__call
+        display: flex
+        align-items: center
+        gap: 13px
+        &-title
+            font-size: 15px
+            color: $gray
+            font-weight: 500
+        &-tel
+            font-size: 17px
+            color: $black
+            font-weight: 600
+        &-button
+            background-color: $blue
+            border-radius: 5px
+            padding: 22px 48px
+            
+        &-link
+            font-weight: 600
+            font-size: 14px
+            color: $white
+
+// MAIN
+main
+    padding-top: 130px
+    .container
+        height: 100%
+.main
+    height: calc(100vh - 129px)
+    position: relative 
+    .slick-slider
+        height: 100%
+    .slick-track
+        height: 100%
+    &__slider
+        height: 100%
+        justify-content: center
+        display: flex
+    &::before
+        width: 100%
+        background: url("img/main-bg.png")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        z-index: -1
+        content: ''
+        position: absolute
+        top: 0px
+        right: 0px
+        bottom: 0px
+        left: 0px
+        opacity: 0.13
+        background-color: rgba(256,256,256,0.75)
+    &__block
+        display: flex
+        justify-content: space-between
+        gap: 20px
+    &__info
+        padding-top: 73px
+        max-width: 537px
+        width: 100%
+        &-title
+            font-size: 45px
+            font-weight: 700
+            line-height: 52px
+            margin-bottom: 8px
+        &-descript
+            font-size: 17px
+            color: $gray
+            font-weight: 400
+            line-height: 25px
+            margin-bottom: 25px
+        &-button
+            background-color: $blue
+            border-radius: 5px
+            max-width: 252px
+            padding: 31px 67px
+            width: 100%
+            font-weight: 600
+            font-size: 15px
+            font-size: 15px
+            font-weight: 600
+            color: $white
+            display: inline-table
+    &__button-link
+        display: inline-flex
+    &__img
+        img
+            margin-top: 32px
+            margin-left: 30px
+        max-width: 750px
+        width: 100%
+    
+    
+    &__block
+        display: flex !important
+        
+    .slick-dots
+        position: absolute
+        bottom: 20px
+        left: 50%
+        display: flex
+        transform: translateX(-50%)
+        gap: 7px
+        li 
+            width: 25px
+            height: 4px
+            background: $gray
+            border-radius: 5px
+            cursor: pointer
+            button
+                font-size: 0px
+        li.slick-active
+            width: 48px
+            transition: .3s
+            background: $blue
+
+// SERVICES
+
+.services
+    &__title
+        font-size: 35px
+        font-weight: 600
+        margin-bottom: 30px
+    &__card
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 24px
+        z-index: 1
+        margin-bottom: 122px
+        &-bg
+            border-radius: 15px
+            width: 100%
+            position: relative
+            transition: .3s
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 27.95%, #FFF 91.99%)
+            &:hover
+                transition: .3s
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 55.14%, #0091FF 91.99%)
+                &::after
+                    content: ""
+                    position: absolute
+                    background-image: url("img/white-icon.svg")
+                    width: 23px
+                    height: 35px
+                    z-index: 2
+                    bottom: 0
+                    right: 23px
+                .services__card
+                    &-descript
+                        display: block
+                    &-title
+                        color: $white 
+
+        &-item
+            position: relative
+            z-index: -1
+            max-width: 416px
+            width: 100%
+            border-radius: 15px
+            box-shadow: 0px 72px 20px 0px rgba(199, 199, 199, 0.00), 0px 46px 19px 0px rgba(199, 199, 199, 0.01), 0px 26px 16px 0px rgba(199, 199, 199, 0.05), 0px 12px 12px 0px rgba(199, 199, 199, 0.09), 0px 3px 6px 0px rgba(199, 199, 199, 0.10)
+            height: 448px
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+        &-ordont
+            background-image: url("img/ortadont.jpg")
+            
+        &-child
+            background-image: url("img/child-stomat.jpg")
+            
+        &-therapy
+            background-image: url("img/therapy.jpg")
+        &-title
+            position: absolute
+            bottom: 16px
+            left: 26px
+            font-size: 20px
+            font-weight: 600
+            z-index: 2
+        &-descript
+            line-height: 25px
+            display: none
+            position: absolute
+            bottom: 56px
+            left: 26px
+            font-size: 16px
+            color: $white
+            font-weight: 600
+            z-index: 2
+    &__slider
+        &-title
+            font-size: 35px
+            font-weight: 800
+            text-transform: uppercase
+            max-width: 522px 
+            margin-bottom: 10px
+        &-descript
+            font-size: 17px
+            font-weight: 500
+            color: $gray
+            max-width: 522px
+            margin-bottom: 18px
+        &-price
+            font-size: 24px
+            font-weight: 600
+            color: $blue
+            span
+                font-size: 28px
+                font-weight: 600
+                color: $blue
+        &-bg
+            display: flex !important
+            border-radius: 15px
+            position: relative
+            width: 100%
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            &::before
+                position: absolute
+                width: 100%
+                height: auto
+                left: 0px
+                right: 0px
+                top: 0px
+                bottom: 0px
+                z-index: 1
+                content: ""
+                background-size: cover
+                background-position: center center
+                background: linear-gradient(-90deg, rgba(255, 255, 255, 0.00) 32.57%, #FFF 81.8%)
+            &-first
+                background-image: url("img/services-bg.jpg")
+            &-second
+                background-image: url("img/pishet.jpg")
+                .services__slider
+                    &-info
+                        padding: 44px 0px 230px 42px
+                    &-title
+                        max-width: 545px
+        &-info
+            z-index: 2
+            position: relative
+            padding: 44px 0px 206px 42px 
+        
+    .slick-dots
+        position: absolute
+        bottom: 20px
+        left: 50%
+        display: flex
+        transform: translateX(-50%)
+        gap: 7px
+        li 
+            width: 25px
+            height: 4px
+            background: $gray
+            border-radius: 5px
+            cursor: pointer
+            button
+                font-size: 0px
+        li.slick-active
+            width: 48px
+            transition: .3s
+            background: $blue
+            
+// VIDEO 
+
+.video
+    .container
+        position: relative
+        height: 543px
+    video
+        border-radius: 15px
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__button
+        transition: .3s
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        cursor: pointer
+    &__descript
+        position: absolute
+        bottom: 15px
+        left: 40.5%
+        font-size: 18px
+        color: $white
+        font-weight: 500
+
+// ABOUT
+
+.about
+    &__info
+        max-width: 724px
+        width: 100%
+    &__link
+        font-size: 15px
+        color: $white
+        &::before
+            content: ""
+            background-image: url("img/notebook.svg")
+            position: absolute
+            top: -15px
+            left: -33px
+            width: 59.39px
+            height: 80.946px
+            flex-shrink: 0
+            background-size: cover
+            z-index: 1
+    &__button
+        position: relative
+        max-width: 252px
+        border-radius: 5px
+        width: 100%
+        background-color: $blue
+        padding: 31px 0px
+        font-weight: 600
+        
+    &-button
+        display: inline-flex
+    &__block
+        display: flex
+        align-items: center
+    &__title
+        font-size: 35px
+        font-weight: 600
+        margin-bottom: 30px
+    &__descript
+        font-size: 17px
+        font-weight: 400
+        line-height: 24px
+        color: $gray
+        margin-bottom: 15px
+        &-last
+            margin-bottom: 44px
+        span
+            font-weight: 600
+            color: $gray
+    
+
+                
+// RABOTI
+
+.raboti
+    &__title
+        font-size: 35px
+        font-weight: 600
+        margin-bottom: 30px
+    &__images
+        display: flex !important
+        margin: 0px 12px
+        align-items: center
+        border-radius: 15px
+        max-width: 609px
+        width: 100%
+        &-item
+            max-width: 609px
+            img
+                width: 100%
+                height: 387px
+                object-fit: cover
+    
+    .slick-arrow
+        position: absolute
+        z-index: 1
+        top: 50%
+        font-size: 0px
+        width: 40px
+        height: 40px
+        background: $white-dark
+        transform: translateY(-50%)
+        background-position: center center
+        background-size: auto
+        background-repeat: no-repeat
+        border-radius: 3px
+    .slick-prev
+        top: -53px
+        right: 54px
+        background-image: url("img/left-arr.svg")
+    .slick-next
+        background-color: $gray
+        top: -53px
+        right: 0px
+        background-image: url("img/right-arr.svg")
+
+// PREIM
+
+.preim
+    &__title
+        font-size: 35px
+        font-weight: 600
+        margin-bottom: 30px
+    &__card
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 24px
+        z-index: 1
+        margin-bottom: 122px
+        &-bg
+            border-radius: 15px
+            width: 100%
+            position: relative
+            background: linear-gradient(180deg, rgba(0, 145, 255, 0.00) 55.14%, #0091FF 100%)
+        &-item
+            position: relative
+            z-index: -1
+            max-width: 416px
+            width: 100%
+            border-radius: 15px
+            box-shadow: 0px 72px 20px 0px rgba(199, 199, 199, 0.00), 0px 46px 19px 0px rgba(199, 199, 199, 0.01), 0px 26px 16px 0px rgba(199, 199, 199, 0.05), 0px 12px 12px 0px rgba(199, 199, 199, 0.09), 0px 3px 6px 0px rgba(199, 199, 199, 0.10)
+            height: 448px
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+        &-first
+            background-image: url("img/preim1.jpg")
+            
+        &-second
+            background-image: url("img/preim2.jpg")
+            
+        &-third
+            background-image: url("img/preim3.jpg")
+        &-title
+            position: absolute
+            bottom: 75px
+            left: 20px
+            font-size: 21px
+            text-transform: uppercase
+            color: $white
+            font-weight: 800
+            z-index: 2
+        &-descript
+            position: absolute
+            max-width: 380px
+            left: 20px
+            top: 380px
+            font-size: 16px
+            color: $white
+            font-weight: 600
+
+// ZAPIS
+
+.zapis
+    &__bg
+        background: $white-dark
+        border-radius: 15px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 24px 0px 23px 0px
+        position: relative
+        &::before
+            content: ""
+            background-image: url("img/lines.svg")
+            position: absolute
+            top: 0
+            left: 38px
+            width: 23px
+            z-index: 1
+            height: 53px
+
+    &__title
+        font-size: 33px
+        font-weight: 600
+        margin-bottom: 8px
+    &__descript
+        font-size: 16px
+        color: $gray
+        font-weight: 500
+        margin-bottom: 33px
+    &__form
+        display: flex
+        align-items: center
+        gap: 24px
+        margin-bottom: 25px
+        &-input
+            padding: 30px 75px 30px 23px
+            background-color: $white
+            border-radius: 5px
+            font-size: 15px
+            color: $gray
+            font-weight: 500
+            border: none
+            outline: 0 none
+        &-button
+            font-size: 15px
+            font-weight: 600
+            background-color: $blue
+            max-width: 269px
+            width: 100%
+            border-radius: 5px
+            padding: 30px 96px
+            color: $white
+
+// SERTIF
+
+.sertif
+    &__title
+        margin-bottom: 30px
+        font-size: 35px
+        font-weight: 600
+    &__img
+        display: flex !important
+        justify-content: center
+        align-items: center
+        margin: 0px 12px
+        img
+            border-radius: 10px
+    .slick-arrow
+        position: absolute
+        z-index: 1
+        top: 50%
+        font-size: 0px
+        width: 40px
+        height: 40px
+        background: $white-dark
+        transform: translateY(-50%)
+        background-position: center center
+        background-size: auto
+        background-repeat: no-repeat
+        border-radius: 3px
+    .slick-prev
+        top: -53px
+        right: 54px
+        background-image: url("img/left-arr.svg")
+    .slick-next
+        background-color: $gray
+        top: -53px
+        right: 0px
+        background-image: url("img/right-arr.svg")
+
+// OTZIVI
+
+.otzivi
+    &__title
+        font-size: 35px
+        font-weight: 600
+        margin-bottom: 30px
+    &__item
+        display: flex !important
+        justify-content: center
+        align-items: center
+        margin: 0px 12px
+        border-radius: 10px
+        box-shadow: 0px 75px 21px 0px rgba(209, 209, 209, 0.00), 0px 48px 19px 0px rgba(209, 209, 209, 0.01), 0px 27px 16px 0px rgba(209, 209, 209, 0.05), 0px 12px 12px 0px rgba(209, 209, 209, 0.09), 0px 3px 7px 0px rgba(209, 209, 209, 0.10)
+        &-block
+            padding: 20px 17px 20px 20px
+    &__block
+        &-up
+            display: flex
+            align-items: center
+            margin-bottom: 5px
+        &-descript
+            font-size: 15px
+            font-weight: 400
+            line-height: 20px
+            max-width: 368px
+            width: 100%
+    &__up
+        &-logo
+            width: 71px
+            height: 71px
+            margin-right: 19px
+        &-info
+            max-width: 90px
+            width: 100%
+            margin-right: 72px
+    &__info
+        &-link
+            font-size: 14px
+            color: $gray
+            font-weight: 500
+            display: flex
+            align-items: center
+            gap: 13px
+            margin-bottom: 4px
+        &-date
+            font-size: 12px
+            color: $gray
+            font-weight: 500
+    &__link
+        &-logo
+            width: 11px
+            height: 11px
+    .slick-arrow
+        position: absolute
+        z-index: 1
+        top: 50%
+        font-size: 0px
+        width: 40px
+        height: 40px
+        background: $white-dark
+        transform: translateY(-50%)
+        background-position: center center
+        background-size: auto
+        background-repeat: no-repeat
+        border-radius: 3px
+    .slick-prev
+        top: -45px
+        right: 54px
+        background-image: url("img/left-arr.svg")
+    .slick-next
+        background-color: $gray
+        top: -45px
+        right: 0px
+        background-image: url("img/right-arr.svg")
+        
+// CONTACTS
+
+.contacts
+    .container
+        margin-bottom: 38px
+    &__block
+        display: flex
+        align-items: center
+        gap: 64px
+    &__title
+        font-size: 35px
+        font-weight: 600
+    &__location
+        display: flex
+        align-items: center
+        gap: 14px
+        margin-right: 20px
+        &-logo
+            width: 40px
+            height: 40px
+            background: #E6F4FF
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                min-width: 20px
+                width: 20px
+        &-info
+            font-size: 17px
+            font-weight: 600
+            max-width: 225px
+    &__soz
+        display: flex
+        align-items: center
+        gap: 9px
+        &-item
+            width: 40px
+            height: 40px
+            background: $white-dark
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                min-width: 20px
+                width: 20px
+
+// FOOTER
+footer
+    margin-bottom: 55px
+    
+.footer
+    
+    &__up
+        display: flex
+        align-items: flex-start
+        gap: 150px
+    &__left
+        &__left
+        display: flex
+        align-items: flex-start
+        gap: 14px
+    &__logo
+        min-width: 65px
+        width: 65px
+    &__info
+        &-title
+            font-size: 18px
+            font-weight: 600
+            span
+                color: $blue
+        &-descript
+            color: $gray
+            font-weight: 600
+            font-size: 14px
+    &__menu
+        display: flex
+        gap: 150px
+    &__list
+        &-title
+            font-size: 20px
+            font-style: normal
+            font-weight: 700
+            margin-bottom: 15px
+        &-menu
+            display: flex
+            flex-direction: column
+            gap: 10px 
+        &-item
+            font-size: 16px
+            font-weight: 500
+            color: $gray
+    &__contacts
+        &-title
+            font-size: 20px
+            font-weight: 700
+            margin-bottom: 15px
+    &__location
+        display: flex
+        align-items: center
+        gap: 14px
+        &-logo
+            width: 34px
+            height: 34px
+            background: #E6F4FF
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                min-width: 17px
+                width: 17px
+        &-info
+            font-size: 16px
+            color: $gray
+            font-weight: 600
+            max-width: 222px
+        &-block
+            display: flex
+            flex-direction: column
+            gap: 14px
+            margin-right: 20px
+    &__soz
+        display: flex
+        align-items: center
+        gap: 9px
+        padding-bottom: 35px
+        border-bottom: 1px solid #DBDBDB
+        &-item
+            width: 40px
+            height: 40px
+            background: $blue
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                min-width: 20px
+                width: 20px
+    &__prava
+        opacity: .2
+        padding-top: 20px
+        p
+            color: $gray
+            font-size: 15px
+            font-weight: 500
+.modal
+    &__bg
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 5
+        width: 100%
+        height: 100dvh
+        background: rgba(0, 0, 0, 0.4)
+        display: none
+        align-items: center
+        justify-content: center
+        opacity: 0
+        transition: .3s
+        &-active 
+            opacity: 1
+    &__window
+        position: relative
+        box-shadow: 0px 233px 65px 0px rgba(161, 161, 161, 0.00), 0px 149px 60px 0px rgba(161, 161, 161, 0.01), 0px 84px 50px 0px rgba(161, 161, 161, 0.05), 0px 37px 37px 0px rgba(161, 161, 161, 0.09), 0px 9px 20px 0px rgba(161, 161, 161, 0.10)
+        border-radius: 10px
+        max-width: 671px
+        width: 100%
+        background: #fff
+        height: 463px
+        display: none 
+        opacity: 0
+        transition: .3s
+        &-active 
+            opacity: 1
+    &__close
+        position: absolute
+        right: 23px
+        top: 19px
+        width: 16px
+        z-index: 1
+        height: 16px
+        img
+    &__zapis
+        &-title
+            font-size: 35px
+            font-weight: 700
+        &-bg
+            border-radius: 15px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            padding: 24px 0px 23px 0px
+            position: relative
+            &::before
+                content: ""
+                background-image: url("img/lines.svg")
+                position: absolute
+                top: 0
+                left: 18px
+                width: 23px
+                z-index: 1
+                height: 53px
+        &-form
+            flex-direction: column
+            display: flex
+            gap: 15px
+            max-width: 584px
+            width: 100%
+            input
+                background-color: $white-dark
+        &-button
+            font-size: 15px
+            font-weight: 600
+            background-color: $blue
+            width: 100%
+            border-radius: 5px
+            padding: 30px 96px
+            color: $white
+            margin-bottom: 17px
+@media screen and (max-width: 1200px)
+    
+    header
+        padding: 12px 0px
+    main
+        padding-top: 100px
+    .main
+        height: calc(100vh - 100px)
+    .header
+        &__right
+            position: fixed
+            left: 0
+            top: -120%
+            transition: .5s
+        &__burg
+            display: block
+        &__menu
+            position: fixed
+            left: 0
+            top: -110%
+            transition: .5s
+            padding-bottom: 65px
+            background: $white
+            box-shadow: 0px 150px 42px 0px rgba(199, 199, 199, 0.00), 0px 96px 38px 0px rgba(199, 199, 199, 0.01), 0px 54px 32px 0px rgba(199, 199, 199, 0.05), 0px 24px 24px 0px rgba(199, 199, 199, 0.09), 0px 6px 13px 0px rgba(199, 199, 199, 0.10)
+            width: 100%
+            &-item
+                width: 100%
+                max-width: 1296px
+                text-align: center
+                background-color: $white-dark
+                padding: 17px 0px
+                &-submenu
+                    &::after
+                        position: absolute
+                        margin-left: auto
+                        margin-right: auto
+                        left: 136px
+                        top: 25px
+                        right: 0
+                        text-align: center
+            
+            &-active
+                top: 116px
+                padding-bottom: 20px
+            &-list
+                flex-direction: column
+                max-width: 1296px
+                padding: 0px 20px
+                gap: 5px
+            &-mobile 
+                display: block
+                padding: 0px 20px
+                margin-top: 15px
+        &__mobile
+            &-title 
+                font-size: 13px
+                font-weight: 500
+                color: $gray
+                margin-bottom: 3px
+            &-descript
+                font-size: 16px
+                font-weight: 500
+                color: $black
+            &-soz
+                display: flex
+                margin: 15px 0px
+                gap: 9px
+            &-button
+                padding: 25px 0px
+                background: $blue
+                color: $white
+                font-size: 16px
+                font-weight: 300
+                display: block 
+                width: 100%
+                border-radius: 10px
+        &__button
+            display: block
+        &__submenu
+            &-item
+                background-color: $white
+                z-index: 3
+                position: relative
+    
+    .main
+        &__block
+            flex-direction: column
+            gap: 30px
+        &__info
+            margin: 0 auto
+            max-width: 70%
+
+        &__img
+            margin: 0 auto
+        
+            
+    
+    .video
+        &__descript
+            margin-left: auto
+            margin-right: auto
+            left: 0
+            right: 0
+            text-align: center
+
+    .preim
+        &__card
+            flex-direction: column
+            max-width: 416px
+            width: 100%
+            display: flex
+            margin: 0 auto
+            &-descript
+                max-width: 280px
+                top: 370px
+            &-title
+                bottom: 85px
+        &__descript
+            &-last
+                top: 350px
+        &__title
+            &-last
+                bottom: 105px
+            
+    .about
+        &__block
+            flex-direction: column
+
+    .footer
+        &__menu
+            gap: 50px
+        &__up
+            flex-direction: column
+            margin: 0 auto
+            align-items: flex-start
+            margin-left: auto
+            margin-right: auto
+            gap: 15px
+            justify-content: center
+        &__block
+            max-width: 300px
+            align-items: baseline
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+        &__soz
+            margin-top: 10px
+@media screen and (max-width: 900px)
+    *
+        scroll-margin: 130px
+    
+    .main
+        &__info
+            max-width: 89%
+            padding-top: 30px
+            &-descript
+                padding-top: 10px
+            &-title
+                font-size: 7vw
+        &__img
+            img
+                margin-top: 0
+                margin-left: 0
+    .services
+        &__card
+            flex-direction: column
+            &-bg
+                display: flex
+                justify-content: center
+                width: 100%
+                max-width: 416px
+                
+            &-title
+                left: 22px
+    .about
+        &__block
+            align-items: baseline
+        &__button
+            p
+                font-size: 1.6vw
+            &-btn
+                position: relative
+            &-link
+                 position: absolute
+                 top: -80px
+                 left: 50%
+                 transform: translate(-50%, 0)
+        &__descript-last
+            margin-bottom: 30px
+    .zapis
+        &__title
+            text-align: center
+        &__form
+            flex-direction: column
+        &__descript
+            max-width: 300px
+            text-align: center
+            &-top
+                max-width: 260px
+        &__bg
+            &::before
+                display: none
+    .contacts
+        &__block
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 13px
+        &__location
+            &-up
+                margin-left: 88px
+
+    .footer
+        &__menu
+            display: flex
+    .modal
+        &__window
+            height: 487px
+            
+
+
+
+@media screen and (max-width: 650px)
+    *
+        scroll-margin: 110px
+    .header
+        &__info
+            &-ter
+                display: none
+            &-ort
+                span
+                    display: inline
+                    color: $gray
+                    font-weight: 600
+                    font-size: 14px
+        &__menu
+            &-active
+                top: 100px
+    .main
+        &__button-link
+            display: block
+            margin: 0 auto
+        &__img
+            img
+                margin-left: 0px
+                margin-top: 0px
+        &__info
+            padding-top: 22px
+            max-width: none
+            &-title
+                line-height: normal
+            &-button
+                padding: 25px 0px
+                display: block
+                margin: 0 auto
+                max-width: 100%
+                width: 100%
+                text-align: center
+            
+    .about
+        &__button-link
+            display: block
+            margin: 0 auto
+        
+        &__info
+            &-button
+                padding: 25px 35px
+                display: block
+                margin: 0 auto
+                max-width: none
+                text-align: center
+        &__info
+            position: relative
+        &__descript
+            text-align: justify
+            position: relative
+        &__button
+            padding: 25px 0px
+            max-width: none
+            text-align: center
+            display: flex
+            justify-content: center
+            p   
+                font-size: 13px
+                text-align: center
+                width: 100%
+                max-width: 180px
+        &__link
+            &::before
+                left: -16px
+                   
+    
+    .otzivi
+        &__up
+            &-info
+                margin-right: 15px
+        &__block
+            &-descript
+                text-align: justify
+    .contacts
+        margin-bottom: 20px
+        &__block
+            justify-content: left
+            align-items: flex-start
+        &__location
+            &-up
+                margin-left: 0px
+        &__soz
+            align-items: center
+            justify-content: center
+        .container
+            margin-bottom: 15px
+    .services
+        &__slider
+            &-info
+                padding: 31px 0px 168px 24px !important
+            &-title
+                font-size: 5.6vw
+                max-width: 80%
+            &-descript
+                font-size: 4vw
+                max-width: 80%
+            &-price
+                font-size: 24px
+                span
+                    font-size: 28px
+            &-bg
+                &-second
+                    .services__slider-info
+                        padding: 31px 0px 162px 24px !important
+    .modal
+        &__window
+            max-width: 90%
+            width: 100%
+            height: auto
+        &__zapis
+            &-bg
+                &::before
+                    display: none
+            &-title
+                font-size: 7vw
+            &-descript
+                font-size: 4vw
+                margin-bottom: 8px
+
+        &__close
+            right: 15px
+            top: 10px
+    .footer
+        &__block
+            margin: 0 0
+        &__info
+            &-title
+                br
+                    display: none
+        &__menu
+            flex-direction: column
+            gap: 20px
+        &__location
+            gap: 12px
+            &-info
+                max-width: 237px
+            &-logo
+                width: 31px
+                height: 31px
+                img
+                    min-width: 14px
+                    width: 14px
+        &__soz
+            border-bottom: none
+            padding-bottom: 0
+            margin-top: 19px
+        &__prava
+            opacity: 1

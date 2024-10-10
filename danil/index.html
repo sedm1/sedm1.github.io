@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="video">
+            <div class="container">
+                <div class="video__slider">
+                    <div class="video__item">1</div>
+                    <div class="video__item">2</div>
+                    <div class="video__item">3</div>
+                    <div class="video__item">4</div>
+                    <div class="video__item">5</div>
+                    <div class="video__item">6</div>
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="container">
+                <h2>Иди нахуй</h2>
+                <div class="price__block">
+                    <div class="price__item">
+                        <div class="price__item-header">
+                            <h3 class="price__item-title">Пошив</h3>
+                            <button class="price__item-button">Открыть/Закрыть</button>
+                        </div>
+                        <div class="price__item-content">
+                            <div class="price__content-item">
+                                <h4 class="price__content-title">Физика</h4>
+                                <p class="price__content-descript">Иди нахуй</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__item">
+                        <div class="price__item-header">
+                            <h3 class="price__item-title">не Пошив</h3>
+                            <button class="price__item-button">Открыть/Закрыть</button>
+                        </div>
+                        <div class="price__item-content">
+                            <div class="price__content-item">
+                                <h4 class="price__content-title">Физика</h4>
+                                <p class="price__content-descript">Люблю тебя</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <button class="modal__open">Открыть модальное окно</button>
+        </div>
+        
+        <section class="t">
+            <div class="container">
+                <div class="t__header">
+                    <button class="t__header-button t__header-button-active" data-tabs="1">Блок 1</button>
+                    <button class="t__header-button" data-tabs="2">Блок 2</button>
+                    <button class="t__header-button" data-tabs="3">Блок 3</button>
+                </div>
+                <div class="t__main">
+                    <div class="t__main-item t__main-item-active" id="t__main-1">Контент 1</div>
+                    <div class="t__main-item" id="t__main-2">Контент 2</div>
+                    <div class="t__main-item" id="t__main-3">Контент 3</div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="container">
+                <nav class="menu__list">
+                    <ul class="menu__list-block">
+                        <li class="menu__list-item"><a href="">Ссылка 1</a></li>
+                        <li class="menu__list-item"><a href="">Ссылка 2</a></li>
+                        <li class="menu__list-item menu__list-item-submenu">
+                            <a href="">Ссылка 3</a>
+                            <ul class="menu__list-submenu">
+                                <li class="menu__submenu-item"><a href="">Ссылка 1</a></li>
+                                <li class="menu__submenu-item"><a href="">Ссылка 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list-item"><a href="">Ссылка 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+            Привет мир
+        </section>
+    </main>
+    <div class="modal__bg">
+        <div class="modal__window">
+            <button class="modal__close">Закрыть</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
