@@ -455,34 +455,29 @@ main
         &-button 
             position: relative
             background: $white
-            width: 22px
-            height: 22px
+            width: 35px
+            height: 35px
             padding: 2px
             border-radius: 3px
             transition: .3s
             &::before
                 content: ""
                 position: absolute
-                width: 1.5px
-                height: 6.5px
+                width: 2px
+                height: 9px
                 background-color: $black
-                margin-left: auto
-                margin-right: auto
-                left: 0
-                right: 0
-                text-align: center
-                top: 8.5px
+                left: 50%
+                top: 50%
+                transform: translateX(-50%) translateY(-50%)
             &::after
                 content: ""
                 position: absolute
-                width: 6.5px
-                height: 1.5px
+                width: 9px
+                height: 2px
                 background-color: $black
-                margin-left: auto
-                margin-right: auto
-                left: 0
-                right: 0
-                text-align: center
+                left: 50%
+                top: 50%
+                transform: translateX(-50%) translateY(-50%)
             &-active
                 &::before
                     display: none
@@ -990,16 +985,28 @@ footer
     .zapis
         &__title
             text-align: center
+            font-size: 22px
         &__form
             flex-direction: column
+            max-width: 100%
+            width: 100%
+            padding: 0px 20px
+            gap: 12px
+            input 
+                width: 100%
+            button
+                padding: 30px 0px
+                width: 100%
+                max-width: 100%
         &__descript
             max-width: 300px
             text-align: center
             &-top
                 max-width: 260px
-        &__bg
+        &__bg 
+            padding-top: 38px
             &::before
-                display: none
+                height: 37px
     .contacts
         &__block
             flex-direction: column
@@ -1148,3 +1155,37 @@ footer
         &__close
             right: 15px
             top: 10px
+    .footer
+        &__block 
+            max-width: 100%
+            width: 100%
+        &__up 
+            max-width: 100%
+            width: 100%
+        &__info
+            &-title
+                br
+                    display: none
+        &__menu
+            justify-content: space-between
+            gap: 20px
+            width: 100%
+            margin: 10px 0px
+        &__location
+            gap: 12px
+            &-info
+                max-width: 237px
+                font-weight: 700
+                color: $black
+            &-logo
+                width: 31px
+                height: 31px
+                img
+                    min-width: 14px
+                    width: 14px
+        &__soz
+            border-bottom: none
+            padding-bottom: 0
+            margin-top: 19px
+        &__prava
+            opacity: 1

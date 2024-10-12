@@ -444,6 +444,12 @@ main .container {
   font-weight: 600;
   z-index: 2;
 }
+.services__slider {
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(199, 199, 199, 0.1), 0 31px 31px 0 rgba(199, 199, 199, 0.09), 0 70px 42px 0 rgba(199, 199, 199, 0.05), 0 125px 50px 0 rgba(199, 199, 199, 0.01), 0 196px 55px 0 rgba(199, 199, 199, 0);
+          box-shadow: 0 8px 17px 0 rgba(199, 199, 199, 0.1), 0 31px 31px 0 rgba(199, 199, 199, 0.09), 0 70px 42px 0 rgba(199, 199, 199, 0.05), 0 125px 50px 0 rgba(199, 199, 199, 0.01), 0 196px 55px 0 rgba(199, 199, 199, 0);
+}
 .services__slider-title {
   font-size: 35px;
   font-weight: 800;
@@ -469,15 +475,13 @@ main .container {
   color: #0091ff;
 }
 .services__slider-bg {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
   border-radius: 15px;
   position: relative;
   width: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  height: 453px;
 }
 .services__slider-bg::before {
   position: absolute;
@@ -493,18 +497,6 @@ main .container {
   background-position: center center;
   background: -webkit-gradient(linear, right top, left top, color-stop(32.57%, rgba(255, 255, 255, 0)), color-stop(81.8%, #FFF));
   background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 32.57%, #FFF 81.8%);
-}
-.services__slider-bg-first {
-  background-image: url("img/services-bg.jpg");
-}
-.services__slider-bg-second {
-  background-image: url("img/pishet.jpg");
-}
-.services__slider-bg-second .services__slider-info {
-  padding: 44px 0px 230px 42px;
-}
-.services__slider-bg-second .services__slider-title {
-  max-width: 545px;
 }
 .services__slider-info {
   z-index: 2;
@@ -569,6 +561,9 @@ main .container {
   font-weight: 500;
 }
 
+.about__img-mobile {
+  display: none;
+}
 .about__info {
   max-width: 724px;
   width: 100%;
@@ -579,7 +574,7 @@ main .container {
 }
 .about__link::before {
   content: "";
-  background-image: url("img/notebook.svg");
+  background-image: url("img/notebook.png");
   position: absolute;
   top: -15px;
   left: -33px;
@@ -1560,12 +1555,25 @@ footer {
   }
   .zapis__title {
     text-align: center;
+    font-size: 22px;
   }
   .zapis__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    padding: 0px 20px;
+    gap: 12px;
+  }
+  .zapis__form input {
+    width: 100%;
+  }
+  .zapis__form button {
+    padding: 30px 0px;
+    width: 100%;
+    max-width: 100%;
   }
   .zapis__descript {
     max-width: 300px;
@@ -1574,8 +1582,11 @@ footer {
   .zapis__descript-top {
     max-width: 260px;
   }
+  .zapis__bg {
+    padding-top: 38px;
+  }
   .zapis__bg::before {
-    display: none;
+    height: 37px;
   }
   .contacts__block {
     -webkit-box-orient: vertical;
@@ -1617,6 +1628,9 @@ footer {
   }
   .header__menu-active {
     top: 100px;
+  }
+  .main::before {
+    background-position: 45% center;
   }
   .main__button-link {
     display: block;
@@ -1678,6 +1692,12 @@ footer {
   }
   .about__link::before {
     left: -16px;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__img-mobile {
+    display: block;
   }
   .otzivi__up-info {
     margin-right: 15px;
@@ -1750,23 +1770,31 @@ footer {
     top: 10px;
   }
   .footer__block {
-    margin: 0 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer__up {
+    max-width: 100%;
+    width: 100%;
   }
   .footer__info-title br {
     display: none;
   }
   .footer__menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 20px;
+    width: 100%;
+    margin: 10px 0px;
   }
   .footer__location {
     gap: 12px;
   }
   .footer__location-info {
     max-width: 237px;
+    font-weight: 700;
+    color: #040B1C;
   }
   .footer__location-logo {
     width: 31px;

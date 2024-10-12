@@ -1,4 +1,4 @@
-
+let width = $(window).width()
 $('.services__slider').slick({
     infinite: true,
     slidesToShow: 1,
@@ -6,7 +6,6 @@ $('.services__slider').slick({
     dots: true,
     fade: true,
     arrows: false,
-    autoplay: true,
     autoplaySpeed: 3000
 });
 const video = document.querySelector('.video__item');
@@ -32,9 +31,6 @@ document.querySelector('.video__button').addEventListener('mouseleave', () => {
     }
 });
 
-
-
-
 $('.sertif__slider').slick({
     infinite: true,
     slidesToShow: 4,
@@ -56,5 +52,3 @@ $('.sertif__slider').slick({
         }
     }]
 });
-
-

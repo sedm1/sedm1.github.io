@@ -10,8 +10,8 @@ $('.services__header-button').click((e) => {
     $('#services__main-'+huiData).addClass('services__main-item-active')
 })
 
-$('.otveti__item-button').click((e) => {
-    let button = $(e.currentTarget)
+$('.otveti__item-header').click((e) => {
+    let button = $(e.currentTarget).children('.otveti__item-button')
     let content = button.parent('.otveti__item-header').siblings('.otveti__item-main')
     content.toggleClass('otveti__item-main-active')
     button.toggleClass('otveti__item-button-active')

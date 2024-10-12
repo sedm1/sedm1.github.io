@@ -613,8 +613,8 @@ main .container {
 .otveti__item-button {
   position: relative;
   background: #FFF;
-  width: 22px;
-  height: 22px;
+  width: 35px;
+  height: 35px;
   padding: 2px;
   border-radius: 3px;
   -webkit-transition: 0.3s;
@@ -623,27 +623,24 @@ main .container {
 .otveti__item-button::before {
   content: "";
   position: absolute;
-  width: 1.5px;
-  height: 6.5px;
+  width: 2px;
+  height: 9px;
   background-color: #040B1C;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 8.5px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 .otveti__item-button::after {
   content: "";
   position: absolute;
-  width: 6.5px;
-  height: 1.5px;
+  width: 9px;
+  height: 2px;
   background-color: #040B1C;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 .otveti__item-button-active::before {
   display: none;
@@ -1359,12 +1356,25 @@ footer {
   }
   .zapis__title {
     text-align: center;
+    font-size: 22px;
   }
   .zapis__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    padding: 0px 20px;
+    gap: 12px;
+  }
+  .zapis__form input {
+    width: 100%;
+  }
+  .zapis__form button {
+    padding: 30px 0px;
+    width: 100%;
+    max-width: 100%;
   }
   .zapis__descript {
     max-width: 300px;
@@ -1373,8 +1383,11 @@ footer {
   .zapis__descript-top {
     max-width: 260px;
   }
+  .zapis__bg {
+    padding-top: 38px;
+  }
   .zapis__bg::before {
-    display: none;
+    height: 37px;
   }
   .contacts__block {
     -webkit-box-orient: vertical;
@@ -1554,5 +1567,48 @@ footer {
   .modal__close {
     right: 15px;
     top: 10px;
+  }
+  .footer__block {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer__up {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer__info-title br {
+    display: none;
+  }
+  .footer__menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .footer__location {
+    gap: 12px;
+  }
+  .footer__location-info {
+    max-width: 237px;
+    font-weight: 700;
+    color: #040B1C;
+  }
+  .footer__location-logo {
+    width: 31px;
+    height: 31px;
+  }
+  .footer__location-logo img {
+    min-width: 14px;
+    width: 14px;
+  }
+  .footer__soz {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 19px;
+  }
+  .footer__prava {
+    opacity: 1;
   }
 }
