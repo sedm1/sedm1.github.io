@@ -5,6 +5,7 @@
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -38,10 +39,19 @@ li {
   list-style: none;
 }
 
+section {
+  margin-bottom: 60px;
+}
+
 .container {
   max-width: 1180px;
   width: 100%;
   margin: 0 auto;
+}
+.container .section_title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
 }
 
 header {

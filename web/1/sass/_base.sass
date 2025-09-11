@@ -4,6 +4,7 @@
     box-sizing: border-box
     font-family: "Roboto", sans-serif
     font-size: 16px
+    scroll-behavior: smooth
 
 img
     width: 100%
@@ -28,7 +29,12 @@ button
 li
     list-style: none
 
+section
+    margin-bottom: 60px
+
 .container 
     max-width: 1180px
     width: 100%
     margin: 0 auto
+    .section_title
+        @include h2
