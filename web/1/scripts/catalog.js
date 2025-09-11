@@ -176,7 +176,7 @@ const renderCatalog = (products) => {
           </div>
           <h3 class="catalog_mainItemTitle">${product.title}</h3>
           <p class="catalog_mainItemPrice">${product.price} ₽</p>
-          <button class="catalog_mainItemAdd" data-id="${product.id}">Купить</button>
+          <button class="catalog_mainItemAdd" data-id="${product.id}">Добавить в корзину</button>
         `;
 
         elCatalog.appendChild(item);
