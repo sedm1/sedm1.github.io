@@ -1,0 +1,31 @@
+header 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    padding-top: 20px
+    color: $white
+
+header .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+    padding-block: 20px
+
+.header
+    &_logo
+        @include h2
+        color: $white
+    &_menu
+        display: flex
+        align-items: center
+        gap: 40px
+        &Cart
+            display: flex
+            align-items: center
+            gap: 10px
+            color: $white
+            img
+                width: 20px
+

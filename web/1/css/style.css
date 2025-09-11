@@ -16,6 +16,10 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 button {
@@ -23,8 +27,104 @@ button {
   border: 0 none;
   cursor: pointer;
   font-family: inherit;
+  background: 0 none;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 li {
   list-style: none;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  color: #fff;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-block: 20px;
+}
+
+.header_logo {
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  color: #fff;
+}
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.header_menuCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+.header_menuCart img {
+  width: 20px;
+}
+
+.main {
+  padding-top: 164px;
+  padding-bottom: 100px;
+  background: #484283;
+  color: #fff;
+}
+.main_title {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+  max-width: 580px;
+  line-height: 140%;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.main_descript {
+  max-width: 480px;
+}
+.main_link {
+  margin-top: 40px;
+  padding: 22px 47px;
+  background: #F14F4F;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.main_link:hover {
+  background: #CC4949;
+}
+.main_link:active {
+  background: #8C2828;
 }

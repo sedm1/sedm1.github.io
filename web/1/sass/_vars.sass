@@ -1,6 +1,7 @@
 
 // Цвета    
 $black: #000
+$white: #fff
 $pink: #484283 
 $red: #F14F4F
 $blue: #444B58
@@ -23,3 +24,14 @@ $gray: #B2B5BB
     font-weight: 400
     font-size: 24px
     color: $black
+
+// типа компоненты
+@mixin button-red()
+    padding: 22px 47px
+    background: $red
+    border-radius: 4px
+    transition: .3s
+    &:hover
+        background: #CC4949
+    &:active
+        background: #8C2828
