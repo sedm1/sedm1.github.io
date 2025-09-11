@@ -152,6 +152,14 @@ header .container {
 .catalog_filters {
   max-width: 280px;
   width: 100%;
+  background: #FFF4EE;
+  padding: 20px;
+  border-radius: 4px;
+}
+.catalog_filtersTitle {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
 }
 .catalog_main {
   display: -ms-grid;
