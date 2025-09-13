@@ -43,6 +43,25 @@
             color: $white
             margin-top: 20px
     &_main
+        width: 100%
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         gap: 20px
+
+
+@media screen and (max-width: 900px) 
+    .catalog
+        &_block
+            flex-direction: column
+        &_filters
+            max-width: 100%
+
+@media screen and (max-width: 700px) 
+    .catalog
+        &_main
+            grid-template-columns: 1fr 1fr
+
+@media screen and (max-width: 450px) 
+    .catalog
+        &_main
+            grid-template-columns: 1fr
