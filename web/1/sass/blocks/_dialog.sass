@@ -1,0 +1,49 @@
+.dialog_cart
+    background: $white
+    padding: 40px
+    border-radius: 4px
+    max-width: 580px
+    width: 100%
+    &-bg
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100dvh
+        background: rgba(0, 0, 0, 0.4)
+        display: none
+        align-items: center
+        justify-content: center
+        &-active
+            display: flex
+    &Title
+        @include h2
+    &Main 
+        border: 1px solid $gray
+        margin-top: 40px
+        padding: 30px
+        display: flex
+        flex-direction: column
+        gap: 20px
+        &Item
+            display: flex
+            align-items: center
+            gap: 10px
+            &Title
+                color: $gray
+            &Value
+                font-weight: 700px
+        &Product
+            max-height: 268px
+            overflow-y: auto
+            display: flex
+            flex-direction: column
+            gap: 14px
+            &Item
+                display: flex
+                align-items: center
+                gap: 10px
+                img
+                    max-width: 80px
+                &Delete
+                    margin-left: auto
