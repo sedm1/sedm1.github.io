@@ -447,3 +447,12 @@ header .container {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .dialog_cart {
+    padding: 20px 10px;
+  }
+  .dialog_cartMain {
+    padding: 10px;
+  }
+}
