@@ -84,11 +84,16 @@ const rerenderDialog = () => {
 };
 
 const openDialog = () => {
+    document.body.classList.add('dialog-open')
     rerenderDialog();
     document.querySelector('.dialog_cart-bg').classList.add('dialog_cart-bg-active');
 };
 
-/* делегирование кликов по кнопкам удаления в диалоге */
+const closeDialog = () => {
+    document.body.classList.remove('dialog-open')
+    document.querySelector('.dialog_cart-bg').classList.remove('dialog_cart-bg-active');
+}
+
 const attachDialogHandlers = () => {
     const list = document.querySelector('.dialog_cartMainProduct');
     if (!list) return;
@@ -98,7 +103,6 @@ const attachDialogHandlers = () => {
         if (!btn) return;
 
         const id = Number(btn.getAttribute('data-id'));
-        if (!Number.isFinite(id)) return;
 
         deleteFromCart(id);
         rerenderDialog();
@@ -109,6 +113,7 @@ window.addEventListener('load', function () {
     renderHeaderCountItem();
     document.querySelector('.header_menuCart').addEventListener('click', openDialog);
     attachDialogHandlers();
+    this.document.querySelector('.dialog_cartClose').addEventListener('click', closeDialog)
 });
 
 export {

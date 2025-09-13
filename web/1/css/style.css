@@ -59,6 +59,11 @@ section {
   color: #000;
 }
 
+.dialog-open {
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1180px) {
   .container {
     max-width: 100%;
@@ -255,6 +260,29 @@ header .container {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+.catalog_mainItemAdd {
+  padding: 22px 47px;
+  background: #F14F4F;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  color: #fff;
+}
+.catalog_mainItemAdd:hover {
+  background: #CC4949;
+}
+.catalog_mainItemAdd:active {
+  background: #8C2828;
+}
+@media screen and (max-width: 600px) {
+  .catalog_mainItemAdd {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .catalog_block {
@@ -310,6 +338,21 @@ header .container {
   font-weight: 700;
   font-size: 30px;
   color: #000;
+}
+.dialog_cartHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dialog_cartClose {
+  font-size: 20px;
+  font-weight: 700;
 }
 .dialog_cartMain {
   border: 1px solid #B2B5BB;
