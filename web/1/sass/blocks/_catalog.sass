@@ -12,6 +12,36 @@
         border-radius: 4px
         &Title
             @include h3
+        &Item 
+            margin-top: 20px
+            display: flex
+            flex-direction: column
+            gap: 5px
+            &Checkbox
+                display: flex
+                align-items: center
+                gap: 10px
+            &Price
+                width: 100%
+                border: 1px solid $gray
+                background: 0 none
+                padding: 10px 20px
+            &Size
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                text-align: center
+                &Item
+                    padding: 10px 0px
+                    border: 1px solid $gray
+                    width: 100%
+                    &-active
+                        background: $pear
+                        color: $white
+        &Button 
+            @include button-red
+            width: 100%
+            color: $white
+            margin-top: 20px
     &_main
         display: grid
         grid-template-columns: 1fr 1fr 1fr

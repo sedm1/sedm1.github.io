@@ -15,6 +15,9 @@ $gray: #B2B5BB
     font-size: 36px
     color: $black
 
+    @media screen and (max-width: 600px)
+        font-size: 8vw
+
 @mixin h2()
     font-weight: 700
     font-size: 30px
@@ -24,6 +27,7 @@ $gray: #B2B5BB
     font-weight: 400
     font-size: 24px
     color: $black
+    
 
 // типа компоненты
 @mixin button-red()
@@ -35,3 +39,8 @@ $gray: #B2B5BB
         background: #CC4949
     &:active
         background: #8C2828
+
+    @media screen and (max-width: 600px)
+        width: 100%
+        text-align: center
+

@@ -19,7 +19,6 @@
 
             <nav>
                 <ul class="header_menu">
-                    <li><a href="#catalog">Каталог</a></li>
                     <li>
                         <button class="header_menuCart">
                             Коризна
@@ -48,6 +47,66 @@
                 <div class="catalog_block">
                     <div class="catalog_filters">
                         <h3 class="catalog_filtersTitle">Подбор по параметрам</h3>
+
+                        <div class="catalog_filtersItem">
+                            <h4 class="catalog_filtersItemTitle">Цена от</h4>
+                            <input 
+                                id="catalog_filtersItemPriceMin"
+                                type="number" 
+                                class="catalog_filtersItemPrice"
+                                value="0"
+                            >
+                        </div>
+
+                        <div class="catalog_filtersItem">
+                            <h4 class="catalog_filtersItemTitle">Цена до</h4>
+                            <input 
+                                id="catalog_filtersItemPriceMax"
+                                type="number" 
+                                class="catalog_filtersItemPrice"
+                                value="10000"
+                            >
+                        </div>
+
+                        <div class="catalog_filtersItem">
+                            <h4 class="catalog_filtersItemTitle">Пол</h4>
+
+                            <div class="catalog_filtersItemCheckbox">
+                                <input 
+                                    type="radio" 
+                                    name="catalog_filtersItemSex"
+                                    value="male"
+                                >
+                                <p class="catalog_filtersItemCheckbox">Мужской</p>
+                            </div>
+
+                            <div class="catalog_filtersItemCheckbox">
+                                <input 
+                                    type="radio" 
+                                    name="catalog_filtersItemSex"
+                                    value="female"
+                                >
+                                <p class="catalog_filtersItemCheckbox">Женский</p>
+                            </div>
+                        </div>
+
+                        <div class="catalog_filtersItem">
+                            <h4 class="catalog_filtersItemTitle">Размер</h4>
+
+                            <div class="catalog_filtersItemSize">
+                                <button class="catalog_filtersItemSizeItem" data-size="35">35</button>
+                                <button class="catalog_filtersItemSizeItem" data-size="36">36</button>
+                                <button class="catalog_filtersItemSizeItem" data-size="37">37</button>
+                                <button class="catalog_filtersItemSizeItem" data-size="38">38</button>
+                                <button class="catalog_filtersItemSizeItem" data-size="39">39</button>
+                                <button class="catalog_filtersItemSizeItem" data-size="40">40</button>
+                                <button class="catalog_filtersItemSizeItem" data-size="41">41</button>
+                                <button class="catalog_filtersItemSizeItem" data-size="42">42</button>
+                                <button class="catalog_filtersItemSizeItem" data-size="43">43</button>
+                            </div>
+                        </div>
+
+                        <button class="catalog_filtersButton">Применить</button>
                     </div>
 
                     <div class="catalog_main"></div>
@@ -58,5 +117,6 @@
 
 <script src="./scripts/catalog.js" type="module"></script>
 <script src="./scripts/cart.js" type="module"></script>
+<script src="./scripts/filters.js" type="module"></script>
 </body>
 </html>

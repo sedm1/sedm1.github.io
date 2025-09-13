@@ -165,6 +165,7 @@ const PRODUCTS = [
 
 const renderCatalog = (products) => {
     const elCatalog = document.querySelector('.catalog_main')
+    elCatalog.innerHTML = '';
 
     products.forEach(product => {
         const item = document.createElement('div');
@@ -184,16 +185,16 @@ const renderCatalog = (products) => {
 }
 
 const addEventListenerOnAddButton = () => {
-  const elAddButtons = document.querySelectorAll('.catalog_mainItemAdd');
+    const elAddButtons = document.querySelectorAll('.catalog_mainItemAdd');
 
-  elAddButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const productId = +button.dataset.id;
-      const product = PRODUCTS.find(p => p.id === productId);
+    elAddButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productId = +button.dataset.id;
+            const product = PRODUCTS.find(p => p.id === productId);
 
-      addToCart(product)
+            addToCart(product)
+        });
     });
-  });
 }
 
 window.addEventListener('load', function () {
@@ -201,3 +202,8 @@ window.addEventListener('load', function () {
 
     addEventListenerOnAddButton()
 });
+
+export {
+    PRODUCTS,
+    renderCatalog
+}
