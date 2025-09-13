@@ -113,7 +113,13 @@ window.addEventListener('load', function () {
     renderHeaderCountItem();
     document.querySelector('.header_menuCart').addEventListener('click', openDialog);
     attachDialogHandlers();
-    this.document.querySelector('.dialog_cartClose').addEventListener('click', closeDialog)
+    document.querySelector('.dialog_cartClose').addEventListener('click', closeDialog)
+
+    document.querySelector('.dialog_cartMainFormSubmit').addEventListener('click', (e) => {
+        e.preventDefault();
+
+        this.alert('Заказ создан')
+    })
 });
 
 export {
