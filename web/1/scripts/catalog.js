@@ -205,5 +205,6 @@ window.addEventListener('load', function () {
 
 export {
     PRODUCTS,
-    renderCatalog
+    renderCatalog,
+    addEventListenerOnAddButton
 }

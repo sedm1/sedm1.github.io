@@ -38,6 +38,7 @@ const onFilterButtonClick = () => {
     })
 
     renderCatalog(filteredProduct)
+    addEventListenerOnAddButton()
 }
 
 
