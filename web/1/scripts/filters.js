@@ -1,6 +1,6 @@
-import { PRODUCTS, renderCatalog } from "./catalog.js"
+import { PRODUCTS, renderCatalog, addEventListenerOnAddButton } from "./catalog.js"
 
-const getFilters = () => {
+export const getFilters = () => {
     const filters = {
         priceMin: null,
         priceMax: null,
@@ -26,19 +26,20 @@ const getFilters = () => {
 }
 
 const onFilterButtonClick = () => {
-    const filters = getFilters();
-
-    const filteredProduct = PRODUCTS.filter(product => {
-        if (filters.priceMin !== null && product.price < filters.priceMin) return false;
-        if (filters.priceMax !== null && product.price > filters.priceMax) return false;
-        if (filters.sex && product.sex !== filters.sex) return false;
-        if (filters.size && !filters.size.has(product.size)) return false;
-
-        return true;
-    })
+    const filteredProduct = applyFilters(PRODUCTS, getFilters())
 
     renderCatalog(filteredProduct)
 }
+
+export const applyFilters = (products, filters) => {
+    return products.filter(product => {
+      if (filters.priceMin !== null && product.price < filters.priceMin) return false;
+      if (filters.priceMax !== null && product.price > filters.priceMax) return false;
+      if (filters.sex && product.sex !== filters.sex) return false;
+      if (filters.size && !filters.size.has(product.size)) return false;
+      return true;
+    });
+  };
 
 
 window.addEventListener('load', function () {

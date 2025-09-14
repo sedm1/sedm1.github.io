@@ -124,5 +124,6 @@ window.addEventListener('load', function () {
 
 export {
     addToCart,
-    deleteFromCart
+    deleteFromCart,
+    calculateTotals
 };
