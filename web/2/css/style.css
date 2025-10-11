@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  border: 0 none;
+  outline: 0 none;
+  border: 1px solid #6C63FF;
+  border-radius: 4px;
+  font-size: 16px;
+  background: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0 none;
+  outline: 0 none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 30px;
+}
+header h1 {
+  font-weight: 500;
+  font-size: 26px;
+  text-align: center;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+main form .form_inputBlock {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+main form .form_inputBlock input {
+  width: 100%;
+  padding: 9px 16px;
+}
+main form .form_inputBlockSearch {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 16px;
+  width: 21px;
+  height: 21px;
+}
+main form select {
+  background: #6C63FF;
+  color: #fff;
+  border-radius: 4px;
+  height: -webkit-fill-available;
+  font-weight: 700;
+  font-size: 18px;
+  border: 0 none;
+  outline: 0 none;
+}
+main form select::picker-icon {
+  color: #fff;
+}
+main .todoBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+main .todoBlock-empty {
+  gap: 20px;
+}
+main .todoBlock_img {
+  max-width: 321px;
+  margin: 0 auto;
+}
+main .todoBlock_title {
+  text-align: center;
+}
+main .todoBlockItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0px;
+  border-bottom: 1px solid #6C63FF;
+}
+main .todoBlockItemLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+main .todoBlockItem:last-child {
+  border-bottom: 0;
+}
+main .todoBlockItemTitle {
+  font-weight: 700;
+}
+main .todoBlockItemDate {
+  font-weight: 700;
+}
+main .todoBlockItem input[type=checkbox] {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+main .todoBlockItem-completed .todoBlockItemTitle, main .todoBlockItem-completed .todoBlockItemDate {
+  opacity: 0.3;
+}
+
+.addButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #6C63FF;
+  color: #fff;
+  padding: 13px;
+}
+
+dialog {
+  margin: 0 auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  max-width: 500px;
+  width: 100%;
+  border: 0 none;
+  outline: 0 none;
+  border-radius: 10px;
+  padding: 18px 30px;
+}
+dialog::-ms-backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dialog-title {
+  text-align: center;
+}
+.dialog-todos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+.dialog-todos input {
+  width: 100%;
+  border: 1px solid #6C63FF;
+  border-radius: 4px;
+  padding: 12px 8px;
+}
+.dialog-buttons {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dialog-buttonsCancel {
+  padding: 10px 22px;
+  border: 1px solid #6C63FF;
+  border-radius: 4px;
+  color: #6C63FF;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.dialog-buttonsSubmit {
+  padding: 10px 22px;
+  border-radius: 4px;
+  background: #6C63FF;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}

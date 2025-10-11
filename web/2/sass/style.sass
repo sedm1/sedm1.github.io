@@ -1,0 +1,157 @@
+$pink: #6C63FF
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Kanit", sans-serif
+
+img
+    width: 100%
+    height: auto
+
+input 
+    border: 0 none
+    outline: 0 none
+    border: 1px solid $pink
+    border-radius: 4px
+    font-size: 16px
+    background: none
+
+button 
+    padding: 0 
+    margin: 0 
+    background: none
+    border: 0 none
+    outline: 0 none
+    cursor: pointer
+
+.container
+    max-width: 750px
+    width: 100%
+    margin: 0 auto
+
+header
+    padding-top: 30px
+    h1
+        font-weight: 500
+        font-size: 26px
+        text-align: center
+main
+    form
+        display: flex
+        align-items: center
+        gap: 16px
+        margin-top: 16px
+        .form_inputBlock
+            flex-grow: 1
+            position: relative
+            input
+                width: 100%
+                padding: 9px 16px
+            &Search
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 16px
+                width: 21px
+                height: 21px
+        select 
+            background: $pink
+            color: #fff
+            border-radius: 4px
+            height: -webkit-fill-available
+            font-weight: 700
+            font-size: 18px
+            border: 0 none
+            outline: 0 none
+
+            &::picker-icon
+                color: #fff
+    .todoBlock
+        display: flex
+        flex-direction: column
+        margin-top: 30px
+        &-empty
+            gap: 20px
+        &_img 
+            max-width: 321px
+            margin: 0 auto
+        &_title
+            text-align: center
+        &Item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 16px 0px
+            border-bottom: 1px solid $pink
+            &Left
+                display: flex
+                align-items: center
+                gap: 16px
+            &:last-child
+                border-bottom: 0
+            &Title 
+                font-weight: 700
+            &Date 
+                font-weight: 700
+            input[type="checkbox"]
+                transform: scale(1.2)
+            &-completed
+                .todoBlockItemTitle, .todoBlockItemDate
+                    opacity: 0.3
+
+.addButton
+    position: fixed
+    bottom: 20px
+    right: 20px
+    width: 50px
+    height: 50px
+    border-radius: 100%
+    background: $pink
+    color: #fff
+    padding: 13px
+
+dialog 
+    margin: 0 auto
+    top: 50%
+    transform: translateY(-50%)
+    max-width: 500px
+    width: 100%
+    border: 0 none
+    outline: 0 none
+    border-radius: 10px
+    padding: 18px 30px
+    &::backdrop
+        background: rgba(0, 0, 0, 0.4)
+.dialog
+    &-title 
+        text-align: center
+    &-todos 
+        display: flex
+        flex-direction: column
+        gap: 8px
+        margin-top: 16px
+        input 
+            width: 100%
+            border: 1px solid $pink
+            border-radius: 4px
+            padding: 12px 8px
+    &-buttons
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+        &Cancel 
+            padding: 10px 22px
+            border: 1px solid $pink
+            border-radius: 4px
+            color: $pink
+            font-weight: 700
+            text-transform: uppercase
+        &Submit 
+            padding: 10px 22px
+            border-radius: 4px
+            background: $pink
+            color: #fff
+            font-weight: 700
+            text-transform: uppercase
