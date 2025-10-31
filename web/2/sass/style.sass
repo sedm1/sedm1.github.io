@@ -85,6 +85,30 @@ main
             justify-content: space-between
             padding: 16px 0px
             border-bottom: 1px solid $pink
+            input[type="text"],
+            input[type="datetime-local"]
+                flex: 1
+                border: 1px solid $pink
+                border-radius: 4px
+                padding: 8px 10px
+                font-size: 14px
+                background: none
+                color: #333
+
+            button
+                padding: 8px 14px
+                border-radius: 4px
+                font-weight: 600
+                text-transform: uppercase
+                transition: 0.2s ease all
+            .todo-edit-save
+                background: $pink
+                color: #fff
+                border: 1px solid $pink
+            .todo-edit-cancel
+                background: none
+                color: $pink
+                border: 1px solid $pink
             &Left
                 display: flex
                 align-items: center
@@ -108,30 +132,6 @@ main
                 padding: 10px 0
                 border-top: 1px dashed rgba($pink, 0.4)
 
-    input[type="text"],
-    input[type="datetime-local"]
-        flex: 1
-        border: 1px solid $pink
-        border-radius: 4px
-        padding: 8px 10px
-        font-size: 14px
-        background: none
-        color: #333
-
-    button
-        padding: 8px 14px
-        border-radius: 4px
-        font-weight: 600
-        text-transform: uppercase
-        transition: 0.2s ease all
-    .todo-edit-save
-        background: $pink
-        color: #fff
-        border: 1px solid $pink
-    .todo-edit-cancel
-        background: none
-        color: $pink
-        border: 1px solid $pink
         
 
 .addButton
