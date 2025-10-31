@@ -59,7 +59,7 @@ const renderFilter = (mainContainer, { onSubmitQuery, onChangeStatus, onChangeSo
     searchButton.type = 'submit';
 
     const searchButtonIcon = document.createElement('img');
-    searchButtonIcon.setAttribute('src', '../../img/search.svg');
+    searchButtonIcon.setAttribute('src', '././img/search.svg');
 
     searchButton.appendChild(searchButtonIcon);
     inputBlock.appendChild(input);
@@ -147,7 +147,7 @@ const renderTodoItems = (mainContainer, items, reapplyFilters) => {
 
         const todoBlockImg = document.createElement('img');
         todoBlockImg.classList.add('todoBlock_img');
-        todoBlockImg.setAttribute('src', '../../img/empty.svg');
+        todoBlockImg.setAttribute('src', '././img/empty.svg');
 
         const todoBlockText = document.createElement('h2');
         todoBlockText.classList.add('todoBlock_title');
@@ -267,7 +267,7 @@ const renderTodoItems = (mainContainer, items, reapplyFilters) => {
                 reapplyFilters();
             });
             const deleteButtonIcon = document.createElement('img');
-            deleteButtonIcon.setAttribute('src', '../../img/delete.svg');
+            deleteButtonIcon.setAttribute('src', '././img/delete.svg');
             deleteButton.appendChild(deleteButtonIcon);
             todoBlockItemRight.appendChild(deleteButton);
 
