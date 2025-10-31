@@ -28,9 +28,19 @@ const deleteTodoItem = (id) => {
   }
 };
 
+const updateTodoItem = (id, title, time) => {
+  const index = todoItems.findIndex(item => item.id === id);
+  if (index !== -1) {
+    todoItems[index].title = title;
+    todoItems[index].time = time;
+    localStorage.setItem('todoItems', JSON.stringify(todoItems));
+  }
+};
+
 export {
   todoItems,
   addTodoItem,
   toggleTodoDone,
-  deleteTodoItem
+  deleteTodoItem,
+  updateTodoItem
 };

@@ -1,4 +1,4 @@
-import { toggleTodoDone, deleteTodoItem, todoItems } from "../services/todo.js";
+import { toggleTodoDone, deleteTodoItem, updateTodoItem } from "../services/todo.js";
 
 const renderTodo = (root, items) => {
     let main = root.querySelector('main');
@@ -11,6 +11,7 @@ const renderTodo = (root, items) => {
 
     let currentQuery = '';
     let currentStatus = 'all';
+    let currentSort = 'default'
 
     const applyFilters = () => {
         let filtered = items;
@@ -20,15 +21,22 @@ const renderTodo = (root, items) => {
         } else if (currentStatus === 'completed') {
             filtered = filtered.filter(it => it.done);
         }
-
+        
         if (currentQuery.trim().toLowerCase()) filtered = filtered.filter(it => (it.title || '').toLowerCase().includes(currentQuery.trim().toLowerCase()));
+
+        if (currentSort === 'asc') {
+            filtered = filtered.slice().sort((a, b) => new Date(a.time) - new Date(b.time));
+        } else if (currentSort === 'desc') {
+            filtered = filtered.slice().sort((a, b) => new Date(b.time) - new Date(a.time));
+        }
 
         renderTodoItems(mainContainer, filtered, applyFilters);
     };
 
     renderFilter(mainContainer, {
         onSubmitQuery: (query) => { currentQuery = query; applyFilters(); },
-        onChangeStatus: (status) => { currentStatus = status; applyFilters(); }
+        onChangeStatus: (status) => { currentStatus = status; applyFilters(); },
+        onChangeSort: (sort) => { currentSort = sort; applyFilters(); }
     });
 
     applyFilters();
@@ -37,7 +45,7 @@ const renderTodo = (root, items) => {
     root.appendChild(main);
 };
 
-const renderFilter = (mainContainer, { onSubmitQuery, onChangeStatus }) => {
+const renderFilter = (mainContainer, { onSubmitQuery, onChangeStatus, onChangeSort }) => {
     const form = document.createElement('form');
 
     const inputBlock = document.createElement('div');
@@ -67,8 +75,39 @@ const renderFilter = (mainContainer, { onSubmitQuery, onChangeStatus }) => {
         onChangeStatus(statusValue);
     });
 
+    renderSortFilter(form, (sortValue) => {
+        onChangeSort(sortValue)
+    })
+
     mainContainer.appendChild(form);
 };
+
+const renderSortFilter = (form, onChange) => {
+    const sortSelect = document.createElement('select');
+    sortSelect.classList.add('form_sortSelect');
+    
+    const optDefault = document.createElement('option');
+    optDefault.value = 'default';
+    optDefault.textContent = 'Без сортировки';
+    
+    const optAsc = document.createElement('option');
+    optAsc.value = 'asc';
+    optAsc.textContent = 'Сначала старые';
+    
+    const optDesc = document.createElement('option');
+    optDesc.value = 'desc';
+    optDesc.textContent = 'Сначала новые';
+    
+    sortSelect.appendChild(optDefault);
+    sortSelect.appendChild(optAsc);
+    sortSelect.appendChild(optDesc);
+    
+    sortSelect.addEventListener('change', (e) => {
+        onChange(e.target.value)
+    });
+    
+    form.appendChild(sortSelect);
+}
 
 const renderStatusFilter = (form, onChange) => {
     const statusFilter = document.createElement('select');
@@ -157,21 +196,82 @@ const renderTodoItems = (mainContainer, items, reapplyFilters) => {
 
             todoBlockItem.appendChild(todoBlockItemLeft)
 
-            const todoBlockItemRight = document.createElement('div')
-            todoBlockItemRight.classList.add('todoBlockItemRight')
+            const todoBlockItemRight = document.createElement('div');
+            todoBlockItemRight.classList.add('todoBlockItemRight');
 
-            const deleteButton = document.createElement('button')
+            const editButton = document.createElement('button');
+            editButton.classList.add('todo-edit-button');
+            editButton.textContent = 'Редактировать'
+
+            const closeOpenEditors = (container) => {
+                const opened = container.querySelectorAll('.todo-edit-row');
+                opened.forEach(node => node.remove());
+            };
+
+            editButton.addEventListener('click', () => {
+                closeOpenEditors(document);
+
+                const editRow = document.createElement('div');
+                editRow.classList.add('todo-edit-row');
+
+                const inTitle = document.createElement('input');
+                inTitle.type = 'text';
+                inTitle.value = item.title || '';
+                inTitle.placeholder = 'Название';
+
+                const inDate = document.createElement('input');
+                inDate.type = 'datetime-local';
+
+                if (item.time) {
+                    const dt = new Date(item.time);
+                    const pad = n => String(n).padStart(2, '0');
+                    inDate.value = `${dt.getFullYear()}-${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}T${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
+                }
+
+                const saveBtn = document.createElement('button');
+                saveBtn.type = 'button';
+                saveBtn.textContent = 'Сохранить';
+                saveBtn.classList.add('todo-edit-save');
+
+                const cancelBtn = document.createElement('button');
+                cancelBtn.type = 'button';
+                cancelBtn.textContent = 'Отмена';
+                cancelBtn.classList.add('todo-edit-cancel');
+
+                editRow.appendChild(inTitle);
+                editRow.appendChild(inDate);
+                editRow.appendChild(saveBtn);
+                editRow.appendChild(cancelBtn);
+
+                todoBlockItem.parentNode.insertBefore(editRow, todoBlockItem.nextSibling);
+
+                saveBtn.addEventListener('click', () => {
+                    const newTitle = inTitle.value.trim();
+                    const newTime = inDate.value;
+                    if (!newTitle) return alert('Введите название');
+                    updateTodoItem(item.id, newTitle, newTime);
+                    reapplyFilters();
+                    editRow.remove();
+                });
+
+                cancelBtn.addEventListener('click', () => {
+                    editRow.remove();
+                });
+            });
+
+            todoBlockItemRight.appendChild(editButton);
+
+            const deleteButton = document.createElement('button');
             deleteButton.addEventListener('click', () => {
-                deleteTodoItem(item.id)
-                reapplyFilters()
-            })
-            const deleteButtonIcon = document.createElement('img')
-            deleteButtonIcon.setAttribute('src', '../../img/delete.svg')
-            deleteButton.appendChild(deleteButtonIcon)
-            todoBlockItemRight.appendChild(deleteButton)
+                deleteTodoItem(item.id);
+                reapplyFilters();
+            });
+            const deleteButtonIcon = document.createElement('img');
+            deleteButtonIcon.setAttribute('src', '../../img/delete.svg');
+            deleteButton.appendChild(deleteButtonIcon);
+            todoBlockItemRight.appendChild(deleteButton);
 
-
-            todoBlockItem.appendChild(todoBlockItemRight)
+            todoBlockItem.appendChild(todoBlockItemRight);
 
             todoBlock.appendChild(todoBlockItem);
         });
