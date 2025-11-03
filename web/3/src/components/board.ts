@@ -1,6 +1,6 @@
-import { createField } from './field.js'
+import { createField } from "./field.js"
 
-export const renderBoard = (root, fields) => {
+export const renderBoard = (root: Element, fields: number[][]) => {
     const board = createBoard()
 
     addFieldsToBoard(board, fields)
@@ -8,20 +8,20 @@ export const renderBoard = (root, fields) => {
     root.appendChild(board)
 }
 
-const createBoard = () => {
+const createBoard = (): Element => {
     let board = document.querySelector('.board')
     if (!board) {
         board = document.createElement('div')
         board.classList.add('board')
     }
     while (board.firstChild) {
-        board.removeChild(element.firstChild);
+        board.removeChild(board.firstChild);
     }
 
     return board
 }
 
-const addFieldsToBoard = (board, fields) => {
+const addFieldsToBoard = (board: Element, fields: number[][]) => {
     fields.forEach((fieldRow) => {
         fieldRow.forEach((fieldValue) => {
             const fieldHtml = createField(fieldValue)
