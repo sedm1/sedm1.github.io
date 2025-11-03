@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 400px;
+    height: 400px;
+    user-select: none
+}
+
+.board-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    border: 5px solid #bbada0;
+}
+
+.board-item-2 {
+    background-color: #eee4da;
+    color: #727371;
+}
+
+.board-item-4 {
+    background-color: #ece0ca;
+    color: #727371;
+}
+
+.board-item-8 {
+    background-color: #f4b17a;
+    color: white;
+}
+
+.board-item-16{
+    background-color: #f59575;
+    color: white;
+}
+
+.board-item-32{
+    background-color: #f57c5f;
+    color: white;
+}
+
+.board-item-64{
+    background-color: #f65d3b;
+    color: white;
+}
+
+.board-item-128{
+    background-color: #edce71;
+    color: white;
+}
+
+.board-item-256{
+    background-color: #edcc63;
+    color: white;
+}
+
+.board-item-512{
+    background-color: #edc651;
+    color: white;
+}
+
+.board-item-1024{
+    background-color: #eec744;
+    color: white;
+}
+
+.board-item-2048{
+    background-color: #ecc230;
+    color: white;
+}
+
+.board-item-4096 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.board-item-8192 {
+    background-color: #ff2020;
+    color: white;
+}
