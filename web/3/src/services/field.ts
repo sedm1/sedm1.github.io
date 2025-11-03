@@ -10,12 +10,12 @@ export const addFieldToRandomPlace = (fields: number[][], fieldValue: number) =>
     while (!value) {
         const randomIndexRow = Math.floor(Math.random() * fields.length);
         const randomIndexCol = Math.floor(Math.random() * fields[randomIndexRow].length);
-    
-        if(fields[randomIndexRow][randomIndexCol] === 0) {
+
+        if (fields[randomIndexRow][randomIndexCol] === 0) {
             value = fieldValue;
 
             fields[randomIndexRow][randomIndexCol] = fieldValue
         };
     }
-    
+
 }
