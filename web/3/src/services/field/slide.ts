@@ -15,7 +15,6 @@ const slideLeft = (row: number[], length: number): number[] => {
 
 export const slideBoard = (action: Action, fields: number[][]): void => {
     const rows = fields.length;
-    if (!rows) return;
     const cols = fields[0].length;
 
     const setCell = (r: number, c: number, value: number) => {
@@ -27,6 +26,7 @@ export const slideBoard = (action: Action, fields: number[][]): void => {
             let row = orig.slice();
             if (action === "right") row.reverse();
             const newRow = slideLeft(row, cols);
+
             if (action === "right") newRow.reverse();
             newRow.forEach((val, c) => setCell(r, c, val));
         });
@@ -34,6 +34,7 @@ export const slideBoard = (action: Action, fields: number[][]): void => {
         for (let c = 0; c < cols; c++) {
             let col = Array.from({ length: rows }, (_, r) => fields[r][c]);
             if (action === "down") col.reverse();
+
             const newCol = slideLeft(col, rows);
             if (action === "down") newCol.reverse();
             newCol.forEach((val, r) => setCell(r, c, val));

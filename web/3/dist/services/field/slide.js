@@ -13,8 +13,6 @@ const slideLeft = (row, length) => {
 };
 export const slideBoard = (action, fields) => {
     const rows = fields.length;
-    if (!rows)
-        return;
     const cols = fields[0].length;
     const setCell = (r, c, value) => {
         fields[r][c] = value;
