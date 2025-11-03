@@ -17,5 +17,16 @@ export const addFieldToRandomPlace = (fields: number[][], fieldValue: number) =>
             fields[randomIndexRow][randomIndexCol] = fieldValue
         };
     }
+}
 
+export const isFull = (fields: number[][]) => {
+    let isFull = true;
+
+    fields.forEach((fieldRow) => {
+        fieldRow.forEach((field) => {
+            if (field === 0) isFull = false;
+        })
+    })
+
+    return isFull;
 }

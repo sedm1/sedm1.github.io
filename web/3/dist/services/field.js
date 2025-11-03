@@ -14,4 +14,14 @@ export const addFieldToRandomPlace = (fields, fieldValue) => {
         ;
     }
 };
+export const isFull = (fields) => {
+    let isFull = true;
+    fields.forEach((fieldRow) => {
+        fieldRow.forEach((field) => {
+            if (field === 0)
+                isFull = false;
+        });
+    });
+    return isFull;
+};
 //# sourceMappingURL=field.js.map
