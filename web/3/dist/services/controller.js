@@ -1,18 +1,18 @@
 export const initController = (root, emit) => {
     if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
-        initOnMobile(root, emit);
+        return initOnMobile(root, emit);
     }
     else {
-        initOnDesktop(root, emit);
+        return initOnDesktop(root, emit);
     }
 };
 const initOnMobile = (element, emit) => {
     let startX = 0, startY = 0, endX = 0, endY = 0;
-    element.addEventListener('touchstart', (e) => {
+    const touchStartHandler = (e) => {
         startX = e.touches[0].clientX;
         startY = e.touches[0].clientY;
-    });
-    element.addEventListener('touchend', (e) => {
+    };
+    const touchEndHandler = (e) => {
         endX = e.changedTouches[0].clientX;
         endY = e.changedTouches[0].clientY;
         const diffX = endX - startX;
@@ -23,10 +23,16 @@ const initOnMobile = (element, emit) => {
         else {
             emit(diffY > 0 ? 'down' : 'up');
         }
-    });
+    };
+    element.addEventListener('touchstart', touchStartHandler);
+    element.addEventListener('touchend', touchEndHandler);
+    return () => {
+        element.removeEventListener('touchstart', touchStartHandler);
+        element.removeEventListener('touchend', touchEndHandler);
+    };
 };
 const initOnDesktop = (_element, emit) => {
-    window.addEventListener('keydown', (e) => {
+    const keydownHandler = (e) => {
         switch (e.key) {
             case 'ArrowUp':
                 emit('up');
@@ -41,6 +47,10 @@ const initOnDesktop = (_element, emit) => {
                 emit('right');
                 break;
         }
-    });
+    };
+    window.addEventListener('keydown', keydownHandler);
+    return () => {
+        window.removeEventListener('keydown', keydownHandler);
+    };
 };
 //# sourceMappingURL=controller.js.map

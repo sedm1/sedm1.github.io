@@ -1,22 +1,22 @@
 import { EmitAction } from './../types';
 
-export const initController = (root: Element, emit: EmitAction) => {
+export const initController = (root: Element, emit: EmitAction): () => void => {
     if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
-        initOnMobile(root, emit);
+        return initOnMobile(root, emit);
     } else {
-        initOnDesktop(root, emit);
+        return initOnDesktop(root, emit);
     }
 };
 
-const initOnMobile = (element: Element, emit: EmitAction) => {
+const initOnMobile = (element: Element, emit: EmitAction): () => void => {
     let startX = 0, startY = 0, endX = 0, endY = 0;
 
-    element.addEventListener('touchstart', (e: Event) => {
+    const touchStartHandler = (e: Event) => {
         startX = (e as TouchEvent).touches[0].clientX;
         startY = (e as TouchEvent).touches[0].clientY;
-    });
+    };
 
-    element.addEventListener('touchend', (e: Event) => {
+    const touchEndHandler = (e: Event) => {
         endX = (e as TouchEvent).changedTouches[0].clientX;
         endY = (e as TouchEvent).changedTouches[0].clientY;
 
@@ -28,11 +28,19 @@ const initOnMobile = (element: Element, emit: EmitAction) => {
         } else {
             emit(diffY > 0 ? 'down' : 'up');
         }
-    });
+    };
+
+    element.addEventListener('touchstart', touchStartHandler);
+    element.addEventListener('touchend', touchEndHandler);
+
+    return () => {
+        element.removeEventListener('touchstart', touchStartHandler);
+        element.removeEventListener('touchend', touchEndHandler);
+    };
 };
 
-const initOnDesktop = (_element: Element, emit: EmitAction) => {
-    window.addEventListener('keydown', (e: KeyboardEvent) => {
+const initOnDesktop = (_element: Element, emit: EmitAction): () => void => {
+    const keydownHandler = (e: KeyboardEvent) => {
         switch (e.key) {
             case 'ArrowUp':
                 emit('up');
@@ -47,5 +55,11 @@ const initOnDesktop = (_element: Element, emit: EmitAction) => {
                 emit('right');
                 break;
         }
-    });
+    };
+
+    window.addEventListener('keydown', keydownHandler);
+
+    return () => {
+        window.removeEventListener('keydown', keydownHandler);
+    };
 };

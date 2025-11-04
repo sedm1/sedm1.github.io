@@ -2,7 +2,7 @@ export const renderGameItems = (root: Element, score: number, canGoBack: boolean
     const gameItems = createGameItems();
 
     if (canGoBack) {
-        let backButton = gameItems.querySelector('.board-backButton') 
+        let backButton = gameItems.querySelector('.board-backButton')
 
         if (!backButton) {
             backButton = document.createElement('button');
@@ -14,6 +14,11 @@ export const renderGameItems = (root: Element, score: number, canGoBack: boolean
             gameItems.appendChild(backButton);
         }
     }
+
+    const scoreHtml = createScore()
+    scoreHtml.textContent = 'Счет:' + score
+    gameItems.appendChild(scoreHtml)
+
 
     root.appendChild(gameItems)
 
@@ -30,4 +35,17 @@ const createGameItems = (): Element => {
     }
 
     return gameItems
+}
+
+const createScore = (): Element => {
+    let scoreHtml = document.querySelector('.scoreBlock')
+    if (!scoreHtml) {
+        scoreHtml = document.createElement('div')
+        scoreHtml.classList.add('scoreBlock')
+    }
+    while (scoreHtml.firstChild) {
+        scoreHtml.removeChild(scoreHtml.firstChild);
+    }
+
+    return scoreHtml
 }

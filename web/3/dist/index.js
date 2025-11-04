@@ -1,4 +1,5 @@
 import { renderBoard } from "./components/board.js";
+import { dialogOpen } from "./components/dialogs/endgame.js";
 import { renderGameItems } from "./components/gameItems.js";
 import { renderHeader } from "./components/header.js";
 import { initController } from "./services/controller.js";
@@ -11,10 +12,12 @@ let FIELDS = [
     [0, 0, 0, 0],
 ];
 let previousFieldsState = JSON.parse(JSON.stringify(FIELDS));
-let score = 0;
+let score = { value: 0 };
+let scorePrev = JSON.parse(JSON.stringify(score));
 let canGoBack = false;
+let unsubscribeController = () => { };
+const root = document.getElementById('root');
 window.onload = () => {
-    const root = document.getElementById('root');
     if (!root)
         return;
     renderHeader(root);
@@ -22,30 +25,50 @@ window.onload = () => {
     window.addEventListener('backButtonClick', () => {
         canGoBack = false;
         FIELDS = JSON.parse(JSON.stringify(previousFieldsState));
+        score = JSON.parse(JSON.stringify(scorePrev));
         renderBoard(root, FIELDS);
-        renderGameItems(root, score, canGoBack);
+        renderGameItems(root, score.value, canGoBack);
+    });
+    window.addEventListener('startNewGame', () => {
+        unsubscribeController();
+        FIELDS = [
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+        ];
+        previousFieldsState = JSON.parse(JSON.stringify(FIELDS));
+        score = { value: 0 };
+        scorePrev = JSON.parse(JSON.stringify(score));
+        canGoBack = false;
+        startGame(root);
     });
 };
 const startGame = (root) => {
     addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
     addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
     renderBoard(root, FIELDS);
-    renderGameItems(root, score, canGoBack);
-    initController(root, (action) => {
+    renderGameItems(root, score.value, canGoBack);
+    unsubscribeController = initController(root, (action) => {
         canGoBack = true;
         previousFieldsState = JSON.parse(JSON.stringify(FIELDS));
-        slideBoard(action, FIELDS);
+        scorePrev = JSON.parse(JSON.stringify(score));
+        slideBoard(action, FIELDS, score);
         if (JSON.stringify(FIELDS) === JSON.stringify(previousFieldsState) && isFull(FIELDS)) {
             canGoBack = false;
-            renderGameItems(root, score, canGoBack);
+            renderGameItems(root, score.value, canGoBack);
             endGame();
             return;
         }
         addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
         renderBoard(root, FIELDS);
-        renderGameItems(root, score, canGoBack);
+        renderGameItems(root, score.value, canGoBack);
     });
 };
 const endGame = () => {
+    if (!root)
+        return;
+    unsubscribeController();
+    dialogOpen(root, score.value);
 };
 //# sourceMappingURL=index.js.map

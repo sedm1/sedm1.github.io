@@ -38,42 +38,42 @@
     color: white;
 }
 
-.board-item-16{
+.board-item-16 {
     background-color: #f59575;
     color: white;
 }
 
-.board-item-32{
+.board-item-32 {
     background-color: #f57c5f;
     color: white;
 }
 
-.board-item-64{
+.board-item-64 {
     background-color: #f65d3b;
     color: white;
 }
 
-.board-item-128{
+.board-item-128 {
     background-color: #edce71;
     color: white;
 }
 
-.board-item-256{
+.board-item-256 {
     background-color: #edcc63;
     color: white;
 }
 
-.board-item-512{
+.board-item-512 {
     background-color: #edc651;
     color: white;
 }
 
-.board-item-1024{
+.board-item-1024 {
     background-color: #eec744;
     color: white;
 }
 
-.board-item-2048{
+.board-item-2048 {
     background-color: #ecc230;
     color: white;
 }
@@ -86,4 +86,21 @@
 .board-item-8192 {
     background-color: #ff2020;
     color: white;
+}
+
+
+dialog {
+    margin: 0 auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 500px;
+    width: 100%;
+    border: 0 none;
+    outline: 0 none;
+    border-radius: 10px;
+    padding: 18px 30px;
+}
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
 }

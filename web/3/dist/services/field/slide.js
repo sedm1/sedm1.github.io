@@ -1,9 +1,11 @@
-const slideLeft = (row, length) => {
+const slideLeft = (row, length, score) => {
     let r = row.slice().filter(n => n !== 0);
     for (let i = 0; i < r.length - 1; i++) {
         if (r[i] === r[i + 1]) {
             r[i] *= 2;
+            score.value += r[i];
             r[i + 1] = 0;
+            i++;
         }
     }
     r = r.filter(n => n !== 0);
@@ -11,7 +13,7 @@ const slideLeft = (row, length) => {
         r.push(0);
     return r;
 };
-export const slideBoard = (action, fields) => {
+export const slideBoard = (action, fields, score) => {
     const rows = fields.length;
     const cols = fields[0].length;
     const setCell = (r, c, value) => {
@@ -22,7 +24,7 @@ export const slideBoard = (action, fields) => {
             let row = orig.slice();
             if (action === "right")
                 row.reverse();
-            const newRow = slideLeft(row, cols);
+            const newRow = slideLeft(row, cols, score);
             if (action === "right")
                 newRow.reverse();
             newRow.forEach((val, c) => setCell(r, c, val));
@@ -33,7 +35,7 @@ export const slideBoard = (action, fields) => {
             let col = Array.from({ length: rows }, (_, r) => fields[r][c]);
             if (action === "down")
                 col.reverse();
-            const newCol = slideLeft(col, rows);
+            const newCol = slideLeft(col, rows, score);
             if (action === "down")
                 newCol.reverse();
             newCol.forEach((val, r) => setCell(r, c, val));

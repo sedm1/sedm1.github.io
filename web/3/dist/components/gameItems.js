@@ -10,6 +10,9 @@ export const renderGameItems = (root, score, canGoBack) => {
             gameItems.appendChild(backButton);
         }
     }
+    const scoreHtml = createScore();
+    scoreHtml.textContent = 'Счет:' + score;
+    gameItems.appendChild(scoreHtml);
     root.appendChild(gameItems);
 };
 const createGameItems = () => {
@@ -22,5 +25,16 @@ const createGameItems = () => {
         gameItems.removeChild(gameItems.firstChild);
     }
     return gameItems;
+};
+const createScore = () => {
+    let scoreHtml = document.querySelector('.scoreBlock');
+    if (!scoreHtml) {
+        scoreHtml = document.createElement('div');
+        scoreHtml.classList.add('scoreBlock');
+    }
+    while (scoreHtml.firstChild) {
+        scoreHtml.removeChild(scoreHtml.firstChild);
+    }
+    return scoreHtml;
 };
 //# sourceMappingURL=gameItems.js.map
