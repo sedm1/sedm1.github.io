@@ -13,4 +13,18 @@ export const getGameState = () => {
 export const deleteGameState = () => {
     localStorage.removeItem('2048-state');
 };
+export const getScores = () => {
+    const state = localStorage.getItem('2048-score');
+    if (!state)
+        return [];
+    return JSON.parse(state);
+};
+export const setScore = (recordItem) => {
+    const item = localStorage.getItem('2048-score');
+    const state = item ? JSON.parse(item) : [];
+    if (!state.length)
+        localStorage.setItem('2048-score', JSON.stringify([]));
+    state.push(recordItem);
+    localStorage.setItem('2048-score', JSON.stringify(state));
+};
 //# sourceMappingURL=localstorage.js.map

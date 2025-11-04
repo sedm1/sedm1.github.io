@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header {
+    order: 0;
+}
+
 .board {
     background-color: #cdc1b5;
     border: 6px solid #bbada0;
@@ -13,6 +23,7 @@
     height: 400px;
     user-select: none;
     position: relative;
+    order: 1;
 }
 
 .board-item {
@@ -130,4 +141,44 @@ dialog::backdrop {
         transform 150ms ease;
     pointer-events: none;
     border: 6px solid transparent;
+}
+
+.records-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f4f1ed;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.records-table th {
+    background: #bbada0;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.records-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.records-table tr:nth-child(even) td {
+    background: #eee4da;
+}
+
+.records-table tr:hover td {
+    background: #f0dcbf;
+}
+
+.gameItems {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.records-table {
+    order: 2;
 }

@@ -2,11 +2,12 @@ import { renderBoard } from "./components/board.js";
 import { dialogOpen } from "./components/dialogs/endgame.js";
 import { renderGameItems } from "./components/gameItems.js";
 import { renderHeader } from "./components/header.js";
+import { renderRecords } from "./components/records.js";
 import { animateBoard } from "./services/boardAnimation.js";
 import { initController } from "./services/controller.js";
 import { addFieldToRandomPlace, genFieldValue, isFull } from "./services/field.js";
 import { slideBoard } from "./services/field/slide.js";
-import { saveGameStateToLocalStorage, getGameState, deleteGameState } from "./services/localstorage.js";
+import { saveGameStateToLocalStorage, getGameState, deleteGameState, getScores, setScore } from "./services/localstorage.js";
 let FIELDS = [
     [0, 0, 0, 0],
     [0, 0, 0, 0],
@@ -53,6 +54,10 @@ window.onload = () => {
         canGoBack = false;
         startGame(root, true);
     });
+    window.addEventListener('setRecord', (e) => {
+        const event = e;
+        setScore(event.detail);
+    });
 };
 const startGame = (root, isNewGame) => {
     if (isNewGame) {
@@ -61,6 +66,7 @@ const startGame = (root, isNewGame) => {
     }
     renderBoard(root, FIELDS);
     renderGameItems(root, score.value, canGoBack);
+    renderRecords(root, getScores());
     unsubscribeController = initController(root, (action) => {
         canGoBack = true;
         previousFieldsState = JSON.parse(JSON.stringify(FIELDS));
