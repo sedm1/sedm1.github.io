@@ -5,6 +5,7 @@ import { renderHeader } from "./components/header.js";
 import { initController } from "./services/controller.js";
 import { addFieldToRandomPlace, genFieldValue, isFull } from "./services/field.js";
 import { slideBoard } from "./services/field/slide.js";
+import { saveGameStateToLocalStorage, getGameState, deleteGameState } from "./services/localstorage.js";
 let FIELDS = [
     [0, 0, 0, 0],
     [0, 0, 0, 0],
@@ -18,6 +19,12 @@ let canGoBack = false;
 let unsubscribeController = () => { };
 const root = document.getElementById('root');
 window.onload = () => {
+    const state = getGameState();
+    if (state) {
+        alert('Партия была восстановлена');
+        FIELDS = state.fields;
+        score = state.score;
+    }
     if (!root)
         return;
     renderHeader(root);
@@ -30,6 +37,7 @@ window.onload = () => {
         renderGameItems(root, score.value, canGoBack);
     });
     window.addEventListener('startNewGame', () => {
+        deleteGameState();
         unsubscribeController();
         FIELDS = [
             [0, 0, 0, 0],
@@ -63,6 +71,7 @@ const startGame = (root) => {
         addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
         renderBoard(root, FIELDS);
         renderGameItems(root, score.value, canGoBack);
+        saveGameStateToLocalStorage(FIELDS, score);
     });
 };
 const endGame = () => {
