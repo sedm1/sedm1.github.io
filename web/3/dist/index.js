@@ -2,6 +2,7 @@ import { renderBoard } from "./components/board.js";
 import { dialogOpen } from "./components/dialogs/endgame.js";
 import { renderGameItems } from "./components/gameItems.js";
 import { renderHeader } from "./components/header.js";
+import { animateBoard } from "./services/boardAnimation.js";
 import { initController } from "./services/controller.js";
 import { addFieldToRandomPlace, genFieldValue, isFull } from "./services/field.js";
 import { slideBoard } from "./services/field/slide.js";
@@ -73,6 +74,7 @@ const startGame = (root, isNewGame) => {
         }
         addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
         renderBoard(root, FIELDS);
+        animateBoard(root, previousFieldsState, FIELDS, action);
         renderGameItems(root, score.value, canGoBack);
         saveGameStateToLocalStorage(FIELDS, score);
     });

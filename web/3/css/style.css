@@ -11,7 +11,8 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 400px;
     height: 400px;
-    user-select: none
+    user-select: none;
+    position: relative;
 }
 
 .board-item {
@@ -101,6 +102,32 @@ dialog {
     border-radius: 10px;
     padding: 18px 30px;
 }
+
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.4);
+}
+
+.tiles-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.tile {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 30px;
+    box-sizing: border-box;
+    transition: left 100ms cubic-bezier(.19, 1, .22, 1),
+        top 100ms cubic-bezier(.19, 1, .22, 1),
+        transform 90ms ease;
+    pointer-events: none;
+    border: 6px solid transparent;
 }
