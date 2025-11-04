@@ -125,9 +125,9 @@ dialog::backdrop {
     font-weight: 800;
     font-size: 30px;
     box-sizing: border-box;
-    transition: left 100ms cubic-bezier(.19, 1, .22, 1),
-        top 100ms cubic-bezier(.19, 1, .22, 1),
-        transform 90ms ease;
+    transition: left 180ms cubic-bezier(.19, 1, .22, 1),
+        top 180ms cubic-bezier(.19, 1, .22, 1),
+        transform 150ms ease;
     pointer-events: none;
     border: 6px solid transparent;
 }

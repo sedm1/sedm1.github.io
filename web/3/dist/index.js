@@ -51,7 +51,7 @@ window.onload = () => {
         score = { value: 0 };
         scorePrev = JSON.parse(JSON.stringify(score));
         canGoBack = false;
-        startGame(root, state === null);
+        startGame(root, true);
     });
 };
 const startGame = (root, isNewGame) => {

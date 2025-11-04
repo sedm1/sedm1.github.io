@@ -61,7 +61,7 @@ window.onload = () => {
         scorePrev = JSON.parse(JSON.stringify(score));
         canGoBack = false;
 
-        startGame(root, state === null)
+        startGame(root, true)
     })
 }
 

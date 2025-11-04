@@ -47,17 +47,25 @@ export const animateBoard = (root, prevFields, fields, action) => {
             tile.style.zIndex = '10';
             const targetLeft = Math.round(c * cellW + inset);
             const targetTop = Math.round(r * cellH + inset);
-            let start = null;
-            const list = prevMap[String(value)];
-            if (list && list.length) {
-                start = list.shift();
-            }
-            if (!start) {
+            let didAnimate = false;
+            if (prevFields && prevFields[r][c] === value) {
+                const list = prevMap[String(value)];
+                if (list && list.length) {
+                    for (let i = 0; i < list.length; i++) {
+                        if (list[i].r === r && list[i].c === c) {
+                            list.splice(i, 1);
+                            break;
+                        }
+                    }
+                }
                 tile.style.left = `${targetLeft}px`;
                 tile.style.top = `${targetTop}px`;
                 layer.appendChild(tile);
+                continue;
             }
-            else {
+            const list = prevMap[String(value)];
+            if (list && list.length) {
+                const start = list.shift(); // FIFO
                 const startLeft = Math.round(start.c * cellW + inset);
                 const startTop = Math.round(start.r * cellH + inset);
                 tile.style.left = `${startLeft}px`;
@@ -67,6 +75,12 @@ export const animateBoard = (root, prevFields, fields, action) => {
                     tile.style.left = `${targetLeft}px`;
                     tile.style.top = `${targetTop}px`;
                 });
+                didAnimate = true;
+            }
+            else {
+                tile.style.left = `${targetLeft}px`;
+                tile.style.top = `${targetTop}px`;
+                layer.appendChild(tile);
             }
         }
     }
