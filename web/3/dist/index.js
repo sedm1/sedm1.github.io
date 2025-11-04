@@ -28,13 +28,14 @@ window.onload = () => {
     if (!root)
         return;
     renderHeader(root);
-    startGame(root);
+    startGame(root, state === null);
     window.addEventListener('backButtonClick', () => {
         canGoBack = false;
         FIELDS = JSON.parse(JSON.stringify(previousFieldsState));
         score = JSON.parse(JSON.stringify(scorePrev));
         renderBoard(root, FIELDS);
         renderGameItems(root, score.value, canGoBack);
+        saveGameStateToLocalStorage(FIELDS, score);
     });
     window.addEventListener('startNewGame', () => {
         deleteGameState();
@@ -49,12 +50,14 @@ window.onload = () => {
         score = { value: 0 };
         scorePrev = JSON.parse(JSON.stringify(score));
         canGoBack = false;
-        startGame(root);
+        startGame(root, state === null);
     });
 };
-const startGame = (root) => {
-    addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
-    addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
+const startGame = (root, isNewGame) => {
+    if (isNewGame) {
+        addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
+        addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
+    }
     renderBoard(root, FIELDS);
     renderGameItems(root, score.value, canGoBack);
     unsubscribeController = initController(root, (action) => {

@@ -32,7 +32,7 @@ window.onload = () => {
     if (!root) return;
 
     renderHeader(root);
-    startGame(root)
+    startGame(root, state === null)
 
     window.addEventListener('backButtonClick', () => {
         canGoBack = false;
@@ -41,6 +41,8 @@ window.onload = () => {
         score = JSON.parse(JSON.stringify(scorePrev))
         renderBoard(root, FIELDS)
         renderGameItems(root, score.value, canGoBack)
+
+        saveGameStateToLocalStorage(FIELDS, score)
     })
 
     window.addEventListener('startNewGame', () => {
@@ -58,13 +60,15 @@ window.onload = () => {
         scorePrev = JSON.parse(JSON.stringify(score));
         canGoBack = false;
 
-        startGame(root)
+        startGame(root, state === null)
     })
 }
 
-const startGame = (root: Element) => {
-    addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
-    addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]))
+const startGame = (root: Element, isNewGame: boolean) => {
+    if (isNewGame) {
+        addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]));
+        addFieldToRandomPlace(FIELDS, genFieldValue([2, 4]))
+    }
 
     renderBoard(root, FIELDS);
     renderGameItems(root, score.value, canGoBack)
