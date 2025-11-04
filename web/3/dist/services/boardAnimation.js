@@ -8,7 +8,8 @@ export const animateBoard = (root, prevFields, fields, action) => {
         layer.className = 'tiles-layer';
         board.appendChild(layer);
     }
-    layer.innerHTML = '';
+    while (layer.firstChild)
+        layer.removeChild(layer.firstChild);
     const innerW = board.clientWidth;
     const innerH = board.clientHeight;
     const cellW = innerW / 4;

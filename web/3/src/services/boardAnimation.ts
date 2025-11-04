@@ -10,7 +10,7 @@ export const animateBoard = (root: Element, prevFields: number[][], fields: numb
       layer.className = 'tiles-layer';
       board.appendChild(layer);
     }
-    layer.innerHTML = '';
+    while (layer.firstChild) layer.removeChild(layer.firstChild)
   
     const innerW = board.clientWidth;
     const innerH = board.clientHeight;
