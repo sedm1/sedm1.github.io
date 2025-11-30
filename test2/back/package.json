@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "firebase": "^9.8.1",
+    "google-auth-library": "^8.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.18",
+    "save": "^2.5.0",
+    "uuidv4": "^6.2.13"
+  },
+  "scripts": {
+    "start" : "node server.js",
+    "dev": "nodemon server.js"
+  }
+}

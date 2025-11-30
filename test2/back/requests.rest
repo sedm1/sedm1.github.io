@@ -1,0 +1,110 @@
+############## AUTH ROUTES START ##############
+
+### SIGNUP ###
+POST http://localhost:8888/auth/signup 
+Content-Type: application/json
+
+{
+    "Email": "guest2@mail.com",
+    "Name": "Guest2",
+    "Password": "Guest1234"
+}
+
+### SIGNIN ###
+
+POST http://localhost:8888/auth/signin
+Content-Type: application/json
+
+{
+    "Email": "guest@mail.com",
+    "Password": "Guest1234"
+}
+
+### SIGNOUT ###
+POST http://localhost:8888/auth/signout
+Content-Type: application/json
+
+{
+    // "RefreshToken" : "YOUR REFRESH_TOKEN"
+    "RefreshToken" : "268e3107-888c-4ddc-915b-7ed02adb368e"
+}
+
+
+### REISSUE NEW ACCESS_TOKEN AND NEW REFRESH_TOKEN && DELETE OLD REFRESH_TOKEN ###
+
+POST http://localhost:8888/auth/token
+Content-Type: application/json
+
+{
+    // "RefreshToken" : "YOUR REFRESH_TOKEN"
+    "refreshToken" : "268e3107-888c-4ddc-915b-7ed02adb368e"
+}
+
+### UPDATE PROFILE ###
+
+POST http://localhost:8888/auth/update/profile
+// Authorization: Bearer YOUR_ACCESS_TOKEN
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjoiY2tYQ3k4N05KZVBLaVpLaGV3MUoiLCJpYXQiOjE2NTU4NzgxNTYsImV4cCI6MTY1NTg4NjQ1Nn0.x7fStKbblLIH_WhtqWsTfhl0LhPztsKi6aAaN_9bBhw
+Content-Type: application/json
+
+{
+    "Name": "Guest2"
+}
+
+### UPDATE PASSWORD ###
+
+POST http://localhost:8888/auth/update/password
+// Authorization: Bearer YOUR_ACCESS_TOKEN
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjoiY2tYQ3k4N05KZVBLaVpLaGV3MUoiLCJpYXQiOjE2NTU4NzgxNTYsImV4cCI6MTY1NTg4NjQ1Nn0.x7fStKbblLIH_WhtqWsTfhl0LhPztsKi6aAaN_9bBhw
+Content-Type: application/json
+
+{
+    "OldPassword": "Guest1234",
+    "NewPassword": "Guest12345"
+}
+
+############## AUTH ROUTES END ##############
+
+### ADD TODO ###
+
+POST http://localhost:8888/todo
+// Authorization: Bearer YOUR_ACCESS_TOKEN
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjoiY2tYQ3k4N05KZVBLaVpLaGV3MUoiLCJpYXQiOjE2NTU4NzgxNTYsImV4cCI6MTY1NTg4NjQ1Nn0.x7fStKbblLIH_WhtqWsTfhl0LhPztsKi6aAaN_9bBhw
+Content-Type: application/json
+
+{
+    "Content": "Guest2",
+    "done": false
+}
+
+### GET TODOS ###
+
+GET http://localhost:8888/todo/all
+// Authorization: Bearer YOUR_ACCESS_TOKEN
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjoiY2tYQ3k4N05KZVBLaVpLaGV3MUoiLCJpYXQiOjE2NTU4NzgxNTYsImV4cCI6MTY1NTg4NjQ1Nn0.x7fStKbblLIH_WhtqWsTfhl0LhPztsKi6aAaN_9bBhw
+Content-Type: application/json
+
+### DELETE TODO ###
+
+DELETE http://localhost:8888/todo
+// Authorization: Bearer YOUR_ACCESS_TOKEN
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjoiY2tYQ3k4N05KZVBLaVpLaGV3MUoiLCJpYXQiOjE2NTU4NzgxNTYsImV4cCI6MTY1NTg4NjQ1Nn0.x7fStKbblLIH_WhtqWsTfhl0LhPztsKi6aAaN_9bBhw
+Content-Type: application/json
+
+{
+    "Id": "ckXCy87NJePKiZKhew1J1655782357983"
+}
+
+
+### UPDATE TODO ### 
+
+PATCH http://localhost:8888/todo
+// Authorization: Bearer YOUR_ACCESS_TOKEN
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjoiY2tYQ3k4N05KZVBLaVpLaGV3MUoiLCJpYXQiOjE2NTU4NzgxNTYsImV4cCI6MTY1NTg4NjQ1Nn0.x7fStKbblLIH_WhtqWsTfhl0LhPztsKi6aAaN_9bBhw
+Content-Type: application/json
+
+{
+    "Id": "ckXCy87NJePKiZKhew1J1655783283435",
+    "Content": "Guest2Profile",
+    "done": true
+}
