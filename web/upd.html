@@ -8,8 +8,7 @@
 
 <body>
 
-    <style xmlns:sbis="https://online.sbis.ru">
-
+    <style>
         .view_container {
             font-family: arial, tahoma, verdana;
             /* print italic */
@@ -298,54 +297,13 @@
             filter: alpha(opacity=0);
             /* правит косяк конвертера с границами при разрыве страницы */
             border-color: rgba(255, 255, 255, 0);
-            border-color: #fff\9;
+            border-color: #fff;
         }
 
         .view_container .table-end {
             margin-top: 0 !important;
         }
 
-        @media PRINT {
-
-            .page-break-after-avoid
-            {
-                page-break-after: avoid;
-            }
-
-            .page-break-after-always
-            {
-                page-break-after: always;
-            }
-
-            .page-break-before-avoid
-            {
-                page-break-before: avoid;
-            }
-
-            .page-break-before-always
-            {
-                page-break-before: always;
-            }
-
-            .page-break-before-auto
-            {
-                page-break-before: auto;
-            }
-
-            .view_container .no-break-div {
-                page-break-inside: avoid;
-                position: relative;
-                display: run-in;
-            }
-
-            /* костыль для конвертера в pdf без .view_container т.к. договоры без этого класса */
-            .pdffacsimile {
-                position: relative !important;
-            }
-        }
-    </style>
-
-    <style xmlns:sbis="https://online.sbis.ru">
         .view_container .qrcode,
         .view_container .qrcode-invoice,
         .view_container .qrcode-vr,
@@ -373,28 +331,6 @@
             width: 100%;
         }
 
-        @media screen {
-            .view_container .buyer-block {
-                width: 100%;
-            }
-        }
-
-        @media PRINT {
-            .view_container .qrcode {
-                float: right;
-                padding-top: 15px;
-            }
-
-            .view_container .withQR {
-                vertical-align: top;
-                height: 100%;
-                width: calc(100% - 106px);
-                display: inline-block;
-            }
-        }
-    </style>
-
-    <style xmlns:sbis="https://online.sbis.ru">
         .view_container .border-right {
             border-right: 1px solid black;
         }
@@ -430,8 +366,11 @@
                 border-right: 2px solid #c0c0c0 !important;
             }
 
-            .noborder .border-cell-podpis,
             .border-top {
+                border-top: 1px solid #dddddd !important;
+            }
+
+            .noborder .border-cell-podpis {
                 border-top: 1px solid #dddddd !important;
             }
 
@@ -488,17 +427,16 @@
                 border-right: 2px solid #000 !important;
             }
 
-            .noborder .border-cell-podpis,
             .border-top {
+                border-top: 1px solid #000 !important;
+            }
+
+            .noborder .border-cell-podpis {
                 border-top: 1px solid #000 !important;
             }
 
             .view_container table {
                 font-size: 7pt !important;
-            }
-
-            .view_container .page-content {
-                width: 99%;
             }
         }
 
@@ -533,28 +471,8 @@
             border-top: none !important;
         }
 
-        .remove_border_top {
-            border-top: none !important;
-        }
-
-        .remove_border_bottom {
-            border-bottom: none !important;
-        }
-
-        .remove_border_right {
-            border-right: none !important;
-        }
-
-        .remove_border_left {
-            border-left: none !important;
-        }
-
-        .corr_wrap {
-            word-break: break-word;
-        }
-
-        .min-width150 {
-            min-width: 150px;
+        .min-width71 {
+            min-width: 71px;
         }
 
         .width80 {
@@ -574,38 +492,77 @@
             max-width: 20px;
         }
 
-        .vert_top {
-            vertical-align: top;
+        .min-width150 {
+            min-width: 150px;
         }
 
-
-
-        .ws-is-desktop-safari .safari-remove-border-top {
+        .remove_border_top {
             border-top: none !important;
         }
 
-        .ws-is-mobile-safari .safari-remove-border-top {
-            border-top: none !important;
+        .remove_border_bottom {
+            border-bottom: none !important;
+        }
+
+        .remove_border_right {
+            border-right: none !important;
+        }
+
+        .remove_border_left {
+            border-left: none !important;
+        }
+
+        @media screen {
+            .view_container .buyer-block {
+                width: 100%;
+            }
+        }
+
+        @media PRINT {
+            .view_container .qrcode {
+                float: right;
+                padding-top: 15px;
+            }
+
+            .view_container .withQR {
+                vertical-align: top;
+                height: 100%;
+                width: calc(100% - 106px);
+                display: inline-block;
+            }
+        }
+
+        @media PRINT {
+
+            .view_container .no-break-div {
+                page-break-inside: avoid;
+                position: relative;
+                display: run-in;
+            }
+
+            /* костыль для конвертера в pdf без .view_container т.к. договоры без этого класса */
+            .pdffacsimile {
+                position: relative !important;
+            }
         }
     </style>
 
-    <div xmlns:sbis="https://online.sbis.ru" style="min-width: fit-content; width: 100%;"
-        class="view_container ws-is-chrome ws-is-windows-10 ws-is-desktop-platform ws-is-no-touch">
-        <div sds-presentation-recordcount="15" sds-presentation-pagesize="20" sds-presentation-pagecurrent="0"
+    <div xmlns:sbis="https://online.sbis.ru" style="min-width: fit-content; width: 100%;" class="view_container">
+        <div sds-presentation-recordcount="2" sds-presentation-pagesize="33" sds-presentation-pagecurrent="0"
             id="sds-presentation-paging"></div>
         <div class="page-landscape-margin-narrow">
             <div class="page-content">
                 <table>
                     <tbody>
                         <tr class="tr-begin">
-                            <td class="noborder vertical-align-top border_right" width="85">
+                            <td class="noborder vertical-align-top border_right" width="85" colspan="1">
                                 Универсальный<br>
                                 передаточный<br>
                                 документ<br>
                                 <br>
                                 Статус:&nbsp;
                                 <span style="border: 2px solid #000;padding: 1px 8px 1px 10px;">
-                                    1
+                                    2
                                 </span>
                                 <br>
                                 <p style="font-size:10px">
@@ -616,7 +573,7 @@
                                     документ (акт)
                                 </p>
                             </td>
-                            <td class="noborder" colspan="15">
+                            <td class="noborder" colspan="17">
                                 <table>
                                     <tbody>
                                         <tr>
@@ -626,15 +583,16 @@
                                                         <tr>
                                                             <td width="5%" style="font-size: 12px; padding-left: 4px"
                                                                 class="bold nowrap vertical-align-bottom">
-                                                                Счет-фактура № {СвСчФактНомерСчФ} от {СвСчФактДатаСчФ}</td>
+                                                                Счет-фактура № 10062 от
+                                                                10&nbsp;июня&nbsp;2024 г.</td>
                                                             <td width="95%"></td>
                                                         </tr>
                                                         <tr>
                                                             <td style="padding-left:4px">
                                                                 Исправление №
-                                                                -
+                                                                ---
                                                                 от
-                                                                -</td>
+                                                                ---</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -672,19 +630,20 @@
 
                                                                     &nbsp;
                                                                 </td>
-                                                                <td class="cell-value bold">{СвПродНаимОрг}</td>
+                                                                <td class="cell-value bold">ООО "Наша компания"</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="cell-name">
                                                                     Адрес&nbsp;
                                                                 </td>
-                                                                <td class="cell-value">{СвПродАдрРФАдрес}</td>
+                                                                <td class="cell-value">143350, г. Москва, ул. Пушкина,
+                                                                    д. 1</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="cell-name">
                                                                     ИНН/КПП продавца&nbsp;
                                                                 </td>
-                                                                <td class="cell-value">{СвПродИННКПП}</td>
+                                                                <td class="cell-value">1000000001/100000001</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -695,10 +654,11 @@
                                                     <table>
                                                         <tbody>
                                                             <tr>
-                                                                <td width="190mm" class="cell-name">
-                                                                    Грузоотправитель и его адрес:
+                                                                <td width="190mm" class="cell-name">Грузоотправитель и
+                                                                    его адрес:&nbsp;
                                                                 </td>
-                                                                <td class="cell-value">{ГрузОтОнЖе}</td>
+                                                                <td class="cell-value"><b>ООО "Наша компания"</b>,
+                                                                    143350, г. Москва, ул. Пушкина, д. 1</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -712,7 +672,8 @@
                                                                 <td width="190mm" class="cell-name">Грузополучатель и
                                                                     его адрес:&nbsp;
                                                                 </td>
-                                                                <td class="cell-value"><b>{ГрузПолучНаимОрг}</b> {ГрузПолучАдрРФАдрес}</td>
+                                                                <td class="cell-value"><b>ООО "Покупатель"</b>, 105187,
+                                                                    г. Москва, ул. Советская, д. 5</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -732,7 +693,7 @@
                                                                 <td width="190mm" class="cell-name">
                                                                     К платежно-расчетному документу
                                                                 </td>
-                                                                <td class="cell-value">{СвПрод}</td>
+                                                                <td class="cell-value"> - </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -745,7 +706,10 @@
                                                             <tr>
                                                                 <td width="190mm" class="cell-name">Документ об
                                                                     отгрузке:&nbsp;</td>
-                                                                <td class="cell-value">{СвПродДокОбОтгр}</td>
+                                                                <td class="cell-value">№ п/п 1-2
+                                                                    №
+                                                                    10062
+                                                                    от 10.06.2024</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -762,19 +726,20 @@
 
                                                                     &nbsp;
                                                                 </td>
-                                                                <td class="cell-value bold">{СвПокупНаимОрг}</td>
+                                                                <td class="cell-value bold">ООО "Покупатель"</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="cell-name">
                                                                     Адрес&nbsp;
                                                                 </td>
-                                                                <td class="cell-value">{СвПокупАдрРФАдрес}</td>
+                                                                <td class="cell-value">105187, г. Москва, ул. Советская,
+                                                                    д. 5</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="cell-name">
                                                                     ИНН/КПП покупателя&nbsp;
                                                                 </td>
-                                                                <td class="cell-value">{СвПокупИННКПП}</td>
+                                                                <td class="cell-value">2000000002/200000002</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -792,7 +757,7 @@
                                                         <tr>
                                                             <td width="190mm" class="cell-name">Валюта: наименование,
                                                                 код &nbsp; </td>
-                                                            <td class="cell-value">Российский рубль, код - {СвСчФактКодОКВ}</td>
+                                                            <td class="cell-value">Российский рубль, код - 643</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -806,11 +771,14 @@
                                                             <td width="30%" class="cell-name">Идентификатор
                                                                 государственного контракта, договора
                                                                 (соглашения)&nbsp;(при наличии)</td>
-                                                            <td>{ИнфПродГосЗакКазн}</td>
+                                                            <td></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </td>
+                                        </tr>
+                                        <tr class="border-top">
+                                            <td colspan="2"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -818,7 +786,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <table style="margin-top: 0" class="tab " class="page-break-after-avoid">
+                <table style="margin-top: 0" class="tab ">
                     <thead>
                         <tr class="tab2 tr-begin">
                             <td width="80" rowspan="2" class="border_right width80">
@@ -831,7 +799,7 @@
                                 Наименование товара<br>(описание выполненных работ, оказанных услуг),<br>имущественного
                                 права
                             </td>
-                            <td width="5%" rowspan="2">Код вида товара</td>
+                            <td rowspan="2">Код вида товара</td>
                             <td colspan="2">Единица измерения</td>
                             <td rowspan="2">
                                 Количество<br>(объем)
@@ -933,65 +901,171 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="tab2 tr-begin">
-                            <td class="border_right">
-
+                        <tr class="tab1 tr-begin">
+                            <td class="border_right border-cell text-center break-word width80">00000000064</td>
+                            <td class="border-cell" align="center">1</td>
+                            <td class="border-cell"><span class="break-word">Вентилятор, напольный</span></td>
+                            <td class="nowrap text-center">-</td>
+                            <td class="border-cell text-center">796</td>
+                            <td class="border-cell" align="center">шт</td>
+                            <td class="border-cell-money vertical-align-middle">4</td>
+                            <td class="border-cell-money vertical-align-middle">1 576.00</td>
+                            <td class="border-cell-money vertical-align-middle">6 304.00</td>
+                            <td class="border-cell-money text-center vertical-align-middle">
+                                без акциза
                             </td>
-                            <td>
-
+                            <td class="border-cell text-center nowrap">без НДС</td>
+                            <td class="border-cell-money vertical-align-middle">
+                                без НДС
                             </td>
-                            <td>
-
+                            <td class="border-cell-money vertical-align-middle">6 304.00</td>
+                            <td class="nowrap text-center">-</td>
+                            <td class="text-center">-</td>
+                            <td class="nowrap text-center">-</td>
+                        </tr>
+                        <tr class="tab1 tr-end">
+                            <td class="border_right border-cell text-center break-word width80">00000000128</td>
+                            <td class="border-cell" align="center">2</td>
+                            <td class="border-cell"><span class="break-word">Монитор</span></td>
+                            <td class="nowrap text-center">-</td>
+                            <td class="border-cell text-center">796</td>
+                            <td class="border-cell" align="center">шт</td>
+                            <td class="border-cell-money vertical-align-middle">2</td>
+                            <td class="border-cell-money vertical-align-middle">8 499.00</td>
+                            <td class="border-cell-money vertical-align-middle">16 998.00</td>
+                            <td class="border-cell-money text-center vertical-align-middle">
+                                без акциза
                             </td>
-                            <td>
-
+                            <td class="border-cell text-center nowrap">без НДС</td>
+                            <td class="border-cell-money vertical-align-middle">
+                                без НДС
                             </td>
-                            <td width="1%">
-
+                            <td class="border-cell-money vertical-align-middle">16 998.00</td>
+                            <td class="nowrap text-center">-</td>
+                            <td class="text-center">-</td>
+                            <td class="nowrap text-center">-</td>
+                        </tr>
+                        <tr class="tab1 tr-end">
+                            <td class="border_right explanation" colspan="1"></td>
+                            <td colspan="7" class="explanation bold">Всего к оплате</td>
+                            <td class="border-cell-money">23 302.00</td>
+                            <td colspan="2" class="text-center">
+                                Х
                             </td>
-                            <td width="5%">
-
+                            <td class="border-cell" align="right">
+                                без НДС
                             </td>
-                            <td width="5%">
-
+                            <td class="border-cell-money">23 302.00</td>
+                            <td style="border-bottom-color: white;border-right-color: white;"></td>
+                            <td style="border-bottom-color: white;border-right-color: white;border-left-color: white;">
                             </td>
-                            <td width="5%">
-
+                            <td style="border-bottom-color: white;border-right-color: white;border-left-color: white;">
                             </td>
-                            <td width="5%">
-
+                        </tr>
+                        <tr class="tab1">
+                            <td style="padding-right:4px" class="noborder vertical-align-top border_right" colspan="1">
+                                Документ<br>
+                                <span class="nowrap">составлен на</span>
+                                <br>
+                                <span style="border-bottom: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                листах
                             </td>
-                            <td width="5%">
-
-                            </td>
-                            <td width="1%">
-
-                            </td>
-                            <td width="5%">
-
-                            </td>
-                            <td width="5%">
-
-                            </td>
-                            <td width="5%">
-
-                            </td>
-                            <td width="5%">
-
-                            </td>
-                            <td width="5%">
-
+                            <td class="noborder border_bottom" colspan="15">
+                                <div class="forPodpisant">
+                                    <table style="margin-top:3mm">
+                                        <tbody>
+                                            <tr>
+                                                <td width="49%">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr height="16mm" class="vertical-align-bottom">
+                                                                <td class="cell-name">Руководитель организации <br>или
+                                                                    иное уполномоченное лицо</td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <div class="pdffacsimile pdffacsimiledirector">
+                                                                    </div>
+                                                                </td>
+                                                                <td></td>
+                                                                <td class="text-center">Иванов Иван Иванович</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="20%"></td>
+                                                                <td width="5%"></td>
+                                                                <td width="15%" class="border-cell-podpis">(подпись)
+                                                                </td>
+                                                                <td width="5%"></td>
+                                                                <td width="25%" class="border-cell-podpis">
+                                                                    (ф.и.о.)
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="vertical-align-bottom">
+                                                                <td class="cell-name">
+                                                                    Индивидуальный предприниматель
+                                                                    <br>или иное уполномоченное лицо
+                                                                </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td class="text-center"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="2"></td>
+                                                                <td class="border-cell-podpis">(подпись)</td>
+                                                                <td></td>
+                                                                <td class="border-cell-podpis">
+                                                                    (ф.и.о.)
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td width="2%"></td>
+                                                <td width="49%">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr height="16mm" class="vertical-align-bottom">
+                                                                <td class="cell-name">Главный бухгалтер <br>или иное
+                                                                    уполномоченное лицо</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td class="text-center"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="20%"></td>
+                                                                <td width="5%"></td>
+                                                                <td width="15%" class="border-cell-podpis">(подпись)
+                                                                </td>
+                                                                <td width="5%"></td>
+                                                                <td width="25%" class="border-cell-podpis">(ф.и.о.)</td>
+                                                            </tr>
+                                                            <tr height="32mm">
+                                                                <td colspan="5"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="5" class="border-cell-podpis">(реквизиты
+                                                                    свидетельства о государственной регистрации
+                                                                    индивидуального предпринимателя)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="no-break-div page-break-before-avoid page-break-after-always">
+                <div class="no-break-div">
                     <table>
                         <tbody>
                             <tr class="vertical-align-bottom">
                                 <td width="5%" style="padding-top: 5px;" class="cell-name nowrap">Основание передачи
                                     (сдачи)/получения приемки &nbsp;</td>
-                                <td>{СвПродПерНаимОсн}</td>
+                                <td class="break-word"></td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -1005,7 +1079,7 @@
                                 <td width="5%" class="cell-name nowrap">
                                     Данные о транспортировке и грузе &nbsp;
                                 </td>
-                                <td class="corr_wrap"></td>
+                                <td class="break-word"></td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -1032,16 +1106,16 @@
                                                                 </td>
                                                             </tr>
                                                             <tr height="16mm" class="vertical-align-bottom">
-                                                                <td width="40%" class="text-center">Генеральный директор
+                                                                <td width="40%" class="text-center">ГЕНЕРАЛЬНЫЙ ДИРЕКТОР
                                                                 </td>
                                                                 <td width="5%"></td>
                                                                 <td width="20%" class="text-center">
                                                                     <div class="pdffacsimile pdffacsimiledirector">
-
                                                                     </div>
                                                                 </td>
                                                                 <td width="5%"></td>
-                                                                <td width="30%" class="text-center">{ПодписантЮЛФИО}</td>
+                                                                <td width="30%" class="text-center">
+                                                                    Иванов&nbsp;Иван&nbsp;Иванович</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="border-cell-podpis">(должность)</td>
@@ -1068,13 +1142,13 @@
                                                                             <tr>
                                                                                 <td style="width: 1mm;">«</td>
                                                                                 <td style="width: 5mm;text-align: center;"
-                                                                                    class="cell-value">{СвСчФактДатаСчФДень}</td>
+                                                                                    class="cell-value">10</td>
                                                                                 <td style="width: 1mm;">»</td>
                                                                                 <td style="width: 20mm;text-align: center;"
-                                                                                    class="cell-value">{СвСчФактДатаСчФМесяц}</td>
+                                                                                    class="cell-value">июня</td>
                                                                                 <td style="width: 1mm;">20</td>
                                                                                 <td style="width: 5mm;text-align: center;"
-                                                                                    class="cell-value">{СвСчФактДатаСчФГод}</td>
+                                                                                    class="cell-value">24</td>
                                                                                 <td>г.</td>
                                                                             </tr>
                                                                         </tbody>
@@ -1095,12 +1169,31 @@
                                                     <table>
                                                         <tbody>
                                                             <tr height="16mm" class="vertical-align-bottom">
-                                                                <td></td>
+                                                                <td>Срок оплаты: 15.06.2024 г.</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="border-cell-podpis">(ссылки на неотъемлемые
                                                                     приложения, сопутствующие документы, иные документы
                                                                     и т. п.)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr height="16mm" class="vertical-align-bottom">
+                                                                <td>
+                                                                    Р/с 10000000000000000001
+                                                                    в АО "БАНК",
+                                                                    БИК 100000001,
+                                                                    к/с 10000000000000000001</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="border-cell-podpis">(банковские реквизиты
+                                                                    продавца)</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -1117,21 +1210,23 @@
                                                                 </td>
                                                             </tr>
                                                             <tr height="16mm" class="vertical-align-bottom">
-                                                                <td width="40%" class="text-center">Генеральный директор
+                                                                <td width="40%" class="text-center">ГЕНЕРАЛЬНЫЙ ДИРЕКТОР
                                                                 </td>
                                                                 <td width="5%"></td>
-                                                                <td width="20%" class="text-center"></td>
+                                                                <td width="20%" class="text-center">
+                                                                    <div class="pdffacsimile pdffacsimiledirector">
+                                                                    </div>
+                                                                </td>
                                                                 <td width="5%"></td>
-                                                                <td width="30%" class="text-center">{ПодписантЮЛФИО}</td>
+                                                                <td width="30%" class="text-center">
+                                                                    Иванов&nbsp;Иван&nbsp;Иванович</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="border-cell-podpis">(должность)</td>
                                                                 <td></td>
                                                                 <td class="border-cell-podpis">(подпись)</td>
                                                                 <td></td>
-                                                                <td class="border-cell-podpis nowrap">
-                                                                    (ф.и.о.)
-                                                                </td>
+                                                                <td class="border-cell-podpis">(ф.и.о.)</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -1148,7 +1243,7 @@
                                                                 </td>
                                                             </tr>
                                                             <tr height="10mm" class="vertical-align-bottom">
-                                                                <td>{СвПродНаимОрг} ИНН/КПП {СвПродИННКПП}</td>
+                                                                <td>ООО "Наша компания"</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="border-cell-podpis">(может не заполняться при
@@ -1176,9 +1271,9 @@
                                                                 </td>
                                                             </tr>
                                                             <tr height="16mm" class="vertical-align-bottom">
-                                                                <td width="40%"></td>
+                                                                <td width="40%" class="text-center"></td>
                                                                 <td width="5%"></td>
-                                                                <td width="20%"></td>
+                                                                <td width="20%" class="text-center"></td>
                                                                 <td width="5%"></td>
                                                                 <td width="30%" class="text-center"></td>
                                                             </tr>
@@ -1195,7 +1290,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <table>
+                                                    <table style="margin-top: 2mm">
                                                         <tbody>
                                                             <tr>
                                                                 <td class="cell-name">
@@ -1249,6 +1344,24 @@
                                                 <td>
                                                     <table>
                                                         <tbody>
+                                                            <tr height="16mm" class="vertical-align-bottom">
+                                                                <td>
+                                                                    Р/с 20000000000000000002
+                                                                    в АО "БАНК",
+                                                                    БИК 200000002</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="border-cell-podpis">(банковские реквизиты
+                                                                    покупателя)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tbody>
                                                             <tr>
                                                                 <td colspan="6" class="cell-name">
                                                                     Ответственный за правильность оформления факта
@@ -1256,9 +1369,9 @@
                                                                 </td>
                                                             </tr>
                                                             <tr height="16mm" class="vertical-align-bottom">
-                                                                <td width="40%"></td>
+                                                                <td width="40%" class="text-center"></td>
                                                                 <td width="5%"></td>
-                                                                <td width="20%"></td>
+                                                                <td width="20%" class="text-center"></td>
                                                                 <td width="5%"></td>
                                                                 <td width="30%" class="text-center"></td>
                                                             </tr>
@@ -1321,9 +1434,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 </body>
 
