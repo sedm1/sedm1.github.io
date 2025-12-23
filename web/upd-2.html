@@ -1,1955 +1,2004 @@
 <style>
-* {
+  * {
     font-family: arial, tahoma, verdana;
-}
-
-.d-topStrip {
-  font-size: 0.813em;
-  line-height: 1.308;
-  background: #F2F2F2;
-  color: #777;
-  height: 2.462em; /* 32px */
-  border-bottom: 1px solid;
-  padding: 0.385em 0 0 1.923em; /* 5px 0 0 25px */
-}
-
-.d-topStrip_wl {
-  line-height: 34px;
-}
-
-.d-topStrip_inbox {
-  border-color: #A5CD7B;
-}
-
-.d-topStrip_outbox {
-  border-color: #6EBED8;
-}
-
-.d-topStrip_otherbox {
-  border-color: #A1ADB6;
-}
-
-.d-topStripLogo {
-  position: relative;
-  top: 6px;
-  margin-right: 5px;
-}
-
-.d-topStrip_wl .d-topStripLogo {
-  top: 2px;
-}
-
-.d-topStripFolder {
-  position: relative;
-  left: 5px;
-  text-decoration: none;
-  color: #808080 !important;
-}
-
-.b-document-show {
-  position: relative;
-  width: 100%;
-}
-
-.d-headerBlock {
-  /* СФ */
-  z-index: 2;
-  font-size: 0.813em;
-  padding-left: 25px;
-  padding-bottom: 10px;
-  position: relative;
-  background: #FFF;
-}
-
-.d-headerBlock_extra_padding {
-  padding-bottom: 15px;
-}
-
-.d-header {
-  /* Не СФ */
-  font-size: 0.813em;
-  padding-top: 35px;
-  min-height: 120px;
-  padding-left: 124px;
-  position: relative;
-}
-
-.d-connectedDocuments {
-  position: absolute;
-  right: 10px;
-  top: 18px;
-}
-
-.b-massActions-container_position_fixed .d-connectedDocuments {
-  right: 35px;
-}
-
-.d-headerBlock-shadow {
-  position: absolute;
-  top: 0;
-  left: -25px;
-  width: 100%;
-  background-color: #FFF;
-  display: none;
-  z-index: -1;
-  border-bottom: 1px solid #CDCDCD;
-}
-
-.b-massActions-container_position_fixed .d-title,
-.b-massActions-container_position_fixed .d-invoiceDocflow {
-  display: none;
-}
-
-.connectedDocuments-item .dropdownItem-content {
-  white-space: normal;
-}
-
-/* Название */
-
-.d-title {
-  font-size: 1.538em; /* 20px */
-  line-height: 1.5; /* 30px */
-  font-weight: normal;
-  word-wrap: break-word;
-}
-
-.d-headerBlock .d-title {
-  /* СФ */
-  padding-top: 16px;
-}
-
-.d-invoiceInfo {
-  font-size: 1.231em;
-  margin-left: -25px;
-  margin-top: 19px;
-}
-
-.d-titleIcon {
-  width: 115px;
-  height: 115px;
-  position: absolute;
-  top: 23px;
-  left: 5px;
-  cursor: pointer;
-}
-
-.d-type {
-  font-size: 1em;
-  font-weight: normal;
-  padding-bottom: 9px;
-}
-
-/* Статус документа */
-
-.d-status {
-  position: absolute;
-  left: 124px;
-}
-
-.d-commonStatus {
-  font-size: 0.917em;
-  color: #000 !important;
-  font-weight: normal !important;
-  padding: 1px 4px;
-  background: #F3F3F3;
-  border-radius: 2px;
-}
-
-/* Ссылки с иконками */
-
-.d-action {
-  margin-bottom: 10px;
-}
-
-.d-actionLink {
-  padding-left: 1.615em; /* 21px */
-  line-height: 1.385; /* 18px */
-}
-
-.d-signIcon {
-  background: url('../../img/actionsIcons.png') no-repeat -1px 1px;
-}
-
-.d-signnotIcon {
-  background: url('../../img/actionsIcons.png') no-repeat -1px -75px !important;
-  color: #C2C2C2 !important;
-  text-decoration: none !important;
-  cursor: default !important;
-}
-
-.d-requestIcon {
-  background: url('../../img/actionsIcons.png') no-repeat 0 -367px;
-}
-
-.d-printIcon {
-  background: url('../../img/actionsIcons.png') no-repeat -1px -112px;
-  width: 6em;
-}
-
-.d-respondIcon {
-  background: url('../../img/actionsIcons.png') no-repeat -1px -258px;
-}
-
-.d-respondIcon_red {
-  background: url('../../img/actionsIcons.png') no-repeat -1px -330px;
-}
-
-.d-restoreIcon {
-  background: url('../../../../../../../../Hosting/WebApp/Content/style/img/icons/restoreIcon.png') no-repeat;
-  margin-top: -2px;
-  padding-top: 3px !important;
-  margin-left: 1px !important;
-  padding-left: 19px !important;
-}
-
-.d-deleteIcon {
-  background: url('../../img/actionsIcons.png') no-repeat -1px -186px;
-}
-
-.d-downloadIcon {
-  background: url('../../img/actionsIcons.png') no-repeat -2px -441px;
-}
-
-.d-editIcon {
-  background: url('../../img/actionsIcons.png') no-repeat 0 -552px;
-  padding-left: 23px !important;
-}
-
-.d-recognizeErrorIcon {
-  background: url('../../img/actionsIcons.png') no-repeat 0 -664px;
-  padding-left: 22px;
-}
-
-.d-showMoreIcon {
-  background: url('../../img/actionsIcons.png') no-repeat 2px -1100px;
-  padding-top: 5px !important;
-  position: relative;
-  top: -4px;
-}
-
-a.document_attributes-actions_refuse:link,
-a.document_attributes-actions_refuse:active,
-a.document_attributes-actions_refuse:visited {
-  color: #F31E1E;
-  margin-left: 10px;
-  padding: 0 4px;
-  border-radius: 2px;
-}
-
-a.document_attributes-actions_refuse:hover {
-  color: #FFF;
-  background-color: #F31E1E;
-}
-
-span.document_attributes-actions_refuse,
-.document_attributes-actions_refuse_disabled {
-  margin-left: 6px !important;
-  padding: 0 4px !important;
-  color: #C2C2C2 !important;
-  text-decoration: none !important;
-  cursor: default !important;
-}
-
-/* Комментарий */
-
-.d-invoiceCommentWrap {
-  width: 476px;
-  float: left;
-}
-
-.d-invoiceCommentWrap li {
-  display: inline-block;
-}
-
-.d-invoiceCommentTabs {
-  padding-left: 20px;
-}
-
-.d-invoiceCommentTab {
-  font-size: 0.846em;
-  color: #777;
-  float: left;
-  display: inline;
-  height: 26px;
-  background: #FFF;
-  border-top-width: 1px;
-  border-top-style: solid;
-  padding: 0 6px;
-  margin-right: 16px;
-  line-height: 22px;
-  position: relative;
-  margin-bottom: -3px;
-  cursor: pointer;
-}
-
-.d-invoiceCommentTab-border {
-  position: absolute;
-  top: -1px;
-  font-size: 0;
-  display: block;
-  width: 12px;
-  height: 25px;
-  background-image: url('../../../../../../../../Hosting/WebApp/Content/style/img/invoiceCommentTab.png');
-  background-repeat: no-repeat;
-}
-
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_left,
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_left,
-.d-invoiceCommentTab_request_inactive .d-invoiceCommentTab-border_left {
-  left: -12px;
-  background-position: 0 -75px;
-}
-
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_left,
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_left,
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_left,
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_left {
-  left: -12px;
-  background-position: 0 -175px;
-}
-
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_comment,
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_comment,
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_commentSecond,
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_commentSecond,
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_request,
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_request {
-  background: #F7F7F7;
-}
-
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_right,
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_right,
-.d-invoiceCommentTab_request_inactive .d-invoiceCommentTab-border_right {
-  right: -12px;
-  background-position: 0 -50px;
-}
-
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_right,
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_right,
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_right,
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_right {
-  right: -12px;
-  background-position: 0 -150px;
-}
-
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_request .d-invoiceCommentTab-border_left,
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_request .d-invoiceCommentTab-border_left {
-  left: -12px;
-  background-position: 0 -125px;
-}
-
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_request .d-invoiceCommentTab-border_left {
-  left: -12px;
-  background-position: 0 -25px;
-}
-
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_request .d-invoiceCommentTab-border_right,
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_request .d-invoiceCommentTab-border_right {
-  right: -12px;
-  background-position: 0 -100px;
-}
-
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_request .d-invoiceCommentTab-border_right {
-  right: -12px;
-  background-position: 0 0;
-}
-
-.d-invoiceComment {
-  background: #FFF;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.d-invoiceComment-text {
-  padding: 15px 9px;
-  border: 1px solid;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.d-invoiceComment-text_comment,
-.d-invoiceCommentTab_comment,
-.d-invoiceCommentTab_commentSecond,
-.d-invoiceComment-text_request_inactive,
-.d-invoiceCommentTab_request_inactive {
-  border-color: #CDCDCD;
-}
-
-.d-invoiceComment-text_request,
-.d-invoiceCommentTab_request {
-  border-color: #D2232A;
-}
-
-.d-invoiceCommentWrap_showComment .d-invoiceCommentTab_comment,
-.d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_commentSecond,
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_request,
-.d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_request_inactive {
-  z-index: 1;
-  cursor: default;
-}
-
-.d-commentFull {
-  width: 460px;
-  padding-top: 26px;
-  height: 30px;
-  background: url('../../../../../../../../Hosting/WebApp/Content/style/img/invoice-comment-overflow.png') repeat-x 0 0;
-  position: absolute;
-  top: 40px;
-  left: 10px;
-}
-
-.d-commentFull a {
-  display: block;
-  height: 30px;
-  line-height: 25px;
-  background: #FFF;
-}
-
-/* Атрибуты документа */
-
-.d-attr {
-  padding-bottom: 5px;
-  font-size: 0.813em;
-  line-height: 1.308;
-  position: relative;
-}
-
-.d-attr_smallPadding {
-  padding-bottom: 10px;
-}
-
-.d-attr_middlePadding {
-  padding-bottom: 16px;
-}
-
-.d-attr_bigPadding {
-  padding-bottom: 25px;
-}
-
-.d-attr dt {
-  color: #777;
-  text-align: left;
-  font-size: 1em;
-  font-weight: normal;
-  width: 90px;
-  position: absolute;
-  top: 0;
-  left: 25px;
-}
-
-.d-attr .d-attr-group-heading {
-  color: #000;
-  font-size: 15px;
-}
-
-.d-attr dt.d-attr-dt-wider {
-  width: 110px;
-}
-
-.d-attr dd {
-  padding-left: 142px;
-  width: 650px;
-}
-
-.d-attr p,
-.d-attr em {
-  word-wrap: break-word;
-  margin-right: 7px;
-}
-
-.d-attr .needsignature-wrap {
-  position: absolute;
-  left: 21px;
-  top: 5px;
-}
-
-.d-attr .needsignature-wrap .needsignature {
-  cursor: default;
-}
-
-.signature-rejection {
-  border: 1px solid #CDCDCD;
-  max-width: 650px;
-  min-width: 410px;
-  padding: 8px 13px 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  position: relative;
-  word-wrap: break-word;
-  border-radius: 3px;
-}
-
-.d-resolutionHistory {
-  margin-top: 5px;
-}
-
-.d-organization {
-  width: 500px;
-}
-
-.d-locked-message {
-  font-size: 14px;
-  padding-left: 25px;
-}
-
-.d-locked-message__icon {
-  float: left;
-}
-
-.d-locked-message__text {
-  overflow: hidden;
-  white-space: normal;
-}
-
-.signature-rejection p {
-  margin-right: 0;
-}
-
-.signature-rejection h3 {
-  font-size: 1em;
-  line-height: 1.3;
-  font-weight: normal;
-  color: #CE202D;
-  margin-bottom: 10px;
-}
-
-/* Адрес документа */
-
-.d-invoiceAddress {
-  clear: both;
-}
-
-.d-invoiceAddress .signature-block,
-.d-invoiceAddress .signatureSigner {
-  display: inline;
-}
-
-.d-invoiceAddress .signatureDate {
-  display: none;
-}
-
-.d-invoiceAddress-arrow {
-  padding-right: 4px;
-}
-
-/* Не отправлено заявление */
-
-.d-invoiceNoEDO {
-  background: #FECBCA;
-  width: 50.769em;
-  padding: 0.846em 0.846em 0.615em;
-  margin: 1em 0 0.385em -1em;
-}
-
-/* Состояние документа */
-
-.d-invoiceStatusWrap {
-  margin-bottom: 20px;
-}
-
-.d-invoiceStatus {
-  border: 1px solid;
-  border-radius: 2px;
-  margin-top: 15px;
-  margin-right: 10px;
-}
-
-.d-invoiceStatus-date {
-  font-size: 1.077em;
-  padding: 3px 7px;
-}
-
-.d-invoiceStatus-message {
-  padding: 4px 9px 3px;
-  line-height: 1.25;
-}
-
-.d-invoiceStatusTip {
-  background: url('../../img/actionsIcons.png') no-repeat 0 -883px;
-  width: 20px;
-  height: 20px;
-  vertical-align: top;
-  margin-top: 17px;
-  cursor: help;
-  font-size: 0;
-}
-
-a.d-invoiceDocflow:link,
-a.d-invoiceDocflow:visited,
-a.d-invoiceDocflow:active {
-  vertical-align: top;
-  margin-top: 19px;
-  margin-left: 11px;
-  color: #808080;
-}
-
-a.d-invoiceDocflow:hover {
-  color: #0F9EE8;
-}
-
-/* Серое состояние */
-
-.d-invoiceStatus_pending {
-  border-color: #CDCDCD;
-}
-
-.d-invoiceStatus_pending .d-invoiceStatus-date {
-  color: #808080;
-}
-
-.d-invoiceStatus_pending .d-invoiceStatus-message {
-  background: #CDCDCD;
-  color: #000;
-}
-
-/* Красное состояние */
-
-.d-invoiceStatus_error {
-  border-color: #D2232A;
-}
-
-.d-invoiceStatus_error .d-invoiceStatus-date {
-  color: #D2232A;
-}
-
-.d-invoiceStatus_error .d-invoiceStatus-message {
-  background: #D2232A;
-  color: #FFF;
-}
-
-/* Зелёное состояние */
-
-.d-invoiceStatus_active {
-  border-color: #3E9300;
-}
-
-.d-invoiceStatus_active .d-invoiceStatus-date {
-  color: #3E9300;
-}
-
-.d-invoiceStatus_active .d-invoiceStatus-message {
-  background: #3E9300;
-  color: #FFF;
-}
-
-/* Контролы документа */
-
-.d-invoiceControls {
-  clear: both;
-}
-
-.d-invoiceControls_type_act,
-.d-invoiceControls_type_torg12 {
-  background: #FFF;
-  font-size: 0.813em;
-  line-height: 1.308;
-  padding-bottom: 10px;
-  padding-left: 25px;
-}
-
-/* Действия */
-
-.d-invoiceActions {
-  margin-left: -2px;
-  position: relative;
-}
-
-.d-invoiceActions_withCommentBlock {
-  padding-left: 8px;
-}
-
-.d-invoiceActions_withCommentBlock .d-invoiceActions-item {
-  padding-bottom: 10px;
-}
-
-.d-invoiceActions-item {
-  font-size: 13px;
-  position: relative;
-}
-
-.d-invoiceActions_withoutCommentBlock {
-  padding-top: 8px;
-  padding-left: 3px;
-  padding-bottom: 1px;
-}
-
-.d-invoiceActions_withoutCommentBlock .d-invoiceActions-item {
-  float: left;
-  display: inline;
-  padding-right: 20px;
-}
-
-.d-invoiceActions_withoutCommentBlock .d-invoiceActions-item_position_alternative {
-  padding-right: 0;
-  position: absolute;
-  right: 20px;
-}
-
-.d-invoiceActions-item .b-upload-action {
-  height: 17px;
-  padding-top: 1px;
-  padding-bottom: 3px;
-}
-
-.d-invoiceActions-link_inactive {
-  padding-left: 21px;
-  padding-bottom: 3px;
-  padding-top: 1px;
-  vertical-align: bottom;
-  line-height: 1.3em;
-  text-decoration: none;
-}
-
-.d-invoiceActions-item .b-dropdownbox_clear_true .d-invoiceActions-link {
-  outline: 0 none;
-  background: url('../../img/actionsIcons.png') no-repeat scroll -2px -366px;
-}
-
-.d-invoiceActions-item .b-dropdownbox_clear_true .b-selector-content {
-  padding: 11px 11px 3px;
-  width: 16.769em;
-}
-
-.d-invoiceActions-item .b-dropdownbox_clear_true .b-button-icon {
-  position: relative !important;
-  top: 3px !important;
-  left: 0 !important;
-}
-
-.d-invoiceActions-link {
-  padding-left: 21px;
-  padding-bottom: 3px;
-  padding-top: 1px;
-  vertical-align: bottom;
-  line-height: 1.308;
-  float: left;
-}
-
-.b-filter-matchesinfo .d-invoiceActions-link_inactive-print {
-  margin-top: 5px;
-}
-
-.d-invoiceActions-link_inactive-print {
-  text-decoration: none !important;
-  color: #777 !important;
-  cursor: default !important;
-  padding-left: 21px;
-  padding-bottom: 3px;
-  padding-top: 1px;
-  vertical-align: bottom;
-  line-height: 1.3em;
-  float: left;
-  background: url('../../../../../../../../Hosting/WebApp/Content/style/img/ajaxLoader-transparent.gif') no-repeat 0 1px !important;
-}
-
-.d-exportDocument-link_inactive-print {
-  text-decoration: none !important;
-  color: #777 !important;
-  cursor: default !important;
-  background: url('../../../../../../../../Hosting/WebApp/Content/style/img/ajaxLoader-transparent.gif') no-repeat 0 4px !important;
-}
-
-.doc-header-testTag-container {
-  display: inline-block;
-  padding-top: 25px;
-  padding-left: 8px;
-  vertical-align: top;
-}
-
-.doc-header-testTag-container_after-document {
-  padding-top: 0;
-}
-
-.doc-header-testTag-container .testTag {
-  vertical-align: top;
-  margin-top: 1px;
-}
-
-.doc-header-testTag-container .as-hint {
-  vertical-align: top;
-}
-
-.b-massActions-container_position_fixed .doc-header-testTag-container {
-  display: none;
-}
-
-
-/* b-document-paper */
-
-.d-previewPlaceholderWrap {
-  position: relative;
-}
-
-.d-previewPlaceholder {
-  background: #E4E4E4;
-  border-top: 1px solid #CDCDCD;
-  padding: 17px 0 30px;
-  position: relative;
-  z-index: 1;
-}
-
-.d-previewPlaceholder_lessPaddingBottom {
-  padding-bottom: 15px;
-}
-
-.d-previewPlaceholder_collapse {
-  padding: 0;
-}
-
-.b-document-paper-wrap {
-  position: relative;
-  min-width: 880px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.b-document-paper-lightboxwrap {
-  padding-right: 10px;
-  margin-left: -10px;
-  position: relative;
-}
-
-.b-document-paper-bottomright {
-  padding-bottom: 15px;
-}
-
-.b-document-paper {
-  padding: 2.545em 1.455em 2.091em; /* 28px 16px 23px */
-  background: #FFF;
-  position: relative;
-  border-radius: 16px;
-}
-
-.b-document-paper img {
-  width: inherit;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.b-document-paper-wrap .b-document-paper {
-  padding: 2.545em 1.455em 2.091em; /* 28px 16px 23px */
-  font-size: 0.8em; /* 11px */
-}
-
-.b-document-paper-lightboxwrap .b-document-paper {
-  padding: 2.545em 1.455em 2.091em 4em; /* 28px 23px 16px 44px */
-  font-size: 0.846em; /* 11px */
-}
-
-.d-previewPlaceholderWrap_type_act .b-document-paper-wrap .b-document-paper {
-  padding: 5em 4em 4em;
-}
-
-.b-document-paper-caption {
-  font-size: 0.818em; /* 9px */
-  color: #777;
-  font-style: normal;
-  text-align: right;
-  position: absolute;
-  top: 16px;
-  right: 17px;
-}
-
-.b-document-paper h1 {
-  font-weight: bold;
-  font-size: 1.455em; /* 16px */
-  line-height: 1.25; /* 20px */
-  padding-top: 1.25em; /* 20px */
-  padding-left: 0.5em; /* 8px */
-}
-
-.b-document-paper-header_align_center {
-  text-align: center;
-  padding-bottom: 3em; /* 48px */
-}
-
-.b-document-paper-header_indents {
-  padding-bottom: 0;
-  margin-top: -30px;
-}
-
-.b-document-paper h2 {
-  font-weight: normal;
-  font-size: 1.455em; /* 16px */
-  line-height: 1.25; /* 20px */
-  padding-left: 0.5em; /* 8px */
-}
-
-.b-document-paper h3 {
-  font-weight: normal;
-  font-size: 1.182em; /* 13px */
-  line-height: 1.308; /* 17px */
-  padding-left: 0.615em; /* 8px */
-  margin-top: 0.308em; /* 4px */
-}
-
-.b-document-paper h4 {
-  font-weight: normal;
-}
-
-.invoicePreview-superheader {
-  width: 70%;
-  min-width: 775px;
-  max-width: 1100px;
-}
-
-.invoicePreview-superheader-lastCol {
-  color: #777;
-  width: 39px;
-  padding-left: 20px;
-}
-
-.invoicePreview-header {
-  margin-left: -1px;
-  width: 70%;
-  margin-top: 20px;
-  min-width: 775px;
-  max-width: 1100px;
-}
-
-.invoicePreview-header td {
-  text-align: left;
-  padding: 4px 9px;
-  vertical-align: top;
-}
-
-.invoicePreview-header-firstCol {
-  color: #777;
-  width: 240px;
-}
-
-.invoicePreview-header-lastCol {
-  color: #777;
-  width: 30px;
-  padding-left: 20px;
-}
-
-.invoicePreview-header-hover td {
-  background: #F7F7F7;
-  color: #000 !important;
-}
-
-.invoicePreview-header-hover-td {
-  background: #F7F7F7;
-  color: #000 !important;
-}
-
-.invoicePreview-currency {
-  font-weight: bold;
-  position: absolute;
-  right: 22px;
-}
-
-.invoicePreview-body {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
-  table-layout: fixed;
-}
-
-.invoicePreview-body sup {
-  vertical-align: super;
-}
-
-.invoicePreview-body td {
-  vertical-align: top;
-  border: 1px solid #808080;
-  padding: 3px 5px;
-  word-wrap: break-word;
-}
-
-@media screen and (max-width: 1024px) {
+  }
+
+  body,
+  button,
+  dd,
+  div,
+  dl,
+  dt,
+  form,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  html,
+  input,
+  li,
+  ol,
+  p,
+  select,
+  table,
+  td,
+  textarea,
+  th,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .d-topStrip {
+    font-size: 0.813em;
+    line-height: 1.308;
+    background: #F2F2F2;
+    color: #777;
+    height: 2.462em;
+    /* 32px */
+    border-bottom: 1px solid;
+    padding: 0.385em 0 0 1.923em;
+    /* 5px 0 0 25px */
+  }
+
+  .d-topStrip_wl {
+    line-height: 34px;
+  }
+
+  .d-topStrip_inbox {
+    border-color: #A5CD7B;
+  }
+
+  .d-topStrip_outbox {
+    border-color: #6EBED8;
+  }
+
+  .d-topStrip_otherbox {
+    border-color: #A1ADB6;
+  }
+
+  .d-topStripLogo {
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+  }
+
+  .d-topStrip_wl .d-topStripLogo {
+    top: 2px;
+  }
+
+  .d-topStripFolder {
+    position: relative;
+    left: 5px;
+    text-decoration: none;
+    color: #808080 !important;
+  }
+
+  .b-document-show {
+    position: relative;
+    width: 100%;
+  }
+
+  .d-headerBlock {
+    /* СФ */
+    z-index: 2;
+    font-size: 0.813em;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    position: relative;
+    background: #FFF;
+  }
+
+  .d-headerBlock_extra_padding {
+    padding-bottom: 15px;
+  }
+
+  .d-header {
+    /* Не СФ */
+    font-size: 0.813em;
+    padding-top: 35px;
+    min-height: 120px;
+    padding-left: 124px;
+    position: relative;
+  }
+
+  .d-connectedDocuments {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+
+  .b-massActions-container_position_fixed .d-connectedDocuments {
+    right: 35px;
+  }
+
+  .d-headerBlock-shadow {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 100%;
+    background-color: #FFF;
+    display: none;
+    z-index: -1;
+    border-bottom: 1px solid #CDCDCD;
+  }
+
+  .b-massActions-container_position_fixed .d-title,
+  .b-massActions-container_position_fixed .d-invoiceDocflow {
+    display: none;
+  }
+
+  .connectedDocuments-item .dropdownItem-content {
+    white-space: normal;
+  }
+
+  /* Название */
+
+  .d-title {
+    font-size: 1.538em;
+    /* 20px */
+    line-height: 1.5;
+    /* 30px */
+    font-weight: normal;
+    word-wrap: break-word;
+  }
+
+  .d-headerBlock .d-title {
+    /* СФ */
+    padding-top: 16px;
+  }
+
+  .d-invoiceInfo {
+    font-size: 1.231em;
+    margin-left: -25px;
+    margin-top: 19px;
+  }
+
+  .d-titleIcon {
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    top: 23px;
+    left: 5px;
+    cursor: pointer;
+  }
+
+  .d-type {
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 9px;
+  }
+
+  /* Статус документа */
+
+  .d-status {
+    position: absolute;
+    left: 124px;
+  }
+
+  .d-commonStatus {
+    font-size: 0.917em;
+    color: #000 !important;
+    font-weight: normal !important;
+    padding: 1px 4px;
+    background: #F3F3F3;
+    border-radius: 2px;
+  }
+
+  /* Ссылки с иконками */
+
+  .d-action {
+    margin-bottom: 10px;
+  }
+
+  .d-actionLink {
+    padding-left: 1.615em;
+    /* 21px */
+    line-height: 1.385;
+    /* 18px */
+  }
+
+  .d-signIcon {
+    background: url('../../img/actionsIcons.png') no-repeat -1px 1px;
+  }
+
+  .d-signnotIcon {
+    background: url('../../img/actionsIcons.png') no-repeat -1px -75px !important;
+    color: #C2C2C2 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+  }
+
+  .d-requestIcon {
+    background: url('../../img/actionsIcons.png') no-repeat 0 -367px;
+  }
+
+  .d-printIcon {
+    background: url('../../img/actionsIcons.png') no-repeat -1px -112px;
+    width: 6em;
+  }
+
+  .d-respondIcon {
+    background: url('../../img/actionsIcons.png') no-repeat -1px -258px;
+  }
+
+  .d-respondIcon_red {
+    background: url('../../img/actionsIcons.png') no-repeat -1px -330px;
+  }
+
+  .d-restoreIcon {
+    background: url('../../../../../../../../Hosting/WebApp/Content/style/img/icons/restoreIcon.png') no-repeat;
+    margin-top: -2px;
+    padding-top: 3px !important;
+    margin-left: 1px !important;
+    padding-left: 19px !important;
+  }
+
+  .d-deleteIcon {
+    background: url('../../img/actionsIcons.png') no-repeat -1px -186px;
+  }
+
+  .d-downloadIcon {
+    background: url('../../img/actionsIcons.png') no-repeat -2px -441px;
+  }
+
+  .d-editIcon {
+    background: url('../../img/actionsIcons.png') no-repeat 0 -552px;
+    padding-left: 23px !important;
+  }
+
+  .d-recognizeErrorIcon {
+    background: url('../../img/actionsIcons.png') no-repeat 0 -664px;
+    padding-left: 22px;
+  }
+
+  .d-showMoreIcon {
+    background: url('../../img/actionsIcons.png') no-repeat 2px -1100px;
+    padding-top: 5px !important;
+    position: relative;
+    top: -4px;
+  }
+
+  a.document_attributes-actions_refuse:link,
+  a.document_attributes-actions_refuse:active,
+  a.document_attributes-actions_refuse:visited {
+    color: #F31E1E;
+    margin-left: 10px;
+    padding: 0 4px;
+    border-radius: 2px;
+  }
+
+  a.document_attributes-actions_refuse:hover {
+    color: #FFF;
+    background-color: #F31E1E;
+  }
+
+  span.document_attributes-actions_refuse,
+  .document_attributes-actions_refuse_disabled {
+    margin-left: 6px !important;
+    padding: 0 4px !important;
+    color: #C2C2C2 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+  }
+
+  /* Комментарий */
+
+  .d-invoiceCommentWrap {
+    width: 476px;
+    float: left;
+  }
+
+  .d-invoiceCommentWrap li {
+    display: inline-block;
+  }
+
+  .d-invoiceCommentTabs {
+    padding-left: 20px;
+  }
+
+  .d-invoiceCommentTab {
+    font-size: 0.846em;
+    color: #777;
+    float: left;
+    display: inline;
+    height: 26px;
+    background: #FFF;
+    border-top-width: 1px;
+    border-top-style: solid;
+    padding: 0 6px;
+    margin-right: 16px;
+    line-height: 22px;
+    position: relative;
+    margin-bottom: -3px;
+    cursor: pointer;
+  }
+
+  .d-invoiceCommentTab-border {
+    position: absolute;
+    top: -1px;
+    font-size: 0;
+    display: block;
+    width: 12px;
+    height: 25px;
+    background-image: url('../../../../../../../../Hosting/WebApp/Content/style/img/invoiceCommentTab.png');
+    background-repeat: no-repeat;
+  }
+
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_left,
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_left,
+  .d-invoiceCommentTab_request_inactive .d-invoiceCommentTab-border_left {
+    left: -12px;
+    background-position: 0 -75px;
+  }
+
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_left,
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_left,
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_left,
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_left {
+    left: -12px;
+    background-position: 0 -175px;
+  }
+
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_comment,
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_comment,
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_commentSecond,
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_commentSecond,
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_request,
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_request {
+    background: #F7F7F7;
+  }
+
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_right,
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_right,
+  .d-invoiceCommentTab_request_inactive .d-invoiceCommentTab-border_right {
+    right: -12px;
+    background-position: 0 -50px;
+  }
+
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_right,
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_comment .d-invoiceCommentTab-border_right,
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_right,
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_commentSecond .d-invoiceCommentTab-border_right {
+    right: -12px;
+    background-position: 0 -150px;
+  }
+
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_request .d-invoiceCommentTab-border_left,
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_request .d-invoiceCommentTab-border_left {
+    left: -12px;
+    background-position: 0 -125px;
+  }
+
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_request .d-invoiceCommentTab-border_left {
+    left: -12px;
+    background-position: 0 -25px;
+  }
+
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_request .d-invoiceCommentTab-border_right,
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_request .d-invoiceCommentTab-border_right {
+    right: -12px;
+    background-position: 0 -100px;
+  }
+
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_request .d-invoiceCommentTab-border_right {
+    right: -12px;
+    background-position: 0 0;
+  }
+
+  .d-invoiceComment {
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .d-invoiceComment-text {
+    padding: 15px 9px;
+    border: 1px solid;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .d-invoiceComment-text_comment,
+  .d-invoiceCommentTab_comment,
+  .d-invoiceCommentTab_commentSecond,
+  .d-invoiceComment-text_request_inactive,
+  .d-invoiceCommentTab_request_inactive {
+    border-color: #CDCDCD;
+  }
+
+  .d-invoiceComment-text_request,
+  .d-invoiceCommentTab_request {
+    border-color: #D2232A;
+  }
+
+  .d-invoiceCommentWrap_showComment .d-invoiceCommentTab_comment,
+  .d-invoiceCommentWrap_showCommentSecond .d-invoiceCommentTab_commentSecond,
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_request,
+  .d-invoiceCommentWrap_showRequest .d-invoiceCommentTab_request_inactive {
+    z-index: 1;
+    cursor: default;
+  }
+
+  .d-commentFull {
+    width: 460px;
+    padding-top: 26px;
+    height: 30px;
+    background: url('../../../../../../../../Hosting/WebApp/Content/style/img/invoice-comment-overflow.png') repeat-x 0 0;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
+
+  .d-commentFull a {
+    display: block;
+    height: 30px;
+    line-height: 25px;
+    background: #FFF;
+  }
+
+  /* Атрибуты документа */
+
+  .d-attr {
+    padding-bottom: 5px;
+    font-size: 0.813em;
+    line-height: 1.308;
+    position: relative;
+  }
+
+  .d-attr_smallPadding {
+    padding-bottom: 10px;
+  }
+
+  .d-attr_middlePadding {
+    padding-bottom: 16px;
+  }
+
+  .d-attr_bigPadding {
+    padding-bottom: 25px;
+  }
+
+  .d-attr dt {
+    color: #777;
+    text-align: left;
+    font-size: 1em;
+    font-weight: normal;
+    width: 90px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+  }
+
+  .d-attr .d-attr-group-heading {
+    color: #000;
+    font-size: 15px;
+  }
+
+  .d-attr dt.d-attr-dt-wider {
+    width: 110px;
+  }
+
+  .d-attr dd {
+    padding-left: 142px;
+    width: 650px;
+  }
+
+  .d-attr p,
+  .d-attr em {
+    word-wrap: break-word;
+    margin-right: 7px;
+  }
+
+  .d-attr .needsignature-wrap {
+    position: absolute;
+    left: 21px;
+    top: 5px;
+  }
+
+  .d-attr .needsignature-wrap .needsignature {
+    cursor: default;
+  }
+
+  .signature-rejection {
+    border: 1px solid #CDCDCD;
+    max-width: 650px;
+    min-width: 410px;
+    padding: 8px 13px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  .d-resolutionHistory {
+    margin-top: 5px;
+  }
+
+  .d-organization {
+    width: 500px;
+  }
+
+  .d-locked-message {
+    font-size: 14px;
+    padding-left: 25px;
+  }
+
+  .d-locked-message__icon {
+    float: left;
+  }
+
+  .d-locked-message__text {
+    overflow: hidden;
+    white-space: normal;
+  }
+
+  .signature-rejection p {
+    margin-right: 0;
+  }
+
+  .signature-rejection h3 {
+    font-size: 1em;
+    line-height: 1.3;
+    font-weight: normal;
+    color: #CE202D;
+    margin-bottom: 10px;
+  }
+
+  /* Адрес документа */
+
+  .d-invoiceAddress {
+    clear: both;
+  }
+
+  .d-invoiceAddress .signature-block,
+  .d-invoiceAddress .signatureSigner {
+    display: inline;
+  }
+
+  .d-invoiceAddress .signatureDate {
+    display: none;
+  }
+
+  .d-invoiceAddress-arrow {
+    padding-right: 4px;
+  }
+
+  /* Не отправлено заявление */
+
+  .d-invoiceNoEDO {
+    background: #FECBCA;
+    width: 50.769em;
+    padding: 0.846em 0.846em 0.615em;
+    margin: 1em 0 0.385em -1em;
+  }
+
+  /* Состояние документа */
+
+  .d-invoiceStatusWrap {
+    margin-bottom: 20px;
+  }
+
+  .d-invoiceStatus {
+    border: 1px solid;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+
+  .d-invoiceStatus-date {
+    font-size: 1.077em;
+    padding: 3px 7px;
+  }
+
+  .d-invoiceStatus-message {
+    padding: 4px 9px 3px;
+    line-height: 1.25;
+  }
+
+  .d-invoiceStatusTip {
+    background: url('../../img/actionsIcons.png') no-repeat 0 -883px;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 17px;
+    cursor: help;
+    font-size: 0;
+  }
+
+  a.d-invoiceDocflow:link,
+  a.d-invoiceDocflow:visited,
+  a.d-invoiceDocflow:active {
+    vertical-align: top;
+    margin-top: 19px;
+    margin-left: 11px;
+    color: #808080;
+  }
+
+  a.d-invoiceDocflow:hover {
+    color: #0F9EE8;
+  }
+
+  /* Серое состояние */
+
+  .d-invoiceStatus_pending {
+    border-color: #CDCDCD;
+  }
+
+  .d-invoiceStatus_pending .d-invoiceStatus-date {
+    color: #808080;
+  }
+
+  .d-invoiceStatus_pending .d-invoiceStatus-message {
+    background: #CDCDCD;
+    color: #000;
+  }
+
+  /* Красное состояние */
+
+  .d-invoiceStatus_error {
+    border-color: #D2232A;
+  }
+
+  .d-invoiceStatus_error .d-invoiceStatus-date {
+    color: #D2232A;
+  }
+
+  .d-invoiceStatus_error .d-invoiceStatus-message {
+    background: #D2232A;
+    color: #FFF;
+  }
+
+  /* Зелёное состояние */
+
+  .d-invoiceStatus_active {
+    border-color: #3E9300;
+  }
+
+  .d-invoiceStatus_active .d-invoiceStatus-date {
+    color: #3E9300;
+  }
+
+  .d-invoiceStatus_active .d-invoiceStatus-message {
+    background: #3E9300;
+    color: #FFF;
+  }
+
+  /* Контролы документа */
+
+  .d-invoiceControls {
+    clear: both;
+  }
+
+  .d-invoiceControls_type_act,
+  .d-invoiceControls_type_torg12 {
+    background: #FFF;
+    font-size: 0.813em;
+    line-height: 1.308;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+
+  /* Действия */
+
+  .d-invoiceActions {
+    margin-left: -2px;
+    position: relative;
+  }
+
+  .d-invoiceActions_withCommentBlock {
+    padding-left: 8px;
+  }
+
+  .d-invoiceActions_withCommentBlock .d-invoiceActions-item {
+    padding-bottom: 10px;
+  }
+
+  .d-invoiceActions-item {
+    font-size: 13px;
+    position: relative;
+  }
+
+  .d-invoiceActions_withoutCommentBlock {
+    padding-top: 8px;
+    padding-left: 3px;
+    padding-bottom: 1px;
+  }
+
+  .d-invoiceActions_withoutCommentBlock .d-invoiceActions-item {
+    float: left;
+    display: inline;
+    padding-right: 20px;
+  }
+
+  .d-invoiceActions_withoutCommentBlock .d-invoiceActions-item_position_alternative {
+    padding-right: 0;
+    position: absolute;
+    right: 20px;
+  }
+
+  .d-invoiceActions-item .b-upload-action {
+    height: 17px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+  }
+
+  .d-invoiceActions-link_inactive {
+    padding-left: 21px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    vertical-align: bottom;
+    line-height: 1.3em;
+    text-decoration: none;
+  }
+
+  .d-invoiceActions-item .b-dropdownbox_clear_true .d-invoiceActions-link {
+    outline: 0 none;
+    background: url('../../img/actionsIcons.png') no-repeat scroll -2px -366px;
+  }
+
+  .d-invoiceActions-item .b-dropdownbox_clear_true .b-selector-content {
+    padding: 11px 11px 3px;
+    width: 16.769em;
+  }
+
+  .d-invoiceActions-item .b-dropdownbox_clear_true .b-button-icon {
+    position: relative !important;
+    top: 3px !important;
+    left: 0 !important;
+  }
+
+  .d-invoiceActions-link {
+    padding-left: 21px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    vertical-align: bottom;
+    line-height: 1.308;
+    float: left;
+  }
+
+  .b-filter-matchesinfo .d-invoiceActions-link_inactive-print {
+    margin-top: 5px;
+  }
+
+  .d-invoiceActions-link_inactive-print {
+    text-decoration: none !important;
+    color: #777 !important;
+    cursor: default !important;
+    padding-left: 21px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    vertical-align: bottom;
+    line-height: 1.3em;
+    float: left;
+    background: url('../../../../../../../../Hosting/WebApp/Content/style/img/ajaxLoader-transparent.gif') no-repeat 0 1px !important;
+  }
+
+  .d-exportDocument-link_inactive-print {
+    text-decoration: none !important;
+    color: #777 !important;
+    cursor: default !important;
+    background: url('../../../../../../../../Hosting/WebApp/Content/style/img/ajaxLoader-transparent.gif') no-repeat 0 4px !important;
+  }
+
+  .doc-header-testTag-container {
+    display: inline-block;
+    padding-top: 25px;
+    padding-left: 8px;
+    vertical-align: top;
+  }
+
+  .doc-header-testTag-container_after-document {
+    padding-top: 0;
+  }
+
+  .doc-header-testTag-container .testTag {
+    vertical-align: top;
+    margin-top: 1px;
+  }
+
+  .doc-header-testTag-container .as-hint {
+    vertical-align: top;
+  }
+
+  .b-massActions-container_position_fixed .doc-header-testTag-container {
+    display: none;
+  }
+
+
+  /* b-document-paper */
+
+  .d-previewPlaceholderWrap {
+    position: relative;
+  }
+
+  .d-previewPlaceholder {
+    background: #E4E4E4;
+    border-top: 1px solid #CDCDCD;
+    padding: 17px 0 30px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .d-previewPlaceholder_lessPaddingBottom {
+    padding-bottom: 15px;
+  }
+
+  .d-previewPlaceholder_collapse {
+    padding: 0;
+  }
+
+  .b-document-paper-wrap {
+    position: relative;
+    min-width: 880px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .b-document-paper-lightboxwrap {
+    padding-right: 10px;
+    margin-left: -10px;
+    position: relative;
+  }
+
+  .b-document-paper-bottomright {
+    padding-bottom: 15px;
+  }
+
+  .b-document-paper {
+    padding: 2.545em 1.455em 2.091em;
+    /* 28px 16px 23px */
+    background: #FFF;
+    position: relative;
+    border-radius: 16px;
+  }
+
+  .b-document-paper img {
+    width: inherit;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .b-document-paper-wrap .b-document-paper {
+    padding: 2.545em 1.455em 2.091em;
+    /* 28px 16px 23px */
+    font-size: 0.8em;
+    /* 11px */
+  }
+
+  .b-document-paper-lightboxwrap .b-document-paper {
+    padding: 2.545em 1.455em 2.091em 4em;
+    /* 28px 23px 16px 44px */
+    font-size: 0.846em;
+    /* 11px */
+  }
+
+  .d-previewPlaceholderWrap_type_act .b-document-paper-wrap .b-document-paper {
+    padding: 5em 4em 4em;
+  }
+
+  .b-document-paper-caption {
+    font-size: 0.818em;
+    /* 9px */
+    color: #777;
+    font-style: normal;
+    text-align: right;
+    position: absolute;
+    top: 16px;
+    right: 17px;
+  }
+
+  .b-document-paper h1 {
+    font-weight: bold;
+    font-size: 1.455em;
+    /* 16px */
+    line-height: 1.25;
+    /* 20px */
+    padding-top: 1.25em;
+    /* 20px */
+    padding-left: 0.5em;
+    /* 8px */
+  }
+
+  .b-document-paper-header_align_center {
+    text-align: center;
+    padding-bottom: 3em;
+    /* 48px */
+  }
+
+  .b-document-paper-header_indents {
+    padding-bottom: 0;
+    margin-top: -30px;
+  }
+
+  .b-document-paper h2 {
+    font-weight: normal;
+    font-size: 1.455em;
+    /* 16px */
+    line-height: 1.25;
+    /* 20px */
+    padding-left: 0.5em;
+    /* 8px */
+  }
+
+  .b-document-paper h3 {
+    font-weight: normal;
+    font-size: 1.182em;
+    /* 13px */
+    line-height: 1.308;
+    /* 17px */
+    padding-left: 0.615em;
+    /* 8px */
+    margin-top: 0.308em;
+    /* 4px */
+  }
+
+  .b-document-paper h4 {
+    font-weight: normal;
+  }
+
+  .invoicePreview-superheader {
+    width: 70%;
+    min-width: 775px;
+    max-width: 1100px;
+  }
+
+  .invoicePreview-superheader-lastCol {
+    color: #777;
+    width: 39px;
+    padding-left: 20px;
+  }
+
+  .invoicePreview-header {
+    margin-left: -1px;
+    width: 70%;
+    margin-top: 20px;
+    min-width: 775px;
+    max-width: 1100px;
+  }
+
+  .invoicePreview-header td {
+    text-align: left;
+    padding: 4px 9px;
+    vertical-align: top;
+  }
+
+  .invoicePreview-header-firstCol {
+    color: #777;
+    width: 240px;
+  }
+
+  .invoicePreview-header-lastCol {
+    color: #777;
+    width: 30px;
+    padding-left: 20px;
+  }
+
+  .invoicePreview-header-hover td {
+    background: #F7F7F7;
+    color: #000 !important;
+  }
+
+  .invoicePreview-header-hover-td {
+    background: #F7F7F7;
+    color: #000 !important;
+  }
+
+  .invoicePreview-currency {
+    font-weight: bold;
+    position: absolute;
+    right: 22px;
+  }
+
+  .invoicePreview-body {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+  }
+
+  .invoicePreview-body sup {
+    vertical-align: super;
+  }
+
   .invoicePreview-body td {
-    padding-right: 2px;
-    padding-left: 2px;
+    vertical-align: top;
+    border: 1px solid #808080;
+    padding: 3px 5px;
+    word-wrap: break-word;
   }
-}
 
-.b-document-paper .invalid {
-  color: #D22329;
-}
+  @media screen and (max-width: 1024px) {
+    .invoicePreview-body td {
+      padding-right: 2px;
+      padding-left: 2px;
+    }
+  }
+
+  .b-document-paper .invalid {
+    color: #D22329;
+  }
+
+  .b-document-paper .changed {
+    background-color: #FFD41F;
+    padding: 0 2px 0 3px;
+  }
+
+  .b-document-paper td .changed:first-child {
+    margin-left: -3px;
+  }
 
-.b-document-paper .changed {
-  background-color: #FFD41F;
-  padding: 0 2px 0 3px;
-}
-
-.b-document-paper td .changed:first-child {
-  margin-left: -3px;
-}
-
-.utdPreview-body_tbody td {
-  vertical-align: top;
-  border: 1px solid #808080;
-  padding: 3px 5px;
-  word-wrap: break-word;
-}
-
-.utdPreview-body_thead td {
-  text-align: center;
-  line-height: 1.2em;
-  vertical-align: middle;
-  border: 1px solid #808080;
-  padding: 3px 5px;
-  word-wrap: break-word;
-}
-
-.utdPreview-footer-signatures td {
-  border: none;
-  padding: 0;
-}
-
-.utdPreview-docFooter-table td {
-  border-right: 1px solid #FFF;
-}
-
-.utdPreview-docFooter-person td {
-  border: none;
-}
-
-.utdPreview-header td {
-  border: none;
-  padding: 5px 15px 5px 0;
-}
-
-.utdPreview-header-title td {
-  padding: 0;
-}
-
-.utdPreview-header-subtitle td {
-  padding-top: 7px;
-  padding-bottom: 0;
-}
-
-.utdPreview-header-subtitle2 td {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.invoicePreview-body thead td {
-  text-align: center;
-  line-height: 1.2em;
-  vertical-align: middle;
-}
-
-.utdPreview-footer-signatures .utdPreview-footer-signatures_titles td {
-  font-size: 0.818em;
-  color: #777;
-}
-
-.invoicePreview-footer {
-  padding-bottom: 40px;
-  position: relative;
-}
-
-.invoicePreview-footerColLeft,
-.invoicePreview-footerColRight {
-  width: 49%;
-  margin-top: 20px;
-  position: relative;
-}
-
-.invoicePreview-footerColLeft {
-  float: left;
-}
-
-.invoicePreview-footerColRight {
-  float: right;
-}
-
-.invoicePreview-footerColLeft .invoicePreview-footer-label {
-  position: absolute;
-  width: 17em;
-  top: 0;
-  left: 0;
-  text-align: right;
-}
-
-.invoicePreview-footer-v2 {
-  padding: 0 8px;
-}
-
-.invoicePreview-footerColLeft .invoicePreview-footer-fieldsWrap {
-  padding-left: 17em;
-  margin-left: 15px;
-}
-
-.invoicePreview-footerColRight .invoicePreview-footer-fieldsWrap {
-  padding-left: 9.5em;
-  margin-left: 15px;
-}
-
-.invoicePreview-footer-v2 .invoicePreview-footerColLeft .invoicePreview-footer-fieldsWrap {
-  padding-top: 1em;
-}
-
-.invoicePreview-footerColRight .invoicePreview-footer-label {
-  position: absolute;
-  width: 9.5em;
-  top: 0;
-  left: 0;
-  text-align: left;
-}
-
-.invoicePreview-footer-v2 .invoicePreview-footerColLeft .invoicePreview-footer-label {
-  text-align: left;
-}
-
-.invoicePreview-footer-v2 .invoicePreview-footerColRight .invoicePreview-footer-label {
-  width: 15.5em;
-}
-
-.invoicePreview-footer-v2 .invoicePreview-footerColRight .invoicePreview-footer-fieldsWrap {
-  padding-left: 15.5em;
-  position: relative;
-  top: 1em;
-}
-
-.invoicePreview-footer-v2 .invoicePreview-footer-fieldsWrap_nopaddings {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-.invoicePreview-footer-fields {
-  position: relative;
-  padding-bottom: 1.4em;
-  float: left;
-  overflow: hidden;
-}
-
-.invoicePreview-footer-fields_left {
-  width: 46%;
-}
-
-.invoicePreview-footer-fields_right {
-  width: 53%;
-}
-
-.invoicePreview-footer-fields_double {
-  width: 99%;
-  padding-bottom: 2.4em !important;
-}
-
-.invoicePreview-footer-fieldsWrap dt {
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  font-size: 0.818em;
-}
-
-.invoicePreview-footerNote dt {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.invoicePreview-footer-v2 .invoicePreview-footer-fieldsWrap dt {
-  width: 100%;
-  left: -5px;
-  text-align: center;
-}
-
-.invoicePreview-footer-fieldsWrap dd {
-  border-bottom: 1px solid #000;
-  white-space: nowrap;
-}
-
-.invoicePreview-footer-fields_left dd {
-  margin-right: 10px;
-}
-
-.invoicePreview-footer-IP {
-  font-size: 0.818em;
-  border-top: 1px solid #000;
-  position: relative;
-  top: 1.5em;
-  padding-top: 1px;
-}
-
-.invoicePreview-footer-v2 .invoicePreview-footer-IP {
-  position: relative;
-  top: 2.8em;
-  margin-right: 1%;
-  text-align: center;
-}
-
-.invoicePreview-footer-v2 .invoicePreview-footer-IP-width {
-  width: 29em;
-  margin: 0 auto;
-}
-
-.invoicePreview-footerNote {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 0.818em;
-  width: 45em;
-}
-
-.invoicePreview-footerNote dd {
-  left: 8.1em;
-  position: relative;
-}
-
-.invoicePreview-footerNote-number {
-  position: absolute;
-  left: -1.3em;
-}
-
-.invoicePreview-addedRow {
-  position: absolute;
-  left: -20px;
-  top: 50%;
-  margin-top: -6px;
-  background: url('../../img/actionsIcons.png') 0 -1260px;
-  width: 20px;
-  height: 10px;
-}
-
-.b-document-paper .b-acceptcert-paper-subheader_additionalData {
-  padding-bottom: 10px;
-  padding-left: 0;
-}
-
-.invoicePreview-additionalData {
-  color: #808080;
-  font-size: 11px;
-  line-height: 17px;
-}
-
-.invoicePreview-additionalData_as_normal {
-  font-size: 13px;
-}
-
-.invoicePreview-additionalData_leftPadded {
-  padding-left: 8px;
-}
-
-.invoicePreview-additionalData_bottom {
-  border-bottom: 1px solid #808080;
-  line-height: 12px;
-}
-
-.invoicePreview-additionalData_topDistance_47 {
-  padding-top: 47px;
-}
-
-.invoicePreview-additionalData_topDistance_14 {
-  padding-top: 14px;
-}
-
-.invoicePreview-additionalData_topDistance_0 {
-  padding-top: 0;
-}
-
-.invoicePreview-additionalData_topDistance_22 {
-  padding-top: 22px;
-}
-
-.invoicePreview-additionalData_topDistance_1 {
-  padding-top: 1px;
-}
-
-.invoicePreview-additionalData_topDistance_40 {
-  padding-top: 40px;
-}
-
-.invoicePreview-additionalData_topDistance_19 {
-  padding-top: 19px;
-}
-
-.invoicePreview-additionalData_topDistance_31 {
-  padding-top: 31px;
-}
-
-.invoicePreview-additionalData_bottomDistance_1 {
-  padding-bottom: 1px;
-}
-
-.invoicePreview-additionalData_bottomDistance_5 {
-  padding-bottom: 5px;
-}
-
-.invoicePreview-additionalData_bottomDistance_20 {
-  margin-bottom: 20px;
-}
-
-.invoicePreview-additionalData_bottomDistance_25 {
-  margin-bottom: 25px;
-}
-
-.invoicePreview-additionalData_bottomDistance_26 {
-  padding-bottom: 26px;
-}
-
-.invoicePreview-additionalData_bottomDistance_45 {
-  padding-bottom: 45px;
-}
-
-.utdPreview-header-h1 {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 20px;
-}
-
-.utdPreview-header-h3 {
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 17px;
-  margin-bottom: 10px;
-}
-
-.utdPreview-header-h3_noBottomMargin {
-  margin-bottom: 3px;
-}
-
-.utdPreview-header-status {
-  padding-top: 14px;
-}
-
-.utdPreview-body {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  table-layout: fixed;
-}
-
-.utdPreview-body_tbody sup {
-  vertical-align: super;
-}
-
-@media screen and (max-width: 1024px) {
   .utdPreview-body_tbody td {
-    padding-right: 2px;
-    padding-left: 2px;
+    vertical-align: top;
+    border: 1px solid #808080;
+    padding: 3px 5px;
+    word-wrap: break-word;
   }
-}
 
-.utdPreview-body_tbody .utdPreview-body_tbody-collapse {
-  padding: 0;
-}
-
-.utdPreview-signers {
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-.utdPreview-footer {
-  padding-bottom: 10px;
-  position: relative;
-}
-
-.utdPreview-header-bottom {
-  margin-bottom: 18px;
-}
-
-.utdPreview-footer-signatures {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 15px;
-}
-
-.utdPreview-footer-signatures .utdPreview-footer-signatures_data {
-  border-bottom: 1px solid #000;
-}
-
-.utdPreview-footer-signatures .utdPreview-footer-signatures_first {
-  width: 122px;
-}
-
-.utdPreview-footer-signatures .utdPreview-footer-signatures_position {
-  width: 329px;
-  font-weight: bold;
-  padding: 0 22px;
-}
-
-.utdPreview-additionalData {
-  position: relative;
-  color: #000;
-  font-size: 11px;
-  line-height: 20px;
-  padding-top: 15px;
-  padding-bottom: 3px;
-}
-
-.utdPreview-additionalData-label {
-  color: #777;
-  text-align: left;
-  float: left;
-  margin-right: 12px;
-}
-
-.utdPreview-additionalData-number {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  font-size: 11px;
-  color: #777;
-  right: -10px;
-  top: 14px;
-}
-
-.utdPreview-additionalData-value {
-  margin-right: 9px;
-}
-
-.utdPreview-additionalData-value_bottom {
-  border-bottom: 1px solid #808080;
-  line-height: 16px;
-}
-
-.utdPreview-docFooter {
-  padding-top: 25px;
-}
-
-.utdPreview-docFooter-table {
-  width: 100%;
-}
-
-.utdPreview-docFooter-table .utdPreview-docFooter-table_first {
-  border-right-color: #808080;
-}
-
-.utdPreview-docFooter-table .utdPreview-docFooter-table_second {
-  padding-left: 20px;
-}
-
-.utdPreview-docFooter-title {
-  font-size: 11px;
-  color: #000;
-  text-align: left;
-  font-weight: bold;
-  padding-bottom: 5px;
-  clear: both;
-}
-
-.utdPreview-docFooter-title_topPadding {
-  padding-top: 20px;
-}
-
-.utdPreview-docFooter-block {
-  clear: both;
-  position: relative;
-  margin-top: 15px;
-}
-
-.utdPreview-docFooter-block_noTopMargin {
-  margin-top: 5px;
-}
-
-.utdPreview-docFooter-table_first .utdPreview-docFooter-block {
-  padding-right: 31px;
-}
-
-.utdPreview-docFooter-table_second .utdPreview-docFooter-block {
-  padding-right: 9px;
-}
-
-.utdPreview-docFooter-number {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  font-size: 11px;
-  color: #777;
-}
-
-.utdPreview-docFooter-table_first .utdPreview-docFooter-number {
-  right: 11px;
-}
-
-.utdPreview-docFooter-table_second .utdPreview-docFooter-number {
-  right: -11px;
-}
-
-.utdPreview-docFooter-value {
-  margin-right: 6px;
-}
-
-.utdPreview-docFooter-value_underline {
-  border-bottom: 1px solid #808080;
-  padding-bottom: 2px;
-  word-break: break-all;
-}
-
-.utdPreview-docFooter-person {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.utdPreview-docFooter-person .utdPreview-docFooter-person_data td {
-  border-bottom: 1px solid #000;
-  white-space: normal;
-  font-size: 11px;
-  padding-bottom: 2px;
-}
-
-.utdPreview-docFooter-person .utdPreview-docFooter-person_titles td {
-  white-space: normal;
-  font-size: 9px;
-  color: #777;
-}
-
-.utdPreview-docFooter-person .utdPreview-docFooter-person_half {
-  width: 50%;
-}
-
-.utdPreview-docFooter-person .utdPreview-docFooter-person_position {
-  width: 38%;
-}
-
-.utdPreview-docFooter-person .utdPreview-docFooter-person_signature {
-  width: 122px;
-}
-
-.utdPreview-docFooter-label {
-  color: #777;
-  text-align: left;
-  float: left;
-  margin-right: 15px;
-}
-
-.utdPreview-header {
-  border-collapse: collapse;
-  margin-left: 22px;
-  margin-bottom: 19px;
-  max-width: 1100px;
-}
-
-.utdPreview-header-firstCol {
-  width: 157px;
-  color: #777;
-}
-
-.utdPreview-header-secondCol {
-  width: 575px;
-  overflow-wrap: anywhere !important;
-}
-
-@media screen and (max-width: 1536px) {
-  .auto-width-cell {
-    width: 10%;
+  .utdPreview-body_thead td {
+    text-align: center;
+    line-height: 1.2em;
+    vertical-align: middle;
+    border: 1px solid #808080;
+    padding: 3px 5px;
+    word-wrap: break-word;
   }
-}
 
+  .utdPreview-footer-signatures td {
+    border: none;
+    padding: 0;
+  }
+
+  .utdPreview-docFooter-table td {
+    border-right: 1px solid #FFF;
+  }
+
+  .utdPreview-docFooter-person td {
+    border: none;
+  }
+
+  .utdPreview-header td {
+    border: none;
+    padding: 5px 15px 5px 0;
+  }
+
+  .utdPreview-header-title td {
+    padding: 0;
+  }
+
+  .utdPreview-header-subtitle td {
+    padding-top: 7px;
+    padding-bottom: 0;
+  }
+
+  .utdPreview-header-subtitle2 td {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .invoicePreview-body thead td {
+    text-align: center;
+    line-height: 1.2em;
+    vertical-align: middle;
+  }
+
+  .utdPreview-footer-signatures .utdPreview-footer-signatures_titles td {
+    font-size: 0.818em;
+    color: #777;
+  }
+
+  .invoicePreview-footer {
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .invoicePreview-footerColLeft,
+  .invoicePreview-footerColRight {
+    width: 49%;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .invoicePreview-footerColLeft {
+    float: left;
+  }
+
+  .invoicePreview-footerColRight {
+    float: right;
+  }
+
+  .invoicePreview-footerColLeft .invoicePreview-footer-label {
+    position: absolute;
+    width: 17em;
+    top: 0;
+    left: 0;
+    text-align: right;
+  }
+
+  .invoicePreview-footer-v2 {
+    padding: 0 8px;
+  }
+
+  .invoicePreview-footerColLeft .invoicePreview-footer-fieldsWrap {
+    padding-left: 17em;
+    margin-left: 15px;
+  }
+
+  .invoicePreview-footerColRight .invoicePreview-footer-fieldsWrap {
+    padding-left: 9.5em;
+    margin-left: 15px;
+  }
+
+  .invoicePreview-footer-v2 .invoicePreview-footerColLeft .invoicePreview-footer-fieldsWrap {
+    padding-top: 1em;
+  }
+
+  .invoicePreview-footerColRight .invoicePreview-footer-label {
+    position: absolute;
+    width: 9.5em;
+    top: 0;
+    left: 0;
+    text-align: left;
+  }
+
+  .invoicePreview-footer-v2 .invoicePreview-footerColLeft .invoicePreview-footer-label {
+    text-align: left;
+  }
+
+  .invoicePreview-footer-v2 .invoicePreview-footerColRight .invoicePreview-footer-label {
+    width: 15.5em;
+  }
+
+  .invoicePreview-footer-v2 .invoicePreview-footerColRight .invoicePreview-footer-fieldsWrap {
+    padding-left: 15.5em;
+    position: relative;
+    top: 1em;
+  }
+
+  .invoicePreview-footer-v2 .invoicePreview-footer-fieldsWrap_nopaddings {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .invoicePreview-footer-fields {
+    position: relative;
+    padding-bottom: 1.4em;
+    float: left;
+    overflow: hidden;
+  }
+
+  .invoicePreview-footer-fields_left {
+    width: 46%;
+  }
+
+  .invoicePreview-footer-fields_right {
+    width: 53%;
+  }
+
+  .invoicePreview-footer-fields_double {
+    width: 99%;
+    padding-bottom: 2.4em !important;
+  }
+
+  .invoicePreview-footer-fieldsWrap dt {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    font-size: 0.818em;
+  }
+
+  .invoicePreview-footerNote dt {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .invoicePreview-footer-v2 .invoicePreview-footer-fieldsWrap dt {
+    width: 100%;
+    left: -5px;
+    text-align: center;
+  }
+
+  .invoicePreview-footer-fieldsWrap dd {
+    border-bottom: 1px solid #000;
+    white-space: nowrap;
+  }
+
+  .invoicePreview-footer-fields_left dd {
+    margin-right: 10px;
+  }
+
+  .invoicePreview-footer-IP {
+    font-size: 0.818em;
+    border-top: 1px solid #000;
+    position: relative;
+    top: 1.5em;
+    padding-top: 1px;
+  }
+
+  .invoicePreview-footer-v2 .invoicePreview-footer-IP {
+    position: relative;
+    top: 2.8em;
+    margin-right: 1%;
+    text-align: center;
+  }
+
+  .invoicePreview-footer-v2 .invoicePreview-footer-IP-width {
+    width: 29em;
+    margin: 0 auto;
+  }
+
+  .invoicePreview-footerNote {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.818em;
+    width: 45em;
+  }
+
+  .invoicePreview-footerNote dd {
+    left: 8.1em;
+    position: relative;
+  }
+
+  .invoicePreview-footerNote-number {
+    position: absolute;
+    left: -1.3em;
+  }
+
+  .invoicePreview-addedRow {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -6px;
+    background: url('../../img/actionsIcons.png') 0 -1260px;
+    width: 20px;
+    height: 10px;
+  }
+
+  .b-document-paper .b-acceptcert-paper-subheader_additionalData {
+    padding-bottom: 10px;
+    padding-left: 0;
+  }
+
+  .invoicePreview-additionalData {
+    color: #808080;
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .invoicePreview-additionalData_as_normal {
+    font-size: 13px;
+  }
+
+  .invoicePreview-additionalData_leftPadded {
+    padding-left: 8px;
+  }
+
+  .invoicePreview-additionalData_bottom {
+    border-bottom: 1px solid #808080;
+    line-height: 12px;
+  }
+
+  .invoicePreview-additionalData_topDistance_47 {
+    padding-top: 47px;
+  }
+
+  .invoicePreview-additionalData_topDistance_14 {
+    padding-top: 14px;
+  }
+
+  .invoicePreview-additionalData_topDistance_0 {
+    padding-top: 0;
+  }
+
+  .invoicePreview-additionalData_topDistance_22 {
+    padding-top: 22px;
+  }
+
+  .invoicePreview-additionalData_topDistance_1 {
+    padding-top: 1px;
+  }
+
+  .invoicePreview-additionalData_topDistance_40 {
+    padding-top: 40px;
+  }
+
+  .invoicePreview-additionalData_topDistance_19 {
+    padding-top: 19px;
+  }
+
+  .invoicePreview-additionalData_topDistance_31 {
+    padding-top: 31px;
+  }
+
+  .invoicePreview-additionalData_bottomDistance_1 {
+    padding-bottom: 1px;
+  }
+
+  .invoicePreview-additionalData_bottomDistance_5 {
+    padding-bottom: 5px;
+  }
+
+  .invoicePreview-additionalData_bottomDistance_20 {
+    margin-bottom: 20px;
+  }
+
+  .invoicePreview-additionalData_bottomDistance_25 {
+    margin-bottom: 25px;
+  }
+
+  .invoicePreview-additionalData_bottomDistance_26 {
+    padding-bottom: 26px;
+  }
+
+  .invoicePreview-additionalData_bottomDistance_45 {
+    padding-bottom: 45px;
+  }
+
+  .utdPreview-header-h1 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+  .utdPreview-header-h3 {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+
+  .utdPreview-header-h3_noBottomMargin {
+    margin-bottom: 3px;
+  }
+
+  .utdPreview-header-status {
+    padding-top: 14px;
+  }
+
+  .utdPreview-body {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    table-layout: fixed;
+  }
+
+  .utdPreview-body_tbody sup {
+    vertical-align: super;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .utdPreview-body_tbody td {
+      padding-right: 2px;
+      padding-left: 2px;
+    }
+  }
+
+  .utdPreview-body_tbody .utdPreview-body_tbody-collapse {
+    padding: 0;
+  }
+
+  .utdPreview-signers {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .utdPreview-footer {
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  .utdPreview-header-bottom {
+    margin-bottom: 18px;
+  }
+
+  .utdPreview-footer-signatures {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .utdPreview-footer-signatures .utdPreview-footer-signatures_data {
+    border-bottom: 1px solid #000;
+  }
+
+  .utdPreview-footer-signatures .utdPreview-footer-signatures_first {
+    width: 122px;
+  }
+
+  .utdPreview-footer-signatures .utdPreview-footer-signatures_position {
+    width: 329px;
+    font-weight: bold;
+    padding: 0 22px;
+  }
+
+  .utdPreview-additionalData {
+    position: relative;
+    color: #000;
+    font-size: 11px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+  }
+
+  .utdPreview-additionalData-label {
+    color: #777;
+    text-align: left;
+    float: left;
+    margin-right: 12px;
+  }
+
+  .utdPreview-additionalData-number {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    color: #777;
+    right: -10px;
+    top: 14px;
+  }
+
+  .utdPreview-additionalData-value {
+    margin-right: 9px;
+  }
+
+  .utdPreview-additionalData-value_bottom {
+    border-bottom: 1px solid #808080;
+    line-height: 16px;
+  }
+
+  .utdPreview-docFooter {
+    padding-top: 25px;
+  }
+
+  .utdPreview-docFooter-table {
+    width: 100%;
+  }
+
+  .utdPreview-docFooter-table .utdPreview-docFooter-table_first {
+    border-right-color: #808080;
+  }
+
+  .utdPreview-docFooter-table .utdPreview-docFooter-table_second {
+    padding-left: 20px;
+  }
+
+  .utdPreview-docFooter-title {
+    font-size: 11px;
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 5px;
+    clear: both;
+  }
+
+  .utdPreview-docFooter-title_topPadding {
+    padding-top: 20px;
+  }
+
+  .utdPreview-docFooter-block {
+    clear: both;
+    position: relative;
+    margin-top: 15px;
+  }
+
+  .utdPreview-docFooter-block_noTopMargin {
+    margin-top: 5px;
+  }
+
+  .utdPreview-docFooter-table_first .utdPreview-docFooter-block {
+    padding-right: 31px;
+  }
+
+  .utdPreview-docFooter-table_second .utdPreview-docFooter-block {
+    padding-right: 9px;
+  }
+
+  .utdPreview-docFooter-number {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    color: #777;
+  }
+
+  .utdPreview-docFooter-table_first .utdPreview-docFooter-number {
+    right: 11px;
+  }
+
+  .utdPreview-docFooter-table_second .utdPreview-docFooter-number {
+    right: -11px;
+  }
+
+  .utdPreview-docFooter-value {
+    margin-right: 6px;
+  }
+
+  .utdPreview-docFooter-value_underline {
+    border-bottom: 1px solid #808080;
+    padding-bottom: 2px;
+    word-break: break-all;
+  }
+
+  .utdPreview-docFooter-person {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .utdPreview-docFooter-person .utdPreview-docFooter-person_data td {
+    border-bottom: 1px solid #000;
+    white-space: normal;
+    font-size: 11px;
+    padding-bottom: 2px;
+  }
+
+  .utdPreview-docFooter-person .utdPreview-docFooter-person_titles td {
+    white-space: normal;
+    font-size: 9px;
+    color: #777;
+  }
+
+  .utdPreview-docFooter-person .utdPreview-docFooter-person_half {
+    width: 50%;
+  }
+
+  .utdPreview-docFooter-person .utdPreview-docFooter-person_position {
+    width: 38%;
+  }
+
+  .utdPreview-docFooter-person .utdPreview-docFooter-person_signature {
+    width: 122px;
+  }
+
+  .utdPreview-docFooter-label {
+    color: #777;
+    text-align: left;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .utdPreview-header {
+    border-collapse: collapse;
+    margin-left: 22px;
+    margin-bottom: 19px;
+    max-width: 1100px;
+  }
+
+  .utdPreview-header-firstCol {
+    width: 157px;
+    color: #777;
+  }
+
+  .utdPreview-header-secondCol {
+    width: 575px;
+    overflow-wrap: anywhere !important;
+  }
+
+  @media screen and (max-width: 1536px) {
+    .auto-width-cell {
+      width: 10%;
+    }
+  }
 </style>
 <div class="b-document-paper"><span class="b-document-paper-caption">Приложение № 1 к постановлению Правительства
-        Российской Федерации от 26.12.2011 № 1137<br>(в ред. Постановления Правительства РФ от 16.08.2024 №
-        1096)<br>(печатная форма может содержать дополнительные реквизиты)<br></span>
-    <table class="utdPreview-body">
-        <colgroup>
-            <col style="width: 105px;">
-            <col style="width: 30px;">
-            <col>
-            <col>
-            <col style="width: 39px;">
-            <col style="width: 66px;">
-            <col>
-            <col>
-            <col>
-            <col>
-            <col>
-            <col>
-            <col>
-            <col style="width: 39px;">
-            <col style="width: 66px;">
-            <col>
-        </colgroup>
-        <tbody>
-            <tr class="utdPreview-body_tbody">
-                <td style="border-left-color: #fff;border-top-color: #fff;" class="utdPreview-body_tbody-collapse">
-                    <div class="utdPreview-header-h1">УПД</div>
-                    <div class="utdPreview-header-status"><span>Статус:</span><br><span>Счет-фактура и передаточный
-                            документ — 1</span></div>
-                </td>
-                <td colspan="13" style="border-right-color: #fff;border-top-color: #fff;"
-                    class="utdPreview-body_tbody-collapse">
-                    <table class="utdPreview-header">
-                        <tbody>
-                            <tr class="utdPreview-header-title">
-                                <td colspan="2">
-                                    <div class="utdPreview-header-h1" id="sys-invoiceCaption">Счет-фактура
-                                        №<span>123</span> от <span>01.12.2025</span></div>
-                                </td>
-                                <td class="invoicePreview-superheader-lastCol">(1)</td>
-                            </tr>
-                            <tr class="utdPreview-header-subtitle">
-                                <td colspan="2">
-                                    <div class="utdPreview-header-h3">Исправление №<span>&nbsp;—</span> от
-                                        <span>—</span>
-                                    </div>
-                                </td>
-                                <td class="invoicePreview-superheader-lastCol">(1а)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">Продавец</td>
-                                <td class="utdPreview-header-secondCol"><span class="inline-block">Тестовая организация
-                                        №3813146</span></td>
-                                <td class="invoicePreview-header-lastCol">(2)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">Адрес</td>
-                                <td class="utdPreview-header-secondCol"><span class="b-text-error inline-block"
-                                        error-text="Адрес" data-hasqtip="0"><span class="inline-block">Не
-                                            заполнено</span></span></td>
-                                <td class="invoicePreview-header-lastCol">(2а)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">ИНН/КПП</td>
-                                <td class="utdPreview-header-secondCol"><span class="inline-block">9638131466</span> /
-                                    <span class="inline-block">963801000</span>
-                                </td>
-                                <td class="invoicePreview-header-lastCol">(2б)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">Грузоотправитель и его адрес</td>
-                                <td class="utdPreview-header-secondCol"><span class="inline-block">—</span></td>
-                                <td class="invoicePreview-header-lastCol">(3)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">Грузополучатель и его адрес</td>
-                                <td class="utdPreview-header-secondCol"><span class="inline-block">—</span></td>
-                                <td class="invoicePreview-header-lastCol">(4)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">К платежно-расчетному документу</td>
-                                <td class="utdPreview-header-secondCol"><span class="inline-block"><span
-                                            class="t-additional-text">№</span><span>123123</span><span
-                                            class="t-additional-text"> от </span><span>01.12.2025</span></span></td>
-                                <td class="invoicePreview-header-lastCol">(5)</td>
-                            </tr>
-                            <tr>
-                                <td class="invoicePreview-header-firstCol">Документ об отгрузке</td>
-                                <td><span class="inline-block"><span>Счет-фактура и документ об отгрузке товаров
-                                            (выполнении работ), передаче имущественных прав (документ об оказании
-                                            услуг)</span><span class="t-additional-text"> № </span><span>123</span><span
-                                            class="t-additional-text"> от </span><span>01.12.2025</span></span></td>
-                                <td class="invoicePreview-header-lastCol">(5а)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">Покупатель</td>
-                                <td class="utdPreview-header-secondCol"><span class="inline-block"><span
-                                            class="b-text-error">Не заполнено</span></span></td>
-                                <td class="invoicePreview-header-lastCol">(6)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">Адрес</td>
-                                <td class="utdPreview-header-secondCol"><span class="inline-block"><span
-                                            class="inline-block">Не заполнено</span></span></td>
-                                <td class="invoicePreview-header-lastCol">(6а)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">ИНН/КПП</td>
-                                <td class="utdPreview-header-secondCol">—</td>
-                                <td class="invoicePreview-header-lastCol">(6б)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">Валюта: наименование, код</td>
-                                <td class="utdPreview-header-secondCol"><span><span class="inline-block">Российский
-                                            рубль</span>, <span class="inline-block">643</span></span></td>
-                                <td class="invoicePreview-header-lastCol">(7)</td>
-                            </tr>
-                            <tr>
-                                <td class="utdPreview-header-firstCol">Идентификатор государственного контракта,
-                                    договора (соглашения) (при&nbsp;наличии):</td>
-                                <td class="utdPreview-header-secondCol"><span class="inline-block">123</span></td>
-                                <td class="invoicePreview-header-lastCol">(8)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr class="utdPreview-body_thead">
-                <td rowspan="2">Код<br>товара /<br>работ,<br>услуг</td>
-                <td rowspan="2">№ п/п</td>
-                <td rowspan="2">Наименование товара<br>(описание выполненных<br>работ, оказанных
-                    услуг),<br>имущественного права</td>
-                <td rowspan="2">Код<br>вида<br>товара</td>
-                <td colspan="2">Единица<br>измерения</td>
-                <td rowspan="2">Количест&shy;во (объем)</td>
-                <td rowspan="2">Цена (тариф) за&nbsp;единицу измерения</td>
-                <td rowspan="2">Стоимость<br>товаров (работ,<br>услуг), иму&shy;щественных прав без налога - всего</td>
-                <td rowspan="2">В том числе сумма акциза</td>
-                <td rowspan="2">Налоговая ставка</td>
-                <td rowspan="2">Сумма налога, предъявляе&shy;мая<br>покупа&shy;телю</td>
-                <td rowspan="2">Стоимость<br>товаров (работ,<br>услуг), иму&shy;щественных прав с&nbsp;налогом - всего
-                </td>
-                <td colspan="2">Страна происхождения товара</td>
-                <td rowspan="2">Регистрационный номер декларации на товары или реги&shy;страцион&shy;ный номер партии
-                    товара, подлежаще&shy;го просле&shy;живаемости</td>
-            </tr>
-            <tr class="utdPreview-body_thead">
-                <td>Код</td>
-                <td>Условное обозначе&shy;ние (наци&shy;ональное)</td>
-                <td>Циф&shy;ро&shy;вой код</td>
-                <td>Краткое наимено&shy;вание</td>
-            </tr>
-            <tr class="utdPreview-body_thead">
-                <td>А</td>
-                <td>1</td>
-                <td>1а</td>
-                <td>1б</td>
-                <td>2</td>
-                <td>2а</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
-                <td>10а</td>
-                <td>11</td>
-            </tr>
-            <tr class="utdPreview-body_tbody">
-                <td style="text-align: center;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
-                <td style="text-align: left;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>1</span></td>
-                <td style="text-align:left;" rowspan="1">
-                    <div style="position: relative;"><span class="block">тест</span></div>
-                </td>
-                <td style="text-align: center;" rowspan="1"><span>—</span></td>
-                <td style="text-align:center;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
-                <td style="text-align:left;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
-                <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
-                <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
-                <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>123,00</span>
-                </td>
-                <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>Без
-                        акциза</span></td>
-                <td style="text-align:center;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>без НДС</span>
-                </td>
-                <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>без НДС</span>
-                </td>
-                <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>123,00</span>
-                </td>
-                <td style="text-align:center;" rowspan="1">—</td>
-                <td style="text-align: left;" class="utdPreview-body_tbody-countryNames" rowspan="1">—</td>
-                <td style="text-align:left; word-break:break-all;" rowspan="1" class="utdPreview-body_tbody-simpleText">
-                    —</td>
-            </tr>
-            <tr class="utdPreview-body_tbody">
-                <td style="border-left-color: #fff;border-bottom-color: #fff;"></td>
-                <td colspan="7" style="border-bottom-color: #fff;text-align: right;"><b>Всего к оплате (9)</b></td>
-                <td style="text-align: right;"><b>123,00</b></td>
-                <td style="text-align: center;"><b>×</b></td>
-                <td style="text-align: center;"><b>×</b></td>
-                <td style="text-align: right;"><b>без НДС</b></td>
-                <td style="text-align: right;"><b>123,00</b></td>
-                <td style="border-right-color:#fff;border-bottom-color: #fff;" colspan="3"></td>
-            </tr>
-            <tr class="utdPreview-body_tbody">
-                <td style="border-left-color: #fff;border-bottom-color: #fff;" class="utdPreview-body_tbody-collapse">
-                    &nbsp;</td>
-                <td style="border-right-color: #fff;" class="utdPreview-body_tbody-collapse" colspan="15">
-                    <div class="utdPreview-signers">
-                        <div class="utdPreview-footer">
-                            <table class="utdPreview-footer-signatures">
-                                <tbody>
-                                    <tr>
-                                        <td class="utdPreview-footer-signatures_position">Руководитель организации или
-                                            иное уполномоченное лицо</td>
-                                        <td
-                                            class="utdPreview-footer-signatures_data utdPreview-footer-signatures_first">
-                                            Электронная подпись</td>
-                                        <td class="utdPreview-footer-signatures_data"><span class="inline-block">Новиков
-                                                Николай Викторович</span></td>
-                                    </tr>
-                                    <tr class="utdPreview-footer-signatures_titles">
-                                        <td>&nbsp;</td>
-                                        <td class="utdPreview-footer-signatures_first">Подпись</td>
-                                        <td>ФИО</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="utdPreview-additionalData">
-        <div class="utdPreview-additionalData-number">(10)</div>
-        <div class="utdPreview-additionalData-value utdPreview-additionalData-value_bottom">
-            <p class="utdPreview-additionalData-label">Основания передачи (сдачи) / получения (приемки)</p>
-            <div>Без документа-основания отгрузки товаров (передачи результатов работ), передачи имущественных прав
-                (предъявления оказанных услуг)</div>
-        </div>
-    </div>
-    <div class="utdPreview-additionalData">
-        <div class="utdPreview-additionalData-number">(11)</div>
-        <div class="utdPreview-additionalData-value utdPreview-additionalData-value_bottom">
-            <p class="utdPreview-additionalData-label">Данные о транспортировке и грузе</p>
-            <div class="utdPreview-additionalData_transportationAndCargoInfo"><span></span></div>
-        </div>
-    </div>
-    <div class="utdPreview-docFooter">
-        <table class="utdPreview-docFooter-table">
-            <colgroup>
-                <col style="width: 50%">
-                <col style="width: 50%">
-            </colgroup>
+    Российской Федерации от 26.12.2011 № 1137<br>(в ред. Постановления Правительства РФ от 16.08.2024 №
+    1096)<br>(печатная форма может содержать дополнительные реквизиты)<br></span>
+  <table class="utdPreview-body">
+    <colgroup>
+      <col style="width: 105px;">
+      <col style="width: 30px;">
+      <col>
+      <col>
+      <col style="width: 39px;">
+      <col style="width: 66px;">
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col style="width: 39px;">
+      <col style="width: 66px;">
+      <col>
+    </colgroup>
+    <tbody>
+      <tr class="utdPreview-body_tbody">
+        <td style="border-left-color: #fff;border-top-color: #fff;" class="utdPreview-body_tbody-collapse">
+          <div class="utdPreview-header-h1">УПД</div>
+          <div class="utdPreview-header-status"><span>Статус:</span><br><span>Счет-фактура и передаточный
+              документ — 1</span></div>
+        </td>
+        <td colspan="13" style="border-right-color: #fff;border-top-color: #fff;"
+          class="utdPreview-body_tbody-collapse">
+          <table class="utdPreview-header">
             <tbody>
-                <tr>
-                    <td class="utdPreview-docFooter-table_first">
-                        <div class="utdPreview-docFooter-title">Товар (груз) передал / услуги, результаты работ, права
-                            сдал</div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(12)</div>
-                            <div class="utdPreview-docFooter-value">
-                                <table class="utdPreview-docFooter-person">
-                                    <tbody>
-                                        <tr class="utdPreview-docFooter-person_data">
-                                            <td class="utdPreview-docFooter-person_half"><span>&nbsp;</span></td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                        <tr class="utdPreview-docFooter-person_titles">
-                                            <td class="utdPreview-docFooter-person_half">Должность</td>
-                                            <td>ФИО</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(13)</div>
-                            <div class="utdPreview-docFooter-value utdPreview-docFooter-value_underline">
-                                <p class="utdPreview-docFooter-label">Дата отгрузки, передачи (сдачи)</p>
-                                <div><span class="inline-block">01.12.2025</span></div>
-                            </div>
-                        </div>
-                        <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Ответственный за
-                            правильность оформления факта хозяйственной жизни</div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(15)</div>
-                            <div class="utdPreview-docFooter-value">
-                                <table class="utdPreview-docFooter-person">
-                                    <tbody>
-                                        <tr class="utdPreview-docFooter-person_data">
-                                            <td class="utdPreview-docFooter-person_position"><span
-                                                    class="inline-block">Сотрудник</span></td>
-                                            <td class="utdPreview-docFooter-person_signature">Электронная подпись</td>
-                                            <td><span class="inline-block">Новиков Николай Викторович</span></td>
-                                        </tr>
-                                        <tr class="utdPreview-docFooter-person_titles">
-                                            <td class="utdPreview-docFooter-person_position">Должность</td>
-                                            <td class="utdPreview-docFooter-person_signature">Подпись</td>
-                                            <td>ФИО</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Наименование
-                            экономического субъекта — составителя документа<br>(в т.ч. комиссионера/агента)</div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(16)</div>
-                            <div class="utdPreview-docFooter-value">
-                                <table class="utdPreview-docFooter-person">
-                                    <tbody>
-                                        <tr class="utdPreview-docFooter-person_data">
-                                            <td><span class="inline-block">Тестовая организация №3813146, ИНН
-                                                    9638131466, КПП 963801000</span></td>
-                                        </tr>
-                                        <tr class="utdPreview-docFooter-person_titles">
-                                            <td>Может не заполняться при проставлении печати в М.П., может быть указан
-                                                ИНН/КПП</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="utdPreview-docFooter-table_second">
-                        <div class="utdPreview-docFooter-title">Результаты приемки</div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-value">
-                                <table class="utdPreview-docFooter-person">
-                                    <tbody>
-                                        <tr class="utdPreview-docFooter-person_data">
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Товар (груз)
-                            получил / услуги, результаты работ, права принял</div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(17)</div>
-                            <div class="utdPreview-docFooter-value">
-                                <table class="utdPreview-docFooter-person">
-                                    <tbody>
-                                        <tr class="utdPreview-docFooter-person_data">
-                                            <td class="utdPreview-docFooter-person_half"><span>&nbsp;</span></td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                        <tr class="utdPreview-docFooter-person_titles">
-                                            <td class="utdPreview-docFooter-person_half">Должность</td>
-                                            <td>ФИО</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(18)</div>
-                            <div class="utdPreview-docFooter-value utdPreview-docFooter-value_underline">
-                                <p class="utdPreview-docFooter-label">Дата получения (приемки)</p>
-                                <div>&nbsp;</div>
-                            </div>
-                        </div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(19)</div>
-                            <div class="utdPreview-docFooter-value utdPreview-docFooter-value_underline">
-                                <p class="utdPreview-docFooter-label">Иные сведения</p>&nbsp;
-                            </div>
-                        </div>
-                        <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Ответственный за
-                            правильность оформления факта хозяйственной жизни</div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(20)</div>
-                            <div class="utdPreview-docFooter-value">
-                                <table class="utdPreview-docFooter-person">
-                                    <tbody>
-                                        <tr class="utdPreview-docFooter-person_data">
-                                            <td class="utdPreview-docFooter-person_position">&nbsp;</td>
-                                            <td class="utdPreview-docFooter-person_signature">&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                        <tr class="utdPreview-docFooter-person_titles">
-                                            <td class="utdPreview-docFooter-person_position">Должность</td>
-                                            <td class="utdPreview-docFooter-person_signature">Подпись</td>
-                                            <td>ФИО</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Наименование
-                            экономического субъекта — составителя документа</div>
-                        <div class="utdPreview-docFooter-block">
-                            <div class="utdPreview-docFooter-number">(21)</div>
-                            <div class="utdPreview-docFooter-value">
-                                <table class="utdPreview-docFooter-person">
-                                    <tbody>
-                                        <tr class="utdPreview-docFooter-person_data">
-                                            <td><span class="inline-block">&nbsp;</span></td>
-                                        </tr>
-                                        <tr class="utdPreview-docFooter-person_titles">
-                                            <td>Может не заполняться при проставлении печати в М.П., может быть указан
-                                                ИНН/КПП</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
+              <tr class="utdPreview-header-title">
+                <td colspan="2">
+                  <div class="utdPreview-header-h1" id="sys-invoiceCaption">Счет-фактура
+                    №<span>123</span> от <span>01.12.2025</span></div>
+                </td>
+                <td class="invoicePreview-superheader-lastCol">(1)</td>
+              </tr>
+              <tr class="utdPreview-header-subtitle">
+                <td colspan="2">
+                  <div class="utdPreview-header-h3">Исправление №<span>&nbsp;—</span> от
+                    <span>—</span>
+                  </div>
+                </td>
+                <td class="invoicePreview-superheader-lastCol">(1а)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">Продавец</td>
+                <td class="utdPreview-header-secondCol"><span class="inline-block">Тестовая организация
+                    №3813146</span></td>
+                <td class="invoicePreview-header-lastCol">(2)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">Адрес</td>
+                <td class="utdPreview-header-secondCol"><span class="b-text-error inline-block" error-text="Адрес"
+                    data-hasqtip="0"><span class="inline-block">Не
+                      заполнено</span></span></td>
+                <td class="invoicePreview-header-lastCol">(2а)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">ИНН/КПП</td>
+                <td class="utdPreview-header-secondCol"><span class="inline-block">9638131466</span> /
+                  <span class="inline-block">963801000</span>
+                </td>
+                <td class="invoicePreview-header-lastCol">(2б)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">Грузоотправитель и его адрес</td>
+                <td class="utdPreview-header-secondCol"><span class="inline-block">—</span></td>
+                <td class="invoicePreview-header-lastCol">(3)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">Грузополучатель и его адрес</td>
+                <td class="utdPreview-header-secondCol"><span class="inline-block">—</span></td>
+                <td class="invoicePreview-header-lastCol">(4)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">К платежно-расчетному документу</td>
+                <td class="utdPreview-header-secondCol"><span class="inline-block"><span
+                      class="t-additional-text">№</span><span>123123</span><span class="t-additional-text"> от
+                    </span><span>01.12.2025</span></span></td>
+                <td class="invoicePreview-header-lastCol">(5)</td>
+              </tr>
+              <tr>
+                <td class="invoicePreview-header-firstCol">Документ об отгрузке</td>
+                <td><span class="inline-block"><span>Счет-фактура и документ об отгрузке товаров
+                      (выполнении работ), передаче имущественных прав (документ об оказании
+                      услуг)</span><span class="t-additional-text"> № </span><span>123</span><span
+                      class="t-additional-text"> от </span><span>01.12.2025</span></span></td>
+                <td class="invoicePreview-header-lastCol">(5а)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">Покупатель</td>
+                <td class="utdPreview-header-secondCol"><span class="inline-block"><span class="b-text-error">Не
+                      заполнено</span></span></td>
+                <td class="invoicePreview-header-lastCol">(6)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">Адрес</td>
+                <td class="utdPreview-header-secondCol"><span class="inline-block"><span class="inline-block">Не
+                      заполнено</span></span></td>
+                <td class="invoicePreview-header-lastCol">(6а)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">ИНН/КПП</td>
+                <td class="utdPreview-header-secondCol">—</td>
+                <td class="invoicePreview-header-lastCol">(6б)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">Валюта: наименование, код</td>
+                <td class="utdPreview-header-secondCol"><span><span class="inline-block">Российский
+                      рубль</span>, <span class="inline-block">643</span></span></td>
+                <td class="invoicePreview-header-lastCol">(7)</td>
+              </tr>
+              <tr>
+                <td class="utdPreview-header-firstCol">Идентификатор государственного контракта,
+                  договора (соглашения) (при&nbsp;наличии):</td>
+                <td class="utdPreview-header-secondCol"><span class="inline-block">123</span></td>
+                <td class="invoicePreview-header-lastCol">(8)</td>
+              </tr>
             </tbody>
-        </table>
+          </table>
+        </td>
+      </tr>
+      <tr class="utdPreview-body_thead">
+        <td rowspan="2">Код<br>товара /<br>работ,<br>услуг</td>
+        <td rowspan="2">№ п/п</td>
+        <td rowspan="2">Наименование товара<br>(описание выполненных<br>работ, оказанных
+          услуг),<br>имущественного права</td>
+        <td rowspan="2">Код<br>вида<br>товара</td>
+        <td colspan="2">Единица<br>измерения</td>
+        <td rowspan="2">Количест&shy;во (объем)</td>
+        <td rowspan="2">Цена (тариф) за&nbsp;единицу измерения</td>
+        <td rowspan="2">Стоимость<br>товаров (работ,<br>услуг), иму&shy;щественных прав без налога - всего</td>
+        <td rowspan="2">В том числе сумма акциза</td>
+        <td rowspan="2">Налоговая ставка</td>
+        <td rowspan="2">Сумма налога, предъявляе&shy;мая<br>покупа&shy;телю</td>
+        <td rowspan="2">Стоимость<br>товаров (работ,<br>услуг), иму&shy;щественных прав с&nbsp;налогом - всего
+        </td>
+        <td colspan="2">Страна происхождения товара</td>
+        <td rowspan="2">Регистрационный номер декларации на товары или реги&shy;страцион&shy;ный номер партии
+          товара, подлежаще&shy;го просле&shy;живаемости</td>
+      </tr>
+      <tr class="utdPreview-body_thead">
+        <td>Код</td>
+        <td>Условное обозначе&shy;ние (наци&shy;ональное)</td>
+        <td>Циф&shy;ро&shy;вой код</td>
+        <td>Краткое наимено&shy;вание</td>
+      </tr>
+      <tr class="utdPreview-body_thead">
+        <td>А</td>
+        <td>1</td>
+        <td>1а</td>
+        <td>1б</td>
+        <td>2</td>
+        <td>2а</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>10а</td>
+        <td>11</td>
+      </tr>
+      <tr class="utdPreview-body_tbody">
+        <td style="text-align: center;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
+        <td style="text-align: left;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>1</span></td>
+        <td style="text-align:left;" rowspan="1">
+          <div style="position: relative;"><span class="block">тест</span></div>
+        </td>
+        <td style="text-align: center;" rowspan="1"><span>—</span></td>
+        <td style="text-align:center;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
+        <td style="text-align:left;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
+        <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
+        <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>—</span></td>
+        <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>123,00</span>
+        </td>
+        <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>Без
+            акциза</span></td>
+        <td style="text-align:center;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>без НДС</span>
+        </td>
+        <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>без НДС</span>
+        </td>
+        <td style="text-align:right;" class="utdPreview-body_tbody-simpleText" rowspan="1"><span>123,00</span>
+        </td>
+        <td style="text-align:center;" rowspan="1">—</td>
+        <td style="text-align: left;" class="utdPreview-body_tbody-countryNames" rowspan="1">—</td>
+        <td style="text-align:left; word-break:break-all;" rowspan="1" class="utdPreview-body_tbody-simpleText">
+          —</td>
+      </tr>
+      <tr class="utdPreview-body_tbody">
+        <td style="border-left-color: #fff;border-bottom-color: #fff;"></td>
+        <td colspan="7" style="border-bottom-color: #fff;text-align: right;"><b>Всего к оплате (9)</b></td>
+        <td style="text-align: right;"><b>123,00</b></td>
+        <td style="text-align: center;"><b>×</b></td>
+        <td style="text-align: center;"><b>×</b></td>
+        <td style="text-align: right;"><b>без НДС</b></td>
+        <td style="text-align: right;"><b>123,00</b></td>
+        <td style="border-right-color:#fff;border-bottom-color: #fff;" colspan="3"></td>
+      </tr>
+      <tr class="utdPreview-body_tbody">
+        <td style="border-left-color: #fff;border-bottom-color: #fff;" class="utdPreview-body_tbody-collapse">
+          &nbsp;</td>
+        <td style="border-right-color: #fff;" class="utdPreview-body_tbody-collapse" colspan="15">
+          <div class="utdPreview-signers">
+            <div class="utdPreview-footer">
+              <table class="utdPreview-footer-signatures">
+                <tbody>
+                  <tr>
+                    <td class="utdPreview-footer-signatures_position">Руководитель организации или
+                      иное уполномоченное лицо</td>
+                    <td class="utdPreview-footer-signatures_data utdPreview-footer-signatures_first">
+                      Электронная подпись</td>
+                    <td class="utdPreview-footer-signatures_data"><span class="inline-block">Новиков
+                        Николай Викторович</span></td>
+                  </tr>
+                  <tr class="utdPreview-footer-signatures_titles">
+                    <td>&nbsp;</td>
+                    <td class="utdPreview-footer-signatures_first">Подпись</td>
+                    <td>ФИО</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="utdPreview-additionalData">
+    <div class="utdPreview-additionalData-number">(10)</div>
+    <div class="utdPreview-additionalData-value utdPreview-additionalData-value_bottom">
+      <p class="utdPreview-additionalData-label">Основания передачи (сдачи) / получения (приемки)</p>
+      <div>Без документа-основания отгрузки товаров (передачи результатов работ), передачи имущественных прав
+        (предъявления оказанных услуг)</div>
     </div>
-    <div class="clear"></div>
+  </div>
+  <div class="utdPreview-additionalData">
+    <div class="utdPreview-additionalData-number">(11)</div>
+    <div class="utdPreview-additionalData-value utdPreview-additionalData-value_bottom">
+      <p class="utdPreview-additionalData-label">Данные о транспортировке и грузе</p>
+      <div class="utdPreview-additionalData_transportationAndCargoInfo"><span></span></div>
+    </div>
+  </div>
+  <div class="utdPreview-docFooter">
+    <table class="utdPreview-docFooter-table">
+      <colgroup>
+        <col style="width: 50%">
+        <col style="width: 50%">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td class="utdPreview-docFooter-table_first">
+            <div class="utdPreview-docFooter-title">Товар (груз) передал / услуги, результаты работ, права
+              сдал</div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(12)</div>
+              <div class="utdPreview-docFooter-value">
+                <table class="utdPreview-docFooter-person">
+                  <tbody>
+                    <tr class="utdPreview-docFooter-person_data">
+                      <td class="utdPreview-docFooter-person_half"><span>&nbsp;</span></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr class="utdPreview-docFooter-person_titles">
+                      <td class="utdPreview-docFooter-person_half">Должность</td>
+                      <td>ФИО</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(13)</div>
+              <div class="utdPreview-docFooter-value utdPreview-docFooter-value_underline">
+                <p class="utdPreview-docFooter-label">Дата отгрузки, передачи (сдачи)</p>
+                <div><span class="inline-block">01.12.2025</span></div>
+              </div>
+            </div>
+            <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Ответственный за
+              правильность оформления факта хозяйственной жизни</div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(15)</div>
+              <div class="utdPreview-docFooter-value">
+                <table class="utdPreview-docFooter-person">
+                  <tbody>
+                    <tr class="utdPreview-docFooter-person_data">
+                      <td class="utdPreview-docFooter-person_position"><span class="inline-block">Сотрудник</span></td>
+                      <td class="utdPreview-docFooter-person_signature">Электронная подпись</td>
+                      <td><span class="inline-block">Новиков Николай Викторович</span></td>
+                    </tr>
+                    <tr class="utdPreview-docFooter-person_titles">
+                      <td class="utdPreview-docFooter-person_position">Должность</td>
+                      <td class="utdPreview-docFooter-person_signature">Подпись</td>
+                      <td>ФИО</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Наименование
+              экономического субъекта — составителя документа<br>(в т.ч. комиссионера/агента)</div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(16)</div>
+              <div class="utdPreview-docFooter-value">
+                <table class="utdPreview-docFooter-person">
+                  <tbody>
+                    <tr class="utdPreview-docFooter-person_data">
+                      <td><span class="inline-block">Тестовая организация №3813146, ИНН
+                          9638131466, КПП 963801000</span></td>
+                    </tr>
+                    <tr class="utdPreview-docFooter-person_titles">
+                      <td>Может не заполняться при проставлении печати в М.П., может быть указан
+                        ИНН/КПП</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </td>
+          <td class="utdPreview-docFooter-table_second">
+            <div class="utdPreview-docFooter-title">Результаты приемки</div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-value">
+                <table class="utdPreview-docFooter-person">
+                  <tbody>
+                    <tr class="utdPreview-docFooter-person_data">
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Товар (груз)
+              получил / услуги, результаты работ, права принял</div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(17)</div>
+              <div class="utdPreview-docFooter-value">
+                <table class="utdPreview-docFooter-person">
+                  <tbody>
+                    <tr class="utdPreview-docFooter-person_data">
+                      <td class="utdPreview-docFooter-person_half"><span>&nbsp;</span></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr class="utdPreview-docFooter-person_titles">
+                      <td class="utdPreview-docFooter-person_half">Должность</td>
+                      <td>ФИО</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(18)</div>
+              <div class="utdPreview-docFooter-value utdPreview-docFooter-value_underline">
+                <p class="utdPreview-docFooter-label">Дата получения (приемки)</p>
+                <div>&nbsp;</div>
+              </div>
+            </div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(19)</div>
+              <div class="utdPreview-docFooter-value utdPreview-docFooter-value_underline">
+                <p class="utdPreview-docFooter-label">Иные сведения</p>&nbsp;
+              </div>
+            </div>
+            <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Ответственный за
+              правильность оформления факта хозяйственной жизни</div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(20)</div>
+              <div class="utdPreview-docFooter-value">
+                <table class="utdPreview-docFooter-person">
+                  <tbody>
+                    <tr class="utdPreview-docFooter-person_data">
+                      <td class="utdPreview-docFooter-person_position">&nbsp;</td>
+                      <td class="utdPreview-docFooter-person_signature">&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr class="utdPreview-docFooter-person_titles">
+                      <td class="utdPreview-docFooter-person_position">Должность</td>
+                      <td class="utdPreview-docFooter-person_signature">Подпись</td>
+                      <td>ФИО</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="utdPreview-docFooter-title utdPreview-docFooter-title_topPadding">Наименование
+              экономического субъекта — составителя документа</div>
+            <div class="utdPreview-docFooter-block">
+              <div class="utdPreview-docFooter-number">(21)</div>
+              <div class="utdPreview-docFooter-value">
+                <table class="utdPreview-docFooter-person">
+                  <tbody>
+                    <tr class="utdPreview-docFooter-person_data">
+                      <td><span class="inline-block">&nbsp;</span></td>
+                    </tr>
+                    <tr class="utdPreview-docFooter-person_titles">
+                      <td>Может не заполняться при проставлении печати в М.П., может быть указан
+                        ИНН/КПП</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="clear"></div>
 </div>
