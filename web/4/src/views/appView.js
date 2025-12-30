@@ -58,13 +58,14 @@ export function renderApp(root) {
 
         if (state.currentCoords) {
             tabs.setCurrent(state.currentCoords);
-        } else {
-            try {
-                const coords = await getUserPosition();
-                tabs.setCurrent(coords);
-            } catch {
-                tabs.setCurrent({ lat: 52.52, lon: 13.405 });
-            }
+            isRestoring = false;
+            return;
+        }
+
+        try {
+            const coords = await getUserPosition();
+            tabs.setCurrent(coords);
+        } catch {
         }
 
         isRestoring = false;

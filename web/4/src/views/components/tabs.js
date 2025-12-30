@@ -1,4 +1,5 @@
 import { createAddCity } from "./addCity.js";
+import { createAddCoords } from "./addCords.js";
 
 export function createTabs({ onSelect }) {
     const wrapper = document.createElement("div");
@@ -29,6 +30,13 @@ export function createTabs({ onSelect }) {
     });
 
     wrapper.appendChild(addCity);
+
+    const addCoords = createAddCoords((coords) => {
+        onSelect(coords, "Введённые координаты");
+        setActive(currentTab);
+    });
+
+    wrapper.appendChild(addCoords);
 
     return {
         element: wrapper,
