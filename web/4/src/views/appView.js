@@ -1,36 +1,72 @@
 import { createHeader } from "./components/header.js";
-import { createCurrentWeather } from "./components/currentWeather.js";
-import { createCitiesList } from "./components/citiesList.js";
-import { createAddCity } from "./components/addCity.js";
+import { createTabs } from "./components/tabs.js";
+import { createWeatherView } from "./components/weatherView.js";
 import { getUserPosition } from "../services/geo.js";
+import {
+    loadState,
+    saveState,
+    createInitialState
+} from "../services/store.js";
 
 export function renderApp(root) {
     root.textContent = "";
 
+    const state = loadState() || createInitialState();
+    let isRestoring = true;
+
     const app = document.createElement("div");
     app.className = "weather";
 
-    const header = createHeader();
-    const current = createCurrentWeather();
-    const cities = createCitiesList();
-    const addCity = createAddCity();
+    const view = createWeatherView();
+
+    const tabs = createTabs({
+        onSelect(coords, title) {
+            view.update(coords, title);
+            if (!isRestoring) {
+                persist();
+            }
+        }
+    });
+
+    const header = createHeader(() => {
+        view.refresh();
+    });
+
+    const layout = document.createElement("div");
+    layout.className = "weather_layout";
+
+    layout.appendChild(tabs.element);
+    layout.appendChild(view.element);
 
     app.appendChild(header);
-    app.appendChild(current.element);
-    app.appendChild(cities);
-    app.appendChild(addCity);
-
+    app.appendChild(layout);
     root.appendChild(app);
 
-    initLocation(current);
-}
+    restore(state);
 
-async function initLocation(currentWeather) {
-    try {
-        const coords = await getUserPosition();
-        currentWeather.update(coords);
-    } catch {
-        // тест
-        currentWeather.update({ lat: 52.52, lon: 13.405 });
+    function persist() {
+        saveState({
+            currentCoords: tabs.getCurrentCoords(),
+            cities: tabs.getCities()
+        });
+    }
+
+    async function restore(state) {
+        if (state.cities.length) {
+            tabs.setCities(state.cities);
+        }
+
+        if (state.currentCoords) {
+            tabs.setCurrent(state.currentCoords);
+        } else {
+            try {
+                const coords = await getUserPosition();
+                tabs.setCurrent(coords);
+            } catch {
+                tabs.setCurrent({ lat: 52.52, lon: 13.405 });
+            }
+        }
+
+        isRestoring = false;
     }
 }

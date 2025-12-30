@@ -1,39 +1,34 @@
 import { getWeatherByCoords } from "../../services/weather.js";
 
-export function createCurrentWeather() {
+export function createWeatherView() {
     const section = document.createElement("section");
-    section.className = "weather_current";
+    section.className = "weather_view";
 
-    const location = document.createElement("div");
-    location.className = "weather_location";
-    location.textContent = "Текущее местоположение";
+    const title = document.createElement("div");
+    title.className = "weather_view_title";
 
     const days = document.createElement("div");
     days.className = "weather_days";
 
-    section.appendChild(location);
+    section.appendChild(title);
     section.appendChild(days);
 
     let lastCoords = null;
 
     return {
         element: section,
-        update(coords) {
+        update(coords, label) {
             lastCoords = coords;
-            loadWeather(days, coords);
+            title.textContent = label;
+            load(days, coords);
         },
         refresh() {
-            if (lastCoords) {
-                loadWeather(days, lastCoords);
-            }
-        },
-        getCoords() {
-            return lastCoords;
+            if (lastCoords) load(days, lastCoords);
         }
     };
 }
 
-async function loadWeather(container, coords) {
+async function load(container, coords) {
     container.textContent = "";
 
     const loading = document.createElement("div");
@@ -43,21 +38,19 @@ async function loadWeather(container, coords) {
 
     try {
         const data = await getWeatherByCoords(coords.lat, coords.lon);
-
         container.textContent = "";
 
-        data.forEach((item) => {
+        data.forEach((d) => {
             const day = document.createElement("div");
             day.className = "weather_day";
-            day.textContent = `${item.min}° / ${item.max}°`;
+            day.textContent = `${d.min}° / ${d.max}°`;
             container.appendChild(day);
         });
     } catch {
         container.textContent = "";
-
-        const error = document.createElement("div");
-        error.className = "weather_day";
-        error.textContent = "Ошибка загрузки";
-        container.appendChild(error);
+        const err = document.createElement("div");
+        err.className = "weather_day";
+        err.textContent = "Ошибка";
+        container.appendChild(err);
     }
 }

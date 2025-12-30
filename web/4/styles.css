@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -96,4 +100,77 @@ body {
   margin-top: 6px;
   font-size: 12px;
   color: #aaa;
+}
+
+.weather_layout {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+.weather_tabs {
+  width: 240px;
+  border-right: 1px solid #2a2a2a;
+  background: #0f0f0f;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.weather_tab {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.weather_tab:hover {
+  background: #1a1a1a;
+}
+
+.weather_tab--active {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.weather_view {
+  flex: 1;
+  padding: 16px;
+}
+
+.weather_view_title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .weather_layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .weather_tabs {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    flex-direction: column;
+    border-right: none;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .weather_tab {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .weather_add {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+  }
+
+  .weather_view {
+    padding: 12px;
+  }
 }

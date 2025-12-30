@@ -1,4 +1,4 @@
-export function createHeader() {
+export function createHeader(onRefresh) {
     const header = document.createElement("div");
     header.className = "weather_top";
 
@@ -10,6 +10,10 @@ export function createHeader() {
     refresh.className = "weather_refresh";
     refresh.type = "button";
     refresh.textContent = "Обновить";
+
+    refresh.addEventListener("click", () => {
+        onRefresh();
+    });
 
     header.appendChild(title);
     header.appendChild(refresh);
