@@ -14,12 +14,15 @@ export function createCurrentWeather() {
     section.appendChild(location);
     section.appendChild(days);
 
-    loadWeather(days);
-
-    return section;
+    return {
+        element: section,
+        update(coords) {
+            loadWeather(days, coords);
+        }
+    };
 }
 
-async function loadWeather(container) {
+async function loadWeather(container, coords) {
     container.textContent = "";
 
     const loading = document.createElement("div");
@@ -28,7 +31,7 @@ async function loadWeather(container) {
     container.appendChild(loading);
 
     try {
-        const data = await getWeatherByCoords(52.52, 13.405);
+        const data = await getWeatherByCoords(coords.lat, coords.lon);
 
         container.textContent = "";
 
