@@ -8,8 +8,8 @@ $('.services__slider').slick({
     arrows: false,
     autoplaySpeed: 3000
 });
-const video = document.querySelector('.video__item');
-const playButton = document.querySelector('.video__button');
+const video = $('.video__item');
+const playButton = $('.video__button');
 
 playButton.addEventListener('click', () => {
     if (video.paused) {
@@ -19,9 +19,9 @@ playButton.addEventListener('click', () => {
     }
 });
 
-document.querySelector('.video__button').addEventListener('mouseenter', () => {
+$('.video__button').addEventListener('mouseenter', () => {
     if (!video.paused) {
-        playButton.style.opacity = '1';
+        playButton.css({'opacity': 1})
     }
 });
 

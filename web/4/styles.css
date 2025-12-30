@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
+  color: #e0e0e0;
+}
+
+.weather {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.weather_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 12px;
+}
+
+.weather_title {
+  font-size: 18px;
+}
+
+.weather_refresh {
+  background: #111;
+  border: 1px solid #333;
+  color: #e0e0e0;
+  padding: 6px 10px;
+}
+
+.weather_current {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #2a2a2a;
+  background: #121212;
+}
+
+.weather_location {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.weather_days {
+  display: flex;
+  gap: 8px;
+}
+
+.weather_day {
+  flex: 1;
+  border: 1px solid #2a2a2a;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  background: #0f0f0f;
+}
+
+.weather_cities {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.weather_city {
+  border: 1px solid #2a2a2a;
+  padding: 10px;
+  background: #141414;
+}
+
+.weather_city_name {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.weather_city_days {
+  display: flex;
+  gap: 8px;
+}
+
+.weather_add {
+  margin-top: 20px;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 12px;
+}
+
+.weather_input {
+  width: 100%;
+  padding: 8px;
+  background: #0f0f0f;
+  border: 1px solid #333;
+  color: #e0e0e0;
+}
+
+.weather_error {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #aaa;
+}

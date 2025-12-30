@@ -105,3 +105,7 @@ $(document).ready(function() {
         arrowColor: '#333333',
   });
 });
+
+$(document).ready(function() {})
+$(() => {})
+$(document).ready(() => {})
